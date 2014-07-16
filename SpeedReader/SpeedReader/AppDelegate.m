@@ -13,9 +13,25 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+    UITabBarItem *tabBarItem5 = [tabBar.items objectAtIndex:4];
+    
+    tabBarItem1.title = [NSString stringWithFormat:NSLocalizedString(@"Login", nil)];
+    tabBarItem2.title = [NSString stringWithFormat:NSLocalizedString(@"Add", nil)];
+    tabBarItem3.title = [NSString stringWithFormat:NSLocalizedString(@"Delete", nil)];
+    tabBarItem4.title = [NSString stringWithFormat:NSLocalizedString(@"Import", nil)];
+        tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
     return YES;
 }
-							
+
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9319F7F1976794000814C17"
+               BlueprintIdentifier = "E9E514031976A231001FDA03"
                BuildableName = "SpeedReader.app"
                BlueprintName = "SpeedReader"
                ReferencedContainer = "container:SpeedReader.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E9319FA31976794200814C17"
+               BlueprintIdentifier = "E9E514271976A231001FDA03"
                BuildableName = "SpeedReaderTests.xctest"
                BlueprintName = "SpeedReaderTests"
                ReferencedContainer = "container:SpeedReader.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9319F7F1976794000814C17"
+            BlueprintIdentifier = "E9E514031976A231001FDA03"
             BuildableName = "SpeedReader.app"
             BlueprintName = "SpeedReader"
             ReferencedContainer = "container:SpeedReader.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9319F7F1976794000814C17"
+            BlueprintIdentifier = "E9E514031976A231001FDA03"
             BuildableName = "SpeedReader.app"
             BlueprintName = "SpeedReader"
             ReferencedContainer = "container:SpeedReader.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E9319F7F1976794000814C17"
+            BlueprintIdentifier = "E9E514031976A231001FDA03"
             BuildableName = "SpeedReader.app"
             BlueprintName = "SpeedReader"
             ReferencedContainer = "container:SpeedReader.xcodeproj">

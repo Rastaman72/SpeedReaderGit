@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LoginViewController.h
 //  SpeedReader
 //
 //  Created by LGBS dev on 7/16/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *testLabel;
+@interface LoginViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;
 
 @end

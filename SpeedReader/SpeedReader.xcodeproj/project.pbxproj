@@ -7,164 +7,210 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9319F841976794000814C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319F831976794000814C17 /* Foundation.framework */; };
-		E9319F861976794000814C17 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319F851976794000814C17 /* CoreGraphics.framework */; };
-		E9319F881976794000814C17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319F871976794000814C17 /* UIKit.framework */; };
-		E9319F8E1976794000814C17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9319F8C1976794000814C17 /* InfoPlist.strings */; };
-		E9319F901976794000814C17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9319F8F1976794000814C17 /* main.m */; };
-		E9319F941976794100814C17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9319F931976794100814C17 /* AppDelegate.m */; };
-		E9319F971976794100814C17 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9319F951976794100814C17 /* Main_iPhone.storyboard */; };
-		E9319F9A1976794100814C17 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9319F981976794100814C17 /* Main_iPad.storyboard */; };
-		E9319F9D1976794100814C17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9319F9C1976794100814C17 /* ViewController.m */; };
-		E9319F9F1976794100814C17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9319F9E1976794100814C17 /* Images.xcassets */; };
-		E9319FA61976794200814C17 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319FA51976794200814C17 /* XCTest.framework */; };
-		E9319FA71976794200814C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319F831976794000814C17 /* Foundation.framework */; };
-		E9319FA81976794200814C17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9319F871976794000814C17 /* UIKit.framework */; };
-		E9319FB01976794200814C17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9319FAE1976794200814C17 /* InfoPlist.strings */; };
-		E9319FB21976794200814C17 /* SpeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9319FB11976794200814C17 /* SpeedReaderTests.m */; };
+		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
+		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
+		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
+		E9E514121976A231001FDA03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9E514101976A231001FDA03 /* InfoPlist.strings */; };
+		E9E514141976A231001FDA03 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514131976A231001FDA03 /* main.m */; };
+		E9E514181976A231001FDA03 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514171976A231001FDA03 /* AppDelegate.m */; };
+		E9E5141B1976A231001FDA03 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E514191976A231001FDA03 /* Main_iPhone.storyboard */; };
+		E9E5141E1976A231001FDA03 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E5141C1976A231001FDA03 /* Main_iPad.storyboard */; };
+		E9E514211976A231001FDA03 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514201976A231001FDA03 /* ViewController.m */; };
+		E9E514231976A231001FDA03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E514221976A231001FDA03 /* Images.xcassets */; };
+		E9E5142A1976A231001FDA03 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514291976A231001FDA03 /* XCTest.framework */; };
+		E9E5142B1976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
+		E9E5142C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
+		E9E514341976A231001FDA03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9E514321976A231001FDA03 /* InfoPlist.strings */; };
+		E9E514361976A231001FDA03 /* SpeedReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514351976A231001FDA03 /* SpeedReaderTests.m */; };
+		E9E514451976A281001FDA03 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9E514471976A281001FDA03 /* Localizable.strings */; };
+		E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5144A1976A5CC001FDA03 /* LoginViewController.m */; };
+		E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5144E1976A611001FDA03 /* AddAccountViewController.m */; };
+		E9E514521976A623001FDA03 /* DeleteAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514511976A623001FDA03 /* DeleteAccountViewController.m */; };
+		E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514541976A635001FDA03 /* ImportAccountViewController.m */; };
+		E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514571976A645001FDA03 /* ExportAccountViewController.m */; };
+		E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5145A1976A71E001FDA03 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E9319FA91976794200814C17 /* PBXContainerItemProxy */ = {
+		E9E5142D1976A231001FDA03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9319F781976794000814C17 /* Project object */;
+			containerPortal = E9E513FC1976A231001FDA03 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9319F7F1976794000814C17;
+			remoteGlobalIDString = E9E514031976A231001FDA03;
 			remoteInfo = SpeedReader;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9319F801976794000814C17 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9319F831976794000814C17 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E9319F851976794000814C17 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E9319F871976794000814C17 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		E9319F8B1976794000814C17 /* SpeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedReader-Info.plist"; sourceTree = "<group>"; };
-		E9319F8D1976794000814C17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E9319F8F1976794000814C17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E9319F911976794100814C17 /* SpeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedReader-Prefix.pch"; sourceTree = "<group>"; };
-		E9319F921976794100814C17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E9319F931976794100814C17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E9319F961976794100814C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		E9319F991976794100814C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		E9319F9B1976794100814C17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E9319F9C1976794100814C17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E9319F9E1976794100814C17 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E9319FA41976794200814C17 /* SpeedReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9319FA51976794200814C17 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E9319FAD1976794200814C17 /* SpeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedReaderTests-Info.plist"; sourceTree = "<group>"; };
-		E9319FAF1976794200814C17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E9319FB11976794200814C17 /* SpeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedReaderTests.m; sourceTree = "<group>"; };
+		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9E5140B1976A231001FDA03 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E9E5140F1976A231001FDA03 /* SpeedReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedReader-Info.plist"; sourceTree = "<group>"; };
+		E9E514111976A231001FDA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9E514131976A231001FDA03 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9E514151976A231001FDA03 /* SpeedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedReader-Prefix.pch"; sourceTree = "<group>"; };
+		E9E514161976A231001FDA03 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9E514171976A231001FDA03 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9E5141A1976A231001FDA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E9E5141D1976A231001FDA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E9E5141F1976A231001FDA03 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9E514201976A231001FDA03 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9E514221976A231001FDA03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9E514281976A231001FDA03 /* SpeedReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E514291976A231001FDA03 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E9E514311976A231001FDA03 /* SpeedReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedReaderTests-Info.plist"; sourceTree = "<group>"; };
+		E9E514331976A231001FDA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9E514351976A231001FDA03 /* SpeedReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedReaderTests.m; sourceTree = "<group>"; };
+		E9E514411976A277001FDA03 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		E9E514421976A277001FDA03 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		E9E514431976A277001FDA03 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9E514441976A277001FDA03 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9E514461976A281001FDA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9E514481976A28A001FDA03 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E9E514491976A5CC001FDA03 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = SpeedReader/ViewControllers/LoginViewController.h; sourceTree = "<group>"; };
+		E9E5144A1976A5CC001FDA03 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = SpeedReader/ViewControllers/LoginViewController.m; sourceTree = "<group>"; };
+		E9E5144D1976A611001FDA03 /* AddAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddAccountViewController.h; path = SpeedReader/ViewControllers/AddAccountViewController.h; sourceTree = "<group>"; };
+		E9E5144E1976A611001FDA03 /* AddAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddAccountViewController.m; path = SpeedReader/ViewControllers/AddAccountViewController.m; sourceTree = "<group>"; };
+		E9E514501976A623001FDA03 /* DeleteAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeleteAccountViewController.h; path = SpeedReader/ViewControllers/DeleteAccountViewController.h; sourceTree = "<group>"; };
+		E9E514511976A623001FDA03 /* DeleteAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeleteAccountViewController.m; path = SpeedReader/ViewControllers/DeleteAccountViewController.m; sourceTree = "<group>"; };
+		E9E514531976A635001FDA03 /* ImportAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImportAccountViewController.h; path = SpeedReader/ViewControllers/ImportAccountViewController.h; sourceTree = "<group>"; };
+		E9E514541976A635001FDA03 /* ImportAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImportAccountViewController.m; path = SpeedReader/ViewControllers/ImportAccountViewController.m; sourceTree = "<group>"; };
+		E9E514561976A645001FDA03 /* ExportAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportAccountViewController.h; path = SpeedReader/ViewControllers/ExportAccountViewController.h; sourceTree = "<group>"; };
+		E9E514571976A645001FDA03 /* ExportAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportAccountViewController.m; path = SpeedReader/ViewControllers/ExportAccountViewController.m; sourceTree = "<group>"; };
+		E9E514591976A71E001FDA03 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SpeedReader/ViewControllers/MainViewController.h; sourceTree = "<group>"; };
+		E9E5145A1976A71E001FDA03 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = SpeedReader/ViewControllers/MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9319F7D1976794000814C17 /* Frameworks */ = {
+		E9E514011976A231001FDA03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319F861976794000814C17 /* CoreGraphics.framework in Frameworks */,
-				E9319F881976794000814C17 /* UIKit.framework in Frameworks */,
-				E9319F841976794000814C17 /* Foundation.framework in Frameworks */,
+				E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */,
+				E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */,
+				E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9319FA11976794200814C17 /* Frameworks */ = {
+		E9E514251976A231001FDA03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319FA61976794200814C17 /* XCTest.framework in Frameworks */,
-				E9319FA81976794200814C17 /* UIKit.framework in Frameworks */,
-				E9319FA71976794200814C17 /* Foundation.framework in Frameworks */,
+				E9E5142A1976A231001FDA03 /* XCTest.framework in Frameworks */,
+				E9E5142C1976A231001FDA03 /* UIKit.framework in Frameworks */,
+				E9E5142B1976A231001FDA03 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9319F771976794000814C17 = {
+		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
-				E9319F891976794000814C17 /* SpeedReader */,
-				E9319FAB1976794200814C17 /* SpeedReaderTests */,
-				E9319F821976794000814C17 /* Frameworks */,
-				E9319F811976794000814C17 /* Products */,
+				E9E5144C1976A5D1001FDA03 /* ViewControllers */,
+				E9E5140D1976A231001FDA03 /* SpeedReader */,
+				E9E5142F1976A231001FDA03 /* SpeedReaderTests */,
+				E9E514061976A231001FDA03 /* Frameworks */,
+				E9E514051976A231001FDA03 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E9319F811976794000814C17 /* Products */ = {
+		E9E514051976A231001FDA03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9319F801976794000814C17 /* SpeedReader.app */,
-				E9319FA41976794200814C17 /* SpeedReaderTests.xctest */,
+				E9E514041976A231001FDA03 /* SpeedReader.app */,
+				E9E514281976A231001FDA03 /* SpeedReaderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9319F821976794000814C17 /* Frameworks */ = {
+		E9E514061976A231001FDA03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9319F831976794000814C17 /* Foundation.framework */,
-				E9319F851976794000814C17 /* CoreGraphics.framework */,
-				E9319F871976794000814C17 /* UIKit.framework */,
-				E9319FA51976794200814C17 /* XCTest.framework */,
+				E9E514071976A231001FDA03 /* Foundation.framework */,
+				E9E514091976A231001FDA03 /* CoreGraphics.framework */,
+				E9E5140B1976A231001FDA03 /* UIKit.framework */,
+				E9E514291976A231001FDA03 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9319F891976794000814C17 /* SpeedReader */ = {
+		E9E5140D1976A231001FDA03 /* SpeedReader */ = {
 			isa = PBXGroup;
 			children = (
-				E9319F921976794100814C17 /* AppDelegate.h */,
-				E9319F931976794100814C17 /* AppDelegate.m */,
-				E9319F951976794100814C17 /* Main_iPhone.storyboard */,
-				E9319F981976794100814C17 /* Main_iPad.storyboard */,
-				E9319F9B1976794100814C17 /* ViewController.h */,
-				E9319F9C1976794100814C17 /* ViewController.m */,
-				E9319F9E1976794100814C17 /* Images.xcassets */,
-				E9319F8A1976794000814C17 /* Supporting Files */,
+				E9E514161976A231001FDA03 /* AppDelegate.h */,
+				E9E514171976A231001FDA03 /* AppDelegate.m */,
+				E9E514191976A231001FDA03 /* Main_iPhone.storyboard */,
+				E9E5141C1976A231001FDA03 /* Main_iPad.storyboard */,
+				E9E5141F1976A231001FDA03 /* ViewController.h */,
+				E9E514201976A231001FDA03 /* ViewController.m */,
+				E9E514221976A231001FDA03 /* Images.xcassets */,
+				E9E5140E1976A231001FDA03 /* Supporting Files */,
 			);
 			path = SpeedReader;
 			sourceTree = "<group>";
 		};
-		E9319F8A1976794000814C17 /* Supporting Files */ = {
+		E9E5140E1976A231001FDA03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9319F8B1976794000814C17 /* SpeedReader-Info.plist */,
-				E9319F8C1976794000814C17 /* InfoPlist.strings */,
-				E9319F8F1976794000814C17 /* main.m */,
-				E9319F911976794100814C17 /* SpeedReader-Prefix.pch */,
+				E9E514471976A281001FDA03 /* Localizable.strings */,
+				E9E5140F1976A231001FDA03 /* SpeedReader-Info.plist */,
+				E9E514101976A231001FDA03 /* InfoPlist.strings */,
+				E9E514131976A231001FDA03 /* main.m */,
+				E9E514151976A231001FDA03 /* SpeedReader-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E9319FAB1976794200814C17 /* SpeedReaderTests */ = {
+		E9E5142F1976A231001FDA03 /* SpeedReaderTests */ = {
 			isa = PBXGroup;
 			children = (
-				E9319FB11976794200814C17 /* SpeedReaderTests.m */,
-				E9319FAC1976794200814C17 /* Supporting Files */,
+				E9E514351976A231001FDA03 /* SpeedReaderTests.m */,
+				E9E514301976A231001FDA03 /* Supporting Files */,
 			);
 			path = SpeedReaderTests;
 			sourceTree = "<group>";
 		};
-		E9319FAC1976794200814C17 /* Supporting Files */ = {
+		E9E514301976A231001FDA03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E9319FAD1976794200814C17 /* SpeedReaderTests-Info.plist */,
-				E9319FAE1976794200814C17 /* InfoPlist.strings */,
+				E9E514311976A231001FDA03 /* SpeedReaderTests-Info.plist */,
+				E9E514321976A231001FDA03 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9E5144C1976A5D1001FDA03 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9E514491976A5CC001FDA03 /* LoginViewController.h */,
+				E9E5144A1976A5CC001FDA03 /* LoginViewController.m */,
+				E9E5144D1976A611001FDA03 /* AddAccountViewController.h */,
+				E9E5144E1976A611001FDA03 /* AddAccountViewController.m */,
+				E9E514501976A623001FDA03 /* DeleteAccountViewController.h */,
+				E9E514511976A623001FDA03 /* DeleteAccountViewController.m */,
+				E9E514531976A635001FDA03 /* ImportAccountViewController.h */,
+				E9E514541976A635001FDA03 /* ImportAccountViewController.m */,
+				E9E514561976A645001FDA03 /* ExportAccountViewController.h */,
+				E9E514571976A645001FDA03 /* ExportAccountViewController.m */,
+				E9E514591976A71E001FDA03 /* MainViewController.h */,
+				E9E5145A1976A71E001FDA03 /* MainViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9319F7F1976794000814C17 /* SpeedReader */ = {
+		E9E514031976A231001FDA03 /* SpeedReader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9319FB51976794200814C17 /* Build configuration list for PBXNativeTarget "SpeedReader" */;
+			buildConfigurationList = E9E514391976A231001FDA03 /* Build configuration list for PBXNativeTarget "SpeedReader" */;
 			buildPhases = (
-				E9319F7C1976794000814C17 /* Sources */,
-				E9319F7D1976794000814C17 /* Frameworks */,
-				E9319F7E1976794000814C17 /* Resources */,
+				E9E514001976A231001FDA03 /* Sources */,
+				E9E514011976A231001FDA03 /* Frameworks */,
+				E9E514021976A231001FDA03 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -172,148 +218,169 @@
 			);
 			name = SpeedReader;
 			productName = SpeedReader;
-			productReference = E9319F801976794000814C17 /* SpeedReader.app */;
+			productReference = E9E514041976A231001FDA03 /* SpeedReader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9319FA31976794200814C17 /* SpeedReaderTests */ = {
+		E9E514271976A231001FDA03 /* SpeedReaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9319FB81976794200814C17 /* Build configuration list for PBXNativeTarget "SpeedReaderTests" */;
+			buildConfigurationList = E9E5143C1976A231001FDA03 /* Build configuration list for PBXNativeTarget "SpeedReaderTests" */;
 			buildPhases = (
-				E9319FA01976794200814C17 /* Sources */,
-				E9319FA11976794200814C17 /* Frameworks */,
-				E9319FA21976794200814C17 /* Resources */,
+				E9E514241976A231001FDA03 /* Sources */,
+				E9E514251976A231001FDA03 /* Frameworks */,
+				E9E514261976A231001FDA03 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E9319FAA1976794200814C17 /* PBXTargetDependency */,
+				E9E5142E1976A231001FDA03 /* PBXTargetDependency */,
 			);
 			name = SpeedReaderTests;
 			productName = SpeedReaderTests;
-			productReference = E9319FA41976794200814C17 /* SpeedReaderTests.xctest */;
+			productReference = E9E514281976A231001FDA03 /* SpeedReaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9319F781976794000814C17 /* Project object */ = {
+		E9E513FC1976A231001FDA03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = LGBS;
 				TargetAttributes = {
-					E9319FA31976794200814C17 = {
-						TestTargetID = E9319F7F1976794000814C17;
+					E9E514271976A231001FDA03 = {
+						TestTargetID = E9E514031976A231001FDA03;
 					};
 				};
 			};
-			buildConfigurationList = E9319F7B1976794000814C17 /* Build configuration list for PBXProject "SpeedReader" */;
+			buildConfigurationList = E9E513FF1976A231001FDA03 /* Build configuration list for PBXProject "SpeedReader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
-			mainGroup = E9319F771976794000814C17;
-			productRefGroup = E9319F811976794000814C17 /* Products */;
+			mainGroup = E9E513FB1976A231001FDA03;
+			productRefGroup = E9E514051976A231001FDA03 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9319F7F1976794000814C17 /* SpeedReader */,
-				E9319FA31976794200814C17 /* SpeedReaderTests */,
+				E9E514031976A231001FDA03 /* SpeedReader */,
+				E9E514271976A231001FDA03 /* SpeedReaderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9319F7E1976794000814C17 /* Resources */ = {
+		E9E514021976A231001FDA03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319F9A1976794100814C17 /* Main_iPad.storyboard in Resources */,
-				E9319F9F1976794100814C17 /* Images.xcassets in Resources */,
-				E9319F971976794100814C17 /* Main_iPhone.storyboard in Resources */,
-				E9319F8E1976794000814C17 /* InfoPlist.strings in Resources */,
+				E9E514451976A281001FDA03 /* Localizable.strings in Resources */,
+				E9E5141E1976A231001FDA03 /* Main_iPad.storyboard in Resources */,
+				E9E514231976A231001FDA03 /* Images.xcassets in Resources */,
+				E9E5141B1976A231001FDA03 /* Main_iPhone.storyboard in Resources */,
+				E9E514121976A231001FDA03 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9319FA21976794200814C17 /* Resources */ = {
+		E9E514261976A231001FDA03 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319FB01976794200814C17 /* InfoPlist.strings in Resources */,
+				E9E514341976A231001FDA03 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9319F7C1976794000814C17 /* Sources */ = {
+		E9E514001976A231001FDA03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319F9D1976794100814C17 /* ViewController.m in Sources */,
-				E9319F941976794100814C17 /* AppDelegate.m in Sources */,
-				E9319F901976794000814C17 /* main.m in Sources */,
+				E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */,
+				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
+				E9E514211976A231001FDA03 /* ViewController.m in Sources */,
+				E9E514521976A623001FDA03 /* DeleteAccountViewController.m in Sources */,
+				E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */,
+				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
+				E9E514181976A231001FDA03 /* AppDelegate.m in Sources */,
+				E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */,
+				E9E514141976A231001FDA03 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9319FA01976794200814C17 /* Sources */ = {
+		E9E514241976A231001FDA03 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9319FB21976794200814C17 /* SpeedReaderTests.m in Sources */,
+				E9E514361976A231001FDA03 /* SpeedReaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E9319FAA1976794200814C17 /* PBXTargetDependency */ = {
+		E9E5142E1976A231001FDA03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9319F7F1976794000814C17 /* SpeedReader */;
-			targetProxy = E9319FA91976794200814C17 /* PBXContainerItemProxy */;
+			target = E9E514031976A231001FDA03 /* SpeedReader */;
+			targetProxy = E9E5142D1976A231001FDA03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9319F8C1976794000814C17 /* InfoPlist.strings */ = {
+		E9E514101976A231001FDA03 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9319F8D1976794000814C17 /* en */,
+				E9E514111976A231001FDA03 /* en */,
+				E9E514431976A277001FDA03 /* pl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E9319F951976794100814C17 /* Main_iPhone.storyboard */ = {
+		E9E514191976A231001FDA03 /* Main_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9319F961976794100814C17 /* Base */,
+				E9E5141A1976A231001FDA03 /* Base */,
+				E9E514411976A277001FDA03 /* pl */,
 			);
 			name = Main_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		E9319F981976794100814C17 /* Main_iPad.storyboard */ = {
+		E9E5141C1976A231001FDA03 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9319F991976794100814C17 /* Base */,
+				E9E5141D1976A231001FDA03 /* Base */,
+				E9E514421976A277001FDA03 /* pl */,
 			);
 			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		E9319FAE1976794200814C17 /* InfoPlist.strings */ = {
+		E9E514321976A231001FDA03 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9319FAF1976794200814C17 /* en */,
+				E9E514331976A231001FDA03 /* en */,
+				E9E514441976A277001FDA03 /* pl */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E9E514471976A281001FDA03 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9E514461976A281001FDA03 /* en */,
+				E9E514481976A28A001FDA03 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E9319FB31976794200814C17 /* Debug */ = {
+		E9E514371976A231001FDA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,14 +412,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E9319FB41976794200814C17 /* Release */ = {
+		E9E514381976A231001FDA03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -378,14 +445,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E9319FB61976794200814C17 /* Debug */ = {
+		E9E5143A1976A231001FDA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -398,7 +465,7 @@
 			};
 			name = Debug;
 		};
-		E9319FB71976794200814C17 /* Release */ = {
+		E9E5143B1976A231001FDA03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -411,7 +478,7 @@
 			};
 			name = Release;
 		};
-		E9319FB91976794200814C17 /* Debug */ = {
+		E9E5143D1976A231001FDA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedReader.app/SpeedReader";
@@ -433,7 +500,7 @@
 			};
 			name = Debug;
 		};
-		E9319FBA1976794200814C17 /* Release */ = {
+		E9E5143E1976A231001FDA03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedReader.app/SpeedReader";
@@ -454,32 +521,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9319F7B1976794000814C17 /* Build configuration list for PBXProject "SpeedReader" */ = {
+		E9E513FF1976A231001FDA03 /* Build configuration list for PBXProject "SpeedReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9319FB31976794200814C17 /* Debug */,
-				E9319FB41976794200814C17 /* Release */,
+				E9E514371976A231001FDA03 /* Debug */,
+				E9E514381976A231001FDA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9319FB51976794200814C17 /* Build configuration list for PBXNativeTarget "SpeedReader" */ = {
+		E9E514391976A231001FDA03 /* Build configuration list for PBXNativeTarget "SpeedReader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9319FB61976794200814C17 /* Debug */,
-				E9319FB71976794200814C17 /* Release */,
+				E9E5143A1976A231001FDA03 /* Debug */,
+				E9E5143B1976A231001FDA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		E9319FB81976794200814C17 /* Build configuration list for PBXNativeTarget "SpeedReaderTests" */ = {
+		E9E5143C1976A231001FDA03 /* Build configuration list for PBXNativeTarget "SpeedReaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9319FB91976794200814C17 /* Debug */,
-				E9319FBA1976794200814C17 /* Release */,
+				E9E5143D1976A231001FDA03 /* Debug */,
+				E9E5143E1976A231001FDA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9319F781976794000814C17 /* Project object */;
+	rootObject = E9E513FC1976A231001FDA03 /* Project object */;
 }

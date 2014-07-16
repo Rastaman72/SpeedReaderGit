@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddAccountViewController.h
 //  SpeedReader
 //
 //  Created by LGBS dev on 7/16/14.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *testLabel;
+@interface AddAccountViewController : UIViewController
 
 @end
