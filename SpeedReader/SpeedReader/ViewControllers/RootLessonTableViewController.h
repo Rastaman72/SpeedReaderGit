@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LessonSelectionDelegate.h"
+#import "DetailLessonViewController.h"
 
-@interface LeftViewTableViewController : UITableViewController
+@interface RootLessonTableViewController : UITableViewController
 @property(nonatomic,retain) NSMutableArray* lessons;
 @property (nonatomic,assign)id<LessonSelectionDelegate>delegate;
 

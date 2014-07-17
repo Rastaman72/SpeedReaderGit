@@ -7,12 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LeftViewTableViewController.h"
-#import "RightViewController.h"
+#import "RootLessonTableViewController.h"
+#import "DetailLessonViewController.h"
 
 @interface LessonsViewController : UISplitViewController
-@property(nonatomic,retain)UINavigationController* left;
-@property(nonatomic,retain)LeftViewTableViewController* root;
-@property(nonatomic,retain)RightViewController* detail;
-
+@property (strong, nonatomic) UIWindow *window;
 @end

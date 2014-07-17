@@ -1,19 +1,18 @@
 //
-//  LoginViewController.m
+//  ExercisesViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/16/14.
+//  Created by LGBS dev on 7/17/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "LessonsViewController.h"
+#import "ModuleViewController.h"
 
-@interface LoginViewController ()
+@interface ModuleViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation ModuleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        // Do any additional setup after loading the view.
+    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,17 +36,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark - Navigation
 /*
+#pragma mark - Navigation
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
- 
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
 */
 
-- (IBAction)loginPush:(id)sender {
-      
-}
 @end

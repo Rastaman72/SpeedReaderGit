@@ -1,40 +1,40 @@
 //
-//  LeftViewTableViewController.m
+//  RootExercisesTableViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/16/14.
+//  Created by LGBS dev on 7/17/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "LeftViewTableViewController.h"
-#import "LessonData.h"
+#import "RootExercisesTableViewController.h"
+#import "ExercisesData.h"
 
-@interface LeftViewTableViewController ()
+@interface RootExercisesTableViewController ()
 
 @end
 
-@implementation LeftViewTableViewController
+@implementation RootExercisesTableViewController
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if(self=[super initWithCoder:aDecoder])
     {
-        _lessons = [NSMutableArray array];
-        [_lessons addObject:[LessonData newLessonWithName:@"Intro" description:@"First view"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 1" description:@"First lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 2" description:@"Secound lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 3" description:@"Third lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 4" description:@"Fouth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 5" description:@"Fifth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 6" description:@"Sixth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 7" description:@"Seventh lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 8" description:@"Eighth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 9" description:@"Ninth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 10" description:@"Tenth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 11" description:@"Eleventh lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 12" description:@"Twelfth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 13" description:@"Thirteenth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 14" description:@"Fouthteenth lesson"]];
+        _exercises = [NSMutableArray array];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Intro" description:@"First view"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 1" description:@"First Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 2" description:@"Secound Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 3" description:@"Third Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 4" description:@"Fouth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 5" description:@"Fifth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 6" description:@"Sixth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 7" description:@"Seventh Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 8" description:@"Eighth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 9" description:@"Ninth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 10" description:@"Tenth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 11" description:@"Eleventh Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 12" description:@"Twelfth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 13" description:@"Thirteenth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 14" description:@"Fouthteenth Exercises"]];
         
     }
     return self;
@@ -61,39 +61,37 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [_lessons count];
-
+     return [_exercises count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LessonData* lesson=_lessons[indexPath.row];
+   
+    ExercisesData* exercises=_exercises[indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text=lesson.name;
-    
-    // Configure the cell...
-    
+    cell.textLabel.text=exercises.name;
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LessonData *selectedLesson=[_lessons objectAtIndex:indexPath.row];
+    ExercisesData *selectedExcerses=[_exercises objectAtIndex:indexPath.row];
     if(_delegate)
     {
-        [_delegate selectedLesson:selectedLesson];
+        [_delegate selectedExercises:selectedExcerses];
     }
 }
+
 
 /*
 // Override to support conditional editing of the table view.

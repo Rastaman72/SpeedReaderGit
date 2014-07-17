@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "LessonSelectionDelegate.h"
 @class LessonData;
-@interface RightViewController : UIViewController<LessonSelectionDelegate>
+@interface DetailLessonViewController : UIViewController<LessonSelectionDelegate,UISplitViewControllerDelegate>
 
 @property(nonatomic,retain)LessonData* lesson;
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UITextView *decription;
 @property (weak, nonatomic) IBOutlet UILabel *header;
+
+@property (nonatomic, weak) IBOutlet UINavigationItem *navBarItem;
+@property (nonatomic, strong) UIPopoverController *popover;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
+- (IBAction)logOutPush:(id)sender;
 
 @end

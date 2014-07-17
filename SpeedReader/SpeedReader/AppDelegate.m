@@ -7,15 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "LeftViewTableViewController.h" 
-#import "RightViewController.h"
+#import "RootLessonTableViewController.h" 
+#import "DetailLessonViewController.h"
 #import "LessonsViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+   
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     UITabBar *tabBar = tabBarController.tabBar;
     UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
@@ -28,10 +28,11 @@
     tabBarItem2.title = [NSString stringWithFormat:NSLocalizedString(@"Add", nil)];
     tabBarItem3.title = [NSString stringWithFormat:NSLocalizedString(@"Delete", nil)];
     tabBarItem4.title = [NSString stringWithFormat:NSLocalizedString(@"Import", nil)];
-        tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
+    tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
    
  
-    return YES;
+    
+     return YES;
 }
 
 

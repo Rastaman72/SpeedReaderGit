@@ -1,18 +1,18 @@
 //
-//  RightViewController.m
+//  StartViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/16/14.
+//  Created by LGBS dev on 7/17/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "RightViewController.h"
-#import "LessonData.h"
-@interface RightViewController ()
+#import "StartViewController.h"
+
+@interface StartViewController ()
 
 @end
 
-@implementation RightViewController
+@implementation StartViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,37 +25,16 @@
 
 - (void)viewDidLoad
 {
-    [self refreshUI];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
--(void)setLesson:(LessonData *)lesson
-{
-    if(_lesson!=lesson)
-    {
-        _lesson=lesson;
-        [self refreshUI];
-      
-    }
-}
-
-
--(void)refreshUI
-{
-    _header.text=_lesson.header;
-    _userImage.image=[UIImage imageNamed:_lesson.userImage];
-    _decription.text=_lesson.description;
-}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)selectedLesson:(LessonData *)newLesson
-{
-    [self setLesson:newLesson];
-}
+
 /*
 #pragma mark - Navigation
 
@@ -67,4 +46,9 @@
 }
 */
 
+- (IBAction)logOutPush:(id)sender {
+   
+        [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 @end

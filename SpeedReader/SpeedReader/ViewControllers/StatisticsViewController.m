@@ -1,18 +1,18 @@
 //
-//  LessonsViewController.m
+//  StatisticsViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/16/14.
+//  Created by LGBS dev on 7/17/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "LessonsViewController.h"
+#import "StatisticsViewController.h"
 
-@interface LessonsViewController ()
+@interface StatisticsViewController ()
 
 @end
 
-@implementation LessonsViewController
+@implementation StatisticsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,15 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     UINavigationController* leftNavC=[self.viewControllers objectAtIndex:0];
-     RootLessonTableViewController* leftVC=(RootLessonTableViewController*)[leftNavC topViewController];
-     DetailLessonViewController* rightVC=[self.viewControllers objectAtIndex:1];
-     leftVC.delegate=rightVC;
-     self.delegate=rightVC;
-    LessonData* firstLesson=[[leftVC lessons]objectAtIndex:0];
-     [rightVC setLesson:firstLesson];
-    
+    RootStatisticsTableViewController* leftVC=(RootStatisticsTableViewController*)[leftNavC topViewController];
+    DetailStatisticsViewController* rightVC=[self.viewControllers objectAtIndex:1];
+    leftVC.delegate=rightVC;
+    self.delegate=rightVC;
+    StatisticsData* firstStatistic=[[leftVC statistics]objectAtIndex:0];
+    [rightVC setStatisticsData:firstStatistic];
+
 }
 
 - (void)didReceiveMemoryWarning

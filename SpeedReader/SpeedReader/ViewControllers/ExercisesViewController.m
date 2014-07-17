@@ -1,18 +1,18 @@
 //
-//  LessonsViewController.m
+//  ExercisesViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/16/14.
+//  Created by LGBS dev on 7/17/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "LessonsViewController.h"
+#import "ExercisesViewController.h"
 
-@interface LessonsViewController ()
+@interface ExercisesViewController ()
 
 @end
 
-@implementation LessonsViewController
+@implementation ExercisesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,15 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     UINavigationController* leftNavC=[self.viewControllers objectAtIndex:0];
-     RootLessonTableViewController* leftVC=(RootLessonTableViewController*)[leftNavC topViewController];
-     DetailLessonViewController* rightVC=[self.viewControllers objectAtIndex:1];
-     leftVC.delegate=rightVC;
-     self.delegate=rightVC;
-    LessonData* firstLesson=[[leftVC lessons]objectAtIndex:0];
-     [rightVC setLesson:firstLesson];
-    
+    RootExercisesTableViewController* leftVC=(RootExercisesTableViewController*)[leftNavC topViewController];
+    DetailExercisesViewController* rightVC=[self.viewControllers objectAtIndex:1];
+    leftVC.delegate=rightVC;
+    self.delegate=rightVC;
+    ExercisesData* firstExercises=[[leftVC exercises]objectAtIndex:0];
+    [rightVC setExercisesData:firstExercises];
+
 }
 
 - (void)didReceiveMemoryWarning

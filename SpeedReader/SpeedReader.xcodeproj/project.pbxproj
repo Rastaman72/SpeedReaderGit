@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E935AA111976E70F00409E7B /* LeftViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA101976E70F00409E7B /* LeftViewTableViewController.m */; };
-		E935AA141976E79000409E7B /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA131976E79000409E7B /* RightViewController.m */; };
+		E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6ED1977F3B100846F31 /* ExercisesData.m */; };
+		E915D6F21977F48A00846F31 /* RootExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */; };
+		E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */; };
+		E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F71977F4BF00846F31 /* ExercisesViewController.m */; };
+		E915D6FC1977FC6100846F31 /* StatisticsData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6FB1977FC6100846F31 /* StatisticsData.m */; };
+		E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7001977FD1000846F31 /* RootStatisticsTableViewController.m */; };
+		E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7031977FD2700846F31 /* DetailStatisticsViewController.m */; };
+		E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7061977FD3E00846F31 /* StatisticsViewController.m */; };
+		E915D70B197804A400846F31 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D70A197804A400846F31 /* StartViewController.m */; };
+		E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA101976E70F00409E7B /* RootLessonTableViewController.m */; };
+		E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA131976E79000409E7B /* DetailLessonViewController.m */; };
 		E935AA171976EA3F00409E7B /* LessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA161976EA3F00409E7B /* LessonData.m */; };
 		E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA1B1976F48900409E7B /* LessonsViewController.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
@@ -33,6 +42,7 @@
 		E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514541976A635001FDA03 /* ImportAccountViewController.m */; };
 		E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E514571976A645001FDA03 /* ExportAccountViewController.m */; };
 		E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E5145A1976A71E001FDA03 /* MainViewController.m */; };
+		E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9FEE6121977D39700463B32 /* ModuleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +56,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E935AA0F1976E70F00409E7B /* LeftViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewTableViewController.h; path = SpeedReader/ViewControllers/LeftViewTableViewController.h; sourceTree = "<group>"; };
-		E935AA101976E70F00409E7B /* LeftViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewTableViewController.m; path = SpeedReader/ViewControllers/LeftViewTableViewController.m; sourceTree = "<group>"; };
-		E935AA121976E79000409E7B /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = SpeedReader/ViewControllers/RightViewController.h; sourceTree = "<group>"; };
-		E935AA131976E79000409E7B /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = SpeedReader/ViewControllers/RightViewController.m; sourceTree = "<group>"; };
+		E915D6EC1977F3B100846F31 /* ExercisesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesData.h; path = SpeedReader/Data/ExercisesData.h; sourceTree = "<group>"; };
+		E915D6ED1977F3B100846F31 /* ExercisesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesData.m; path = SpeedReader/Data/ExercisesData.m; sourceTree = "<group>"; };
+		E915D6EF1977F3D100846F31 /* ExercisesSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExercisesSelectionDelegate.h; path = SpeedReader/Data/ExercisesSelectionDelegate.h; sourceTree = "<group>"; };
+		E915D6F01977F48A00846F31 /* RootExercisesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootExercisesTableViewController.h; path = SpeedReader/ViewControllers/RootExercisesTableViewController.h; sourceTree = "<group>"; };
+		E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootExercisesTableViewController.m; path = SpeedReader/ViewControllers/RootExercisesTableViewController.m; sourceTree = "<group>"; };
+		E915D6F31977F4A400846F31 /* DetailExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailExercisesViewController.h; path = SpeedReader/ViewControllers/DetailExercisesViewController.h; sourceTree = "<group>"; };
+		E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailExercisesViewController.m; path = SpeedReader/ViewControllers/DetailExercisesViewController.m; sourceTree = "<group>"; };
+		E915D6F61977F4BF00846F31 /* ExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesViewController.h; path = SpeedReader/ViewControllers/ExercisesViewController.h; sourceTree = "<group>"; };
+		E915D6F71977F4BF00846F31 /* ExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesViewController.m; path = SpeedReader/ViewControllers/ExercisesViewController.m; sourceTree = "<group>"; };
+		E915D6FA1977FC6100846F31 /* StatisticsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsData.h; path = SpeedReader/Data/StatisticsData.h; sourceTree = "<group>"; };
+		E915D6FB1977FC6100846F31 /* StatisticsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsData.m; path = SpeedReader/Data/StatisticsData.m; sourceTree = "<group>"; };
+		E915D6FD1977FC7800846F31 /* StatisticsSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StatisticsSelectionDelegate.h; path = SpeedReader/Data/StatisticsSelectionDelegate.h; sourceTree = "<group>"; };
+		E915D6FF1977FD1000846F31 /* RootStatisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootStatisticsTableViewController.h; path = SpeedReader/ViewControllers/RootStatisticsTableViewController.h; sourceTree = "<group>"; };
+		E915D7001977FD1000846F31 /* RootStatisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootStatisticsTableViewController.m; path = SpeedReader/ViewControllers/RootStatisticsTableViewController.m; sourceTree = "<group>"; };
+		E915D7021977FD2700846F31 /* DetailStatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailStatisticsViewController.h; path = SpeedReader/ViewControllers/DetailStatisticsViewController.h; sourceTree = "<group>"; };
+		E915D7031977FD2700846F31 /* DetailStatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailStatisticsViewController.m; path = SpeedReader/ViewControllers/DetailStatisticsViewController.m; sourceTree = "<group>"; };
+		E915D7051977FD3E00846F31 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatisticsViewController.h; path = SpeedReader/ViewControllers/StatisticsViewController.h; sourceTree = "<group>"; };
+		E915D7061977FD3E00846F31 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = SpeedReader/ViewControllers/StatisticsViewController.m; sourceTree = "<group>"; };
+		E915D709197804A400846F31 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = SpeedReader/ViewControllers/StartViewController.h; sourceTree = "<group>"; };
+		E915D70A197804A400846F31 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = SpeedReader/ViewControllers/StartViewController.m; sourceTree = "<group>"; };
+		E935AA0F1976E70F00409E7B /* RootLessonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootLessonTableViewController.h; path = SpeedReader/ViewControllers/RootLessonTableViewController.h; sourceTree = "<group>"; };
+		E935AA101976E70F00409E7B /* RootLessonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootLessonTableViewController.m; path = SpeedReader/ViewControllers/RootLessonTableViewController.m; sourceTree = "<group>"; };
+		E935AA121976E79000409E7B /* DetailLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailLessonViewController.h; path = SpeedReader/ViewControllers/DetailLessonViewController.h; sourceTree = "<group>"; };
+		E935AA131976E79000409E7B /* DetailLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailLessonViewController.m; path = SpeedReader/ViewControllers/DetailLessonViewController.m; sourceTree = "<group>"; };
 		E935AA151976EA3F00409E7B /* LessonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonData.h; path = SpeedReader/Data/LessonData.h; sourceTree = "<group>"; };
 		E935AA161976EA3F00409E7B /* LessonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonData.m; path = SpeedReader/Data/LessonData.m; sourceTree = "<group>"; };
 		E935AA191976F29700409E7B /* LessonSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LessonSelectionDelegate.h; path = SpeedReader/Data/LessonSelectionDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +123,8 @@
 		E9E514571976A645001FDA03 /* ExportAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportAccountViewController.m; path = SpeedReader/ViewControllers/ExportAccountViewController.m; sourceTree = "<group>"; };
 		E9E514591976A71E001FDA03 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = SpeedReader/ViewControllers/MainViewController.h; sourceTree = "<group>"; };
 		E9E5145A1976A71E001FDA03 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = SpeedReader/ViewControllers/MainViewController.m; sourceTree = "<group>"; };
+		E9FEE6111977D39700463B32 /* ModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModuleViewController.h; path = SpeedReader/Data/ModuleViewController.h; sourceTree = "<group>"; };
+		E9FEE6121977D39700463B32 /* ModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModuleViewController.m; path = SpeedReader/Data/ModuleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +151,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E935AA181976EA4500409E7B /* Data */ = {
+		E915D6E31977F23500846F31 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E9E514491976A5CC001FDA03 /* LoginViewController.h */,
+				E9E5144A1976A5CC001FDA03 /* LoginViewController.m */,
+				E9E5144D1976A611001FDA03 /* AddAccountViewController.h */,
+				E9E5144E1976A611001FDA03 /* AddAccountViewController.m */,
+				E9E514501976A623001FDA03 /* DeleteAccountViewController.h */,
+				E9E514511976A623001FDA03 /* DeleteAccountViewController.m */,
+				E9E514531976A635001FDA03 /* ImportAccountViewController.h */,
+				E9E514541976A635001FDA03 /* ImportAccountViewController.m */,
+				E9E514561976A645001FDA03 /* ExportAccountViewController.h */,
+				E9E514571976A645001FDA03 /* ExportAccountViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		E915D6E41977F24E00846F31 /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				E935AA0F1976E70F00409E7B /* RootLessonTableViewController.h */,
+				E935AA101976E70F00409E7B /* RootLessonTableViewController.m */,
+				E935AA121976E79000409E7B /* DetailLessonViewController.h */,
+				E935AA131976E79000409E7B /* DetailLessonViewController.m */,
+				E935AA1A1976F48900409E7B /* LessonsViewController.h */,
+				E935AA1B1976F48900409E7B /* LessonsViewController.m */,
+			);
+			name = Lesson;
+			sourceTree = "<group>";
+		};
+		E915D6E51977F25800846F31 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E915D6F01977F48A00846F31 /* RootExercisesTableViewController.h */,
+				E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */,
+				E915D6F31977F4A400846F31 /* DetailExercisesViewController.h */,
+				E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */,
+				E915D6F61977F4BF00846F31 /* ExercisesViewController.h */,
+				E915D6F71977F4BF00846F31 /* ExercisesViewController.m */,
+			);
+			name = Exercises;
+			sourceTree = "<group>";
+		};
+		E915D6E61977F35500846F31 /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
 				E935AA151976EA3F00409E7B /* LessonData.h */,
 				E935AA161976EA3F00409E7B /* LessonData.m */,
 				E935AA191976F29700409E7B /* LessonSelectionDelegate.h */,
+			);
+			name = Lesson;
+			sourceTree = "<group>";
+		};
+		E915D6E71977F35E00846F31 /* Exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E915D6EC1977F3B100846F31 /* ExercisesData.h */,
+				E915D6ED1977F3B100846F31 /* ExercisesData.m */,
+				E915D6EF1977F3D100846F31 /* ExercisesSelectionDelegate.h */,
+			);
+			name = Exercises;
+			sourceTree = "<group>";
+		};
+		E915D6F91977FC1900846F31 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				E915D6FA1977FC6100846F31 /* StatisticsData.h */,
+				E915D6FB1977FC6100846F31 /* StatisticsData.m */,
+				E915D6FD1977FC7800846F31 /* StatisticsSelectionDelegate.h */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		E915D6FE1977FCEF00846F31 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				E915D6FF1977FD1000846F31 /* RootStatisticsTableViewController.h */,
+				E915D7001977FD1000846F31 /* RootStatisticsTableViewController.m */,
+				E915D7021977FD2700846F31 /* DetailStatisticsViewController.h */,
+				E915D7031977FD2700846F31 /* DetailStatisticsViewController.m */,
+				E915D7051977FD3E00846F31 /* StatisticsViewController.h */,
+				E915D7061977FD3E00846F31 /* StatisticsViewController.m */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		E915D7081978048B00846F31 /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				E915D709197804A400846F31 /* StartViewController.h */,
+				E915D70A197804A400846F31 /* StartViewController.m */,
+			);
+			name = StartView;
+			sourceTree = "<group>";
+		};
+		E935AA181976EA4500409E7B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E915D6F91977FC1900846F31 /* Statistics */,
+				E915D6E71977F35E00846F31 /* Exercises */,
+				E915D6E61977F35500846F31 /* Lesson */,
+				E9FEE6111977D39700463B32 /* ModuleViewController.h */,
+				E9FEE6121977D39700463B32 /* ModuleViewController.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -209,24 +338,13 @@
 		E9E5144C1976A5D1001FDA03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9E514491976A5CC001FDA03 /* LoginViewController.h */,
-				E9E5144A1976A5CC001FDA03 /* LoginViewController.m */,
-				E9E5144D1976A611001FDA03 /* AddAccountViewController.h */,
-				E9E5144E1976A611001FDA03 /* AddAccountViewController.m */,
-				E9E514501976A623001FDA03 /* DeleteAccountViewController.h */,
-				E9E514511976A623001FDA03 /* DeleteAccountViewController.m */,
-				E9E514531976A635001FDA03 /* ImportAccountViewController.h */,
-				E9E514541976A635001FDA03 /* ImportAccountViewController.m */,
-				E9E514561976A645001FDA03 /* ExportAccountViewController.h */,
-				E9E514571976A645001FDA03 /* ExportAccountViewController.m */,
+				E915D6E41977F24E00846F31 /* Lesson */,
+				E915D7081978048B00846F31 /* StartView */,
+				E915D6FE1977FCEF00846F31 /* Statistics */,
+				E915D6E51977F25800846F31 /* Exercises */,
+				E915D6E31977F23500846F31 /* MainView */,
 				E9E514591976A71E001FDA03 /* MainViewController.h */,
 				E9E5145A1976A71E001FDA03 /* MainViewController.m */,
-				E935AA0F1976E70F00409E7B /* LeftViewTableViewController.h */,
-				E935AA101976E70F00409E7B /* LeftViewTableViewController.m */,
-				E935AA121976E79000409E7B /* RightViewController.h */,
-				E935AA131976E79000409E7B /* RightViewController.m */,
-				E935AA1A1976F48900409E7B /* LessonsViewController.h */,
-				E935AA1B1976F48900409E7B /* LessonsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -332,18 +450,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */,
+				E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */,
 				E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
+				E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
+				E915D6FC1977FC6100846F31 /* StatisticsData.m in Sources */,
 				E9E514211976A231001FDA03 /* ViewController.m in Sources */,
-				E935AA111976E70F00409E7B /* LeftViewTableViewController.m in Sources */,
-				E935AA141976E79000409E7B /* RightViewController.m in Sources */,
+				E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */,
+				E915D70B197804A400846F31 /* StartViewController.m in Sources */,
+				E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */,
 				E9E514521976A623001FDA03 /* DeleteAccountViewController.m in Sources */,
 				E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */,
+				E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
+				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
+				E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */,
 				E9E514181976A231001FDA03 /* AppDelegate.m in Sources */,
+				E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */,
 				E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */,
+				E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */,
 				E9E514141976A231001FDA03 /* main.m in Sources */,
+				E915D6F21977F48A00846F31 /* RootExercisesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
