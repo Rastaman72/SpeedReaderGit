@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E935AA111976E70F00409E7B /* LeftViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA101976E70F00409E7B /* LeftViewTableViewController.m */; };
+		E935AA141976E79000409E7B /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA131976E79000409E7B /* RightViewController.m */; };
+		E935AA171976EA3F00409E7B /* LessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA161976EA3F00409E7B /* LessonData.m */; };
+		E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA1B1976F48900409E7B /* LessonsViewController.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
 		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
 		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
@@ -42,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E935AA0F1976E70F00409E7B /* LeftViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftViewTableViewController.h; path = SpeedReader/ViewControllers/LeftViewTableViewController.h; sourceTree = "<group>"; };
+		E935AA101976E70F00409E7B /* LeftViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LeftViewTableViewController.m; path = SpeedReader/ViewControllers/LeftViewTableViewController.m; sourceTree = "<group>"; };
+		E935AA121976E79000409E7B /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = SpeedReader/ViewControllers/RightViewController.h; sourceTree = "<group>"; };
+		E935AA131976E79000409E7B /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = SpeedReader/ViewControllers/RightViewController.m; sourceTree = "<group>"; };
+		E935AA151976EA3F00409E7B /* LessonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonData.h; path = SpeedReader/Data/LessonData.h; sourceTree = "<group>"; };
+		E935AA161976EA3F00409E7B /* LessonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonData.m; path = SpeedReader/Data/LessonData.m; sourceTree = "<group>"; };
+		E935AA191976F29700409E7B /* LessonSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LessonSelectionDelegate.h; path = SpeedReader/Data/LessonSelectionDelegate.h; sourceTree = "<group>"; };
+		E935AA1A1976F48900409E7B /* LessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonsViewController.h; path = SpeedReader/ViewControllers/LessonsViewController.h; sourceTree = "<group>"; };
+		E935AA1B1976F48900409E7B /* LessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonsViewController.m; path = SpeedReader/ViewControllers/LessonsViewController.m; sourceTree = "<group>"; };
 		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,9 +119,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E935AA181976EA4500409E7B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E935AA151976EA3F00409E7B /* LessonData.h */,
+				E935AA161976EA3F00409E7B /* LessonData.m */,
+				E935AA191976F29700409E7B /* LessonSelectionDelegate.h */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
+				E935AA181976EA4500409E7B /* Data */,
 				E9E5144C1976A5D1001FDA03 /* ViewControllers */,
 				E9E5140D1976A231001FDA03 /* SpeedReader */,
 				E9E5142F1976A231001FDA03 /* SpeedReaderTests */,
@@ -197,6 +221,12 @@
 				E9E514571976A645001FDA03 /* ExportAccountViewController.m */,
 				E9E514591976A71E001FDA03 /* MainViewController.h */,
 				E9E5145A1976A71E001FDA03 /* MainViewController.m */,
+				E935AA0F1976E70F00409E7B /* LeftViewTableViewController.h */,
+				E935AA101976E70F00409E7B /* LeftViewTableViewController.m */,
+				E935AA121976E79000409E7B /* RightViewController.h */,
+				E935AA131976E79000409E7B /* RightViewController.m */,
+				E935AA1A1976F48900409E7B /* LessonsViewController.h */,
+				E935AA1B1976F48900409E7B /* LessonsViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -301,9 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */,
 				E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */,
+				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
 				E9E514211976A231001FDA03 /* ViewController.m in Sources */,
+				E935AA111976E70F00409E7B /* LeftViewTableViewController.m in Sources */,
+				E935AA141976E79000409E7B /* RightViewController.m in Sources */,
 				E9E514521976A623001FDA03 /* DeleteAccountViewController.m in Sources */,
 				E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
@@ -396,6 +430,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -414,6 +449,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -435,6 +471,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -446,6 +483,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -457,10 +495,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedReader/SpeedReader-Prefix.pch";
 				INFOPLIST_FILE = "SpeedReader/SpeedReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -470,10 +511,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedReader/SpeedReader-Prefix.pch";
 				INFOPLIST_FILE = "SpeedReader/SpeedReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -537,6 +581,7 @@
 				E9E5143B1976A231001FDA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9E5143C1976A231001FDA03 /* Build configuration list for PBXNativeTarget "SpeedReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +590,7 @@
 				E9E5143E1976A231001FDA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,5 +10,6 @@
 
 @interface LoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;
+- (IBAction)loginPush:(id)sender;
 
 @end

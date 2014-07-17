@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LeftViewTableViewController.h" 
+#import "RightViewController.h"
+#import "LessonsViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,6 +29,8 @@
     tabBarItem3.title = [NSString stringWithFormat:NSLocalizedString(@"Delete", nil)];
     tabBarItem4.title = [NSString stringWithFormat:NSLocalizedString(@"Import", nil)];
         tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
+   
+ 
     return YES;
 }
 
