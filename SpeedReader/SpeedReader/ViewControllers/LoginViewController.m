@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "LessonsViewController.h"
+#import "AccountTableCellTableViewCell.h"
+#import "UserAccount.h"
 
 @interface LoginViewController ()
 
@@ -28,6 +30,10 @@
 {
     [super viewDidLoad];
         // Do any additional setup after loading the view.
+    
+//    UserAccount* test=[UserAccount initAccountWithLogin:@"Test1" andImage:@"Test1"];
+//    [_userList addObject:test];
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,6 +51,37 @@
  
 }
 */
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    // Return the number of rows in the section.
+    return [self.userList count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
+    
+    UserAccount* account=(self.userList)[indexPath.row];
+    
+    NSString* name=[NSString stringWithFormat:@"%@",account.login];
+    //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];
+    
+    cell.accountLogin.text=name;
+    cell.accountImage=[UIImage imageNamed:[NSString stringWithFormat:@"%@",account.userImage]];
+    return cell;
+}
+
 
 - (IBAction)loginPush:(id)sender {
       

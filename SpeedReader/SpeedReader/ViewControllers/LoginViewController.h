@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AccountTable.h"
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;
 - (IBAction)loginPush:(id)sender;
+@property (weak, nonatomic) IBOutlet AccountTable *accountTable;
+@property(nonatomic,retain)NSMutableArray* userList;
 
 @end
