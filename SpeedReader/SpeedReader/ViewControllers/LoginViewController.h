@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AccountTable.h"
+#import "AppDelegate.h"
 
 @interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;

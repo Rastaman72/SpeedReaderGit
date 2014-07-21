@@ -25,6 +25,10 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self cleanView];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -45,6 +49,7 @@
 {
     if([segue.identifier isEqualToString:@"AddAccountToLogin"]){
         LoginViewController *LVC = (LoginViewController *)segue.destinationViewController;
+        LVC.userList=[[NSMutableArray alloc]init];
         [LVC.userList addObject:_theNewAccount];
     }
 }
@@ -60,6 +65,20 @@
     }
     else
         self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
-    [self performSegueWithIdentifier:@"AddAccountToLogin" sender:self];
+     [[self navigationController]popToRootViewControllerAnimated:YES];
+    
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [delegate.myProperty addObject:_theNewAccount];
+    
+    
+    self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+}
+
+-(void)cleanView
+{
+    _addAccountLoginField.text=@"";
+    [_addAccountPasswordCheckBox setOn:NO];
+    _addAccountRePasswordField.text=@"";
+    _addAccountRePasswordField.text=@"";
 }
 @end

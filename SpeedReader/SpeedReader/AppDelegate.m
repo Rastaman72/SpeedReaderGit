@@ -30,7 +30,8 @@
     tabBarItem4.title = [NSString stringWithFormat:NSLocalizedString(@"Import", nil)];
     tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
    
- 
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    delegate.myProperty=[[NSMutableArray alloc]init];
     
      return YES;
 }

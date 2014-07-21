@@ -304,7 +304,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1bx-cR-kSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4915" y="-1568"/>
+            <point key="canvasLocation" x="5889" y="-1568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ghb-uk-5HD">
@@ -319,7 +319,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxR-c1-Zp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4379" y="-1568"/>
+            <point key="canvasLocation" x="5353" y="-1568"/>
         </scene>
         <!--Exercises View Controller - Exercises-->
         <scene sceneID="xpe-1I-n1K">
@@ -334,7 +334,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdb-aw-Uuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3399" y="-1100"/>
+            <point key="canvasLocation" x="4373" y="-1100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aaU-si-XSw">
@@ -493,7 +493,7 @@
             </objects>
             <point key="canvasLocation" x="3415" y="-3184"/>
         </scene>
-        <!--Add Account View Controller - Item-->
+        <!--Add Account View Controller-->
         <scene sceneID="O9G-AB-473">
             <objects>
                 <viewController id="MUl-vo-moc" customClass="AddAccountViewController" sceneMemberID="viewController">
@@ -577,7 +577,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Txo-hj-tn2"/>
+                    <navigationItem key="navigationItem" id="aYl-ej-slW"/>
                     <connections>
                         <outlet property="addAccountButton" destination="8Lj-do-Rha" id="Qw3-3C-OzJ"/>
                         <outlet property="addAccountDescription" destination="esy-5h-Fvi" id="uxG-Wb-zco"/>
@@ -591,12 +591,12 @@
                         <outlet property="addAccountPasswordField" destination="2eJ-2b-8Fn" id="FfE-uJ-6dC"/>
                         <outlet property="addAccountRePassword" destination="jh0-1o-cdx" id="emh-VO-h6T"/>
                         <outlet property="addAccountRePasswordField" destination="yTx-Bc-fni" id="zHQ-7a-5q8"/>
-                        <segue destination="B4j-jN-OpD" kind="replace" identifier="AddAccountToLogin" splitViewControllerTargetIndex="1" id="Add-Pb-s6o"/>
+                        <segue destination="B4j-jN-OpD" kind="push" identifier="AddAccountToLogin" id="QI8-l8-DaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pf-B8-Oqi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="-1841"/>
+            <point key="canvasLocation" x="1034" y="-1841"/>
         </scene>
         <!--Delete Account View Controller - Item 1-->
         <scene sceneID="qlh-2Q-RMg">
@@ -605,13 +605,66 @@
                     <view key="view" contentMode="scaleToFill" id="8nK-KA-WIL">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Ld-eu-c98">
+                                <rect key="frame" x="356" y="876" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePush:" destination="oKe-oj-JWU" eventType="touchUpInside" id="HrG-ts-qsm"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Q7a-52-KxR" customClass="AccountTable">
+                                <rect key="frame" x="220" y="401" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" rowHeight="103" id="sOV-rR-bZT" customClass="AccountTableCellTableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sOV-rR-bZT" id="mFF-NQ-zAg">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Wee-uC-gpN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="124" height="102"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rwF-DA-wxk">
+                                                    <rect key="frame" x="132" y="8" width="50" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountImage" destination="Wee-uC-gpN" id="I25-SW-l49"/>
+                                            <outlet property="accountLogin" destination="rwF-DA-wxk" id="nkS-KE-c4s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oKe-oj-JWU" id="6xw-Ya-uOl"/>
+                                    <outlet property="delegate" destination="oKe-oj-JWU" id="Uof-Jl-Ifi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="fgB-c1-qyf"/>
+                    <connections>
+                        <outlet property="accountTable" destination="Q7a-52-KxR" id="FpF-20-wZc"/>
+                        <outlet property="deleteTabBar" destination="fgB-c1-qyf" id="OT0-b6-YSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VI3-ND-9Er" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="-766"/>
+            <point key="canvasLocation" x="60" y="-726"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="zYD-CW-8KZ">
@@ -625,7 +678,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="mWn-EM-hKd" kind="relationship" relationship="viewControllers" id="KOs-Um-Zu7"/>
-                        <segue destination="MUl-vo-moc" kind="relationship" relationship="viewControllers" id="qaa-GZ-1pA"/>
+                        <segue destination="Dj5-RG-itw" kind="relationship" relationship="viewControllers" id="qaa-GZ-1pA"/>
                         <segue destination="oKe-oj-JWU" kind="relationship" relationship="viewControllers" id="0O8-Au-L75"/>
                         <segue destination="eye-sp-pk1" kind="relationship" relationship="viewControllers" id="R8F-Fb-QK1"/>
                         <segue destination="O4e-92-560" kind="relationship" relationship="viewControllers" id="hfI-tt-D6J"/>
@@ -680,6 +733,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mWn-EM-hKd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ivM-4P-dAS"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="yWN-B8-5b2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ynh-gx-a0j">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -693,6 +747,25 @@
             </objects>
             <point key="canvasLocation" x="70" y="-3271"/>
         </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="4E2-QY-If0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dj5-RG-itw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Txo-hj-tn2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMd-5k-pHx">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MUl-vo-moc" kind="relationship" relationship="rootViewController" id="n3a-Ed-g3q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tNX-4u-gdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-1841"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -700,6 +773,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Add-Pb-s6o"/>
+        <segue reference="02Q-Vw-FYT"/>
     </inferredMetricsTieBreakers>
 </document>

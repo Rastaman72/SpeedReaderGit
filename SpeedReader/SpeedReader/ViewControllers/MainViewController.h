@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UITabBarController
-
+@interface MainViewController : UITabBarController<UITabBarControllerDelegate>
+@property(nonatomic,retain)id selectedViewController;
 @end

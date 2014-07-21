@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AccountTable.h"
+#import "AppDelegate.h"
 
-@interface DeleteAccountViewController : UIViewController
-
+@interface DeleteAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UITabBarItem *deleteTabBar;
+- (IBAction)deletePush:(id)sender;
+@property (weak, nonatomic) IBOutlet AccountTable *accountTable;
+@property(nonatomic,retain)NSMutableArray* userList;
+@property(nonatomic,retain)AppDelegate *delegate;
+@property(nonatomic,assign)int toDelete;
 @end

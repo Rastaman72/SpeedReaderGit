@@ -26,9 +26,16 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    _userList = [[NSMutableArray alloc]initWithArray:delegate.myProperty];
+     [self.accountTable reloadData];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
         // Do any additional setup after loading the view.
     
 //    UserAccount* test=[UserAccount initAccountWithLogin:@"Test1" andImage:@"Test1"];
