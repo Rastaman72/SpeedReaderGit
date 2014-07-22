@@ -37,12 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
-{
-    [self.tabBarController.delegate tabBarController:self.tabBarController shouldSelectViewController:[[self viewControllers] objectAtIndex:2]];
-    [self.tabBarController setSelectedIndex:2];
-    return YES;
-}
+
 
 /*
 #pragma mark - Navigation

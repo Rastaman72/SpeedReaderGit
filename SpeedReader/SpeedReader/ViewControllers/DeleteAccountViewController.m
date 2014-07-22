@@ -101,7 +101,7 @@
         [_delegate.myProperty removeObjectAtIndex:_toDelete];
         _userList = [[NSMutableArray alloc]initWithArray:_delegate.myProperty];
         [self.accountTable reloadData];
-
+		
         
     }
 }

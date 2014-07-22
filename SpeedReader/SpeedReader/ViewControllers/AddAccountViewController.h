@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UserAccount.h"
-
+#import "GDataXMLNode.h"
+#import "UserParser.h"
 @interface AddAccountViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *addAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *addAccountDescription;

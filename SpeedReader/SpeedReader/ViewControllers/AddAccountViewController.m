@@ -55,22 +55,42 @@
 }
 
 
+- (void)saveUser {
+    NSError* error;
+    NSData *user =[UserParser saveUser:_theNewAccount];
+   // NSData *user = [_theNewAccount.login dataUsingEncoding:NSUTF8StringEncoding];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    
+    NSString *dataPath = [documentsPath stringByAppendingPathComponent:_theNewAccount.login];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
+    
+    
+    NSString *filePath = [dataPath stringByAppendingPathComponent:@"user.xml"]; //Add the file name
+    [user writeToFile:filePath atomically:YES];
+}
+
 - (IBAction)addAccountPush:(id)sender {
     if([_addAccountPasswordCheckBox isOn])
     {
         if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
         {
             self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:_addAccountPasswordField.text];
+            
+            
         }
     }
     else
         self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
-     [[self navigationController]popToRootViewControllerAnimated:YES];
+    [[self navigationController]popToRootViewControllerAnimated:YES];
     
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [delegate.myProperty addObject:_theNewAccount];
     
-    
+    [self saveUser]; //Write the file
+   
     self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
 }
 

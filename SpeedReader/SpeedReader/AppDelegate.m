@@ -10,6 +10,7 @@
 #import "RootLessonTableViewController.h" 
 #import "DetailLessonViewController.h"
 #import "LessonsViewController.h"
+#import "UserParser.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,8 +31,12 @@
     tabBarItem4.title = [NSString stringWithFormat:NSLocalizedString(@"Import", nil)];
     tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
    
+    
+
+    
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     delegate.myProperty=[[NSMutableArray alloc]init];
+    delegate.myProperty=[NSMutableArray arrayWithArray:[UserParser loadUser]];
     
      return YES;
 }
@@ -64,5 +69,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
 
 @end

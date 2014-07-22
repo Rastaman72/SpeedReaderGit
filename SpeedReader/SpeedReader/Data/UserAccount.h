@@ -8,6 +8,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GDataXMLNode.h"
 
 @interface UserAccount : NSObject
 @property (nonatomic,retain)NSString* login;

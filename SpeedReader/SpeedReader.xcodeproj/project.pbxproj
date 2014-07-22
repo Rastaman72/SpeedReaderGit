@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E90248DB197D42CF004ADAEC /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6ED1977F3B100846F31 /* ExercisesData.m */; };
 		E915D6F21977F48A00846F31 /* RootExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */; };
 		E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */; };
@@ -21,6 +22,7 @@
 		E935AA171976EA3F00409E7B /* LessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA161976EA3F00409E7B /* LessonData.m */; };
 		E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA1B1976F48900409E7B /* LessonsViewController.m */; };
 		E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E939E1BB197AA60500EAD654 /* AccountTable.m */; };
+		E9A18158197E77E60046B48E /* UserParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18157197E77E60046B48E /* UserParser.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
 		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
 		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
@@ -59,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E90248D4197D2D81004ADAEC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E90248DA197D42CF004ADAEC /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		E90248DB197D42CF004ADAEC /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 		E915D6EC1977F3B100846F31 /* ExercisesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesData.h; path = SpeedReader/Data/ExercisesData.h; sourceTree = "<group>"; };
 		E915D6ED1977F3B100846F31 /* ExercisesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesData.m; path = SpeedReader/Data/ExercisesData.m; sourceTree = "<group>"; };
 		E915D6EF1977F3D100846F31 /* ExercisesSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExercisesSelectionDelegate.h; path = SpeedReader/Data/ExercisesSelectionDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +95,8 @@
 		E935AA1B1976F48900409E7B /* LessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonsViewController.m; path = SpeedReader/ViewControllers/LessonsViewController.m; sourceTree = "<group>"; };
 		E939E1BA197AA60500EAD654 /* AccountTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccountTable.h; path = SpeedReader/Data/AccountTable.h; sourceTree = "<group>"; };
 		E939E1BB197AA60500EAD654 /* AccountTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccountTable.m; path = SpeedReader/Data/AccountTable.m; sourceTree = "<group>"; };
+		E9A18156197E77E60046B48E /* UserParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserParser.h; path = SpeedReader/Data/UserParser.h; sourceTree = "<group>"; };
+		E9A18157197E77E60046B48E /* UserParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserParser.m; path = SpeedReader/Data/UserParser.m; sourceTree = "<group>"; };
 		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +167,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E90248D9197D42CF004ADAEC /* ExternalLib */ = {
+			isa = PBXGroup;
+			children = (
+				E90248DA197D42CF004ADAEC /* GDataXMLNode.h */,
+				E90248DB197D42CF004ADAEC /* GDataXMLNode.m */,
+			);
+			name = ExternalLib;
+			path = SpeedReader/ExternalLib;
+			sourceTree = "<group>";
+		};
 		E915D6E31977F23500846F31 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +294,8 @@
 				E9E86D39197AB0FC00CE362D /* AccountTableCellTableViewCell.m */,
 				E9E86D3B197AB2A600CE362D /* UserAccount.h */,
 				E9E86D3C197AB2A600CE362D /* UserAccount.m */,
+				E9A18156197E77E60046B48E /* UserParser.h */,
+				E9A18157197E77E60046B48E /* UserParser.m */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -284,6 +303,7 @@
 		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
+				E90248D9197D42CF004ADAEC /* ExternalLib */,
 				E935AA181976EA4500409E7B /* Data */,
 				E9E5144C1976A5D1001FDA03 /* ViewControllers */,
 				E9E5140D1976A231001FDA03 /* SpeedReader */,
@@ -305,6 +325,7 @@
 		E9E514061976A231001FDA03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E90248D4197D2D81004ADAEC /* CoreData.framework */,
 				E9E514071976A231001FDA03 /* Foundation.framework */,
 				E9E514091976A231001FDA03 /* CoreGraphics.framework */,
 				E9E5140B1976A231001FDA03 /* UIKit.framework */,
@@ -477,6 +498,7 @@
 				E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */,
 				E9E86D3A197AB0FC00CE362D /* AccountTableCellTableViewCell.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
+				E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */,
 				E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
 				E915D6FC1977FC6100846F31 /* StatisticsData.m in Sources */,
@@ -490,6 +512,7 @@
 				E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
+				E9A18158197E77E60046B48E /* UserParser.m in Sources */,
 				E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */,
 				E9E514181976A231001FDA03 /* AppDelegate.m in Sources */,
 				E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */,
@@ -653,7 +676,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedReader/SpeedReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "SpeedReader/SpeedReader-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -669,7 +698,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedReader/SpeedReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "SpeedReader/SpeedReader-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
