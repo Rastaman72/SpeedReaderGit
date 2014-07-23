@@ -11,5 +11,6 @@
 @interface StartViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
 - (IBAction)logOutPush:(id)sender;
-
+@property (weak, nonatomic) IBOutlet UIButton *settingsBUtton;
+- (IBAction)settingsPush:(id)sender;
 @end

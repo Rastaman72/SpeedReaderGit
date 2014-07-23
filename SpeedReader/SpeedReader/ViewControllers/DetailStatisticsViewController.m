@@ -67,7 +67,7 @@
     self.popover = pc;
     
     //Set the title of the bar button item
-    barButtonItem.title = @"Statistic";
+    barButtonItem.title = @"Statistic     ";
     _logOutButton.title =@"Log Out";
     NSMutableArray* buttons=[[NSMutableArray alloc]init];
     [buttons addObject:barButtonItem];

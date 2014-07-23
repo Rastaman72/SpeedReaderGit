@@ -67,7 +67,7 @@
     self.popover = pc;
     
     //Set the title of the bar button item
-    barButtonItem.title = @"Lessons         ";
+    barButtonItem.title = @"Lessons     ";
     _logOutButton.title =@"Log Out";
     NSMutableArray* buttons=[[NSMutableArray alloc]init];
     [buttons addObject:barButtonItem];
@@ -102,5 +102,7 @@
   
         [self dismissViewControllerAnimated:YES completion:nil];
     
+}
+- (IBAction)settingsPush:(id)sender {
 }
 @end

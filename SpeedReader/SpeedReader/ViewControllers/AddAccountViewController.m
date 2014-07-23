@@ -70,6 +70,24 @@
     
     NSString *filePath = [dataPath stringByAppendingPathComponent:@"user.xml"]; //Add the file name
     [user writeToFile:filePath atomically:YES];
+    
+    [self saveSettings];
+}
+
+
+-(void)saveSettings
+{
+    NSData *user =[UserParser saveSettings];
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    
+    NSString *dataPath = [documentsPath stringByAppendingPathComponent:_theNewAccount.login];
+    NSString *filePath = [dataPath stringByAppendingPathComponent:@"settings.xml"]; //Add the file name
+    [user writeToFile:filePath atomically:YES];
+
+    
+    
 }
 
 - (IBAction)addAccountPush:(id)sender {

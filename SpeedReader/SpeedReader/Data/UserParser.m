@@ -105,11 +105,12 @@
     GDataXMLElement * dateElement =
     [GDataXMLNode elementWithName:@"date" stringValue:dateString];
     
-   
+    
     [userElement addChild:nameElement];
-        [userElement addChild:imageElement];
-        [userElement addChild:dateElement];
-     [dataElement addChild:userElement];
+    [userElement addChild:imageElement];
+    [userElement addChild:dateElement];
+    
+    [dataElement addChild:userElement];
     
     GDataXMLDocument *document = [[GDataXMLDocument alloc]
                                    initWithRootElement:dataElement];
@@ -122,6 +123,34 @@
 //    NSLog(@"Saving xml data to %@...", filePath);
 //    [xmlData writeToFile:filePath atomically:YES];
 //    
+}
+
+
++ (NSData*)saveSettings {
+    
+    GDataXMLElement * dataElement = [GDataXMLNode elementWithName:@"data"];
+    
+    
+    GDataXMLElement * teacherElement =
+    [GDataXMLNode elementWithName:@"teacher"];
+    GDataXMLElement * interfaceElemenet =
+    [GDataXMLNode elementWithName:@"interface" stringValue:@"1"];
+    GDataXMLElement * lastUsedTextElement =
+    [GDataXMLNode elementWithName:@"lastUsedText" stringValue:@"0"];
+    GDataXMLElement * lastLessonDone =
+    [GDataXMLNode elementWithName:@"lastLessonDone" stringValue:@"-1"];
+    
+    
+    [teacherElement addChild:interfaceElemenet];
+    [teacherElement addChild:lastUsedTextElement];
+    [teacherElement addChild:lastLessonDone];
+    [dataElement addChild:teacherElement];
+    
+    GDataXMLDocument *document = [[GDataXMLDocument alloc]
+                                  initWithRootElement:dataElement];
+    
+    NSData *xmlData = document.XMLData;
+    return xmlData;
 }
 
 

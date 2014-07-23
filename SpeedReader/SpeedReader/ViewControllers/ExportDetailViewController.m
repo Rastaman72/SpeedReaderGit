@@ -1,18 +1,18 @@
 //
-//  StartViewController.m
+//  ExportDetailViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/17/14.
+//  Created by LGBS dev on 7/23/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "StartViewController.h"
+#import "ExportDetailViewController.h"
 
-@interface StartViewController ()
+@interface ExportDetailViewController ()
 
 @end
 
-@implementation StartViewController
+@implementation ExportDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,7 +24,13 @@
 }
 
 - (void)viewDidLoad
-{
+{//
+    //dodac wysuzkiwanie miejsce na dysku do zapisu w spakowanym formacie jakims
+    //dodac obsluge dodawania do maila
+    //dodac obsluge importowania konta
+    //!!!!!!!!!!!!!!
+    
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -46,11 +52,4 @@
 }
 */
 
-- (IBAction)logOutPush:(id)sender {
-   
-        [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
-- (IBAction)settingsPush:(id)sender {
-}
 @end

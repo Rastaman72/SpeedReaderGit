@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="RZD-Xc-RTk">
-                                <rect key="frame" x="25" y="166" width="663" height="592"/>
+                                <rect key="frame" x="25" y="216" width="663" height="592"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -89,18 +89,18 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Cn-PO-jhA">
-                                <rect key="frame" x="197" y="82" width="491" height="21"/>
+                                <rect key="frame" x="197" y="132" width="491" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="7D6-hW-KA3">
-                                <rect key="frame" x="25" y="40" width="164" height="128"/>
+                                <rect key="frame" x="25" y="90" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" id="dII-ne-FGx">
-                                <rect key="frame" x="5" y="-4" width="703" height="44"/>
+                                <rect key="frame" x="1" y="23" width="702" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="Rbd-Yq-g9U">
@@ -108,6 +108,19 @@
                                             <connections>
                                                 <action selector="logOutPush:" destination="26t-SZ-rBp" id="zuI-gh-Kaz"/>
                                             </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="f4Q-pi-mr7">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ch6-x1-c0y">
+                                                <rect key="frame" x="626" y="5" width="60" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Settings">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="settingsPush:" destination="26t-SZ-rBp" eventType="touchUpInside" id="YZT-0J-v4t"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -117,11 +130,13 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="decription" destination="RZD-Xc-RTk" id="1V2-4p-q28"/>
                         <outlet property="header" destination="1Cn-PO-jhA" id="ahl-Gr-FUd"/>
                         <outlet property="logOutButton" destination="0Tp-5B-7zY" id="iNz-PL-vNh"/>
                         <outlet property="navBarItem" destination="Rbd-Yq-g9U" id="i9n-5T-PW4"/>
+                        <outlet property="settingsButton" destination="ch6-x1-c0y" id="nlZ-FZ-qRs"/>
                         <outlet property="userImage" destination="7D6-hW-KA3" id="rKj-Hr-waT"/>
                     </connections>
                 </viewController>
@@ -138,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="36z-LC-78P">
-                                <rect key="frame" x="0.0" y="0.0" width="703" height="44"/>
+                                <rect key="frame" x="0.0" y="23" width="703" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="phd-jZ-0Bl">
@@ -148,11 +163,24 @@
                                                 <action selector="logOutPush:" destination="Mh8-WK-DLF" id="Ili-Ue-D6s"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="ufw-dg-63I">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="m6I-o6-wjY">
+                                                <rect key="frame" x="627" y="5" width="60" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Settings">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="settingsPush:" destination="Mh8-WK-DLF" eventType="touchUpInside" id="lYC-ZE-Gfj"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="WMT-59-mSo">
-                                <rect key="frame" x="20" y="183" width="663" height="592"/>
+                                <rect key="frame" x="20" y="216" width="663" height="592"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -160,36 +188,34 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MkG-TF-5CC">
-                                <rect key="frame" x="192" y="99" width="491" height="21"/>
+                                <rect key="frame" x="192" y="132" width="491" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FeE-mS-yLK">
-                                <rect key="frame" x="20" y="57" width="164" height="128"/>
+                                <rect key="frame" x="20" y="90" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="pox-YV-FrI"/>
-                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="9sW-ih-WHC"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="decription" destination="WMT-59-mSo" id="gcq-WE-x1m"/>
                         <outlet property="header" destination="MkG-TF-5CC" id="kJs-Lh-tSD"/>
                         <outlet property="logOutButton" destination="HIo-Xe-mJO" id="iky-xW-k0E"/>
                         <outlet property="navBarItem" destination="phd-jZ-0Bl" id="aQk-xW-nZd"/>
+                        <outlet property="settingsButton" destination="m6I-o6-wjY" id="t2B-zr-jcJ"/>
                         <outlet property="userImage" destination="FeE-mS-yLK" id="lGp-4e-6iU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GAR-Gm-l9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4543" y="1581"/>
+            <point key="canvasLocation" x="5517" y="1581"/>
         </scene>
         <!--Root Statistics Table View Controller - Root View Controller-->
         <scene sceneID="YV8-h3-sES">
@@ -230,7 +256,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="D0Q-up-rUp">
-                                <rect key="frame" x="4" y="0.0" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="23" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="LON-Jl-KrX">
@@ -239,11 +265,24 @@
                                                 <action selector="logOutPush:" destination="0uU-tb-aSH" id="bTT-Df-RSP"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="UJh-ZB-Avd">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8G5-Eb-MT6">
+                                                <rect key="frame" x="692" y="5" width="60" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Settings">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="settingsPush:" destination="0uU-tb-aSH" eventType="touchUpInside" id="jWE-s9-A1m"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="Yhx-jL-GhU">
-                                <rect key="frame" x="20" y="182" width="663" height="592"/>
+                                <rect key="frame" x="20" y="216" width="663" height="592"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -251,14 +290,14 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mSN-Pe-iqF">
-                                <rect key="frame" x="192" y="98" width="491" height="21"/>
+                                <rect key="frame" x="192" y="132" width="491" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FHl-eT-JaR">
-                                <rect key="frame" x="20" y="56" width="164" height="128"/>
+                                <rect key="frame" x="20" y="90" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -270,12 +309,13 @@
                         <outlet property="header" destination="mSN-Pe-iqF" id="zXe-Wc-4TP"/>
                         <outlet property="logOutButton" destination="0gw-Lw-dd4" id="EmL-dg-Rsh"/>
                         <outlet property="navBarItem" destination="LON-Jl-KrX" id="LFm-mb-gwT"/>
+                        <outlet property="settingsButton" destination="8G5-Eb-MT6" id="80w-Uw-5XB"/>
                         <outlet property="userImage" destination="FHl-eT-JaR" id="XX5-iw-PYf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TW-19-ssI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4379" y="-632"/>
+            <point key="canvasLocation" x="5343" y="-560"/>
         </scene>
         <!--Root Exercises Table View Controller - Root View Controller-->
         <scene sceneID="UjS-X9-ze1">
@@ -365,7 +405,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xye-gS-IFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3203" y="1057"/>
+            <point key="canvasLocation" x="4177" y="1057"/>
         </scene>
         <!--Root Lesson Table View Controller - Root View Controller-->
         <scene sceneID="uh8-JJ-KxD">
@@ -425,7 +465,9 @@
         <scene sceneID="vz0-ss-W7u">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="FbG-8Y-W1h" customClass="ModuleViewController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="7Oy-Ii-bH8"/>
+                    <navigationItem key="navigationItem" id="7Oy-Ii-bH8">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="4PC-Dd-rcI"/>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8fy-I0-4eG">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
@@ -433,6 +475,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainNavBar" destination="7Oy-Ii-bH8" id="68H-rv-hbG"/>
                         <segue destination="ecE-jW-EYN" kind="relationship" relationship="viewControllers" id="qmd-Is-ViB"/>
                         <segue destination="RQ4-eI-Xlc" kind="relationship" relationship="viewControllers" id="9gJ-6q-gZu"/>
                         <segue destination="0W6-7j-nca" kind="relationship" relationship="viewControllers" id="BWZ-Ha-OXR"/>
@@ -452,7 +495,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="fde-Jx-SL5">
-                                <rect key="frame" x="0.0" y="32" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="23" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="TVk-Bp-apX">
@@ -460,6 +503,19 @@
                                             <connections>
                                                 <action selector="logOutPush:" destination="ecE-jW-EYN" id="Omq-S6-qmz"/>
                                             </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="rs8-Iy-Edk">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="A8G-XO-Szs">
+                                                <rect key="frame" x="692" y="5" width="60" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Settings">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="settingsPush:" destination="ecE-jW-EYN" eventType="touchUpInside" id="jMO-O4-oKz"/>
+                                                </connections>
+                                            </button>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -470,6 +526,7 @@
                     <tabBarItem key="tabBarItem" title="Start" id="rdh-0T-MBj"/>
                     <connections>
                         <outlet property="logOutButton" destination="0Ts-Bh-ODH" id="jN4-LX-zGS"/>
+                        <outlet property="settingsBUtton" destination="A8G-XO-Szs" id="zcB-od-K3l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0n-AO-PFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -681,7 +738,7 @@
                         <segue destination="Dj5-RG-itw" kind="relationship" relationship="viewControllers" id="qaa-GZ-1pA"/>
                         <segue destination="oKe-oj-JWU" kind="relationship" relationship="viewControllers" id="0O8-Au-L75"/>
                         <segue destination="eye-sp-pk1" kind="relationship" relationship="viewControllers" id="R8F-Fb-QK1"/>
-                        <segue destination="O4e-92-560" kind="relationship" relationship="viewControllers" id="hfI-tt-D6J"/>
+                        <segue destination="XlY-Rt-0RJ" kind="relationship" relationship="viewControllers" id="hfI-tt-D6J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F83-ha-Jhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -712,7 +769,7 @@
             </objects>
             <point key="canvasLocation" x="24" y="498"/>
         </scene>
-        <!--Export Account View Controller - Item-->
+        <!--Export Account View Controller-->
         <scene sceneID="ube-ET-WWs">
             <objects>
                 <viewController id="O4e-92-560" customClass="ExportAccountViewController" sceneMemberID="viewController">
@@ -721,10 +778,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rUo-Qs-zHU">
-                                <rect key="frame" x="360" y="583" width="56" height="30"/>
+                                <rect key="frame" x="356" y="583" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Delete">
+                                <state key="normal" title="Export">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -770,15 +827,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wxt-G7-gCS"/>
+                    <navigationItem key="navigationItem" id="dDL-6a-hht"/>
                     <connections>
                         <outlet property="accountTable" destination="o2Y-8L-vzQ" id="awZ-s6-r3I"/>
                         <outlet property="exportTabBar" destination="wxt-G7-gCS" id="8E6-uD-82r"/>
+                        <segue destination="6rF-fe-pOE" kind="push" identifier="exportDetail" id="QEX-Qa-WSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMs-HT-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="1705"/>
+            <point key="canvasLocation" x="1014" y="1705"/>
+        </scene>
+        <!--Export Detail View Controller-->
+        <scene sceneID="i2p-lB-aGD">
+            <objects>
+                <viewController id="6rF-fe-pOE" customClass="ExportDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ekw-80-LmS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fIy-Fo-5NR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DF0-0V-6FN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1977" y="1702"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="FpZ-OG-zPI">
@@ -818,6 +891,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNX-4u-gdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60" y="-1841"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="ILw-5x-Kdd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XlY-Rt-0RJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wxt-G7-gCS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkf-Vo-dGF">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O4e-92-560" kind="relationship" relationship="rootViewController" id="JGI-Xn-Ha0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhZ-BZ-7cu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="1705"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

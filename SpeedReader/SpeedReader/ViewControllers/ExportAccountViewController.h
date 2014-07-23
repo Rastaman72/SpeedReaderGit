@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AccountTable.h"
 #import "AppDelegate.h"
+#import "ExportDetailViewController.h"
 
 #import "GDataXMLNode.h"
 @interface ExportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>

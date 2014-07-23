@@ -20,5 +20,7 @@
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
 - (IBAction)logOutPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
+- (IBAction)settingsPush:(id)sender;
 
 @end

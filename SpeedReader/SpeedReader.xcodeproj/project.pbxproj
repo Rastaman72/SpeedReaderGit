@@ -17,6 +17,7 @@
 		E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7031977FD2700846F31 /* DetailStatisticsViewController.m */; };
 		E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7061977FD3E00846F31 /* StatisticsViewController.m */; };
 		E915D70B197804A400846F31 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D70A197804A400846F31 /* StartViewController.m */; };
+		E924EE8C198048C200B93C66 /* ExportDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E924EE8B198048C200B93C66 /* ExportDetailViewController.m */; };
 		E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA101976E70F00409E7B /* RootLessonTableViewController.m */; };
 		E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA131976E79000409E7B /* DetailLessonViewController.m */; };
 		E935AA171976EA3F00409E7B /* LessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA161976EA3F00409E7B /* LessonData.m */; };
@@ -84,6 +85,8 @@
 		E915D7061977FD3E00846F31 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = SpeedReader/ViewControllers/StatisticsViewController.m; sourceTree = "<group>"; };
 		E915D709197804A400846F31 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = SpeedReader/ViewControllers/StartViewController.h; sourceTree = "<group>"; };
 		E915D70A197804A400846F31 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = SpeedReader/ViewControllers/StartViewController.m; sourceTree = "<group>"; };
+		E924EE8A198048C200B93C66 /* ExportDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportDetailViewController.h; path = SpeedReader/ViewControllers/ExportDetailViewController.h; sourceTree = "<group>"; };
+		E924EE8B198048C200B93C66 /* ExportDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportDetailViewController.m; path = SpeedReader/ViewControllers/ExportDetailViewController.m; sourceTree = "<group>"; };
 		E935AA0F1976E70F00409E7B /* RootLessonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootLessonTableViewController.h; path = SpeedReader/ViewControllers/RootLessonTableViewController.h; sourceTree = "<group>"; };
 		E935AA101976E70F00409E7B /* RootLessonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootLessonTableViewController.m; path = SpeedReader/ViewControllers/RootLessonTableViewController.m; sourceTree = "<group>"; };
 		E935AA121976E79000409E7B /* DetailLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailLessonViewController.h; path = SpeedReader/ViewControllers/DetailLessonViewController.h; sourceTree = "<group>"; };
@@ -272,6 +275,15 @@
 			name = StartView;
 			sourceTree = "<group>";
 		};
+		E924EE89198048A000B93C66 /* ExportAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E924EE8A198048C200B93C66 /* ExportDetailViewController.h */,
+				E924EE8B198048C200B93C66 /* ExportDetailViewController.m */,
+			);
+			name = ExportAccount;
+			sourceTree = "<group>";
+		};
 		E935AA181976EA4500409E7B /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +394,7 @@
 		E9E5144C1976A5D1001FDA03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E924EE89198048A000B93C66 /* ExportAccount */,
 				E915D6E41977F24E00846F31 /* Lesson */,
 				E915D7081978048B00846F31 /* StartView */,
 				E915D6FE1977FCEF00846F31 /* Statistics */,
@@ -512,6 +525,7 @@
 				E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
+				E924EE8C198048C200B93C66 /* ExportDetailViewController.m in Sources */,
 				E9A18158197E77E60046B48E /* UserParser.m in Sources */,
 				E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */,
 				E9E514181976A231001FDA03 /* AppDelegate.m in Sources */,

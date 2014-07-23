@@ -14,5 +14,6 @@
 
 + (UserAccount *)loadUser;
 + (NSData*)saveUser:(UserAccount *)user;
++ (NSData*)saveSettings;
 @property(nonatomic,retain)NSString *documentsDirectory;
 @end

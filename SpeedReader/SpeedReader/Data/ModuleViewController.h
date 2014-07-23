@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ModuleViewController : UITabBarController
+@property (weak, nonatomic) IBOutlet UINavigationItem *mainNavBar;
 
 @end
