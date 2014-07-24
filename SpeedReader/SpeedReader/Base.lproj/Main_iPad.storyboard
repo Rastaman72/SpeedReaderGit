@@ -845,9 +845,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ekw-80-LmS">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GND-Vr-JSZ">
+                                <rect key="frame" x="249" y="725" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPush:" destination="6rF-fe-pOE" eventType="touchUpInside" id="c4t-5g-8u2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="fIy-Fo-5NR"/>
+                    <connections>
+                        <outlet property="selectFolder" destination="GND-Vr-JSZ" id="VD4-48-OMO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DF0-0V-6FN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

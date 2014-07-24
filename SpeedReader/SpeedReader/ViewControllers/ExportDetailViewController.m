@@ -7,6 +7,13 @@
 //
 
 #import "ExportDetailViewController.h"
+#import "ZipFile.h"
+
+
+#import "ZipException.h"
+#import "FileInZipInfo.h"
+#import "ZipWriteStream.h"
+#import "ZipReadStream.h"
 
 @interface ExportDetailViewController ()
 
@@ -41,6 +48,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -52,4 +63,62 @@
 }
 */
 
+- (IBAction)selectPush:(id)sender
+{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *docsPath = [paths objectAtIndex:0]; //Get the docs directory
+    
+    NSString *dataPath = [docsPath stringByAppendingPathComponent:@"UserToExport.zip"];
+    NSData *userXmlData=[[NSData alloc]init];
+    NSData *settingsXmlData=[[NSData alloc]init];
+
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSArray *fileList = [manager contentsOfDirectoryAtPath:docsPath error:nil];
+    
+    
+    for (NSString *s in fileList)
+    {
+        if([s isEqualToString:_userToExport.login])
+        {
+            NSLog(@"%@", s);
+            NSString* docPath=@"/";
+            docPath=[docPath stringByAppendingString:s];
+            NSString *userDocumentsPath = [[docsPath stringByAppendingString:docPath]
+                                       stringByAppendingPathComponent:@"user.xml"];
+            NSString *settingsDocumentsPath = [[docsPath stringByAppendingString:docPath]
+                                       stringByAppendingPathComponent:@"settings.xml"];
+            if ( ![[NSFileManager defaultManager] fileExistsAtPath:userDocumentsPath ])
+            {
+            }
+            else
+            {
+                userXmlData = [[NSMutableData alloc] initWithContentsOfFile:userDocumentsPath];
+                settingsXmlData=[[NSMutableData alloc] initWithContentsOfFile:settingsDocumentsPath];
+            }
+            
+            
+            
+            
+            
+            
+            //////////////////
+            
+            
+            ZipFile *toExport =[[ZipFile alloc]initWithFileName:dataPath mode:ZipFileModeCreate];
+            ZipWriteStream *stream1= [toExport writeFileInZipWithName:@"user.xml" fileDate:[NSDate dateWithTimeIntervalSinceNow:-86400.0] compressionLevel:ZipCompressionLevelBest];
+            [stream1 writeData:userXmlData];
+            [stream1 finishedWriting];
+            
+            
+            
+            NSString *file2name= @"x/y/z/xyz.txt";
+            ZipWriteStream *stream2= [toExport writeFileInZipWithName:@"settings.xml" compressionLevel:ZipCompressionLevelNone];
+            [stream2 writeData:settingsXmlData];
+            [stream2 finishedWriting];
+            [toExport close];
+        }
+    }
+}
 @end

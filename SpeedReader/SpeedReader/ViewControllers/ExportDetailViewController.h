@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UserAccount.h"
 @interface ExportDetailViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *selectFolder;
+- (IBAction)selectPush:(id)sender;
 @property(nonatomic,retain)UserAccount* userToExport;
 @end
