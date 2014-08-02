@@ -32,7 +32,6 @@
 
 - (void)viewDidLoad
 {//
-    //dodac wysuzkiwanie miejsce na dysku do zapisu w spakowanym formacie jakims
     //dodac obsluge dodawania do maila
     //dodac obsluge importowania konta
     //!!!!!!!!!!!!!!
@@ -69,7 +68,9 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsPath = [paths objectAtIndex:0]; //Get the docs directory
     
-    NSString *dataPath = [docsPath stringByAppendingPathComponent:@"UserToExport.zip"];
+    NSString* folderName=self.userToExport.login;
+    folderName=[folderName stringByAppendingString:@".zip"];
+    NSString *dataPath = [docsPath stringByAppendingPathComponent:folderName];
     NSData *userXmlData=[[NSData alloc]init];
     NSData *settingsXmlData=[[NSData alloc]init];
 
@@ -112,13 +113,12 @@
             [stream1 finishedWriting];
             
             
-            
-            NSString *file2name= @"x/y/z/xyz.txt";
             ZipWriteStream *stream2= [toExport writeFileInZipWithName:@"settings.xml" compressionLevel:ZipCompressionLevelNone];
             [stream2 writeData:settingsXmlData];
             [stream2 finishedWriting];
             [toExport close];
         }
     }
+    [[self navigationController]popViewControllerAnimated:YES];
 }
 @end

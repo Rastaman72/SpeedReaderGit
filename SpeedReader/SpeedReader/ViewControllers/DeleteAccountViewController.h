@@ -15,6 +15,7 @@
 - (IBAction)deletePush:(id)sender;
 @property (weak, nonatomic) IBOutlet AccountTable *accountTable;
 @property(nonatomic,retain)NSMutableArray* userList;
-@property(nonatomic,retain)AppDelegate *delegate;
+@property(nonatomic,strong) SharedData* theDataObject;
 @property(nonatomic,assign)int toDelete;
+
 @end

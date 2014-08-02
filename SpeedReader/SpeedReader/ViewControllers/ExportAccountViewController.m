@@ -26,8 +26,9 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    _delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    _userList = [[NSMutableArray alloc]initWithArray:_delegate.myProperty];
+    self.theDataObject = [self theAppDataObject];
+
+    self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
     [self.accountTable reloadData];
 
 }
@@ -105,5 +106,12 @@
     }
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 @end

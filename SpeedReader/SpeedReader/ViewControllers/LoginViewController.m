@@ -11,6 +11,7 @@
 #import "AccountTableCellTableViewCell.h"
 #import "UserAccount.h"
 
+
 @interface LoginViewController ()
 
 @end
@@ -28,14 +29,15 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    _userList = [[NSMutableArray alloc]initWithArray:delegate.myProperty];
-     [self.accountTable reloadData];
+    self.theDataObject = [self theAppDataObject];
+    self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
+    [self.accountTable reloadData];
+    self.chooseUser=-1;
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
+    
         // Do any additional setup after loading the view.
     
 //    UserAccount* test=[UserAccount initAccountWithLogin:@"Test1" andImage:@"Test1"];
@@ -89,8 +91,25 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.chooseUser=indexPath.row;
+}
 
 - (IBAction)loginPush:(id)sender {
-      
+    if (self.chooseUser==-1) {
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"First choose user" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+    }
+    else
+         [self performSegueWithIdentifier:@"LoginToLesson" sender:self];
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 @end

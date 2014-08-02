@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "UserAccount.h"
+#import "AppDelegateDataShared.h"
+
+@class SharedData;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property(nonatomic,retain)NSMutableArray* myProperty;
 
+@property (nonatomic, strong) SharedData* theAppDataObject;
 
 
 @end

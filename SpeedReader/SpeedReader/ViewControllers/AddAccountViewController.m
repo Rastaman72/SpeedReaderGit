@@ -104,9 +104,11 @@
         self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
     [[self navigationController]popToRootViewControllerAnimated:YES];
     
-    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [delegate.myProperty addObject:_theNewAccount];
-    
+    SharedData* theDataObject = [self theAppDataObject];
+    [theDataObject.actuallUserList addObject:self.theNewAccount];
+//    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+//    [delegate.myProperty addObject:_theNewAccount];
+//    
     [self saveUser]; //Write the file
    
     self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
@@ -118,5 +120,13 @@
     [_addAccountPasswordCheckBox setOn:NO];
     _addAccountRePasswordField.text=@"";
     _addAccountRePasswordField.text=@"";
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 @end

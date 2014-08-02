@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AccountTable.h"
-#import "AppDelegate.h"
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 
@@ -17,5 +17,7 @@
 - (IBAction)loginPush:(id)sender;
 @property (weak, nonatomic) IBOutlet AccountTable *accountTable;
 @property(nonatomic,retain)NSMutableArray* userList;
+@property(nonatomic,assign)int chooseUser;
+@property(nonatomic,strong)SharedData* theDataObject;
 
 @end
