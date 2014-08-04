@@ -10,6 +10,9 @@
 #import "UserAccount.h"
 #import "GDataXMLNode.h"
 #import "UserParser.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
+#import "UserAccountForDB.h"
 @interface AddAccountViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *addAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *addAccountDescription;
@@ -27,4 +30,5 @@
 - (IBAction)addAccountPush:(id)sender;
 
 @property(nonatomic,retain)UserAccount* theNewAccount;
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

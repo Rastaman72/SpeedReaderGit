@@ -19,6 +19,8 @@
 		E915D70B197804A400846F31 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D70A197804A400846F31 /* StartViewController.m */; };
 		E91EF1E6198CF92A00069359 /* ListAccountToImportTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */; };
 		E924EE8C198048C200B93C66 /* ExportDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E924EE8B198048C200B93C66 /* ExportDetailViewController.m */; };
+		E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */; };
+		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
 		E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA101976E70F00409E7B /* RootLessonTableViewController.m */; };
 		E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA131976E79000409E7B /* DetailLessonViewController.m */; };
 		E935AA171976EA3F00409E7B /* LessonData.m in Sources */ = {isa = PBXBuildFile; fileRef = E935AA161976EA3F00409E7B /* LessonData.m */; };
@@ -50,6 +52,8 @@
 		E93BC5C519815FA700DE3408 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AB19815FA700DE3408 /* uncompr.c */; };
 		E93BC5C619815FA700DE3408 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AE19815FA700DE3408 /* zutil.c */; };
 		E9A18158197E77E60046B48E /* UserParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18157197E77E60046B48E /* UserParser.m */; };
+		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
+		E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
 		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
 		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
@@ -115,6 +119,7 @@
 		E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListAccountToImportTableViewController.m; path = SpeedReader/ViewControllers/ListAccountToImportTableViewController.m; sourceTree = "<group>"; };
 		E924EE8A198048C200B93C66 /* ExportDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExportDetailViewController.h; path = SpeedReader/ViewControllers/ExportDetailViewController.h; sourceTree = "<group>"; };
 		E924EE8B198048C200B93C66 /* ExportDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExportDetailViewController.m; path = SpeedReader/ViewControllers/ExportDetailViewController.m; sourceTree = "<group>"; };
+		E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedReader.xcdatamodel; sourceTree = "<group>"; };
 		E935AA0F1976E70F00409E7B /* RootLessonTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootLessonTableViewController.h; path = SpeedReader/ViewControllers/RootLessonTableViewController.h; sourceTree = "<group>"; };
 		E935AA101976E70F00409E7B /* RootLessonTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootLessonTableViewController.m; path = SpeedReader/ViewControllers/RootLessonTableViewController.m; sourceTree = "<group>"; };
 		E935AA121976E79000409E7B /* DetailLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailLessonViewController.h; path = SpeedReader/ViewControllers/DetailLessonViewController.h; sourceTree = "<group>"; };
@@ -177,6 +182,10 @@
 		E93BC5AF19815FA700DE3408 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		E9A18156197E77E60046B48E /* UserParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserParser.h; path = SpeedReader/Data/UserParser.h; sourceTree = "<group>"; };
 		E9A18157197E77E60046B48E /* UserParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserParser.m; path = SpeedReader/Data/UserParser.m; sourceTree = "<group>"; };
+		E9AC08BF198FFD6300ACD0C5 /* UserAccountForDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAccountForDB.h; path = SpeedReader/Data/UserAccountForDB.h; sourceTree = "<group>"; };
+		E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAccountForDB.m; path = SpeedReader/Data/UserAccountForDB.m; sourceTree = "<group>"; };
+		E9AC08C31990010B00ACD0C5 /* SettingsForDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsForDB.h; path = SpeedReader/Data/SettingsForDB.h; sourceTree = "<group>"; };
+		E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsForDB.m; path = SpeedReader/Data/SettingsForDB.m; sourceTree = "<group>"; };
 		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -228,6 +237,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */,
 				E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */,
 				E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */,
 				E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */,
@@ -487,9 +497,21 @@
 			path = ZLib;
 			sourceTree = "<group>";
 		};
+		E9AC08C2199000F400ACD0C5 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				E9AC08BF198FFD6300ACD0C5 /* UserAccountForDB.h */,
+				E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */,
+				E9AC08C31990010B00ACD0C5 /* SettingsForDB.h */,
+				E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
 		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
+				E9AC08C2199000F400ACD0C5 /* DB */,
 				E9371E6F198D264C00DFCBF0 /* SharedData */,
 				E90248D9197D42CF004ADAEC /* ExternalLib */,
 				E935AA181976EA4500409E7B /* Data */,
@@ -545,6 +567,7 @@
 				E9E514101976A231001FDA03 /* InfoPlist.strings */,
 				E9E514131976A231001FDA03 /* main.m */,
 				E9E514151976A231001FDA03 /* SpeedReader-Prefix.pch */,
+				E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -694,6 +717,7 @@
 				E9E86D3A197AB0FC00CE362D /* AccountTableCellTableViewCell.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
 				E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */,
+				E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */,
 				E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
 				E93BC5C619815FA700DE3408 /* zutil.c in Sources */,
@@ -708,6 +732,7 @@
 				E93BC5B919815FA700DE3408 /* compress.c in Sources */,
 				E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */,
 				E9E514521976A623001FDA03 /* DeleteAccountViewController.m in Sources */,
+				E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */,
 				E93BC5C419815FA700DE3408 /* trees.c in Sources */,
 				E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */,
 				E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */,
@@ -718,6 +743,7 @@
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
 				E93BC5C219815FA700DE3408 /* inflate.c in Sources */,
 				E93BC5BC19815FA700DE3408 /* gzclose.c in Sources */,
+				E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */,
 				E93BC5C319815FA700DE3408 /* inftrees.c in Sources */,
 				E924EE8C198048C200B93C66 /* ExportDetailViewController.m in Sources */,
 				E93BC5BE19815FA700DE3408 /* gzread.c in Sources */,
@@ -998,6 +1024,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */,
+			);
+			currentVersion = E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */;
+			path = SpeedReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E9E513FC1976A231001FDA03 /* Project object */;
 }

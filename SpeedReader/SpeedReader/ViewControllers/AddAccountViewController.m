@@ -57,6 +57,54 @@
 
 - (void)saveUser {
     NSError* error;
+    
+       NSManagedObjectContext *context =  self.theDataObject.managedObjectContext;
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
+    fetch.entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:context];
+    fetch.predicate = [NSPredicate predicateWithFormat:@"login == %@", [[self.theNewAccount valueForKey:@"login"]description]];
+    NSArray *array = [context executeFetchRequest:fetch error:nil];
+    
+    if ([array count] == 0)
+    {
+       
+        SettingsForDB* userSettings =[NSEntityDescription
+                                      insertNewObjectForEntityForName:@"TeacherSettings"
+                                      inManagedObjectContext:context];
+        userSettings.interface=[[NSNumber alloc]initWithInt:1];
+        userSettings.lastUsedText==[[NSNumber alloc]initWithInt:0];
+        userSettings.lastLessonDone==[[NSNumber alloc]initWithInt:-1];
+        
+        UserAccountForDB *userInfo = [NSEntityDescription
+                                      insertNewObjectForEntityForName:@"User"
+                                      inManagedObjectContext:context];
+        userInfo.login=self.theNewAccount.login;
+        userInfo.userImage=self.theNewAccount.userImage;
+        userInfo.password=self.theNewAccount.password;
+        userInfo.settings=userSettings;
+        
+        
+//        userInfo.login=[self.theNewAccount valueForKey:@"login"];
+//        userInfo.userImage=[self.theNewAccount valueForKey:@"userImage"];
+//        userInfo.password=[self.theNewAccount valueForKey:@"password"];
+        
+        if (![context save:&error])
+        {
+            
+        }
+        else
+        {
+            [self.theDataObject.actuallUserList addObject:userInfo];
+        }
+    
+    
+    
+    /*
+     
+     TO sie przydza dopeior podczas eksportu
+     
+     */
+    /*
+    //create user.xml
     NSData *user =[UserParser saveUser:_theNewAccount];
    // NSData *user = [_theNewAccount.login dataUsingEncoding:NSUTF8StringEncoding];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -71,7 +119,11 @@
     NSString *filePath = [dataPath stringByAppendingPathComponent:@"user.xml"]; //Add the file name
     [user writeToFile:filePath atomically:YES];
     
+    
+    //create settings.xml
     [self saveSettings];
+     */
+}
 }
 
 
@@ -104,8 +156,8 @@
         self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
     [[self navigationController]popToRootViewControllerAnimated:YES];
     
-    SharedData* theDataObject = [self theAppDataObject];
-    [theDataObject.actuallUserList addObject:self.theNewAccount];
+    self.theDataObject = [self theAppDataObject];
+    [self.theDataObject.actuallUserList addObject:self.theNewAccount];
 //    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 //    [delegate.myProperty addObject:_theNewAccount];
 //    

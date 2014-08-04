@@ -44,6 +44,8 @@
     theDataObject.actuallUserList=[[NSMutableArray alloc]init];
     theDataObject.actuallUserList=[NSMutableArray arrayWithArray:[UserParser loadUser]];
     
+  
+    
      return YES;
 }
 

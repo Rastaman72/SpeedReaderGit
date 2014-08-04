@@ -11,6 +11,8 @@
 #import "GDataXMLNode.h"
 #import "UserParser.h"
 #import "ListAccountToImportTableViewController.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface ImportAccountViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *importAccountFileLocalizationField;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountFileLocalization;
@@ -26,9 +28,13 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *importAccountRePassword;
 @property (weak, nonatomic) IBOutlet UITextField *importAccountRePasswordField;
+- (IBAction)passwordSet:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *importAccountButton;
 - (IBAction)importAccountPush:(id)sender;
+- (IBAction)addUserPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *addUserButton;
 @property(nonatomic,strong)NSMutableArray * userAccounts;
 
 @property(nonatomic,retain)UserAccount* theNewAccount;
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

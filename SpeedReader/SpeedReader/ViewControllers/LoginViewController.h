@@ -10,7 +10,7 @@
 #import "AccountTable.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-@interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,NSFetchedResultsControllerDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;

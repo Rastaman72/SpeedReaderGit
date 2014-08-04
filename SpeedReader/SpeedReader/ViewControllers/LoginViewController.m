@@ -30,7 +30,29 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.theDataObject = [self theAppDataObject];
-    self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
+    
+    
+    NSManagedObjectContext *context =  self.theDataObject.managedObjectContext;
+    
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"User" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+    
+    
+    
+    
+    //
+    // konwerter z nsmanagmentobject do accountuser class
+    //
+    
+    
+    
+    self.userList = [self.theDataObject.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    
+    [self.theDataObject.actuallUserList addObjectsFromArray:self.userList];
+   // self.userList=[[NSMutableArray alloc]initWithArray:];
     [self.accountTable reloadData];
     self.chooseUser=-1;
 }

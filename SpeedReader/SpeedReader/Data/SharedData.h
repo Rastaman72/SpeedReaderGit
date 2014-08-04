@@ -11,5 +11,5 @@
 @interface SharedData : AppDataObject
 
 @property (nonatomic,strong)NSMutableArray* importUserList;
-
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @end

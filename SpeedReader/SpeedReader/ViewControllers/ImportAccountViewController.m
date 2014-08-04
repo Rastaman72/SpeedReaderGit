@@ -27,7 +27,9 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    SharedData* theDataObject = [self theAppDataObject];
+    self.theDataObject = [self theAppDataObject];
+    self.importAccountFileLocalizationField.text=[[[self.theDataObject.importUserList firstObject]login]stringByAppendingString:@".zip"];
+    self.importAccountLoginField.text=[[self.theDataObject.importUserList firstObject]login];
 }
 
 - (void)viewDidLoad
@@ -46,6 +48,58 @@
 {
     [self performSegueWithIdentifier:@"ImportToListAccount" sender:self];
 }
+
+- (void)cleanView {
+    self.importAccountFileLocalizationField.text=@"";
+    self.importAccountLoginField.text=@"";
+    self.importAccountImage=nil;
+    [self.importAccountPasswordCheckBox setOn:NO];
+    self.importAccountPasswordField.text=@"";
+    self.importAccountRePasswordField.text=@"";
+}
+
+-(BOOL)checkPassword
+{
+    NSString* password=self.importAccountPasswordField.text;
+    NSString* rePassword=self.importAccountRePasswordField.text;
+    
+    password=[password stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    rePassword=[rePassword stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    return [password isEqualToString:rePassword];
+
+    
+}
+- (IBAction)addUserPush:(id)sender {
+    if ([self.importAccountPasswordCheckBox isOn]) {
+    
+    
+    if([self checkPassword])
+    {
+    [self.theDataObject.actuallUserList addObject:[self.theDataObject.importUserList firstObject]];
+        [self cleanView];
+        
+        self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+    }else
+        {
+            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                 message:@"You put diffrent password in repeat password field"
+                                                                delegate:nil
+                                                       cancelButtonTitle:@"OK"
+                                                       otherButtonTitles:nil];
+            errorAlert.show;
+        }
+    }
+    else
+    {
+    [self.theDataObject.actuallUserList addObject:[self.theDataObject.importUserList firstObject]];
+    
+        [self cleanView];
+    
+    self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+    }
+}
+
 
 #pragma mark - Navigation
 
@@ -85,4 +139,16 @@
 	return theDataObject;
 }
 
+- (IBAction)passwordSet:(id)sender {
+    if([self.importAccountPasswordCheckBox isOn])
+    {
+        self.importAccountPasswordField.enabled=YES;
+        self.importAccountRePasswordField.enabled=YES;
+    }
+    else
+    {
+        self.importAccountPasswordField.enabled=NO;
+        self.importAccountRePasswordField.enabled=NO;
+    }
+}
 @end

@@ -83,6 +83,7 @@
 }
 
 
+# pragma mark create  user XML
 + (NSData*)saveUser:(UserAccount *)user {
     
     
@@ -93,8 +94,6 @@
     NSLog(@"%@",dateString);
     
     GDataXMLElement * dataElement = [GDataXMLNode elementWithName:@"data"];
-    
-    
     GDataXMLElement * userElement =
     [GDataXMLNode elementWithName:@"user"];
     GDataXMLElement * nameElement =
@@ -113,19 +112,13 @@
     [dataElement addChild:userElement];
     
     GDataXMLDocument *document = [[GDataXMLDocument alloc]
-                                   initWithRootElement:dataElement];
-    
+                                  initWithRootElement:dataElement];
     NSData *xmlData = document.XMLData;
     return xmlData;
-    
-//    
-//    NSString *filePath = [self dataFilePath:TRUE];
-//    NSLog(@"Saving xml data to %@...", filePath);
-//    [xmlData writeToFile:filePath atomically:YES];
-//    
 }
 
 
+# pragma mark create  settings XML
 + (NSData*)saveSettings {
     
     GDataXMLElement * dataElement = [GDataXMLNode elementWithName:@"data"];

@@ -10,13 +10,21 @@
 
 @implementation UserAccount
 
+
 +(UserAccount*)initAccountWithLogin : (NSString*)login andImage:(NSString*)userImage andPassword:(NSString*)userPassword
 {
     UserAccount* newUser=[[UserAccount alloc]init];
     newUser.login=login;
-    if(![userPassword isEqualToString:@""])
+    if(userPassword!=nil)
         newUser.password=userPassword;
-    newUser.userImage=userImage;
+        else
+            newUser.password=@"";
+    
+    if(userImage!=nil)
+        newUser.userImage=userImage;
+    else
+        newUser.userImage=@"";
+
     return newUser;
 }
 @end
