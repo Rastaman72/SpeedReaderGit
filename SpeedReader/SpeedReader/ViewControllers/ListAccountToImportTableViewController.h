@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "UserAccountForDB.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface ListAccountToImportTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *accountList;
 @property(nonatomic,strong) NSMutableArray* accountsToImport;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backToListButton;
 - (IBAction)backToListPush:(id)sender;
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

@@ -82,15 +82,8 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (void)unZipFile:(NSString *)filePath
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
-                                                         NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString* filePath=[documentsDirectory stringByAppendingString:@"/"];
-    filePath=[filePath stringByAppendingString:[[[tableView cellForRowAtIndexPath:indexPath] textLabel]text]];
-    
-    
     ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeUnzip];
     
     NSArray *infos= [unzipFile listFileInZipInfos];
@@ -165,9 +158,30 @@
     }
     
     [unzipFile close];
+}
+*/
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* filePath=[documentsDirectory stringByAppendingString:@"/"];
+    filePath=[filePath stringByAppendingString:[[[tableView cellForRowAtIndexPath:indexPath] textLabel]text]];
+    
+    self.theDataObject=[self theAppDataObject];
+    [self.theDataObject unZipFile:filePath];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     
     
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 /*
  // Override to support conditional editing of the table view.
@@ -223,11 +237,5 @@
 }
 
 
-- (SharedData*) theAppDataObject;
-{
-	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
-	SharedData* theDataObject;
-	theDataObject = (SharedData*) theDelegate.theAppDataObject;
-	return theDataObject;
-}
+
 @end

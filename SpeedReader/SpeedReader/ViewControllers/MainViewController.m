@@ -30,15 +30,33 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    }
+    
+}
+
+
+- (void)handleOpenURL:(NSURL *)url {
+    self.theDataObject = [self theAppDataObject];
+    self.theDataObject.urlToFile=[url description];
+    self.theDataObject.arrayUrlToFile=[self.theDataObject.urlToFile pathComponents];
+    NSRange todeleteRange=NSMakeRange(0, 2);
+    [self.theDataObject.arrayUrlToFile removeObjectsInRange:todeleteRange];
+    NSString* filePath=[self.theDataObject.arrayUrlToFile componentsJoinedByString:@"/"];
+    
+    ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeUnzip];
+    
+    NSArray *infos= [unzipFile listFileInZipInfos];
+    [unzipFile goToFirstFileInZip];
+    
+    self.selectedViewController=[self.viewControllers objectAtIndex:3];
+    
+}
+
+
 
 - (void)goToImport
 {
     self.theDataObject = [self theAppDataObject];
-    if(self.theDataObject.urlToFile !=nil)
-    {
-        [self setSelectedIndex:3];
-    }
+    self.theDataObject.urlToFile;
 }
 
 - (void)viewDidLoad

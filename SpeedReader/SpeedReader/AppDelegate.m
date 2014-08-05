@@ -44,25 +44,29 @@
      return YES;
 }
 
+-(BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    if (url != nil && [url isFileURL]) {
+        
+        
+        MainViewController* MVC;
+        MVC=self.window.rootViewController;
+        [MVC handleOpenURL:url];
+    }
+    return YES;
+}
 
--(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    
-
-    self.theAppDataObject.urlToFile=url;
-    
 //    MainViewController* mainView=[[MainViewController alloc]init];
 //    mainView.goToImport;
 //
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main View" bundle: nil];
+  //  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main View" bundle: nil];
         
 //    MainViewController *controller = [MainViewController alloc]init    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
 //    [controller setSelectedIndex:3];
-//    [navController presentViewController:controller animated:YES completion:nil];
+//    [navController presentViewController:controe3ller animated:YES completion:nil];
 
-    return YES;
-    
-}
+
 - (void)deleteUserTempFile
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

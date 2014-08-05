@@ -52,4 +52,83 @@
 - (NSString *)applicationDocumentsDirectory {
     return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
+
+
+- (void)unZipFile:(NSString *)filePath
+{
+    ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeUnzip];
+    
+    NSArray *infos= [unzipFile listFileInZipInfos];
+    [unzipFile goToFirstFileInZip];
+    for (FileInZipInfo* toExtract in infos) {
+        ZipReadStream *read1= [unzipFile readCurrentFileInZip];
+        NSMutableData *data1= [[[NSMutableData alloc] initWithLength:256] autorelease];
+        int bytesRead1= [read1 readDataWithBuffer:data1];
+        
+        NSError*error;
+        GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data1 options:0 error:&error];
+        NSLog(@"%@", doc.rootElement);
+        
+        NSArray *xmlPart = [doc.rootElement elementsForName:@"user"];
+        if (xmlPart!=nil) {
+            //parse user.xml
+            for (GDataXMLElement *xmlElements in xmlPart) {
+                NSString *name;
+                NSString* image;
+                
+                // Name
+                NSArray *names = [xmlElements elementsForName:@"name"];
+                if (names.count > 0) {
+                    GDataXMLElement *firstName = (GDataXMLElement *) [names objectAtIndex:0];
+                    name = firstName.stringValue;
+                } else continue;
+                
+                //Image
+                NSArray *images = [xmlElements elementsForName:@"image"];
+                if (names.count > 0) {
+                    GDataXMLElement *imageName = (GDataXMLElement *) [images objectAtIndex:0];
+                    image = imageName.stringValue;
+                } else continue;
+                
+              
+                
+                bool unique=false;
+                for (int i=0; i<[self.actuallUserList count]; i++) {
+                    UserAccountForDB* toTest=[self.actuallUserList objectAtIndex:i];
+                    if([toTest.login isEqualToString:name])
+                    {
+                        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                        [alert show];
+                        unique=false;
+                        self.importUserList=[[NSMutableArray alloc]init];
+                        break;
+                    }
+                    else
+                    {
+                        unique=true;
+                    }
+                }
+                if([self.actuallUserList count]==0)
+                    unique=true;
+                
+                if (unique) {
+                    [self.importUserList addObject:name];
+                    [self.importUserList addObject:image];
+                    
+                }
+            }
+        }
+        else
+            //parse setting.xml
+        {
+            
+        }
+        [read1 finishedReading];
+        [unzipFile goToNextFileInZip];
+        
+    }
+    
+    [unzipFile close];
+}
+
 @end

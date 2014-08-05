@@ -12,7 +12,6 @@
 #import "AppDelegateDataShared.h"
 @interface LoginViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,NSFetchedResultsControllerDelegate>
 
-- (void)handleOpenURL:(NSURL *)url;
 @property (weak, nonatomic) IBOutlet UITabBarItem *loginTabBar;
 - (IBAction)loginPush:(id)sender;
 @property (weak, nonatomic) IBOutlet AccountTable *accountTable;

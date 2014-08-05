@@ -10,7 +10,10 @@
 #import "UserAccountForDB.h"
 @interface SharedData : AppDataObject
 
-@property (nonatomic,strong)NSMutableArray* importUserList;
+
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
-@property (nonatomic,strong)NSURL* urlToFile;
+@property (nonatomic,strong)NSString* urlToFile;
+@property (nonatomic,strong)NSMutableArray* arrayUrlToFile;
+
+
 @end
