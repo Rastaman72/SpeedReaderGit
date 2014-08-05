@@ -42,12 +42,11 @@
     [self.theDataObject.arrayUrlToFile removeObjectsInRange:todeleteRange];
     NSString* filePath=[self.theDataObject.arrayUrlToFile componentsJoinedByString:@"/"];
     
-    ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeUnzip];
-    
-    NSArray *infos= [unzipFile listFileInZipInfos];
-    [unzipFile goToFirstFileInZip];
-    
+    if([self.theDataObject unZipFile:filePath])
     self.selectedViewController=[self.viewControllers objectAtIndex:3];
+    else
+        self.selectedViewController=[self.viewControllers objectAtIndex:0];
+    
     
 }
 

@@ -25,5 +25,5 @@
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 - (NSString *)applicationDocumentsDirectory;
-- (void)unZipFile:(NSString *)filePath;
+- (BOOL)unZipFile:(NSString *)filePath;
 @end

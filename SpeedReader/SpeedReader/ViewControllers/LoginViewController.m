@@ -120,7 +120,16 @@
         [alert show];
     }
     else
-         [self performSegueWithIdentifier:@"LoginToLesson" sender:self];
+    {
+        if(![[[self.theDataObject.actuallUserList objectAtIndex:self.chooseUser]password]isEqualToString:@""])
+        {
+        UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:@"Security" message:@"Put password please" delegate:self cancelButtonTitle:@"Login" otherButtonTitles:@"Back", nil];
+        
+        putPassword.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [putPassword show];
+        }
+    }
+
 }
 
 - (SharedData*) theAppDataObject;

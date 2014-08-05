@@ -18,5 +18,5 @@
 @property(nonatomic,retain)NSMutableArray* userList;
 @property(nonatomic,assign)int chooseUser;
 @property(nonatomic,strong)SharedData* theDataObject;
-
+@property(nonatomic,strong)NSString* passwordPutByUser;
 @end

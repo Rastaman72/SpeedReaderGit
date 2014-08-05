@@ -54,7 +54,7 @@
 }
 
 
-- (void)unZipFile:(NSString *)filePath
+- (BOOL)unZipFile:(NSString *)filePath
 {
     ZipFile *unzipFile= [[ZipFile alloc] initWithFileName:filePath mode:ZipFileModeUnzip];
     
@@ -101,6 +101,7 @@
                         [alert show];
                         unique=false;
                         self.importUserList=[[NSMutableArray alloc]init];
+                        return FALSE;
                         break;
                     }
                     else
@@ -112,8 +113,10 @@
                     unique=true;
                 
                 if (unique) {
+                      self.importUserList=[[NSMutableArray alloc]init];
                     [self.importUserList addObject:name];
                     [self.importUserList addObject:image];
+                    return TRUE;
                     
                 }
             }
@@ -129,6 +132,7 @@
     }
     
     [unzipFile close];
+    return FALSE;
 }
 
 @end

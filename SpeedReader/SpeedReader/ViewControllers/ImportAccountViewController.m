@@ -25,6 +25,14 @@
     return self;
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    self.theDataObject = [self theAppDataObject];
+    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
+    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
+
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     self.theDataObject = [self theAppDataObject];
@@ -32,9 +40,16 @@
     self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
 }
 
+-(void)viewWillDisappear:(BOOL)animated
+{
+    self.theDataObject.importUserList=nil;
+     [self cleanView];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
