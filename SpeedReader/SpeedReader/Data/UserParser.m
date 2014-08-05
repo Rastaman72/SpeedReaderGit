@@ -8,7 +8,7 @@
 
 #import "UserParser.h"
 #import "GDataXMLNode.h"
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 @implementation UserParser
 
 + (NSArray *)dataFilePath:(BOOL)forSave {
@@ -69,7 +69,7 @@
             }
             
         }
-        UserAccount* newUser=[UserAccount initAccountWithLogin:userLogin andImage:userImage andPassword:nil];
+        UserAccountForDB* newUser=[[UserAccountForDB alloc] initAccountWithLogin:userLogin andImage:userImage andPassword:nil];
       
         [userList addObject:newUser];
 
@@ -84,7 +84,7 @@
 
 
 # pragma mark create  user XML
-+ (NSData*)saveUser:(UserAccount *)user {
++ (NSData*)saveUser:(UserAccountForDB *)user {
     
     
     NSDate *currDate = [NSDate date];

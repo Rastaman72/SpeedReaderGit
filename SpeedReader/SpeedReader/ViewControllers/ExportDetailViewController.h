@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UserAccount.h"
-@interface ExportDetailViewController : UIViewController
+#import "UserAccountForDB.h"
+#import <MessageUI/MessageUI.h>
+
+
+#import "ZipException.h"
+#import "FileInZipInfo.h"
+#import "ZipWriteStream.h"
+#import "ZipReadStream.h"
+#import "ZipFile.h"
+
+#import "UserParser.h"
+@interface ExportDetailViewController : UIViewController<UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *selectFolder;
 - (IBAction)selectPush:(id)sender;
-@property(nonatomic,retain)UserAccount* userToExport;
+
+@property (weak, nonatomic) IBOutlet UIButton *mailExportButton;
+- (IBAction)mailPush:(id)sender;
+@property(nonatomic,retain)UserAccountForDB* userToExport;
+
+@property(nonatomic,retain) ZipFile* toExportZIP;
 @end

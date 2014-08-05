@@ -7,13 +7,7 @@
 //
 
 #import "ExportDetailViewController.h"
-#import "ZipFile.h"
 
-
-#import "ZipException.h"
-#import "FileInZipInfo.h"
-#import "ZipWriteStream.h"
-#import "ZipReadStream.h"
 
 @interface ExportDetailViewController ()
 
@@ -31,12 +25,7 @@
 }
 
 - (void)viewDidLoad
-{//
-    //dodac obsluge dodawania do maila
-    //dodac obsluge importowania konta
-    //!!!!!!!!!!!!!!
-    
-    
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -51,20 +40,8 @@
 
 
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)createZipFile
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)selectPush:(id)sender
-{
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docsPath = [paths objectAtIndex:0]; //Get the docs directory
     
@@ -73,52 +50,131 @@
     NSString *dataPath = [docsPath stringByAppendingPathComponent:folderName];
     NSData *userXmlData=[[NSData alloc]init];
     NSData *settingsXmlData=[[NSData alloc]init];
-
+    
     
     NSFileManager *manager = [NSFileManager defaultManager];
     NSArray *fileList = [manager contentsOfDirectoryAtPath:docsPath error:nil];
     
     
-    for (NSString *s in fileList)
-    {
-        if([s isEqualToString:_userToExport.login])
-        {
-            NSLog(@"%@", s);
-            NSString* docPath=@"/";
-            docPath=[docPath stringByAppendingString:s];
-            NSString *userDocumentsPath = [[docsPath stringByAppendingString:docPath]
-                                       stringByAppendingPathComponent:@"user.xml"];
-            NSString *settingsDocumentsPath = [[docsPath stringByAppendingString:docPath]
+    NSString* docPath=@"/";
+    docPath=[docPath stringByAppendingString:self.userToExport.login];
+    [self createUserXML:self.userToExport];
+    [self createSettingsXML:self.userToExport];
+    
+    NSString *userDocumentsPath = [[docsPath stringByAppendingString:docPath]
+                                   stringByAppendingPathComponent:@"user.xml"];
+    NSString *settingsDocumentsPath = [[docsPath stringByAppendingString:docPath]
                                        stringByAppendingPathComponent:@"settings.xml"];
-            if ( ![[NSFileManager defaultManager] fileExistsAtPath:userDocumentsPath ])
-            {
-            }
-            else
-            {
-                userXmlData = [[NSMutableData alloc] initWithContentsOfFile:userDocumentsPath];
-                settingsXmlData=[[NSMutableData alloc] initWithContentsOfFile:settingsDocumentsPath];
-            }
-            
-            
-            
-            
-            
-            
-            //////////////////
-            
-            
-            ZipFile *toExport =[[ZipFile alloc]initWithFileName:dataPath mode:ZipFileModeCreate];
-            ZipWriteStream *stream1= [toExport writeFileInZipWithName:@"user.xml" fileDate:[NSDate dateWithTimeIntervalSinceNow:-86400.0] compressionLevel:ZipCompressionLevelBest];
-            [stream1 writeData:userXmlData];
-            [stream1 finishedWriting];
-            
-            
-            ZipWriteStream *stream2= [toExport writeFileInZipWithName:@"settings.xml" compressionLevel:ZipCompressionLevelNone];
-            [stream2 writeData:settingsXmlData];
-            [stream2 finishedWriting];
-            [toExport close];
-        }
+    if ( ![[NSFileManager defaultManager] fileExistsAtPath:userDocumentsPath ])
+    {
     }
+    else
+    {
+        userXmlData = [[NSMutableData alloc] initWithContentsOfFile:userDocumentsPath];
+        settingsXmlData=[[NSMutableData alloc] initWithContentsOfFile:settingsDocumentsPath];
+    }
+    
+    
+    
+    self.toExportZIP =[[ZipFile alloc]initWithFileName:dataPath mode:ZipFileModeCreate];
+    ZipWriteStream *stream1= [self.toExportZIP writeFileInZipWithName:@"user.xml" fileDate:[NSDate dateWithTimeIntervalSinceNow:-86400.0] compressionLevel:ZipCompressionLevelBest];
+    [stream1 writeData:userXmlData];
+    [stream1 finishedWriting];
+    
+    
+    ZipWriteStream *stream2= [self.toExportZIP writeFileInZipWithName:@"settings.xml" compressionLevel:ZipCompressionLevelNone];
+    [stream2 writeData:settingsXmlData];
+    [stream2 finishedWriting];
+    [self.toExportZIP close];
+}
+
+
+- (IBAction)selectPush:(id)sender
+{
+    
+    [self createZipFile];
+
     [[self navigationController]popViewControllerAnimated:YES];
+}
+
+-(void)createUserXML:(UserAccountForDB*)toExport
+{
+    NSError* error;
+    NSData *user =[UserParser saveUser:toExport];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    
+    NSString *dataPath = [documentsPath stringByAppendingPathComponent:toExport.login];
+    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
+    
+    
+    NSString *filePath = [dataPath stringByAppendingPathComponent:@"user.xml"]; //Add the file name
+    [user writeToFile:filePath atomically:YES];
+    
+}
+
+-(void)createSettingsXML:(UserAccountForDB*)toExport
+{
+    NSData *user =[UserParser saveSettings];
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
+    
+    NSString *dataPath = [documentsPath stringByAppendingPathComponent:toExport.login];
+    NSString *filePath = [dataPath stringByAppendingPathComponent:@"settings.xml"]; //Add the file name
+    [user writeToFile:filePath atomically:YES];
+}
+
+- (IBAction)mailPush:(id)sender {
+    
+    
+    UIActionSheet *actionSheet = [[[UIActionSheet alloc]
+                                   initWithTitle:@""
+                                   delegate:self
+                                   cancelButtonTitle:@"Cancel"
+                                   destructiveButtonTitle:nil
+                                   otherButtonTitles:@"Export via File Sharing", @"Export via Email", nil] autorelease];
+    [actionSheet showInView:self.view];
+    
+    //[self createZipFile];
+    
+    
+
+}
+
+
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == actionSheet.firstOtherButtonIndex + 0) {
+         [self createZipFile];
+    }
+    else if (buttonIndex == actionSheet.firstOtherButtonIndex + 1) {
+        [self createZipFile];
+    
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString *writableDBPath= [documentsDirectory stringByAppendingPathComponent:[self.userToExport.login stringByAppendingString:@".zip"]];
+        NSData *data = [NSData dataWithContentsOfFile:writableDBPath];
+        
+                    MFMailComposeViewController *picker = [[[MFMailComposeViewController alloc] init] autorelease];
+                    [picker setSubject:@"My Scary Bug"];
+                    [picker addAttachmentData:data mimeType:@"application/zip" fileName:@"speedReader.zip"];
+                    [picker setToRecipients:[NSArray array]];
+                    [picker setMessageBody:@"Check out this scary bug!  You'll need a copy of ScaryBugs to view this file, then tap and hold to open." isHTML:NO];
+                    [picker setMailComposeDelegate:self];
+                    [self presentModalViewController:picker animated:YES];
+    }
+    
+    
+  
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+		  didFinishWithResult:(MFMailComposeResult)result
+						error:(NSError *)error {
+    [self dismissModalViewControllerAnimated:YES];
 }
 @end

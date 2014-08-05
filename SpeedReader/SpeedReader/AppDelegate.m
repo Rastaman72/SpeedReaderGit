@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self deleteZipFile];
+    [self deleteUserTempFile];
     self.theAppDataObject = [[SharedData alloc] init];
     self.theAppDataObject.actuallUserList=[[NSMutableArray alloc]init];
     self.theAppDataObject.importUserList=[[NSMutableArray alloc]init];
@@ -39,19 +39,31 @@
     tabBarItem5.title = [NSString stringWithFormat:NSLocalizedString(@"Export", nil)];
    
     
+    NSURL *url = (NSURL *)[launchOptions valueForKey:UIApplicationLaunchOptionsURLKey];
 
-    SharedData* theDataObject = [self theAppDataObject];
-    theDataObject.actuallUserList=[[NSMutableArray alloc]init];
-    theDataObject.actuallUserList=[NSMutableArray arrayWithArray:[UserParser loadUser]];
-    
-  
-    
      return YES;
 }
 
 
+-(BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
 
-- (void)deleteZipFile
+    self.theAppDataObject.urlToFile=url;
+    
+//    MainViewController* mainView=[[MainViewController alloc]init];
+//    mainView.goToImport;
+//
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main View" bundle: nil];
+        
+//    MainViewController *controller = [MainViewController alloc]init    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+//    [controller setSelectedIndex:3];
+//    [navController presentViewController:controller animated:YES completion:nil];
+
+    return YES;
+    
+}
+- (void)deleteUserTempFile
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
@@ -66,7 +78,7 @@
     NSArray *fileList = [manager contentsOfDirectoryAtPath:documentsDirectory error:nil];
     
     for (NSString* toDelete in fileList) {
-        if([toDelete rangeOfString:@".zip"].location !=NSNotFound)
+        if([toDelete rangeOfString:@"sqlite"].location ==NSNotFound)
         {
           
             NSString* pathToFile = [documentsDirectory stringByAppendingString:@"/"];
@@ -78,7 +90,7 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    [self deleteZipFile];
+    [self deleteUserTempFile];
 }
 
 
@@ -103,7 +115,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
-
 
 
 

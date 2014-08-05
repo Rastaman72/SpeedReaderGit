@@ -8,7 +8,7 @@
 
 #import "DeleteAccountViewController.h"
 #import "AccountTableCellTableViewCell.h"
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
@@ -37,7 +37,6 @@
 {
     self.theDataObject = [self theAppDataObject];
     self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
-   // _userList = [[NSMutableArray alloc]initWithArray:_delegate.myProperty];
     [self.accountTable reloadData];
     
 
@@ -70,7 +69,7 @@
     
     AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
     
-    UserAccount* account=(self.userList)[indexPath.row];
+    UserAccountForDB* account=(self.userList)[indexPath.row];
     
     NSString* name=[NSString stringWithFormat:@"%@",account.login];
     //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];
@@ -106,7 +105,14 @@
     {
         
         self.theDataObject = [self theAppDataObject];
+        
+        NSManagedObjectContext *context = self.theDataObject.managedObjectContext;
+        [context deleteObject:[self.theDataObject.actuallUserList objectAtIndex:self.toDelete]];
+        NSError* error;
+        [context save:&error];
         [self.theDataObject.actuallUserList removeObjectAtIndex:self.toDelete];
+        
+        
         self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
         [self.accountTable reloadData];
 		

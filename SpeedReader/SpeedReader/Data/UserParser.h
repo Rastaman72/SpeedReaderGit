@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-@class UserAccount;
+@class UserAccountForDB;
 
 @interface UserParser : NSObject
 
 
-+ (UserAccount *)loadUser;
-+ (NSData*)saveUser:(UserAccount *)user;
++ (UserAccountForDB *)loadUser;
++ (NSData*)saveUser:(UserAccountForDB *)user;
 + (NSData*)saveSettings;
 @property(nonatomic,retain)NSString *documentsDirectory;
 @end

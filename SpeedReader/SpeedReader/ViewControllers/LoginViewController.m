@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "LessonsViewController.h"
 #import "AccountTableCellTableViewCell.h"
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 
 
 @interface LoginViewController ()
@@ -17,6 +17,14 @@
 @end
 
 @implementation LoginViewController
+
+
+
+- (void)handleOpenURL:(NSURL *)url {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+   
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +39,7 @@
 {
     self.theDataObject = [self theAppDataObject];
     
+  
     
     NSManagedObjectContext *context =  self.theDataObject.managedObjectContext;
     
@@ -40,19 +49,8 @@
     [fetchRequest setEntity:entity];
     NSError *error;
     
-    
-    
-    
-    //
-    // konwerter z nsmanagmentobject do accountuser class
-    //
-    
-    
-    
-    self.userList = [self.theDataObject.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    
-    [self.theDataObject.actuallUserList addObjectsFromArray:self.userList];
-   // self.userList=[[NSMutableArray alloc]initWithArray:];
+    self.userList=[self.theDataObject.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    self.theDataObject.actuallUserList=[[NSMutableArray alloc]initWithArray:self.userList];
     [self.accountTable reloadData];
     self.chooseUser=-1;
 }
@@ -103,7 +101,7 @@
     
     AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
     
-    UserAccount* account=(self.userList)[indexPath.row];
+    UserAccountForDB* account=(self.userList)[indexPath.row];
     
     NSString* name=[NSString stringWithFormat:@"%@",account.login];
     //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];

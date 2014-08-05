@@ -10,10 +10,11 @@
 #import "SettingsForDB.h"
 @interface UserAccountForDB : NSManagedObject
 
-@property (nonatomic,retain)NSString* login;
-@property (retain, nonatomic) NSString *password;
-@property (retain, nonatomic) NSString *userImage;
-@property (retain, nonatomic) SettingsForDB *settings;
+@property (nonatomic,strong)NSString* login;
+@property (strong, nonatomic) NSString *password;
+@property (strong, nonatomic) NSString *userImage;
+@property (strong, nonatomic) SettingsForDB *settings;
 
 
+-(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(NSString*)userImage andPassword:(NSString*)userPassword;
 @end

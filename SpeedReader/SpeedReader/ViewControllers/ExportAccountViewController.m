@@ -8,7 +8,7 @@
 
 #import "ExportAccountViewController.h"
 #import "AccountTableCellTableViewCell.h"
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 @interface ExportAccountViewController ()
 
 @end
@@ -65,7 +65,7 @@
     
     AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
     
-    UserAccount* account=(self.userList)[indexPath.row];
+    UserAccountForDB* account=(self.userList)[indexPath.row];
     
     NSString* name=[NSString stringWithFormat:@"%@",account.login];
     //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];

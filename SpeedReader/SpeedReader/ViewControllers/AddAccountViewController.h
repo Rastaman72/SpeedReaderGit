@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UserAccount.h"
+//#import "UserAccount.h"
 #import "GDataXMLNode.h"
 #import "UserParser.h"
 #import "SharedData.h"
@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *addAccountButton;
 - (IBAction)addAccountPush:(id)sender;
 
-@property(nonatomic,retain)UserAccount* theNewAccount;
+- (IBAction)passwordSet:(id)sender;
+@property(nonatomic,retain)UserAccountForDB* theNewAccount;
 @property(nonatomic,strong)SharedData* theDataObject;
 @end

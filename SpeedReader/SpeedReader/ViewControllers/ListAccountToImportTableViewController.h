@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 @interface ListAccountToImportTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableView *accountList;
 @property(nonatomic,strong) NSMutableArray* accountsToImport;

@@ -76,7 +76,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"user"];
     if([self.accountsToImport count]!=0)
     {
-        UserAccount* account=(self.accountsToImport)[indexPath.row];
+        UserAccountForDB* account=(self.accountsToImport)[indexPath.row];
         cell.textLabel.text=account;
     }
     return cell;
@@ -125,14 +125,13 @@
                     image = imageName.stringValue;
                 } else continue;
                 
-                UserAccount *user = [UserAccount initAccountWithLogin:name andImage:image andPassword:nil];
                 SharedData* theDataObject = [self theAppDataObject];
                 
                 
                 bool unique=false;
                 for (int i=0; i<[theDataObject.actuallUserList count]; i++) {
-                    UserAccount* toTest=[theDataObject.actuallUserList objectAtIndex:i];
-                    if([toTest.login isEqualToString:user.login])
+                    UserAccountForDB* toTest=[theDataObject.actuallUserList objectAtIndex:i];
+                    if([toTest.login isEqualToString:name])
                     {
                         UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                         [alert show];
@@ -145,9 +144,12 @@
                         unique=true;
                     }
                 }
+                if([theDataObject.actuallUserList count]==0)
+                    unique=true;
+                
                 if (unique) {
-                    //[theDataObject.actuallUserList addObject:user];
-                    [theDataObject.importUserList addObject:user];
+                    [theDataObject.importUserList addObject:name];
+                    [theDataObject.importUserList addObject:image];
                     [self dismissViewControllerAnimated:YES completion:nil];
                 }
             }

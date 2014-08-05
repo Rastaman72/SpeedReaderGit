@@ -23,20 +23,44 @@
     return self;
 }
 
-- (void)viewDidLoad
+-(void)viewWillLayoutSubviews
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-   
     
 }
 
-- (void)didReceiveMemoryWarning
+-(void)viewWillAppear:(BOOL)animated
 {
+    }
+
+- (void)goToImport
+{
+    self.theDataObject = [self theAppDataObject];
+    if(self.theDataObject.urlToFile !=nil)
+    {
+        [self setSelectedIndex:3];
+    }
+}
+
+- (void)viewDidLoad
+{
+    [self goToImport];
+        [super viewDidLoad];
+    // Do any additional setup after loading the view.    
+}
+
+- (void)didReceiveMemoryWarning
+{   
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 
 /*

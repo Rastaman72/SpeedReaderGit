@@ -28,8 +28,8 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     self.theDataObject = [self theAppDataObject];
-    self.importAccountFileLocalizationField.text=[[[self.theDataObject.importUserList firstObject]login]stringByAppendingString:@".zip"];
-    self.importAccountLoginField.text=[[self.theDataObject.importUserList firstObject]login];
+    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
+    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
 }
 
 - (void)viewDidLoad
@@ -76,7 +76,9 @@
     
     if([self checkPassword])
     {
-    [self.theDataObject.actuallUserList addObject:[self.theDataObject.importUserList firstObject]];
+       UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:self.importAccountPasswordField.text];
+
+    [self.theDataObject.actuallUserList addObject:user];
         [self cleanView];
         
         self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
@@ -92,7 +94,10 @@
     }
     else
     {
-    [self.theDataObject.actuallUserList addObject:[self.theDataObject.importUserList firstObject]];
+        UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:nil];
+        //[theDataObject.actuallUserList addObject:user];
+
+    [self.theDataObject.actuallUserList addObject:user];
     
         [self cleanView];
     
@@ -151,4 +156,17 @@
         self.importAccountRePasswordField.enabled=NO;
     }
 }
+
+
+-(BOOL)importData:(NSData*)zippedData
+{
+    return true;
+}
+
+- (BOOL)importFromURL:(NSURL *)importURL {
+    NSData *zippedData = [NSData dataWithContentsOfURL:importURL];
+    return [self importData:zippedData];
+}
+
+
 @end

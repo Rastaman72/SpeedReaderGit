@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UserAccount.h"
+#import "UserAccountForDB.h"
 #import "GDataXMLNode.h"
 #import "UserParser.h"
 #import "ListAccountToImportTableViewController.h"
@@ -35,6 +35,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *addUserButton;
 @property(nonatomic,strong)NSMutableArray * userAccounts;
 
-@property(nonatomic,retain)UserAccount* theNewAccount;
+@property(nonatomic,retain)UserAccountForDB* theNewAccount;
 @property(nonatomic,strong)SharedData* theDataObject;
+
+- (BOOL)importFromURL:(NSURL *)importURL;
 @end

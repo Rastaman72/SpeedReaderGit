@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface MainViewController : UITabBarController<UITabBarControllerDelegate>
 @property(nonatomic,retain)id selectedViewController;
-
+@property(nonatomic,strong)SharedData* theDataObject;
+-(void)goToImport;
 @end

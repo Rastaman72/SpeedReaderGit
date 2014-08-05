@@ -55,49 +55,7 @@
 }
 
 
-- (void)saveUser {
-    NSError* error;
-    
-       NSManagedObjectContext *context =  self.theDataObject.managedObjectContext;
-    NSFetchRequest *fetch = [[NSFetchRequest alloc] init];
-    fetch.entity = [NSEntityDescription entityForName:@"User" inManagedObjectContext:context];
-    fetch.predicate = [NSPredicate predicateWithFormat:@"login == %@", [[self.theNewAccount valueForKey:@"login"]description]];
-    NSArray *array = [context executeFetchRequest:fetch error:nil];
-    
-    if ([array count] == 0)
-    {
-       
-        SettingsForDB* userSettings =[NSEntityDescription
-                                      insertNewObjectForEntityForName:@"TeacherSettings"
-                                      inManagedObjectContext:context];
-        userSettings.interface=[[NSNumber alloc]initWithInt:1];
-        userSettings.lastUsedText==[[NSNumber alloc]initWithInt:0];
-        userSettings.lastLessonDone==[[NSNumber alloc]initWithInt:-1];
-        
-        UserAccountForDB *userInfo = [NSEntityDescription
-                                      insertNewObjectForEntityForName:@"User"
-                                      inManagedObjectContext:context];
-        userInfo.login=self.theNewAccount.login;
-        userInfo.userImage=self.theNewAccount.userImage;
-        userInfo.password=self.theNewAccount.password;
-        userInfo.settings=userSettings;
-        
-        
-//        userInfo.login=[self.theNewAccount valueForKey:@"login"];
-//        userInfo.userImage=[self.theNewAccount valueForKey:@"userImage"];
-//        userInfo.password=[self.theNewAccount valueForKey:@"password"];
-        
-        if (![context save:&error])
-        {
-            
-        }
-        else
-        {
-            [self.theDataObject.actuallUserList addObject:userInfo];
-        }
-    
-    
-    
+
     /*
      
      TO sie przydza dopeior podczas eksportu
@@ -105,72 +63,74 @@
      */
     /*
     //create user.xml
-    NSData *user =[UserParser saveUser:_theNewAccount];
-   // NSData *user = [_theNewAccount.login dataUsingEncoding:NSUTF8StringEncoding];
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
-    
-    NSString *dataPath = [documentsPath stringByAppendingPathComponent:_theNewAccount.login];
-    
-    if (![[NSFileManager defaultManager] fileExistsAtPath:dataPath])
-        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error];
-    
-    
-    NSString *filePath = [dataPath stringByAppendingPathComponent:@"user.xml"]; //Add the file name
-    [user writeToFile:filePath atomically:YES];
-    
-    
-    //create settings.xml
-    [self saveSettings];
+   
      */
-}
-}
+//}
 
-
--(void)saveSettings
-{
-    NSData *user =[UserParser saveSettings];
-
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsPath = [paths objectAtIndex:0]; //Get the docs directory
-    
-    NSString *dataPath = [documentsPath stringByAppendingPathComponent:_theNewAccount.login];
-    NSString *filePath = [dataPath stringByAppendingPathComponent:@"settings.xml"]; //Add the file name
-    [user writeToFile:filePath atomically:YES];
-
-    
-    
-}
 
 - (IBAction)addAccountPush:(id)sender {
-    if([_addAccountPasswordCheckBox isOn])
+    if(![self.addAccountLoginField.text isEqualToString:@""])
     {
-        if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
+        if([_addAccountPasswordCheckBox isOn])
         {
-            self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:_addAccountPasswordField.text];
-            
-            
+            if(![self.addAccountPasswordField.text isEqualToString:@""] && ![self.addAccountRePasswordField.text isEqualToString:@""])
+            {
+                if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
+                {
+                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:_addAccountPasswordField.text];
+                }
+                else
+                {
+                    UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Password dosen't the same" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                    [alert show];
+                    return;
+                }
+            }
+            else
+            {
+                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                                     message:@"Field password or repassword cannot be empty"
+                                                                    delegate:nil
+                                                           cancelButtonTitle:@"OK"
+                                                           otherButtonTitles:nil];
+                errorAlert.show;
+                return;
+            }
         }
+        else
+            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
+        
+        
+        
+        self.theDataObject = [self theAppDataObject];
+        if(self.theNewAccount !=nil)
+        {
+            [self.theDataObject.actuallUserList addObject:self.theNewAccount];
+            self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+        }
+        else
+        {
+            UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
+        }
+        //Write the file
     }
     else
-        self.theNewAccount=[UserAccount initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
-    [[self navigationController]popToRootViewControllerAnimated:YES];
-    
-    self.theDataObject = [self theAppDataObject];
-    [self.theDataObject.actuallUserList addObject:self.theNewAccount];
-//    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    [delegate.myProperty addObject:_theNewAccount];
-//    
-    [self saveUser]; //Write the file
-   
-    self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+    {
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                             message:@"Field login cannot be empty"
+                                                            delegate:nil
+                                                   cancelButtonTitle:@"OK"
+                                                   otherButtonTitles:nil];
+        errorAlert.show;
+    }
 }
 
 -(void)cleanView
 {
     _addAccountLoginField.text=@"";
     [_addAccountPasswordCheckBox setOn:NO];
-    _addAccountRePasswordField.text=@"";
+    _addAccountPasswordField.text=@"";
     _addAccountRePasswordField.text=@"";
 }
 
@@ -181,4 +141,19 @@
 	theDataObject = (SharedData*) theDelegate.theAppDataObject;
 	return theDataObject;
 }
+
+- (IBAction)passwordSet:(id)sender {
+    if([self.addAccountPasswordCheckBox isOn])
+    {
+        self.addAccountPasswordField.enabled=YES;
+        self.addAccountRePasswordField.enabled=YES;
+    }
+    else
+    {
+        self.addAccountPasswordField.enabled=NO;
+        self.addAccountRePasswordField.enabled=NO;
+    }
+}
+
+
 @end
