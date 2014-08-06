@@ -1,0 +1,216 @@
+
+/* Class = "IBUIBarButtonItem"; title = "Log Out"; ObjectID = "0Tp-5B-7zY"; */
+"0Tp-5B-7zY.title" = "Log Out";
+
+/* Class = "IBUIBarButtonItem"; title = "Log Out"; ObjectID = "0Ts-Bh-ODH"; */
+"0Ts-Bh-ODH.title" = "Log Out";
+
+/* Class = "IBUIBarButtonItem"; title = "Log Out"; ObjectID = "0gw-Lw-dd4"; */
+"0gw-Lw-dd4.title" = "Log Out";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "1Cn-PO-jhA"; */
+"1Cn-PO-jhA.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "23Z-oy-jaC"; */
+"23Z-oy-jaC.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "3lV-11-J4s"; */
+"3lV-11-J4s.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Settings"; ObjectID = "4PC-Dd-rcI"; */
+"4PC-Dd-rcI.title" = "Settings";
+
+/* Class = "IBUIButton"; normalTitle = "Login"; ObjectID = "4Ri-cp-E8C"; */
+"4Ri-cp-E8C.normalTitle" = "Login";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "5w9-q6-kZi"; */
+"5w9-q6-kZi.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "6Ho-Zs-Ni4"; */
+"6Ho-Zs-Ni4.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Settings"; ObjectID = "8G5-Eb-MT6"; */
+"8G5-Eb-MT6.normalTitle" = "Settings";
+
+/* Class = "IBUIButton"; normalTitle = "Delete"; ObjectID = "8Ld-eu-c98"; */
+"8Ld-eu-c98.normalTitle" = "Delete";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "8Lj-do-Rha"; */
+"8Lj-do-Rha.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "Settings"; ObjectID = "A8G-XO-Szs"; */
+"A8G-XO-Szs.normalTitle" = "Settings";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "CBY-Oh-q2C"; */
+"CBY-Oh-q2C.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "CSb-Dj-2xW"; */
+"CSb-Dj-2xW.title" = "Root View Controller";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "EUr-0L-gGi"; */
+"EUr-0L-gGi.normalTitle" = "Button";
+
+/* Class = "IBUIBarButtonItem"; title = "Log Out"; ObjectID = "HIo-Xe-mJO"; */
+"HIo-Xe-mJO.title" = "Log Out";
+
+/* Class = "IBUIBarButtonItem"; title = "To List"; ObjectID = "HV4-vX-CPz"; */
+"HV4-vX-CPz.title" = "To List";
+
+/* Class = "IBUILabel"; text = "Login"; ObjectID = "Hgi-wC-syg"; */
+"Hgi-wC-syg.text" = "Login";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "I7J-6p-XfX"; */
+"I7J-6p-XfX.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "KHq-2R-HFN"; */
+"KHq-2R-HFN.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "LON-Jl-KrX"; */
+"LON-Jl-KrX.title" = "Title";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Lef-I0-AFa"; */
+"Lef-I0-AFa.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Lj3-GY-0Tk"; */
+"Lj3-GY-0Tk.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "LvH-iz-xCQ"; */
+"LvH-iz-xCQ.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "MkG-TF-5CC"; */
+"MkG-TF-5CC.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Nou-Fg-Bhp"; */
+"Nou-Fg-Bhp.text" = "Label";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "RZD-Xc-RTk"; */
+"RZD-Xc-RTk.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "Rbd-Yq-g9U"; */
+"Rbd-Yq-g9U.title" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "Stats"; ObjectID = "RkC-kO-3Fe"; */
+"RkC-kO-3Fe.title" = "Stats";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "T0K-6e-C9X"; */
+"T0K-6e-C9X.title" = "Root View Controller";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "TVk-Bp-apX"; */
+"TVk-Bp-apX.title" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "Txo-hj-tn2"; */
+"Txo-hj-tn2.title" = "Item";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "UVR-fj-OkV"; */
+"UVR-fj-OkV.title" = "Title";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "WMT-59-mSo"; */
+"WMT-59-mSo.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "XW9-MO-eiq"; */
+"XW9-MO-eiq.text" = "Label";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "Yhx-jL-GhU"; */
+"Yhx-jL-GhU.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "aTt-5c-xYg"; */
+"aTt-5c-xYg.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "adf-f5-vCV"; */
+"adf-f5-vCV.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "aeK-NS-Ahs"; */
+"aeK-NS-Ahs.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Settings"; ObjectID = "ch6-x1-c0y"; */
+"ch6-x1-c0y.normalTitle" = "Settings";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "cyZ-1S-dTV"; */
+"cyZ-1S-dTV.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "esy-5h-Fvi"; */
+"esy-5h-Fvi.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "evP-my-5hR"; */
+"evP-my-5hR.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Item 2"; ObjectID = "eyn-Wr-u0s"; */
+"eyn-Wr-u0s.title" = "Item 2";
+
+/* Class = "IBUITabBarItem"; title = "Item 1"; ObjectID = "fgB-c1-qyf"; */
+"fgB-c1-qyf.title" = "Item 1";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "gnj-Nk-Huw"; */
+"gnj-Nk-Huw.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "ivM-4P-dAS"; */
+"ivM-4P-dAS.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "jYH-xr-xTq"; */
+"jYH-xr-xTq.text" = "Title";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "jh0-1o-cdx"; */
+"jh0-1o-cdx.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "lIX-qY-a00"; */
+"lIX-qY-a00.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Settings"; ObjectID = "m6I-o6-wjY"; */
+"m6I-o6-wjY.normalTitle" = "Settings";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "mSN-Pe-iqF"; */
+"mSN-Pe-iqF.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "mSZ-rQ-5m3"; */
+"mSZ-rQ-5m3.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "oQR-wX-jtF"; */
+"oQR-wX-jtF.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Login"; ObjectID = "pBP-sk-SVK"; */
+"pBP-sk-SVK.text" = "Login";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "phd-jZ-0Bl"; */
+"phd-jZ-0Bl.title" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "Export"; ObjectID = "rUo-Qs-zHU"; */
+"rUo-Qs-zHU.normalTitle" = "Export";
+
+/* Class = "IBUITabBarItem"; title = "Start"; ObjectID = "rdh-0T-MBj"; */
+"rdh-0T-MBj.title" = "Start";
+
+/* Class = "IBUILabel"; text = "Login"; ObjectID = "rwF-DA-wxk"; */
+"rwF-DA-wxk.text" = "Login";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "sjS-nW-CPD"; */
+"sjS-nW-CPD.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Exercises"; ObjectID = "t8e-wU-zgu"; */
+"t8e-wU-zgu.title" = "Exercises";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "tJY-EO-9cM"; */
+"tJY-EO-9cM.text" = "Label";
+
+/* Class = "IBUITabBarItem"; title = "Lesson"; ObjectID = "uva-Nk-SsE"; */
+"uva-Nk-SsE.title" = "Lesson";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "uzm-90-dwZ"; */
+"uzm-90-dwZ.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "wDL-Ja-8cz"; */
+"wDL-Ja-8cz.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "wph-xh-ISY"; */
+"wph-xh-ISY.normalTitle" = "Button";
+
+/* Class = "IBUITabBarItem"; title = "Item"; ObjectID = "wxt-G7-gCS"; */
+"wxt-G7-gCS.title" = "Item";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "z36-ov-blW"; */
+"z36-ov-blW.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "zKY-84-5Mh"; */
+"zKY-84-5Mh.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "zbt-pV-H1A"; */
+"zbt-pV-H1A.text" = "Label";

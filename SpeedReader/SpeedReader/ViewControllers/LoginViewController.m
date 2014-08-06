@@ -128,10 +128,28 @@
         putPassword.alertViewStyle = UIAlertViewStylePlainTextInput;
         [putPassword show];
         }
+        else
+              [self performSegueWithIdentifier:@"LoginToLesson" sender:self];
     }
 
 }
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == alertView.cancelButtonIndex) {
+        UITextField *passwordField = [alertView textFieldAtIndex:0];
+        if([[[self.theDataObject.actuallUserList objectAtIndex:self.chooseUser]password]isEqualToString:passwordField.text])
+        {
+            [self performSegueWithIdentifier:@"LoginToLesson" sender:self];
 
+           }
+        else
+        {
+            UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:@"Security" message:@"You put bad password" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            
+            [putPassword show];
+        }
+    }
+}
 - (SharedData*) theAppDataObject;
 {
 	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;

@@ -1,18 +1,18 @@
 //
-//  StartViewController.m
+//  MetronumViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/17/14.
+//  Created by LGBS dev on 8/6/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "StartViewController.h"
+#import "MetronumViewController.h"
 
-@interface StartViewController ()
+@interface MetronumViewController ()
 
 @end
 
-@implementation StartViewController
+@implementation MetronumViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,23 +46,4 @@
 }
 */
 
-- (IBAction)logOutPush:(id)sender {
-   
-        [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
-- (IBAction)settingsPush:(id)sender {
-}
-- (IBAction)presenterPush:(id)sender {
-}
-- (IBAction)lessonPush:(id)sender {
-}
-- (IBAction)exercisesPush:(id)sender {
-}
-- (IBAction)statsPush:(id)sender {
-}
-- (IBAction)metronumPush:(id)sender {
-}
-- (IBAction)timerPush:(id)sender {
-}
 @end
