@@ -19,9 +19,6 @@
 
 #import "UserParser.h"
 @interface ExportDetailViewController : UIViewController<UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
-@property (weak, nonatomic) IBOutlet UIButton *selectFolder;
-- (IBAction)selectPush:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *mailExportButton;
 - (IBAction)mailPush:(id)sender;
 @property(nonatomic,retain)UserAccountForDB* userToExport;

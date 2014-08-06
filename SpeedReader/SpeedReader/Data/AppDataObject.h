@@ -18,12 +18,16 @@
 #import "GDataXMLNode.h"
 
 #import "UserAccountForDB.h"
+#import "SettingsForDB.h"
 @interface AppDataObject : NSObject<UIApplicationDelegate>
 @property(nonatomic,strong)NSMutableArray* actuallUserList;
 @property (nonatomic,strong)NSMutableArray* importUserList;
+@property (nonatomic,strong)NSMutableArray* userSettings;
 @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic,assign) bool unique;
+@property (nonatomic,assign) bool correctUnZip;
 - (NSString *)applicationDocumentsDirectory;
 - (BOOL)unZipFile:(NSString *)filePath;
 @end

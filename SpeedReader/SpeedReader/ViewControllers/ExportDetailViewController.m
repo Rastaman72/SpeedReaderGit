@@ -137,10 +137,6 @@
                                    destructiveButtonTitle:nil
                                    otherButtonTitles:@"Export via File Sharing", @"Export via Email", nil] autorelease];
     [actionSheet showInView:self.view];
-    
-    //[self createZipFile];
-    
-    
 
 }
 

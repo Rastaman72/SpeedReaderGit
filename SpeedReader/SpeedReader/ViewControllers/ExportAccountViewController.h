@@ -14,11 +14,15 @@
 #import "GDataXMLNode.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-@interface ExportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
+@interface ExportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate,UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITabBarItem *exportTabBar;
 - (IBAction)exportPush:(id)sender;
 @property (weak, nonatomic) IBOutlet AccountTable *accountTable;
 @property(nonatomic,retain)NSMutableArray* userList;
 @property(nonatomic,assign)int toExport;
 @property(nonatomic,strong)SharedData* theDataObject;
+- (IBAction)mailPush:(id)sender;
+@property(nonatomic,retain)UserAccountForDB* userToExport;
+
+@property(nonatomic,retain) ZipFile* toExportZIP;
 @end

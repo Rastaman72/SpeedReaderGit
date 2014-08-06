@@ -70,7 +70,8 @@
         NSLog(@"%@", doc.rootElement);
         
         NSArray *xmlPart = [doc.rootElement elementsForName:@"user"];
-        if (xmlPart!=nil) {
+        if (xmlPart!=nil)
+        {
             //parse user.xml
             for (GDataXMLElement *xmlElements in xmlPart) {
                 NSString *name;
@@ -90,41 +91,65 @@
                     image = imageName.stringValue;
                 } else continue;
                 
-              
-                
-                bool unique=false;
                 for (int i=0; i<[self.actuallUserList count]; i++) {
                     UserAccountForDB* toTest=[self.actuallUserList objectAtIndex:i];
                     if([toTest.login isEqualToString:name])
                     {
-                        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist choose other login or delete exist account" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                         [alert show];
-                        unique=false;
-                        self.importUserList=[[NSMutableArray alloc]init];
-                        return FALSE;
-                        break;
+                        self.unique=false;
                     }
                     else
                     {
-                        unique=true;
+                        self.unique=true;
                     }
                 }
                 if([self.actuallUserList count]==0)
-                    unique=true;
+                    self.unique=true;
                 
-                if (unique) {
-                      self.importUserList=[[NSMutableArray alloc]init];
-                    [self.importUserList addObject:name];
-                    [self.importUserList addObject:image];
-                    return TRUE;
-                    
-                }
+                self.importUserList=[[NSMutableArray alloc]init];
+                [self.importUserList addObject:name];
+                [self.importUserList addObject:image];
+                self.correctUnZip=TRUE;
             }
         }
         else
+            
             //parse setting.xml
         {
-            
+            NSArray *xmlPart = [doc.rootElement elementsForName:@"teacher"];
+            for (GDataXMLElement *xmlElements in xmlPart) {
+                NSString *interface;
+                NSString* lastUsedText;
+                NSString* lastLessonDone;
+                
+                // interface
+                NSArray *interfaceA = [xmlElements elementsForName:@"interface"];
+                if (interfaceA.count > 0) {
+                    GDataXMLElement *firstInterface = (GDataXMLElement *) [interfaceA objectAtIndex:0];
+                    interface = firstInterface.stringValue;
+                } else continue;
+                
+                //lastUsedText
+                NSArray *lastUsedTextA = [xmlElements elementsForName:@"lastUsedText"];
+                if (lastUsedTextA.count > 0) {
+                    GDataXMLElement *lastUsedTextXML = (GDataXMLElement *) [lastUsedTextA objectAtIndex:0];
+                    lastUsedText = lastUsedTextXML.stringValue;
+                } else continue;
+                
+                //lastLessonDone
+                NSArray *lastLessonDoneA = [xmlElements elementsForName:@"lastLessonDone"];
+                if (lastLessonDoneA.count > 0) {
+                    GDataXMLElement *lastLessonDoneXML = (GDataXMLElement *) [lastLessonDoneA objectAtIndex:0];
+                    lastLessonDone = lastLessonDoneXML.stringValue;
+                } else continue;
+                
+                self.userSettings=[[NSMutableArray alloc]init];
+                [self.userSettings addObject:interface];
+                [self.userSettings addObject:lastUsedText];
+                [self.userSettings addObject:lastLessonDone];
+                self.correctUnZip=TRUE;
+           }
         }
         [read1 finishedReading];
         [unzipFile goToNextFileInZip];
@@ -132,7 +157,7 @@
     }
     
     [unzipFile close];
-    return FALSE;
+    return self.correctUnZip;
 }
 
 @end

@@ -952,7 +952,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="exportPush:" destination="O4e-92-560" eventType="touchUpInside" id="2j4-xU-pHR"/>
+                                    <action selector="mailPush:" destination="O4e-92-560" eventType="touchUpInside" id="CFv-cb-MiX"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="o2Y-8L-vzQ" customClass="AccountTable">
@@ -998,53 +998,11 @@
                     <connections>
                         <outlet property="accountTable" destination="o2Y-8L-vzQ" id="awZ-s6-r3I"/>
                         <outlet property="exportTabBar" destination="wxt-G7-gCS" id="8E6-uD-82r"/>
-                        <segue destination="6rF-fe-pOE" kind="push" identifier="exportDetail" id="QEX-Qa-WSZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rMs-HT-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1014" y="1705"/>
-        </scene>
-        <!--Export Detail View Controller-->
-        <scene sceneID="i2p-lB-aGD">
-            <objects>
-                <viewController id="6rF-fe-pOE" customClass="ExportDetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ekw-80-LmS">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GND-Vr-JSZ">
-                                <rect key="frame" x="158" y="251" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectPush:" destination="6rF-fe-pOE" eventType="touchUpInside" id="c4t-5g-8u2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2pU-WV-TkA">
-                                <rect key="frame" x="447" y="251" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mailPush:" destination="6rF-fe-pOE" eventType="touchUpInside" id="QcY-vj-ow5"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fIy-Fo-5NR"/>
-                    <connections>
-                        <outlet property="mailExportButton" destination="2pU-WV-TkA" id="Led-wD-HhX"/>
-                        <outlet property="selectFolder" destination="GND-Vr-JSZ" id="VD4-48-OMO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DF0-0V-6FN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1977" y="1702"/>
         </scene>
         <!--Navigation Controller - Item-->
         <scene sceneID="FpZ-OG-zPI">

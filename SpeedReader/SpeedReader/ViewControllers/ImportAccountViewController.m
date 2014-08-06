@@ -86,6 +86,18 @@
     
 }
 - (IBAction)addUserPush:(id)sender {
+    
+    if (![[self.theDataObject.importUserList firstObject]isEqualToString:self.importAccountLoginField.text]) {
+        self.theDataObject.unique=true;
+        [self.theDataObject.importUserList removeAllObjects];
+        [self.theDataObject.importUserList addObject:self.importAccountLoginField.text];
+//        [self.theDataObject.importUserList addObject:[self.importAccountImage accessibilityIdentifier]];
+        [self.theDataObject.importUserList addObject:@""];
+    }
+    
+    if(self.theDataObject.unique)
+    {
+    
     if ([self.importAccountPasswordCheckBox isOn]) {
     
     
@@ -117,6 +129,12 @@
         [self cleanView];
     
     self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+    }
+    }
+    else
+    {
+        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist choose other login or delete exist account" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
     }
 }
 
