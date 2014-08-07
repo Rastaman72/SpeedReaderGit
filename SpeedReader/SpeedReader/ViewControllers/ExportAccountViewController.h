@@ -23,6 +23,7 @@
 @property(nonatomic,strong)SharedData* theDataObject;
 - (IBAction)mailPush:(id)sender;
 @property(nonatomic,retain)UserAccountForDB* userToExport;
+@property (weak, nonatomic) IBOutlet UIButton *exportAccountButton;
 
 @property(nonatomic,retain) ZipFile* toExportZIP;
 @end

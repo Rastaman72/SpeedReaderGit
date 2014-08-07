@@ -52,6 +52,7 @@
 		E93BC5C419815FA700DE3408 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5A919815FA700DE3408 /* trees.c */; };
 		E93BC5C519815FA700DE3408 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AB19815FA700DE3408 /* uncompr.c */; };
 		E93BC5C619815FA700DE3408 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AE19815FA700DE3408 /* zutil.c */; };
+		E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E944DC3B19939A0F00A0442D /* SettingsViewController.m */; };
 		E97618B01990F5EB006CD981 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97618AF1990F5EB006CD981 /* MessageUI.framework */; };
 		E9A18158197E77E60046B48E /* UserParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18157197E77E60046B48E /* UserParser.m */; };
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
@@ -184,6 +185,8 @@
 		E93BC5AD19815FA700DE3408 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		E93BC5AE19815FA700DE3408 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		E93BC5AF19815FA700DE3408 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		E944DC3A19939A0F00A0442D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SpeedReader/ViewControllers/SettingsViewController.h; sourceTree = "<group>"; };
+		E944DC3B19939A0F00A0442D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SpeedReader/ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
 		E97618AF1990F5EB006CD981 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E9A18156197E77E60046B48E /* UserParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserParser.h; path = SpeedReader/Data/UserParser.h; sourceTree = "<group>"; };
 		E9A18157197E77E60046B48E /* UserParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserParser.m; path = SpeedReader/Data/UserParser.m; sourceTree = "<group>"; };
@@ -494,6 +497,15 @@
 			path = ZLib;
 			sourceTree = "<group>";
 		};
+		E944DC39199399F900A0442D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E944DC3A19939A0F00A0442D /* SettingsViewController.h */,
+				E944DC3B19939A0F00A0442D /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		E9AC08C2199000F400ACD0C5 /* DB */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +603,7 @@
 		E9E5144C1976A5D1001FDA03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E944DC39199399F900A0442D /* Settings */,
 				E915D6E41977F24E00846F31 /* Lesson */,
 				E915D7081978048B00846F31 /* StartView */,
 				E915D6FE1977FCEF00846F31 /* Statistics */,
@@ -726,6 +739,7 @@
 				E93BC5C019815FA700DE3408 /* infback.c in Sources */,
 				E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */,
 				E915D70B197804A400846F31 /* StartViewController.m in Sources */,
+				E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */,
 				E93BC5BB19815FA700DE3408 /* deflate.c in Sources */,
 				E93BC5B919815FA700DE3408 /* compress.c in Sources */,
 				E935AA141976E79000409E7B /* DetailLessonViewController.m in Sources */,
@@ -864,7 +878,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -899,7 +913,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -925,6 +939,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -947,6 +962,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

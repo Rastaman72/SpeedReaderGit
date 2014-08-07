@@ -95,7 +95,7 @@
                     UserAccountForDB* toTest=[self.actuallUserList objectAtIndex:i];
                     if([toTest.login isEqualToString:name])
                     {
-                        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist choose other login or delete exist account" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"User already exsist choose other login or delete exist account", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                         [alert show];
                         self.unique=false;
                     }

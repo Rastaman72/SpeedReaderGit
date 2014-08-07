@@ -7,7 +7,6 @@
 //
 
 #import "StartViewController.h"
-
 @interface StartViewController ()
 
 @end
@@ -52,17 +51,33 @@
     
 }
 - (IBAction)settingsPush:(id)sender {
+    self.theDataObject=[self theAppDataObject];
 }
 - (IBAction)presenterPush:(id)sender {
 }
 - (IBAction)lessonPush:(id)sender {
+    self.tabBarController.selectedViewController=[self.tabBarController.viewControllers objectAtIndex:1];
 }
 - (IBAction)exercisesPush:(id)sender {
+    self.tabBarController.selectedViewController=[self.tabBarController.viewControllers objectAtIndex:2];
+
 }
 - (IBAction)statsPush:(id)sender {
+    self.tabBarController.selectedViewController=[self.tabBarController.viewControllers objectAtIndex:3];
+
 }
 - (IBAction)metronumPush:(id)sender {
+    [self performSegueWithIdentifier:@"LoginToMetronum" sender:self];
 }
 - (IBAction)timerPush:(id)sender {
+       [self performSegueWithIdentifier:@"LoginToTimer" sender:self];
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 @end

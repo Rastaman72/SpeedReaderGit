@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface StartViewController : UIViewController
 
 //navigation bar
@@ -15,6 +16,8 @@
 - (IBAction)logOutPush:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *settingsBUtton;
 - (IBAction)settingsPush:(id)sender;
+@property(nonatomic,strong)SharedData* theDataObject;
+
 
 //view part
 @property (weak, nonatomic) IBOutlet UIImageView *startViewUserImage;

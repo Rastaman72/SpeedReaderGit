@@ -36,6 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.exportAccountButton setTitle:NSLocalizedString(@"Export account", nil) forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
 }
 
@@ -87,8 +88,14 @@
 
 - (IBAction)exportPush:(id)sender {
     
-    [self performSegueWithIdentifier:@"exportDetail" sender:self];
-
+    if ( self.userToExport) {
+         [self performSegueWithIdentifier:@"exportDetail" sender:self];
+    }
+    else
+    {
+    UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:@"First choose user" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    }
 }
 
 
@@ -208,7 +215,7 @@
                                    delegate:self
                                    cancelButtonTitle:@"Cancel"
                                    destructiveButtonTitle:nil
-                                   otherButtonTitles:@"Export via File Sharing", @"Export via Email", nil] autorelease];
+                                   otherButtonTitles: NSLocalizedString(@"Export via File Sharing", nil),NSLocalizedString(@"Export via Email", nil), nil] autorelease];
     [actionSheet showInView:self.view];
 }
 

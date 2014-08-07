@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.timerViewTimerLabel.text=@"00:00.0";
     // Do any additional setup after loading the view.
 }
 
@@ -46,4 +47,40 @@
 }
 */
 
+- (IBAction)backPush:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)startPush:(id)sender
+{
+    if (!self.running) {
+        self.running=YES;
+        self.startTime=[NSDate timeIntervalSinceReferenceDate];
+        [sender setTitle:@"STOP" forState:UIControlStateNormal];
+        [self updateTime];
+    }
+    else
+    {
+        [sender setTitle:@"START" forState:UIControlStateNormal];
+        self.running=NO;
+        
+    }
+}
+
+-(void)updateTime
+{
+    if(!self.running) return;
+    NSTimeInterval currentTime=[NSDate timeIntervalSinceReferenceDate];
+    NSTimeInterval elapsed =currentTime-self.startTime;
+    
+    int mins = (int)(elapsed /60);
+    elapsed -= mins*60;
+    
+    int secs=(int)elapsed;
+    elapsed -=secs;
+    
+    int fraction = elapsed*10.0;
+    
+    self.timerViewTimerLabel.text=[NSString stringWithFormat:@"%u:%02u.%u",mins,secs,fraction];
+    [self performSelector:@selector(updateTime) withObject:self afterDelay:0.1];
+}
 @end

@@ -5,8 +5,46 @@
   Created by LGBS dev on 7/16/14.
   Copyright (c) 2014 LGBS. All rights reserved.
 */
+//Main View
 "Login"="Zaloguj";
 "Add"="Dodaj";
 "Delete"="Usuń";
 "Import"="Importuj";
 "Export"="Eksportuj";
+
+//Login View
+"Welcome"="Witaj";
+"If you want add account, first fill all fields"="Aby dodać konto uzupełnij poniższe dane";
+"Put your name"="Twoje imię";
+"Add password ?"="Zabezpiecz konto hasłem";
+"Password"="Hasło";
+"Repeat password"="Powtórz hasło";
+"Create account"="Dodaj konto";
+
+//Delete View
+"Delete"="Usuń konto";
+
+//Import View
+"Imports account"="Import konta";
+"Choose file with user settings and click import"="Wczytaj plik z danymi konta i kliknij na importuj";
+"File"="Plik";
+"Choose file"="Wczytaj plik";
+"Account name"="Nazwa konta";
+"Import account"="Importuj konto";
+
+//Export View
+"Export account"="Eksportuj konto";
+"Export via File Sharing"="Eksportuj na dysk";
+"Export via Email"="Eksportuj na adres mailowy";
+"Cancel"="Anuluj";
+
+//Other
+"Error"="Błąd";
+"Fields password and repassword cannot be empty"="Pole hasło i powtórz hasło nie mogą być puste";
+"Passwords don't match"="Hasła nie są takie same";
+"User already exsist"="Użytkownik już istnieje";
+"Field login cannot be empty"="Pole twoje imię nie może być puste";
+"User already exsist choose other login or delete exist account"="Użytkownik już istnieje, proszę wybrać inna nazwę albo usunąć istniejące konto";
+"Delete"="Usunięcie konta";
+"Are you sure ?"="Jes†eś pewien, że chcesz usunąć wybrane konto ?";
+"Back"="Wróć";

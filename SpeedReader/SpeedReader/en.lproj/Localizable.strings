@@ -5,8 +5,48 @@
   Created by LGBS dev on 7/16/14.
   Copyright (c) 2014 LGBS. All rights reserved.
 */
+
+//Main View
 "Login"="Login";
 "Add"="Add";
 "Delete"="Delete";
 "Import"="Import";
 "Export"="Export";
+
+//Add account View
+"Welcome"="Welcome";
+"If you want add account, first fill all fields"="If you want add account, first fill all fields";
+"Put your name"="Put your name";
+"Add password ?"="Add password ?";
+"Password"="Password";
+"Repeat password"="Repeat password";
+"Create account"="Create account";
+
+//Delete View
+"Delete"="Delete";
+
+//Import View
+"Imports account"="Imports account";
+"Choose file with user settings and click import"="Choose file with user settings and click import";
+"File"="File";
+"Choose file"="Choose file";
+"Account name"="Account name";
+"Import account"="Import account";
+
+//Export View
+"Export account"="Export account";
+"Export via File Sharing"="Export via File Sharing";
+"Export via Email"="Export via Email";
+"Cancel"="Cancel";
+
+//Other
+"Error"="Error";
+"Fields password and repassword cannot be empty"="Fields password and repassword cannot be empty";
+"Passwords don't match"="Passwords don't match";
+"User already exsist"="User already exsist";
+"Field login cannot be empty"="Field login cannot be empty";
+"User already exsist choose other login or delete exist account"="User already exsist choose other login or delete exist account";
+"Delete"="Delete";
+"Are you sure ?"="Are you sure ?";
+"Back"="Back";
+

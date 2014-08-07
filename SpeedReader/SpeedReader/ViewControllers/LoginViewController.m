@@ -53,9 +53,8 @@
 
     
     
-    
     [super viewDidLoad];
-    
+    [self.loginViewLoginButton setTitle:NSLocalizedString(@"Login", nil)forState:UIControlStateNormal];
         // Do any additional setup after loading the view.
     
 //    UserAccount* test=[UserAccount initAccountWithLogin:@"Test1" andImage:@"Test1"];

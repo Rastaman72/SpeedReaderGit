@@ -30,14 +30,18 @@
     self.theDataObject = [self theAppDataObject];
     self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
     self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
+    self.importAccountName.text=[self.theDataObject.importUserList firstObject];
+    [self.importAccountName sizeToFit];
+    
 
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    self.theDataObject = [self theAppDataObject];
-    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
-    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
+//    self.theDataObject = [self theAppDataObject];
+//    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
+//    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
+//}
 }
 
 -(void)viewWillDisappear:(BOOL)animated
@@ -49,7 +53,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.importAccountDescription.text=NSLocalizedString(@"Imports account", nil);
+    [self.importAccountDescription sizeToFit];
+   
+    self.importAccountInfo.text=NSLocalizedString(@"Choose file with user settings and click import", nil);
+    [self.importAccountInfo sizeToFit];
+    self.importAccountFileLocalization.text=NSLocalizedString(@"File", nil);
+    [self.importAccountFileLocalization sizeToFit];
+    [self.importAccountButton setTitle:NSLocalizedString(@"Choose file", nil) forState:UIControlStateNormal];
+    [self.importAccountButton sizeToFit];
+    self.importAccountLogin.text=NSLocalizedString(@"Account name", nil);
+    [self.importAccountLogin sizeToFit];
+    self.importAccountPasswordDescription.text=NSLocalizedString(@"Add password ?", nil);
+    [self.importAccountPasswordDescription sizeToFit];
+    self.importAccountPassword.text=NSLocalizedString(@"Password", nil);
+    [self.importAccountPassword sizeToFit];
+    self.importAccountRePassword.text=NSLocalizedString(@"Repeat password", nil);
+    [self.importAccountRePassword sizeToFit];
+    [self.importUserButton setTitle:NSLocalizedString(@"Import account", nil) forState:UIControlStateNormal];
+    [self.importUserButton sizeToFit];
     // Do any additional setup after loading the view.
 }
 
@@ -71,6 +93,7 @@
     [self.importAccountPasswordCheckBox setOn:NO];
     self.importAccountPasswordField.text=@"";
     self.importAccountRePasswordField.text=@"";
+    self.importAccountName.text=@"";
 }
 
 -(BOOL)checkPassword

@@ -14,11 +14,13 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface ImportAccountViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *importAccountFileLocalizationField;
-@property (weak, nonatomic) IBOutlet UILabel *importAccountFileLocalization;
+
 @property (weak, nonatomic) IBOutlet UIImageView *importAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountDescription;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountName;
+@property (weak, nonatomic) IBOutlet UILabel *importAccountInfo;
+@property (weak, nonatomic) IBOutlet UITextField *importAccountFileLocalizationField;
+@property (weak, nonatomic) IBOutlet UILabel *importAccountFileLocalization;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountLogin;
 @property (weak, nonatomic) IBOutlet UITextField *importAccountLoginField;
 @property (weak, nonatomic) IBOutlet UISwitch *importAccountPasswordCheckBox;
@@ -32,7 +34,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *importAccountButton;
 - (IBAction)importAccountPush:(id)sender;
 - (IBAction)addUserPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *addUserButton;
+@property (weak, nonatomic) IBOutlet UIButton *importUserButton;
 @property(nonatomic,strong)NSMutableArray * userAccounts;
 
 @property(nonatomic,retain)UserAccountForDB* theNewAccount;

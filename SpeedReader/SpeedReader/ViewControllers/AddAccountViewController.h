@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "UserAccount.h"
 #import "GDataXMLNode.h"
 #import "UserParser.h"
 #import "SharedData.h"

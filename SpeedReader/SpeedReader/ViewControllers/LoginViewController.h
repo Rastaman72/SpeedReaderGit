@@ -19,4 +19,5 @@
 @property(nonatomic,assign)int chooseUser;
 @property(nonatomic,strong)SharedData* theDataObject;
 @property(nonatomic,strong)NSString* passwordPutByUser;
+@property (weak, nonatomic) IBOutlet UIButton *loginViewLoginButton;
 @end

@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface TimerViewController : UIViewController
+- (IBAction)backPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UINavigationItem *timerViewNavBar;
+@property (weak, nonatomic) IBOutlet UILabel *timerViewTimerLabel;
+@property (weak, nonatomic) IBOutlet UIButton *timerViewStartTimerButton;
+- (IBAction)startPush:(id)sender;
+@property (nonatomic,assign)bool running;
+@property (nonatomic,assign)NSTimeInterval startTime;
 
 @end

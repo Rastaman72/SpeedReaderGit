@@ -32,6 +32,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.addAccountDescription.text=NSLocalizedString(@"Welcome", nil);
+    [self.addAccountDescription sizeToFit];
+    self.addAccountName.text=NSLocalizedString(@"If you want add account, first fill all fields", nil);
+    [self.addAccountName sizeToFit];
+    self.addAccountLogin.text=NSLocalizedString(@"Put your name", nil);
+    [self.addAccountLogin sizeToFit];
+    self.addAccountPasswordDescription.text=NSLocalizedString(@"Add password ?", nil);
+    [self.addAccountPasswordDescription sizeToFit];
+    self.addAccountPassword.text=NSLocalizedString(@"Password", nil);
+    [self.addAccountPassword sizeToFit];
+    self.addAccountRePassword.text=NSLocalizedString(@"Repeat password", nil);
+    [self.addAccountRePassword sizeToFit];
+    [self.addAccountButton setTitle:NSLocalizedString(@"Create account", nil) forState:UIControlStateNormal];
+    [self.addAccountButton sizeToFit];
     // Do any additional setup after loading the view.
 }
 
@@ -81,17 +95,17 @@
                 }
                 else
                 {
-                    UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"Password dosen't the same" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                    UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"Passwords don't match", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                     [alert show];
                     return;
                 }
             }
             else
             {
-                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                     message:@"Field password or repassword cannot be empty"
+                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                                     message:NSLocalizedString(@"Fields password and repassword cannot be empty", nil)
                                                                     delegate:nil
-                                                           cancelButtonTitle:@"OK"
+                                                           cancelButtonTitle:@"Ok"
                                                            otherButtonTitles:nil];
                 errorAlert.show;
                 return;
@@ -110,15 +124,15 @@
         }
         else
         {
-            UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"User already exsist", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [alert show];
         }
         //Write the file
     }
     else
     {
-        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                             message:@"Field login cannot be empty"
+        UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                             message:NSLocalizedString(@"Field login cannot be empty", nil)
                                                             delegate:nil
                                                    cancelButtonTitle:@"OK"
                                                    otherButtonTitles:nil];

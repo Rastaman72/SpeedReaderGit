@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.deleteAccountDeleteButton setTitle:NSLocalizedString(@"Delete", nil) forState:UIControlStateNormal];
     // Do any additional setup after loading the view.
 }
 
@@ -89,11 +90,11 @@
    }
 
 - (IBAction)deletePush:(id)sender {
-    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Delete"
-                                                         message:@"Are you sure?"
+    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Delete", nil)
+                                                         message:NSLocalizedString(@"Are you sure ?", nil)
                                                         delegate:self
-                                               cancelButtonTitle:@"OK"
-                                               otherButtonTitles:@"Back",nil];
+                                               cancelButtonTitle:@"Ok"
+                                               otherButtonTitles:NSLocalizedString(@"Back", nil),nil];
     errorAlert.show;
     
 }

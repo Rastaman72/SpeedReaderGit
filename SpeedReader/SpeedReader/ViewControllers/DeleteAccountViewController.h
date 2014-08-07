@@ -17,5 +17,6 @@
 @property(nonatomic,retain)NSMutableArray* userList;
 @property(nonatomic,strong) SharedData* theDataObject;
 @property(nonatomic,assign)int toDelete;
+@property (weak, nonatomic) IBOutlet UIButton *deleteAccountDeleteButton;
 
 @end
