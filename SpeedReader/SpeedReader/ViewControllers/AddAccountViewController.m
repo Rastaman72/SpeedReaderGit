@@ -34,19 +34,27 @@
     [super viewDidLoad];
     self.addAccountDescription.text=NSLocalizedString(@"Welcome", nil);
     [self.addAccountDescription sizeToFit];
+    
     self.addAccountName.text=NSLocalizedString(@"If you want add account, first fill all fields", nil);
     [self.addAccountName sizeToFit];
+    
     self.addAccountLogin.text=NSLocalizedString(@"Put your name", nil);
     [self.addAccountLogin sizeToFit];
+    
     self.addAccountPasswordDescription.text=NSLocalizedString(@"Add password ?", nil);
     [self.addAccountPasswordDescription sizeToFit];
+    
     self.addAccountPassword.text=NSLocalizedString(@"Password", nil);
     [self.addAccountPassword sizeToFit];
+    
     self.addAccountRePassword.text=NSLocalizedString(@"Repeat password", nil);
     [self.addAccountRePassword sizeToFit];
     [self.addAccountButton setTitle:NSLocalizedString(@"Create account", nil) forState:UIControlStateNormal];
     [self.addAccountButton sizeToFit];
     // Do any additional setup after loading the view.
+    
+  
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,18 +76,100 @@
     }
 }
 
+- (IBAction)addPicturePush:(id)sender {
+    if (self.picker == nil) {
+        
+        // 1) Show status
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.labelText = @"Loading picker";
+        // 2) Get a concurrent queue form the system
+        dispatch_queue_t concurrentQueue =
+        dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        
+        // 3) Load picker in background
+        dispatch_async(concurrentQueue, ^{
+            
+            self.picker = [[UIImagePickerController alloc] init];
+            self.picker.delegate = self;
+            self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            self.picker.allowsEditing = NO;
+            
+            // 4) Present picker in main thread
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self presentViewController:_picker animated:YES completion:nil];
+                 [MBProgressHUD hideHUDForView:self.view animated:YES];
+            });
+            
+        });
+        
+    }  else {
+        [self presentViewController:_picker animated:YES completion:nil];
+    }
+}
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
-    /*
-     
-     TO sie przydza dopeior podczas eksportu
-     
-     */
-    /*
-    //create user.xml
-   
-     */
-//}
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *fullImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+  
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Adding image to app";
+    
+       dispatch_queue_t concurrentQueue =
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    
+    dispatch_async(concurrentQueue, ^{
+        
+        
+        NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]];
+        NSString* descriptionFile=[description stringByAppendingString:@".jpg"];
+        NSString  *jpgPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/image4.jpg"];
+        
+        [[NSFileManager defaultManager] createFileAtPath:jpgPath contents:nil attributes:nil];
+        
+        [UIImageJPEGRepresentation(fullImage, 1.0) writeToFile:jpgPath atomically:YES];
+
+        NSFileManager *filemgr;
+        NSArray *filelist;
+        int count;
+        int i;
+        
+        
+        
+        NSString *documentsDirectory = NSHomeDirectory();
+        NSError* error;
+        filemgr =[NSFileManager defaultManager];
+        filelist = [filemgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
+        
+        for (NSString* path in filelist) {
+             NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:path];
+            NSError* error;
+            filemgr =[NSFileManager defaultManager];
+            filelist = [filemgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
+            NSLog(@"%@",[error description]);
+        }
+       
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.theDataObject.imageUser setObject:[UIImage imageWithContentsOfFile:jpgPath] forKey:description];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+            
+            self.theDataObject.key=[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]-1];
+            self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
+            [self.addAccountImage setImage:self.chooseImage];
+            
+        });
+        
+    });
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 
 - (IBAction)addAccountPush:(id)sender {
@@ -91,7 +181,7 @@
             {
                 if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
                 {
-                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:_addAccountPasswordField.text];
+                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.key andPassword:self.addAccountPasswordField.text];
                 }
                 else
                 {
@@ -112,11 +202,11 @@
             }
         }
         else
-            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:_addAccountLoginField.text andImage:nil andPassword:nil];
+            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.key andPassword:nil];
         
         
         
-        self.theDataObject = [self theAppDataObject];
+       
         if(self.theNewAccount !=nil)
         {
             [self.theDataObject.actuallUserList addObject:self.theNewAccount];
@@ -146,6 +236,12 @@
     [_addAccountPasswordCheckBox setOn:NO];
     _addAccountPasswordField.text=@"";
     _addAccountRePasswordField.text=@"";
+    self.theDataObject = [self theAppDataObject];
+    self.theDataObject.key=@"image0";
+    self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
+    [self.addAccountImage setImage:self.chooseImage];
+    [self.addAccountImageTable scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+
 }
 
 - (SharedData*) theAppDataObject;
@@ -167,6 +263,49 @@
         self.addAccountPasswordField.enabled=NO;
         self.addAccountRePasswordField.enabled=NO;
     }
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    // Return the number of rows in the section.
+    return [self.theDataObject.imageUser count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"imageCell"];
+    
+    NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
+
+    cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    [imgView setImage:cell.userImage];
+    [cell addSubview:imgView];
+       return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    NSString* key=@"image";
+//    key=[key stringByAppendingString:[NSString stringWithFormat: @"%d", (int)indexPath.row]];
+//    key=[key stringByAppendingString:@".jpg"];
+    
+    self.theDataObject.key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
+
+    self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
+    [self.addAccountImage setImage:self.chooseImage];
+    
 }
 
 

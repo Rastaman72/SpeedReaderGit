@@ -13,7 +13,8 @@
 #import "ListAccountToImportTableViewController.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-@interface ImportAccountViewController : UIViewController
+#import "ImageTableViewCell.h"
+@interface ImportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *importAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountDescription;
@@ -39,6 +40,11 @@
 
 @property(nonatomic,retain)UserAccountForDB* theNewAccount;
 @property(nonatomic,strong)SharedData* theDataObject;
+
+
+@property (weak, nonatomic) IBOutlet UITableView *importAccountImageTable;
+@property (nonatomic,strong)NSMutableArray* imageTable;
+@property (nonatomic,strong)UIImage* chooseImage;
 
 - (BOOL)importFromURL:(NSURL *)importURL;
 @end

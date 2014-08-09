@@ -22,6 +22,9 @@
     self.theAppDataObject = [[SharedData alloc] init];
     self.theAppDataObject.actuallUserList=[[NSMutableArray alloc]init];
     self.theAppDataObject.importUserList=[[NSMutableArray alloc]init];
+    [self.theAppDataObject createImageUserArray];
+    
+
     // Override point for customization after application launch.
    
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
@@ -82,7 +85,7 @@
     NSArray *fileList = [manager contentsOfDirectoryAtPath:documentsDirectory error:nil];
     
     for (NSString* toDelete in fileList) {
-        if([toDelete rangeOfString:@"sqlite"].location ==NSNotFound)
+        if([toDelete rangeOfString:@"sqlite"].location == NSNotFound && [toDelete rangeOfString:@".jpg"].location == NSNotFound)
         {
           
             NSString* pathToFile = [documentsDirectory stringByAppendingString:@"/"];

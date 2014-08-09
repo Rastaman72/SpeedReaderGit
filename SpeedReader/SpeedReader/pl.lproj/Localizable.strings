@@ -31,6 +31,7 @@
 "Choose file"="Wczytaj plik";
 "Account name"="Nazwa konta";
 "Import account"="Importuj konto";
+"First you have to choose file to import"="Proszę najpierw wybrać plik zawierający konto do importu";
 
 //Export View
 "Export account"="Eksportuj konto";
@@ -48,3 +49,8 @@
 "Delete"="Usunięcie konta";
 "Are you sure ?"="Jes†eś pewien, że chcesz usunąć wybrane konto ?";
 "Back"="Wróć";
+"First choose user"="Najpierw wybierz wybierz użytkownika";
+"You put diffrent password in repeat password field"="Podane hasła nie są identyczne";
+"Security"="Weryfikacja";
+"Put password please"="Proszę podać hasło";
+"You put bad password"="Podałeś złe hasło";

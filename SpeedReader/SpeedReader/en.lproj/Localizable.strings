@@ -32,6 +32,7 @@
 "Choose file"="Choose file";
 "Account name"="Account name";
 "Import account"="Import account";
+"First you have to choose file to import"="First you have to choose file to import";
 
 //Export View
 "Export account"="Export account";
@@ -49,4 +50,8 @@
 "Delete"="Delete";
 "Are you sure ?"="Are you sure ?";
 "Back"="Back";
-
+"First choose user"="First choose user";
+"You put diffrent password in repeat password field"="You put diffrent password in repeat password field";
+"Security"="Security";
+"Put password please"="Put password please";
+"You put bad password"="You put bad password";

@@ -57,8 +57,7 @@
     [self.loginViewLoginButton setTitle:NSLocalizedString(@"Login", nil)forState:UIControlStateNormal];
         // Do any additional setup after loading the view.
     
-//    UserAccount* test=[UserAccount initAccountWithLogin:@"Test1" andImage:@"Test1"];
-//    [_userList addObject:test];
+
   
 }
 
@@ -104,7 +103,8 @@
     //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];
     
     cell.accountLogin.text=name;
-    cell.accountImage=[UIImage imageNamed:[NSString stringWithFormat:@"%@",account.userImage]];
+    [cell.accountLogin sizeToFit];
+    [cell.accountImage setImage:[self.theDataObject.imageUser objectForKey:account.userImage]];
     return cell;
 }
 
@@ -115,14 +115,14 @@
 
 - (IBAction)loginPush:(id)sender {
     if (self.chooseUser==-1) {
-        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:@"Error" message:@"First choose user" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"First choose user", nil) delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
     else
     {
         if(![[[self.theDataObject.actuallUserList objectAtIndex:self.chooseUser]password]isEqualToString:@""])
         {
-        UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:@"Security" message:@"Put password please" delegate:self cancelButtonTitle:@"Login" otherButtonTitles:@"Back", nil];
+        UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Security", nil) message:NSLocalizedString(@"Put password please", nil) delegate:self cancelButtonTitle:NSLocalizedString(@"Login", nil) otherButtonTitles:NSLocalizedString(@"Back", nil), nil];
         
         putPassword.alertViewStyle = UIAlertViewStylePlainTextInput;
         [putPassword show];
@@ -134,6 +134,8 @@
 }
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    if(self.chooseUser!=-1)
+    {
     if (buttonIndex == alertView.cancelButtonIndex) {
         UITextField *passwordField = [alertView textFieldAtIndex:0];
         if([[[self.theDataObject.actuallUserList objectAtIndex:self.chooseUser]password]isEqualToString:passwordField.text])
@@ -143,10 +145,11 @@
            }
         else
         {
-            UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:@"Security" message:@"You put bad password" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            UIAlertView* putPassword=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Security", nil) message:NSLocalizedString(@"You put bad password", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
             
             [putPassword show];
         }
+    }
     }
 }
 - (SharedData*) theAppDataObject;

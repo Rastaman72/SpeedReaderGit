@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UIKit/UIImage.h>
 #import "GDataXMLNode.h"
 #import "UserParser.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 #import "UserAccountForDB.h"
-@interface AddAccountViewController : UIViewController
+#import "ImageTableViewCell.h"
+#import "MBProgressHUD.h"
+@interface AddAccountViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *addAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *addAccountDescription;
 @property (weak, nonatomic) IBOutlet UILabel *addAccountName;
@@ -26,6 +29,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *addAccountRePassword;
 @property (weak, nonatomic) IBOutlet UITextField *addAccountRePasswordField;
 @property (weak, nonatomic) IBOutlet UIButton *addAccountButton;
+
+@property (weak, nonatomic) IBOutlet UITableView *addAccountImageTable;
+@property (nonatomic,strong)NSMutableArray* imageTable;
+@property (nonatomic,strong)UIImage* chooseImage;
+@property (weak, nonatomic) IBOutlet UIButton *addAccountAddOwnPicture;
+- (IBAction)addPicturePush:(id)sender;
+@property (strong, nonatomic) UIImagePickerController *picker;
+
+
 - (IBAction)addAccountPush:(id)sender;
 
 - (IBAction)passwordSet:(id)sender;

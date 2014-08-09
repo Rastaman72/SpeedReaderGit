@@ -159,5 +159,14 @@
     [unzipFile close];
     return self.correctUnZip;
 }
+-(void)createImageUserArray
+{
+    self.imageUser=[[NSMutableDictionary alloc]init];
+    
+    [self.imageUser setObject:[UIImage imageNamed:@"image0.jpg"] forKey:@"image0"];
+     [self.imageUser setObject:[UIImage imageNamed:@"image1.jpg"] forKey:@"image1"];
+     [self.imageUser setObject:[UIImage imageNamed:@"image2.jpg"] forKey:@"image2"];
+     [self.imageUser setObject:[UIImage imageNamed:@"image3.jpg"] forKey:@"image3"];
+}
 
 @end

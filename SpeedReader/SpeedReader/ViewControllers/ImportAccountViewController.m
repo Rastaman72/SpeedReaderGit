@@ -32,22 +32,28 @@
     self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
     self.importAccountName.text=[self.theDataObject.importUserList firstObject];
     [self.importAccountName sizeToFit];
+    self.chooseImage=[self.theDataObject.imageUser objectForKey:[self.theDataObject.importUserList lastObject]];
+    if (self.chooseImage) {
+         [self.importAccountImage setImage:self.chooseImage];
+    }
+   
     
-
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-//    self.theDataObject = [self theAppDataObject];
-//    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
-//    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
-//}
+    //    self.theDataObject = [self theAppDataObject];
+    //    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
+    //    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
+    //}
+    [self cleanView];
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     self.theDataObject.importUserList=nil;
-     [self cleanView];
+    [self cleanView];
 }
 
 - (void)viewDidLoad
@@ -55,11 +61,12 @@
     [super viewDidLoad];
     self.importAccountDescription.text=NSLocalizedString(@"Imports account", nil);
     [self.importAccountDescription sizeToFit];
-   
+    
     self.importAccountInfo.text=NSLocalizedString(@"Choose file with user settings and click import", nil);
     [self.importAccountInfo sizeToFit];
     self.importAccountFileLocalization.text=NSLocalizedString(@"File", nil);
     [self.importAccountFileLocalization sizeToFit];
+    
     [self.importAccountButton setTitle:NSLocalizedString(@"Choose file", nil) forState:UIControlStateNormal];
     [self.importAccountButton sizeToFit];
     self.importAccountLogin.text=NSLocalizedString(@"Account name", nil);
@@ -72,6 +79,8 @@
     [self.importAccountRePassword sizeToFit];
     [self.importUserButton setTitle:NSLocalizedString(@"Import account", nil) forState:UIControlStateNormal];
     [self.importUserButton sizeToFit];
+    
+    
     // Do any additional setup after loading the view.
 }
 
@@ -89,11 +98,16 @@
 - (void)cleanView {
     self.importAccountFileLocalizationField.text=@"";
     self.importAccountLoginField.text=@"";
-    self.importAccountImage=nil;
     [self.importAccountPasswordCheckBox setOn:NO];
     self.importAccountPasswordField.text=@"";
     self.importAccountRePasswordField.text=@"";
     self.importAccountName.text=@"";
+    self.theDataObject = [self theAppDataObject];
+    NSString*key=@"image0";
+    self.chooseImage=[self.theDataObject.imageUser objectForKey:key];
+    [self.importAccountImage setImage:self.chooseImage];
+    [self.importAccountImageTable scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
+
 }
 
 -(BOOL)checkPassword
@@ -105,58 +119,65 @@
     rePassword=[rePassword stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     
     return [password isEqualToString:rePassword];
-
+    
     
 }
 - (IBAction)addUserPush:(id)sender {
-    
-    if (![[self.theDataObject.importUserList firstObject]isEqualToString:self.importAccountLoginField.text]) {
-        self.theDataObject.unique=true;
-        [self.theDataObject.importUserList removeAllObjects];
-        [self.theDataObject.importUserList addObject:self.importAccountLoginField.text];
-//        [self.theDataObject.importUserList addObject:[self.importAccountImage accessibilityIdentifier]];
-        [self.theDataObject.importUserList addObject:@""];
-    }
-    
-    if(self.theDataObject.unique)
+    if((self.importAccountFileLocalizationField.text && self.importAccountFileLocalizationField.text.length > 0))
     {
-    
-    if ([self.importAccountPasswordCheckBox isOn]) {
-    
-    
-    if([self checkPassword])
-    {
-       UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:self.importAccountPasswordField.text];
-
-    [self.theDataObject.actuallUserList addObject:user];
-        [self cleanView];
+        if (![[self.theDataObject.importUserList firstObject]isEqualToString:self.importAccountLoginField.text]) {
+            self.theDataObject.unique=true;
+            [self.theDataObject.importUserList removeAllObjects];
+            [self.theDataObject.importUserList addObject:self.importAccountLoginField.text];
+            //        [self.theDataObject.importUserList addObject:[self.importAccountImage accessibilityIdentifier]];
+            [self.theDataObject.importUserList addObject:@""];
+        }
         
-        self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
-    }else
+        if(self.theDataObject.unique)
         {
-            UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                                 message:@"You put diffrent password in repeat password field"
-                                                                delegate:nil
-                                                       cancelButtonTitle:@"OK"
-                                                       otherButtonTitles:nil];
-            errorAlert.show;
+            
+            if ([self.importAccountPasswordCheckBox isOn]) {
+                
+                
+                if([self checkPassword])
+                {
+                    UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:self.importAccountPasswordField.text];
+                    
+                    [self.theDataObject.actuallUserList addObject:user];
+                    [self cleanView];
+                    
+                    self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+                }else
+                {
+                    UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil)
+                                                                         message:NSLocalizedString(@"You put diffrent password in repeat password field", nil)
+                                                                        delegate:nil
+                                                               cancelButtonTitle:@"Ok"
+                                                               otherButtonTitles:nil];
+                    errorAlert.show;
+                }
+            }
+            else
+            {
+                UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:nil];
+                //[theDataObject.actuallUserList addObject:user];
+                
+                [self.theDataObject.actuallUserList addObject:user];
+                
+                [self cleanView];
+                
+                self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
+            }
+        }
+        else
+        {
+            UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"User already exsist choose other login or delete exist account", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            [alert show];
         }
     }
     else
     {
-        UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:nil];
-        //[theDataObject.actuallUserList addObject:user];
-
-    [self.theDataObject.actuallUserList addObject:user];
-    
-        [self cleanView];
-    
-    self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:0];
-    }
-    }
-    else
-    {
-        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Error" message:@"User already exsist choose other login or delete exist account" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"First you have to choose file to import", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
     }
 }
@@ -222,6 +243,50 @@
 - (BOOL)importFromURL:(NSURL *)importURL {
     NSData *zippedData = [NSData dataWithContentsOfURL:importURL];
     return [self importData:zippedData];
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    // Return the number of rows in the section.
+    return [self.theDataObject.imageUser count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"imageCell"];
+    
+    //cell.imageView.image=[self.imageTable objectAtIndex:indexPath.row];
+    
+    //    NSString* key=@"image";
+    //    key=[key stringByAppendingString:[NSString stringWithFormat: @"%d", (int)indexPath.row]];
+    //    key=[key stringByAppendingString:@".jpg"];
+    //
+    NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
+    
+    cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
+    
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    [imgView setImage:cell.userImage];
+    [cell addSubview:imgView];
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
+    self.chooseImage=[self.theDataObject.imageUser objectForKey:key];
+    [self.importAccountImage setImage:self.chooseImage];
 }
 
 

@@ -23,6 +23,7 @@
 @property(nonatomic,strong)NSMutableArray* actuallUserList;
 @property (nonatomic,strong)NSMutableArray* importUserList;
 @property (nonatomic,strong)NSMutableArray* userSettings;
+@property (nonatomic,strong)NSMutableDictionary* imageUser;
 @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -30,4 +31,6 @@
 @property (nonatomic,assign) bool correctUnZip;
 - (NSString *)applicationDocumentsDirectory;
 - (BOOL)unZipFile:(NSString *)filePath;
+- (void)createImageUserArray;
+@property(nonatomic,strong)NSString*key;
 @end

@@ -31,6 +31,8 @@
 {
     [super viewDidLoad];
     [self.deleteAccountDeleteButton setTitle:NSLocalizedString(@"Delete", nil) forState:UIControlStateNormal];
+    [self.deleteAccountDeleteButton sizeToFit];
+    self.toDelete=-1;
     // Do any additional setup after loading the view.
 }
 
@@ -76,7 +78,8 @@
     //NSString* image=[NSString stringWithFormat:@"%@",account.userImage];
     
     cell.accountLogin.text=name;
-    cell.accountImage=[UIImage imageNamed:[NSString stringWithFormat:@"%@",account.userImage]];
+    [cell.accountLogin sizeToFit];
+    [cell.accountImage setImage:[self.theDataObject.imageUser objectForKey:account.userImage]];
     return cell;
 }
 
@@ -90,19 +93,27 @@
    }
 
 - (IBAction)deletePush:(id)sender {
+    if(self.toDelete!=-1)
+    {
     UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Delete", nil)
                                                          message:NSLocalizedString(@"Are you sure ?", nil)
                                                         delegate:self
                                                cancelButtonTitle:@"Ok"
                                                otherButtonTitles:NSLocalizedString(@"Back", nil),nil];
     errorAlert.show;
+    }
+    else
+    {
+        UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"First choose user", nil) delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok",nil];
+        [alert show];
+    }
     
 }
 
 - (void)alertView:(UIAlertView *)alert clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     
-    if (buttonIndex == 0)
+    if (buttonIndex == [alert cancelButtonIndex])
     {
         
         self.theDataObject = [self theAppDataObject];
@@ -116,6 +127,7 @@
         
         self.userList=[[NSMutableArray alloc]initWithArray:self.theDataObject.actuallUserList];
         [self.accountTable reloadData];
+        self.toDelete=-1;
 		
         
     }
