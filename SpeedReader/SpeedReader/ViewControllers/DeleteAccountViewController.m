@@ -79,7 +79,8 @@
     
     cell.accountLogin.text=name;
     [cell.accountLogin sizeToFit];
-    [cell.accountImage setImage:[self.theDataObject.imageUser objectForKey:account.userImage]];
+    UIImage* image=[UIImage imageWithData:account.userImage];
+    [cell.accountImage setImage:image];
     return cell;
 }
 

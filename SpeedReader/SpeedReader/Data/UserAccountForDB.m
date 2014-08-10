@@ -16,7 +16,7 @@
 @dynamic userImage;
 @dynamic settings;
 
--(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(NSString*)userImage andPassword:(NSString*)userPassword
+-(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword
 {
     SharedData* theDataObject = [self theAppDataObject];
     NSManagedObjectContext *context =  theDataObject.managedObjectContext;
@@ -47,9 +47,12 @@
         newUser.password=@"";
     
     if(userImage!=nil)
-        newUser.userImage=userImage;
-    else
-        newUser.userImage=@"";
+    {
+        NSData *imageData=UIImageJPEGRepresentation(userImage, 1.0);
+        newUser.userImage=imageData;
+    }
+        else
+        newUser.userImage=nil;
     
      newUser.settings=userSettings;
     NSError*error;

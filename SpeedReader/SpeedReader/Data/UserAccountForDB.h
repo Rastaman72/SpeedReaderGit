@@ -12,9 +12,9 @@
 
 @property (nonatomic,strong)NSString* login;
 @property (strong, nonatomic) NSString *password;
-@property (strong, nonatomic) NSString *userImage;
+@property (strong, nonatomic) NSData *userImage;
 @property (strong, nonatomic) SettingsForDB *settings;
 
 
--(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(NSString*)userImage andPassword:(NSString*)userPassword;
+-(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword;
 @end

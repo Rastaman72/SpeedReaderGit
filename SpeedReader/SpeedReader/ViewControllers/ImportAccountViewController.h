@@ -14,7 +14,7 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 #import "ImageTableViewCell.h"
-@interface ImportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface ImportAccountViewController : UIViewController<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *importAccountImage;
 @property (weak, nonatomic) IBOutlet UILabel *importAccountDescription;
@@ -47,4 +47,7 @@
 @property (nonatomic,strong)UIImage* chooseImage;
 
 - (BOOL)importFromURL:(NSURL *)importURL;
+@property (strong, nonatomic) UIImagePickerController *picker;
+@property (weak, nonatomic) IBOutlet UIButton *importAccountAddOwnPicture;
+- (IBAction)addPicturePush:(id)sender;
 @end

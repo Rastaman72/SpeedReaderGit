@@ -32,10 +32,15 @@
     self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
     self.importAccountName.text=[self.theDataObject.importUserList firstObject];
     [self.importAccountName sizeToFit];
-    self.chooseImage=[self.theDataObject.imageUser objectForKey:[self.theDataObject.importUserList lastObject]];
-    if (self.chooseImage) {
-         [self.importAccountImage setImage:self.chooseImage];
-    }
+    
+    
+    /////FIXIFIXIFIXFIXFIXIFXIF
+    //UIImage*image=[UIImage imageWithData: [self.theDataObject.importUserList lastObject]];
+   /* NSString* test =[[NSString alloc]initWithData:[self.theDataObject.importUserList lastObject] encoding:NSUTF8StringEncoding];
+     self.theDataObject.chooseImage=[UIImage imageWithData:[self.theDataObject.importUserList lastObject]];
+    if ( self.theDataObject.chooseImage) {
+         [self.importAccountImage setImage: self.theDataObject.chooseImage];
+    }*/
    
     
     
@@ -104,8 +109,12 @@
     self.importAccountName.text=@"";
     self.theDataObject = [self theAppDataObject];
     NSString*key=@"image0";
-    self.chooseImage=[self.theDataObject.imageUser objectForKey:key];
-    [self.importAccountImage setImage:self.chooseImage];
+    for (ImageForDB* image in self.theDataObject.imageUser) {
+        if([image.imageName isEqualToString:key])
+            self.theDataObject.chooseImage=[UIImage imageWithData:image.imageData];
+    }
+    
+    [self.importAccountImage setImage: self.theDataObject.chooseImage];
     [self.importAccountImageTable scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 
 }
@@ -272,8 +281,8 @@
     //    key=[key stringByAppendingString:@".jpg"];
     //
     NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
-    
-    cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
+     cell.userImage=[UIImage imageWithData:[self.theDataObject.imageUser[indexPath.row]imageData]];
+  //  cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
     [imgView setImage:cell.userImage];
@@ -285,9 +294,74 @@
 {
     
     NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
-    self.chooseImage=[self.theDataObject.imageUser objectForKey:key];
-    [self.importAccountImage setImage:self.chooseImage];
+    self.theDataObject.chooseImage=[UIImage imageWithData:[self.theDataObject.imageUser[indexPath.row] imageData]];
+  //   self.theDataObject.chooseImage=[self.theDataObject.imageUser objectForKey:key];
+    [self.importAccountImage setImage: self.theDataObject.chooseImage];
 }
+
+- (IBAction)addPicturePush:(id)sender {
+    if (self.picker == nil) {
+        
+        
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.labelText = @"Loading picker";
+        
+        dispatch_queue_t concurrentQueue =
+        dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        
+        
+        dispatch_async(concurrentQueue, ^{
+            
+            self.picker = [[UIImagePickerController alloc] init];
+            self.picker.delegate = self;
+            self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            self.picker.allowsEditing = NO;
+            
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self presentViewController:_picker animated:YES completion:nil];
+                [MBProgressHUD hideHUDForView:self.view animated:YES];
+            });
+            
+        });
+        
+    }  else {
+        [self presentViewController:_picker animated:YES completion:nil];
+    }
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *fullImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Adding image to app";
+    
+    dispatch_queue_t concurrentQueue =
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    
+    dispatch_async(concurrentQueue, ^{
+        
+        self.theDataObject.chooseImage=fullImage;
+        NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]];
+        [ImageForDB initAccountWithName:description andImage:fullImage];
+        [self.theDataObject createImageUserArray];
+        [self.importAccountImageTable reloadData];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [self.importAccountImage setImage:self.theDataObject.chooseImage];
+        });
+    });
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 
 
 @end

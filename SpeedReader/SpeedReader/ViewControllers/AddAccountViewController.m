@@ -52,7 +52,8 @@
     [self.addAccountButton setTitle:NSLocalizedString(@"Create account", nil) forState:UIControlStateNormal];
     [self.addAccountButton sizeToFit];
     // Do any additional setup after loading the view.
-    
+      self.theDataObject = [self theAppDataObject];
+    self.theDataObject.chooseImage=[UIImage imageWithData:[[self.theDataObject.imageUser objectAtIndex:0]imageData]];
   
 
 }
@@ -79,14 +80,14 @@
 - (IBAction)addPicturePush:(id)sender {
     if (self.picker == nil) {
         
-        // 1) Show status
+     
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
         hud.labelText = @"Loading picker";
-        // 2) Get a concurrent queue form the system
+   
         dispatch_queue_t concurrentQueue =
         dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
         
-        // 3) Load picker in background
+ 
         dispatch_async(concurrentQueue, ^{
             
             self.picker = [[UIImagePickerController alloc] init];
@@ -94,7 +95,7 @@
             self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
             self.picker.allowsEditing = NO;
             
-            // 4) Present picker in main thread
+           
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self presentViewController:_picker animated:YES completion:nil];
                  [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -125,50 +126,18 @@
     
     dispatch_async(concurrentQueue, ^{
         
+        self.theDataObject.chooseImage=fullImage;
+       NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]];
+        [ImageForDB initAccountWithName:description andImage:fullImage];
+        [self.theDataObject createImageUserArray];
+        [self.addAccountImageTable reloadData];
         
-        NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]];
-        NSString* descriptionFile=[description stringByAppendingString:@".jpg"];
-        NSString  *jpgPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/image4.jpg"];
-        
-        [[NSFileManager defaultManager] createFileAtPath:jpgPath contents:nil attributes:nil];
-        
-        [UIImageJPEGRepresentation(fullImage, 1.0) writeToFile:jpgPath atomically:YES];
-
-        NSFileManager *filemgr;
-        NSArray *filelist;
-        int count;
-        int i;
-        
-        
-        
-        NSString *documentsDirectory = NSHomeDirectory();
-        NSError* error;
-        filemgr =[NSFileManager defaultManager];
-        filelist = [filemgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
-        
-        for (NSString* path in filelist) {
-             NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:path];
-            NSError* error;
-            filemgr =[NSFileManager defaultManager];
-            filelist = [filemgr contentsOfDirectoryAtPath:documentsDirectory error:&error];
-            NSLog(@"%@",[error description]);
-        }
-       
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.theDataObject.imageUser setObject:[UIImage imageWithContentsOfFile:jpgPath] forKey:description];
-                [MBProgressHUD hideHUDForView:self.view animated:YES];
-
-            
-            self.theDataObject.key=[NSString stringWithFormat:@"image%d",(int)[self.theDataObject.imageUser count]-1];
-            self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
-            [self.addAccountImage setImage:self.chooseImage];
-            
+            [MBProgressHUD hideHUDForView:self.view animated:YES];
+            [self.addAccountImage setImage:self.theDataObject.chooseImage];
         });
-        
     });
-    
     [self dismissViewControllerAnimated:YES completion:nil];
-    
 }
 
 
@@ -181,7 +150,7 @@
             {
                 if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
                 {
-                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.key andPassword:self.addAccountPasswordField.text];
+                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:self.addAccountPasswordField.text];
                 }
                 else
                 {
@@ -202,11 +171,7 @@
             }
         }
         else
-            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.key andPassword:nil];
-        
-        
-        
-       
+            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:nil];
         if(self.theNewAccount !=nil)
         {
             [self.theDataObject.actuallUserList addObject:self.theNewAccount];
@@ -217,7 +182,6 @@
             UIAlertView* alert=[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"User already exsist", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             [alert show];
         }
-        //Write the file
     }
     else
     {
@@ -236,10 +200,14 @@
     [_addAccountPasswordCheckBox setOn:NO];
     _addAccountPasswordField.text=@"";
     _addAccountRePasswordField.text=@"";
-    self.theDataObject = [self theAppDataObject];
+   // self.theDataObject = [self theAppDataObject];
     self.theDataObject.key=@"image0";
-    self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
-    [self.addAccountImage setImage:self.chooseImage];
+    for (ImageForDB* image in self.theDataObject.imageUser) {
+        if([image.imageName isEqual:@"image0"])
+            [self.addAccountImage setImage:[UIImage imageWithData:image.imageData]];
+    }
+//     self.theDataObject.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
+//    [self.addAccountImage setImage:self.theDataObject.chooseImage];
     [self.addAccountImageTable scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 
 }
@@ -287,7 +255,14 @@
     
     NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
 
-    cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
+    
+    cell.userImage=[UIImage imageWithData:[self.theDataObject.imageUser[indexPath.row] imageData]];
+    
+    for (ImageForDB* image in self.theDataObject.imageUser) {
+        if([image.imageName isEqual:@"image0"])
+            [self.addAccountImage setImage:[UIImage imageWithData:image.imageData]];
+    }
+    
     
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
     [imgView setImage:cell.userImage];
@@ -302,9 +277,12 @@
 //    key=[key stringByAppendingString:@".jpg"];
     
     self.theDataObject.key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
-
-    self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
-    [self.addAccountImage setImage:self.chooseImage];
+   
+    //self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
+    
+    self.theDataObject.chooseImage=[UIImage imageWithData:[self.theDataObject.imageUser[indexPath.row] imageData]];
+    
+    [self.addAccountImage setImage:self.theDataObject.chooseImage];
     
 }
 

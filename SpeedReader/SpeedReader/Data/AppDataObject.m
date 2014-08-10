@@ -62,7 +62,7 @@
     [unzipFile goToFirstFileInZip];
     for (FileInZipInfo* toExtract in infos) {
         ZipReadStream *read1= [unzipFile readCurrentFileInZip];
-        NSMutableData *data1= [[[NSMutableData alloc] initWithLength:256] autorelease];
+        NSMutableData *data1= [[[NSMutableData alloc] initWithLength:64000] autorelease];
         int bytesRead1= [read1 readDataWithBuffer:data1];
         
         NSError*error;
@@ -75,7 +75,7 @@
             //parse user.xml
             for (GDataXMLElement *xmlElements in xmlPart) {
                 NSString *name;
-                NSString* image;
+                NSData* image;
                 
                 // Name
                 NSArray *names = [xmlElements elementsForName:@"name"];
@@ -85,11 +85,11 @@
                 } else continue;
                 
                 //Image
-                NSArray *images = [xmlElements elementsForName:@"image"];
+                /*NSArray *images = [xmlElements elementsForName:@"image"];
                 if (names.count > 0) {
                     GDataXMLElement *imageName = (GDataXMLElement *) [images objectAtIndex:0];
-                    image = imageName.stringValue;
-                } else continue;
+                    image =  [imageName.stringValue dataUsingEncoding:NSUTF8StringEncoding];
+                } else continue;*/
                 
                 for (int i=0; i<[self.actuallUserList count]; i++) {
                     UserAccountForDB* toTest=[self.actuallUserList objectAtIndex:i];
@@ -109,7 +109,7 @@
                 
                 self.importUserList=[[NSMutableArray alloc]init];
                 [self.importUserList addObject:name];
-                [self.importUserList addObject:image];
+                //[self.importUserList addObject:image];
                 self.correctUnZip=TRUE;
             }
         }
@@ -161,12 +161,96 @@
 }
 -(void)createImageUserArray
 {
-    self.imageUser=[[NSMutableDictionary alloc]init];
+    NSManagedObjectContext *context =  self.managedObjectContext;
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"UserImage" inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSError *error;
+      self.imageUser=[[NSMutableArray alloc]init];
+    NSMutableArray* dbImage=[self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if ([dbImage count]==0) {
+      
+        
+        [ImageForDB initAccountWithName:@"image0" andImage:[UIImage imageNamed:@"image0.jpg"]];
+        [ImageForDB initAccountWithName:@"image1" andImage:[UIImage imageNamed:@"image1.jpg"]];
+        [ImageForDB initAccountWithName:@"image2" andImage:[UIImage imageNamed:@"image2.jpg"]];
+        [ImageForDB initAccountWithName:@"image3" andImage:[UIImage imageNamed:@"image3.jpg"]];
+        
+       /* [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image0" andImage:[UIImage imageNamed:@"image0.jpg"] ] forKey:@"image0"];
+        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image1" andImage:[UIImage imageNamed:@"image1.jpg"] ] forKey:@"image1"];
+        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image2" andImage:[UIImage imageNamed:@"image2.jpg"] ] forKey:@"image2"];
+        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image3" andImage:[UIImage imageNamed:@"image3.jpg"] ] forKey:@"image3"];
+        */
+        self.imageUser=[self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+
+    }
+    else
+    {
+        
+        self.imageUser=dbImage;
+    }
     
-    [self.imageUser setObject:[UIImage imageNamed:@"image0.jpg"] forKey:@"image0"];
-     [self.imageUser setObject:[UIImage imageNamed:@"image1.jpg"] forKey:@"image1"];
-     [self.imageUser setObject:[UIImage imageNamed:@"image2.jpg"] forKey:@"image2"];
-     [self.imageUser setObject:[UIImage imageNamed:@"image3.jpg"] forKey:@"image3"];
+    
+    
+}/*
+-(void)addPicker:(UIViewController*)view
+{
+    self.tempView=view;
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.tempView.view animated:YES];
+    hud.labelText = @"Loading picker";
+    
+    dispatch_queue_t concurrentQueue =
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    
+    dispatch_async(concurrentQueue, ^{
+        
+        self.picker = [[UIImagePickerController alloc] init];
+        self.picker.delegate = self;
+        self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.picker.allowsEditing = NO;
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [view presentViewController:self.picker animated:YES completion:nil];
+            [MBProgressHUD hideHUDForView:self.tempView.view animated:YES];
+        });
+        
+    });
 }
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self.tempView dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage *fullImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.tempView.view animated:YES];
+    hud.labelText = @"Adding image to app";
+    
+    dispatch_queue_t concurrentQueue =
+    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    
+    
+    dispatch_async(concurrentQueue, ^{
+        
+        self.chooseImage=fullImage;
+        NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.imageUser count]];
+        [ImageForDB initAccountWithName:description andImage:fullImage];
+        [self createImageUserArray];
+        //[self.tempView.addAccountImageTable reloadData];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUDForView:self.tempView.view animated:YES];
+            //[self.addAccountImage setImage:self.theDataObject.chooseImage];
+        });
+    });
+    [self.tempView dismissViewControllerAnimated:YES completion:nil];
+}*/
+
 
 @end

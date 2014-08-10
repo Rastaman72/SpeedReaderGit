@@ -19,11 +19,14 @@
 
 #import "UserAccountForDB.h"
 #import "SettingsForDB.h"
-@interface AppDataObject : NSObject<UIApplicationDelegate>
+#import "ImageForDB.h"
+
+#import "MBProgressHUD.h"
+@interface AppDataObject : NSObject<UIApplicationDelegate,UIImagePickerControllerDelegate>
 @property(nonatomic,strong)NSMutableArray* actuallUserList;
 @property (nonatomic,strong)NSMutableArray* importUserList;
 @property (nonatomic,strong)NSMutableArray* userSettings;
-@property (nonatomic,strong)NSMutableDictionary* imageUser;
+@property (nonatomic,strong)NSMutableArray* imageUser;
 @property (nonatomic, retain) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSPersistentStoreCoordinator *persistentStoreCoordinator;
@@ -33,4 +36,10 @@
 - (BOOL)unZipFile:(NSString *)filePath;
 - (void)createImageUserArray;
 @property(nonatomic,strong)NSString*key;
+@property(nonatomic,strong)UIImage* chooseImage;
+/*-(void)addPicker:(UIViewController*)view;
+@property(nonatomic,strong)UIImagePickerController* picker;
+@property(nonatomic,strong)UIViewController* tempView;*/
+
+
 @end

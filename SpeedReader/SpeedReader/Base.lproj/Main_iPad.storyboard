@@ -1307,11 +1307,22 @@
                                     <outlet property="delegate" destination="eye-sp-pk1" id="K4L-Xk-S7w"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dKF-Pw-Ywq">
+                                <rect key="frame" x="543" y="788" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPicturePush:" destination="eye-sp-pk1" eventType="touchUpInside" id="2jf-Tq-Hq7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="eyn-Wr-u0s"/>
                     <connections>
+                        <outlet property="importAccountAddOwnPicture" destination="dKF-Pw-Ywq" id="TyP-iu-KPP"/>
                         <outlet property="importAccountButton" destination="oQR-wX-jtF" id="PQ8-HN-25H"/>
                         <outlet property="importAccountDescription" destination="zKY-84-5Mh" id="TbM-Uv-UBY"/>
                         <outlet property="importAccountFileLocalization" destination="CBY-Oh-q2C" id="tmd-yi-Pml"/>

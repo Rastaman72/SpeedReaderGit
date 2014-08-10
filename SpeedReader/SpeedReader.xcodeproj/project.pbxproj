@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E90248DB197D42CF004ADAEC /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E9054AB11997989300AC077D /* ImageForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9054AB01997989300AC077D /* ImageForDB.m */; };
 		E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6ED1977F3B100846F31 /* ExercisesData.m */; };
 		E915D6F21977F48A00846F31 /* RootExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */; };
 		E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */; };
@@ -103,6 +104,8 @@
 		E90248D4197D2D81004ADAEC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E90248DA197D42CF004ADAEC /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		E90248DB197D42CF004ADAEC /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		E9054AAF1997989300AC077D /* ImageForDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageForDB.h; path = SpeedReader/Data/ImageForDB.h; sourceTree = "<group>"; };
+		E9054AB01997989300AC077D /* ImageForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageForDB.m; path = SpeedReader/Data/ImageForDB.m; sourceTree = "<group>"; };
 		E915D6EC1977F3B100846F31 /* ExercisesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesData.h; path = SpeedReader/Data/ExercisesData.h; sourceTree = "<group>"; };
 		E915D6ED1977F3B100846F31 /* ExercisesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesData.m; path = SpeedReader/Data/ExercisesData.m; sourceTree = "<group>"; };
 		E915D6EF1977F3D100846F31 /* ExercisesSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExercisesSelectionDelegate.h; path = SpeedReader/Data/ExercisesSelectionDelegate.h; sourceTree = "<group>"; };
@@ -530,6 +533,8 @@
 				E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */,
 				E9AC08C31990010B00ACD0C5 /* SettingsForDB.h */,
 				E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */,
+				E9054AAF1997989300AC077D /* ImageForDB.h */,
+				E9054AB01997989300AC077D /* ImageForDB.m */,
 			);
 			name = DB;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */,
 				E93BC5B019815FA700DE3408 /* ioapi.c in Sources */,
 				E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */,
+				E9054AB11997989300AC077D /* ImageForDB.m in Sources */,
 				E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */,
 				E93BC5BF19815FA700DE3408 /* gzwrite.c in Sources */,
 				E93BC5B819815FA700DE3408 /* adler32.c in Sources */,

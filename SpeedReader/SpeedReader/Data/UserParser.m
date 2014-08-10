@@ -63,7 +63,7 @@
             for (GDataXMLElement *resultElement in resultNodes) {
                 
                 userLogin  = [[[resultElement elementsForName:@"name"]objectAtIndex:0]stringValue];
-                userImage = [[[resultElement elementsForName:@"image"]objectAtIndex:0]stringValue];
+              //  userImage = [[[resultElement elementsForName:@"image"]objectAtIndex:0]stringValue];
                 
                 
             }
@@ -98,15 +98,15 @@
     [GDataXMLNode elementWithName:@"user"];
     GDataXMLElement * nameElement =
     [GDataXMLNode elementWithName:@"name" stringValue:user.login];
-    GDataXMLElement * imageElement =
-    [GDataXMLNode elementWithName:@"image" stringValue:user.userImage];
+   /* GDataXMLElement * imageElement =
+    [GDataXMLNode elementWithName:@"image" stringValue:[user.userImage description]];*/
     
     GDataXMLElement * dateElement =
     [GDataXMLNode elementWithName:@"date" stringValue:dateString];
     
     
     [userElement addChild:nameElement];
-    [userElement addChild:imageElement];
+  //  [userElement addChild:imageElement];
     [userElement addChild:dateElement];
     
     [dataElement addChild:userElement];
