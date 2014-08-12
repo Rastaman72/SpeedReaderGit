@@ -12,15 +12,13 @@
 @interface DetailExercisesViewController : UIViewController<ExercisesSelectionDelegate,UISplitViewControllerDelegate>
 
 @property(nonatomic,retain)ExercisesData* exercisesData;
-@property (weak, nonatomic) IBOutlet UIImageView *userImage;
-@property (weak, nonatomic) IBOutlet UITextView *decription;
-@property (weak, nonatomic) IBOutlet UILabel *header;
+@property (weak, nonatomic) IBOutlet UIImageView *detailExercisesUserImage;
+@property (weak, nonatomic) IBOutlet UITextView *detailExercisesDecription;
+@property (weak, nonatomic) IBOutlet UILabel *detailExercisesHeader;
 
 @property (nonatomic, weak) IBOutlet UINavigationItem *navBarItem;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
 - (IBAction)logOutPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
-- (IBAction)settingsPush:(id)sender;
-
+-(void)setExercises:(ExercisesData *)exercises;
 @end

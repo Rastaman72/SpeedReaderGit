@@ -47,10 +47,970 @@
 "Field login cannot be empty"="Pole twoje imię nie może być puste";
 "User already exsist choose other login or delete exist account"="Użytkownik już istnieje, proszę wybrać inna nazwę albo usunąć istniejące konto";
 "Delete"="Usunięcie konta";
-"Are you sure ?"="Jes†eś pewien, że chcesz usunąć wybrane konto ?";
+"Are you sure ?"="Jesteś pewien, że chcesz usunąć wybrane konto ?";
 "Back"="Wróć";
 "First choose user"="Najpierw wybierz wybierz użytkownika";
 "You put diffrent password in repeat password field"="Podane hasła nie są identyczne";
 "Security"="Weryfikacja";
 "Put password please"="Proszę podać hasło";
 "You put bad password"="Podałeś złe hasło";
+
+
+//Start View
+"Presenter"="Prezenter";
+"LessonDescription"="Moduł ten podzielony jest na 14 lekcji";
+"ExercisesDescription"="Moduł ćwiczeń";
+"StatsDescription"="Moduł statystyk";
+"MetronumDescription"="Moduł metronum";
+"TimerDescription"="Moduł stoper";
+
+
+//Lesson part
+"Test"="Lekcja 0
+
+
+Czego się dziś DOWIESZ?
+
+Czym właściwie jest ten kurs?
+Jak wyglądać będą lekcje?
+Przystąpisz do pierwszego testu szybkości czytania.
+
+
+SPEED READER PL 2.0 jest następcą programu SPEED READER PL, który uzyskał m.in tytuł produktu roku w rankingu programów edukacyjnych magazynu CHIP (III miejsce w kategorii programów edukacyjnych). Przez 3 lata, kiedy SPEED READER PL istniał na rynku otrzymaliśmy bardzo wiele listów z podziękowaniami oraz sugestiami, czego programowi brakuje, co jest mniej wygodne i co powinniśmy zmienić. Wielu użytkownikom brakowało na przykład narzuconego planu ćwiczeniowego. Użytkownikom dostarczany był elastyczny szkic jak powinna wyglądać nauka, jednak ćwiczenia każdy miał dobierać z zestawu treningowego według własnych predyspozycji. To okazywało się dużym utrudnieniem.
+
+Biorąc pod uwagę opinie, sugestie i prośby użytkowników poprzedniej wersji stworzyliśmy zupełnie nowy, nowoczesny program dostosowany do oczekiwań użytkowników.
+
+Kurs składa się z 14 lekcji, na wzór kursów stacjonarnych organizowanych przez szkoły szybkiego czytania, a każda lekcja podzielona jest na dwie części, oraz z modułu treningowego, gdzie dostępne są wszystkie ćwiczenia w przeróżnych konfiguracjach. Z modułu treningowego należy korzystać wedle własnych potrzeb.
+Pierwsza część każdej lekcji, to wykład teoretyczny. Trenerka Martyna stopniowo wprowadza nas w tajniki efektywnego i szybkiego czytania, prowadząc przy tym dialog z użytkownikiem. Trenerka stosuje wiele sztuczek psychologicznych, aby jak najbardziej zmotywować nas do pracy i dba aby czas spędzony na nauce był wykorzystany efektywnie i w miłej atmosferze.
+Druga część lekcji to ćwiczenia. Dla każdej lekcji przygotowany jest oddzielny zestaw ćwiczeń, gdzie w miarę postępów pewne ćwiczenia z początku kursu ustępują miejsca ćwiczeniom bardziej zaawansowanym. Zaczynamy od poszerzania pola widzenia i walki z artykulacją, pokonywania regresji, potem skracanie czasu potrzebnego na rozpoznawanie słów, trening spostrzegawczości, trening pamięci, efektywne selekcjonowanie tekstu, ćwiczenie koncentracji i wreszcie ćwiczenie antycypacji i algorytmy szybkiego czytania. Dobór ćwiczeń nie jest przypadkowy. Ćwiczenie bowiem np. antycypacji przy wąskim polu widzenia nie przyniesie zamierzonych efektów. Odgadywanie słów przyjdzie nam zbyt łatwo.
+
+Jeżeli któreś z użytych w opisie kursu słów jest dla Ciebie niezrozumiełe, nie przejmuj się. Już wkrótce wszystko stanie się jasne.
+
+Osobom początkującym zalecamy naukę w formie 2 lub 3 lekcje tygodniowo, np. poniedziałek, środa i piątek, a w dni „wolne” od lekcji pracę z ćwiczeniami które wystąpiły w ostatniej lekcji. Jeżeli w kolejnej lekcji okaże się, że Twoje umiejętności nie pozwalają sprostać wymaganiom lekcji konieczne jest podniesienie umiejętności przez pracę z ćwiczeniem, z którym są problemy, w module treningowym.
+Osoby, które miały już styczność z zagadnieniami szybkiego czytania, jeżeli ich umiejętności na to pozwalają, mogą wykonywać kolejne lekcje dzień po dniu.
+Bardzo ważne jest, aby rozpoczynając kurs przygotować sobie ciekawą książkę, na której będziesz ćwiczyć. Należy codziennie czytać książkę i stosować poznane techniki i wskazówki, aż staną się one nawykiem. Na początku bardzo ważne jest pozbycie się nawyku artykulacji. Jeżeli Ciebie także dotyczy ten problem, nie bagatelizuj zaleceń z pierwszych lekcji kursu. Czytaj książkę i stosuj wskazówki, jakie poznasz.
+
+Teraz wciśnij strzałkę w prawym dolnym rogu ekranu i przejdź do pierwszego testu prędkości czytania. Wynik testu i wszystkich kolejnych będziesz mógł, mogła obserwować w statystykach. To najlepszy sposób, aby śledzić efekty nauki.
+
+Powodzenia!";
+
+
+"First lesson"="Lekcja 1
+
+
+Czego się dziś DOWIESZ?
+
+Jakim jesteś czytelnikiem?
+Jak dużo, bądź niewiele, brakuje Ci do najlepszych?
+Jakie cele chcesz przed SOBĄ postawić?
+Poznasz naukowe definicje terminów związanych z technikami szybkiego czytania, które pomogą Ci zrozumieć więcej.
+
+
+Witaj!
+
+Nazywam się Martyna i będę Twoją trenerką i pomocnicą. Podczas każdej lekcji wytłumaczę Ci krok po kroku, na czym polegać będą ćwiczenia. Ale moja rola nie będzie polegać tylko na tym. Razem będziemy pracować nad Twoimi osiągnięciami, które będą systematycznie rosły dzięki Twojej systematycznej pracy. Wierz mi, wynik będzie widoczny i zadowalający, jeśli tylko mi zaufasz i sam będziesz chciał, chciała ćwiczyć. Wspólnie udamy się w głąb ludzkiej psychiki, aby zrozumieć pewne procesy, przebiegające w naszych mózgach, a biorące udział w percepcji - czyli, pośrednio, w czytaniu. Razem będziemy pracować nad podniesieniem Twoich wyników przez odpowiednią motywację oraz poprawę Twojego nastroju i warunków, w których przyjdzie Ci pracować. To wszystko ma podnieść Twoją efektywność, oraz skrócić czas nauki. Odpowiednia motywacja zapewni, że Twój zapał nie okaże się słomiany, a odpowiednie warunki psychiczne i zewnętrzne pozwolą na przyswojenie sobie nowych umiejętności w krótszym czasie, m.in. dzięki zachowaniu pełnej koncentracji.
+
+Zatem, do dzieła!
+
+
+Dlaczego będziemy współpracować?
+
+Zanim przystąpimy do praktyki, na którą z zaciekawieniem zapewne czekasz, bardzo Cię proszę, zastanów się nad tym, co Cię skłoniło do zajrzenia w głąb tajemnicy szybkiego czytania? Czy była to fascynacja, podziw, gdyż widziałeś, widziałaś ludzi, którzy wertowali kartki książek w szybkim tempie i to im wystarczyło, żeby przeczytać ich treść? Może też chciałbyś, chciałabyś zaimponować innym? Może jesteś miłośnikiem książek, co jest współcześnie zanikającą, ale bardzo pozytywną cechą, świadczącą o wysokiej kulturze człowieka? Cudownej literatury jest tak dużo, a chcielibyśmy rozwijać nasze szczęście w życiu prywatnym, rodzinnym. Może jednak jesteś studentem, uczniem, bądź Twoja praca wymaga od Ciebie czytania ogromnych ilości materiałów w szybkim tempie? Szybkie czytanie i rozwój w rozumieniu czytanego tekstu pomogą Ci uporać się z tym szybko i bardziej efektywnie, pozwolą Ci więcej pamiętać, no i, oczywiście, zostanie Ci więcej czasu dla siebie… co z nim zrobisz, to będzie zależało już tylko i wyłącznie od Ciebie!
+
+Może zdziwi Cię, że pytam o takie rzeczy… jest to jednak ważne. Musisz mieć pewien punkt myślowy, kotwicę, której się uporczywie będziesz trzymał, trzymała. Powiem Ci, z doświadczenia, że cokolwiek robiłam, czy to uczyłam się grać na gitarze, czy języka angielskiego, no i, oczywiście, szybko czytać, zawsze miałam problem ze słomianym zapałem, szybkim zniechęceniem… Każde odłożenie ćwiczeń na czas dłuższy niż tydzień sprawia, że musimy się potem cofać, by nadrobić to, o czym zapomnieliśmy. To coś jak z piłkarzem, który przez kontuzję nie mógł trenować przez kilka miesięcy. Musi wrócić do podstaw, cofnąć się, aby przypomnieć sobie niektóre rzeczy, zanim wybiegnie znowu na boisko. Świadomość, że robisz to dla ….., na pewno ułatwi Ci systematyczne wracanie do materiału.
+
+
+W jakim celu będziemy współpracować?
+
+Skoro uzgodniliśmy przyczyny naszej współpracy, przedyskutujmy jej skutki. Jeżeli coś ma początek, prawdopodobnie musi mieć i koniec. Ten kurs go posiada. A jak on wygląda? Może najpierw ja zapytam. JAK CHCESZ, ABY WYGLĄDAŁ? Co sobie obiecujesz po jego ukończeniu? Czy będziesz czytał, czytała więcej? Czy zakochasz się w książkach? To są prawdopodobne efekty, ale pewnie o nich nie pomyślałeś, nie pomyślałaś… a jednak! Pamiętaj, że oprócz celów, które sobie zakładasz, takich jak zaoszczędzenie czasu przez zwiększenie szybkości czytania (pomyśl tylko, na ile innych rzeczy możesz go wykorzystać!), kurs pomoże Ci również w wielu innych rzeczach. Przede wszystkim pomoże Ci podnieść poziom rozumienia czytanego tekstu. Może wyda Ci się teraz, że nie masz z tym problemów…
+Zjawisko analfabetyzmu funkcjonalnego- plaga epoki komputerów, to nie tylko brak rozumienia tego, co się czyta, pomimo rozpoznawania liter i wyrazów. Zjawisko to polega przede wszystkim na braku koncentracji, która dotyka KAŻDEGO! Dlatego każdy jest narażony, na przeoczenie mentalne jakiegoś wyrazu, zdania, pomimo, że je przeczytał. Czasem jest to naprawdę niewielka ilość tekstu, ale zawsze…
+Wiąże się to z zapamiętywaniem przeczytanych informacji. Im mniej ich się „przeoczy” w przeczytanym tekście oraz im bardziej się będzie przy tym skoncentrowanym, tym więcej się zapamięta. Po wykorzystaniu odpowiednich „sztuczek psychologicznych”, takich jak mapowanie mentalne, zapamiętanie przeczytanych informacji, przechowanie ich w pamięci, a potem wydobycie z niej, wzrośnie nieporównywalnie! Dzięki takim umiejętnościom, wzrośnie Twoja samoocena i pewność siebie. Pamiętaj, że człowiek sukcesu, to człowiek pewny swoich umiejętności i wiedzy (czyli informacji, które posiada, które pamięta). Im więcej przeczytasz, tym więcej słów będziesz znał, znała. Człowiek wykształcony, to taki, który dużo przeczytał, dużo wie. Cechuje się elokwencją, na którą wpływa znajomość wielu słów i idiomów z danego języka. Ciebie czeka rozwój Twojej elokwencji do jeszcze wyższego poziomu, niż posiadasz! W trakcie ćwiczeń poznasz również pewne zasady psychologiczne i biologiczne, które rządzą naszą percepcją wzrokową i rolą mózgu w procesach postrzegania i przetwarzania bodźców.
+
+Zatem, szkoda czasu! Wybierzmy się w fascynującą podróż po świecie ludzkiej psychiki!
+
+Na początek, ważne jest, abyś się zaznajomił, zaznajomiła z paroma naukowymi definicjami. NIE ucz się ich na pamięć! Po prostu w wyobraźni utwórz sobie model, na podstawie takiej definicji, lub wyobraź sobie sytuację, o której mówią.
+
+
+Szybkie (integralne) czytanie. Istnieją dwa sposoby na podniesienie prędkości czytania. Pierwszy polega, w znacznej mierze, na przyspieszeniu spostrzegania tekstu, przy równoczesnym usunięciu wszelkich przeszkód tkwiących w nas i poza nami, mogących hamować ten proces. Określane jest to jako czytanie integralne (werbalne), czyli czytanie pełnego tekstu. Drugi sposób związany jest z czytaniem wybiórczym, czyli selektywnym. Drugi sposób pozwala podnieść prędkość czytania o wiele bardziej, ale może się wiązać z pominięciem, bądź niezapamiętaniem niektórych informacji zawartych w czytanym tekście.
+Dla pełnego zrozumienia należy wyjaśnić, iż istotą szybkiego czytania jest zwiększenie szybkości postrzegania tekstu przy zachowaniu dotychczasowego stopnia jego zrozumienia oraz zapamiętywania. Szybkie czytanie absorbuje równocześnie zmysł wzroku i mózg. Jeżeli jeden z elementów tego układu nie funkcjonuje poprawnie, to cały układ także nie może poprawnie pracować. Powoduje to uzależnienie całego procesu od harmonijnej współpracy oczu i mózgu. Przed rozpoczęciem czytania powinieneś, powinnaś więc zadbać, o odpowiednie nastawienie psychiczne i usunięcie napięć emocjonalnych.
+
+
+Fonetyzacja. Istnieją dwie formy fonetyzacji: zewnętrzna i wewnętrzna. Pierwsza polega na cichym wypowiadaniu każdego słowa z czytanego tekstu. Fonetyzacja wewnętrzna to powstawanie słów w myślach. Obie formy powodują znaczne obniżenie prędkości czytania. Fonetyzacja spowalnia tempo czytania do prędkości, z jaką jesteś w stanie mówić. Przeciętnie wynosi ona około 150 słów na minutę. Poprzez wyeliminowanie fonetyzacji skrócisz czas podróży informacji umieszczonych w tekście do Twojego mózgu. Gdy trwamy w tym niepożądanym nawyku, informacje z kanału wzrokowego muszą przejść do kanału słuchowego, a dopiero potem mogą trafić do celu. Gdy uda Ci się przełamać “barierę foniczną”, przestaniesz kojarzyć znaczenie słowa z jego brzmieniem, a szybkość, z jaką czytasz, gwałtownie wzrośnie.
+
+
+Regresja.  Często zatrzymujesz się i cofasz do przeczytanych przed chwilą zdań? To zjawisko występuje nawet przy stosunkowo nietrudnych tekstach. Regresja jest prawdopodobnie skutkiem niedbałego czytania w pośpiechu, bez dostatecznego skupienia uwagi. Wówczas jakieś partie tekstu wymykają się Twojej uwadze i zrozumieniu, pojawia się konieczność zatrzymywania się i cofania. Ruchy wsteczne są nieodłącznym elementem tradycyjnego sposobu czytania, a zwłaszcza czytania analitycznego. Każdy czytelnik wykonuje ruchy wsteczne. Powinieneś, powinnaś jednak dążyć do jak największego ograniczenia ich ilości, co pozwoli Ci na zaoszczędzenie czasu, a tym samym zwiększenie tempa czytania.
+
+Rozróżniamy wiele rodzajów regresji:
+
+1. pojawiająca się wraz z przeniesieniem wzroku do początku nowego wiersza,
+2. kiedy wzrok obejmuje zbyt wiele znaków,
+3. powtórne czytanie fragmentów tekstu by przypomnieć sobie ich treść,
+4. podczas analizy wyrażenia, którego znaczenia nie jesteśmy pewni,
+5. w przypadku, gdy fragment wydaje się nie pasować do kontekstu. Wtedy oczy wykonują ruchy wsteczne by odebrać treść całego wiersza.
+
+Po zapoznaniu się z definicjami regresji i jej rodzajami oraz zasadami nią kierującymi, możesz nad nią zapanować!
+
+
+Antycypacja. Pozornie skomplikowany termin, oznacza przewidywanie i domyślanie się tekstu przez skojarzenia. Ułatwia ona rozumienie słów i proces postrzegania, pozwalając szybkiemu czytelnikowi na odgadywanie słów na podstawie pojedynczych liter, analogicznie umożliwia to domyślania się całych zdań, a nawet myśli autora. Ludzie dorośli rozpoznają słowa zwracając uwagę na kształt oraz ogólny układ, który utrwalany jest w naszym umyśle przy każdej lekturze. Twierdzi się również, że zwracamy uwagę na górne zarysy słowa, co potwierdza fakt, że gdy zakryjemy dolną połowę wiersza przeczytanie go nie sprawia nam takiej trudności, jaka wystąpiłaby w sytuacji odwrotnej. Często potrafimy rozpoznać słowo na podstawie kontekstu i tylko pierwszej i ostatniej litery!
+
+Niewiarygodne? A jednak…
+
+
+Mżosez nie wryeizć, ale badaina nócoakwuw bytyrjiksch dodowzą, że wytrazcsy pisewrza i osatntia lteira, aby pzrzectayć bez próbelmw cłay wrayz!
+
+
+Teraz kliknij na strzałkę w prawym dolnym rogu i przejdziemy do części ćwiczeniowej pierwszej lekcji. Każdy blok ćwiczeń będziesz zaczynał, zaczynała od ćwiczeń rozluźniających mięśnie oka. To taka chwila dla relaksu Twoich oczu. Nauka też musi być przyjemna. Na zakończenie każdej lekcji poproszę Cię o zrobienie testu prędkości czytania. Będzie to taki sam test, jaki jest już za Tobą. Przed testem dla odprężenia oczu zmierzysz się ze swoją pamięcią. Zagrasz w „memory”, a postępy w grze jak i w prędkości czytania możesz oglądać w statystykach.
+W pierwszych lekcjach skupimy się na ćwiczeniach poszerzających pole widzenia. To najprostsza metoda przyspieszenia czytania, jednak samo poszerzenie pola widzenia nie zaowocuje efektami jakich oczekujesz. Musisz się uzbroić w odrobinę cierpliwości, efekty zauważysz już niedługo.
+
+Zatem, baw się dobrze!";
+
+
+"Secound lesson"="Lekcja 2
+
+
+Co dziś POZNASZ?
+
+Poznasz najważniejsze zasady szybkiego czytania.
+Poznasz złe nawyki, nad których zwalczaniem będziemy pracować.
+
+
+Witaj!
+
+Oto druga już, lekcja nauki szybkiego czytania. Cieszę się, że zdecydowałeś, zdecydowałaś się poświęcić swój cenny czas, aby nabyć nową, przydatną, umiejętność, która jest inwestycją wolnego czasu i ma na celu jego rozmnożenie.
+Przede wszystkim, chciałabym, abyś zapoznał, zapoznała się, z pewnymi zasadami, którymi będziemy się kierować podczas kursu. Zasady służą dobrej organizacji pracy, a co za tym idzie, szybszemu przyswojeniu przez Ciebie nowej wiedzy i nowych umiejętności oraz wyeliminowaniu szkodliwych nawyków, których nie da się uniknąć podczas niezorganizowanego, nieprofesjonalnego uczenia się jakiejkolwiek trudnej czynności.
+Zatem, do dzieła!
+
+
+Parę zasadniczych kwestii
+
+Nie jesteśmy dziećmi i sami panujemy nad sobą. Pamiętaj, że to Ty jesteś odpowiedzialny, odpowiedzialna za swoją pracę! To Ty organizujesz sobie czas, kiedy pracujesz, kiedy odpoczywasz. Zaufajmy sobie nawzajem. Sam, sama najlepiej wiesz, jakie są Twoje możliwości, w jakich porach dnia masz czas i najlepiej Ci się pracuje. Jednak obiecaj mi, że będziesz się trzymał, trzymała paru niezbędnych zasad. Oto one:
+
+Postaraj się ustalić, czego oczekujesz po kursie szybkiego czytania
+
+Jakie są Twoje cele? Czy umiejętność ta potrzebna Ci jest w pracy, aby pracować efektywniej, aby szybciej uporać się z pracą i mieć więcej czasu dla siebie? A może robisz to dla przyjemności? Chcesz przeczytać wiele interesujących pozycji, czy to praktycznych, czy sięgasz raczej po beletrystykę? A może chcesz komuś zaimponować, co też jest ważne…
+Czy myślisz, że Twoje życie zmieni się z dnia na dzień? Jakich wyników oczekujesz po sobie? Czy uważasz, że jest możliwe nabywanie nowych umiejętności bez poświęcania na to czasu? Ile czasu Ty jesteś w stanie poświęcić? Czy uważasz ten kurs za inwestycję krótko, czy długoterminową? To jest jak z lokatą w banku. Im dłuższy czas Twoje pieniądze czekają na lokacie, im więcej ich inwestujesz, tym większy zysk. Tutaj inwestujesz swój czas i wysiłek. Od Ciebie zależy, ile jesteś w stanie poświęcić Twojego cennego kapitału i kiedy chcesz wypłacić odsetki…
+
+W każdej sytuacji obserwuj swoją technikę czytania i staraj się od razu eliminować błędy, które dostrzegasz
+
+Najważniejszą umiejętnością, której się nauczysz, a która przyda Ci się nie tylko podczas czytania, będzie samokontrola nad pewnymi procesami postrzegania. Poznasz najważniejsze procesy psychologiczne, przede wszystkim związane z uwagą i percepcją oraz odbieraniem wrażeń wzrokowych. Znajomość procesów przebiegających wewnątrz Ciebie na pewno pomoże Ci zwracać większą uwagę na to, co robisz i, przez to, kontrolować swoje zachowanie.
+
+Nie poddawaj się, gdy napotkasz trudności
+
+Kiedy uczyłam się grać na gitarze, często się zniechęcałam (szczególnie po wysłuchaniu koncertu profesjonalnych muzyków). Gitara szła w kąt na jakiś czas. Jednak za każdym razem wracała do moich rąk- tak mnie do niej ciągnęło. Miałam jakąś wewnętrzną motywację. Byłam tym zafascynowana. Dzisiaj mam gitarę basową i swój zespolik jazzowy. Jednak gdyby po odłożeniu w kąt za pierwszym razem, gitara leżała tam do dzisiaj, nie miałabym tej satysfakcji, jaką daje mi wspólne granie ze znajomymi. To samo jest z nauką szybkiego czytania. Czasem może wylądować w kącie na jakiś czas. Każdemu potrzebna jest przerwa, nawet od hobby. Trzeba jednak wracać do ćwiczeń, myśląc o tym, ile satysfakcji Ci to przyniesie. Po pewnym czasie sam, sama będziesz odczuwać tą satysfakcję. Satysfakcję ze swoich umiejętności!
+
+Jak najczęściej ustalaj cele, do których będziesz zmierzać. Uaktualniaj je
+
+Dobrze, będziemy wspólnie trenować, postaramy się nie zniechęcać ewentualnymi, początkowymi niepowodzeniami. Ale do czego mamy dążyć? Otóż najlepiej jest ustalić sobie małe kroki, które będziesz stopniowo osiągał, osiągała. Przed każdą lekcją pomyśl, jaki chciałbyś, chciałabyś osiągnąć rezultat, potem pomyśl, na jaki Cię rzeczywiście stać. Na początku te dwa wyniki mogą odbiegać od siebie znacznie, jednak z czasem będziesz w stanie osiągnąć taki wynik, o jakim marzysz. Podczas każdej lekcji nauczysz się czegoś praktycznego, co powinieneś, powinnaś praktykować, aby nauczyć się tego, aby było to dla Ciebie nawykiem. Po poznaniu każdej nowej rzeczy, za cel podczas ćwiczeń, obierz sobie właśnie zamianę nowej wiedzy w czynność nawykową. Powtarzaj ćwiczenie, aż poczujesz, że nawyk został wyrobiony.
+
+Wyznacz sobie wstępną datę zakończenia kursu
+
+Czas ten może się oczywiście wydłużyć, bądź skrócić. To zależy od Twojej rzetelności. Może specjalnie będziesz wydłużał, wydłużała ćwiczenia, aby mieć pewność, że pewne zachowania ugruntowały się jako nawyki? Dlaczego powinieneś, powinnaś ustalić sobie taką datę? (najlepiej zaznacz ją w widocznym miejscu, odliczaj codziennie, ile Ci zostało czasu) Chodzi o motywację. Kiedy ustalisz sobie termin, do którego będziesz musiał, musiała się stosować, łatwiej będzie Ci się zmobilizować do treningu i czynienia systematycznych postępów. Pamiętaj, że możesz przejść ten kurs pobieżnie, co i tak powinno poprawić Twoje zdolności w tym zakresie, jednak po odstawieniu ćwiczeń na bok, o wiele szybciej zacznie się u Ciebie pojawiać spadek prędkości i może ona spadać nawet w okolice podobne do stanu wyjściowego! Warto zatem poświęcić więcej czasu na ćwiczenia, wyrabiając w sobie nawyki, których potem trudno się pozbyć, co jest dla Ciebie wartością pożądaną.
+
+Wyznacz sobie długość codziennych lekcji
+
+To Ty jesteś swoim nauczycielem. Ja tylko pomagam, kiedy mogę. Ty znasz się najlepiej, ja tylko mogę Ci podpowiedzieć, jakie procesy wpływają na Twoje zachowania i podpowiedzieć Ci, jak masz je kontrolować. Jednak większość ludzi, co ok. 45 minut musi zrobić sobie przerwę, aby móc aktywnie przetwarzać informacje. Nie częściej, gdyż zbyt duża ilość przerw nie działa mobilizująco. Przerwy powinny trwać maksymalnie 10 minut, ale nie mniej, niż trzy minuty. Po dłuższych przerwach ciężko wrócić do pracy, wbić się w ten rytm… wiesz najlepiej, a jak jeszcze nie jesteś pewien, pewna, ile czasu potrzebujesz na analizę lekcji i ćwiczenia, to po pierwszych lekcjach już będziesz wiedział, wiedziała. Najlepsze przerwy, to dotlenienie się przy otwartym oknie, wyjście na chwilę na podwórko (Twój mózg potrzebuje tlenu, szczególnie, kiedy czujesz się senny, senna). Dostosuj czas pracy do Twojego dnia, do pory, kiedy najlepiej Ci się pracuje.
+
+Pracuj nad koncentracją
+
+Proszę Cię, usuń, o ile to możliwe, ze swojego stanowiska pracy wszelkie dystraktory, czyli przedmioty, które mogą rozpraszać Twoją uwagę! Są to najczęściej rzeczy, które poruszają się, wydają dźwięki itp. Nie pomaga też na pewno przedmiot do pisania, leżący przed Tobą, którym można rysować podczas np. nudnego wykładu… kiedy zaczniesz myśleć o niebieskich migdałach podczas pracy, to znak, że czas na przerwę. Częste spadki koncentracji mogą być również spowodowane zbyt długimi przerwami i trudnościami z ponownym wejściem w odpowiedni rytm pracy. Podczas kursu poznasz pewne techniki i ćwiczenia, które pozwolą Ci rozszerzyć panowanie nad koncentracją. Wykorzystaj to!
+
+Różnicuj tempo czytania w zależności od trudności materiału
+
+Lektury są różne, pisane różnym językiem, różniące się stopniem skomplikowania zdań, liczbą użytych w zdaniu porównań, metafor, epitetów, wyrazów ściśle technicznych. Łatwiej radzimy sobie ze zrozumieniem słów popularnych, najczęściej używanych, gdyż połączenia w naszym mózgu, które są odpowiedzialne za te słowa, są najbardziej rozbudowane, aby informacja (znaczenie wyrazu) mogła zostać szybciej wydobyta. To tak jak z drogami. Dwie wioski, które mają niską potrzebę komunikowania się i niewiele aut jeździ z jednej do drugiej, mają wąskie dróżki, natomiast dwie metropolie połączone są wielopasmowymi autostradami i licznymi drogami szybkiego ruchu. Dlatego teksty zawierające popularne słownictwo nie wymagają od nas dużych zasobów uwagi. Dużo wiemy z kontekstu i widząc pierwszą literę danego wyrazu. Niestety trudniejsze teksty wymagają od nas większego skupienia, częstego wracania, zatrzymywania się po drodze. Jeżeli narzucisz sobie, podczas czytania takiego tekstu, tempo znane Ci z tekstu łatwego, niewiele zrozumiesz i niewiele zapamiętasz, a to nie o to chodzi… szybkość to tylko jeden z elementów efektywności.
+
+Wzbogacaj swoje słownictwo
+
+Może masz ochotę zapytać, po co? Już odpowiadam. Jak wcześniej wspomniałam, słowa, których często używamy, mają lepsze połączenia w mózgu, „jadą do naszej świadomości autostradą”, w przeciwieństwie do słów trudnych, technicznych lub pochodzenia obcego, których znaczenie ma dłuższy czas dotarcia do naszej świadomości, czasem nawet jest to niemożliwe (efekt „mam to na końcu języka”, który może też dotyczyć prostych słów). Dlatego ważne jest poznawanie nowych idiomów, wyrażeń, trudnych słów, obywanie się z nimi. Zadziwiające, ale to naprawdę przyspieszy Twoje zdolności szybkiego czytania ze zrozumieniem!
+
+Trenuj swoją pamięć
+
+Jednym z elementów efektywności jest zdolność do zapamiętywania dużych ilości informacji zawartych w tekście oraz późniejszego ich odtworzenia. Podczas tego kursu poznasz wiele technik rozwijających Twoje możliwości w tym zakresie. Pokazane ćwiczenia mogą być przez Ciebie modyfikowane i dostosowywane do Twojej osoby. Możesz ćwiczyć pamięć nie tylko po to, by efektywniej czytać. Dobra pamięć przyda się zawsze i do wszystkiego. Wykorzystaj to!
+
+Zadbaj o swoje oczy - dbaj o odpowiednie światło
+
+Większość z nas męczy się i zaczyna tracić możliwości koncentracji (możesz to rozpoznać, kiedy łapiesz się na tym, że myślisz o „niebieskich migdałach”) po około 45 minutach pracy. Niektórzy szybciej, niektórzy później. Jednak jest kilka sposobów, aby wydłużyć czas efektywnego funkcjonowania Twojej uwagi. Jest to przede wszystkim dobranie odpowiedniego oświetlenia. Jeżeli jesteś praworęczny, praworęczna, niech światło pada z lewej strony i na odwrót w przypadku leworęczności. Światło nie może padać na monitor. Musisz odpowiednio dobrać kontrast światła z otoczeniem. Nie może on być za ostry (zbyt mocne światło męczy tak samo jak zbyt słabe). Intensywność światła musisz dobrać tak, jak Tobie to odpowiada. Możesz trochę poeksperymentować i sprawdzać różne intensywności oświetlenia i porównywać je. Światło nie może padać ze zbyt bliskiej odległości, ani ze zbyt dalekiej- musisz to dobrać odpowiednio dla Ciebie (zbyt blisko położona lampa za bardzo będzie grzała, co również spowoduje u Ciebie zmęczenie i senność). Ważne są też kolory, którymi się otaczasz. Nie mogą być zbyt ostre, krzykliwe. Powinny być raczej stonowane (najlepiej kolory zimne, szczególnie zgniła zieleń). Kiedy poczujesz zmęczenie, ból oczu, oderwij wzrok od monitora, książki i patrz przez chwilę na gołą ścianę.
+
+W celu łatwiejszego zapamiętywania redaguj notatki
+
+Jest to jeden z elementów pracy nad efektywniejszym zapamiętywaniem informacji i późniejszym ich wydobywaniem. Podczas czytania tekstu, staraj się robić notatki. Jednak nie zapisuj całych zdań! To jest pozbawione sensu. Może wydaje Ci się, że tak najlepiej, że łatwiej jest Ci potem wydobyć wiedzę z takich notatek. Spowodowane jest to przyzwyczajeniem do sporządzania notatek tekstowych. Musisz zmusić się do małej rewolucji! Twoje notatki nie powinny zawierać w ogóle zdań! Musi się w nich znaleźć jak najwięcej rysunków, jeżeli się da, to i kolorów, strzałek pomiędzy słowami, oznaczających odpowiednie relacje… Możesz notować, co polecam, Twoje rozmowy ze mną. Odpowiedni rysunek albo relacja między odpowiednimi, zrozumiałymi dla Ciebie hasłami, pomoże Ci w zapamiętaniu najważniejszych informacji.
+
+Omijaj stereotypy
+
+Stereotypy to wygodne schematy w naszych mózgach, które pomagają nam w orientowaniu się w świecie. Są one uproszczonymi i ubogimi informacjami na jakiś temat. W życiu codziennym często się nimi posługujemy i to nam ratuje życie - dzięki skracaniu czasu naszej reakcji. Jednak podczas nabywania nowych informacji stereotypy mogą nam utrudniać wchłanianie, a czasem wręcz uniemożliwiać nabywanie nowych wiadomości przez blokowanie niektórych treści. Musisz nauczyć się rozpoznawać stereotypy w Twoim myśleniu, aby je umieć wykorzystywać. Czasem wzmacniać, ale czasem eliminować. Pamiętaj więc, że stereotyp, to po prostu uproszczony schemat jakiejś myśli, rzeczy. Stereotypem może być podejście do ćwiczenia na zasadzie „to już umiem, to już wiem”. Nic bardziej mylnego…
+
+Rozwijaj zdolności intelektualne
+
+Teoretycznie każdy z nas to robi (lub przynajmniej tak twierdzi). Ale przyznaj uczciwie, kiedy ostatnio grałeś, grałaś w „memory”,  szachy lub inne tego typu gry, wymagające ruszenia szarymi komórkami? Wiadomo, praca, szkoda czasu na „głupoty”… czasem wystarczy rozwiązać jedną krzyżówkę lub sudoku dziennie, aby poprawić znacznie swoje zdolności intelektualne, głównie dotyczące percepcji, abstrakcyjnego myślenia. Wystarczy tak niewiele…
+
+A zatem, do dzieła!
+
+
+Z czym będziemy walczyć od dziś?
+
+Z poruszaniem ustami w trakcie lektury, wypowiadaniem czytanych słów na głos, półgłosem lub w myślach
+
+Jest to jeden z powodów powolnego czytania. To coś w stylu blokady prędkości. Maksymalna prędkość, z którą możesz czytać, to ta sama prędkość, z którą możesz wypowiadać to, co czytasz. Jest to tempo powolne. Wyeliminowanie tego nawyku (np. przez trzymanie w ustach jakiegoś przedmiotu lub poprzez wymawianie w myślach kolejnych liczb lub liter np. 1234,1234,1...), pozwoli Ci na znaczne zwiększenie prędkości czytania.
+
+Z czytaniem bez wcześniejszego przeglądu
+
+Wpadła Ci w ręce pewna książka. Skąd wiesz, że chcesz ją przeczytać? Zaczniesz czytać i na setnej stronie stwierdzisz, że Ci się nie podoba, czy nie szkoda Twojego, cennego, czasu? Lepiej się najpierw zaznajomić z książką, wertując jej strony i dokonując pobieżnego przejrzenia treści. Może akurat trafisz na fragment, który Cię zainteresuje na tyle, że zapragniesz przeczytać całą książkę, co będzie chyba największą motywacją dla Ciebie? Taki przegląd treści pomoże Ci również usytuować książkę, niejako zaszufladkować ją, przez co nie będzie Cię w stanie zbytnio zaskoczyć, co przyspieszy przeczytanie jej przez Ciebie. Nie będziesz musiał, musiała, tak często się zatrzymywać, aby zrozumieć pewien fragment, bądź wracać do innych fragmentów. Pozwoli Ci to również, uniknąć znużenia, pojawiającego się po którejś z kolei kartce przewróconej na drugą stronę…
+
+Z czytaniem słowa po słowie
+
+Jest to brzemię naszej nauki czytania… niby dzięki temu potrafimy czytać, jednak jeśli chce się tą umiejętność rozwijać, jest to zbędny balast. Niektóre słowa, te, najlepiej nam znane (słowa, które „jadą autostradą”), rozpoznawane są przez nas bez konieczności przeczytania całego wyrazu (nie tylko spójniki, przyimki itd.). Podczas kursu poznasz m.in. technikę polegająca na odpowiednim wykorzystaniu wskaźnika, co pomoże Ci wyeliminować tą wadę. Poszerzanie słownictwa pozwoli Ci na powiększenie ilości słów, które będziesz rozpoznawał, rozpoznawała, bez konieczności przeczytania całego wyrazu.
+
+Z cofaniem się w trakcie lektury
+
+Wynika to z problemów z koncentracją. Czasem zdarza się, że przeoczysz jakiś fragment tekstu, albo nie skupisz na nim wystarczającej ilości zasobów uwagowych i potem automatycznie wracasz do niego, ponieważ nie pamiętasz, o co w nim chodziło. Takie cofanie się zajmuje sporo czasu. Niepotrzebnie. Ale już niedługo, a ten problem nie będzie dla Ciebie czymś niemożliwym do pobicia.
+
+Z czytaniem wszystkiego w takim samym tempie
+
+Publikacje naukowe są pisane innym językiem niż powieści detektywistyczne. Jak już wiesz, są różne rodzaje słów, które są charakterystyczne dla danego rodzaju tekstów. Trudne, nieczęsto spotykane w języku potocznym słowa, a także proste, popularne frazy, które słyszysz codziennie. Istnieje też całe mnóstwo idiomów o pośrednim stopniu znajomości. Dlatego konieczne jest abyś odpowiednio dobierał, dobierała tempo czytania do poziomu trudności tekstu. Ważne jest też, abyś wybrał, wybrała odpowiednią strategię do danej lektury: czy chcesz przeczytać wszystko dokładnie, czy zależy Ci raczej na wyłapaniu najistotniejszych myśli zawartych w tekście? Musisz nauczyć się stosować właściwe, najwygodniejsze dla Ciebie tempo, odpowiednie dla każdego rodzaju lektury.
+
+Z zatrzymywaniem się na czytanych słowach
+
+Jest to chyba oczywiste, w jaki sposób wpływa to na spadek szybkości czytania. Problem dotyczy każdego, wbrew pozorom. Spróbuj przeczytać jakiś tekst, jedną stronę jakiejś książki, im trudniejsza, tym lepiej, i kontroluj się. Na pewno zauważysz, że nie raz zatrzymałeś, zatrzymałaś się na jakimś słowie… Odpowiednia praca nad koncentracją pomoże Ci wyzbyć się tego problemu.
+
+Z błądzeniem wzrokiem po czytanej stronie
+
+Kiedy błądzisz wzrokiem po stronie, myśląc o czymś innym, to niewątpliwie oznaka drastycznego spadku koncentracji. Najlepiej jest jak najszybciej przerwać lekturę na 5 minut i przewietrzyć się, np. przy otwartym oknie. Musisz nauczyć się zauważać jak najszybciej ten efekt i od razu z nim walczyć. Szkoda czasu na błądzenie, nawet jeśli błądzisz wzrokiem po kartce papieru…
+
+
+Poznałeś, poznałaś bardzo istotne wiadomości, które pozwolą Ci zwracać uwagę na pewne szczegóły związane z Twoim ciałem i umysłem, przez co będziesz lepiej nad sobą panować. Trenuj i rozwijaj panowanie nad sobą, a będzie Ci łatwiej opanować, nie tylko sztuczki związane z szybkim czytaniem, ale i inne przydatne umiejętności.
+
+Zatem, czas poćwiczyć!
+
+Druga porcja ćwiczeń będzie podobna do pierwszej. Musimy się jeszcze skupiać na podstawowych ćwiczeniach. Poznasz jednak także coś nowego. Pamiętaj o zwalczaniu artykulacji! Po ćwiczeniach usiądź z książką i czytaj wymawiając w myślach lub na głos litery alfabetu, czy licząc w pętli do dziesięciu. Tutaj nie będzie żadnego pobłażania.
+Artykulacja nie może dotyczyć Ciebie!";
+
+"Third lesson"="Lekcja 3
+
+
+Czego się dziś NAUCZYSZ?
+
+Jak walczyć z fonetyzacją. Fonetyzacja jest jednym z Twoich głównych wrogów, dlaczego?
+
+
+Witaj!
+
+Widzę, że jesteś w dalszym ciągu zainteresowany, zainteresowana odkrywaniem technik szybkiego czytania i panowania nad swoim umysłem. Zastanów się, proszę, dlaczego to robisz? Jakkolwiek odpowiedziałeś, odpowiedziałaś na to pytanie, cieszę się, że możemy dzisiaj nauczyć się nowych rzeczy!
+
+Zatem, do dzieła!
+
+
+Poznaj swojego wroga
+
+Przypomnij sobie, czym jest fonetyzacja, inaczej zwana artykulacją. Zrobiłeś, zrobiłaś notatki? Żeby mieć pewność, przypomnijmy sobie jeszcze raz. Istnieją dwie formy fonetyzacji: zewnętrzna i wewnętrzna. Pierwsza polega na cichym wypowiadaniu każdego słowa z czytanego tekstu. Fonetyzacja wewnętrzna to powstawanie słów w myślach. Obie formy powodują znaczne obniżenie prędkości czytania. Fonetyzacja spowalnia tempo czytania do prędkości, z jaką jesteś w stanie mówić. Przeciętnie wynosi ona około 150 słów na minutę. Poprzez wyeliminowanie fonetyzacji skrócisz czas podróży informacji umieszczonych w tekście do Twojego mózgu. Gdy trwamy w tym niepożądanym nawyku, informacje z kanału wzrokowego muszą przejść do kanału słuchowego (najpierw słyszysz to, co czytasz), a dopiero potem mogą trafić do celu. Gdy uda Ci się przełamać “barierę foniczną”, przestaniesz kojarzyć znaczenie słowa z jego brzmieniem, a szybkość, z jaką czytasz, gwałtownie wzrośnie.
+
+Dzisiaj nauczysz się walczyć z Twoim największym wrogiem na drodze do umiejętności szybkiego czytania, z fonetyzacją.
+
+
+Pokonaj wroga nr 1
+
+Jakimi sztuczkami możemy wyeliminować wpływ fonetyzacji na nasze czytanie? Istnieje kilka prostych technik. Oto najprostszy sposób na tłumienie fonetyzacji zewnętrznej. Przyciskaj koniuszek języka do zębów lub po prostu przytrzymuj go zębami przez cały czas lektury. Możesz też zacisnąć w zębach ołówek bez dotykania go językiem czy wargami. Uważa się, że żucie gumy jest równie skuteczne. Po kilku dniach lektury (maksymalnie), nawyk powinien ustąpić (o ile go wcześniej miałeś, miałaś).
+Teraz zapoznaj się z nieco bardziej zaawansowanymi technikami i przećwicz je, nawet, jeżeli uważasz, że ten problem Ciebie nie dotyczy. Wierz mi, warto. Artykulację możesz tłumić, między innymi, poprzez zakłócenia mowy i słuchu. Podczas czytania wymawiaj kolejno litery alfabetu, licz lub gwizdaj. W ten sposób możesz przełamać fonetyzację zewnętrzną, ale również i wewnętrzną.
+O ile stosunkowo niewiele osób ma problemy z fonetyzacją zewnętrzną, tak zdecydowana większość ludzi wypowiada czytany tekst w myślach, co wpływa negatywnie na nasze możliwości. Poradzisz z tym sobie „wypowiadając” w myślach kolejne liczby (np. wypowiadaj w myślach kolejnych kilka liczb lub liter alfabetu 5678,5678,5...). Jest to najlepsza, moim zdaniem, metoda, która szybko pozwoli Ci wyeliminować ograniczenia, które są Ci narzucane przez fonetyzację wewnętrzną.
+Na początku zauważysz pewnie, że nic nie zrozumiałeś, nie zrozumiałaś z przeczytanego tekstu! Paradoksalnie, początkowo obniża się także prędkość czytania. Stan ten ulega jednak znacznej poprawie w miarę treningu. Twój umysł musi się nauczyć rozsądnie lokować zasoby uwagi stosownie, do nowej sytuacji, której wcześniej nie znał. Po serii niepowodzeń, które mogą spowodować Twoją frustrację, zacznie Ci się udawać, a to z kolei, spowoduje Twoją radość i zadowolenie z siebie - największą z możliwych nagród.
+Wspomniane techniki eliminowania fonetyzacji nie oddziaływują jednak na mózgowe części odpowiedzialne za artykulację. Za najskuteczniejszą metodę uznaje się centralne zakłócenia mowy, czyli oddziaływanie na mózgową część analizatora mowy. Co to znaczy? W trakcie czytania wystukuj stały rytm. Twój umysł tak rozdzieli zasoby Twojej uwagi, że na pewno nie będziesz w stanie wymawiać tego, co czytasz… Rytm wystukuj w średnim tempie, używając do tego, na przykład ołówka. Trzymaj go najlepiej w prawej dłoni. Ważne jest, abyś wystukiwał, wystukiwała rytm, nie samym nadgarstkiem, ale ruchem całego przedramienia. Istotne jest abyś śledził, śledziła rytm oraz podtrzymywał, podtrzymywała jego ciągłość. Ucząc się tej techniki,  przejedziesz stopniowo przez kilka etapów, które początkowo wydają Ci się  zniechęcające. Nauka wymaga więc od Ciebie nieco cierpliwości, jednak na wymierne efekty nie będziesz długo czekać!
+
+
+Etapy eliminowania fonetyzacji przedstawiają się następująco:
+
+Na początku będziesz mógł, mogła tylko czytać lub tylko słuchać.
+Gdy wystukiwanie zostanie już udoskonalone, Twoja uwaga będzie w takim stopniu rozproszona, iż będą się u Ciebie pojawiać problemy ze zrozumieniem nawet zarysu czytanego tekstu.
+Wystukiwanie rytmu przestaje być dla Ciebie problemem, poziom zrozumienia stopniowo wzrośnie, ale przypomnienie treści lektury będzie dla Ciebie w dalszym ciągu stanowiło problem.
+Ostatnim, upragnionym etapem jest czytanie z dużym stopniem zrozumienia tekstu przy jednoczesnym (niczym niezakłóconym) wystukiwaniu rytmu.
+
+
+Aby stłumić artykulację za pomocą techniki centralnych zakłóceń mowy powinieneś, powinnaś ćwiczyć czytanie z równoczesnym wystukiwaniem wybranego rytmu codziennie po 20 minut przez okres około dwóch tygodni. Pamiętaj, że to nie musi być pracą, za to może być to naprawdę niezła zabawą! Zatem baw się dobrze!
+
+Jak na pewno zauważysz od dzisiaj zaczniemy skupiać się bardziej na spostrzegawczości i szybkości odczytywania słów, ale o podstawowych ćwiczeniach poszerzania pola widzenia jeszcze nie zapomnimy. Pamiętaj, aby po ćwiczeniach, po krótkim odpoczynku, siąść wygodnie z książką i co najmniej przez pół godziny poczytać. Czy jeszcze zdarza Ci się wypowiadać czytane słowa w myślach?
+
+Walcz z tym!";
+
+"Fouth lesson"="Lekcja 4
+
+
+Czego się dziś DOWIESZ?
+
+Dowiesz się, co wpływa na prędkość Twojego czytania.
+Dowiesz się, co wpływa na stopień zrozumienia czytanego przez Ciebie tekstu.
+Dowiesz się, czym jest antycypacja i dlaczego warto ją rozwijać.
+
+
+Witaj!
+
+To już czwarte, wspólne, spotkanie. Mam nadzieję, że do tej pory, oprócz nabycia nowych wiadomości oraz umiejętności, których objawy pewnie już zauważyłeś, zauważyłaś, świetnie się bawisz! Pamiętaj, że to ma być zabawa, a nie tylko nauka! Wiesz już, jakie mamy cele na dziś.
+
+Zatem, do dzieła!
+
+
+Dlaczego akurat taka prędkość?
+
+Czytanie, to nie jest prosty proces. Składa się ono z wielu komponentów. Przebiega szeregowo, to znaczy, poszczególne czynności, które wykonujesz, kiedy czytasz, mają swoją określoną kolejność. Na początku rozpoznajesz litery, wyrazy, zdania. Następnie rozumiesz je, to znaczy powiązujesz ze sobą, porównujesz z informacjami, które masz zakodowane w mózgu. Słowem, litery i wyrazy, które czytasz, krążą po Twoim mózgu i, niejako, dopasowują się do tego, co już masz zakodowane. Przypomina to klocki w różnych kształtach, które muszą trafić na odpowiednią dziurkę w tym samym kształcie, aby dostały się do pojemnika. To, co czytasz, krąży w Tobie, szukając odpowiedniego miejsca, do którego pasuje. Kiedy już znajdzie to miejsce, rozumiesz treść, sens wyrazu, zdania. Dlatego ważne jest rozwijanie swojego słownictwa. Pamiętaj, że szybciej jedzie się autostradą niż polną dróżką, a nikt, nawet Twój mózg, nie wybuduje autostrady pomiędzy dwoma mało uczęszczanymi punktami. Oprócz szybkiej drogi wydobywania znaczenia, sensu, czyli zrozumienia, ważna jest też dobra mapa. Ściśle powiązane ze sobą grupy wyrazów, zdań. Z mapą łatwiej jest coś znaleźć, czyli zrozumieć i zapamiętać, a przede wszystkim, wydobyć z pamięci. O tym, jak konstruować takie mapy poznawcze, dowiesz się jednak podczas następnych lekcji. A wydobywanie, czyli przypominanie sobie informacji i ich sensu, to kolejny etap w procesie czytania.
+Musisz wiedzieć, że energia czytelnika, który czyta szybko, wykorzystywana jest głównie w celu zrozumienia treści przeczytanych, a nie jak w przypadku czytania zwykłego, na pokonywanie trudności technicznych czytania.
+
+
+Dlaczego rozumiesz i pamiętasz z przeczytanego tekstu właśnie tyle?
+
+Z lingwistycznego punktu widzenia rozumienie, to czynność rozszyfrowywania oraz łamania kodów. Znaczenie słów, które spotykasz w tekście może wynikać z pewnych przeżyć, emocji, których doświadczyłeś, doświadczyłaś lub też mogą nabrać nowego znaczenia kiedy połączysz i zreorganizujesz znaczenia już znane. Czytanie to myślenie za pomocą symboli drukowanych!
+Rozumienie, czynność wchodząca w skład czytania, również jest procesem złożonym. Aby dobrze go opanować, musisz koniecznie nauczyć się świetnie rozumieć poszczególne słowa, rozumieć połączenia między wyrazami, rozumieć połączenia między zdaniami. Może to brzmieć banalnie, ale ćwiczenia, które będziesz wykonywać, wpłyną na Twoje widoczne postępy. Pamiętaj też o rozwijaniu swoich zdolności intelektualnych. Ja uwielbiam sudoku, a Ty?
+Wielostopniowe przyswajanie wiedzy angażujące jednocześnie wzrok, słuch i mowę nie łączy się z lepszym opanowaniem czytanego tekstu, a w przypadku fonetyzacji, jak już wiesz, wyraźnie ten proces hamuje. Kiedy nastawisz się na uchwycenie istoty wywodów autora, przyspieszysz tempo czytania, kiedy będziesz chciał, chciała dogłębnego zrozumienia, zahamujesz tempo. Czynnikami nie związanymi bezpośrednio z czytaniem, a wpływającymi na jego jakość są: znużenie, niedomagania fizyczne, wzbudzenia emocjonalne, a nawet charakter oraz Twój temperament. Dlatego ważna jest harmonia i porządek. Ważne jest również zadowolenie z życia i wszystkiego, co robisz. Takie zadowolenie możliwe jest, kiedy Twoje życie jest naprawdę zharmonizowane.
+
+Zwróć uwagę również na takie czynniki, wpływające na stopień rozumienia tekstu, jak:
+
+Poziom nasycenia tekstu
+
+Zbyt duże skupienie znaków męczy szybko wzrok i powoduje błądzenie nim po stronie. O wiele mniej męczą książki z obrazkami - na podobnej zasadzie działają częste zmiany czcionek, kolorów liter. Chodzi o zmianę wyglądu bodźca (w tym przypadku liter składających się na wyrazy i zdania), który odbierasz. Częste zmiany charakteru (wyglądu) bodźca wpływają na stałą czujność i odnawianie dużego poziomu uwagi, który kierujesz w stronę bodźca.
+
+Informacje
+
+Wiadomości specjalistyczne, naukowe, są często trudniej przyswajalne, niż akcja kryminału. Najlepsza książka to taka, w której zmienia się treść informacji. Raz jest to ważny dialog, potem obniżenie poziomu akcji przez zastosowanie np. opisu przyrody (kiedy tak naprawdę się wyłączasz i odpoczywasz), aby w końcu przejść do szybkiego, wartkiego wydarzenia. Ty, będąc po wzrokowym „odpoczynku” i lekkim znużeniu opisem przyrody, maksymalnie wydatkujesz wtedy swoją uwagę, co pozwala Ci się lepiej skupić na tekście i lepiej zapamiętać podane w nim informacje. Dlatego, wbrew pozorom, zmiana tekstów co jakiś czas, powinna wpłynąć pozytywnie na ilość zapamiętanych przez Ciebie informacji.
+
+Budowa
+
+Czasem układ tekstu jest nie bez znaczenia. Pamiętasz ze szkoły wiersze Awangardy Krakowskiej? Ułożenie słów na kartce w jakimś kształcie zupełnie zmienia ich odbiór. Czasem wystarczy większe wcięcie akapitu, aby ułatwić, bądź utrudnić czytelnikowi odbiór. Czy wiesz, że najlepiej i najefektywniej człowiek czyta białe litery na czarnym tle? Jednak ze względów ekonomicznych układ kolorów (w relacji litera - tło) w książkach drukowany jest na odwrót.
+
+Styl autora
+
+Nawet moi znajomi różnią się pod względem pisania listów. Jedni piszą wprost, krótkimi zdaniami, przez co łatwo ich zrozumieć, inni piszą strasznie zawile. A jak jest z Twoimi znajomymi?
+
+Środki wyrazu
+
+Wiąże się to bezpośrednio ze stylem autora tekstu. Czasem metafory i porównania wcale nie ułatwiają Ci odbioru, są tak wieloznaczne i zawiłe. Czasem po prostu nieudolność twórcy lub zastosowanie odpowiedniego środka stylistycznego w nieodpowiednim miejscu zakłóca nasza percepcję.
+
+Objętość tekstu
+
+Czas, który będzie Ci potrzebny do przyswojenia tekstu rośnie logarytmicznie do jego objętości. Im grubsza lektura, tym więcej czasu na nią potrzebujesz. Dlatego sama objętość książki musi być brana przez Ciebie pod uwagę, kiedy będziesz wybierał, wybierała strategię czytania, w zależności od tekstu. Pamiętaj, że objętość czasem bywa złudna! Czasem tekst jest rzeczywiście krótki, ale drukowany większą czcionką, przez co tom sprawia wrażenie opasłego, i na odwrót. Książka bogata treściowo jest drukowana małą czcionką, z niewielką interlinią i bez rycin, przez co książka, wizualnie, może wydać Ci się krótka. To są psychologiczne fakty, które możesz wykorzystać, a przede wszystkim, znając je już, nie daj się złudzeniom!
+
+Występowanie ewentualnych tytułów i podtytułów
+
+Przyjazna dla oka budowa, dobre podziały na akapity, wszystko to sprawia, że oko się nie męczy. Jednak można przesadzić też w drugą stronę. Zapamiętaj, może Ci się to przydać, jak Ty będziesz pisać swój własny tekst!
+
+Nastawienie na zrozumienie
+
+Na co się nastawiasz? Na przeczytanie jak najszybciej, pobieżnie, czy na jak najpełniejsze zrozumienie „od deski do deski”? Wybór odpowiedniej strategii czytania (strategie czytania i sposób ich doboru są tematem osobnych lekcji) jest dla Ciebie ważny, gdyż wybór odpowiedniej strategii zależy od tekstu, na który chcesz poświęcić swój czas oraz tego, na czym Ci zależy podczas czytania tego tekstu.
+
+Kierowanie uwagi
+
+Poznałeś, poznałaś już parę rzeczy, informacji, dotyczących uwagi. Ćwicz samokontrolę nad Twoimi procesami uwagowymi, rozwijaj swoją wiedzę na jej temat. Staraj się lepiej poznać samego, samą siebie. Jest to jedna z tych umiejętności, którą możesz zastosować niemal wszędzie, do każdej czynności. Warto więc poświęcić swój czas na jej rozwijanie. To coś, jak z kondycją u sportowca. Sportowiec może trenować różne elementy potrzebne mu w dyscyplinie, którą uprawia, jednak kondycja i jej trenowanie, to podstawa dla innych ćwiczeń, innych elementów ważnych w danym sporcie. Dla pracy umysłowej (i nie tylko) uwaga pełni właśnie taką rolę.
+
+Poziom uogólniającego i abstrakcyjnego myślenia
+
+To dotyczy właśnie Ciebie! Rozwijaj swoje zdolności intelektualne bawiąc się! Graj w gry, które wymagają od Ciebie myślenia. Nie zrażaj się niepowodzeniami, mało kto gra w szachy jak Kasparow. Po prostu baw się i zobaczysz szybko, że dzięki takim zabawom „coś” się zmieniło. Wystarczy rozwiązanie jednej krzyżówki, bądź sudoku dziennie, aby widocznie poprawić swoje zdolności uwagowe oraz te, dotyczące abstrakcyjnego myślenia i różnych typów inteligencji.
+
+Indywidualne doświadczenia życiowe
+
+Dziwne? Wcale nie! Otóż wszystkie Twoje dotychczasowe przeżycia są zakodowane w Twoim mózgu. Odpowiedni porządek, w jakim one są ułożone, powiązane z ważnymi informacjami, wyrazami, innymi wydarzeniami, wpływają na szybsze dopasowanie się czytanych słów do treści, które kryjesz w swoim mózgu. Im wyrazistsze i pozytywniejsze emocje, z którymi dane zdarzenie zostało zakodowane, tym szersza droga prowadząca w Twoim umyśle, do jego wydobycia, a także do wydobycia większości słów, zdań, idiomów, skryptów sytuacyjnych, które się z tym wydarzeniem wiążą. Ważne jest też, aby poukładać sobie najważniejsze wydarzenia tak, jak powinno się notować wykłady. Rób dużo strzałek, odnośników, rysunków (posługuj się myśleniem obrazowym tam, gdzie się to da). A przy okazji… ja tam Twoje notatki?
+
+Stosunek do lektury, czyli cel czytania
+
+Najlepsza motywacja to taka, która jest Twoją inicjatywą, wychodzi od Ciebie. Motywacja z zewnątrz nie zawsze jest najlepsza, choć czasem potrzebujemy nad sobą kontroli z zewnątrz właśnie. Znajdź Twój punkt zaczepienia - coś, co Cię zmobilizuje do pracy najłatwiej. Poznaj samego, samą siebie!
+
+Antycypacja
+
+Hmm, Nie pamiętasz już, co to jest? Nie martw się, za chwilę powtórzymy wszystkie informacje na jej temat, z którymi miałeś, miałaś okazję zetknąć się w czasie tego kursu i rozszerzymy Twoją wiedzę na ten temat. Teraz powiem tylko, że wiąże się ona z mapą Twojego umysłu…
+
+Pamięć
+
+Rozwijanie i porządkowanie pamięci wpłynie pozytywnie na rozbudowę „sieci autostrad” w Twoim mózgu. O korzyściach z tego płynących, nie muszę chyba już mówić. Wiesz już o tym dobrze, że większa ilość połączeń między informacjami w mózgu powoduje…
+
+
+Powyższe czynniki są istotne podczas wyboru odpowiedniej strategii czytania do danego tekstu. Zapamiętaj je, choćby z tego względu, że podczas jednej z następnych lekcji, będą one kluczowe. Nie „wkuwaj” ich jednak na pamięć. Po prostu zrozum, o co chodzi w każdym z nich (Wytłumacz sobie własnymi słowami, jeśli jesteś w stanie to zrobić, to znak, że świetnie to rozumiesz, jednak powiedz wytłumacz sobie w myślach każdy z tych problemów, nie posługuj się stereotypami! Rozważ je po kolei!)
+
+
+Uporządkowany chaos antycypacji
+
+Przypomnij sobie, co oznacza ten wyraz. Czy masz już dobrą „autostradę w mózgu”, która dąży do „miasta” o nazwie antycypacja? A może to tylko mała ścieżka? Rozbudujmy ją zatem.
+Ten pozornie skomplikowany termin, oznacza przewidywanie i domyślanie się tekstu przez skojarzenia. Ułatwia ona rozumienie słów i proces postrzegania, pozwalając szybkiemu czytelnikowi na odgadywanie słów na podstawie pojedynczych liter, analogicznie umożliwia to domyślania się całych zdań, a nawet myśli autora na podstawie pojedynczych słów. Ludzie dorośli rozpoznają słowa zwracając uwagę na kształt oraz ogólny układ, który utrwalany jest w naszym umyśle przy każdej lekturze. Twierdzi się również, że zwracamy uwagę na górne zarysy słowa, co potwierdza fakt, że gdy zakryjemy dolną połowę wiersza przeczytanie go nie sprawia nam takiej trudności, jaka wystąpiłaby w sytuacji odwrotnej. Często potrafimy rozpoznać słowo na podstawie kontekstu i tylko pierwszej i ostatniej litery!
+Właśnie na skutek braku wykształconej antycypacji typowy pierwszoklasista łączy literę po literze, aby utworzyć słowa. Gdybyś pozostał, pozostała przy Twoich umiejętnościach z tamtych czasów, sylabizowanie zabierałoby Ci większą część czasu, którą teraz wykorzystujesz na uchwycenie sensu tekstu. Zaoszczędziłeś, zaoszczędziłaś na jednym z etapów czytania mnóstwo pewnej energii, którą wykorzystujesz teraz w innym miejscu, w którym jest bardziej potrzebna.
+Koncentracja uwagi oraz szybkie czytanie nie pozostawiają miejsca dla ubocznych myśli, które nie są związane z tekstem. Z tego powodu ludzie czytający szybko lepiej i głębiej rozumieją tekst. Na początku antycypacja jest niewielka, rozwija się dopiero po przejrzeniu części czytanego tekstu, gdy pojawiający się materiał daje podstawy do domysłów. Następuje wychwycenie myśli przewodniej oraz wszelkich związków przyczynowo-skutkowych i ich znaczenia dla rozwoju wątku. Antycypacji towarzyszy również redundancja oznaczająca nadmiar tekstu, informacji stosowany nieraz celowo dla uniknięcia błędów w odbiorze. Jest to swoista autokorekcja odbieranej wiadomości. Nadmiar tekstu w granicach 70-75% jest uznawany za normalny, dobrze rozumiany i łatwo zapamiętywany.
+
+Zatem, czas poćwiczyć! Baw się dobrze!
+
+Od dzisiaj zaczniesz ćwiczyć także pamięć i spostrzegawczość. Ćwiczenie pamięci w efektywnym czytaniu jest bardzo ważne. Przekonasz się o tym już za kilka lekcji. Musisz wyrobić sobie w głowie taki podręczny bufor pamięci, do którego będą trafiały grupy pomieszanych słów, a z których Twój mózg będzie układał zrozumiałą treść. Będziesz miał, miała jeszcze okazję się nad tym zastanowić.
+Teraz przeciągnij się mocno, weź kilka głębokich wdechów i przejdź do ćwiczeń.";
+
+"Fifth lesson"="Lekcja 5
+
+
+Czego się dziś NAUCZYSZ?
+
+Jak dobrać odpowiednią strategię czytania?
+Dowiesz się, dlaczego warto przeglądać tekst przed czytaniem.
+
+
+Witaj!
+
+Szybko nam to idzie! Cieszę się, że potrafisz panować nad swoim ciałem i umysłem, że potrafisz znaleźć odpowiednią dla siebie mobilizację. Na pewno chcesz poprawić wyniki, które już teraz uzyskujesz. Zatem nie przedłużajmy!
+
+Do dzieła!
+
+
+Urodzony strateg
+
+Różne są cele dla których czytasz, różne są teksty. Czytelnik z dużym doświadczeniem potrafi dostosować sposób czytania zarówno do celu, jaki chce osiągnąć poprzez lekturę, jak i do rodzaju czytanego materiału. Używa więc dość elastycznej techniki czytania - umiejętność ta powinna stać się Twoim celem!
+Istnieje ogromna ilość różnych tekstów, o różnym stopniu trudności, różnie zbudowanych. Do każdego rodzaju tekstu musisz więc, dopasowywać odmienne techniki czytania! Inaczej czytasz powieść, inaczej utwór poetycki, inaczej podejdziesz do artykułu w czasopiśmie, a jeszcze inaczej do instrukcji obsługi telewizora. To, jak dobierzesz odpowiednią do danego tekstu technikę czytania, zależy w dużym stopniu od sposobu ujęcia tematu przez autora, od konsekwentnego i jasnego wyrażania myśli, stylu, jakim się autor posługuje. Wykształcenie odpowiedniej taktyki (uwzględniającej elastyczność) jest zadaniem tak samo dla Ciebie ważnym, jak i kształcenie innych umiejętności wpływających na szybkość czytania.
+Ze względu na różnorodność czytanych materiałów, powinieneś, powinnaś aktywnie zmieniać tempo dla odpowiedniego zrozumienia tekstu. Jeżeli tekst dotyczy dziedziny, o której posiadasz jedynie mgliste pojęcie, powinieneś, powinnaś czytać z niższą prędkością. Wbrew pozorom, doświadczony czytelnik nie rozpoczyna nigdy lektury z maksymalnym dla siebie tempem - nie byłoby bowiem ono w pełni skuteczne. Czytanie można porównać do jazdy samochodem, gdzie prócz pedału gazu możesz użyć także hamulca, którego powinieneś, powinnaś użyć wszędzie tam, gdzie pojawia się, sygnalizowana rozmaitymi środkami drukarskimi, nowa myśl autora. Kursywa, rozstrzelony tekst, podkreślenia, wytłuszczenia powinny skłaniać Cię do chwilowego zwolnienia tempa czytania. Często te “przystanki” poprzedzone będą utartymi już sformułowaniami, które śledzą tok rozważań autora i sterują tokiem Twoich myśli. Sformułowania te, są podobne do znaków drogowych. Nie tylko pokazują „zwolnij” itd. Są to również drogowskazy na „autostradach w Twoim mózgu”. Wskazują Twojej percepcji, gdzie zakodowane masz odpowiednie znaczenia danych wyrazów, fraz, dzięki czemu szybciej do nich dotrzesz, nie gubiąc się po drodze.
+
+!!!Czy pamiętasz listę z poprzedniej lekcji? Mówiłam, że się przyda. Tak, to są rzeczy, na które musisz zwrócić swoją uwagę, podczas przeglądania tekstu, przed przystąpieniem do jego czytania. Te szczegóły pomogą Ci wybrać odpowiednią strategię!!!
+
+Wyrażenia zatrzymujące i zmieniające dotychczasowy bieg myśli (np. lecz, mimo to, w zamian, chociaż itd.) silnie sterują odbiorem tekstu. Największy dyskomfort odczuwasz na pewno czytając książki czy artykuły, dotyczące nieznanej Ci tematyki. Nie masz wówczas możliwości porównywania faktów tam zawartych z Twoją dotychczasową wiedzą. Nieznane wyrazy i nowa terminologia, które tam napotykasz sprawiają, iż ciężko Ci nadążyć za tokiem myślowym autora. Uzasadnione wtedy będzie, jeżeli sięgniesz po słownik rezygnując, przynajmniej na początku, z prób odgadywania znaczenia słów na podstawie kontekstu - wyrazów tych jest bowiem zbyt dużo. Gdy poznasz już znaczenie najważniejszych terminów, możesz wrócić raz jeszcze do najtrudniejszych fragmentów sprawiającego Ci kłopoty tekstu. Regułą jest jednak czytanie tekstu trudniejszego odpowiednio do tej trudności wolniej i z większą uwagą. Czasami cały rozdział utrzymany jest na jednakowym poziomie trudności, a czasem zdarzają się w nim fragmenty trudniejsze i łatwiejsze. Trzeba wówczas już w trakcie czytania zmieniać technikę i prędkość - przyspieszając przy łatwych, a zwalniając przy trudniejszych partiach materiału.
+Prezentowane tutaj informacje mogą wydawać Ci się tak oczywiste, iż zbędnym wydaje się być mówienie o tym. Faktem jest jednak, iż spory odsetek czytelników nie różnicuje prędkości swego czytania w zależności od rodzaju lektury. Czytają oni wszystko w tym samym tempie - marnują przez to czas przy tekstach łatwych, a potykają się przy tekstach trudnych mając kłopoty z ich zrozumieniem. Staraj się więc nie lekceważyć tej sprawy - poświęć czas, aby opanować tę pożyteczną sztukę. Przystępując do jakiejkolwiek lektury powinieneś, powinnaś zapoznać się w pierwszej kolejności z autorem i tytułem materiału, który masz zamiar czytać. Po dokonaniu rzutu oka na całość, czytaj pierwszy akapit i staraj się postawić pytania, na które chciałbyś, chciałabyś uzyskać odpowiedzi - staraj się więc ustalić cel czytania. Równocześnie musisz określić stopień trudności tekstu i właściwe dla niego (i dla Ciebie) tempo czytania.
+Staraj się czytać energicznie - Twoim celem powinno być uzyskanie odpowiedzi na postawione wcześniej pytania. Eliminuj stopniowo regresję (chyba pamiętasz co to jest regresja? Masz to w notatkach?). Czytaj całymi myślami, wkładając wysiłek w wyłuskanie głównych myśli autora. Śledź jego tok rozumowania. Przy dłuższych tekstach warto, abyś robił, robiła przerwy, dla ogarnięcia większych fragmentów - utrwalenia ich. Czytając materiały trudniejsze i o nowej tematyce, warto, abyś upewniał, upewniała się, iż dokładnie rozumiesz tekst - bardzo niepożądany jest fakt uświadomienia sobie po przeczytaniu kilku stron tekstu, iż nic z niego nie rozumiesz, prawda? W celu utrwalenia nowo poznawanych terminów, możesz wracać do trudniejszych fragmentów po doczytaniu artykułu (bądź rozdziału) do końca. Aby ustalić wskaźnik zrozumienia możesz spróbować wyrazić myśli autora własnymi słowami. To jedna z najszybszych metod jego ustalenia. Dopiero po uzyskaniu pewności w kwestii rozumienia, przystąp do analizy krytycznej. Zastanów się, jak autor odpowiedział na postawione przez Ciebie pytania? W jakim stopniu zaspokoił Twoją żądzę wiedzy? Czego nowego nauczyła Cię lektura? Co możesz włączyć do zasobu trwałej wiedzy, a co będzie Ci zbędne?
+Podsumowując: Nie wyłamuj się z zaprezentowanych tutaj reguł czytania, czytaj w ten sposób dużo, przywiązując ogromną wagę do stopnia zrozumienia. Ogólny cel powinien polegać na tym, abyś stopniowo przyspieszał, przyspieszała tempo czytania, zwracając jednak baczną uwagę na to, aby nie stracić na rozumieniu. Staraj się ćwiczyć codziennie - systematyczność jest tutaj bardzo pomocna. Często zmieniaj charakter materiałów używanych do ćwiczeń, różnicuj je pod względem treściowym, trudnościowym i stylowym.
+
+Powodzenia! Pomyśl o celach, które stoją przed Tobą od czasu naszej rozmowy, podczas pierwszej lekcji i o terminie, który obiecałeś, obiecałaś sobie dotrzymać!
+
+
+Wertowanie stron. Przydatne czy zbędne?
+
+Czy przeglądanie książki przed jej przeczytaniem, to dobry pomysł? Tak, pod warunkiem, że robisz to w sposób aktywny. Co to znaczy? Znaczy to tyle, żebyś zwracał, zwracała uwagę na pewne rzeczy zamiast czytać szybko i nieefektywnie lub po prostu przejechać wzrokiem po tekście bez żadnej świadomości.
+Kiedy wpadnie Ci w rękę jakaś książka, zastanów się, czy chcesz ją czytać. W tym celu wertujesz kartki zatrzymując wzrok na przypadkowych fragmentach. A nóż któryś Cię wciągnie i zapragniesz przeczytać całą książkę? Wertując kartki, zwracaj uwagę na język i styl, jakim posługuje się autor. Co to za rodzaj książki? Podczas takiego zapoznania się z książką powinieneś, powinnaś ustalić prędkość, z jaką przyjdzie Ci czytać tą książkę, a także zauważysz, czy zawiera ona fragmenty trudniejsze i łatwiejsze, co będzie wymagało od Ciebie zmian tempa czytania, czy zawiera fragmenty dla Ciebie nieistotne, słowem, zwróć uwagę na wszystkie „znaki drogowe” (pamiętasz już listę z poprzednich zajęć?), w które wyposażona jest książka. Te znaki pozwolą Ci także na ogólne zaszufladkowanie pozycji, co uruchomi pewne skrypty poznawcze- schematy, które przechowujesz w swoim mózgu. Znaki poprowadzą Cię prosto do nich, przyspieszając uruchomienie odpowiednich skryptów. Zadziała to na takiej zasadzie, że niektóre fragmenty czytanego przez Ciebie tekstu nie będą w cale musiały być czytane. Wystarczy, że „przypomną” Ci coś, co już wiesz.
+Kiedy uczyłam się prowadzić samochód, moja uwaga ograniczała się do kierownicy i pedałów, nawet na zmianę biegów nie starczało zasobów mojej uwagi, nie mówiąc już o zwracaniu uwagi na znaki. Z czasem, w miarę ćwiczeń, nie tylko mogłam słuchać radia, czy rozmawiać, kiedy prowadziłam, ale także widziałam i odbierałam każdy znak ustawiony wzdłuż drogi, którą jechałam. To samo z przeglądaniem tekstu przed przystąpieniem do czytania. Na początku może przynieść więcej szkód niż korzyści, ale efekty osiągnięte dzięki treningowi i realizowaniu zadanych ćwiczeń będą nieocenione.
+
+Masz za sobą kolejną ciekawą lekcję! A teraz czas teorię zamienić na praktykę.
+
+Czas na ćwiczenia. Dzisiaj wprowadzimy pierwsze ćwiczenie z tekstem, a na jakiś czas pożegnasz się także z piramidami. Wykonuj jednak te ćwiczenia w czasie wolnym. Są doskonałe na poszerzenie poziome pola widzenia. Już jutro poznasz ćwiczenie na super prędkość. Jest doskonałe. Będzie Ci towarzyszyło już aż do końca kursu. Pamiętaj o ćwiczeniach z książką!
+
+Przejdź do ćwiczeń!";
+
+"Sixth lesson"="Lekcja 6
+
+
+Co dzisiaj POZNASZ?
+
+Poznasz sposób, w jaki oczy czytają.
+Poznasz wiele ciekawych informacji dotyczących wzroku i pola widzenia.
+Poznasz nowe dane, rozszerzające Twoją wiedzę na temat technik poszerzania pola widzenia.
+
+
+Witaj!
+
+To już szósta lekcja! Zbliżamy się do połowy kursu. Na tym etapie pewnie już zauważasz postępy! Pracuj tak dalej, a zadziwisz nie tylko siebie. Czym będziemy się wspólnie zajmować dzisiaj? Na początek parę ciekawostek z zakresu psychologii i biologii, mam nadzieję, że Cię zaskoczę wiele razy informacjami, które wydadzą Ci się dziwne i zaciekawią Cię na tyle, że chętnie przystąpisz do ćwiczeń. Nie musisz być biologiem, ani psychologiem, żeby łatwo nauczyć się dzisiaj wielu ciekawych rzeczy! Wystarczy, że skupisz się na moment i dasz się wciągnąć!
+
+Zatem, do dzieła!
+
+
+W jaki sposób oczy „czytają”?
+
+Wbrew pozorom wzrok nie przesuwa się płynnie po tekście wiersz za wierszem, gdyż oko porusza się skokami i „czyta” w trakcie postojów zwanych fiksacjami. Ruch migotania, czyli ruch od jednej fiksacji do następnej (od jednego momentu, kiedy oko się zatrzyma, do następnego, czyli kiedy znajduje się w ruchu), w momencie przenoszenia wzroku bywa tak intensywny, że uniemożliwia Ci wyraźne widzenie. Brak postrzegania podczas przenoszenia przez Ciebie wzroku, nie jest równoznaczny z niewrażliwością Twojego oka na bodźce. Podczas czytania wszelkie bodźce podczas ruchów oka pomiędzy fiksacjami są usuwane do zakamarków podświadomości, aby jasność czytanego tekstu była zakłócona w jak najmniejszym stopniu.
+Wiadomo, że czas percepcji (czyli postrzegania) stanowi 93-95% całego czasu czytania na który złożone są przerwy oraz ruch oczu. Oznacza to, że kiedy przez 60 minut czytasz, aż 56 minut zabiera Ci spostrzeganie drukowanej informacji i przekazywanie do mózgu, co związane jest z bezruchem Twoich oczu. Na jedną sekundę wypada maksymalnie 5 zatrzymań, zatem szybkość czytania jest zależna od ilości informacji spostrzeganej w trakcie przerwy fiksacyjnej.
+Twoje oczy wykonują ruch po to, aby interesujący Cię obiekt lub obiekt mający znaczenie dla Twojego bezpieczeństwa, znajdował się w najważniejszym punkcie widzenia, znajdującym się na siatkówce, w oku, nieco powyżej środka siatkówki i nazywa się dołek środkowy (może spotkałeś, spotkałaś się też z nazwą „plamka żółta”, która jest ściśle z tym związana). Znajduje się tutaj najwięcej receptorów - specjalnych komórek, które odpowiedzialne są za wyraźne widzenie kształtu i kolorów obiektu.
+
+
+Jakie właściwie ruchy wykonuje oko? Oto niektóre z nich:
+
+Odruchy przedsionkowo - wzrokowe
+Gdy poruszasz głową, Twoje oczy też się poruszają, aby nie spuścić wzroku z jakiegoś obiektu. Na tym polegają te ruchy. Czytając ten tekst, ruszaj głową w górę, dół, prawo i w lewo. Możesz dalej, bez przeszkód go czytać? To właśnie dzięki odruchom przedsionkowo- wzrokowym. Niestety nie możesz tak czytać w jadącym pociągu, ponieważ odruchy przedsionkowo-wzrokowe uruchamiane są przez, zależne od Twojej woli, ruchy Twojego ciała, a nie uruchamia ich trzęsący pociąg, który trzęsie tylko Twoim ciałem.
+
+Ruchy śledzenia
+Kiedy siedzisz nieruchomo, a w polu Twojego widzenia porusza się jakiś przedmiot, Twoje oczy podążają za nim, nawet, jak nie myślisz o tym, albo za bardzo tego nie chcesz. Na pewno zdarzyło Ci się, w trakcie podróży pociągiem czy samochodem, wpatrywać w dal przez boczną szybę. Kiedy w polu Twojego widzenia znalazło się drzewo lub dom, mimowolnie Twoje oczy podążyły za nim. To właśnie ruchy śledzenia.
+
+Ruchy zbieżności (zbieżne - obiekt się zbliża; rozbieżne - obiekt się oddala)
+Są odpowiedzialne za powstawanie wrażenia stałej wielkości
+
+Ruchy kaskadowe
+Kiedy ktoś staje przed Tobą, w Twoim polu widzenia, Twoje oczy wykonują ruch śledzący kontury sylwetki tej osoby. Twój wzrok musi wyraźnie oddzielić tą osobę od tła, żeby sprawdzić, czy, np. nie stanowi zagrożenia. Każdy centymetr konturu sylwetki tej osoby musi się, choć przez chwilę, znaleźć w dołku środkowym, abyś mógł, mogła jak najlepiej dostrzec sylwetkę postaci i odróżnić ją od tła. To samo mamy w przypadku np. liter, kiedy nie jesteśmy jeszcze wprawionymi czytelnikami, działamy na zasadzie rozpoznawania kształtu liter. Najważniejsze, abyś pracował, pracowała, nad rozbijaniem tekstu, zdania, wyrazu, na mniejsze części- litery i czytania każdej osobno. Staraj się podchodzić do tekstu całościowo- raczej łącz mniejsze części, jak litery, w wyrazy, wyrazy w zdania- postrzegaj całe wyrazy i całe zdania. Staraj się rozpoznać „sylwetkę” wyrazu, a nie pojedynczej litery.
+
+Wyjaśniliśmy sobie parę ciekawych, praktycznych rzeczy, poznaliśmy ich naukowe klasyfikacje i definicje. Pomoże nam to przejść do ćwiczeń, ale najpierw, musisz się dowiedzieć, jak taką suchą teorię przenieść na praktykę. Szkoda czasu! Do dzieła!
+
+
+Wzrok i pole widzenia w skrócie
+
+Wąskie pole widzenia jest drugą (po fonetyzacji) istotną wadą tradycyjnego sposobu czytania, za pomocą którego czyta większość ludzi. Na szczęście, jak już wiesz, istnieją inne sposoby. Zastanów się teraz, czym jest pole widzenia? Jakie skojarzenia wywołuje w Twoim umyśle to hasło? Kiedy mówimy o polu widzenia, w kontekście czytania, widzimy często, w myśli, część płaszczyzny kartki, na której umieszczony jest tekst. Jest to, po prostu, ciąg znaków (liter, cyfr), które możesz dostrzec, bez przesuwania wzroku. Co to oznacza dla Ciebie? W jaki sposób dostrzegasz te znaki? Widzisz ich kontury, kształty, a więc wszystko, co potrzebne do ich przeczytania! Odsuwając wzrok od kartki trochę dalej, obejmujesz nim więcej znaków! Oczywiście ograniczać Cię będzie zawsze dystans wyraźnego widzenia, jednak okazuje się, że nie musisz przesuwać wzroku tak często, jak do tej pory! To naprawdę wiele zmienia.
+Podczas czytania, Twoje gałki oczne poruszają się ze stosunkowo dużą prędkością, w sposób niekontrolowany przez Twoją świadomość. Twoje oczy, skacząc po tekście, w ciągu godziny przebywają około 7 km! Czytanie odbywa się jednak tylko podczas zatrzymania oka. Podczas godziny spędzonej na czytaniu, Twoje oczy jedynie 4 minuty spędzają w ruchu! Poruszasz oczami nawet, jeśli o tym nie wiesz. Istnieje wiele rodzajów ruchu gałek ocznych. Większość z nich jest niezależnych od Twojej woli, a często działają one zupełnie od Ciebie niezależnie w taki sposób, że nawet nie zdajesz sobie sprawy z tego, że właśnie poruszasz oczami! Wśród tych ruchów gałek ocznych, zdecydowana większość jest Ci potrzebna, a nawet niezbędna dla Twojego funkcjonowania w świecie. Poruszasz oczami po konturze przedmiotu, Twoje oczy, aby móc dostrzec przedmioty statyczne cały czas zmieniają swoje położenie. To tak, jak z żabą, która widzi tylko ruch, ponieważ jej gałki oczne są nieruchome. Dlatego żaba nie zje nigdy siedzącej muchy, ale wystarczy tylko, że mucha poderwie się do lotu. Twoje i moje oczy maja na szczęście pewien mechanizm, dzięki któremu nasze gałki oczne znajdują się cały czas w ruchu, porównując ze sobą obrazy obecne z tymi z przed ułamków sekund. Dzięki temu widzimy litery i cyfry, wszystkie nieruchome znaki. Jest to jeden z tych rodzajów ruchu gałek ocznych, który jest Ci niezbędny, ale też nie zawsze i nie wszystkie ruchy oczu Ci pomagają, dlatego dobrze jest, abyś nauczył, nauczyła się panować nad tymi, nad którymi się da zapanować, między innymi dzięki zwiększeniu pola widzenia w sposób efektywny, czyli taki, który możesz wykorzystać. Panuj nad swoim ciałem!
+Z przeprowadzonych badań wynika, iż podczas tradycyjnego czytania, na jeden wiersz przypada 10 - 15 zatrzymań oka. Oko doświadczonego czytelnika zatrzymuje się jedynie 2 - 3 razy. Poszerzenie pola widzenia jest więc bardzo ważnym elementem nauki. Im rozleglejszym polem widzenia będziesz dysponować, tym więcej liter i wyrazów dostrzeżesz jednym rzutem oka. O wiele szybciej przebiegniesz wzrokiem wiersz przy mniejszej ilości fiksacji (mniejszej ilości momentów „zbaczania oka z trasy”) - jeśli jednocześnie równie szybko potrafisz zinterpretować informacje, które napływają do Ciebie z czytanego tekstu.
+
+Podsumowując. Z powyższych rozważań wynika, iż możesz zwiększyć prędkość, z jaką czytasz, dzięki następującym umiejętnościom, które dzisiaj przećwiczysz i, co gorąco polecam, spróbujesz przerobić na nawyk, budzący się naturalnie, za każdym razem, kiedy zaczniesz czytać. Jednak w tym celu musisz ćwiczyć rzetelnie i wracaj do tych ćwiczeń. Pamiętaj o celach, które przed sobą postawiłeś, postawiłaś i o terminie, który Cię „goni”:
+
+1. Pracuj nad znacznym zmniejszeniem liczby zatrzymań oka na linii tekstu.
+2. Zwiększ liczbę postrzeganych jednorazowo słów.
+3. Skróć czas każdego zatrzymania.
+
+Jak to osiągniesz? Systematycznie wykonując ćwiczenia, których nauczysz się podczas dzisiejszej lekcji.
+
+
+Co masz robić, aby zwiększyć swoje pole widzenia?
+
+Pierwszym krokiem w drodze do zmniejszenia liczby zatrzymań Twojego oka na linii tekstu, jest ustalenie ile ich wykonujesz. W kalkulacjach tych konieczna jest pomoc drugiej osoby, która, przez zrobiony w kartce z tekstem otwór, obserwować będzie ruchy Twoich oczu. Metoda ta jest prostym sposobem na wyznaczenie liczby fiksacji, czyli stwierdzenia, ile razy Twoje oko zatrzymało się na jakimś punkcie w tekście oraz Twojej zdolności widzenia peryferyjnego (bocznego), czyli szerokości Twojego pola widzenia.
+Szerokość pola, w którym widzisz wyraźnie, przy odległości tekstu równej aż 35 cm, wynosi zaledwie około 8 mm! Jest to zastraszająco niewielka wartość, w porównaniu z ogólnym polem, obejmującym ponad 120 stopni (czyli w przeliczeniu około 60cm). Im bardziej jakiś przedmiot, element, znajduje się na peryferiach Twojego wzroku, tym bardziej mglisty wydaje się być jego kontur, co negatywnie wpływa na rozpoznanie tego elementu. Jednak wprawiony czytelnik, którym niedługo się staniesz, powinien umieć przewidywać kolejne wyrazy, co umożliwia zwiększenie prędkości czytania. Sumienne wykonywanie ćwiczeń zaowocować może nawet 50% jej przyrostem.
+
+Rozmiar ludzkiego pola widzenia jest uporządkowany w kilku aspektach, które dotyczą każdego czytelnika indywidualnie. Sposób, w jakim postrzegasz tekst, zmienia się wraz z biegiem czasu spędzonego na nauce i powinien przedstawiać się następująco:
+
+1. Początkowy etap nauki polega na tym, że czytasz w sposób literowy (rozpoznajesz każdą literę z osobna).
+2. Kolejny etap, w który już pewnie masz za sobą, to czytanie sylabiczne, charakterystyczne jeszcze dla niskich zdolności czytelniczych.
+3. Następnie przychodzi kolej, kiedy zaczynasz czytanie słowne, którym posługują się osoby o znacznym zasobie wiedzy. Rozpoznajesz nie litery, a całe słowa. Minusem tego sposobu czytania jest często towarzysząca mu artykulacja, z którą walczyliśmy już na jednej z poprzednich lekcji. Mam nadzieję, że wyrobiłeś, wyrobiłaś w sobie już odpowiednie nawyki, a jeżeli jeszcze nie, to że ćwiczysz cierpliwie cały czas tą nową umiejętność.
+4. Rozległa wiedza i doskonała pamięć wzrokowa umożliwi Ci przejście do etapu czytania pojęciowego, w którym będziesz wybierał, wybierała podczas czytania słowa kluczowe, na podstawie których formułować będziesz zdania syntetyzujących myśl autora.
+
+Aby zbadać aktualną wielkość swojego pola widzenia, warto, abyś sięgnął, sięgnęła do ćwiczeń poświęconym temu zagadnieniu. Znajdziesz w nich piramidy znaków. Prowadząc wzrok od szczytu do podstawy piramidy, staraj się odczytywać znajdujące się na danym poziomie cyfry. Jeżeli nie jesteś w stanie objąć wzrokiem wszystkich znaków danej linii, zamknij oczy na parę sekund i wykonaj ćwiczenie ponownie. Warto wykonywać te ćwiczenia kilkukrotnie, aby wyrobić w sobie odpowiedni nawyk, może wydać Ci się, że przed Tobą bardzo dużo pracy. To prawda, ale mogę Ci zagwarantować, że efekty zauważysz.
+Dość dużo korzyści przynosi stosowanie wskaźnika. Jest to jeden ze sposobów na przełamanie fiksacji (zatrzymywania się) wzroku. Podczas czytania, przesuwaj ołówkiem, bądź nawet palcem, po czytanym tekście. Twój wzrok będzie śledził palec, który jest w ruchu, a przy okazji będzie obejmował również tekst. Aby zwiększyć ilość czytanych na raz linijek, możesz próbować ustawiać wskaźnik w różny sposób, np. pomiędzy dwoma linijkami, nie zasłaniając żadnej.
+Pole widzenia oraz widzenie peryferyjne pomogą Ci rozwinąć również tablice Szulca, które znajdziesz w naszych ćwiczeniach. Odczytaj w nich kolejno wszystkie liczby (od 1 do maksymalnej wartości) w jak najkrótszym czasie. Wykonując to ćwiczenie staraj się objąć wzrokiem całą tablicę, skupiając wzrok na środku kwadratu, a oczy niech wykonywać tylko i wyłącznie pionowe ruchy (z biegiem czasu możesz starać się nie wykonywać ruchu oczami w ogóle).
+W szybkim czytaniu Twoje pola widzenia rozkładają się regularnie, a ich zazębienia występują jedynie w miejscach gdzie Twoje widzenie jest już bardzo mgliste (na absolutnych peryferiach Twojego pola widzenia). Przy czytaniu tradycyjnym czytelnik ogląda te same fragmenty tekstu wiele razy, co jest jawnym marnotrawieniem czasu. Istnieje cały zestaw ćwiczeń naturalnych, które przeprowadzać możesz w codziennych warunkach, w wielu zwykłych sytuacjach. Przykładowo: jadąc autobusem, staraj się jednym rzutem oka spostrzegać numery mijanych aut, szyldy itd. Wykorzystuj okazje do odczytywania nazw stacji i reklam z okna jadącego szybko pociągu. Niezłą formą treningu dla Ciebie, połączoną z relaksem podczas oglądania telewizji będzie, jeśli jednym spojrzeniem przeczytasz napisy i nazwiska tam się pojawiające. Postaraj się, aby to weszło w Twój nawyk. Jeżeli przyłapiesz się na tym, że podczas spaceru podświadomie zapamiętujesz tablice rejestracyjne przejeżdżających samochodów spoglądając na nie raz, na krótko, to bardzo dobry znak nie tylko świadczący o Twoich umiejętnościach, ale i zapale i wytrwałości, co mnie bardzo cieszy.
+Staraj się, aby ćwiczenia były dla Ciebie zabawą. Możesz samodzielnie bawić się tablicami Szulca i rozwiązywać je na punkty ze znajomymi. Na ulicy wyobrażaj sobie, że jesteś detektywem i zapamiętujesz numery rejestracyjne szybko przejeżdżających, podejrzanych aut. Baw się ucząc się!
+
+Czas poćwiczyć. Powodzenia!
+
+Od dzisiaj zaczynamy czytać z podziałem wiersza na stałą liczbę przeskoków oka. Na początek będziesz dzielić standardową linijkę tekstu na 3, z czasem na 2. ...no i wspomniana super prędkość! O ile wzrosła już prędkość Twojego czytania? Jak prezentuje się wykres? Jestem przekonana, że może być lepiej!
+
+Do dzieła!";
+
+"Seventh lesson"="Lekcja 7
+
+
+Czego dziś się DOWIESZ?
+
+Poznasz algorytmy stosowane w szybkim czytaniu.
+Dowiesz się czym jest zapamiętywanie.
+
+
+Witaj!
+
+Jesteśmy już w połowie kursu! To świadczy o Twojej wytrwałości. Cieszę się, że mogę razem z Tobą współpracować. Dzisiaj zapoznasz się z algorytmami, które pokażą Ci krok po kroku, w jaki sposób szybko czytać, a także rozważymy od strony teoretycznej termin „zapamiętywanie”, co zasugeruje Ci pewne zmiany w Twoim zachowaniu, a także rozjaśni wiele wątpliwości na temat natury pamięci.
+Na początek rozwikłajmy, co kryje się pod słowem algorytm. Jest to jeden z tych terminów, który niby jest doskonale rozumiany przez każdego, jednak ścisłe, analityczne przyjrzenie się jego definicji spowoduje, że powiemy sobie głośne „acha!”. Algorytm to ciąg czynności. Pokazuje krok po kroku, co trzeba wykonać, aby z punktu a przejść do punktu b. Przykładem algorytmu jest instrukcja składania zabawki w jajku niespodziance. Masz kilka elementów (stan a) i chcesz je złożyć w sposób prawidłowy, aby mieć zabawkę (stan b). Do tego celu, musisz wykonać wymienione w instrukcji czynności w ścisłej kolejności w taki sposób, w jaki jest to przedstawione. To właśnie algorytm.
+Możemy się więc zająć algorytmami szybkiego czytania! Powodzenia!
+
+
+Umysł jako komputer - algorytmy szybkiego czytania
+
+Stopień rozumienia czytanego tekstu możesz zwiększyć poprzez aktywizację myślenia podczas lektury. Wykorzystać w tym celu możesz odpowiednie algorytmy (o których za chwilę sobie powiemy), które pozwolą Ci uporządkować jednocześnie procedurę percepcji, zrozumienia i zapamiętania tekstu. Algorytmy te pełnią rolę organizatorów pracy podczas czytania i narzucają pewne reguły postępowania w określonych sytuacjach. Twój, czy mój umysł ma to do siebie, że wiele działań wykonuje zgodnie z wcześniej zaprogramowanym wzorcem, skryptem poznawczym, czyli odpowiednio zapamiętanej, wzorcowej sytuacji, która weszła w nawyk i jej procedury (algorytm sytuacji) jest odtwarzany zawsze, kiedy zostaje aktywizowany skrypt, np. kiedy spotykasz się z pierwszą z ciągu czynności składających się na ten skrypt. Każdy z nas ma jakiś swój wstępny (aktywizujący pozostałe czynności ściśle powiązanego ciągu) algorytm czytania. Przeważnie jednak, nie jest on zbyt efektywny. Zaproponowane algorytmy są o wiele skuteczniejsze.
+Integralny (całkowity) algorytm czytania przypomina swą kolejnością czytanie artykułu bądź też nowej książki, a więc pierwszą czynnością, którą wykonasz używając tego algorytmu, będzie sprawdzenie jej tytułu lub też myśli przewodniej artykułu nakreślonej dużymi, często również pogrubionymi literami. Odnajdziesz szczegółowe informacje umieszczone w celu ułatwienia Ci życia, czyli tytuł czasopisma, rok, numer strony, lub też rok wydania książki. Ważny jest również autor (pamiętasz „drogowskazy”?). Następnie zagłębisz się w lekturę, docierając tym samym do zasadniczej jej treści. Twoja uwaga powinna się skoncentrować na danych faktograficznych, abyś mógł, mogła przyswoić sobie dane liczbowe, nazwy własne i specjalistyczne określenia. Dodatkowo, w zależności od Twojego sposobu postrzegania świata, poszukaj nowych, użytecznych elementów lub też momentów, umożliwiających krytykę i dyskusję. Ten sposób powoduje uporządkowanie tekstu i możliwość odwołania się do konkretnych miejsc zawartych w publikacji.
+Zróżnicowany (dyferencjalny) algorytm czytania to schemat samodzielnych znaczeniowo bloków tekstu, które możesz rozłożyć na odrębne logicznie całości. Możesz wydzielić słowa kluczowe, wyodrębnić szeregi znaczeniowe (zdania, które mają własne znaczenia niezależnie od całości tekstu), łańcuchy desygnatów – rzeczowników, które odnoszą się do pewnych nazw, związanych z czytanym tekstem- rzeczy, do których odnosi się czytany przez Ciebie tekst. Dzięki tej technice potrafisz opracować desygnaty i podjąć decyzję, na podstawie przeczytanego fragmentu. Jest to algorytm, w którym najpełniejszy efekt daje przechodzenie od słów kluczowych, które zawierają podstawowy ciężar znaczeniowy (esencję tekstu, zawarty w nich jest powód i cel napisania czytanego tekstu), do kolejnych szeregów znaczeniowych. Szeregi te stanowią lakoniczne zdania oddające główne myśli autora (jest to coś w stylu notatki). Po wydzieleniu desygnatorów i ich opracowaniu Twój mózg formułuje komunikat dla samego siebie. Ostatnią czynnością o charakterze samokontroli jest decyzja o tym, czy dobrze zrozumiałeś, zrozumiałaś dany fragment, czy należy go szczegółowo przemyśleć lub czytać dalej. Najlepiej powiedz sobie dokładnie w myślach lub na głos (bez żadnych skrótów myślowych), jaki cel miał autor w napisaniu tego tekstu i jakie były przyczyny jego powstania. Powyżej opisane etapy w algorytmie zróżnicowanym zachodzą szybko i w znacznym stopniu podświadomie, ćwicz je jednak oddzielnie, aby każdy etap stał się nawykiem. Jeżeli już do tego dojdzie, spróbuj połączyć poszczególne etapy w odpowiedniej kolejności, aby w Twoim umyśle powstał i zakodował się odpowiedni skrypt, schemat takiego sposobu czytania.
+Algorytmy szybkiego czytania są uporządkowaną formą, która pozwoli Ci przyswoić sobie wiadomości, które czerpiesz z lektury. Niestety wielu ludzi ignoruje je, ze względu na konieczność żmudnych ćwiczeń. Są one jednak esencją. Pomyśl tylko, czy mistrzowie szybkiego czytania mogliby być mistrzami, gdyby nie znali tych algorytmów? Wierz mi, że to nie możliwe, przynajmniej przy obecnym stanie wiedzy psychologicznej.
+
+
+Jak powinieneś, powinnaś rozumieć, czym jest zapamiętywanie?
+
+Jest to ostatni etap procesu czytania, będący częstym przedmiotem badań.
+Stworzono różnorodne teorie, które za cel obrały sobie wytłumaczenie procesów zachodzących w mózgu człowieka, wiele modeli pamięci, starających się wyjaśnić ten problem. Sam fakt istnienia wielu teorii tłumaczy brak jasności w tej kwestii. Jest to jednak dziedzina, która stale się rozwija. Psychologowie współpracujący m.in. z informatykami w imię dziedziny nauki nazwanej naukami o poznaniu (cognitive science), korzystają z najnowszych, złożonych modeli sieciowych. Podczas tego kursu nie będą nam one jednak przydatne, a nawet mogłyby przeszkadzać. Jeśli chodzi o badania nad pamięcią, dość efektywną empirycznie (sprawdzającą się w rzeczywistości) i dobrze rozwiniętą, jeśli chodzi o badania nad pamięcią, jest ogólna teoria modelowa oraz teorie magazynowe, z których będziesz korzystać.
+Pamięć, zgodnie z tymi teoriami, dzielimy na krótkotrwałą (operacyjną) oraz długotrwałą (trwałą). Pamięć krótkotrwała przechowuje informacje, które pozostają w niej tylko tak długo, by móc przywołać myślowe domysły i skojarzenia do przeczytanego tekstu. Pamięć długotrwała stanowi podstawowe źródło wiedzy i umiejętności, które człowiek uzyskał w czasie nauki oraz doświadczenia zawodowego i życiowego.
+Po pierwszym etapie nauki informacje przechowywane są w formie krótkotrwałej (przez krótki czas), a następnie mogą przekształcać się w pamięć trwałą. Udowodniono, że świeże ślady pamięciowe pod wpływem bodźców zewnętrznych mogą zanikać (jest to znane jako zjawisko interferencji). Znaczy to, że jeżeli nie czytasz w skupieniu, wykorzystując maksimum koncentracji, inne bodźce, informacje, płynące do Ciebie z zewnątrz, mogą trafiać do Twojej pamięci krótkotrwałej zamiast informacje z czytanego tekstu, wypierając je. Jeżeli chcesz uzyskać pożądaną efektywność czytania, powinieneś, powinnaś tę czynność potraktować poważnie i odizolować się od zewnętrznych napięć.
+
+Aby usprawnić pamięć należy przestrzegać jej praw, tzn. brać pod uwagę, że:
+
+Zapamiętanie utrwala się proporcjonalnie do przekonania o jego potrzebie. tzw. „słaba pamięć” jest skutkiem braku organizacji i niejasności celu.
+
+Pamięć należy chronić utrzymując w niej jedynie informacje niezbędne. Efektywność zapamiętywania sensownego, czyli rozumowego jest dwudziestokrotnie wyższa niż zapamiętywania mechanicznego.
+
+Pojemność pamięci nie zależy od ogólnej liczby informacji, ale od ilości odrębnych jej części, która mieści się w zakresie 5-9 elementów na raz (dla pamięci krótkotrwałej, pamięć długotrwała jest nieograniczona). Oznacza to, że każdy z nas zapamiętuje z jednakową trudnością.
+
+W trakcie czytania, podczas przerwy fiksacyjnej wygodniejsze są do zapamiętania dłuższe cząstki tekstu natomiast rozdrobnienie go utrudni zapamiętanie.
+
+Informacje z pamięci krótkotrwałej mogą zaniknąć, natomiast „niepamiętanie” wiadomości z pamięci długotrwałej jest raczej wynikiem gubienia śladu pamięciowego (każda informacja ma swój adres w mózgu, jak plik na dysku. Zapomina się raczej ścieżkę dostępu, a nie informację). Dlatego dbaj o porządek w Twojej głowie! Powiązuj nowe wiadomości ze starymi!
+
+Aby informacja przeszła z pamięci krótkotrwałej do pamięci długotrwałej, powtarzaj ją aż do skutku (metoda czasochłonna i mało efektywna) albo powiąż ją z wyraźnymi emocjami, wydarzeniami lub wiedzą, którą już posiadasz (oprócz czasu, zyskasz na porządku w Twojej głowie)
+
+Poznałeś, poznałaś dość dużo informacji z zakresu psychologii (masz notatki? A jak ułożyły się informacje w twojej głowie? Są jakoś uporządkowane?). Jest to jednak dość podstawowa wiedza, dlatego polecam Ci pogłębianie jej. Na pewno Ci to nie zaszkodzi. Zdradzę Ci kolejny sekret. Jest nim wewnętrzna motywacja. Jeżeli szukasz jakichś informacji sam, sama, najlepiej dzięki własnym chęciom, to łatwiej, szybciej i więcej zapamiętasz.
+
+Pora na parę ćwiczeń!
+
+Dzisiaj poznasz 3 nowe ćwiczenia. Skacząca kropka wspomoże Cię w walce z regresją, a pozostałe 2 nowe ćwiczenia,  to bardzo skuteczne narzędzia do wykształcenia  antycypacji. Zobaczysz, że nieźle można się przy nich bawić, a przy okazji zostaniesz mistrzem, mistrzynią Scrabble! Szkoda czasu na zbędne słowa. Miłej zabawy i efektywnego treningu!
+
+Powodzenia!";
+
+"Eighth lesson"="Lekcja 8
+
+
+Czego się dziś NAUCZYSZ?
+
+Jak nie stracić czasu, który poświęcamy książce?
+Jak trenować koncentrację?
+
+
+Witaj!
+
+Nie ustępujesz! To wspaniale. Mam nadzieję, że pracujesz systematycznie, zdajesz już sobie chyba sprawę, z tego, jakie to ważne. O wyniki pytać nie muszę, na pewno widzisz postępy. Tylko czy one Cię zadowalają?
+Jesteś już uwrażliwiony, uwrażliwiona, na dostrzeganie różnych szczegółów, każdego elementu w danej czynności, algorytmie, który wykonujesz, na każdym szczeblu, czy to w pionie, czy w poziomie, jeśli chodzi o Twoją organizację pracy i czynności przez Ciebie wykonywane. Na pewno korzystasz z większej kontroli nad procesami uwagowymi, którą to kontrolę starasz się rozwijać. Zauważasz już pewnie, że to, czego się nauczyłeś w tym kursie, nie ogranicza się już tylko do postępów w szybkości czytania i ilości zrozumianego i przeczytanego tekstu, ale przekłada się na niemal każdą dziedzinę Twojego życia! Czy trzeba Ci większej zachęty?
+Prawdopodobnie już sam zauważyłeś, zauważyłaś, że w dalszym ciągu, kiedy czytasz, tracisz czas na zbędne elementy, lub niektóre z wykonywanych przez Ciebie czynności można przyspieszyć, albo zmienić ich formułę, aby czas wykonywania tych czynności uległ skróceniu, przez co czytanie zajmie Ci jeszcze mniej czasu. Tym właśnie chciałabym, żebyśmy się dzisiaj zajęli. Następnym etapem dzisiejszych zajęć, będzie trenowanie i dalszy rozwój koncentracji.
+
+Zatem, do dzieła!
+
+
+Zmniejszamy nieefektywny czas, który Ci ucieka, kiedy czytasz
+
+Główne trudności w czytaniu przedstawić można dosyć krótko: Początkujących czytelników najczęściej nękają braki w technice czytania. Obejmują one różnego rodzaju braki: powolne, sztywne i nieelastyczne tempo czytania, trudności w rozumieniu tekstów, brak umiejętności w radzeniu sobie z tekstami z różnych dziedzin, z tabelami i materiałami statystycznymi, nieumiejętne korzystanie ze słowników, encyklopedii i informatorów, brak umiejętności wyszukania potrzebnych materiałów itd. Kolejną poważną sprawą jest brak zainteresowania książką, którą czytasz lub, co gorsze, ogólny brak zainteresowania czytelnictwem. Ludzie czytają za mało, o wiele za mało.
+Większość ludzi nie potrafi wykorzystywać czasu, który poświęcają na lekturę, jako czas samokształcenia. Nie potrafimy stworzyć sobie racjonalnego programu czytania. Programu, który sprzyjałby zarówno zawodowemu doskonaleniu, jak i ogólnemu rozwojowi. Takiego, który łączyłby obowiązki z przyjemnością, który przynosiłby pomoc w uzupełnieniu wiedzy o świecie, budził nowe zainteresowania.
+Często łapiemy się także na braku zdecydowania i wytrwałości, co często skutkuje tym, iż czas poświęcony jakiejś niezrealizowanej idei zostaje nieodwracalnie stracony.
+Proszę Cię, wydobądź ze swojej pamięci to, czego nauczyłeś, nauczyłaś się podczas drugich zajęć. Sprawdź, co masz w swoich notatkach. Czy te elementy w dalszym ciągu są przez Ciebie przerabiane? Wracasz do nich? Jak często? Jak dużo czasu na nie poświęcasz? Czy weszły Ci w nawyk? Czy stosujesz odpowiednią strategię, do odpowiedniego tekstu? Zajmijmy się po kolei najczęściej powtarzającymi się problemami i spróbuj je skorygować podczas ćwiczeń. Niech nowe zachowania wejdą Ci w nawyk. Wtedy uzyskasz pewność utrwalenia nawyku.
+Powolne tempo czytania wiąże się z problemami, które stwarza fonetyzacja oraz ubogi słownik. Znasz już dość sporo reguł, ćwiczeń, pozwalających walczyć z fonetyzacją. Możesz mi podać chociaż jedno ćwiczenie na wyeliminowanie fonetyzacji? Czy masz je zanotowane? Czy powtarzasz ćwiczenie? A może problem fonetyzacji (szczególnie wewnętrznej) już Cię nie dotyczy? Przypomnijmy sobie kilka prostych ćwiczeń:
+
+Fonetyzację zewnętrzną zwalczysz za pomocą takiej techniki:
+
+Przyciskaj koniuszek języka do zębów lub po prostu przytrzymuj go zębami przez cały czas lektury. Możesz też zacisnąć w zębach ołówek bez dotykania go językiem czy wargami. Uważa się, że żucie gumy jest równie skuteczne.
+
+Z fonetyzacją wewnętrzną poradzisz sobie tak:
+
+Podczas czytania wymawiaj kolejno litery alfabetu, licz lub gwizdaj.
+„Wypowiadaj” w myślach kolejne liczby (np. licz cały czas od jednego do dziesięciu).
+
+Najskuteczniejszym sposobem walki z fonetyzacją jest jednak:
+
+Kiedy podczas czytania wystukujesz stały rytm. Twój umysł tak rozdziela zasoby Twojej uwagi, że na pewno nie jesteś w stanie wymawiać tego, co czytasz, nawet w myślach… Rytm wystukuj w średnim tempie, używając do tego, na przykład ołówka. Trzymaj go najlepiej w prawej dłoni. Ważne jest, abyś wystukiwał, wystukiwała rytm, nie samym nadgarstkiem, ale ruchem całego przedramienia. Istotne jest abyś śledził, śledziła rytm oraz podtrzymywał, podtrzymywała jego ciągłość.
+
+Kolejnym z poruszonych problemów, jest nieelastyczne tempo czytania. Pamiętasz, podczas których lekcji mówiliśmy już o tym? Chodzi o lekcje na temat doboru odpowiedniej strategii czytania do danego rodzaju tekstu oraz o lekcję na temat wszystkiego, od czego zależy Twoja prędkość czytania. Pojawiła się wówczas informacja o tym, że wiele tekstów jest wewnętrznie zróżnicowanych. Mam na myśli to, że w jednym tekście są fragmenty trudniejsze i łatwiejsze, nudniejsze i ciekawsze, ubogie stylistycznie, za to pełne informacji i takie, które opływają w metafory. Problem pojawia się, kiedy czytasz wszystko w tym samym tempie, a więc nieelastycznie. Ćwicz zmiany tempa czytania. Chodzi tu o to, abyś czytał, czytała ze zrozumieniem, gdyż o to Ci, w głównej mierze,  chodzi, prawda? Niech zmiana tempa będzie nawykiem, utrwalonym w umyśle skryptem poznawczym, algorytmem, który uruchamia się, kiedy widzi odpowiedni „znak drogowy”, czyli wskazówkę w tekście, która powie Twojemu umysłowi: „zaczyna się fragment pełen metafor, trudny, nieciekawy”, a Twój mózg uruchamia skrypt pt. „skaczę po tekście, aby wyłapać interesujące mnie informacje i zwalniam tempo”.
+Do często spotykanych problemów należy cała grupa kwestii, z którymi może nie mają kłopotów studenci (wiem z doświadczenia, że na studiach można nieświadomie dość szybko je wyeliminować przez praktykę- ciągłe czytanie kiedy nie ma czasu, z dodatkową motywacją, czyli widmem zbliżającego się egzaminu). Są to: trudności w rozumieniu tekstów, brak umiejętności w radzeniu sobie z tekstami z różnych dziedzin, z tabelami i materiałami statystycznymi, nieumiejętne korzystanie ze słowników, encyklopedii i informatorów, brak umiejętności wyszukania potrzebnych materiałów. Pytanie za sto punktów. Jak nazywa się umiejętność przewidywania i domyślania się tekstu przez skojarzenia? Tak, chodzi o antycypację. Pozwala ona znacznie skrócić czas potrzebny Ci do przeczytania danego tekstu. Jak możesz rozwijać tą zdolność? Opowiedz jakich metod używasz, które są dla Ciebie najwygodniejsze? Jak widzisz, wymienione wyżej problemy ściśle się wiążą z antycypacją, a raczej z jej rozwojem wiąże się ich przełamywanie. Spróbuj teraz wymienić chociaż po jednym sposobie przełamywania każdego z wymienionych problemów. Teraz ja to zrobię, zapamiętuj aktywnie nowe informacje!
+
+Trudności w rozumieniu tekstów => ubogi zasób słów. Czytaj jak najwięcej i poświęć dużo czasu na wynotowywanie niezrozumiałych słów i sprawdzanie ich znaczeń w słowniku. W miarę upływu czasu próbuj wnioskować znaczenie niezrozumiałych dla Ciebie wyrazów z kontekstu.
+
+Brak umiejętności w radzeniu sobie z tekstami z różnych dziedzin, z tabelami i materiałami statystycznymi => polecam podobny sposób do powyższego, z tym, że w tym przypadku kładź również nacisk na aktywne przetwarzanie i zapamiętywanie informacji. Staraj się powtarzać własnymi słowami, najlepiej na głos, o czym pisze w tym tekście autor, odczytuj na głos tabelę. Staraj się wiązać nowe informacje ze starymi, podobnymi do nich, a które już posiadasz.
+Nieumiejętne korzystanie ze słowników, encyklopedii i informatorów => przeczytaj dokładnie wstęp słownika i zasady, według których zakodowane są w nim hasła. Upewnij się, czy je rozumiesz, poszukując w nim interesujących Cię haseł. Korzystaj ze słownika jak najczęściej, a przyzwyczaisz się do niego i nie będzie to już dla Ciebie żaden problem.
+Brak umiejętności wyszukania potrzebnych materiałów => w jaki sposób wyszukujesz potrzebne Ci materiały? Gdzie ich szukasz? Czy na pewno dobrze formułujesz cele poszukiwań? Czy dobrze organizujesz swoją pracę? Upewnij się, na jaki temat materiały będą Ci potrzebne, sformułuj tytuł opisujący ten temat, nadaj podtytuły konkretnym informacjom, których masz zamiar poszukać, ustal, w jakim celu ich szukasz, jaki charakter ma powód, dla którego poszukujesz tych materiałów (czy jest to praca, czy raczej przyjemność), ustal, gdzie ich będziesz szukać.
+
+
+Kolejnym problemem jest motywacja
+
+Tak naprawdę, dorosły, statystyczny Polak, czyta jedną książkę rocznie. Jest to średnia, więc można wnioskować, że wielu naszych współobywateli czyta sporo książek, ale zastraszająca ilość Polaków nie czyta książek w ogóle! Tłumaczymy to brakiem czasu. Prawda jest taka, że w dobie telewizji i Internetu, mało komu się chce sięgać po książkę. Straciła ona status rozrywki, kiedy mamy w zasięgu ręki rozrywkę interaktywną, ciekawszą. Również przestaje ona tracić na znaczeniu, jako nośnik informacji, dzisiaj mamy Internet. A szkoda. To właśnie w dobie Internetu szaleją takie choroby, jak dysleksja, dysortografia, czy analfabetyzm wtórny (funkcjonalny). Niedługo nie będziemy mogli sami się podpisać!
+Kolejnym błędem jest sposób motywowania nas do lektury przez system edukacji. Większość nauczycieli, zamiast zainteresować nas ciekawą lekturą, dobrze dobraną do czasów, które mamy, poruszającą problemy, które do nas by dotarły, każe nam czytać nie interesujące nas rzeczy, grożąc przy tym sankcjami. Powoduje to reakcję odwrotną, swoisty bunt.
+Najlepsza motywacja to taka, która wypływa z nas samych. Pomyśl, co lubisz, jakie gatunki literackie? Obiecaj sobie, jakie tytuły, które zawsze chciałeś, chciałaś przeczytać, ale nie starczało na to nigdy czasu, przeczytasz w tym roku. Dotrzymaj słowa! Nie oszukuj samego, samej siebie! Pomyśl, co Cię interesuje i zdobądź wiedzę na ten temat, korzystając z książki. Pisz listy ze znajomymi! Chyba więcej wzruszeń, wzburzeń i innych emocji doznacie, widząc i tworząc wyrazy, zdania, sens i znaczenia żywymi literami, pisanymi ręcznie!
+Ważne dla Ciebie jest również odpowiednie stanowisko i organizacja pracy. Stawiaj przed sobą cele i je realizuj. Zaplanuj swoje działania na najbliższą i tą dalszą przyszłość. Miej nad tym kontrolę. Chyba kontrolujesz swoje życie? Powiedz sobie „ja tu rządzę!”.
+Nie czytaj na leżąco! Zadbaj o odpowiednie oświetlenie. Czytaj w taki sposób, w takich warunkach, aby nie męczyło Cię to, niech czytanie nie kojarzy Ci się ze znużeniem… wiesz już jak łatwo wyrobić w sobie nawyk, stworzyć skrypt poznawczy. Nie pozwól, aby każde otwarcie książki uruchamiało skrypt pt. „nuda, ziewanie, zmęczenie, senność”. Pamiętaj o regularnych przerwach polegających na dotlenieniu mózgu. Wierzysz w Feng Shui? To ustaw pod tym kontem swoje stanowisko pracy! Rób wszystko co możesz, aby dobrze się ono kojarzyło i było dobrze zorganizowane. Nie odkładaj przemeblowania albo sprzątania „na jutro”… wiesz, jak to się kończy.
+No i na koniec najważniejsze. Nie traktuj czytania jako obowiązku. Nikt Cię do tego przecież nie zmusza! Niech będzie to zabawa. Baw się literaturą. Rób kolorowe notatki, powtarzaj własnymi słowami myśl przewodnią, rozważaj, polemizuj, analizuj krytycznie. Niech czytanie stanie się dla Ciebie wyzwaniem, intelektualną rozrywką! Jeżeli czytasz książkę o Robin Hoodzie, niech Twoja wyobraźnia działa! Zobacz las Sherwood. Znajdź się w samym środku turnieju łuczniczego. Poczuj się, jakbyś oglądał film! Nie tylko rozwiniesz swoją wyobraźnię, poprawisz zapamiętywanie i wydobywanie z pamięci (Nie tylko informacji, które przeczytałeś, przeczytałaś), elokwencję, zasób słownictwa i krytyczne myślenie, ale również swoje zdolności intelektualne. Prawda, że to cudowna wizja?
+
+
+Trenujemy koncentrację
+
+Z koncentracją, w znacznej mierze, wiąże się dbałość o dobrą kondycję fizyczną i psychiczną oraz o świeżość umysłową podczas czytania. Czy zdarza Ci się zabierać do czytania, gdy jesteś zmęczony, zmęczona lub gdy masz ochotę na sen? Łapiesz się wtedy na tym, że po przeczytaniu całej strony, żadna nowa informacja do Ciebie nie dotarła. Zmęczenie nie wpływa pozytywnie na Twoją koncentrację i Twoje procesy związane z czytaniem, dlatego korzystaj z  częstych i krótkich przerw.
+Przewietrz pomieszczenie, w którym pracujesz, gdyż w trakcie nauki, Twój mózg pochłania aż 20% więcej tlenu zużywanego w czasie spoczynku. Podobnie dzieje się, gdy Twoją uwagę okupują żywe wspomnienia (radosne czy przykre), gdy przeżywasz jakieś niepokoje, czy uczucie zagrożenia.
+Najodpowiedniejsze dla czytania są poranki i wieczory. Jeden trening szybkiego czytania nie powinien zajmować Ci więcej niż 1,5 godziny dziennie. Wydłużenie tego czasu z całą pewnością nie wpłynie pozytywnie na Twoje postępy w nauce, a może doprowadzić nawet do ich uwstecznienia. Myślę, że w sytuacjach, kiedy padasz z nóg, najrozsądniejszym podejściem będzie po prostu Twoja rezygnacja z lektury. Przy zmęczeniu musisz bowiem odpocząć. Pozytywnie mogą tutaj podziałać standardowe metody jak np. krótki spacer, kilkanaście rozluźniających ruchów przy otwartym oknie, czy nawet kilka głębokich wdechów. Znacznie trudniej już jest poradzić sobie z brakiem równowagi emocjonalnej, prawda? Jeśli jednak musisz przeczytać jakiś tekst i nie da się tego w żaden sposób przesunąć na później, musisz się o nią starać. Pomoże Ci tu, jeżeli  uprzytomnisz sobie powagę sytuacji.
+Ludzki umysł, oczywiście i Twój i mój, funkcjonuje na zasadzie dwubiegunowej. Mamy „ukryty ” w nim pewien „przełącznik”, który przełącza działanie Twojego mózgu na jeden z dwóch torów. Nie możemy działać dwutorowo, to znaczy, nie możemy myśleć racjonalnie i pod wpływem emocji jednocześnie. Są albo emocje, albo logika. Jak myślisz, dlaczego potocznie mówi się, że podczas zdenerwowania powinno się liczyć do dziesięciu? To pomaga. Chodzi o przestawienie umysłu z funkcjonowania emocjonalnego na funkcjonowanie racjonalne. Kiedy jesteś więc pod wpływem emocji, staraj się liczyć, rozwiąż jakieś zadanie matematyczne, krzyżówkę, sudoku, zobaczysz, że emocje szybko opadną (oczywiście za każdym razem, kiedy zaczniesz myśleć o kłopotliwej sytuacji, o powodzie emocji, uczucia wrócą, choć już może nie aż tak intensywnie). Czy to zbawienny środek? Nie. Pamiętaj, że emocje są niezbędne dla Twojego życia, dla Twojego normalnego funkcjonowania, dla Twojego zdrowia. To, o czym Ci powiedziałam, jest to jedynie środek doraźny, który możesz stosować, kiedy emocje są zbyt duże, a Ty masz pracę, którą musisz wykonać. Nie stosuj tego w normalnych sytuacjach, chyba, że są bardzo uciążliwe.
+Pocieszający może jest też fakt, iż raz rozpoczęta, pod naporem konieczności lektura, w pewnym stopniu Cię angażuje, co działa na tej samej zasadzie, o jakiej przed chwilą wspomniałam. Z czasem pojawić się może stres związany z potencjalnymi skutkami nieprzeczytania potrzebnych Ci materiałów, a zmartwienia i niepokoje usuwają się na dalszy plan.
+Jeśli chodzi jednak o senność (gdy jest prawdziwa, a nie jako rezultat lenistwa), to najlepszym w świecie lekarstwem jest … po prostu sen. Podstawą naturalnej chęci czytania jest dobra kondycja psychiczna. Zapewni Ci ona świeżość umysłu niezbędną w procesie nauki. Przegradzaj okresy intensywnej pracy wypoczynkiem. Zabieraj się do czytania, zwłaszcza tego poważnego, wypoczęty, wypoczęta, a wszelkie problemy z Twoją koncentracja po prostu zanikną. Dorosły człowiek potrzebuje od sześciu do ośmiu i pół godziny snu na dobę. Więcej i mniej nie wychodzi na zdrowie…
+
+Zajmijmy się teraz dokładniej dystraktorami, czyli wszystkimi bodźcami, które przeszkadzają Ci w skupieniu. Można je podzielić, jak już pewnie zauważyłeś, zauważyłaś, na dwie grupy: wewnętrzne i zewnętrzne.
+Do wewnętrznych problemów należą Twoje uwarunkowania psychiczne i biologiczne, czy masz jakieś problemy, jaki jest Twój aktualny stan emocjonalny, czy nie jesteś przemęczony, przemęczona, czy nęka Cię jakaś uporczywa myśl (choćby melodia, krążąca bez ustanku w Twojej głowie), czy masz odpowiednią motywację- przyczynę i cel czytania? To są pytania, na które musisz sobie odpowiedzieć, aby w pełni spokoju podejść do lektury. Wewnętrzne dystraktory są trudniejsze do opanowania, ale jeżeli zaczniesz nad nimi panować, będziesz panować nad swoim umysłem i emocjami, a więc nabędziesz umiejętność, która ma zastosowanie w każdej dziedzinie Twojego życia, powiedziałabym nawet, że pełni w nim decydującą rolę! Ludzie dzielą się na sowy i skowronki. Jedni śpią do południa i rano nie nadają się do życia, za to potrafią pracować do rana, noc i późny wieczór, to dla nich odpowiednia pora do pracy. W tym czasie kontrola nad zasobami uwagi jest u nich najwyższa. Kiedy uczą się wieczorem, rano pamiętają większość informacji. Za to nauka rano im nie służy. Są to ludzie- sowy. Druga grupa ludzi ma zupełnie na odwrót. Nie mogą spać za długo i najczęściej bardzo wcześnie są już na nogach. Wtedy świetnie potrafią się skoncentrować na swojej pracy, najlepiej im się wtedy uczy (procent zapamiętanych informacji jest bardzo wysoki). Niestety, wczesnym wieczorem kładą się spać i tak kończy się ich dzień. To są ludzie- skowronki. Ja jestem sową. A Ty? Znajdź swój rytm biologiczny, swoją najlepszą porę dnia. Wykorzystaj ją maksymalnie.
+Z zewnętrznymi dystraktorami powinieneś, powinnaś sobie poradzić bez problemów. Są to wszystkie zakłócenia Twojej uwagi, płynące do Ciebie z otoczenia. Zaliczymy więc do nich złe oświetlenie, bałagan na biurku, ruchome zabawki, albo widok za okno, gdzie dzieje się dużo, muzyka (często bardzo rozprasza, choć uważamy, że tak nie jest, że jest wręcz przeciwnie), hałasująca rodzina i sąsiedzi, grający telewizor itd… Jak widzisz, są to przeszkody, które bez problemu możesz ominąć, nad którymi możesz zapanować, nie poświęcając na nie ćwiczeń! Warto się poderwać i wstać z biurka, żeby uciszyć rodzeństwo, lub poprosić sąsiada, by ściszył muzykę. W takich warunkach, kiedy minimum bodźców będzie do Ciebie docierało, Twój stały zasób uwagi nie będzie mógł się podzielić, więc cały zaangażuje się w to, w co powinien, w co chcesz, aby się zaangażował. Jedynym problemem są wtedy emocje, potok myśli, który może zabrać znaczną część Twojej uwagi. Dlatego pracuj nad sobą! Panuj nad swoim ciałem, nad swoim umysłem!
+Ale natłok informacji, prawda? Ale chyba już na tyle potrafisz się kontrolować, że nie masz problemów z uwagą, a wszystkie dystraktory, które panowały dookoła Ciebie, zostały już usunięte. Jak Ci idzie redagowanie notatek? Im mniej wyrazów i więcej strzałek i kolorów, tym lepiej. Pamiętaj, że notatki powinny przypominać Twój magazyn informacji, który znajduje się w Twoim umyśle. Wtedy najłatwiej będzie Ci wydobyć wiedzę z pamięci. Trenuj sporządzanie notatek. Niech zeszyt będzie dla Twojego umysłu tym, czym dla komputera jest dodatkowy twardy dysk zewnętrzny.
+
+Czas na ćwiczenia!
+
+Dzisiaj poznasz kolejne ćwiczenia trenujące antycypację. Przez kilka kolejnych lekcji na antycypację właśnie będziemy kładli szczególny nacisk. Od dzisiaj zaczniemy także ćwiczenia czytania ze wskaźnikiem. Zapoznaj się z najpopularniejszymi schematami prowadzenia wskaźnika i postaraj się czytać ze wskaźnikiem co najmniej kilkanaście minut po każdej lekcji. Aby utrzymać stałe tempo czytania posłuż się metronomem (jest dostępny z ekranu startowego programu).
+
+Teraz kilka przysiadów i już zapraszam do ćwiczeń.";
+
+"Ninth lesson"="Lekcja 9
+
+
+Czego się dziś DOWIESZ?
+
+Dowiesz się czym jest czytanie integralne oraz jakie są jego ograniczenia.
+
+
+Witaj!
+
+Ale ten czas leci! Współpracujemy już tyle czasu! Ja jestem zadowolona, a ty? Jak Twoje postępy? Jak Twoja systematyczność i samokontrola? Dzisiaj rozwiniesz swoją wiedzę na temat dwóch strategii czytania, o których już rozmawialiśmy (przypomnij sobie, czym się one różnią, kiedy którą stosować?). następnym krokiem będzie praktyczne przećwiczenie nabytej przez Ciebie dzisiaj wiedzy. Na następnym spotkaniu, dokładniej zajmiemy się nową strategią czytania i jej praktycznym zastosowaniem. Musisz najpierw obyć się z jej podstawami, aby mieć solidne fundamenty. Nie zbudujesz przecież domu na piasku!
+
+Zatem, do dzieła!
+
+
+Czytanie integralne… a co to takiego?
+
+Normalne (integralne) szybkie czytanie polega na tym, że Twoje oczy przebiegają po całym tekście. Nie opuszczają przy nim żadnych jego fragmentów. Chodzi tu o czytanie, jakie stosujesz przy lekturze nieco trudniejszych tekstów, zaczerpniętych z książek, podręczników czy czasopism. Kiedy uznasz jakiś tekst za interesujący, pragniesz pewnie poznać jego treść w całości. Jeśli czytane przez Ciebie teksty dotyczą dobrze znanej Ci dziedziny - nie zawierają nowej dla Ciebie terminologii i masz w nich ogólną orientację - możesz bez większego uszczerbku na zrozumieniu tekstu, dosyć zdecydowanie, przyspieszyć tempo czytania.
+Zwiększenie przez Ciebie szybkości czytania polega, w znacznej mierze, na tym, że szybciej spostrzegasz tekst i równocześnie usuwasz wszelkie przeszkody psychofizyczne, o których już wiesz, a mogących hamować ten proces. Określane jest to jako czytanie integralne (werbalne), czyli czytanie pełnego tekstu.
+Drugi sposób szybkiego czytania, który dzisiaj pogłębisz, związany jest z czytaniem wybiórczym, czyli selektywnym (interwerbalnym). Czytanie werbalne jest w stanie podnieść prędkość przyswajania tekstu jedynie 3 - 4 krotnie, podczas gdy czytanie interwerbalne sprawia, iż tekst przyswoić możesz 6 - 10 razy szybciej! Warto jest więc poświęcić chwilę na pogłębienie drugiej strategii czytania.
+Pewnie uczono Cię, że takie wybiórcze czytanie jest „nieładne” i w cale czytaniem być nie powinno nazywane. Nic bardziej mylnego. Uznać musimy, że przeczytany tekst to taki, który został przez Ciebie zrozumiany, zapamiętany i na tematy przez niego poruszone możesz swobodnie się wypowiadać używając do tego argumentacji użytej przez autora. Wybiórcze czytanie może Ci to dać, pod warunkiem, że czytasz, bądź przeglądasz tekst aktywnie, ze zrozumieniem. W testach na rozumienie tekstu, dobry wynik dobrego czytelnika, który czyta starym, wolnym sposobem, wynosi 80%. Wydaje mi się, że Twój wynik, nawet przy wybiórczym, szybkim czytaniu może być lepszy, efektywniejszy, zatem to Ty, tak naprawdę, „bardziej” czytasz.
+Przypomnij sobie, na czym polega dokładnie ta strategia. Czego masz szukać w tekście podczas jego przeglądania i z czym masz wiązać pewne informacje. Czy Twoja mapa bazująca na dobrym zasobie słownictwa i dużej ilości uporządkowanych informacji, jest już na tyle dobra, że łatwiej Ci wiązać ze sobą różne fakty? Grywasz czasem w skojarzenia? To dobry trening.
+
+
+Brzmi to nieźle, ale nie do końca…
+
+Selektywny sposób czytania wiąże się jednak z tym, że pewne informacje znajdujące się w tekście możesz przeoczyć. Oczywiście, każdy rodzaj czytania się z tym wiąże, tutaj jednak ryzyko jest większe. Spróbuj zrozumieć to lepiej, zwróć uwagę na to, że istotą szybkiego czytania jest zwiększenie szybkości postrzegania przez Ciebie tekstu przy zachowaniu Twojego dotychczasowego stopnia jego zrozumienia oraz zapamiętywania. Dlatego też w kursie tym skoncentrujemy się na zagadnieniu czytania integralnego (nieopuszczającego żadnych fragmentów tekstu). Czytanie selektywne polecę Ci jednak jako uzupełnienie tej metody. Proces doskonalenia obejmuje zarówno szybkość czytania jak i stopień zrozumienia i zapamiętywania, dlatego też zarzut, jakoby szybkie czytanie wiązało się z niedokładnością, jest nieporozumieniem. Wykorzystanie czytania selektywnego także odpiera ten zarzut, ponieważ polega na wstępnym zorientowaniu się w tekście, który później będzie dokładnie czytany. Możesz użyć tej techniki do wyłapania „znaków drogowych”, zawartych w tekście, które poprowadzą Twój umysł w dobrym kierunku rozumienia i zapamiętania informacji w tekście zawartych.
+Zapamiętaj, iż każdy z nas ma inny rodzaj i stopień uzdolnień, inne tempo reakcji. Każdy człowiek ma własny tryb myślenia i pracy. Jest to całkowicie normalne. Musisz wziąć pod uwagę, że nie wszyscy mogą osiągnąć takie same wyniki przy takim samym nakładzie pracy. Jednym coś przychodzi łatwiej, innym trudniej, a w innej znowu dziedzinie, sytuacja może diametralnie się odwrócić. Warto więc abyś był świadomy, była świadoma, że w dążeniu do maksymalnych wyników trzeba być rozsądnym.
+
+Jestem ciekawa jak pójdzie Ci sprawdzenie swoich umiejętności? Jesteś zadowolony, zadowolona z wyniku? Chcesz się rozwijać dalej?
+
+Zatem czas na dzisiejszą porcję ćwiczeń!
+
+Przygotuj się na trudny blok ćwiczeniowy. Dzisiaj dużo treningu antycypacji, a także nowe ćwiczenie na spostrzegawczość. Pamiętaj o treningu z książką po skończeni lekcji.";
+
+"Tenth lesson"="Lekcja 10
+
+
+Czego się dziś DOWIESZ?
+
+Dowiesz się, czym jest czytanie interwerbalne.
+Dowiesz się, kiedy warto czytać interwerbalnie.
+
+
+Witaj!
+
+Dzisiaj poszerzysz swój zasób wiedzy na temat czytania interwerbalnego. Porozmawiamy o tej technice szczegółowo, omawiając jej algorytm krok po kroku. Następnie porozmawiamy o tym, kiedy warto, kiedy nie warto korzystać z tej techniki. Jak wiesz, nie ma rzeczy uniwersalnej. Są rzeczy, które sprawdzają się w jednej dziedzinie, natomiast w innej mogą być zupełnie bezużyteczne. To samo z odpowiednimi technikami dotyczącymi szybkiego czytania. Twoje zadanie polega więc na tym, aby dowiedzieć się jak najwięcej o tych technikach, abyś był, była przygotowana na każde warunki, w których Ci przyjdzie pracować. Najlepiej, aby ćwiczenia, które wykonujesz na końcu każdej lekcji, weszły Ci w nawyk, aby wytworzył się w Twoim umyśle odpowiedni skrypt sytuacyjny. Wówczas wystarczać będzie jeden, dwa bodźce, takie jak specyficzna metafora, bądź sformułowanie wstępu tekstu, który czytasz, a ten skrypt uruchomi się automatycznie, przez co nawet nie będziesz musiał, musiała specjalnie myśleć nad wyborem odpowiedniej techniki czytania, wystarczy, że spojrzysz do tekstu i krótko go zanalizujesz, a zaczniesz go czytać w odpowiedniej dla niego technice.
+Przyjrzyj się zatem szczegółowo interwerbalnej technice szybkiego czytania. Poznasz dziś bardzo dużo rzeczy, warto więc, abyś miał, miała, przy sobie zeszyt z notatkami…
+
+
+Czytanie interwerbalne… Czego na ten temat jeszcze nie wiesz?
+
+To, o czym rozmawialiśmy na poprzedniej lekcji, dotyczyło głównie integralnego szybkiego czytania. Czytanie selektywne (interwerbalne) polega na tym, że Twoim zadaniem jest postrzeganie jedynie słów kluczowych, fraz bądź akapitów. Zauważ, że termin “czytanie” jest w tej materii tylko umowny. Szybkie czytanie jest często mylone z selekcją konkretnych treści. Różne mogą być rodzaje i stopnie selektywności podczas czytania. Czytanie selektywne znacząco różni się od zwykłego, integralnego, przy którym czytasz wszystko, nie opuszczając żadnych słów. Różni się od zwykłego czytania na tyle, iż często zdarza się, że poważny czytelnik, o mocno utrwalonych nawykach standardowego czytania nie potrafi od razu przystosować się do nowych wymagań. Ciężko jest się przestawić na pobieżny sposób czytania. Warto jednak i w to włożyć odpowiedni wysiłek, ponieważ, w wielu sytuacjach, taka właśnie technika przyniesie Ci największe korzyści i będzie najbardziej skuteczna. Umiejętność tą musisz jednak opanować dobrze. Twoje selektywne przeszukiwanie tekstu powinno być dokładne i aktywne. Nie może to polegać jedynie na chaotycznym i przypadkowym przebieganiu tekstu wzrokiem.
+
+
+Kiedy i w jaki sposób stosować tę technikę?
+
+Zwróć uwagę na fakt, iż mało jest tekstów zwartych i wzorowo dopracowanych, zawierających jedynie esencję potrzebnych informacji. Przeważnie bywa tak, że autorzy celowo rozbudowują swoje teksty, używając tam słów, które nie są Ci niezbędne, a podnoszą jedynie walory językowe tekstu. Oczywiście nierzadko czynią to z pożytkiem dla czytelnika, dla Ciebie. Bardzo dobrą praktyką jest dodawanie przykładów i porównań, co ma na celu ułatwienie czytelnikowi, więc i Tobie,  zrozumienia i pomóc w zapamiętaniu danego zagadnienia. Kiedy jakieś obrazowe porównanie przypadnie Ci do gustu, przyjrzyj mu się chwilę. Rozkoszuj się nim, jego pięknem, świetnym pomysłem autora. Niech zostanie wciągnięty do mapy poznawczej Twojego umysłu, zakoduj to porównanie, z czym nie powinieneś, nie powinnaś mieć najmniejszego problemu. Kolekcjonowanie takich „obrazów” pomoże Ci powiązać wiele znaków, a raczej ich umysłowych przedstawień, co wpłynie pozytywnie na Twoje zdolności polegające na rozpoznawaniu, zapamiętywani i wydobywaniu z pamięci, a także, naturalnie, rozwinie Twoją elokwencję i zdolności abstrakcyjnego myślenia. Niestety zdarzają się także sytuacje, w których autor celowo rozwleka tekst, w celu otrzymania wyższego honorarium autorskiego.
+Maksymalną granicą integralnego czytania jest 800 - 1000 słów na minutę, lecz, jak już wiesz, nie zawsze istnieje potrzeba czytania od przysłowiowej „deski do deski”. Czytelnik może skorzystać, w tym wypadku, z zalet czytania selektywnego. poznasz teraz dwie techniki związane z czytaniem selektywnym, które na pewno Cię zainteresują. Zastanów się, której techniki łatwiej się nauczysz, którą łatwiej wprowadzisz w nawyk, a także, do jakiego rodzaju tekstu, która technika przyda Ci się bardziej.
+
+Skamirowanie albo czytanie “ślizgające”, polega tym, abyś wyszukiwał, wyszukiwała potrzebne Ci fragmenty tekstu, np. dane liczbowe czy cytaty. Najpierw, z całości wyszukujesz treści, będące przedmiotem Twoich dociekań, abyś mógł, mogła później czytać dokładnie, w celu uzyskania szczegółowej informacji. Jest to bardzo szybki sposób poszukiwania określonych słów, konkretnych konstrukcji oraz grup słów.
+
+Skimirowanie (inaczej czytanie “odwirowujące”, jest wolniejsze od skamirowania. Polega na tym, abyś dokonał, dokonała szybkiego przeglądu, w celu zdobycia orientacji, przy równoczesnym zaniedbaniu uświadamiania sobie sensu, czy istoty materiału. Orientuj się w budowie tekstu, a nie w konkretnych informacjach w nim zawartych. Zwracaj uwagę na akapity, na pewne frazy, jakiego rodzaju są (techniczne, czy mają może charakter poetyczny), na stopień trudności tekstu i na to, czy ten stopień się zmienia. Pomyśl o celu napisania tekstu i przyczynach jego powstania, wyrób sobie odpowiednie zdanie na jego temat.
+
+Znajomość tych technik to cenna umiejętność, jednak nie warta wykorzystania w opracowywaniu tekstów trudnych i z mało Ci znanej dziedziny, gdzie potrzebne jest Ci raczej czytanie integralne, z powodu dużej ilości niezrozumiałej przez Ciebie, z przyczyn obiektywnych, terminologii.
+Wróćmy teraz  do nowych technik, które poznajesz na dzisiejszej lekcji, a które później przećwiczysz, których się nauczysz. Pamiętaj, że skuteczność ćwiczeń widać wtedy, kiedy trenowane działanie staje się działaniem nawykowym. Po to ćwiczysz, żeby, mówiąc kolokwialnie, jak pies Pawłowa, nauczyć się pewnych reakcji na odpowiednie bodźce i postępować zgodnie z nimi, niekoniecznie z udziałem Twojej świadomości. Tak samo nauczyli Cię czytać w szkole. Nauczyli Cię tam reagować odpowiednio na dany bodziec (widząc znak „a”, wymawiasz pewien, skojarzony z tym znakiem dźwięk). Tak samo wychowują nas rodzice. Jednak w tym kursie nikt nie będzie Cię karał za zachowania niepożądane. Wystarczającą karą jest strata czasu na nieefektywnie wykonywane ćwiczenia, zawiedzenie się samym sobą, kiedy nie da Ci się dotrzymać obietnic, które złożyłeś, złożyłaś samej sobie. Pamiętasz je? Nie martw się jednak, jeżeli nie idzie zgodnie z planem, bo człowiek zawsze planuje zrobić więcej, niż potrafi. Unikaj też tego. Poznaj swoją osobę, swoje możliwości i stawiaj przed sobą realne cele. Stopniowo będą one coraz większe. Nie rzucaj się na początku z motyką na słońce. Na to przyjdzie czas. Wystarczy tylko odrobina samokontroli…
+Mam nadzieję, że Twój zeszyt na notatki już jest otwarty. Warto, abyś notował, notowała informacje, które będą Ci teraz podane. Liczy się też sam fakt rozwijania zdolności sporządzania przez Ciebie notatek. Pamiętaj! Jak najmniej zdań, wyrazów, jak najwięcej strzałek, symbolizujących powiązania, relacje, między pojęciami, dużo kolorów, rysunki. Twojemu umysłowi będzie o wiele łatwiej zapamiętać informacje, które Twoje oczy zobaczą w takiej właśnie formie, niż w formie suchego tekstu. Ile czasu studenci podczas sesji oszczędziliby, gdyby potrafili sporządzać odpowiednie notatki (oczywiście warunkiem jest chodzenie na wykłady, z czym nie zawsze jest tak łatwo). Pamiętaj też, że najlepsze notatki, to Twoje własne.
+
+Czas rozszerzyć Twoje informacje.
+
+Do dzieła!
+
+
+Rozróżniamy 3 typy skimirowania:
+
+1. Pobieżnie przeglądasz tekst co ma poprzedzać jego dokładniejsze czytanie, które nastąpi później, jeżeli jesteś z książki zadowolony, jeżeli spełnia Twoje oczekiwania. Stosuj to, np. kiedy wybierasz lekturę dla siebie.
+
+2. Dokładnie przeglądasz tekst, co kształtuje Twoje ogólne wrażenie. Jest to czynność złożona najczęściej z następujących elementów: przejrzenie wstępu i zakończenia, rozpoznanie konstrukcji tekstu (tytuły, rozdziały, podrozdziały), przeczytanie przez Ciebie pierwszych i ostatnich akapitów, zwrócenie uwagi na graficzne wyodrębnienia (ramki, wyróżnienia kolorystyczne) oraz dodatkowe informacje, w postaci ilustracji, tabel itp.
+
+3. Ponownie przeglądasz tekst, co pozwala Ci na nauczenie się, bądź przypomnienie jego treści.
+
+
+Jeszcze więcej ciekawych i przydatnych informacji…
+
+Skimirowanie pozwala Ci na zaoszczędzenie czasu i poprawienie Twojej percepcji tekstu. Im tekst jest trudniejszy tym bardziej wskazane jest, abyś używał, używała techniki skimirowania, aby czytanie integralne było skuteczniejsze, aby wyłuskać i zapamiętać jak najwięcej potrzebnych Ci informacji. Nie musisz czytać trudnego tekstu kilkakrotnie. Wystarczy, że najpierw przejrzysz go, wyciągniesz odpowiednie wnioski, zwracając uwagę na rzeczy, o których Ci mówiłam chwilkę wcześniej (czy pamiętasz je? W jaki sposób masz sporządzone notatki z tymi informacjami?).
+Skimirowanie i skamirowanie, jako czytanie samo w sobie (nie poprzedzające dokładnego zapoznawania się z tekstem), stosuj tylko przy tekstach nieskomplikowanych. Techniki te wskazane są wtedy, kiedy czytanie integralne zostało przez Ciebie opanowane na poziomie zadowalającym, gdyż, jak pokazują badania, równoczesne opanowywanie szybkiego i selektywnego czytania przynosi szkody w obu umiejętnościach. Są to dwie „ścierające się” techniki. Różnią się na tyle, że podczas nauki obu na raz, będą ze sobą „walczyć” o Twój umysł. Ten sam bodziec będzie wywoływał dwie reakcje, co spowoduje spowolnienie, a nawet brak jej wystąpienia. Musisz najpierw opanować stan emocjonalny i informacyjny. Takie wprowadzenie w lekturę, które nastąpi podczas wyboru celu czytania przez Ciebie danej pozycji. Kiedy już to dobrze opanujesz, jeden bodziec nie będzie wywoływał dwóch reakcji, gdyż Twój odbiór danego bodźca, związanego z czytaniem, ulegnie w Twoim umyśle specyfikacji. Oznacza to, że nie tylko sam bodziec zadecyduje o wystąpieniu odpowiedniej reakcji, ale również samo Twoje nastawienie. Będzie to więc czynność pół automatyczna. Najpierw Ty zadecydujesz o wyborze strategii, „wyjaśniając” swój cel swojemu umysłowi, potem Twój mózg będzie wiedział, której konkretnie reakcji wymagasz od niego na dany bodziec, a dalej to już „popłynie” samo… Naucz się (niech wejdzie Ci w nawyk) najpierw jednego rodzaju szybkiego czytania, a potem dopiero trenuj drugi. Kiedy już opanujesz oba, możesz je rozwijać dalej równolegle.
+Szybkie czytanie absorbuje równocześnie zmysł wzroku i mózg. Jeżeli jeden z elementów tego układu nie funkcjonuje poprawnie, to cały układ także nie może poprawnie pracować. Dlatego właśnie konieczne jest to uzależnienie całego procesu od harmonijnej współpracy oczu i mózgu. Zanim rozpoczniesz czytanie, zadbaj więc o odpowiednie nastawienie psychiczne i usunięcie napięć emocjonalnych. Pamiętasz w jaki sposób panować nad wewnętrznymi dystraktorami? Przypomnij sobie, jakie znasz sposoby eliminowania tych problemów. Który najlepiej działa na Tobie? Pamiętasz sposób „z liczeniem”? zajrzyj do notatek i przypomnij sobie, jakie znasz rodzaje dystraktorów wewnętrznych. Pomyśl, jak skutecznie wyeliminować każdy z nich.
+
+Cieszę się, że posiadasz dobrą, ugruntowaną wewnętrzną motywację i chcesz się rozwijać. Jest to przecież istota naszej egzystencji- ciągły rozwój. Jak podczas każdej lekcji, i tym razem, poznałeś, poznałaś wiele informacji. Jest ich bardzo dużo. Dlatego widzisz, że nie ma sensu wkuwać ich na pamięć. Pamiętaj za to o Twoim „zewnętrznym dysku twardym”, którym jest Twój zeszyt z notatkami! Korzystaj z niego, a na pewno zwiększysz procent informacji zawartych w kursie, które zostaną skutecznie zakodowane w Twoim umyśle.
+
+Czas na ćwiczenia.
+
+Dzisiejszy trening, będzie po części przypomnieniem ćwiczeń rozwijających pamięć i antycypację. Już jutro przekonasz się, jak bardzo potrzebne są te dwie rzeczy w szybkim czytani. Chwilę odpocznij i przejdź do ćwiczeń.
+
+Powodzenia! Baw się!";
+
+"Eleventh lesson"="Lekcja 11
+
+
+Czego się dziś NAUCZYSZ?
+
+Nauczysz się korzystać z zasobu słów, którymi władasz, stosując go do szybkiego czytania.
+Nauczysz się, w jaki sposób rozbudować swoje słownictwo.
+Oraz jak utrwalać nowo poznane słowa.
+
+
+Witaj!
+
+Jak Ci idzie szybkie czytanie? Czy zauważasz postępy nie tylko podczas ćwiczeń? Już wiesz, czym zajmiemy się dzisiaj. W związku z tym, chciałabym Cię zapytać, co pamiętasz o antycypacji? Czy ćwiczysz sporządzanie notatek? Znalazłeś, znalazłaś już swój styl prowadzenia zeszytu z notatkami? Czy budujesz swoje mapy poznawcze wzbogacając aktywnie swój zasób słów?
+Znasz już termin antycypacji i wiele rzeczy, które się z nią wiążą. Dzisiaj rozszerzysz swoją wiedzę i umiejętności w tym zakresie. Na zakończenie poznasz nowe ćwiczenia, tym razem efektywnie rozwijające Twoje mapy poznawcze, zasób słownictwa, którym się posługujesz oraz w jaki sposób najskuteczniej utrwalać nowo poznane słowa, czyli w jaki sposób je kodować w umyśle, czyli… Jak budować odpowiednie mapy poznawcze, aby umieć szybciej i skuteczniej wydobywać potrzebne Ci informacje z pamięci.
+
+Brzmi dobrze, prawda? Zatem, do dzieła!
+
+
+W jaki sposób zasób słów, który posiadasz, pozwoli Ci zwiększyć prędkość, z jaką czytasz?
+
+Zasób słów, jakim władasz, ma ogromne znaczenie - obszerny słownik, którym się posługujesz na co dzień, świadczyć będzie o Twojej inteligencji, o jakości Twojego wykształcenia, wiedzy jaką posiadasz i czytelniczym doświadczeniu. Skąpe, ograniczone słownictwo nie jest niczym zachęcającym. Przeważnie świadczy o słabym uzdolnieniu, o braku wykształcenia lub jego niskiej jakości, o nieciekawym życiu w jednostajnych warunkach. Mając bogaty słownik, znacznie łatwiej znajdziesz pracę, prościej nawiążesz kontakty z ludźmi. Bogaty słownik, to znakomite wyposażenie życiowe. Przyniesie Ci zadowolenie i radość, umożliwi sukces.
+Kiedy czytasz jakąś wypowiedź przypadkowego autora, możesz doznać olśnienia, że kiedyś słyszałeś myśl podobną i wiesz, o co w tym chodzi. Jeżeli czytasz teksty z dziedziny, w której jesteś kształcony, kształcona takie myśli miewasz pewnie często. Nie musisz wówczas czytać całości wypowiedzi, a pobieżnie ją przejrzeć, zwracając tylko uwagę na elementy, które wydawać Ci się będą nowe, lub niezgodne z Twoją dotychczasową wiedzą. Możesz uciec się do innej strategii czytania (pamiętasz techniki selektywne?). Bogaty zasób słów doprowadzi Cię do znacznej oszczędności czasu. I nie chodzi tylko o czas przeznaczony na sięganie do słownika, czy czas, kiedy zatrzymujesz się na jakimś słowie, starając się dowiedzieć z kontekstu jego znaczenia. Po prostu wiele wyrazów, porównań, zdań- sloganów, haseł, które brzmią zawsze tak samo („wróg czuwa”), nie musi być przez Ciebie czytana w całości. Wystarczy Twój rzut oka, abyś poznał, poznała treść. Jak widzisz, bogaty słownik podnosi skuteczność Twojego szybkiego czytania przez zmniejszenie czasu, który potrzebuje Twoje oko, aby przesłać do mózgu odpowiedni sygnał i czas, kiedy mózg ten sygnał interpretuje. Także rozumienie, interpretacja treści i zapamiętywanie (przez powiązanie z informacjami, które już tkwią w Twoim umyśle) osiągną wyższy poziom.
+Najlepszym sposobem, aby wzbogacić swój słownik, jest po prostu… Czytanie! Nie na darmo mówi się o kimś, że jest oczytany.
+
+
+Skoro to takie potrzebne, to w jaki sposób możesz rozwinąć swój zasób słów?
+
+Pragnąc rozbudować swoje słownictwo, powinieneś, powinnaś zyskać do tego specjalne nastawienie - musisz wiedzieć, jakie korzyści to ze sobą przyniesie oraz jak wiele pracy będziesz musiał, musiała w to włożyć. Na okres nauki zwiększ czujność na nieznane Ci słowa. Warto, abyś skupił, skupiła na nich swoją uwagę. Dociekaj ich pochodzenia, budowy i znaczenia. Właściwie tylko poprzez taką postawę możesz osiągnąć zamierzony cel, a szybko pojawiające się efekty będą motywowały Cię do dalszej pracy nad słownikiem. Naucz się ze słownika wszelkich przedrostków i przyrostków, które, po dodaniu do tematu, tworzą nowe wyrazy. Naucz się też tematów (trzonów wyrazów) pochodzenia obcego, jak na przykład „oblig”, który pochodzi od łacińskiego „obligere”, co znaczy zobowiązywać. Od tego tematu mamy wyrazy „obligacje” (w pewnym sensie znaczy to tyle, co „zobowiązania”) oraz „obligatoryjny”, czyli „obowiązkowy”. Spis przyrostków, przedrostków i tematów pochodzenia obcego znajdziesz w większości słowników języka polskiego a także w większości słowników wyrazów obcych i zwrotów obcojęzycznych.
+Z przeprowadzonych badań wynika, iż najlepsze rezultaty osiągniesz, wzbogacając swój słownik poprzez metody naturalne. Polega to na tym, abyś poznawał, poznawała nowe słowa, w miarę pojawiania się takich potrzeb - po prostu czytaj różnego rodzaju teksty, wyczulając się na słowa, których nie znasz. Gdy na takowe natrafisz, nie omijaj go całkowicie (jak zwykle się to robi), ale staraj się dociec jego znaczenia. Nie zatrzymuj się jednak przy pierwszym napotkanym nieznanym słowie. Staraj się czytać dalej, usiłując mimo tej przeszkody ustalić, co autor chciał przez to powiedzieć. Znaczenie nieznanego słowa wyjaśnia się często w kilku następnych zdaniach. Ważnym jest wtedy abyś zwrócił, zwróciła na ten fakt uwagę i próbował, próbowała zakodować znaczenie nowego terminu. Czasem autor sam wyjaśnia potencjalnie niezrozumiałe pojęcia. Z przytoczonych wyżej powodów powróć do niezrozumiałych słów dopiero po przeczytaniu danego fragmentu do końca – wtedy możesz zaglądnąć do słownika i sprawdzić czy Twój domysł na temat  jego znaczenia był trafny. Zapisuj słowa, których nie rozumiesz.
+Bardzo często (zwłaszcza po osiągnięciu wprawy) będzie Ci się udawać bezbłędnie odgadywać znaczenie nieznanych wcześniej słów na podstawie kontekstu.
+
+
+Poznajesz nowe słowo… i co dalej?
+
+Fakt, że zaglądniesz do podręcznej encyklopedii lub słownika wyrazów obcych, dopiero po próbie odgadnięcia znaczenia nieznanych wyrazów samemu, jest ogromnie ważny, ponieważ jesteś wówczas wyraźnie zainteresowany, zainteresowana tym słowem, chcesz sprawdzić, czy Twój domysł był trafny. Wzbudzone zainteresowanie przyczynia się do lepszego utrwalenia nowego słowa w pamięci. Kiedy Twoja motywacja do poszukiwania informacji pochodzi z Twojego wnętrza, poszukiwanie odpowiedzi na nurtujące Cię pytania nie nuży, wręcz przeciwnie, satysfakcja ze znalezienia tego, czego szukasz, jest nieporównywalnie większa i, przede wszystkim, zapamiętujesz niemal wszystko bez żadnego problemu, nawet specjalnie się nie ucząc! W dodatku informacja ta, jako, że została zakodowana w specyficznej sytuacji i podczas pewnego, pozytywnego stanu emocjonalnego (skojarzenie informacji z sytuacją i z emocjami), wydobycie tej informacji z ogromnego magazynu, jakim jest Twoja pamięć, nie będzie trudne! Łatwo zapamiętasz ścieżkę do tego pliku, jego adres.
+Często pewnie zdarza Ci się, iż musisz przeczytać tekst zawierający sporo nieznanych dla Ciebie wyrazów, a nie masz akurat pod ręką słownika. Bardzo pomocne bywa wówczas doświadczenie zdobyte w wyżej wymieniony sposób.
+W miarę upływu czasu spędzonego na ćwiczeniach, umiejętność odgadywania znaczeń nieznanych słów na podstawie kontekstu będzie przychodziła Ci coraz łatwiej. Im więcej czytasz, analizujesz, a przede wszystkim, aktywnie przetwarzasz informacji, tym ta zdolność jest jeszcze lepiej rozwinięta.
+Najlepszą metodą na utrwalenie nowo poznanego wyrazu jest użycie go w praktyce – wystarczy, że ułożysz dwa, trzy zdania, zawierające ten wyraz, a stanie się on już Twoim trwałym nabytkiem. Jest to przykład aktywnego przetwarzania. Możesz też szukać synonimów i antonimów tego wyrazu, aby go z nimi powiązać, jednak sposób „ze zdaniami” jest zdecydowanie najefektywniejszy (dla większości ludzi- może Ty masz inne uwarunkowania. Sprawdź więc wszystkie sposoby i znajdź ten „swój”).
+
+Kolejne informacje zostały zakodowane w Twoim zeszycie z notatkami, no i, oczywiście i przede wszystkim, w Twoich magazynach pamięci, w Twoich strukturach poznawczych. Są to jednak suche dane, informacje, teoria, która jest bardzo przydatna, ale tylko wtedy, kiedy możesz ją zastosować w praktyce. Temu właśnie służą ćwiczenia. Wyrabiaj w sobie nawyki!
+
+
+Przed Tobą pierwsza próba czytania po 2 wiersze na raz. Ze wszystkich sił staraj się wykształcić w sobie tą umiejętność. Jeżeli opanujesz czytanie po 2 linijki, Twoja prędkość czytania wzrośnie o 100 %. Jest więc o co walczyć. Podstawowym warunkiem rozpoczęcia tego ćwiczenia jest całkowite pozbycie się artykulacji, z którą walczyłeś, walczyłaś na początku kursu. Jeżeli zdarza Ci się jeszcze wymawiać w myślach czytane słowa, będzie Ci bardzo trudno. Walcz z artykulacją (fonetyzacją). Aby czytać po 2 linijki lub więcej na raz, ważna jest także pamięć i efektywne nią zarządzanie. Z tym jednak mózg radzi sobie łatwiej.
+Na początku będzie Ci trudno, tekst będzie niezrozumiały, ale po pewnym czasie zauważysz z fascynacją, że „koktajl”słów jaki przekazują do mózgu Twoje oczy układa się w logiczną całość. To będzie dzień, który zapamiętasz do końca życia!
+Teraz zapraszam na kilka oddechów przy otwartym oknie i do pracy.
+
+Powodzenia!";
+
+"Twelfth lesson"="Lekcja 12
+
+
+Czego się dziś DOWIESZ?
+
+W jaki sposób powinieneś, powinnaś się relaksować?
+Jak najlepiej przygotować się do nauki?
+
+
+Witaj!
+
+Zbliżamy się powoli do końca kursu. Idzie Ci świetnie! Dzięki systematycznym ćwiczeniom, ale, przede wszystkim, dzięki traktowaniu lekcji serio i wykonywaniu wszystkich poleceń, na pewno Twoja efektywność prędkości czytania, rozumienia czytanego tekstu, dokładności czytania, zapamiętywania, przechowywania i wydobywania z pamięci, poprawiła się znacznie. Efekty są zauważalne nawet przez Ciebie! Czas na „dopieszczenie” paru szczegółów, którymi się jeszcze nie zajmowaliśmy, a które, po dopracowaniu i zamianie w nawyk, poprawią, nie tylko wymienione wyżej zdolności, ale także poprawią jakość Twojej pracy oraz jakość Twojego środowiska pracy. Głównym objawem powinno być słabiej odczuwane przez Ciebie zmęczenie, wydłuży się czas pracy, podczas którego nie poczujesz zmęczenia, wzrośnie Twoja odporność na zmęczenie i znużenie. Dopracujemy również parę rzeczy, które pozwolą Ci dobrze przygotować się do nauki, przez co poprawisz wymienione wyżej zdolności.
+Czy jesteś przygotowany, przygotowana? Jeżeli jeszcze nie do końca, to od następnej lekcji na pewno już będziesz. Rozpocznijmy pracę!
+
+
+Relaks - lenistwo czy podniesienie własnej efektywności?
+
+Często tłumaczymy zmęczeniem naszą niechęć do pracy… niestety, też tak mam. Ale nie zawsze relaksowanie się jest objawem lenistwa, czy niechęci do pracy. W efektywnych, dużych przedsiębiorstwach zachodnich dba się, aby pracownicy się nie przemęczali, wysyła się ich na wakacje, organizuje się imprezy firmowe. Po co to wszystko? Czy jest to propagowanie lenistwa? Dlaczego nie stosuje się modelu japońskiego (od którego się z resztą w tym kraju odchodzi), w którym pracuje się jak najwięcej, jak najszybciej? Który model jest bardziej efektywny? Pamiętaj, że zmęczenie, stres, ciągła praca prowadzi do obniżonej motywacji, a więc do rozumienia pracy jako zła koniecznego, ale przede wszystkim, do wzrostu liczby popełnianych przez pracowników błędów. Spada więc efektywność pracy. Wypoczęty pracownik, kochający swoją pracę, znajdujący w niej szczęście i radość życia, będzie pracował bardziej efektywnie, niż ktoś przepracowany, zestresowany, nienawidzący swojej pracy, obawiający się, że go ktoś zwolni. Tak samo jest nawet z tym, co robisz dla siebie, z Twoją pracą, którą inwestujesz w rozwój samego, samej siebie!
+Abyś efektywnie wykorzystywał, wykorzystywała swoje zdolności, musisz więc wiedzieć, jak efektywnie masz wykorzystywać czas na relaks! Dobra organizacja pracy jest tak samo ważna jak dobra organizacja czasu wolnego. Zaprezentuję Ci teraz kilka ćwiczeń relaksujących. Podzieliłam je na kilka grup, gdyż każde z tych ćwiczeń jest wyspecjalizowane w jednej funkcji (w myśl zasady „jak coś jest do wszystkiego, to jest do niczego”). Rozważę więc z Tobą, po kolei, ćwiczenia, które zapewnią Ci odpowiedni stan ducha przed przystąpieniem do czytania (dzięki nim będzie Ci się o wiele łatwiej „wbić” w czytanie tekstu, dłużej będziesz czytać, zanim dopadnie Cię znużenie oraz zmęczenie), później omówimy ćwiczenia, które oczyszczą Twój umysł w taki sposób, że rozumienie tekstów, które czytasz, przyjdzie Ci z większą łatwością, w dalszej kolejności zajmiemy się ćwiczeniami, które przyspieszą Twoje czytanie, no i, oczywiście, nie pominiemy również ćwiczeń, które będziesz wykonywać, kiedy dopadnie Cię zmęczenie, a Ty zapragniesz wrócić szybko i bez strat energii do dalszego czytania. Zatem, rozpocznijmy.
+
+
+JAK SIĘ PRZYGOTOWUJESZ DO PRZECZYTANIA TEKSTU?
+
+No właśnie? Jak, do tej pory, wyglądało Twoje przygotowanie się do przeczytania jakiegoś tekstu? Ja, zanim ukończyłam swoje kursy, dotyczące szybkiego czytania, oraz wiele innych z dziedziny psychologii, w najlepszym przypadku chodziłam z książką do parku, rozkoszując się po drodze i odpoczywając. Jednak nie zawsze mi się chciało, no i nie zawsze była pogoda… Dzisiaj posiadam dość sporą wiedzę na ten temat i postaram się nią z Tobą podzielić.
+Aby poznać ćwiczenia, które mają przygotować Twój umysł i wprowadzić go w stan, w którym będzie Ci się najlepiej czytało, musisz poznać odpowiednie stany, w tym pozycję Twojego ciała, w których czytać się powinno, i dowiedzieć się, dlaczego akurat w takich stanach właśnie się powinno czytać. Przede wszystkim siedź z wyprostowanymi plecami. Na leżąco Twój organizm jest przyzwyczajony spać, więc ta pozycja jest jakby nawykiem. Za każdym razem, kiedy się kładziesz i leżysz jakiś czas, Twój organizm myśli, że czas spać, więc obniża się Twój metabolizm, spada ciśnienie (również dlatego, że wysokie ciśnienie nie jest potrzebne, aby doprowadzić krew do komórek Twojego ciała kiedy leżysz). Na stojąco nie będzie Ci za wygodnie. Garbiąc się, początkowo będzie Ci wygodnie, jednak na dłuższą metę zaczną Cię boleć stawy i mięśnie, z powodu nienaturalnej dla nich pozycji. Najwłaściwsze będzie więc, kiedy usiądziesz, opierając plecy pod kątem prostym, z głową w takiej pozycji, że kiedy przyłożysz długą linijkę do tyłu Twojej głowy, to zetknie się ona również z kręgosłupem. Rozluźnij ramiona, nie napinaj mięśni. Napięte mięśnie pracują intensywnie, gdyż skurcz mięśni polega na ciągłych, niecałkowitych ich skurczach i rozkurczach następujących po sobie na tyle szybko, że tego nie zauważamy! Mięśnie napięte pracują więc bardzo intensywnie! Nie chcesz ich chyba zmęczyć? Rozluźnij się więc!
+Ogromnie ważne, podczas czytania, jest również oddychanie. Pracuj nad swoim oddechem, kontroluj go! Zbyt szybki oddech jest zbyt płytki. W efekcie nie tylko się męczysz, ale i Twój mózg nie dostaje wystarczającej ilości tlenu. Dotyczy to szczególnie nas, dziewczyny! Niestety, mamy oddech płytszy i szybszy niż mężczyźni… Twój oddech powinien być głęboki, powolny, spokojny. W jaki sposób to osiągniesz? Licz w myślach do dziesięciu. Raz, kiedy, z zamkniętymi oczami, wydychasz powietrze. Staraj się pozbyć całego zapasu powietrza, który masz w płucach. Wciągnij maksymalnie brzuch. Niech Twój żołądek się ścieśni tak samo jak Twoje płuca. Niech Twoja przepona będzie napięta i twarda. Kiedy to zrobisz, nie otwierając oczu pomyśl „dwa” i weź głęboki oddech, tak głęboki, jak tylko potrafisz. Powtarzaj to, licząc do dziesięciu, jeżeli poczujesz, że jeszcze nie jesteś zrelaksowany, zrelaksowana, przedłuż to ćwiczenie. Nie przesadzaj jednak z tym ćwiczeniem, gdyż , jak wszystko w nadmiarze, może przeszkodzić, zamiast pomóc.
+Kolejnym ćwiczeniem, które przedstawię, a które pomoże Ci dotlenić mózg (a więc możesz je wykorzystywać również podczas kiedy poczujesz zmęczenie) oraz skoordynować odpowiednio Twoje półkule mózgowe (co jest ważne m.in. przy rozdzielaniu Twoich zasobów uwagi, zachowywaniu przez Ciebie wzmożonego poziomu koncentracji), jest ćwiczenie, które wykonasz stojąc na baczność. Podnieś jednocześnie prawą nogę i lewą rękę, opuść, następnie podnieś lewą nogę oraz prawą rękę i je opuść. Powtarzaj to. Pamiętaj o tym, aby się bawić ćwicząc. Dobrze wykonuje się to ćwiczenie słuchając muzyki. Przygotowywać do czytania i relaksować się możesz również obracając głową. Ćwiczenie to polega na swobodnym oparciu przez Ciebie głowy na Twoim ramieniu, bez jakiegokolwiek napięcia mięśni szyi. Obracaj swobodnie głową, robiąc drogę w kształcie koła, aby głowa dotarła do drugiego ramienia. Bądź przy tym rozluźniony, rozluźniona i oddychaj spokojnie, głęboko. Najpierw wykonaj to ćwiczenie mając napięte i sztywne ramiona, podniesione nieco do góry, następnie je opuść i rozluźnij. Wykonaj to ćwiczenie z zamkniętymi oczami, a później z otwartymi. Znajdź swój sposób na relaks.
+Teraz zapoznam Cię z ćwiczeniem na usprawnienie rozumienia czytanego przez Ciebie tekstu. Aby je wykonać, musisz stanąć i oprzeć się rękami o ścianę. Jedną nogę zegnij w kolanie i podnieś do góry, przed siebie, drugą natomiast wyprostowaną, wysuń jak najbardziej do tyłu i ustaw się tak, aby tworzyła ona z Twoim ciałem linię prostą. Teraz opuść pierwszą nogę, wciągając powietrze- wykonaj wdech. Po chwili zrób wydech podnosząc znów tę samą nogę. Po kilku próbach zmień nogę. Pamiętaj też, że dobra kondycja fizyczna sprzyja dobrej kondycji psychicznej, a także o tym, że najlepszym odpoczynkiem od pracy umysłowej jest praca fizyczna. Wykonuj to ćwiczenie przed przystąpieniem do czytania (o ile wiesz, że zajmie Ci dużo czasu) oraz za każdym razem, kiedy poczujesz, że nie rozumiesz tego, co czytasz, albo, że nie możesz się skupić na czytanym tekście. Pamiętaj o możliwości dotlenienia się. Otwórz okno, aby mieć kontakt ze świeżym powietrzem. Jeżeli to możliwe, po długim czasie z lekturą, po prostu idź na spacer!
+Kolejnym elementem wchodzącym w skład czytania, jest, po prostu, szybkie czytanie! Ćwiczeniem- rozgrzewką przed tym elementem jest tzw. sowa. Ćwiczenie polega na tym, że, trzymając jedną ręką przeciwległe ramię, wykonaj taki skręt szyi w stronę tego ramienia, aby spojrzeć za nie- zobacz, co się dzieje za Tobą. Następnie skręć szyję w drugim kierunku i zajrzyj, co się dzieje za Tobą, ale tym razem spoglądając za drugie ramię. Potem spójrz przed siebie i opuść głowę na piersi. Niech Twoje mięśnie będą cały czas rozluźnione. Przejeżdżaj za to wzrokiem próbując nie zatrzymywać go. Niech w Twoje pole widzenia będzie jak najszersze. Jest to dobra rozgrzewka. Tak, jak sportowiec przed treningiem lub zawodami (czyli przed znacznym wysiłkiem) wykonuje pewien zestaw ćwiczeń, aby przyzwyczaić i usprawnić swoje mięśnie, które mają się „wbić w ten rytm”, tak samo Ty wykonuj rozgrzewkę przed każdą większą partią materiału, która na Ciebie czeka.
+Wiesz już jak się przygotować przed Twoimi zawodami, aby nie doznać urazu i sprawniej działać. Ale jeżeli zawodnika złapie skurcz, również wykonuje odpowiednie ćwiczenia, aby pokonać przemęczenie mięśni i móc być dalej aktywnym. Jeżeli Ciebie dopadnie zmęczenie wzroku, to  pocieraj dłonią o dłoń w taki sposób, aby Twoje ręce stały  się gorące. Przyłóż dłonie do twarzy, zakrywając nimi całkowicie oczy. Oddychaj przy tym głęboko, spokojnie, zrelaksuj się- rozluźnij mięśnie. W czasie przerwy pomyśl o „niebieskich migdałach” albo spójrz za okno, na niczym nie koncentrując specjalnie swojego wzroku. Możesz również patrzeć na coś, co ma jednolitą, spokojną, zieloną barwę, lub inną stonowaną, która nie męczy wzroku, a wręcz go uspokaja. Jest to większość tzw. kolorów ziemi, bądź jesieni.
+Podczas przerwy w czytaniu możesz spokojnie stosować wymienione wyżej ćwiczenia. Oprócz „rozgrzewania” przed wysiłkiem, pomagają one się odprężyć…
+
+
+Przygotowany do nauki? W jaki sposób?
+
+Przygotowanie do nauki powinno składać się z kilku, następujących po sobie etapów. Zapamiętaj je, ale nie ucz się ich na pamięć. Zanotuj to, co najważniejsze, w postaci odpowiedniego schematu, który łatwo zapamiętasz. Powieś sobie ten schemat na ścianie tak, aby padał na niego Twój wzrok, kiedy siądziesz do nauki. Pilnuj go i przestrzegaj, aż wszelkie czynności w nim zawarte staną się Twoimi zachowaniami nawykowymi. Pamiętaj, że Twoje stanowisko pracy musi wprowadzać Cię w klimat efektywności! W końcu chcesz być efektywnym, efektywną!
+
+Zadbaj o swoje oczy - dbaj o odpowiednie światło
+
+Większość z nas męczy się i zaczyna tracić możliwości koncentracji (możesz to rozpoznać, kiedy łapiesz się na tym, że myślisz o „niebieskich migdałach”) po około 45 minutach pracy. Niektórzy szybciej, niektórzy później. Jednak jest kilka sposobów, aby wydłużyć czas efektywnego funkcjonowania Twojej uwagi. Jest to przede wszystkim dobranie odpowiedniego oświetlenia. Jeżeli jesteś praworęczny, praworęczna, niech światło pada z lewej strony i na odwrót w przypadku leworęczności. Światło nie może padać na monitor. Musisz odpowiednio dobrać kontrast światła z otoczeniem. Nie może on być za ostry (zbyt mocne światło męczy tak samo jak zbyt słabe). Intensywność światła musisz dobrać tak, jak Tobie to odpowiada. Możesz trochę poeksperymentować i sprawdzać różne intensywności oświetlenia i porównywać je. Światło nie może padać ze zbyt bliskiej odległości, ani ze zbyt dalekiej- musisz to dobrać odpowiednio dla Ciebie (zbyt blisko położona lampa za bardzo będzie grzała, co również spowoduje u Ciebie zmęczenie i senność). Ważne są też kolory, którymi się otaczasz. Nie mogą być zbyt ostre, krzykliwe. Powinny być raczej stonowane (najlepiej kolory zimne, szczególnie zgniła zieleń). Kiedy poczujesz zmęczenie, ból oczu, oderwij wzrok od monitora, książki i patrz przez chwilę na gołą ścianę.
+
+Warunki psychologiczne - parę sztuczek na manipulowanie swoim organizmem
+
+Stanowisko pracy powinno mieć to do siebie, że kojarzy się właśnie z pracą, z niczym innym. Jeżeli pracujesz przy komputerze i w tym samym miejscu, w którym bawisz się, np. grając w gry komputerowe, będzie Ci brakowało mobilizacji a uporczywe myśli o przerwaniu pracy i chwili rozrywki będą się powtarzać. Za to miejsce, w którym tylko pracujesz, nie wykonujesz nic innego, będzie wprowadzało Twój umysł w stan, który ułatwi Ci zabranie się do pracy i nie będzie Cię od niej wyrywał. Najlepiej, aby do czytania używane było jedno stałe miejsce, w którym będziesz czytał, czytała zawsze i tylko! Nie rób w tym miejscu nic innego. Często problemy z bezsennością łączą się z tym samym mechanizmem psychologicznym. Łóżko jest wtedy skojarzone z zupełnie inną czynnością niż sen. Wtedy przydaje się małe przemeblowanie i używanie łóżka tylko do snu. Bezsenność szybko znika. Niestety wiąże się to ze zmianami w stylu życia, co nie zawsze jest łatwe, ale Ty potrafisz się przecież zmobilizować. Panujesz nad swoim ciałem i umysłem już w takim stopniu, że to Ty decydujesz o sobie, prawda?
+Dobrym pomysłem jest, aby rozpoczynać czytanie ćwiczeniami, o których rozmawialiśmy przed chwilą. Tutaj już nie chodzi nawet o sam fakt, że te ćwiczenia naprawdę bardzo pomagają i, zaryzykuję i powiem, są niezbędne tak, jak rozgrzewka przed zawodami sportowymi. Chodzi teraz o pewnego rodzaju rytuał. Wykonywanie go za każdym razem stworzy odpowiednie nawyki, a to, z kolei, wiąże się z tym, że, już rozpoczynając serię ćwiczeń przed czytaniem (niech nie trwają dłużej niż pięć minut!), Twój umysł będzie wiedział, że za chwilę czeka go wysiłek i się na niego przygotuje.
+
+Przyjazne otoczenie- Twoje stanowisko pracy
+
+Pamiętasz, co mówiliśmy na temat dystraktorów zewnętrznych? Wiesz już więc, jak ważne jest odcięcie się od wszelkich możliwych bodźców, które będą Ci przeszkadzały. Dobre będą żaluzje w oknach, aby przejeżdżające auta nie skupiały na sobie Twojego wzroku, nie korzystaj z wahadeł, pozbądź się zegarka z pola Twojego widzenia, gdyż może Cię korcić, aby co chwila spoglądać na niego. Odłóż wszelkie rzeczy, które mogą służyć do zabawy. Niech nie znajdują się w zasięgu Twojego wzroku. Jeżeli nie redagujesz notatek, niech wszelkie kartki i długopisy, czy ołówki, znajdą się poza zasięgiem Twych rąk. Rysowanie mazów rozprasza uwagę. Pamiętaj też o przewietrzeniu pomieszczenia. Kiedy jest mało tlenu, człowiek robi się szybko senny- oto główny objaw niskiego poziomu tlenu w powietrzu. Kolejnym wskaźnikiem takiego stanu jest uczucie gorąca, pocenie się. Niech w Twoim stanowisku pracy da się wyczuć delikatny chłód.
+
+Sposób trzymania książki
+
+Wbrew pozorom, nie jest to banalna rzecz! Nie trzymaj książki w taki sposób, który wymaga od Twoich mięśni napięcia. Mięśnie się zmęczą i zaczną rozpraszać Twoją uwagę. Niech książka leży na biurku lub na Twoich kolanach, w odległości ok. 60 cm od Twoich oczu (odległość indywidualna). Pamiętaj o pozycji wyprostowanej, niech Twoja głowa jest lekko pochylona do przodu, aby widzieć leżącą książkę (może być ona lekko skośnie ułożona, jeżeli posiadasz taki blat stołu). Za wysokie stoły są nie do końca dobre dla naszych warunków czytelniczych. Jeżeli stół jest za wysoki, książka jest za blisko oczu, Twoje oczy muszą wtedy korygować tą odległość, która nie jest dla nich naturalna, wykonując ruchy poruszające gałką oczną. Jest więc to praca mięśni (tęczówki oraz mięśni poruszających gałką oczną), co po pewnym czasie zaczyna męczyć wzrok. Lepiej jest już czytać z książką na kolanach.
+
+Miejsce i czas
+
+Pamiętasz, co mówiliśmy na temat odpowiedniego czasu na naukę? Każdy z nas posiada swój biologiczny zegar. Ludzie dzielą się na sowy i na skowronki. Na pewno już wiesz, czy lepiej pracuje Ci się rano, czy wieczorem. Wykorzystaj to więc. Dobierz najlepszy dla Ciebie czas i staraj się czytać o stałych godzinach, aby stało się to nawykiem. Niech Twój organizm wpisze czas czytania w swój biologiczny rytm dnia. Niech czuje, kiedy się będzie zbliżać „ten czas”.
+W jakim miejscu najlepiej czytać? Jak już powiedziałam, czytaj na swoim, przeznaczonym tylko do tego, stanowisku pracy- w miejscu, które nawykowo kojarzy Ci się z czytaniem tylko i wyłącznie. Najgorsze w tym celu są środki komunikacji- autobusy, pociągi. Jeżeli nie chcesz marnować czasu, który poświęcasz codziennie na dojazd do szkoły, czy do pracy, lepiej słuchaj tekstów czytanych przez lektora, na odtwarzaczu muzyki. Trzęsący autobus powoduje, że Twoje gałki oczne non stop skaczą, poruszają się, aby złapać odpowiednią ostrość, objąć polem widzenia to, co chcesz. Bardzo szybko się przy tym męczą. Nie czytaj w miejscach, które kojarzą się z czymś innym! Czytając w łóżku, prędzej zaśniesz, niż zrozumiesz coś ważnego, co zawarte jest w tekście. Przy telewizorze szybko zapanuje nad Tobą pokusa obejrzenia wiadomości, albo „chwili” relaksu przy ulubionym serialu. Czytaj tylko w miejscu do tego przeznaczonym!
+
+
+Wiem, że to zabrzmi paradoksalnie, ale relaksu też trzeba się nauczyć! I nie chodzi o umiejętność leżenia na plaży, ale o efektywne wykorzystanie czasu na odpoczynek dla mięśni i dla umysłu.
+
+Tymczasem przyszła pora na ćwiczenia.
+
+Dzisiaj poznasz kolejną metodę przyspieszającą czytanie o 100 %. Jeżeli połączysz ją z czytaniem po 2 linijki, które poznałeś, poznałaś wczoraj, zyskasz przyrost prędkości o 4 razy!!! Chodzi o czytanie od tyłu. Wyrób w sobie umiejętność wykorzystania momentu powrotu oczu z końca wiersza, do początku nowej linii. Jest to bardzo trudne, ale na prawdę się opłaca!
+Pamiętaj o ćwiczeniach z książką. Gimnastykuj także Twój umysł różnymi zagadkami pamięciowymi i wszelkimi łamigłówkami. Może wydać się to dziwne, ale to w dużym stopniu wpłynie na prędkość czytania i zrozumienie tekstu.
+Chwila gimnastyki i zapraszam do ćwiczeń.
+
+Powodzenia!";
+
+"Thirteenth lesson"="Lekcja 13
+
+
+Co dziś POZNASZ?
+
+Poznasz tajemnice dobrej organizacji pracy. Jak dobrze przygotować stanowisko pracy?
+Poznasz możliwości uwagi człowieka. Jak często powinieneś, powinnaś robić przerwy w nauce?
+Dowiesz się, skąd czerpać motywację.
+
+
+Witaj!
+
+Wielki finał zbliża się wielkimi krokami. Już w zasadzie znasz bardzo dużo, jeśli chodzi o szybkie czytanie, a przynajmniej posiadasz ważne podstawy teoretyczne. Zapamiętaj jednak, że, aby te informacje rozszerzyć, trzeba teraz zagłębiać się w szczegóły. To tak, jak z nauką. W liceum uczysz się fizyki w dość ogólny sposób, na studiach jest już to coraz bardziej szczegółowe, aż w końcu wiedza jest tak nagromadzona, że musisz wybrać specjalizację. Tak samo jest z szybkim czytaniem. Pogłębiaj wiedzę na temat szczegółów. Jeżeli już nie będziesz w stanie robić tego, jeśli chodzi o cały proces szybkiego czytania, dowiaduj się więcej na temat jednego z elementów wchodzących w skład całego procesu, np. postrzeganie, albo organizacja miejsca pracy. Jest ona niedoceniana, ale wierz mi, może poprawić Twoją efektywność kilkudziesięciokrotnie! Dzisiaj porozmawiamy szerzej o takich szczegółach.
+
+Zatem, do dzieła!
+
+
+W jaki sposób powinieneś, powinnaś się zorganizować? Parę przydatnych wskazówek
+
+Jak już wiesz, ważne są różne udogodnienia, które wydają się być mało istotne, a jednak wpływają znacząco na naszą kondycję fizyczną i psychiczną. Podczas poprzedniej lekcji poznałeś, poznałaś mnóstwo ciekawych informacji dotyczących architektury Twojego miejsca pracy. Czas te informacje rozszerzyć. Pogłębione informacje na temat organizacji pracy można podzielić na trzy grupy. Tak też zrobiłam, aby Ci przedstawić kilka ważnych faktów. Zapoznaj się z nimi.
+
+Warunki zewnętrzne:
+
+Często nie doceniasz faktu, iż stworzenie optymalnych warunków zewnętrznych do czytania oraz właściwe uporządkowanie otoczenia, wpływa bardzo motywująco do nauki. Myśl o rozpoczęciu ćwiczeń nie wiąże się wtedy z robieniem porządku na biurku, co wbrew pozorom ma ogromne znaczenie. Jeśli już regularnie przeznaczasz swój czas na ćwiczenia w usprawnieniu czytania, to postaraj się zapewnić sobie na ten czas zupełny spokój w otoczeniu. Warto wyłączyć radio, telewizję, poproś bliskich o uszanowanie tych paru chwil - by przynajmniej w trakcie ćwiczeń Ci nie przeszkadzali. Szybkie czytanie wymaga od Ciebie zadbania o  odpowiednie warunki. Idealne są miejsca ciche i odosobnione. Muzyka, nawet relaksacyjna, stanowi czynnik obniżający Twoją zdolność koncentracji!
+Środki lokomocji także nie są, jak już wiesz, z całą pewnością, idealnym miejscem na lekturę. Możesz być pewien, pewna, iż w czasie podróży tempo Twojego czytania będzie wielokrotnie niższe niż w normalnych warunkach. Przyczyną tego zjawiska jest nieustanny ruch tekstu w stosunku do oczu, a jak pamiętasz proces czytania odbywa się tylko podczas zatrzymań. Przypomnij sobie, dlaczego?
+
+Pozycja:
+
+Rozpoczynając trening, usiądź wygodnie (pozycja leżąca jest niedopuszczalna), by Cię nic nie krępowało. Jednak siedź w pozycji na baczność, starając się mieć rozluźnione wszystkie mięśnie. Twoje krzesło powinno posiadać oparcie, co pomoże Ci uniknąć garbienia się. Książka niech znajduje się w odległości około 60 centymetrów od oczu, nieco podniesiona. W takiej pozycji przystąp do czytania. Pamiętaj też o rytuale ćwiczeń (rozgrzewka)!
+
+Higiena:
+
+Poprzez wzrok odbierasz 90% informacji o otaczającym Cię świecie, dlatego przywiązuj jak największą wagę do higieny tego narządu. Zwężenie pola widzenia, niewydolność wzroku oraz odchylenie osi widzenia, to tylko niektóre skutki wielogodzinnej pracy przy niewłaściwym oświetleniu. Dobrym rozwiązaniem jest lampa rzucająca snop światła centralnie na książkę. Jeżeli jest górne światło, to niech pada z lewej strony i nieco z tyłu, by cień Twojej głowy nie padał na czytana stronę.
+Należy postarać się o różny stopień oświetlenia różnych przedmiotów. Największe natężenie światła powinno charakteryzować podstawową powierzchnię pracy. Najlepiej oświetlona powinna być książka! Powierzchnia drugorzędna (czyli tło) powinna być nieco ciemniejsza, a otoczenie powinno być oświetlone najsłabiej.
+Na stole niech leży tylko książka, długopis i kartki czy zeszyt do notatek. Pamiętaj o pozbyciu się wszelkich dystraktorów zewnętrznych. Jeżeli masz osłabiony wzrok, pamiętaj o regularnych odwiedzinach u okulisty i właściwie dopasowanych okularach. Jeżeli posiadasz źle dobrane okulary albo powinieneś, powinnaś je mieć, a nie nosisz, to mięśnie Twoich oczy muszą pracować intensywniej, szybciej się męcząc. Poza tym nie masz dobrej ochrony, która korygowałaby pracę soczewki. Grozi to powiększeniem się wady wzroku.
+Na swoim stanowisku pracy zdecydowanie nie powinieneś, nie powinnaś używać świetlówek - są one wręcz niedopuszczalne. Zwykła żarówka jest źródłem światła zdecydowanie bardziej przyjaznym dla oka. Przedstawione przeze mnie tutaj rady, to te najkonieczniejsze, wstępne przygotowania i nastawienia, mające stworzyć Ci pomyślne warunki do ćwiczeń. Prezentowane są tu rzeczy proste i na ogół znane, jednak ich lekceważenie znacząco obniży Twój komfort pracy. Udoskonalenie umiejętności czytania wymaga od Ciebie podjęcia poważnego wysiłku. Zrób, w sposób rozsądny, wszystko, co sprzyja osiąganiu dobrych wyników. Przecież Ci na tym zależy! Stanowisko pracy przygotuj w sposób zdecydowany.
+
+Twoje procesy uwagowe
+
+Czym jest uwaga? Zastanów się nad tym przez chwilę. Jest to taki mechanizm, taka Twoja zdolność, która pozwala Ci się skupić na jednym bodźcu lub jednej grupie bodźców, działających w otoczeniu. Bez uwagi, z taką samą siłą działałyby na Ciebie wszystkie rzeczy, które się teraz dzieją w otoczeniu! Jak straszne i uniemożliwiające normalne życie było by to zjawisko, mogę Ci przedstawić na przykładzie niektórych rodzajów autyzmu. Jest to choroba, która ma swój główny powód w połączeniach między neuronami danego człowieka. Otóż te połączenia nie blokują jednych i nie wzmacniają innych sygnałów płynących przez ich nerwy, tylko przepuszcza wszystko z taką samą intensywnością. W efekcie osoby z pewnymi odmianami autyzmu są, jak gdyby pozbawione zdolności uwagowych w ogóle. Świat jest dla nich wiecznie trwającą eksplozją zbyt dużej ilości informacji, sygnałów, dźwięków, smaków, świateł, nacisków, płynących z każdej strony w tej samej chwili. Prawda, że to straszne? Ty i ja posiadamy jednak mniej lub więcej zasobów uwagi, które pozwalają nam na odróżnianie figury od tła, czyli przedmiotu naszej uwagi, od reszty, dzięki czemu możemy robić wiele rzeczy z wielką precyzją i nic nam tej pracy nie zakłóca.
+Z pośród wielu teorii psychologicznych dotyczących uwagi, chciałabym przedstawić Ci jedną, którą będziemy się posługiwać w dzisiejszym kursie. Wydaje mi się, że na potrzeby tych lekcji a także Twoich zdolności, które chcesz nabyć i rozwinąć, jest to teoria najlepiej się sprawdzająca. Mowa o teorii zasobów uwagowych autorstwa amerykańskiego psychologa, Daniela Kahnemana. Otóż zdaniem pana Kahnemana, posiadasz pewną pulę, liczbę, wartość całkowitą uwagi (100%), którą wykorzystujesz i dzielisz między czynności, które chcesz wykonać. Możesz, na przykład, 70% swoich zasobów uwagi poświęcać w danym czasie na zmywanie naczyń i 20% na słuchanie muzyki. 10% Twoich zasobów uwagowych poświęcanych jest na utrzymanie Twojego organizmu w stanie czujności (dzięki czemu odskoczysz, kiedy talerz stłucze Ci się wypadając z ręki). Jak sama nazwa wskazuje, według tej teorii uwaga jest zasobem. Zasób ma to do siebie, że posiada pewną wartość liczbową i może się skończyć albo przekroczyć swój poziom krytyczny, kiedy będzie potrzebował regeneracji, a Ty- odpoczynku.
+Kiedy przychodzi ten moment? To czujesz Ty sam, sama. Jednak warto zapoznać się z paroma danymi na ten temat. Uwaga spełnia kilka zasadniczych funkcji. Jedną z nich jest czujność. Czujność to zdolność do oczekiwania na dany bodziec. Oznacza to, że przez długi czas trzeba wykorzystywać swoją uwagę w oczekiwaniu na pojawienie się czegoś. Czujność jest wykorzystywana przez strażnika, który pilnuje banku. Stoi cały czas na swoim miejscu wpatrując się przed siebie i poszukuje danego sygnału, którego się spodziewa, jeżeli coś się wydarzy, ale nie wie, kiedy i, czy w ogóle się wydarzy. Twoje zasoby uwagowe, bez żadnego treningu, w tym przypadku starczyłyby na ok. 15- 20 minut. Po tym czasie złodziej miałby większe szanse, gdyż Twoja czujność byłaby osłabiona.
+Kiedy czytasz, wykorzystujesz inną funkcję uwagi, jaką jest przeszukiwanie. Przeszukiwanie polega na aktywnym (czujność była pasywna, gdyż polegała na czekaniu na dany bodziec- tutaj sam, sama tego bodźca poszukujesz) szukaniu odpowiedniego elementu, danego bodźca wśród bodźców innych (dystraktorów). Może to być poszukiwanie litery „d” ukrytej w kilku rzędach i kolumnach liter „D”. Również słuchanie wykładu i prowadzenie notatek polega na tym samym- szukasz istotnych informacji, aby je zanotować, opuszczając informacje, które znasz, lub takie, które są dla Ciebie nieistotne. To samo dotyczy jednej ze strategii szybkiego czytania, polegającej na wyszukiwaniu w treści informacji istotnych a pomijaniu reszty. Jak się nazywa ta strategia? Jeżeli nie pamiętasz, to przypomnij sobie, co mówiliśmy na temat różnych strategii szybkiego czytania oraz o „wertowaniu kartek” przed przystąpieniem do lektury. W przypadku aktywnego przeszukiwania, utrzymywanie uwagi, koncentracji na poziomie zadowalającym jest różna i zależy od tego, na ile informacje istotne są podobne do reszty, od długości tekstu oraz od tego, jakie zainteresowanie wzbudził w Tobie ten tekst (to wpływa na Twoją aktywność przeszukiwania). Jednak najlepiej robić przerwę co ok. 45 minut (jak myślisz, czy lekcje w szkole wynoszą 45 minut przypadkowo?).
+O tym, co robić dalej ze zdobytą wiedzą, dowiesz się podczas następnej, ostatniej lekcji.
+
+
+Czy potrzebujesz więcej motywacji?
+
+Przypomnij sobie lekcję drugą. Rozmawialiśmy tam o przyczynach, które skłoniły Cię do wzięcia udziału w kursie i celach, które przed sobą postawiłeś, postawiłaś, o „rzucaniu wszystkim w kąt”, czyli o zniechęceniu, które dopada każdego z nas, a które może być dobre, jeżeli na parę dni odłoży się pracę, aby przemyśleć parę rzeczy a potem wraca się do tematu „na świeżo”. Rozmawialiśmy też o planowanej przez Ciebie dacie ukończenia kursu. Czy była ona ustalona na wyrost? Czy wyrobisz się? Czy podchodzisz do swoich umiejętności w sposób realistyczny, nie przesadzając oraz nie odkładając czegoś „na później”? dla przypomnienia, jeszcze raz powtórzmy głośno. Aby wzbudzić w sobie własną, wewnętrzną motywację, która jest ważniejsza i bardziej mobilizująca niż „bat” nad nami, powinniśmy ustalić:
+
+Po co w ogóle chcesz zrobić daną rzecz, dlaczego chcesz wziąć udział w danym kursie, przeczytać jakąś książkę? Dla kogo to robisz i jakich korzyści się po tym spodziewasz?
+Jaki widzisz cel w wykonaniu danej czynności? Co dzięki temu osiągniesz? Jak to wpłynie na Twoją przyszłość, jak to może zmienić Twoje życie? Czego się po tym spodziewasz?
+Dopadło Cię zniechęcenie? Każdemu się zdarza. To normalna reakcja organizmu, który jest zmęczony. Daj sobie dzień lub dwa przerwy. Może czas pomyśleć nad tym, czy efektywnie wykorzystujesz czas na relaks? A może źle wykonujesz rozgrzewkę? Może coś nie tak z Twoim miejscem pracy? Gdzie popełniasz błąd, że Twój organizm nie chce wykonywać tej czynności, chociaż Ty bardzo chciałbyś, chciałabyś? A może czas przedefiniować swoje cele i wymagania, które przed sobą stawiasz? Wykorzystaj ten dzień lub dwa, kiedy odłożyłeś, odłożyłaś problem, na staranne przemyślenie tego wszystkiego. Zbadaj, gdzie leży problem i zmień to! Posiadasz już wystarczającą wiedzę na ten temat! Nie bój się jej wykorzystać!
+Ustal sobie datę zakończenia czynności, pracy, którą wykonujesz. Niech to nie będzie data, która bazuje na zadufaniu w sobie i przeroście ambicji- musisz dotrzymać tego terminu, aby nie zawieść siebie. Zdobędziesz wtedy zaufanie do samego, samej siebie, co pomoże Ci zabrać się za następną rzecz. Nie może to być też data w stylu „w grudniu po południu”. Gdy będziesz miał, miała za dużo czasu, zostawisz wszystko „na ostatni moment”…
+
+Rób jak najwięcej notatek i wieszaj kartki z ważnymi terminami, rozplanowanym działaniem tak, abyś miał, miała je jak najczęściej przed oczami. Zorganizuj się! Jednak nie wieszaj ich przy stanowisku do czytania, aby Cię nie rozpraszały. Jak utrwalać, konserwować i rozwijać nabyte na tym kursie zdolności? Dowiesz się tego podczas następnej, ostatniej lekcji!
+
+Czas na ćwiczenia!
+
+Dzisiaj powrócimy do kilku ćwiczeń z piramidą, abyś mógł, mogła ocenić postępy w szerokości pola widzenia. Koncentruj się nadal na czytaniu po 2 linijki i czytani od tyłu. Czy przychodzi Ci to już trochę łatwiej? Nie martw się, to normalne. Musisz uzbroić się w trochę cierpliwości i ciężko pracować. Ćwicz także z książką.";
+
+"Fouthteenth lesson"="Lekcja 14
+
+
+Co dziś POZNASZ?
+
+Jak utrzymać zdobyte umiejętności?
+
+
+Witaj!
+
+Oto już ostatnia nasza wspólna lekcja… ale ten czas leci. Jesteś już adeptem sztuki szybkiego czytania. Znasz wiele cennych informacji. Pamiętaj, że informacje to współczesne bogactwo cenniejsze niż pieniądze! W informacje się dzisiaj inwestuje tak, jak kiedyś w żelazo czy złoto.
+Tak samo, jak bez ćwiczeń nigdy nie doszedłbyś, nie doszłabyś do tego momentu, do takiego poziomu umiejętności, tak samo bez ćwiczeń szybko ich poziom spadnie… nigdy już nie będzie taki sam, zawsze będziesz już czytać nieco szybciej niż przed przystąpieniem do kursu i do naszych wspólnych treningów. Jednak, czy warto było poświęcić tyle Twojego cennego czasu dla tego „nieco”? Czy nie lepiej utrzymywać te zdolności, a nawet je rozwijać? Do utrzymania zdobytych zdolności nie potrzeba wiele. Przestrzegaj wszystkiego, czego zdążyliśmy się wspólnie nauczyć. Będzie o to łatwo, jeżeli to wszystko stało się już Twoim nawykiem. Jeżeli jeszcze nie, to postaraj się o to. Nawyków nie kontrolujesz, więc nie musisz poświęcać na nie dodatkowej uwagi i czasu. A trochę szkoda i Twojego czasu i uwagi, a także spadku zadowolenia z samego, samej siebie, kiedy łapiesz się na tym, że nie realizujesz czegoś, co już raz postanowiłeś, postanowiłaś. Nawyków nie trzeba pielęgnować. Jeżeli czytanie będzie u Ciebie czynnością regularną i to w dużych ilościach, na pewno się nie uwstecznisz, a nawet pojawią się kolejne postępy, choć nie tak szybkie, jak byś sam, sama dalej się rozwijał, rozwijała. Pamiętaj więc o codziennym rytuale i czytaniu, a to wystarczy na to, aby cały czas być na tym samym, wyrobionym już, dość wysokim poziomie szybkiego czytania i rozumienia czytanego tekstu. Ale czy to na pewno Ci wystarczy?
+
+
+Pamiętaj o stawianiu przed sobą celów!
+
+Postaw przed sobą cele i teraz! Tak samo, jak prosiłam Cię o to na początku kursu, o to samo proszę Cię teraz! Zredaguj swoje cele. Czego oczekujesz od siebie. Czy Twoje cele po tym kursie zostały osiągnięte? Jeżeli nie, to gdzie leży wina? W zbyt dużych wymaganiach, które przed sobą stawiasz? A może nie przykładanie się do ćwiczeń miało z tym związek? Czy w takim razie Twoim celem nie powinno się teraz stać nadrobienie tego wszystkiego, co sobie obiecałeś, obiecałaś? A może już to masz, tylko chcesz więcej? Co więcej? Co chcesz? Określ precyzyjnie, nad którym elementem chcesz dalej pracować, rozwijać go. Jeżeli wszystkie, to podziel je na odpowiednie partie i zajmuj się po kolei każdym z elementów. Nie rób wszystkiego na raz.
+
+CHAOS = WRÓG
+
+DOBRA ORGANIZACJA = KLUCZ DO SUKCESU
+
+Pamiętaj też o stawianiu przed sobą dat, co do których się zobowiążesz, przed samym sobą, że będziesz przestrzegał, przestrzegała tych terminów.
+
+
+Elementy, które zamierzasz szkolić
+
+Pamiętaj o tym, że proces szybkiego czytania składa się z ciągu różnych czynności. Jeżeli chcesz rozwinąć cały proces, musisz wpływać na każdy jego element po kolei. Wymieńmy więc je raz jeszcze:
+
+Organizacja miejsca pracy.
+Ćwiczenia ułatwiające wbicie się w odpowiedni rytm (rozgrzewka).
+Higiena pracy (odpowiednia pozycja itp.).
+Motywacja.
+Postrzeganie tekstu (pole widzenia itd.)- wpływa na szybkość czytania.
+Percepcja tekstu (odpowiednie powiązywanie informacji z tekstu z tymi, które już przechowujesz w swoim umyśle) - wpływa w szczególności na rozumienie czytanego tekstu.
+Zapamiętywanie, przechowywanie i wydobywanie informacji z pamięci..
+
+Nie musisz szukać „kursu dla zaawansowanych” (choć to byłoby bardzo korzystne - uprościłoby bowiem poszukiwania dodatkowych informacji). Staraj się sam, sama poszukiwać odpowiednich danych wśród informacji biologicznych, na temat wzroku, wśród wielu informacji psychologicznych (szczególnie z dziedziny psychologii procesów poznawczych). Aktywne poszukiwanie przez Ciebie dodatkowych informacji pozytywnie wpłynie na Twoją motywację. Pamiętaj, że najlepsza motywacja to taka, która wypływa z wewnątrz Ciebie!
+Twórz własne klasyfikacje, co ułatwi Ci podzielenie materiału, informacji na mniejsze partie oraz pozwoli im nadać logiczną strukturę, w dodatku nadaną przez Ciebie, a więc taką, która będzie najwygodniejsza do zapamiętania przez Ciebie! Jak dokonywać takich podziałów wiedzy na kategorie? A w jaki sposób nauczyłeś się, nauczyłaś się robić notatki? Czy odpowiednio dużo czasu zostało przez Ciebie na to przeznaczone? Prosta zasada: mało tekstu, dużo strzałek i kolorów! Rozwijaj swoje zdolności w tym obszarze. Tworzenie notatek w zeszycie przypomina tworzenie map poznawczych, czyli porządkowanie przez Ciebie wiedzy w Twoim umyśle, w Twojej pamięci. Od Ciebie zależy, czy będzie to chaos, czy piękne połączenia między konkretnymi, jasnymi punktami.
+Pamiętaj też o odpoczynku. Nie tylko w kontekście efektywnego relaksu. Pracoholizm to straszna choroba, która prowadzi do spadku efektywności, stresu i mnóstwa chorób (w tym, do depresji). Jednym z Twoich zamiarów powinno być poprawienie swojej efektywności, aby zyskać czas dla siebie, dla najbliższych…
+
+To już koniec naszej współpracy, przynajmniej na jakiś czas. Będę jednak zadowolona, jeżeli będziesz stale wracał, wracała do naszych rozmów, aby ugruntować zdobyte przez Ciebie wiadomości. Wracaj stale do ćwiczeń, testuj swoje zdolności szybkiego czytania i rozumienia czytanego tekstu. Miej kontrolę nad sobą, swoim ciałem i swoim umysłem! Poszukuj dodatkowych informacji na temat funkcjonowania swojego organizmu oraz swojego umysłu. Stawiaj przed sobą jasne cele, rozkładaj je na szereg drobnych czynności i rozwiązuj problemy krok po kroku, a przede wszystkim poznaj swoje ulubione algorytmy rozwiązywania problemów. Wzbogacaj swój słownik i… nie bój się wykorzystywać swojej wiedzy, swoich umiejętności! Eksperymentuj! Znajdź swoje techniki!
+
+Życzę Ci w tym wszystkim powodzenia!
+
+Część teoretyczna ostatniej lekcji już za Tobą. Przed Tobą ostatnia partia ćwiczeń  i ostatni test prędkości w bloku lekcyjnym. Jak oceniasz postępy? Jesteś już zadowolony, zadowolona z efektów ciężkiej pracy przez te kilkanaście, może kilkadziesiąt dni?
+Jeżeli czujesz, że to jeszcze nie to, ciesz się, że wiesz czego nie udało Ci się opanować i zdajesz sobie sprawę z tego, co jest Twoim słabym punktem. Dalej ćwicz indywidualnie. Na tym etapie kursu różni użytkownicy reprezentują różne stopnie zaawansowania w czytaniu, ale każdy posiada solidną wiedzę o szybkim czytaniu i jest w stanie dostosować dalszy plan treningowy do swoich potrzeb. Teraz już wszystko w Twoich rękach.
+Jeżeli jesteś zadowolony, zadowolona z efektów, nie spoczywaj na laurach. Możesz teraz czas, który poświęcałeś, poświęcałaś na ten kurs przeznaczyć na czytanie nowych książek, ale pamiętaj, aby po jakimś czasie wrócić do programu i zmierzyć się z ćwiczeniami. Jeżeli zauważysz, że „kiedyś szło Ci lepiej”, wróć do lekcji i spędź z nimi kilka wieczorów. To z pewnością nie pogorszy Twoich wyników.
+
+Jeszcze raz życzę Ci powodzenia i wielu ciekawych książek!
+
+Zapraszam na ostatni blok ćwiczeniowy przygotowany dla Ciebie.";

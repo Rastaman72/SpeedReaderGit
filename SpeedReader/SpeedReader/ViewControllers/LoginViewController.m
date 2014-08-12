@@ -94,8 +94,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
+    static NSString *CellIdentifier = @"AccountCell";
+    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     UserAccountForDB* account=(self.userList)[indexPath.row];
     
@@ -106,11 +106,13 @@
     [cell.accountLogin sizeToFit];
     UIImage* image=[UIImage imageWithData:account.userImage];
     [cell.accountImage setImage:image];
+    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.theDataObject.loginUser=[self.theDataObject.actuallUserList objectAtIndex:indexPath.row];
     self.chooseUser=indexPath.row;
 }
 

@@ -73,12 +73,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"user"];
+    static NSString *CellIdentifier = @"user";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+  
     if([self.accountsToImport count]!=0)
     {
         UserAccountForDB* account=(self.accountsToImport)[indexPath.row];
         cell.textLabel.text=account;
     }
+    
     return cell;
 }
 

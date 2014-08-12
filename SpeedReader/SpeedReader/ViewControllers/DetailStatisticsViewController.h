@@ -12,17 +12,13 @@
 @interface DetailStatisticsViewController : UIViewController<StatisticsSelectionDelegate,UISplitViewControllerDelegate>
 
 @property(nonatomic,retain)StatisticsData* statisticsData;
-@property (weak, nonatomic) IBOutlet UIImageView *userImage;
-@property (weak, nonatomic) IBOutlet UITextView *decription;
-@property (weak, nonatomic) IBOutlet UILabel *header;
+@property (weak, nonatomic) IBOutlet UIImageView *detailStatisticsUserImage;
+@property (weak, nonatomic) IBOutlet UITextView *detailStatisticsDecription;
+@property (weak, nonatomic) IBOutlet UILabel *detailStatisticsHeader;
 
 @property (nonatomic, weak) IBOutlet UINavigationItem *navBarItem;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
 
 - (IBAction)logOutPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
-
-- (IBAction)settingsPush:(id)sender;
-
 @end

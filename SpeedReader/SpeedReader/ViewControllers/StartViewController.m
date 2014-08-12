@@ -25,6 +25,47 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject=[self theAppDataObject];
+    
+    self.startViewWelcome.text=NSLocalizedString(@"Welcome", nil);
+    [self.startViewWelcome sizeToFit];
+    
+    self.startViewUserLogin.text=self.theDataObject.loginUser.login;
+    [self.startViewUserLogin sizeToFit];
+    
+    self.startViewTimeDescription.text=NSLocalizedString(@"You are with us form", nil);
+    [self.startViewTimeDescription sizeToFit];
+    
+    NSDate*now=[[NSDate alloc]init];
+    
+    NSTimeInterval diffrentInSec=[now timeIntervalSinceDate:self.theDataObject.loginUser.timeAdd];
+    int numberOfDays =diffrentInSec/86400;
+    if(numberOfDays==0)
+        numberOfDays=1;
+    self.startViewTimeSpend.text=[[[NSNumber alloc]initWithInt:numberOfDays]description];
+    [self.startViewTimeSpend sizeToFit];
+    
+    [self.startViewUserImage setImage:[UIImage imageWithData:self.theDataObject.loginUser.userImage]];
+    
+    self.startViewPresenterLabel.text=NSLocalizedString(@"Presenter", nil);
+    [self.startViewPresenterLabel sizeToFit];
+    
+    self.startViewLessonLabel.text=NSLocalizedString(@"LessonDescription", nil);
+    [self.startViewLessonLabel sizeToFit];
+    
+    self.startViewExercisesLabel.text=NSLocalizedString(@"ExercisesDescription", nil);
+    [self.startViewExercisesLabel sizeToFit];
+    
+    self.startViewStatsLabel.text=NSLocalizedString(@"StatsDescription", nil);
+    [self.startViewStatsLabel sizeToFit];
+    
+    self.startViewMetronumLabel.text=NSLocalizedString(@"MetronumDescription", nil);
+    [self.startViewMetronumLabel sizeToFit];
+    
+    self.startViewTimerLabel.text=NSLocalizedString(@"TimerDescription", nil);
+    [self.startViewTimerLabel sizeToFit];
+    
+    
     // Do any additional setup after loading the view.
 }
 

@@ -28,11 +28,14 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     self.theDataObject = [self theAppDataObject];
-    self.importAccountFileLocalizationField.text=[[self.theDataObject.importUserList firstObject]stringByAppendingString:@".zip"];
-    self.importAccountLoginField.text=[self.theDataObject.importUserList firstObject];
-    self.importAccountName.text=[self.theDataObject.importUserList firstObject];
-    [self.importAccountName sizeToFit];
     
+    if([self.theDataObject.importUserList count]!=0)
+    {
+    self.importAccountFileLocalizationField.text=[[[self.theDataObject.importUserList valueForKeyPath:@"name"]description] stringByAppendingString:@".zip"];
+    self.importAccountLoginField.text=[[self.theDataObject.importUserList valueForKeyPath:@"name"]description];
+    self.importAccountName.text=[[self.theDataObject.importUserList valueForKeyPath:@"name"]description];
+    [self.importAccountName sizeToFit];
+    }
     
     /////FIXIFIXIFIXFIXFIXIFXIF
     //UIImage*image=[UIImage imageWithData: [self.theDataObject.importUserList lastObject]];
@@ -134,12 +137,15 @@
 - (IBAction)addUserPush:(id)sender {
     if((self.importAccountFileLocalizationField.text && self.importAccountFileLocalizationField.text.length > 0))
     {
-        if (![[self.theDataObject.importUserList firstObject]isEqualToString:self.importAccountLoginField.text]) {
+        if (![[self.theDataObject.importUserList valueForKeyPath:@"name"]isEqualToString:self.importAccountLoginField.text]) {
             self.theDataObject.unique=true;
+                  NSDate* createAccountDate=[self.theDataObject.importUserList valueForKeyPath:@"date"];
             [self.theDataObject.importUserList removeAllObjects];
-            [self.theDataObject.importUserList addObject:self.importAccountLoginField.text];
-            //        [self.theDataObject.importUserList addObject:[self.importAccountImage accessibilityIdentifier]];
-            [self.theDataObject.importUserList addObject:@""];
+            [self.theDataObject.importUserList setObject:self.importAccountLoginField.text forKey:@"name" ];
+            [self.theDataObject.importUserList setObject:self.importAccountImage.image forKey:@"image" ];
+            [self.theDataObject.importUserList setObject:createAccountDate forKey:@"date"];
+            
+
         }
         
         if(self.theDataObject.unique)
@@ -150,7 +156,7 @@
                 
                 if([self checkPassword])
                 {
-                    UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:self.importAccountPasswordField.text];
+                    UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList valueForKeyPath:@"name"] andImage:[self.theDataObject.importUserList valueForKeyPath:@"image"]  andPassword:self.importAccountPasswordField.text withDate:[self.theDataObject.importUserList valueForKeyPath:@"date"]];
                     
                     [self.theDataObject.actuallUserList addObject:user];
                     [self cleanView];
@@ -168,8 +174,7 @@
             }
             else
             {
-                UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList firstObject] andImage:[self.theDataObject.importUserList lastObject]  andPassword:nil];
-                //[theDataObject.actuallUserList addObject:user];
+                  UserAccountForDB *user = [[UserAccountForDB alloc ]initAccountWithLogin:[self.theDataObject.importUserList valueForKeyPath:@"name"] andImage:[self.theDataObject.importUserList valueForKeyPath:@"image"]  andPassword:nil withDate:[self.theDataObject.importUserList valueForKeyPath:@"date"]];
                 
                 [self.theDataObject.actuallUserList addObject:user];
                 
@@ -271,23 +276,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"imageCell"];
-    
-    //cell.imageView.image=[self.imageTable objectAtIndex:indexPath.row];
-    
-    //    NSString* key=@"image";
-    //    key=[key stringByAppendingString:[NSString stringWithFormat: @"%d", (int)indexPath.row]];
-    //    key=[key stringByAppendingString:@".jpg"];
-    //
+    static NSString *CellIdentifier = @"imageCell";
+    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+  
     NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
      cell.userImage=[UIImage imageWithData:[self.theDataObject.imageUser[indexPath.row]imageData]];
-  //  cell.userImage=(UIImage*)[self.theDataObject.imageUser objectForKey:key];
-    
+
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
     [imgView setImage:cell.userImage];
     [cell addSubview:imgView];
-    return cell;
+      return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

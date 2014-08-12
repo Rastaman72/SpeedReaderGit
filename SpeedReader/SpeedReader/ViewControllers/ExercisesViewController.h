@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "RootExercisesTableViewController.h"
 #import "DetailExercisesViewController.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 
 @interface ExercisesViewController : UISplitViewController
-
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

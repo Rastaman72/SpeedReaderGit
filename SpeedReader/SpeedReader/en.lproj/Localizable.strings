@@ -55,3 +55,29 @@
 "Security"="Security";
 "Put password please"="Put password please";
 "You put bad password"="You put bad password";
+
+//Start View
+"Presenter"="presenter";
+"LessonDescription"="Lesson desc";
+"ExercisesDescription"="Exercises desc";
+"StatsDescription"="Stats desc";
+"MetronumDescription"="Metronum desc";
+"TimerDescription"="Timer desc";
+
+
+//Lesson part
+"Test"="lesson 0";
+"First lesson"="1";
+"Secound lesson"="2";
+"Third lesson"="3";
+"Fouth lesson"="4";
+"Fifth lesson"="5";
+"Sixth lesson"="6";
+"Seventh lesson"="7";
+"Eighth lesson"="8";
+"Ninth lesson"="9";
+"Tenth lesson"="10";
+"Eleventh lesson"="11";
+"Twelfth lesson"="12";
+"Thirteenth lesson"="13";
+"Fouthteenth lesson"="14";

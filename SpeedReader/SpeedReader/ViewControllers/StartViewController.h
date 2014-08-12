@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *startViewWelcome;
 @property (weak, nonatomic) IBOutlet UILabel *startViewUserLogin;
 @property (weak, nonatomic) IBOutlet UILabel *startViewTimeSpend;
+@property (weak, nonatomic) IBOutlet UILabel *startViewTimeDescription;
 
 @property (weak, nonatomic) IBOutlet UIButton *startViewPresenterButton;
 - (IBAction)presenterPush:(id)sender;

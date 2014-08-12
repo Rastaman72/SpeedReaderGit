@@ -65,9 +65,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    static NSString *CellIdentifier = @"AccountCell";
+    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     
-    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
-    
+  
     UserAccountForDB* account=(self.userList)[indexPath.row];
     
     NSString* name=[NSString stringWithFormat:@"%@",account.login];
@@ -78,32 +80,15 @@
 
     UIImage* image=[UIImage imageWithData:account.userImage];
     [cell.accountImage setImage:image];
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    //    AccountTableCellTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    //    _toDelete=[[NSString alloc]init];
-    //    _toDelete = cell.accountLogin.text;
     _toExport=indexPath.row;
     self.userToExport=[self.userList objectAtIndex:_toExport];
 }
-
-//- (IBAction)exportPush:(id)sender {
-//    if(self.toExport!=-1)
-//    {
-//    if ( self.userToExport) {
-//         [self performSegueWithIdentifier:@"exportDetail" sender:self];
-//    }
-//    else
-//    {
-//    UIAlertView* alert=[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:NSLocalizedString(@"First choose user", nil) delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-//    [alert show];
-//    }
-//    }
-//}
 
 
 #pragma mark - Navigation
@@ -258,10 +243,10 @@
         NSData *data = [NSData dataWithContentsOfFile:writableDBPath];
         
         MFMailComposeViewController *picker = [[[MFMailComposeViewController alloc] init] autorelease];
-        [picker setSubject:@"My Scary Bug"];
+        [picker setSubject:@"User Account"];
         [picker addAttachmentData:data mimeType:@"application/zip" fileName:@"speedReader.zip"];
         [picker setToRecipients:[NSArray array]];
-        [picker setMessageBody:@"Check out this scary bug!  You'll need a copy of ScaryBugs to view this file, then tap and hold to open." isHTML:NO];
+        [picker setMessageBody:@"Account" isHTML:NO];
         [picker setMailComposeDelegate:self];
         [self presentModalViewController:picker animated:YES];
          self.toExport=-1;

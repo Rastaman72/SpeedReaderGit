@@ -15,8 +15,9 @@
 @dynamic password;
 @dynamic userImage;
 @dynamic settings;
+@dynamic timeAdd;
 
--(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword
+-(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword withDate:(NSDate*)startDate
 {
     SharedData* theDataObject = [self theAppDataObject];
     NSManagedObjectContext *context =  theDataObject.managedObjectContext;
@@ -53,7 +54,20 @@
     }
         else
         newUser.userImage=nil;
-    
+    //    [[NSNumber alloc]initWithFloat:[NSDate dateWithTimeIntervalSinceNow:-86400.0]];
+       
+        if(!startDate)
+        {
+        NSDate *now = [NSDate date];
+        NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        NSDateComponents *components = [calendar components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit fromDate:now];
+        NSDate *dateAdd = [calendar dateFromComponents:components];
+        
+        newUser.timeAdd=dateAdd;
+        }
+        else
+            newUser.timeAdd=startDate;
+        
      newUser.settings=userSettings;
     NSError*error;
     [context save:&error];

@@ -19,22 +19,22 @@
 {
     if(self=[super initWithCoder:aDecoder])
     {
-        _lessons = [NSMutableArray array];
-        [_lessons addObject:[LessonData newLessonWithName:@"Intro" description:@"First view"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 1" description:@"First lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 2" description:@"Secound lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 3" description:@"Third lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 4" description:@"Fouth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 5" description:@"Fifth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 6" description:@"Sixth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 7" description:@"Seventh lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 8" description:@"Eighth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 9" description:@"Ninth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 10" description:@"Tenth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 11" description:@"Eleventh lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 12" description:@"Twelfth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 13" description:@"Thirteenth lesson"]];
-        [_lessons addObject:[LessonData newLessonWithName:@"Lesson 14" description:@"Fouthteenth lesson"]];
+        self.lessons = [NSMutableArray array];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Intro" description:NSLocalizedString(@"Test", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 1" description:NSLocalizedString(@"First lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 2" description:NSLocalizedString(@"Secound lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 3" description:NSLocalizedString(@"Third lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 4" description:NSLocalizedString(@"Fouth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 5" description:NSLocalizedString(@"Fifth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 6" description:NSLocalizedString(@"Sixth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 7" description:NSLocalizedString(@"Seventh lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 8" description:NSLocalizedString(@"Eighth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 9" description:NSLocalizedString(@"Ninth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 10" description:NSLocalizedString(@"Tenth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 11" description:NSLocalizedString(@"Eleventh lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 12" description:NSLocalizedString(@"Twelfth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 13" description:NSLocalizedString(@"Thirteenth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 14" description:NSLocalizedString(@"Fouthteenth lesson", nil)]];
         
     }
     return self;
@@ -70,25 +70,30 @@
 {
 
     // Return the number of rows in the section.
-    return [_lessons count];
+    return [self.lessons count];
 
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LessonData* lesson=_lessons[indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+     static NSString *CellIdentifier = @"Cell";
+    LessonData* lesson=self.lessons[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     cell.textLabel.text=lesson.name;
-    return cell;
+    
+        return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LessonData *selectedLesson=[_lessons objectAtIndex:indexPath.row];
-    if(_delegate)
+    LessonData *selectedLesson=[self.lessons objectAtIndex:indexPath.row];
+    if(self.delegate)
     {
-        [_delegate selectedLesson:selectedLesson];
+        [self.delegate selectedLesson:selectedLesson];
     }
 }
 

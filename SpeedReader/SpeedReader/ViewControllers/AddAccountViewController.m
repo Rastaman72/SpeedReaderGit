@@ -150,7 +150,7 @@
             {
                 if([_addAccountPasswordField.text isEqualToString:_addAccountRePasswordField.text])
                 {
-                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:self.addAccountPasswordField.text];
+                    self.theNewAccount=[[UserAccountForDB alloc ]initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:self.addAccountPasswordField.text withDate:nil];
                 }
                 else
                 {
@@ -171,7 +171,7 @@
             }
         }
         else
-            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:nil];
+            self.theNewAccount=[[UserAccountForDB alloc] initAccountWithLogin:self.addAccountLoginField.text andImage:self.theDataObject.chooseImage andPassword:nil withDate:nil];
         if(self.theNewAccount !=nil)
         {
             [self.theDataObject.actuallUserList addObject:self.theNewAccount];
@@ -206,8 +206,7 @@
         if([image.imageName isEqual:@"image0"])
             [self.addAccountImage setImage:[UIImage imageWithData:image.imageData]];
     }
-//     self.theDataObject.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];
-//    [self.addAccountImage setImage:self.theDataObject.chooseImage];
+
     [self.addAccountImageTable scrollRectToVisible:CGRectMake(0, 0, 1, 1) animated:NO];
 
 }
@@ -250,8 +249,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"imageCell"];
+    static NSString *CellIdentifier = @"imageCell";
+    ImageTableViewCell *cell=(ImageTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     
     NSString*key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
 
@@ -267,15 +267,12 @@
     UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
     [imgView setImage:cell.userImage];
     [cell addSubview:imgView];
-       return cell;
+    return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    NSString* key=@"image";
-//    key=[key stringByAppendingString:[NSString stringWithFormat: @"%d", (int)indexPath.row]];
-//    key=[key stringByAppendingString:@".jpg"];
-    
+
     self.theDataObject.key=[NSString stringWithFormat: @"image%d", (int)indexPath.row];
    
     //self.chooseImage=[self.theDataObject.imageUser objectForKey:self.theDataObject.key];

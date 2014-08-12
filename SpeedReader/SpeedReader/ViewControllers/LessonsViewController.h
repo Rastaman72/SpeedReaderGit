@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "RootLessonTableViewController.h"
 #import "DetailLessonViewController.h"
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface LessonsViewController : UISplitViewController
-@property (strong, nonatomic) UIWindow *window;
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

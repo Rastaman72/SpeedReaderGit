@@ -33,7 +33,7 @@
 
 -(void)setExercises:(ExercisesData *)exercises
 {
-    if(_exercisesData!=exercises)
+    if(self.exercisesData!=exercises)
     {
         _exercisesData=exercises;
         [self refreshUI];
@@ -43,10 +43,10 @@
 
 -(void)refreshUI
 {
-    _header.text=_exercisesData.header;
+    _detailExercisesHeader.text=_exercisesData.header;
    // _userImage.image=[UIImage imageNamed:[NSString stringWithFormat:@"%@",_exercisesData.userImage]];
     
-    _decription.text=_exercisesData.description;
+    _detailExercisesDecription.text=_exercisesData.description;
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,15 +69,15 @@
     self.popover = pc;
     
     //Set the title of the bar button item
-    barButtonItem.title = @"Exercises     ";
-    _logOutButton.title =@"Log Out";
-    NSMutableArray* buttons=[[NSMutableArray alloc]init];
-    [buttons addObject:barButtonItem];
-    [buttons addObject:_logOutButton];
+    barButtonItem.title = @"Exercises";
+//    _logOutButton.title =@"Log Out";
+//    NSMutableArray* buttons=[[NSMutableArray alloc]init];
+//    [buttons addObject:barButtonItem];
+//    [buttons addObject:_logOutButton];
     
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
-    [_navBarItem setLeftBarButtonItems:buttons];
+    [_navBarItem setLeftBarButtonItem:barButtonItem];
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
 }
@@ -107,6 +107,5 @@
 - (IBAction)logOutPush:(id)sender {
       [self dismissViewControllerAnimated:YES completion:nil];
 }
-- (IBAction)settingsPush:(id)sender {
-}
+
 @end

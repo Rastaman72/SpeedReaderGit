@@ -14,7 +14,8 @@
 @property (strong, nonatomic) NSString *password;
 @property (strong, nonatomic) NSData *userImage;
 @property (strong, nonatomic) SettingsForDB *settings;
+@property (nonatomic,strong)NSDate* timeAdd;
 
 
--(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword;
+-(UserAccountForDB*)initAccountWithLogin : (NSString*)login andImage:(UIImage*)userImage andPassword:(NSString*)userPassword withDate:(NSDate*)startDate;
 @end

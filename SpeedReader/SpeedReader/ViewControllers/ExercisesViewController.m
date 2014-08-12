@@ -26,14 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     self.theDataObject=[self theAppDataObject];
     // Do any additional setup after loading the view.
     UINavigationController* leftNavC=[self.viewControllers objectAtIndex:0];
     RootExercisesTableViewController* leftVC=(RootExercisesTableViewController*)[leftNavC topViewController];
     DetailExercisesViewController* rightVC=[self.viewControllers objectAtIndex:1];
+    [rightVC.detailExercisesUserImage setImage:[UIImage imageWithData:self.theDataObject.loginUser.userImage]];
+    
+
     leftVC.delegate=rightVC;
     self.delegate=rightVC;
     ExercisesData* firstExercises=[[leftVC exercises]objectAtIndex:0];
-    [rightVC setExercisesData:firstExercises];
+    [rightVC setExercises:firstExercises];
 
 }
 
@@ -43,6 +47,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 /*
 #pragma mark - Navigation
 

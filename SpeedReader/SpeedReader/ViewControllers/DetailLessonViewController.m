@@ -27,14 +27,15 @@
 {
     [self refreshUI];
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+        // Do any additional setup after loading the view.
 }
 
 -(void)setLesson:(LessonData *)lesson
 {
-    if(_lesson!=lesson)
+    if(self.lessonData!=lesson)
     {
-        _lesson=lesson;
+        self.lessonData=lesson;
         [self refreshUI];
       
     }
@@ -43,10 +44,19 @@
 
 -(void)refreshUI
 {
-    _header.text=_lesson.header;
-    _userImage.image=[UIImage imageNamed:[NSString stringWithFormat:@"%@",_lesson.userImage]];
+    self.detailLessonHeader.text=self.lessonData.header;
+    
+    self.detailLessonDecription.text=self.lessonData.description;
+    
+    [self.detailLessonDecription setContentOffset:CGPointZero animated:YES];
+}
 
-    _decription.text=_lesson.description;
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 - (void)didReceiveMemoryWarning
 {
@@ -56,8 +66,8 @@
 -(void)selectedLesson:(LessonData *)newLesson
 {
     [self setLesson:newLesson];
-    if (_popover != nil) {
-        [_popover dismissPopoverAnimated:YES];
+    if (self.popover != nil) {
+        [self.popover dismissPopoverAnimated:YES];
     }
 }
 
@@ -67,25 +77,25 @@
     self.popover = pc;
     
     //Set the title of the bar button item
-    barButtonItem.title = @"Lessons     ";
-    _logOutButton.title =@"Log Out";
-    NSMutableArray* buttons=[[NSMutableArray alloc]init];
-    [buttons addObject:barButtonItem];
-    [buttons addObject:_logOutButton];
+    barButtonItem.title = @"Lessons";
+//    self.logOutButton.title =@"Log Out";
+//    NSMutableArray* buttons=[[NSMutableArray alloc]init];
+//    [buttons addObject:barButtonItem];
+//    [buttons addObject:self.logOutButton];
     
     //Set the bar button item as the Nav Bar's leftBarButtonItem
-    //[_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
-    [_navBarItem setLeftBarButtonItems:buttons];
+    //[self.navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
+    [self.navBarItem setLeftBarButtonItem:barButtonItem];
 }
 
 -(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
     //Remove the barButtonItem.
-    [_navBarItem setLeftBarButtonItem:nil animated:YES];
+    [self.navBarItem setLeftBarButtonItem:nil animated:YES];
     
     
     //Nil out the pointer to the popover.
-    _popover = nil;
+    self.popover = nil;
 }
 /*
 #pragma mark - Navigation
@@ -103,6 +113,5 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     
 }
-- (IBAction)settingsPush:(id)sender {
-}
+
 @end

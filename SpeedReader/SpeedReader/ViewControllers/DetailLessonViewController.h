@@ -8,19 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "LessonSelectionDelegate.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
+
 @class LessonData;
 @interface DetailLessonViewController : UIViewController<LessonSelectionDelegate,UISplitViewControllerDelegate>
 
-@property(nonatomic,retain)LessonData* lesson;
-@property (weak, nonatomic) IBOutlet UIImageView *userImage;
-@property (weak, nonatomic) IBOutlet UITextView *decription;
-@property (weak, nonatomic) IBOutlet UILabel *header;
+@property(nonatomic,retain)LessonData* lessonData;
+@property (weak, nonatomic) IBOutlet UIImageView *detailLessonUserImage;
+@property (weak, nonatomic) IBOutlet UITextView *detailLessonDecription;
+@property (weak, nonatomic) IBOutlet UILabel *detailLessonHeader;
 
 @property (nonatomic, weak) IBOutlet UINavigationItem *navBarItem;
 @property (nonatomic, strong) UIPopoverController *popover;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *logOutButton;
 - (IBAction)logOutPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
-- (IBAction)settingsPush:(id)sender;
-
+@property(nonatomic,strong)SharedData* theDataObject;
+-(void)setLesson:(LessonData *)lesson;
 @end

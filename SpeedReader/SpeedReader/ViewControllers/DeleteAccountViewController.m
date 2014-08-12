@@ -69,9 +69,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"AccountCell"];
-    
+    static NSString *CellIdentifier = @"AccountCell";
+    AccountTableCellTableViewCell *cell=(AccountTableCellTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+   
     UserAccountForDB* account=(self.userList)[indexPath.row];
     
     NSString* name=[NSString stringWithFormat:@"%@",account.login];
@@ -81,17 +82,14 @@
     [cell.accountLogin sizeToFit];
     UIImage* image=[UIImage imageWithData:account.userImage];
     [cell.accountImage setImage:image];
+   
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-//    AccountTableCellTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-//    _toDelete=[[NSString alloc]init];
-//    _toDelete = cell.accountLogin.text;
     _toDelete=indexPath.row;
-   }
+}
 
 - (IBAction)deletePush:(id)sender {
     if(self.toDelete!=-1)

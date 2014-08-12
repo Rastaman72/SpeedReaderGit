@@ -30,7 +30,7 @@
     
     NSArray  *fileList = [self dataFilePath:FALSE];
     NSString *userLogin =[[NSString alloc]init];
-    NSString *userImage =[[NSString alloc]init];
+    NSDate *userDate =[[NSDate alloc]init];
     NSMutableArray* userList=[[NSMutableArray alloc]init];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                          NSUserDomainMask, YES);
@@ -63,13 +63,13 @@
             for (GDataXMLElement *resultElement in resultNodes) {
                 
                 userLogin  = [[[resultElement elementsForName:@"name"]objectAtIndex:0]stringValue];
-              //  userImage = [[[resultElement elementsForName:@"image"]objectAtIndex:0]stringValue];
+                userDate = [[NSDateFormatter alloc]dateFromString: [[[resultElement elementsForName:@"date"]objectAtIndex:0]stringValue]];
                 
                 
             }
             
         }
-        UserAccountForDB* newUser=[[UserAccountForDB alloc] initAccountWithLogin:userLogin andImage:userImage andPassword:nil];
+        UserAccountForDB* newUser=[[UserAccountForDB alloc] initAccountWithLogin:userLogin andImage:@"" andPassword:nil withDate:userDate];
       
         [userList addObject:newUser];
 
@@ -86,11 +86,10 @@
 # pragma mark create  user XML
 + (NSData*)saveUser:(UserAccountForDB *)user {
     
-    
-    NSDate *currDate = [NSDate date];
+     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
-    [dateFormatter setDateFormat:@"dd.MM.YY HH:mm:ss"];
-    NSString *dateString = [dateFormatter stringFromDate:currDate];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *dateString = [dateFormatter stringFromDate:user.timeAdd];
     NSLog(@"%@",dateString);
     
     GDataXMLElement * dataElement = [GDataXMLNode elementWithName:@"data"];

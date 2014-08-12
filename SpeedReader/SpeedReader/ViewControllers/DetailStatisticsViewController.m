@@ -42,10 +42,10 @@
 
 -(void)refreshUI
 {
-    _header.text=_statisticsData.header;
+    _detailStatisticsHeader.text=_statisticsData.header;
     // _userImage.image=[UIImage imageNamed:[NSString stringWithFormat:@"%@",_exercisesData.userImage]];
     
-    _decription.text=_statisticsData.description;
+    _detailStatisticsDecription.text=_statisticsData.description;
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,15 +67,15 @@
     self.popover = pc;
     
     //Set the title of the bar button item
-    barButtonItem.title = @"Statistic     ";
-    _logOutButton.title =@"Log Out";
-    NSMutableArray* buttons=[[NSMutableArray alloc]init];
-    [buttons addObject:barButtonItem];
-    [buttons addObject:_logOutButton];
-    
+    barButtonItem.title = @"Statistic";
+//    _logOutButton.title =@"Log Out";
+//    NSMutableArray* buttons=[[NSMutableArray alloc]init];
+//    [buttons addObject:barButtonItem];
+//    [buttons addObject:_logOutButton];
+//    
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
-    [_navBarItem setLeftBarButtonItems:buttons];
+    [_navBarItem setLeftBarButtonItem:barButtonItem];
     //Set the bar button item as the Nav Bar's leftBarButtonItem
    // [_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
 }

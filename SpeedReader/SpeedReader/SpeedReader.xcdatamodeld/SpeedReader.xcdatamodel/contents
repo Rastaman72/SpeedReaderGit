@@ -9,6 +9,7 @@
     <entity name="User" syncable="YES">
         <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeAdd" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="userImage" optional="YES" attributeType="Binary" syncable="YES"/>
         <relationship name="settings" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TeacherSettings" inverseName="user" inverseEntity="TeacherSettings" syncable="YES"/>
     </entity>
@@ -17,8 +18,8 @@
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TeacherSettings" positionX="-7812" positionY="-378" width="128" height="103"/>
-        <element name="User" positionX="-7976" positionY="-378" width="128" height="105"/>
-        <element name="UserImage" positionX="-8136" positionY="-360" width="128" height="73"/>
+        <element name="TeacherSettings" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="User" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="UserImage" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

@@ -62,7 +62,7 @@
     [unzipFile goToFirstFileInZip];
     for (FileInZipInfo* toExtract in infos) {
         ZipReadStream *read1= [unzipFile readCurrentFileInZip];
-        NSMutableData *data1= [[[NSMutableData alloc] initWithLength:64000] autorelease];
+        NSMutableData *data1= [[[NSMutableData alloc] initWithLength:1024] autorelease];
         int bytesRead1= [read1 readDataWithBuffer:data1];
         
         NSError*error;
@@ -75,7 +75,8 @@
             //parse user.xml
             for (GDataXMLElement *xmlElements in xmlPart) {
                 NSString *name;
-                NSData* image;
+                NSDate* dateAdd;
+                dateAdd=[[NSDate alloc]init];
                 
                 // Name
                 NSArray *names = [xmlElements elementsForName:@"name"];
@@ -84,12 +85,15 @@
                     name = firstName.stringValue;
                 } else continue;
                 
-                //Image
-                /*NSArray *images = [xmlElements elementsForName:@"image"];
+                //Date
+                NSArray *images = [xmlElements elementsForName:@"date"];
                 if (names.count > 0) {
                     GDataXMLElement *imageName = (GDataXMLElement *) [images objectAtIndex:0];
-                    image =  [imageName.stringValue dataUsingEncoding:NSUTF8StringEncoding];
-                } else continue;*/
+                    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+                    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                    NSString*test=imageName.stringValue;
+                    dateAdd =  [dateFormatter dateFromString: test];
+                } else continue;
                 
                 for (int i=0; i<[self.actuallUserList count]; i++) {
                     UserAccountForDB* toTest=[self.actuallUserList objectAtIndex:i];
@@ -107,8 +111,10 @@
                 if([self.actuallUserList count]==0)
                     self.unique=true;
                 
-                self.importUserList=[[NSMutableArray alloc]init];
-                [self.importUserList addObject:name];
+                self.importUserList=[[NSMutableDictionary alloc]init];
+                [self.importUserList setObject:name forKey:@"name"];
+                [self.importUserList setObject:dateAdd forKey:@"date"];
+               // [self.importUserList addObject:name];
                 //[self.importUserList addObject:image];
                 self.correctUnZip=TRUE;
             }
