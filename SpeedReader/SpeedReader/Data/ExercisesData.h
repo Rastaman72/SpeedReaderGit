@@ -12,8 +12,9 @@
 @property (nonatomic,retain)NSString* name;
 @property (nonatomic,retain)NSString* description;
 @property (nonatomic,retain)NSString* header;
+@property  (nonatomic,assign)int choosedExercises;
 
-+(ExercisesData*) newExercisesWithName : (NSString*)name description:(NSString*)description;
++(ExercisesData*) newExercisesWithName : (NSString*)name description:(NSString*)description number:(int)choose;
 
 
 @end

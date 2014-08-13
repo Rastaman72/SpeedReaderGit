@@ -20,21 +20,21 @@
     if(self=[super initWithCoder:aDecoder])
     {
         _exercises = [NSMutableArray array];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Intro" description:@"First view"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 1" description:@"First Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 2" description:@"Secound Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 3" description:@"Third Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 4" description:@"Fouth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 5" description:@"Fifth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 6" description:@"Sixth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 7" description:@"Seventh Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 8" description:@"Eighth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 9" description:@"Ninth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 10" description:@"Tenth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 11" description:@"Eleventh Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 12" description:@"Twelfth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 13" description:@"Thirteenth Exercises"]];
-        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 14" description:@"Fouthteenth Exercises"]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Intro" description:@"First view" number:0]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 1" description:@"First Exercises" number:1]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 2" description:@"Secound Exercises" number:2]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 3" description:@"Third Exercises" number:3]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 4" description:@"Fouth Exercises"number:4]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 5" description:@"Fifth Exercises" number:5]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 6" description:@"Sixth Exercises" number:6]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 7" description:@"Seventh Exercises" number:7]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 8" description:@"Eighth Exercises" number:8]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 9" description:@"Ninth Exercises" number:9]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 10" description:@"Tenth Exercises" number:10]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 11" description:@"Eleventh Exercises" number:11]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 12" description:@"Twelfth Exercises" number:12]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 13" description:@"Thirteenth Exercises" number:13]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 14" description:@"Fouthteenth Exercises" number:14]];
         
     }
     return self;
@@ -91,12 +91,21 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ExercisesData *selectedExcerses=[_exercises objectAtIndex:indexPath.row];
-    if(_delegate)
+    self.theDataObject = [self theAppDataObject];
+    self.theDataObject.selectPart=selectedExcerses;
+        if(_delegate)
     {
         [_delegate selectedExercises:selectedExcerses];
     }
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 /*
 // Override to support conditional editing of the table view.

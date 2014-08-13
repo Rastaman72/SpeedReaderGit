@@ -1,18 +1,18 @@
 //
-//  ExercisesViewController.m
+//  ExercisesDispatcherControllerViewController.m
 //  SpeedReader
 //
-//  Created by LGBS dev on 7/17/14.
+//  Created by LGBS dev on 8/13/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesViewController.h"
+#import "ExercisesDispatcherControllerViewController.h"
 
-@interface ExercisesViewController ()
+@interface ExercisesDispatcherControllerViewController ()
 
 @end
 
-@implementation ExercisesViewController
+@implementation ExercisesDispatcherControllerViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,20 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     self.theDataObject=[self theAppDataObject];
+    
     // Do any additional setup after loading the view.
-    UINavigationController* leftNavC=[self.viewControllers objectAtIndex:0];
-    RootExercisesTableViewController* leftVC=(RootExercisesTableViewController*)[leftNavC topViewController];
-    DetailExercisesViewController* rightVC=[self.viewControllers objectAtIndex:1];
-    
-    [rightVC.detailExercisesUserImage setImage:[UIImage imageWithData:self.theDataObject.loginUser.userImage]];
-    
-
-    leftVC.delegate=rightVC;
-    self.delegate=rightVC;
-    ExercisesData* firstExercises=[[leftVC exercises]objectAtIndex:0];
-    [rightVC setExercises:firstExercises];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,13 +35,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 - (SharedData*) theAppDataObject;
 {
 	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
 	SharedData* theDataObject;
 	theDataObject = (SharedData*) theDelegate.theAppDataObject;
 	return theDataObject;
+}
+-(void)test
+{
+    self.theDataObject=[self theAppDataObject];
+    ExercisesData* choosedExercises=(ExercisesData*)self.theDataObject.selectPart;
+    
+    
+    
+    NSString * storyboardName = @"Main_iPad";
+    NSString * viewControllerID = [NSString stringWithFormat:@"EXC%d",choosedExercises.choosedExercises];
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
+    self.theDataObject.dismmisView=YES;
+
+        
+    [self presentViewController:controller animated:YES completion:nil];
 }
 /*
 #pragma mark - Navigation

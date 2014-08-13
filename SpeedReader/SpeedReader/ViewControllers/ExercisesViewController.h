@@ -11,7 +11,8 @@
 #import "DetailExercisesViewController.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-
+#import "ExercisesDispatcherViewController.h"
 @interface ExercisesViewController : UISplitViewController
 @property(nonatomic,strong)SharedData* theDataObject;
+
 @end

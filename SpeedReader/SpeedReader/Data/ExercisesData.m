@@ -10,11 +10,12 @@
 
 @implementation ExercisesData
 
-+(ExercisesData*) newExercisesWithName:(NSString *)name description:(NSString *)description
++(ExercisesData*) newExercisesWithName:(NSString *)name description:(NSString *)description number:(int)choose
 {
     ExercisesData* exercises=[[ExercisesData alloc]init];
     exercises.name=name;
     exercises.description=description;
+    exercises.choosedExercises=choose;
     return exercises;
 }
 @end

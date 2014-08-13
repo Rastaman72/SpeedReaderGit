@@ -54,6 +54,11 @@
 		E93BC5C519815FA700DE3408 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AB19815FA700DE3408 /* uncompr.c */; };
 		E93BC5C619815FA700DE3408 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AE19815FA700DE3408 /* zutil.c */; };
 		E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E944DC3B19939A0F00A0442D /* SettingsViewController.m */; };
+		E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */; };
+		E95C7A9C199B7AD8004F1B2D /* ExerciseOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */; };
+		E95C7A9F199B7AEC004F1B2D /* ExercisesTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */; };
+		E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */; };
+		E95C7AA5199BC12E004F1B2D /* ExercisesZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */; };
 		E97618B01990F5EB006CD981 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97618AF1990F5EB006CD981 /* MessageUI.framework */; };
 		E9A18158197E77E60046B48E /* UserParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18157197E77E60046B48E /* UserParser.m */; };
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
@@ -196,6 +201,16 @@
 		E93BC5AF19815FA700DE3408 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
 		E944DC3A19939A0F00A0442D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = SpeedReader/ViewControllers/SettingsViewController.h; sourceTree = "<group>"; };
 		E944DC3B19939A0F00A0442D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SpeedReader/ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
+		E95C7A96199B76FC004F1B2D /* ExercisesDispatcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesDispatcherViewController.h; path = SpeedReader/ViewControllers/ExercisesDispatcherViewController.h; sourceTree = "<group>"; };
+		E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesDispatcherViewController.m; path = SpeedReader/ViewControllers/ExercisesDispatcherViewController.m; sourceTree = "<group>"; };
+		E95C7A9A199B7AD8004F1B2D /* ExerciseOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseOneViewController.h; path = SpeedReader/ViewControllers/ExerciseOneViewController.h; sourceTree = "<group>"; };
+		E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseOneViewController.m; path = SpeedReader/ViewControllers/ExerciseOneViewController.m; sourceTree = "<group>"; };
+		E95C7A9D199B7AEC004F1B2D /* ExercisesTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesTwoViewController.h; path = SpeedReader/ViewControllers/ExercisesTwoViewController.h; sourceTree = "<group>"; };
+		E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesTwoViewController.m; path = SpeedReader/ViewControllers/ExercisesTwoViewController.m; sourceTree = "<group>"; };
+		E95C7AA0199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesDispatcherControllerViewController.h; path = SpeedReader/ViewControllers/ExercisesDispatcherControllerViewController.h; sourceTree = "<group>"; };
+		E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesDispatcherControllerViewController.m; path = SpeedReader/ViewControllers/ExercisesDispatcherControllerViewController.m; sourceTree = "<group>"; };
+		E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesZeroViewController.h; path = SpeedReader/ViewControllers/ExercisesZeroViewController.h; sourceTree = "<group>"; };
+		E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesZeroViewController.m; path = SpeedReader/ViewControllers/ExercisesZeroViewController.m; sourceTree = "<group>"; };
 		E97618AF1990F5EB006CD981 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E9A18156197E77E60046B48E /* UserParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserParser.h; path = SpeedReader/Data/UserParser.h; sourceTree = "<group>"; };
 		E9A18157197E77E60046B48E /* UserParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserParser.m; path = SpeedReader/Data/UserParser.m; sourceTree = "<group>"; };
@@ -336,6 +351,10 @@
 				E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */,
 				E915D6F61977F4BF00846F31 /* ExercisesViewController.h */,
 				E915D6F71977F4BF00846F31 /* ExercisesViewController.m */,
+				E95C7A96199B76FC004F1B2D /* ExercisesDispatcherViewController.h */,
+				E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */,
+				E95C7AA0199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.h */,
+				E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */,
 			);
 			name = Exercises;
 			sourceTree = "<group>";
@@ -526,6 +545,19 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		E95C7A99199B7A9F004F1B2D /* IndividualExercises */ = {
+			isa = PBXGroup;
+			children = (
+				E95C7A9A199B7AD8004F1B2D /* ExerciseOneViewController.h */,
+				E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */,
+				E95C7A9D199B7AEC004F1B2D /* ExercisesTwoViewController.h */,
+				E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */,
+				E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */,
+				E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */,
+			);
+			name = IndividualExercises;
+			sourceTree = "<group>";
+		};
 		E9AC08C2199000F400ACD0C5 /* DB */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,6 +658,7 @@
 		E9E5144C1976A5D1001FDA03 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E95C7A99199B7A9F004F1B2D /* IndividualExercises */,
 				E944DC39199399F900A0442D /* Settings */,
 				E915D6E41977F24E00846F31 /* Lesson */,
 				E915D7081978048B00846F31 /* StartView */,
@@ -765,6 +798,7 @@
 			files = (
 				E9371E73198D26B100DFCBF0 /* AppDataObject.m in Sources */,
 				E93BC5BD19815FA700DE3408 /* gzlib.c in Sources */,
+				E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */,
 				E93BC5B319815FA700DE3408 /* FileInZipInfo.m in Sources */,
 				E93BC5B619815FA700DE3408 /* ZipReadStream.m in Sources */,
 				E935AA1C1976F48900409E7B /* LessonsViewController.m in Sources */,
@@ -777,6 +811,7 @@
 				E92BB5361992BFAC006D2E56 /* TimerViewController.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
 				E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */,
+				E95C7A9C199B7AD8004F1B2D /* ExerciseOneViewController.m in Sources */,
 				E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */,
 				E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
@@ -788,6 +823,7 @@
 				E93BC5C019815FA700DE3408 /* infback.c in Sources */,
 				E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */,
 				E915D70B197804A400846F31 /* StartViewController.m in Sources */,
+				E95C7AA5199BC12E004F1B2D /* ExercisesZeroViewController.m in Sources */,
 				E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */,
 				E93BC5BB19815FA700DE3408 /* deflate.c in Sources */,
 				E93BC5B919815FA700DE3408 /* compress.c in Sources */,
@@ -800,6 +836,8 @@
 				E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */,
 				E93BC5C519815FA700DE3408 /* uncompr.c in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
+				E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */,
+				E95C7A9F199B7AEC004F1B2D /* ExercisesTwoViewController.m in Sources */,
 				E93BC5B419815FA700DE3408 /* ZipException.m in Sources */,
 				E9FE88DC1996304800C97A35 /* ImageTableViewCell.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,

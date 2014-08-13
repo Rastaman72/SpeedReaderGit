@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ExercisesSelectionDelegate.h"
 #import "DetailExercisesViewController.h"
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 
 @interface RootExercisesTableViewController : UITableViewController
 @property(nonatomic,retain) NSMutableArray* exercises;
 @property (nonatomic,assign)id<ExercisesSelectionDelegate>delegate;
-
+@property(nonatomic,strong)SharedData* theDataObject;
 @end

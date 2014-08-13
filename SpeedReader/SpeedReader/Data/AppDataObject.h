@@ -38,6 +38,8 @@
 @property(nonatomic,strong)NSString*key;
 @property(nonatomic,strong)UIImage* chooseImage;
 @property(nonatomic,strong)UserAccountForDB* loginUser;
+@property(nonatomic,strong)id selectPart;
+@property(nonatomic,assign)bool dismmisView;
 /*-(void)addPicker:(UIViewController*)view;
 @property(nonatomic,strong)UIImagePickerController* picker;
 @property(nonatomic,strong)UIViewController* tempView;*/
