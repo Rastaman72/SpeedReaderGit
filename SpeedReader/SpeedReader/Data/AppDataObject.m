@@ -199,64 +199,29 @@
     
     
     
-}/*
--(void)addPicker:(UIViewController*)view
+}
+
+
+- (NSString *)dataFilePath:(NSString*)fileName {
+    return [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
+}
+
+-(void)getExercisesText
 {
-    self.tempView=view;
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.tempView.view animated:YES];
-    hud.labelText = @"Loading picker";
+    NSError*error;
+    NSString *filePath = [self dataFilePath:@"exerciseTextsPL"];
+    NSData* excXml=[NSData dataWithContentsOfFile:filePath];
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:excXml options:0 error:&error];
+    NSArray *xmlPart = [doc.rootElement elementsForName:@"texts"];
     
-    dispatch_queue_t concurrentQueue =
-    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    
-    
-    dispatch_async(concurrentQueue, ^{
-        
-        self.picker = [[UIImagePickerController alloc] init];
-        self.picker.delegate = self;
-        self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-        self.picker.allowsEditing = NO;
-        
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [view presentViewController:self.picker animated:YES completion:nil];
-            [MBProgressHUD hideHUDForView:self.tempView.view animated:YES];
-        });
-        
-    });
+    for (GDataXMLElement *xmlElements in xmlPart) {
+        NSArray *names = [xmlElements elementsForName:@"text"];
+        self.allTextInApp=[[NSMutableArray alloc]initWithArray:names];
+        if (names.count > 0) {
+            GDataXMLElement *firstName = (GDataXMLElement *) [names objectAtIndex:0];
+            self.exercisesText=[[[firstName elementsForName:@"body"]firstObject]stringValue];
+            self.lastUsedText=[[[[firstName elementsForName:@"id"]firstObject]stringValue]intValue];
+        } else continue;
+    }
 }
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    [self.tempView dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-    UIImage *fullImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
-    
-    
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.tempView.view animated:YES];
-    hud.labelText = @"Adding image to app";
-    
-    dispatch_queue_t concurrentQueue =
-    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    
-    
-    dispatch_async(concurrentQueue, ^{
-        
-        self.chooseImage=fullImage;
-        NSString* description =[NSString stringWithFormat:@"image%d",(int)[self.imageUser count]];
-        [ImageForDB initAccountWithName:description andImage:fullImage];
-        [self createImageUserArray];
-        //[self.tempView.addAccountImageTable reloadData];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUDForView:self.tempView.view animated:YES];
-            //[self.addAccountImage setImage:self.theDataObject.chooseImage];
-        });
-    });
-    [self.tempView dismissViewControllerAnimated:YES completion:nil];
-}*/
-
-
-@end
+    @end

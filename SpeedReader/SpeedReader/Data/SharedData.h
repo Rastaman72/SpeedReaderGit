@@ -14,6 +14,10 @@
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 @property (nonatomic,strong)NSString* urlToFile;
 @property (nonatomic,strong)NSMutableArray* arrayUrlToFile;
+@property (nonatomic,strong)NSString* exercisesText;
+@property (nonatomic,assign)int lastUsedText;
+
+//-(void)getExercisesText;
 
 
 @end

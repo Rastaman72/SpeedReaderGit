@@ -40,6 +40,13 @@
 @property(nonatomic,strong)UserAccountForDB* loginUser;
 @property(nonatomic,strong)id selectPart;
 @property(nonatomic,assign)bool dismmisView;
+@property(nonatomic,strong)NSMutableArray* allTextInApp;
+@property (nonatomic,strong)NSString* exercisesText;
+@property (nonatomic,assign)int lastUsedText;
+
+
+-(void)getExercisesText;
+
 /*-(void)addPicker:(UIViewController*)view;
 @property(nonatomic,strong)UIImagePickerController* picker;
 @property(nonatomic,strong)UIViewController* tempView;*/

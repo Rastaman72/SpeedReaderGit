@@ -18,6 +18,7 @@
 		E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7031977FD2700846F31 /* DetailStatisticsViewController.m */; };
 		E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D7061977FD3E00846F31 /* StatisticsViewController.m */; };
 		E915D70B197804A400846F31 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D70A197804A400846F31 /* StartViewController.m */; };
+		E91D317F199CEBAB009ECD76 /* exerciseTextsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91D317E199CEBAB009ECD76 /* exerciseTextsPL.xml */; };
 		E91EF1E6198CF92A00069359 /* ListAccountToImportTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */; };
 		E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */; };
 		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
@@ -131,6 +132,7 @@
 		E915D7061977FD3E00846F31 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatisticsViewController.m; path = SpeedReader/ViewControllers/StatisticsViewController.m; sourceTree = "<group>"; };
 		E915D709197804A400846F31 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = SpeedReader/ViewControllers/StartViewController.h; sourceTree = "<group>"; };
 		E915D70A197804A400846F31 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = SpeedReader/ViewControllers/StartViewController.m; sourceTree = "<group>"; };
+		E91D317E199CEBAB009ECD76 /* exerciseTextsPL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = exerciseTextsPL.xml; sourceTree = "<group>"; };
 		E91EF1E4198CF92A00069359 /* ListAccountToImportTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListAccountToImportTableViewController.h; path = SpeedReader/ViewControllers/ListAccountToImportTableViewController.h; sourceTree = "<group>"; };
 		E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListAccountToImportTableViewController.m; path = SpeedReader/ViewControllers/ListAccountToImportTableViewController.m; sourceTree = "<group>"; };
 		E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedReader.xcdatamodel; sourceTree = "<group>"; };
@@ -415,6 +417,15 @@
 			name = StartView;
 			sourceTree = "<group>";
 		};
+		E91D317D199CEBAB009ECD76 /* ExercisesLanguageFile */ = {
+			isa = PBXGroup;
+			children = (
+				E91D317E199CEBAB009ECD76 /* exerciseTextsPL.xml */,
+			);
+			name = ExercisesLanguageFile;
+			path = SpeedReader/ExercisesLanguageFile;
+			sourceTree = "<group>";
+		};
 		E935AA181976EA4500409E7B /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +585,7 @@
 		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
+				E91D317D199CEBAB009ECD76 /* ExercisesLanguageFile */,
 				E9FE88DD1996361000C97A35 /* Images */,
 				E9AC08C2199000F400ACD0C5 /* DB */,
 				E9371E6F198D264C00DFCBF0 /* SharedData */,
@@ -775,6 +787,7 @@
 				E9E5141B1976A231001FDA03 /* Main_iPhone.storyboard in Resources */,
 				E9E514121976A231001FDA03 /* InfoPlist.strings in Resources */,
 				E9FE88E51996361000C97A35 /* image3.jpg in Resources */,
+				E91D317F199CEBAB009ECD76 /* exerciseTextsPL.xml in Resources */,
 				E9FE88E21996361000C97A35 /* image0.jpg in Resources */,
 				E9FE88E31996361000C97A35 /* image1.jpg in Resources */,
 				E9FE88E41996361000C97A35 /* image2.jpg in Resources */,

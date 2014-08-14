@@ -75,7 +75,7 @@
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:
            // [self.detailExercisesPartView setNeedsDisplay];
-           [self.detailExercisesPartView setFrame:CGRectMake(self.detailExercisesPartView.frame.origin.x,self.detailExercisesPartView.frame.origin.y,self.view.frame.size.width, self.view.frame.size.height)];
+         //  [self.detailExercisesPartView setFrame:CGRectMake(self.detailExercisesPartView.frame.origin.x,self.detailExercisesPartView.frame.origin.y,self.view.frame.size.width, self.view.frame.size.height)];
             break;
             
         default:

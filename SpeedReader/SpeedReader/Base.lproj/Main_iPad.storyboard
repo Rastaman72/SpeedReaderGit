@@ -227,11 +227,11 @@
             <objects>
                 <viewController id="0uU-tb-aSH" customClass="DetailExercisesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MDd-Kg-N0m">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="D0Q-up-rUp">
-                                <rect key="frame" x="0.0" y="23" width="703" height="44"/>
+                                <rect key="frame" x="0.0" y="23" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="LON-Jl-KrX">
@@ -251,12 +251,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="FHl-eT-JaR">
-                                <rect key="frame" x="22" y="90" width="164" height="128"/>
+                                <rect key="frame" x="25" y="90" width="164" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView contentMode="scaleToFill" id="NQB-Pq-g99">
-                                <rect key="frame" x="0.0" y="242" width="703" height="526"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="323" width="768" height="701"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="nlH-W6-JU1" kind="embed" identifier="ExercisesToPartView" id="5Jl-gh-mck"/>
@@ -264,7 +264,6 @@
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
                     <size key="freeformSize" width="703" height="768"/>
@@ -285,10 +284,9 @@
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="CFS-2g-7YM" customClass="RootExercisesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hib-Y3-NT8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="DtQ-gN-Ja9">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -331,7 +329,6 @@
                 <splitViewController id="0W6-7j-nca" customClass="ExercisesViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Exercises" id="t8e-wU-zgu"/>
                     <toolbarItems/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="qPA-nm-6pV" kind="relationship" relationship="masterViewController" id="eAe-PD-h0K"/>
                         <segue destination="0uU-tb-aSH" kind="relationship" relationship="detailViewController" id="ezC-mF-QWj"/>
@@ -1565,16 +1562,15 @@
             <objects>
                 <viewController storyboardIdentifier="EXC0" title="EXC0" modalPresentationStyle="currentContext" id="Lwi-b9-g7A" customClass="ExercisesZeroViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rgd-G2-o6h">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3.jpg" id="MbO-Tf-NXT">
-                                <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="uzi-Oh-WtC"/>
                 </viewController>
@@ -1587,7 +1583,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="6Bc-jz-nVr" customClass="ExercisesDispatcherViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ifm-ze-tnT">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B4I-mO-uWI">
@@ -1602,7 +1598,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="UBL-Ri-l9t"/>
@@ -1662,10 +1657,9 @@
             <objects>
                 <viewController id="RFQ-RD-NVT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cdu-5c-l5e">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="JRT-Pn-HmF"/>
                 </viewController>
@@ -1678,10 +1672,9 @@
             <objects>
                 <viewController id="unu-hB-438" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7TJ-cJ-thJ">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="XPt-xu-1BN"/>
                 </viewController>
@@ -1694,10 +1687,9 @@
             <objects>
                 <viewController id="75M-hL-8AL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTT-sC-DfL">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gl3-qK-R3p"/>
                 </viewController>
@@ -1710,10 +1702,9 @@
             <objects>
                 <viewController id="nBo-Dg-7Bg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbY-zM-mwF">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="EvD-9I-VxT"/>
                 </viewController>
@@ -1726,10 +1717,9 @@
             <objects>
                 <viewController id="q4E-TY-pHf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4t-a1-BXp">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="UPl-NM-e35"/>
                 </viewController>
@@ -1742,10 +1732,9 @@
             <objects>
                 <viewController id="b9A-co-ZrM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fcn-4C-oxY">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="dKA-4v-yWk"/>
                 </viewController>
@@ -1758,10 +1747,9 @@
             <objects>
                 <viewController id="bVT-Xj-bCw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LLm-dg-u8U">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ya4-Ej-trq"/>
                 </viewController>
@@ -1774,10 +1762,9 @@
             <objects>
                 <viewController id="fb1-38-smq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYC-vR-Efz">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="CYM-Ce-xN2"/>
                 </viewController>
@@ -1790,10 +1777,9 @@
             <objects>
                 <viewController id="RkY-p8-qB1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8IM-su-KcO">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="V9d-Q1-E9x"/>
                 </viewController>
@@ -1806,10 +1792,9 @@
             <objects>
                 <viewController id="V5N-oc-QPq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie8-M1-2Cc">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="wDi-Bf-ZiY"/>
                 </viewController>
@@ -1822,10 +1807,9 @@
             <objects>
                 <viewController id="via-B3-ZwS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kON-7P-2wP">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="6ib-um-1RZ"/>
                 </viewController>
@@ -1838,10 +1822,9 @@
             <objects>
                 <viewController id="QXl-CQ-aEb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPo-DJ-g0J">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="U26-G7-lZ1"/>
                 </viewController>
@@ -1854,10 +1837,9 @@
             <objects>
                 <viewController id="7lY-V6-KgW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKa-1e-yc2">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="9iO-ce-iXE"/>
                 </viewController>
@@ -1870,10 +1852,9 @@
             <objects>
                 <viewController id="2uz-yJ-sXB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUl-dN-9Nt">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jg9-4w-lRk"/>
                 </viewController>
@@ -1886,10 +1867,9 @@
             <objects>
                 <viewController id="JYX-OJ-Yfa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mB-hi-iDO">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="jeY-09-wVw"/>
                 </viewController>
@@ -1902,10 +1882,9 @@
             <objects>
                 <viewController id="huS-TG-jze" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9LC-hJ-oAH">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="qju-5p-K81"/>
                 </viewController>
@@ -1918,10 +1897,9 @@
             <objects>
                 <viewController id="9Ya-4h-bKu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EeS-r0-FJW">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="0Uv-rG-Y6e"/>
                 </viewController>
@@ -1934,10 +1912,9 @@
             <objects>
                 <viewController id="unN-Zp-1aj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQm-jg-KYs">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="agT-iv-MhU"/>
                 </viewController>
@@ -1950,10 +1927,9 @@
             <objects>
                 <viewController id="l7a-xk-Cli" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Elk-Wy-Nu7">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="YXG-KR-zIX"/>
                 </viewController>
@@ -1966,10 +1942,9 @@
             <objects>
                 <viewController id="xNc-Kg-dVo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVQ-b0-Fs8">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="4va-br-XKl"/>
                 </viewController>
@@ -1982,10 +1957,9 @@
             <objects>
                 <viewController id="hCe-wv-23Z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cIe-ou-15U">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="gSZ-XY-m9d"/>
                 </viewController>
@@ -1998,10 +1972,9 @@
             <objects>
                 <viewController id="Le0-f7-7rX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lb8-tW-c63">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qve-8Q-DIW"/>
                 </viewController>
@@ -2014,10 +1987,9 @@
             <objects>
                 <viewController id="Qvb-L6-WPg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hT-rm-6yx">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="7jT-8Y-jd1"/>
                 </viewController>
@@ -2030,10 +2002,9 @@
             <objects>
                 <viewController id="J1v-A3-lsf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Gf-1l-e0H">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="meb-6W-Ppr"/>
                 </viewController>
@@ -2046,10 +2017,9 @@
             <objects>
                 <viewController id="UKY-RG-iMG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tir-46-J8n">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="eOl-ej-qNN"/>
                 </viewController>
@@ -2062,10 +2032,9 @@
             <objects>
                 <viewController id="hZJ-fE-OeJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUL-Qq-UWQ">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="82E-W4-BDv"/>
                 </viewController>
@@ -2078,10 +2047,9 @@
             <objects>
                 <viewController id="Wdx-fe-NBe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LkU-zl-XON">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pam-7u-OL9"/>
                 </viewController>
@@ -2094,10 +2062,9 @@
             <objects>
                 <viewController id="atm-wH-f6H" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cu-JN-iOM">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="c0L-6P-pVB"/>
                 </viewController>
@@ -2110,10 +2077,9 @@
             <objects>
                 <viewController id="nZu-N1-qab" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ay6-iQ-aSb">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pok-bP-q1g"/>
                 </viewController>
@@ -2126,10 +2092,9 @@
             <objects>
                 <viewController id="cWS-R0-ENP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jnA-CH-Iq2">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="ACa-l6-wgZ"/>
                 </viewController>
@@ -2142,10 +2107,9 @@
             <objects>
                 <viewController id="c1h-yy-rrL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ly4-2J-FHD">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="BUF-NY-Kpd"/>
                 </viewController>
@@ -2158,10 +2122,9 @@
             <objects>
                 <viewController id="OId-z1-Vrf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AlU-FT-gkh">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="zH8-hi-5wM"/>
                 </viewController>
@@ -2174,10 +2137,9 @@
             <objects>
                 <viewController id="VzO-3a-mFh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vio-Qr-oRp">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="0bo-LU-Oh8"/>
                 </viewController>
@@ -2190,10 +2152,9 @@
             <objects>
                 <viewController id="mFd-qA-JX3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSZ-xR-FmL">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="exW-Lc-4dR"/>
                 </viewController>
@@ -2206,10 +2167,9 @@
             <objects>
                 <viewController id="Dgb-bj-KXZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpx-NL-7xE">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="UCs-IA-SM6"/>
                 </viewController>
@@ -2222,10 +2182,9 @@
             <objects>
                 <viewController id="5Qf-wu-FZM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32o-Kv-SPG">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="JQC-WK-LDg"/>
                 </viewController>
@@ -2238,10 +2197,9 @@
             <objects>
                 <viewController id="TC7-H8-cKy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9R-aP-C9f">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="uKD-7h-b6T"/>
                 </viewController>
@@ -2254,10 +2212,9 @@
             <objects>
                 <viewController id="NO4-GZ-c89" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXj-96-ZQY">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="mtT-YI-1jx"/>
                 </viewController>
@@ -2270,10 +2227,9 @@
             <objects>
                 <viewController id="2Sh-zE-zt6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49q-Su-1LF">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="vfe-Pn-Wlu"/>
                 </viewController>
@@ -2286,10 +2242,9 @@
             <objects>
                 <viewController id="DfW-E2-2W1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZ9-OH-eBR">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEq-zN-TMm"/>
                 </viewController>
@@ -2302,7 +2257,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC1" title="EXC1" modalPresentationStyle="currentContext" id="jVJ-Sq-pTK" customClass="ExerciseOneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fT-pE-jNa">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelexc1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0H0-b9-cBd">
@@ -2311,22 +2266,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelEXC!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8sT-Zf-I89">
-                                <rect key="frame" x="109" y="472" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.jpg" highlightedImage="image0.jpg" id="dVw-Rk-k4i">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="738"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="xag-f6-0ld">
+                                <rect key="frame" x="65" y="0.0" width="573" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jVJ-Sq-pTK" id="pjj-8R-28R"/>
+                                </connections>
+                            </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="10" maxValue="40" id="sa1-xt-EyV">
+                                <rect key="frame" x="517" y="651" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="sizeChanged:" destination="jVJ-Sq-pTK" eventType="valueChanged" id="KhZ-kC-SWb"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <connections>
-                        <outlet property="exercisesOneTest" destination="8sT-Zf-I89" id="5LH-wC-Sgg"/>
+                        <outlet property="exercisesOneSizeSlider" destination="sa1-xt-EyV" id="tU9-n2-TWi"/>
+                        <outlet property="exercisesOneText" destination="xag-f6-0ld" id="Fsi-nG-sB0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWt-EM-U0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2338,7 +2301,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC2" modalPresentationStyle="currentContext" id="3i9-ZX-huw" customClass="ExercisesTwoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Es6-pl-jaH">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelaEXC2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PTS-cA-bQo">
@@ -2349,7 +2312,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKB-PP-p8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2361,10 +2323,9 @@
             <objects>
                 <viewController id="zJg-KD-PN5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzh-pq-heQ">
-                        <rect key="frame" x="0.0" y="0.0" width="703" height="526"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" id="rpG-Kv-2fN"/>
                 </viewController>
@@ -2394,8 +2355,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="image0.jpg" width="300" height="300"/>
-        <image name="image1.jpg" width="300" height="300"/>
         <image name="image3.jpg" width="300" height="300"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

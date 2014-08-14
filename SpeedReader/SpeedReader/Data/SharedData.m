@@ -9,4 +9,11 @@
 #import "SharedData.h"
 
 @implementation SharedData
+/*-(void)getExercisesText
+{
+    NSError*error;
+    NSData* excXml=[NSData dataWithContentsOfFile:@"exerciseTextsPL.xml"];
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:excXml options:0 error:&error];
+    NSLog(@"%@", doc.rootElement);
+}*/
 @end
