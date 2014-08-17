@@ -2266,8 +2266,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="xag-f6-0ld">
-                                <rect key="frame" x="65" y="0.0" width="573" height="607"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="xag-f6-0ld">
+                                <rect key="frame" x="98" y="0.0" width="573" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2278,18 +2278,37 @@
                                 </connections>
                             </textView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="10" maxValue="40" id="sa1-xt-EyV">
-                                <rect key="frame" x="517" y="651" width="118" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <rect key="frame" x="513" y="599" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sizeChanged:" destination="jVJ-Sq-pTK" eventType="valueChanged" id="KhZ-kC-SWb"/>
+                                    <action selector="sizeChanged:" destination="jVJ-Sq-pTK" eventType="touchUpInside" id="tbB-cv-nWm"/>
                                 </connections>
                             </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="500" maxValue="3000" id="FTS-gw-38o">
+                                <rect key="frame" x="96" y="599" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="timeChanged:" destination="jVJ-Sq-pTK" eventType="touchUpInside" id="K8I-iW-uKU"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pHQ-cv-G6x">
+                                <rect key="frame" x="361" y="599" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="jVJ-Sq-pTK" eventType="touchUpInside" id="G6I-9Y-6LI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="exercisesOneSizeSlider" destination="sa1-xt-EyV" id="tU9-n2-TWi"/>
+                        <outlet property="exercisesOneStartButton" destination="pHQ-cv-G6x" id="8dV-1d-x3q"/>
                         <outlet property="exercisesOneText" destination="xag-f6-0ld" id="Fsi-nG-sB0"/>
+                        <outlet property="exercisesOneTimeSlider" destination="FTS-gw-38o" id="NOg-KS-qlj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWt-EM-U0y" userLabel="First Responder" sceneMemberID="firstResponder"/>

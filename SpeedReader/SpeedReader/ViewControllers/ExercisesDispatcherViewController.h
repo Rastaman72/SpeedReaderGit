@@ -12,7 +12,7 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 #import "ExercisesData.h"
-@interface ExercisesDispatcherViewController : UIViewController
+@interface ExercisesDispatcherViewController : UIViewController<UITextFieldDelegate>
 - (IBAction)push:(id)sender;
 @property(nonatomic,strong)SharedData* theDataObject;
 -(void)test;

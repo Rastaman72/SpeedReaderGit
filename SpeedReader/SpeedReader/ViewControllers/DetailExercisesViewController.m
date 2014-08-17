@@ -192,4 +192,10 @@
       [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+}
+
 @end

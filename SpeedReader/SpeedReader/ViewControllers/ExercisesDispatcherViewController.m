@@ -100,4 +100,12 @@
     [self performSegueWithIdentifier:@"EXC1" sender:self];
 
 }
+
+
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+}
 @end

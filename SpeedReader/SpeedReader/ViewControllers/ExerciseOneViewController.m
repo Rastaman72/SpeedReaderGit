@@ -23,25 +23,91 @@
     return self;
 }
 
+- (void)resetView
+{
+    self.exercisesOneText.text=nil;
+    self.exercisesOneText.text=self.xmlManager.exercisesText;
+    [self.exercisesOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.exercisesOneSizeSlider.value]];
+    [self.exercisesOneText setContentOffset:CGPointZero animated:YES];
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer = nil;
+    self.position=0;
+}
+
 -(void)viewWillDisappear:(BOOL)animated
 {
-   // [self dismissViewControllerAnimated:NO completion:nil];
+
 [self.navigationController dismissViewControllerAnimated:NO completion:nil];
+    [self resetView];
+    
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.xmlManager=[self theAppDataObject];
     [self.xmlManager getExercisesText];
     self.exercisesOneText.text=self.xmlManager.exercisesText;
-    [self.exercisesOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size:18.0f]];
     
+    
+    float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesOneSizeSlider.value]description]floatValue];
+  
+    [self.exercisesOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
+    
+    self.size = [self.exercisesOneText.text sizeWithFont:self.exercisesOneText.font
+                                       constrainedToSize:self.exercisesOneText.frame.size
+                                           lineBreakMode:NSLineBreakByWordWrapping]; // default mode
+    float numberOfLines = self.size.height / self.exercisesOneText.font.lineHeight;
+   
+    NSLog(@"%f",self.exercisesOneText.font.lineHeight);
+    self.maxPosition=self.exercisesOneText.font.lineHeight*numberOfLines;
+    
+      self.actuallOffset=self.maxPosition;
     self.position=0;
+    
+    self.exercisesOneText.scrollEnabled=NO;
    
     
+}
+
+
+- (void) autoscrollTimerFired
+{
+    NSLog(@"%f",self.exercisesOneText.contentSize.height);
+    if(self.position >=self.exercisesOneText.contentSize.height)
+     {
+     [self.scrollingTimer invalidate];
+     self.scrollingTimer = nil;
+         return;
+     }
+    NSLog(@"%f",self.exercisesOneText.contentSize.height);
     
+       if (self.position>=self.maxPosition-self.exercisesOneText.font.lineHeight && self.maxPosition<self.exercisesOneText.contentSize.height )
+       {
+        [self.exercisesOneText setContentOffset:CGPointMake(0, self.maxPosition) animated:YES];
+        self.maxPosition+=self.actuallOffset;
+          self.done=YES;
+    }
+    else
+    {
+        [self createFrame];
+        
+        if (self.position==0) {
+            [[[self exercisesOneText]layer]insertSublayer:self.readFrame atIndex:0];
+
+        }
+      
+        
+   [[[self exercisesOneText]layer]replaceSublayer:[self.exercisesOneText.layer.sublayers objectAtIndex:0] with:self.readFrame];
+        
+    self.position+=self.exercisesOneText.font.lineHeight*2;
+    }
+   for (id test in self.exercisesOneText.layer.sublayers) {
+        NSLog(@"%@",test);
+    }
+    
+    //}
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,57 +123,74 @@
 	theDataObject = (SharedData*) theDelegate.theAppDataObject;
 	return theDataObject;
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)countMaxPosition {
+    CGSize size = [self.exercisesOneText.text sizeWithFont:self.exercisesOneText.font
+                                         constrainedToSize:self.exercisesOneText.frame.size
+                                             lineBreakMode:NSLineBreakByWordWrapping]; // default mode
+    float numberOfLines = size.height / self.exercisesOneText.font.lineHeight;
+    self.maxPosition=self.exercisesOneText.font.lineHeight*numberOfLines;
+    self.actuallOffset=self.maxPosition;
 }
-*/
+
 
 - (IBAction)sizeChanged:(id)sender {
     
-     
-   
-          /*  NSMutableAttributedString *aStr = [[NSMutableAttributedString alloc] initWithString:self.exercisesOneText.text];
     
-        [aStr addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:NSMakeRange(0, 15)];
-        
-        [aStr addAttribute:NSFontAttributeName value: range:NSMakeRange(0, aStr.length)];
-        self.exercisesOneText.attributedText=aStr;
-        NSLog(@"%f",self.exercisesOneText.font.lineHeight);*/
     
+    
+     [self resetView];
+        [self countMaxPosition];
+     [self createFrame];
+    [[[self exercisesOneText]layer]replaceSublayer:[self.exercisesOneText.layer.sublayers objectAtIndex:0] with:nil];
+ 
+}
 
-    [self.exercisesOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.exercisesOneSizeSlider.value]];
+
+
+- (IBAction)timeChanged:(id)sender {
     
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer = nil;
     
+   self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.exercisesOneTimeSlider.value/1000)
+                                                          target:self selector:@selector(autoscrollTimerFired) userInfo:nil repeats:YES];
+}
+
+
+
+-(void)createFrame
+{
     CGRect Rect = CGRectMake(0, 5+self.position, self.exercisesOneText.frame.size.width, self.exercisesOneText.font.lineHeight*2);
     
     
-    CALayer* roundRect = [CALayer layer];
-    [roundRect setFrame:Rect];
-    [roundRect setBounds:Rect];
+    self.readFrame = [CALayer layer];
+    [self.readFrame setFrame:Rect];
+    [self.readFrame setBounds:Rect];
     
-    [roundRect setCornerRadius:5.0f];
-    [roundRect setBackgroundColor:[[UIColor blueColor]CGColor]];
-    [roundRect setOpacity:0.2f];
-    [roundRect setBorderColor:[[UIColor blackColor]CGColor]];
-    [roundRect setBorderWidth:3.0f];
-    [roundRect setShadowColor:[[UIColor blackColor]CGColor]];
-    /* [roundRect setShadowOffset:CGSizeMake(20.0f, 20.0f)];
-     [roundRect setShadowOpacity:1.0f];
-     [roundRect setShadowRadius:10.0f];
-     */
-    [[[self exercisesOneText]layer]addSublayer:roundRect];
-    
-    [[[self exercisesOneText]layer]replaceSublayer:[self.exercisesOneText.layer.sublayers firstObject] with:roundRect];
-    self.position+=self.exercisesOneText.font.lineHeight*2;
+    [self.readFrame setCornerRadius:5.0f];
+    [self.readFrame setBackgroundColor:[[UIColor blueColor]CGColor]];
+    [self.readFrame setOpacity:0.2f];
+    [self.readFrame setBorderColor:[[UIColor blackColor]CGColor]];
+    [self.readFrame setBorderWidth:3.0f];
+    [self.readFrame setShadowColor:[[UIColor blackColor]CGColor]];
+   
 
 }
 
+- (IBAction)startPush:(id)sender {
+    if (self.scrollingTimer == nil)
+    {
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.exercisesOneTimeSlider.value/1000)
+                                                               target:self selector:@selector(autoscrollTimerFired) userInfo:nil repeats:YES];
+    }
+    else
+    {
+        [self.scrollingTimer invalidate];
+        self.scrollingTimer = nil;
+
+    }
+}
 
 
 @end

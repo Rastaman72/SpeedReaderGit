@@ -13,7 +13,7 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @class ExercisesData;
-@interface DetailExercisesViewController : UIViewController<ExercisesSelectionDelegate,UISplitViewControllerDelegate>
+@interface DetailExercisesViewController : UIViewController<ExercisesSelectionDelegate,UISplitViewControllerDelegate,UITextFieldDelegate>
 
 @property(nonatomic,retain)ExercisesData* exercisesData;
 @property (weak, nonatomic) IBOutlet UIImageView *detailExercisesUserImage;
