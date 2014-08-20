@@ -23,6 +23,7 @@
     self.theAppDataObject.actuallUserList=[[NSMutableArray alloc]init];
     self.theAppDataObject.importUserList=[[NSMutableArray alloc]init];
     [self.theAppDataObject createImageUserArray];
+    [self.theAppDataObject getExercisesWords];
     
 
     // Override point for customization after application launch.

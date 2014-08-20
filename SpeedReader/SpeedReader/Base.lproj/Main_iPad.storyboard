@@ -1682,10 +1682,10 @@
             </objects>
             <point key="canvasLocation" x="7943" y="-2777"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercises Twelv View Controller-->
         <scene sceneID="6mO-pK-2kD">
             <objects>
-                <viewController id="75M-hL-8AL" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC12" storyboardIdentifier="EXC12" modalPresentationStyle="currentContext" id="75M-hL-8AL" customClass="ExercisesTwelvViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTT-sC-DfL">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1695,7 +1695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK8-ct-vHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7951" y="-1609"/>
+            <point key="canvasLocation" x="7955" y="-1601"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="erp-Wi-eNp">
@@ -2177,16 +2177,40 @@
             </objects>
             <point key="canvasLocation" x="8991" y="-2785"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercises Five View Controller-->
         <scene sceneID="UX7-Aq-Jqr">
             <objects>
-                <viewController id="5Qf-wu-FZM" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC5" storyboardIdentifier="EXC5" modalPresentationStyle="currentContext" id="5Qf-wu-FZM" customClass="ExercisesFiveViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32o-Kv-SPG">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L7l-bE-14f">
+                                <rect key="frame" x="361" y="651" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="5Qf-wu-FZM" eventType="touchUpInside" id="ozQ-2c-rdu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="gI3-o9-Xha">
+                                <rect key="frame" x="100" y="0.0" width="568" height="613"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="JQC-WK-LDg"/>
+                    <connections>
+                        <outlet property="exercisesFiveStartButton" destination="L7l-bE-14f" id="2MO-X2-F8e"/>
+                        <outlet property="exercisesFiveText" destination="gI3-o9-Xha" id="Q41-lK-DOL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohJ-S4-kV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2195,7 +2219,7 @@
         <!--View Controller-->
         <scene sceneID="VXw-sp-fux">
             <objects>
-                <viewController id="TC7-H8-cKy" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC6" storyboardIdentifier="EXC6" id="TC7-H8-cKy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9R-aP-C9f">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2207,16 +2231,40 @@
             </objects>
             <point key="canvasLocation" x="9911" y="-3817"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercises Seven View Controller-->
         <scene sceneID="jbM-zz-MYN">
             <objects>
-                <viewController id="NO4-GZ-c89" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC7" storyboardIdentifier="EXC7" modalPresentationStyle="currentContext" id="NO4-GZ-c89" customClass="ExercisesSevenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXj-96-ZQY">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D8Z-Qz-8SJ">
+                                <rect key="frame" x="361" y="632" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="NO4-GZ-c89" eventType="touchUpInside" id="RYH-5j-LjA"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" id="TrM-Rf-Qv3">
+                                <rect key="frame" x="84" y="0.0" width="600" height="600"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mtT-YI-1jx"/>
+                    <connections>
+                        <outlet property="exercisesSevenStartButton" destination="D8Z-Qz-8SJ" id="fOf-48-43k"/>
+                        <outlet property="exercisesSevenText" destination="TrM-Rf-Qv3" id="ukF-ce-gm9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1Y-6V-DZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2237,16 +2285,33 @@
             </objects>
             <point key="canvasLocation" x="11799" y="-3761"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercises Nine View Controller-->
         <scene sceneID="8RF-i6-ZY3">
             <objects>
-                <viewController id="DfW-E2-2W1" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC9" storyboardIdentifier="EXC9" modalPresentationStyle="currentContext" id="DfW-E2-2W1" customClass="ExercisesNineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZ9-OH-eBR">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" id="0jK-7P-RJD" customClass="DrawAnimation">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="fas-rL-tfa">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEq-zN-TMm"/>
+                    <connections>
+                        <outlet property="exercisesNineAnimationView" destination="0jK-7P-RJD" id="iN3-Df-VBH"/>
+                        <outlet property="exercisesNineText" destination="fas-rL-tfa" id="abg-li-MIO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8c-fy-mhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2337,16 +2402,67 @@
             </objects>
             <point key="canvasLocation" x="9077" y="-4783"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise Three View Controller-->
         <scene sceneID="Axa-22-Wcb">
             <objects>
-                <viewController id="zJg-KD-PN5" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC3" storyboardIdentifier="EXC3" modalPresentationStyle="currentContext" id="zJg-KD-PN5" customClass="ExerciseThreeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzh-pq-heQ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="R86-e9-A9o">
+                                <rect key="frame" x="98" y="0.0" width="573" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="zJg-KD-PN5" id="cgq-zB-8cc"/>
+                                </connections>
+                            </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="10" maxValue="40" id="dsx-eO-yjX">
+                                <rect key="frame" x="513" y="600" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sizeChanged:" destination="zJg-KD-PN5" eventType="touchUpInside" id="BNs-gx-9Lu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="500" maxValue="3000" id="UuO-rR-0gm">
+                                <rect key="frame" x="96" y="600" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="timeChanged:" destination="zJg-KD-PN5" eventType="touchUpInside" id="Q0B-6Q-dq1"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lxI-S6-KxN">
+                                <rect key="frame" x="361" y="623" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="zJg-KD-PN5" eventType="touchUpInside" id="fmq-ct-Ur6"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="3" id="gda-N1-yZ8">
+                                <rect key="frame" x="325" y="565" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="jumpChange:" destination="zJg-KD-PN5" eventType="touchUpInside" id="02t-t3-rfc"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rpG-Kv-2fN"/>
+                    <connections>
+                        <outlet property="exercisesThreeJumpSlider" destination="gda-N1-yZ8" id="JWS-Yh-dih"/>
+                        <outlet property="exercisesThreeSizeSlider" destination="dsx-eO-yjX" id="XK5-lR-eqW"/>
+                        <outlet property="exercisesThreeStartButton" destination="lxI-S6-KxN" id="pxl-hy-kto"/>
+                        <outlet property="exercisesThreeText" destination="R86-e9-A9o" id="aTu-kY-TTW"/>
+                        <outlet property="exercisesThreeTimeSlider" destination="UuO-rR-0gm" id="nb6-Ty-8mM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-NX-6cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

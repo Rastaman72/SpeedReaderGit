@@ -182,12 +182,7 @@
         [ImageForDB initAccountWithName:@"image1" andImage:[UIImage imageNamed:@"image1.jpg"]];
         [ImageForDB initAccountWithName:@"image2" andImage:[UIImage imageNamed:@"image2.jpg"]];
         [ImageForDB initAccountWithName:@"image3" andImage:[UIImage imageNamed:@"image3.jpg"]];
-        
-       /* [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image0" andImage:[UIImage imageNamed:@"image0.jpg"] ] forKey:@"image0"];
-        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image1" andImage:[UIImage imageNamed:@"image1.jpg"] ] forKey:@"image1"];
-        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image2" andImage:[UIImage imageNamed:@"image2.jpg"] ] forKey:@"image2"];
-        [self.imageUser setObject:[[ImageForDB alloc]initAccountWithName:@"image3" andImage:[UIImage imageNamed:@"image3.jpg"] ] forKey:@"image3"];
-        */
+    
         self.imageUser=[self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
 
     }
@@ -223,5 +218,136 @@
             self.lastUsedText=[[[[firstName elementsForName:@"id"]firstObject]stringValue]intValue];
         } else continue;
     }
+}
+
+
+-(void)getExercisesWords
+{
+    NSError*error;
+    NSString *filePath = [self dataFilePath:@"wordsPL"];
+    NSData* excXml=[NSData dataWithContentsOfFile:filePath];
+    GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:excXml options:0 error:&error];
+    //NSArray *xmlPart = [doc.rootElement elementsForName:@"word"];
+    
+    //int wordCounter=3;
+    for (int i=3; i<=10; i++)
+    {
+        
+   
+    NSString*path=[NSString stringWithFormat:@"//word[@length=\"%d\"]",i];
+     NSArray *xmlPart1=[doc nodesForXPath:path error:&error];
+    switch (i) {
+        case 3:
+        {
+            self.allWords3InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 4:
+        {
+            self.allWords4InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 5:
+        {
+            self.allWords5InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 6:
+        {
+            self.allWords6InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 7:
+        {
+            self.allWords7InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 8:
+        {
+            self.allWords8InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 9:
+        {
+            self.allWords9InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+        case 10:
+        {
+            self.allWords10InApp=[[NSMutableArray alloc]initWithArray:xmlPart1 copyItems:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    }
+    //NSLog(@"%@",xmlPart1);
+    
+    //self.allWordsInApp=[[NSMutableArray alloc]init];
+   /* for (GDataXMLElement *xmlElements in xmlPart) {
+    //    NSLog(@"%@",[xmlElements stringValue]);
+        [self.allWordsInApp addObject:[xmlElements stringValue]];
+//        NSArray *names = [xmlElements elementsForName:@"text"];
+//        self.allTextInApp=[[NSMutableArray alloc]initWithArray:names];
+//        if (names.count > 0) {
+//            GDataXMLElement *firstName = (GDataXMLElement *) [names objectAtIndex:0];
+//            self.exercisesText=[[[firstName elementsForName:@"body"]firstObject]stringValue];
+//            self.lastUsedText=[[[[firstName elementsForName:@"id"]firstObject]stringValue]intValue];
+//        } else continue;
+    }*/
+}
+-(NSString*)getWord:(int)length
+{
+   // length=4;
+    //NSMutableArray* wordsArray=[[NSMutableArray alloc]init];
+    switch (length) {
+        case 3:
+              NSLog(@"%@",[self.allWords3InApp[arc4random() % [self.allWords3InApp count]]stringValue]);
+            return [self.allWords3InApp[arc4random() % [self.allWords3InApp count]]stringValue];
+          
+            break;
+        case 4:
+        {
+            NSLog(@"%@",[self.allWords4InApp[arc4random() % [self.allWords4InApp count]]stringValue]);
+            return [self.allWords4InApp[arc4random() % [self.allWords4InApp count]]stringValue];
+            break;
+        }
+        case 5:
+            NSLog(@"%@",[self.allWords5InApp[arc4random() % [self.allWords5InApp count]]stringValue]);
+
+            return [self.allWords5InApp[arc4random() % [self.allWords5InApp count]]stringValue];
+            break;
+        case 6:
+            NSLog(@"%@",[self.allWords6InApp[arc4random() % [self.allWords6InApp count]]stringValue]);
+            
+            return [self.allWords6InApp[arc4random() % [self.allWords6InApp count]]stringValue];
+           break;
+        case 7:
+            NSLog(@"%@",[self.allWords7InApp[arc4random() % [self.allWords7InApp count]]stringValue]);
+            
+            return [self.allWords7InApp[arc4random() % [self.allWords7InApp count]]stringValue];
+break;
+        case 8:
+            NSLog(@"%@",[self.allWords8InApp[arc4random() % [self.allWords8InApp count]]stringValue]);
+            
+            return [self.allWords8InApp[arc4random() % [self.allWords8InApp count]]stringValue];
+           break;
+        case 9:
+            NSLog(@"%@",[self.allWords9InApp[arc4random() % [self.allWords9InApp count]]stringValue]);
+
+            return [self.allWords9InApp[arc4random() % [self.allWords9InApp count]]stringValue];
+            break;
+        case 10:
+            NSLog(@"%@",[self.allWords10InApp[arc4random() % [self.allWords10InApp count]]stringValue]);
+
+            return [self.allWords10InApp[arc4random() % [self.allWords10InApp count]]stringValue];
+            break;
+            
+        default:
+            break;
+    }
+
+    return nil;
 }
     @end

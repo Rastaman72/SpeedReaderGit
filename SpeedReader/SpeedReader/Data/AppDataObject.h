@@ -43,10 +43,18 @@
 @property(nonatomic,strong)NSMutableArray* allTextInApp;
 @property (nonatomic,strong)NSString* exercisesText;
 @property (nonatomic,assign)int lastUsedText;
-
+@property(nonatomic,strong)NSMutableArray* allWords3InApp;
+@property(nonatomic,strong)NSMutableArray* allWords4InApp;
+@property(nonatomic,strong)NSMutableArray* allWords5InApp;
+@property(nonatomic,strong)NSMutableArray* allWords6InApp;
+@property(nonatomic,strong)NSMutableArray* allWords7InApp;
+@property(nonatomic,strong)NSMutableArray* allWords8InApp;
+@property(nonatomic,strong)NSMutableArray* allWords9InApp;
+@property(nonatomic,strong)NSMutableArray* allWords10InApp;
 
 -(void)getExercisesText;
-
+-(void)getExercisesWords;
+-(NSMutableArray*)getWord:(int)length;
 /*-(void)addPicker:(UIViewController*)view;
 @property(nonatomic,strong)UIImagePickerController* picker;
 @property(nonatomic,strong)UIViewController* tempView;*/

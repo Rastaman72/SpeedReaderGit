@@ -142,8 +142,11 @@
      [self resetView];
         [self countMaxPosition];
      [self createFrame];
+    if(self.startPush)
+    {
     [[[self exercisesOneText]layer]replaceSublayer:[self.exercisesOneText.layer.sublayers objectAtIndex:0] with:nil];
- 
+        self.startPush=NO;
+    }
 }
 
 
@@ -190,6 +193,7 @@
         self.scrollingTimer = nil;
 
     }
+    self.startPush=YES;
 }
 
 
