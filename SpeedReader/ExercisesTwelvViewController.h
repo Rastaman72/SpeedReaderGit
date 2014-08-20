@@ -11,4 +11,7 @@
 @interface ExercisesTwelvViewController : UIViewController
 @property(nonatomic,strong)NSMutableDictionary* pointsArray;
 @property(nonatomic,assign)int animFinish;
+@property(nonatomic,assign)bool forward;
+@property(nonatomic,assign)int increaseDistance;
+@property(nonatomic,strong)NSTimer* scrollingTimer;
 @end

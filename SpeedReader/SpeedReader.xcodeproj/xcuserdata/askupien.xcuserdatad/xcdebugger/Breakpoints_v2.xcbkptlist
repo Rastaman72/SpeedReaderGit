@@ -566,22 +566,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SpeedReader/ViewControllers/ExercisesFiveViewController.m"
-            timestampString = "430142014.14106"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -746,12 +730,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430239582.139971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "-createPoints"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "-returnObjectToBegin"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -762,12 +746,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430239582.139971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-createPoints"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "@implementation ExercisesTwelvViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExercisesTwelvViewController.m"
+            timestampString = "430239582.139971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "-returnObjectToBegin"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -778,12 +778,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430239582.139971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-createPoints"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "-animationDidStop:finished:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -794,12 +794,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430239582.139971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-createPoints"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "-animationDidStop:finished:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -810,12 +810,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430239582.139971"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "-createPoints"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "-animationDidStop:finished:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -826,12 +826,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222563.428326"
+            timestampString = "430237075.309535"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "-createPoints"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "-createForwardPath:i:forward:increaseOffset:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -842,11 +842,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ExercisesTwelvViewController.m"
-            timestampString = "430222755.012219"
+            timestampString = "430237214.031665"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "-addAnimationToPoint"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExercisesTwelvViewController.m"
+            timestampString = "430239582.139971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "@implementation ExercisesTwelvViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExercisesTwelvViewController.m"
+            timestampString = "430239637.131187"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "-animationDidStop:finished:"
             landmarkType = "5">
          </BreakpointContent>
