@@ -35,6 +35,36 @@
         [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 12" description:@"Twelfth Exercises" number:12]];
         [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 13" description:@"Thirteenth Exercises" number:13]];
         [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 14" description:@"Fouthteenth Exercises" number:14]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 15" description:@"Fouthteenth Exercises" number:15]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 16" description:@"Fouthteenth Exercises" number:16]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 17" description:@"Fouthteenth Exercises" number:17]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 18" description:@"Fouthteenth Exercises" number:18]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 19" description:@"Fouthteenth Exercises" number:19]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 20" description:@"Fouthteenth Exercises" number:20]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 21" description:@"Fouthteenth Exercises" number:21]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 22" description:@"Fouthteenth Exercises" number:22]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 23" description:@"Fouthteenth Exercises" number:23]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 24" description:@"Fouthteenth Exercises" number:24]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 25" description:@"Fouthteenth Exercises" number:25]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 26" description:@"Fouthteenth Exercises" number:26]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 27" description:@"Fouthteenth Exercises" number:27]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 28" description:@"Fouthteenth Exercises" number:28]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 29" description:@"Thirteenth Exercises" number:29]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 30" description:@"Fouthteenth Exercises" number:30]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 31" description:@"Fouthteenth Exercises" number:31]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 32" description:@"Fouthteenth Exercises" number:32]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 33" description:@"Fouthteenth Exercises" number:33]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 34" description:@"Fouthteenth Exercises" number:34]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 35" description:@"Fouthteenth Exercises" number:35]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 36" description:@"Fouthteenth Exercises" number:36]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 37" description:@"Fouthteenth Exercises" number:37]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 38" description:@"Fouthteenth Exercises" number:38]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 39" description:@"Fouthteenth Exercises" number:39]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 40" description:@"Fouthteenth Exercises" number:40]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 41" description:@"Fouthteenth Exercises" number:41]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 42" description:@"Fouthteenth Exercises" number:42]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 43" description:@"Fouthteenth Exercises" number:43]];
+        [_exercises addObject:[ExercisesData newExercisesWithName:@"Exercises 44" description:@"Fouthteenth Exercises" number:44]];
         
     }
     return self;

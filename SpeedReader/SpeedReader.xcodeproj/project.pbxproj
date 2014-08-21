@@ -10,6 +10,7 @@
 		E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E90248DB197D42CF004ADAEC /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E9054AB11997989300AC077D /* ImageForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9054AB01997989300AC077D /* ImageForDB.m */; };
 		E9074B9019A0B69E00009557 /* ExerciseThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9074B8F19A0B69E00009557 /* ExerciseThreeViewController.m */; };
+		E90C5E7D19A601C8008D88F4 /* ExercisesFifthteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */; };
 		E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6ED1977F3B100846F31 /* ExercisesData.m */; };
 		E915D6F21977F48A00846F31 /* RootExercisesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F11977F48A00846F31 /* RootExercisesTableViewController.m */; };
 		E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6F41977F4A400846F31 /* DetailExercisesViewController.m */; };
@@ -123,6 +124,8 @@
 		E9054AB01997989300AC077D /* ImageForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageForDB.m; path = SpeedReader/Data/ImageForDB.m; sourceTree = "<group>"; };
 		E9074B8E19A0B69E00009557 /* ExerciseThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseThreeViewController.h; path = SpeedReader/ViewControllers/ExerciseThreeViewController.h; sourceTree = "<group>"; };
 		E9074B8F19A0B69E00009557 /* ExerciseThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseThreeViewController.m; path = SpeedReader/ViewControllers/ExerciseThreeViewController.m; sourceTree = "<group>"; };
+		E90C5E7B19A601C8008D88F4 /* ExercisesFifthteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesFifthteenViewController.h; path = SpeedReader/ViewControllers/ExercisesFifthteenViewController.h; sourceTree = "<group>"; };
+		E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesFifthteenViewController.m; path = SpeedReader/ViewControllers/ExercisesFifthteenViewController.m; sourceTree = "<group>"; };
 		E915D6EC1977F3B100846F31 /* ExercisesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesData.h; path = SpeedReader/Data/ExercisesData.h; sourceTree = "<group>"; };
 		E915D6ED1977F3B100846F31 /* ExercisesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesData.m; path = SpeedReader/Data/ExercisesData.m; sourceTree = "<group>"; };
 		E915D6EF1977F3D100846F31 /* ExercisesSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ExercisesSelectionDelegate.h; path = SpeedReader/Data/ExercisesSelectionDelegate.h; sourceTree = "<group>"; };
@@ -606,6 +609,8 @@
 				E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */,
 				E939DCF219A4709F00967E4A /* ExercisesTwelvViewController.h */,
 				E939DCF319A4709F00967E4A /* ExercisesTwelvViewController.m */,
+				E90C5E7B19A601C8008D88F4 /* ExercisesFifthteenViewController.h */,
+				E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -901,6 +906,7 @@
 				E9074B9019A0B69E00009557 /* ExerciseThreeViewController.m in Sources */,
 				E9FE88DC1996304800C97A35 /* ImageTableViewCell.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
+				E90C5E7D19A601C8008D88F4 /* ExercisesFifthteenViewController.m in Sources */,
 				E93BC5C219815FA700DE3408 /* inflate.c in Sources */,
 				E93BC5BC19815FA700DE3408 /* gzclose.c in Sources */,
 				E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */,
