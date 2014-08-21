@@ -8,6 +8,7 @@
 
 #import "ExercisesTwelvViewController.h"
 #define P(x,y) CGPointMake(x, y)
+#define HALFSIZE object.frame.size.width/2
 @interface ExercisesTwelvViewController ()
 
 @end
@@ -27,6 +28,8 @@
 {
     [super viewDidLoad];
     self.forward=YES;
+    self.itWasBack=NO;
+    self.round=Begin;
     self.pointsArray=[[NSMutableDictionary alloc]init];
     self.increaseDistance=0;
     [self createPoints];
@@ -34,7 +37,7 @@
 
    if (self.scrollingTimer == nil)
     {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(2.0)
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(3.0)
                                                                target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
     }
    // [self addAnimationToPoint];
@@ -67,7 +70,7 @@
             horAdd=100*(i-6);
             verAdd=120;
         }
-        CGRect Rect = CGRectMake(50+horAdd, 50+verAdd, 15, 15);
+        CGRect Rect = CGRectMake(250+horAdd, 250+verAdd, 20, 20);
         CALayer *point = [CALayer layer];
         [point setFrame:Rect];
         [point setBounds:Rect];
@@ -92,8 +95,24 @@
 
 - (void)addAnimationToPoint//:(int)i point:(CALayer *)point
 {
+    NSLog(@"%@",@"animacja dodana");
+    NSLog(@"%d",self.round);
     NSMutableArray *allKeys = [[self.pointsArray allKeys] mutableCopy];
-    //self.forward=YES;
+   self.animFinish=0;
+    
+    if(self.round==Finish)
+    {
+        if(self.increaseDistance>=6)
+            self.increaseDistance=0;
+else
+        self.increaseDistance++;
+    }
+    
+    /*if(!self.itWasBack)
+    {
+        self.forward=YES;
+        self.itWasBack=NO;
+    }*/
     for (NSString *key in allKeys)
     {
         CALayer* object = [self.pointsArray objectForKey: key];
@@ -102,16 +121,49 @@
         NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
         
         UIBezierPath *trackPath;
-        trackPath = [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*10];
+        
+        
+        trackPath = [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*20];
+        
+    
         CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
         anim.path = trackPath.CGPath;
-        anim.duration = 1.5;
+        anim.duration = 1.0;
         anim.removedOnCompletion = NO;
         anim.fillMode = kCAFillModeForwards;
          anim.delegate=self;
         [object addAnimation:anim forKey:[NSString stringWithFormat:@"dot %d",[[words lastObject]intValue]]];
         [self.pointsArray setValue:object forKey:[NSString stringWithFormat:@"dot %d",[[words lastObject]intValue]]];
+        self.animFinish++;
     }
+    
+    if( self.animFinish==9)
+        
+    {
+        self.itWasBack=!self.itWasBack;
+        self.animFinish=0;
+        self.forward=!self.forward;
+       
+    }
+    
+    switch (self.round) {
+        case Begin:
+            self.round=Half;
+            break;
+        
+        case Half:
+            self.round=Finish;
+            break;
+        case Finish:
+            self.round=Half;
+            break;
+            
+        default:
+            break;
+    }
+    
+   
+    
 }
 
 - (UIBezierPath *)createForwardPath:(CALayer *)point i:(int)i forward:(BOOL)forward increaseOffset:(int)increaseOffset
@@ -120,14 +172,10 @@
     int offset=50+increaseOffset;
     if(!forward)
         offset=-offset;
-    
-    CGFloat midX=CGRectGetMidX(point.frame);
-    CGFloat midY=CGRectGetMidY(point.frame);
+    int midX=CGRectGetMidX(point.frame);
+    int midY=CGRectGetMidY(point.frame);
     
     [trackPath moveToPoint:P(midX, midY)];
-
-    
-    //[trackPath moveToPoint:P(point.frame.origin.x, midY)];
     
     switch (i) {
         case 0:
@@ -173,36 +221,40 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    if(self.forward)
-        self.forward=NO;
-    else
-        self.forward=YES;
-    //if(self.forward)
-   // {
+   // NSLog(@"%@",@"animacja skonczona");
+//    if (!self.forward) {
+//        self.forward=YES;
+//    }
     self.animFinish++;
     NSMutableArray *allKeys = [[self.pointsArray allKeys] mutableCopy];
     
-    for (id key in allKeys)
+   for (id key in allKeys)
     {
         CALayer* object = [self.pointsArray objectForKey: key];
         CAKeyframeAnimation* test=[object animationForKey:key];
-        NSLog(@"%@",[object animationForKey:key]);
+        CGRect newFrame;
+        CGPoint currentPosition = [[object presentationLayer] position];
+     //   NSLog(@"%@",[object animationForKey:key]);
+        int midX=CGRectGetMidX(object.frame);
+        int midY=CGRectGetMidY(object.frame);
         if (anim==test)
         {
-            CGPoint currentPosition = [[object presentationLayer] position];
-            [object setFrame:CGRectMake((int)currentPosition.x, (int)currentPosition.y, object.frame.size.width, object.frame.size.width)];
-            [object setBounds:CGRectMake((int)currentPosition.x, (int)currentPosition.y, object.frame.size.width, object.frame.size.width)];
+            newFrame=CGRectMake(currentPosition.x-HALFSIZE, currentPosition.y-HALFSIZE, object.frame.size.width, object.frame.size.width);
+            [object setFrame:newFrame];
+            [object setBounds:[[object presentationLayer] bounds]];
             [self.pointsArray setObject:object forKey:key];
             
         }
         }
-    self.increaseDistance++;
-  //  }
-   /* if( self.animFinish==8)
+    
+    
+    /*if( self.animFinish==9 && self.forward==YES)
     
     {
-        [self returnObjectToBegin];
+        self.itWasBack=NO;
         self.animFinish=0;
+        self.forward=NO;
+        return;
     }*/
 }
 /*
@@ -232,8 +284,8 @@
 
 -(void)returnObjectToBegin
 {
-    self.forward=NO;
-    self.increaseDistance++;
+   // self.forward=NO;
+    //self.increaseDistance++;
 
    // [self addAnimationToPoint];
     //[self createPathForLoop];
