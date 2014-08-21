@@ -26,11 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self createFrame];
+    self.rectangleDic=[[NSMutableDictionary alloc] init];
+    [self initFrames];
     [self addFrameToView];
     if (self.scrollingTimer == nil)
     {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/1000)
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
                                                                target:self selector:@selector(resizeRectangular) userInfo:nil repeats:YES];
     }
     // Do any additional setup after loading the view.
@@ -42,89 +43,181 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)createFrame
+-(void)initFrames
 {
-    int width=400;
-    int heigth =100;
+    int width=self.view.frame.size.width/4;
+    int heigth =150;
     int midX=(self.view.frame.size.width -width)*0.5f;
-    int midY=(self.view.frame.size.height -heigth)*0.5f;
-    
-    CGRect Rect = CGRectMake(midX,midY, width, 100);
-    
-    
-    self.firstRectangular = [CALayer layer];
-    [self.firstRectangular setFrame:Rect];
-    [self.firstRectangular setBounds:Rect];
-    
-    [self.firstRectangular setCornerRadius:5.0f];
-    [self.firstRectangular setBackgroundColor:[[UIColor redColor]CGColor]];
-    [self.firstRectangular setOpacity:0.2f];
-    [self.firstRectangular setBorderColor:[[UIColor redColor]CGColor]];
-    [self.firstRectangular setBorderWidth:3.0f];
-    
-    
-    width=width*0.5f;
-    heigth=heigth*0.5f;
-    midX=(self.view.frame.size.width -width)*0.5f;
-     midY=(self.view.frame.size.height -heigth)*0.5f;
+    int midY=(500 -heigth)*0.5f-150;
 
-    CGRect Rect1 = CGRectMake(midX,midY, width, heigth);
-    
-    
-    self.secondRectangular = [CALayer layer];
-    [self.secondRectangular setFrame:Rect1];
-    [self.secondRectangular setBounds:Rect1];
-    
-    [self.secondRectangular setCornerRadius:5.0f];
-    [self.secondRectangular setBackgroundColor:[[UIColor blueColor]CGColor]];
-    [self.secondRectangular setOpacity:0.2f];
-    [self.secondRectangular setBorderColor:[[UIColor blueColor]CGColor]];
-    [self.secondRectangular setBorderWidth:3.0f];
-    
-    width=width*0.5f;
-    heigth=heigth*0.5f;
-    midX=(self.view.frame.size.width -width)*0.5f;
-    midY=(self.view.frame.size.height -heigth)*0.5f;
+    self.upperBand=width*1.5f;
+    for (int i=0;i<3; i++) {
+        
+        if (i==2) {
+            width=0;
+            heigth=0;
+        }
+        CGRect Rect= CGRectMake(midX,midY, width, heigth);
+        CALayer* rectangleToAdd = [CALayer layer];
 
-    
-    CGRect Rect2 = CGRectMake(midX,midY, width,heigth);
-    
-    
-    self.thirdRectangular = [CALayer layer];
-    [self.thirdRectangular setFrame:Rect2];
-    [self.thirdRectangular setBounds:Rect2];
-    
-    [self.thirdRectangular setCornerRadius:5.0f];
-    [self.thirdRectangular setBackgroundColor:[[UIColor yellowColor]CGColor]];
-    [self.thirdRectangular setOpacity:0.2f];
-    [self.thirdRectangular setBorderColor:[[UIColor yellowColor]CGColor]];
-    [self.thirdRectangular setBorderWidth:3.0f];
-    //[self.firstRectangular setShadowColor:[[UIColor blackColor]CGColor]];
-    
+        [rectangleToAdd setFrame:Rect];
+        [rectangleToAdd setBounds:Rect];
+        [rectangleToAdd setCornerRadius:5.0f];
+        
+        switch (i) {
+            case 0:
+                [rectangleToAdd setBackgroundColor:[[UIColor redColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor redColor]CGColor]];
+                [rectangleToAdd setBorderWidth:10.0f];
 
+                break;
+            case 1:
+                [rectangleToAdd setBackgroundColor:[[UIColor blueColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor blueColor]CGColor]];
+                [rectangleToAdd setBorderWidth:10.0f];
+                
+                break;
+            case 2:
+                [rectangleToAdd setBackgroundColor:[[UIColor yellowColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor yellowColor]CGColor]];
+                [rectangleToAdd setBorderWidth:10.0f];
+                
+                break;
+            default:
+                break;
+        }
+        
+        [self.rectangleDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Rectangle %d",i]];
+       
+        width=width*0.5f;
+        heigth=heigth*0.5f;
+        
+        if (i==2) {
+            width=0;
+            heigth=0;
+        }
+        
+        midX=(self.view.frame.size.width -width)*0.5f;
+        midY=(500 -heigth)*0.5f-150;
+     
     }
+}
+
+-(void)createFrame:(int)selectFrame
+{
+    int offset=5;
+    
+    CGRect Rect;
+    CALayer* toTestRect=[self.rectangleDic objectForKey:[NSString stringWithFormat:@"Rectangle %d",selectFrame]];
+    
+    int width=0;
+    int heigth =0;
+    int midX=0;
+    int midY=0;
+    if(toTestRect.frame.size.width>self.upperBand)
+        {
+            width=0;
+            heigth =0;
+            midX=(self.view.frame.size.width -width)*0.5f;
+            midY=(500 -heigth)*0.5f-150;
+            Rect= CGRectMake(midX,midY, width,heigth);
+        }
+        else
+        {
+            width=toTestRect.frame.size.width+offset*2;
+            heigth =toTestRect.frame.size.height+offset*2;
+            midX=(self.view.frame.size.width -width)*0.5f;
+            midY=(500 -heigth)*0.5f-150;
+            Rect= CGRectMake(midX,midY, width, heigth);
+            
+        }
+        CALayer* rectangleToAdd = [CALayer layer];
+    
+        switch (selectFrame) {
+            case 0:
+                [rectangleToAdd setFrame:Rect];
+                [rectangleToAdd setBounds:Rect];
+                [rectangleToAdd setCornerRadius:5.0f];
+                [rectangleToAdd setBackgroundColor:[[UIColor redColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor redColor]CGColor]];
+                [rectangleToAdd setBorderWidth:5.0f];
+                
+                break;
+            case 1:
+                [rectangleToAdd setFrame:Rect];
+                [rectangleToAdd setBounds:Rect];
+                [rectangleToAdd setCornerRadius:5.0f];
+                [rectangleToAdd setBackgroundColor:[[UIColor blueColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor blueColor]CGColor]];
+                [rectangleToAdd setBorderWidth:5.0f];
+                
+                break;
+            case 2:
+                [rectangleToAdd setFrame:Rect];
+                [rectangleToAdd setBounds:Rect];
+                [rectangleToAdd setCornerRadius:5.0f];
+                [rectangleToAdd setBackgroundColor:[[UIColor yellowColor]CGColor]];
+                [rectangleToAdd setOpacity:0.2f];
+                [rectangleToAdd setBorderColor:[[UIColor yellowColor]CGColor]];
+                [rectangleToAdd setBorderWidth:5.0f];
+                
+                break;
+            default:
+                break;
+        
+                
+    }
+    
+    [self.rectangleDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Rectangle %d",selectFrame]];
+    
+
+}
 
 -(void)addFrameToView
 {
-    [self.view.layer addSublayer:self.firstRectangular];
-     [self.view.layer addSublayer:self.secondRectangular];
-     [self.view.layer addSublayer:self.thirdRectangular];
-
+    NSMutableArray *allKeys = [[self.rectangleDic allKeys] mutableCopy];
+    for (NSString *key in allKeys)
+    {
+        CALayer* object = [self.rectangleDic objectForKey: key];
+        NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
+        [self.view.layer insertSublayer:object atIndex:[[words lastObject]intValue]];
+    }
 }
 
 -(void)resizeRectangular
 {
+    for (int i=0; i<3; i++) {
+        
+   
+    [self createFrame:i];
+     }
+    
+    NSMutableArray *allKeys = [[self.rectangleDic allKeys] mutableCopy];
+    for (NSString *key in allKeys)
+    {
+        CALayer* object = [self.rectangleDic objectForKey: key];
+        
+        NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
+        
+        [self.view.layer replaceSublayer:[self.view.layer.sublayers objectAtIndex:[[words lastObject]intValue]] with:object];
+    }
+   
     
 }
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

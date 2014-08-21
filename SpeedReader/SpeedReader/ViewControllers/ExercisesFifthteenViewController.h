@@ -10,7 +10,6 @@
 
 @interface ExercisesFifthteenViewController : UIViewController
 @property(nonatomic,strong) NSTimer *scrollingTimer;
-@property(nonatomic,strong)CALayer* firstRectangular;
-@property(nonatomic,strong)CALayer* secondRectangular;
-@property(nonatomic,strong)CALayer* thirdRectangular;
+@property(nonatomic,strong)NSMutableDictionary* rectangleDic;
+@property(nonatomic,assign)float upperBand;
 @end
