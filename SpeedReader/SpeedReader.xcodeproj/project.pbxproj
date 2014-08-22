@@ -25,6 +25,7 @@
 		E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925405819A0E40200ECE98E /* BaseExercisesViewController.m */; };
 		E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */; };
 		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
+		E928EEE719A64F9E00833F29 /* ExercisesNinthteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E928EEE619A64F9E00833F29 /* ExercisesNinthteenViewController.m */; };
 		E92A6FFF19A1EFAF00404AA3 /* ExercisesFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A6FFE19A1EFAF00404AA3 /* ExercisesFiveViewController.m */; };
 		E92A700119A1F5D800404AA3 /* wordsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E92A700019A1F5D800404AA3 /* wordsPL.xml */; };
 		E92BB5331992BF9F006D2E56 /* MetronumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BB5321992BF9F006D2E56 /* MetronumViewController.m */; };
@@ -152,6 +153,8 @@
 		E925405719A0E40200ECE98E /* BaseExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseExercisesViewController.h; path = SpeedReader/ViewControllers/BaseExercisesViewController.h; sourceTree = "<group>"; };
 		E925405819A0E40200ECE98E /* BaseExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseExercisesViewController.m; path = SpeedReader/ViewControllers/BaseExercisesViewController.m; sourceTree = "<group>"; };
 		E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedReader.xcdatamodel; sourceTree = "<group>"; };
+		E928EEE519A64F9E00833F29 /* ExercisesNinthteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesNinthteenViewController.h; path = SpeedReader/ViewControllers/ExercisesNinthteenViewController.h; sourceTree = "<group>"; };
+		E928EEE619A64F9E00833F29 /* ExercisesNinthteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesNinthteenViewController.m; path = SpeedReader/ViewControllers/ExercisesNinthteenViewController.m; sourceTree = "<group>"; };
 		E92A6FFD19A1EFAF00404AA3 /* ExercisesFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesFiveViewController.h; path = SpeedReader/ViewControllers/ExercisesFiveViewController.h; sourceTree = "<group>"; };
 		E92A6FFE19A1EFAF00404AA3 /* ExercisesFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesFiveViewController.m; path = SpeedReader/ViewControllers/ExercisesFiveViewController.m; sourceTree = "<group>"; };
 		E92A700019A1F5D800404AA3 /* wordsPL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wordsPL.xml; sourceTree = "<group>"; };
@@ -611,6 +614,8 @@
 				E939DCF319A4709F00967E4A /* ExercisesTwelvViewController.m */,
 				E90C5E7B19A601C8008D88F4 /* ExercisesFifthteenViewController.h */,
 				E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */,
+				E928EEE519A64F9E00833F29 /* ExercisesNinthteenViewController.h */,
+				E928EEE619A64F9E00833F29 /* ExercisesNinthteenViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -913,6 +918,7 @@
 				E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */,
 				E93BC5C319815FA700DE3408 /* inftrees.c in Sources */,
 				E93BC5BE19815FA700DE3408 /* gzread.c in Sources */,
+				E928EEE719A64F9E00833F29 /* ExercisesNinthteenViewController.m in Sources */,
 				E9A18158197E77E60046B48E /* UserParser.m in Sources */,
 				E92BB5331992BF9F006D2E56 /* MetronumViewController.m in Sources */,
 				E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */,
