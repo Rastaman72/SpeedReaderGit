@@ -32,15 +32,24 @@
     self.exercisesFoutyOneText.text=self.xmlManager.exercisesText;
     float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesFourtyOneSizeSlider.value]description]floatValue];
     
-    [self.exercisesFoutyOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
+  //  [self.exercisesFoutyOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
     
     self.size = [self.exercisesFoutyOneText.text sizeWithFont:self.exercisesFoutyOneText.font
                                                constrainedToSize:self.exercisesFoutyOneText.frame.size
                                                    lineBreakMode:NSLineBreakByWordWrapping]; // default mode
     self.numberOfLines = self.size.height / self.exercisesFoutyOneText.font.lineHeight;
-    self.exercisesFoutyOneText.userInteractionEnabled=NO;
+    self.exercisesFoutyOneText.userInteractionEnabled=YES;
+    self.exercisesFoutyOneText.scrollEnabled=YES;
+self.radius = 50;
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.headIndent = 100.0;
+   paragraphStyle.firstLineHeadIndent = 100.0;
+    paragraphStyle.tailIndent = -100.0;
+    
+    NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:fontSize], NSParagraphStyleAttributeName: paragraphStyle};
+    self.exercisesFoutyOneText.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
 
-  
+    //self.exercisesFoutyOneText.textAlignment = NSTextAlignmentCenter;
   
     [self tst];
     //or
@@ -61,53 +70,12 @@ swipe.delegate = self;
 
 -(void)tst
 {
-   /* self.isMaskMoved = !self.isMaskMoved;
-    CGFloat width = self.maskView.layer.frame.size.width;
-    CGFloat height = self.maskView.layer.frame.size.height;
-    
-    //Create path that defines the edges of our masking layer
-    CGMutablePathRef path = CGPathCreateMutable();
-    
-    CGPathMoveToPoint(path, NULL, 0, 0);
-    CGPathAddLineToPoint(path, NULL, width, 0);
-    CGPathAddLineToPoint(path, NULL, width, height);
-    CGPathAddLineToPoint(path, NULL, self.xPos, height);
-    if (self.isMaskMoved)
-        CGPathAddLineToPoint(path, NULL, (width / 2), height - 30);
-    else
-        CGPathAddLineToPoint(path, NULL, (width / 2), height);
-    CGPathAddLineToPoint(path, NULL, (width / 2) - 30, height);
-    CGPathAddLineToPoint(path, NULL, 0, height);
-    CGPathCloseSubpath(path);
-    
-    //if no mask, create it
-    if (!self.maskLayer)
-    {
-        self.maskLayer = [[CAShapeLayer alloc] init];
-        self.maskLayer.frame = self.exercisesFoutyOneText.superview.bounds;
-        self.maskLayer.fillColor = [[UIColor blackColor] CGColor];
-        self.maskLayer.path = path;
-        self.maskView.layer.mask = self.maskLayer;
-    }
-    //animate our mask to the new path
-    else
-    {
-        CABasicAnimation *anim = [CABasicAnimation animationWithKeyPath:@"path"];
-        [anim setFromValue:(id)self.maskLayer.path];
-        [anim setToValue:(__bridge id)(path)];
-        [anim setDelegate:self];
-        [anim setDuration:0.25];
-        [anim setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
-        self.maskLayer.path = path;
-        [self.maskLayer addAnimation:anim forKey:@"path"];
-    }
-    
-    CGPathRelease(path);*/
+   
     [self.maskView setBackgroundColor:[UIColor clearColor]];
     [self.maskView.layer replaceSublayer:[self.maskView.layer.sublayers firstObject] with:nil];
-    int radius = 50;
+    
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(0, 0, self.maskView.bounds.size.width, self.maskView.bounds.size.height) cornerRadius:0];
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.xPos-radius, self.yPos-radius, 2.0*radius, 2.0*radius) cornerRadius:radius];
+    UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(self.xPos-self.radius, self.yPos-self.radius, 2.0*self.radius, 2.0*self.radius) cornerRadius:self.radius];
     [path appendPath:circlePath];
     [path setUsesEvenOddFillRule:YES];
     
@@ -133,7 +101,7 @@ swipe.delegate = self;
 	theDataObject = (SharedData*) theDelegate.theAppDataObject;
 	return theDataObject;
 }
-
+/*
 -(void)createFrame
 {
     CGRect Rect = CGRectMake(0, 0, self.exercisesFoutyOneText.frame.size.width, self.exercisesFoutyOneText.contentSize.height );
@@ -151,7 +119,7 @@ swipe.delegate = self;
     [self.readFrame setShadowColor:[[UIColor whiteColor]CGColor]];
     [[[self exercisesFoutyOneText]layer]insertSublayer:self.readFrame atIndex:0 ];
     
-}
+}*/
 /*
 #pragma mark - Navigation
 
@@ -163,41 +131,13 @@ swipe.delegate = self;
 }
 */
 
-- (void)drawCircle
-{
-    CAShapeLayer *mask = [[CAShapeLayer alloc] init];
-    mask.frame = [[self.exercisesFoutyOneText.layer.sublayers firstObject]bounds];
-    mask.fillColor = [[UIColor blackColor] CGColor];
-    
-    CGFloat width = self.exercisesFoutyOneText.layer.frame.size.width;
-    CGFloat height = self.exercisesFoutyOneText.layer.frame.size.height;
-    
-    CGMutablePathRef path = CGPathCreateMutable();
-    
-    CGPathMoveToPoint(path, nil, 0, 0);
-    CGPathAddLineToPoint(path, nil, width, 0);
-    CGPathAddLineToPoint(path, nil, width, height);
-    CGPathAddLineToPoint(path, nil, (width/2) + 5, height);
-    CGPathAddLineToPoint(path, nil, width/2, height - 5);
-    CGPathAddLineToPoint(path, nil, (width/2) - 5, height);
-    CGPathAddLineToPoint(path, nil, 0, height);
-    CGPathAddLineToPoint(path, nil, 0, 0);
-    CGPathCloseSubpath(path);
-    
-    mask.path = path;
-    CGPathRelease(path);
-    
-    [[self.exercisesFoutyOneText.layer.sublayers firstObject]setMask:mask];
-    
-}
-
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
     
     NSLog(@"%@",self.exercisesFoutyOneText.layer.sublayers);
-    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.exercisesFoutyOneText];
+    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.maskView];
 
     NSLog(@"%f",P.x);
     
@@ -207,7 +147,7 @@ swipe.delegate = self;
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.exercisesFoutyOneText];
+    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.maskView];
     
     NSLog(@"%f",P.x);
     
@@ -231,6 +171,8 @@ swipe.delegate = self;
     }
 }
 - (IBAction)circleChange:(id)sender {
+    self.radius=self.exercisesFourtyOneCircleSizeSlider.value;
+    [self tst];
 }
 - (IBAction)sizeChange:(id)sender {
     [self countMaxPosition];
@@ -246,7 +188,17 @@ swipe.delegate = self;
     self.exercisesFoutyOneText.text=self.xmlManager.exercisesText;
     [self.exercisesFoutyOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.exercisesFourtyOneSizeSlider.value]];
     [self.exercisesFoutyOneText setContentOffset:CGPointZero animated:YES];
+ 
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.headIndent = 100.0;
+    paragraphStyle.firstLineHeadIndent = 100.0;
+    paragraphStyle.tailIndent = -100.0;
+    float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesFourtyOneSizeSlider.value]description]floatValue];
+
+    NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:fontSize], NSParagraphStyleAttributeName: paragraphStyle};
+    self.exercisesFoutyOneText.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
     
+
     self.position=0;
 }
 

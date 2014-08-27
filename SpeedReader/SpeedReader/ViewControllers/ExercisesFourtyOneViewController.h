@@ -34,5 +34,6 @@
 @property (nonatomic, assign) BOOL isMaskMoved;
 @property (nonatomic, strong) CAShapeLayer *maskLayer;
 @property (weak, nonatomic) IBOutlet UIView *maskView;
+@property (nonatomic,assign)int radius;
 
 @end
