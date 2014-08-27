@@ -70,7 +70,7 @@
     switch (choosedExercises.choosedExercises) {
         case 1:
         {
-                        ExerciseOneViewController *LVC = (ExerciseOneViewController *)segue.destinationViewController;
+                        Czytanie2WierszeNaRazViewController *LVC = (Czytanie2WierszeNaRazViewController *)segue.destinationViewController;
             break;
             
         }

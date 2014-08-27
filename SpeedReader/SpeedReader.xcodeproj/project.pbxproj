@@ -10,7 +10,7 @@
 		E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E90248DB197D42CF004ADAEC /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E905433619ACB897001A8DF0 /* SwipeableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E905433519ACB897001A8DF0 /* SwipeableTextView.m */; };
 		E9054AB11997989300AC077D /* ImageForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9054AB01997989300AC077D /* ImageForDB.m */; };
-		E9074B9019A0B69E00009557 /* ExerciseThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9074B8F19A0B69E00009557 /* ExerciseThreeViewController.m */; };
+		E9074B9019A0B69E00009557 /* CzytanieOdTyluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */; };
 		E90C5E7D19A601C8008D88F4 /* ExercisesFifthteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */; };
 		E915603F19A8A55F00F0B0FE /* ExercisesTwentyThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E915603E19A8A55F00F0B0FE /* ExercisesTwentyThreeViewController.m */; };
 		E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */ = {isa = PBXBuildFile; fileRef = E915D6ED1977F3B100846F31 /* ExercisesData.m */; };
@@ -71,8 +71,7 @@
 		E948351719A3AA5C00AEC4B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E948351619A3AA5C00AEC4B5 /* QuartzCore.framework */; };
 		E948351A19A3AF2B00AEC4B5 /* DrawAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */; };
 		E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */; };
-		E95C7A9C199B7AD8004F1B2D /* ExerciseOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */; };
-		E95C7A9F199B7AEC004F1B2D /* ExercisesTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */; };
+		E95C7A9C199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A9B199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m */; };
 		E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */; };
 		E95C7AA5199BC12E004F1B2D /* ExercisesZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */; };
 		E970B52A19ABB8FC0099243C /* ExercisesFourtyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */; };
@@ -81,6 +80,7 @@
 		E9A20F4C19A8B1ED001B73E4 /* ExercisesTwentyFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A20F4B19A8B1ED001B73E4 /* ExercisesTwentyFourViewController.m */; };
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
 		E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */; };
+		E9ADA09C19AE0245001DA774 /* CzytanieBezSpacjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
 		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
 		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
@@ -131,8 +131,8 @@
 		E905433519ACB897001A8DF0 /* SwipeableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwipeableTextView.m; path = SpeedReader/SwipeableTextView.m; sourceTree = "<group>"; };
 		E9054AAF1997989300AC077D /* ImageForDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageForDB.h; path = SpeedReader/Data/ImageForDB.h; sourceTree = "<group>"; };
 		E9054AB01997989300AC077D /* ImageForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageForDB.m; path = SpeedReader/Data/ImageForDB.m; sourceTree = "<group>"; };
-		E9074B8E19A0B69E00009557 /* ExerciseThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseThreeViewController.h; path = SpeedReader/ViewControllers/ExerciseThreeViewController.h; sourceTree = "<group>"; };
-		E9074B8F19A0B69E00009557 /* ExerciseThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseThreeViewController.m; path = SpeedReader/ViewControllers/ExerciseThreeViewController.m; sourceTree = "<group>"; };
+		E9074B8E19A0B69E00009557 /* CzytanieOdTyluViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieOdTyluViewController.h; path = SpeedReader/ViewControllers/CzytanieOdTyluViewController.h; sourceTree = "<group>"; };
+		E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieOdTyluViewController.m; path = SpeedReader/ViewControllers/CzytanieOdTyluViewController.m; sourceTree = "<group>"; };
 		E90C5E7B19A601C8008D88F4 /* ExercisesFifthteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesFifthteenViewController.h; path = SpeedReader/ViewControllers/ExercisesFifthteenViewController.h; sourceTree = "<group>"; };
 		E90C5E7C19A601C8008D88F4 /* ExercisesFifthteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesFifthteenViewController.m; path = SpeedReader/ViewControllers/ExercisesFifthteenViewController.m; sourceTree = "<group>"; };
 		E915603D19A8A55F00F0B0FE /* ExercisesTwentyThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesTwentyThreeViewController.h; path = SpeedReader/ViewControllers/ExercisesTwentyThreeViewController.h; sourceTree = "<group>"; };
@@ -250,10 +250,8 @@
 		E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawAnimation.m; path = SpeedReader/ViewControllers/DrawAnimation.m; sourceTree = "<group>"; };
 		E95C7A96199B76FC004F1B2D /* ExercisesDispatcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesDispatcherViewController.h; path = SpeedReader/ViewControllers/ExercisesDispatcherViewController.h; sourceTree = "<group>"; };
 		E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesDispatcherViewController.m; path = SpeedReader/ViewControllers/ExercisesDispatcherViewController.m; sourceTree = "<group>"; };
-		E95C7A9A199B7AD8004F1B2D /* ExerciseOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseOneViewController.h; path = SpeedReader/ViewControllers/ExerciseOneViewController.h; sourceTree = "<group>"; };
-		E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseOneViewController.m; path = SpeedReader/ViewControllers/ExerciseOneViewController.m; sourceTree = "<group>"; };
-		E95C7A9D199B7AEC004F1B2D /* ExercisesTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesTwoViewController.h; path = SpeedReader/ViewControllers/ExercisesTwoViewController.h; sourceTree = "<group>"; };
-		E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesTwoViewController.m; path = SpeedReader/ViewControllers/ExercisesTwoViewController.m; sourceTree = "<group>"; };
+		E95C7A9A199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Czytanie2WierszeNaRazViewController.h; path = SpeedReader/ViewControllers/Czytanie2WierszeNaRazViewController.h; sourceTree = "<group>"; };
+		E95C7A9B199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Czytanie2WierszeNaRazViewController.m; path = SpeedReader/ViewControllers/Czytanie2WierszeNaRazViewController.m; sourceTree = "<group>"; };
 		E95C7AA0199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesDispatcherControllerViewController.h; path = SpeedReader/ViewControllers/ExercisesDispatcherControllerViewController.h; sourceTree = "<group>"; };
 		E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesDispatcherControllerViewController.m; path = SpeedReader/ViewControllers/ExercisesDispatcherControllerViewController.m; sourceTree = "<group>"; };
 		E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesZeroViewController.h; path = SpeedReader/ViewControllers/ExercisesZeroViewController.h; sourceTree = "<group>"; };
@@ -269,6 +267,8 @@
 		E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAccountForDB.m; path = SpeedReader/Data/UserAccountForDB.m; sourceTree = "<group>"; };
 		E9AC08C31990010B00ACD0C5 /* SettingsForDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsForDB.h; path = SpeedReader/Data/SettingsForDB.h; sourceTree = "<group>"; };
 		E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsForDB.m; path = SpeedReader/Data/SettingsForDB.m; sourceTree = "<group>"; };
+		E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieBezSpacjiViewController.h; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.h; sourceTree = "<group>"; };
+		E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieBezSpacjiViewController.m; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.m; sourceTree = "<group>"; };
 		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -610,14 +610,12 @@
 		E95C7A99199B7A9F004F1B2D /* IndividualExercises */ = {
 			isa = PBXGroup;
 			children = (
-				E95C7A9A199B7AD8004F1B2D /* ExerciseOneViewController.h */,
-				E95C7A9B199B7AD8004F1B2D /* ExerciseOneViewController.m */,
-				E95C7A9D199B7AEC004F1B2D /* ExercisesTwoViewController.h */,
-				E95C7A9E199B7AEC004F1B2D /* ExercisesTwoViewController.m */,
+				E95C7A9A199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.h */,
+				E95C7A9B199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m */,
 				E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */,
 				E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */,
-				E9074B8E19A0B69E00009557 /* ExerciseThreeViewController.h */,
-				E9074B8F19A0B69E00009557 /* ExerciseThreeViewController.m */,
+				E9074B8E19A0B69E00009557 /* CzytanieOdTyluViewController.h */,
+				E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */,
 				E925405719A0E40200ECE98E /* BaseExercisesViewController.h */,
 				E925405819A0E40200ECE98E /* BaseExercisesViewController.m */,
 				E92A6FFD19A1EFAF00404AA3 /* ExercisesFiveViewController.h */,
@@ -644,6 +642,8 @@
 				E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */,
 				E970B52819ABB8FC0099243C /* ExercisesFourtyOneViewController.h */,
 				E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */,
+				E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */,
+				E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -903,13 +903,14 @@
 				E915D6EE1977F3B100846F31 /* ExercisesData.m in Sources */,
 				E91EF1E6198CF92A00069359 /* ListAccountToImportTableViewController.m in Sources */,
 				E9FE88EC199686D400C97A35 /* MBProgressHUD.m in Sources */,
+				E9ADA09C19AE0245001DA774 /* CzytanieBezSpacjiViewController.m in Sources */,
 				E9E5144F1976A611001FDA03 /* AddAccountViewController.m in Sources */,
 				E9E86D3A197AB0FC00CE362D /* AccountTableCellTableViewCell.m in Sources */,
 				E92BB5361992BFAC006D2E56 /* TimerViewController.m in Sources */,
 				E92733E519AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
 				E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */,
-				E95C7A9C199B7AD8004F1B2D /* ExerciseOneViewController.m in Sources */,
+				E95C7A9C199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m in Sources */,
 				E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */,
 				E915D6F81977F4BF00846F31 /* ExercisesViewController.m in Sources */,
 				E9E5144B1976A5CC001FDA03 /* LoginViewController.m in Sources */,
@@ -939,9 +940,8 @@
 				E93BC5C519815FA700DE3408 /* uncompr.c in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
 				E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */,
-				E95C7A9F199B7AEC004F1B2D /* ExercisesTwoViewController.m in Sources */,
 				E93BC5B419815FA700DE3408 /* ZipException.m in Sources */,
-				E9074B9019A0B69E00009557 /* ExerciseThreeViewController.m in Sources */,
+				E9074B9019A0B69E00009557 /* CzytanieOdTyluViewController.m in Sources */,
 				E9FE88DC1996304800C97A35 /* ImageTableViewCell.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
 				E90C5E7D19A601C8008D88F4 /* ExercisesFifthteenViewController.m in Sources */,

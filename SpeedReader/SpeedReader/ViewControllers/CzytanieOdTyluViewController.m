@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExerciseThreeViewController.h"
+#import "CzytanieOdTyluViewController.h"
 
-@interface ExerciseThreeViewController ()
+@interface CzytanieOdTyluViewController ()
 
 @end
 
-@implementation ExerciseThreeViewController
+@implementation CzytanieOdTyluViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -98,8 +98,8 @@
             return;
         }
         
-        [[[self exercisesThreeText]layer]addSublayer:self.readFrame];
-        //[[[self exercisesThreeText]layer]replaceSublayer:[self.exercisesThreeText.layer.sublayers objectAtIndex:0] with:self.readFrame];
+       // [[[self exercisesThreeText]layer]addSublayer:self.readFrame];
+        [[[self exercisesThreeText]layer]replaceSublayer:[self.exercisesThreeText.layer.sublayers objectAtIndex:0] with:self.readFrame];
         
         //self.position+=self.exercisesThreeText.font.lineHeight;
     }

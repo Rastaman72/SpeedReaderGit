@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ExerciseOneViewController.h"
+#import "Czytanie2WierszeNaRazViewController.h"
 #import "ExercisesTwoViewController.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"

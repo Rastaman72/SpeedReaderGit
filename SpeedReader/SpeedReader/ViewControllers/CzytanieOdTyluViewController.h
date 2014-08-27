@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-@interface ExerciseThreeViewController : UIViewController
+@interface CzytanieOdTyluViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextView *exercisesThreeText;
 @property(nonatomic,strong)SharedData* xmlManager;
