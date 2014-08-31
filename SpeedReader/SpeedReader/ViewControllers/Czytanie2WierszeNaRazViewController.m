@@ -36,16 +36,35 @@
     self.xmlManager=[self theAppDataObject];
     [self.xmlManager getExercisesText];
     self.textView.text=self.xmlManager.exercisesText;
+   
+    NSLog(@"%@",self.textView.font.familyName);
+    NSLog(@"%f",self.textView.frame.size.width);
     float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];
-    [self.textView setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
+     UIFont *fontText = [UIFont fontWithName:@"Helvetica Neue"  size:fontSize];
+    [self.textView setFont:fontText];
+    NSLog(@"%@",self.textView.font.familyName);
+    NSLog(@"%f",self.textView.frame.size.width);
     self.size = [self.textView.text sizeWithFont:self.textView.font
                                        constrainedToSize:self.textView.frame.size
                                            lineBreakMode:NSLineBreakByWordWrapping]; // default mode
+    
+   //IOS 70000000
+    self.textView.selectable=YES;
+    self.sizeR = [self.textView.text boundingRectWithSize:self.textView.frame.size
+                                             options:NSStringDrawingUsesLineFragmentOrigin
+                                          attributes:@{NSFontAttributeName:self.textView.font}
+                                             context:nil];
+    self.textView.selectable=NO;
+    
+    self.size=self.sizeR.size;
+    
+    
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
     self.position=0;
-    self.textView.scrollEnabled=NO;
+    //ios77777777
+    self.textView.scrollEnabled=YES;
     
     self.textSizeDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description];
     
@@ -98,6 +117,7 @@
     
     if (self.position>=self.maxPosition-self.textView.font.lineHeight && self.maxPosition<self.textView.contentSize.height ) {
         [self.textView setContentOffset:CGPointMake(0, self.maxPosition) animated:YES];
+        
         self.maxPosition+=self.actuallOffset;
         self.done=YES;
     } else {
@@ -111,6 +131,8 @@
         self.position+=self.textView.font.lineHeight*2;
     }
 }
+
+
 
 - (SharedData*) theAppDataObject;
 {

@@ -11,10 +11,11 @@
 #import "AppDelegateDataShared.h"
 @interface CzytanieOdTyluViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextView *exercisesThreeText;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property(nonatomic,strong)SharedData* xmlManager;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesThreeSizeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *textSizeSlider;
 - (IBAction)sizeChanged:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *textSizeDescriptionLabel;
 @property(nonatomic,assign)float position;
 
 @property(nonatomic,strong) NSTimer *scrollingTimer;
@@ -23,12 +24,17 @@
 - (void) autoscrollTimerFired;
 @property(nonatomic,assign) CGSize size;
 @property(nonatomic,assign)bool done;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesThreeTimeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *frameSpeedSlider;
+@property (weak, nonatomic) IBOutlet UILabel *frameSpeedDescriptionLabel;
 - (IBAction)timeChanged:(id)sender;
 @property(nonatomic,strong)CALayer* readFrame;
-@property (weak, nonatomic) IBOutlet UIButton *exercisesThreeStartButton;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesThreeJumpSlider;
+@property (weak, nonatomic) IBOutlet UISlider *numbersOfJumpSlider;
+- (IBAction)speedDynamic:(id)sender;
+- (IBAction)jumpDynamic:(id)sender;
+- (IBAction)sizeDynamic:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *numbersOfJumpDescriptionLabel;
 - (IBAction)jumpChange:(id)sender;
 @property(nonatomic,assign) float jumpWidth;
 @property(nonatomic,assign) float jumpOffset;

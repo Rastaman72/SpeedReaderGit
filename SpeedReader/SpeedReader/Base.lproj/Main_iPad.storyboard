@@ -255,7 +255,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView contentMode="scaleToFill" id="NQB-Pq-g99">
-                                <rect key="frame" x="0.0" y="323" width="768" height="701"/>
+                                <rect key="frame" x="0.0" y="259" width="768" height="716"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
@@ -1562,11 +1562,11 @@
             <objects>
                 <viewController storyboardIdentifier="EXC0" title="EXC0" modalPresentationStyle="currentContext" id="Lwi-b9-g7A" customClass="ExercisesZeroViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rgd-G2-o6h">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3.jpg" id="MbO-Tf-NXT">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -1583,7 +1583,7 @@
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="6Bc-jz-nVr" customClass="ExercisesDispatcherViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ifm-ze-tnT">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="B4I-mO-uWI">
@@ -1657,7 +1657,7 @@
             <objects>
                 <viewController id="RFQ-RD-NVT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cdu-5c-l5e">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1665,14 +1665,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bN4-j9-oUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7983" y="-3753"/>
+            <point key="canvasLocation" x="10847" y="-4783"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8eb-Rn-2Ky">
             <objects>
                 <viewController id="unu-hB-438" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7TJ-cJ-thJ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1687,7 +1687,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC12" storyboardIdentifier="EXC12" modalPresentationStyle="currentContext" id="75M-hL-8AL" customClass="ExercisesTwelvViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTT-sC-DfL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1702,7 +1702,7 @@
             <objects>
                 <viewController id="nBo-Dg-7Bg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbY-zM-mwF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1717,7 +1717,7 @@
             <objects>
                 <viewController id="q4E-TY-pHf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4t-a1-BXp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1732,7 +1732,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC19" storyboardIdentifier="EXC19" modalPresentationStyle="currentContext" id="b9A-co-ZrM" customClass="ExercisesNinthteenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fcn-4C-oxY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1747,7 +1747,7 @@
             <objects>
                 <viewController id="bVT-Xj-bCw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LLm-dg-u8U">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1762,7 +1762,7 @@
             <objects>
                 <viewController id="fb1-38-smq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYC-vR-Efz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1777,7 +1777,7 @@
             <objects>
                 <viewController id="RkY-p8-qB1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8IM-su-KcO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1792,7 +1792,7 @@
             <objects>
                 <viewController id="V5N-oc-QPq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie8-M1-2Cc">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1807,7 +1807,7 @@
             <objects>
                 <viewController id="via-B3-ZwS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kON-7P-2wP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1822,7 +1822,7 @@
             <objects>
                 <viewController id="QXl-CQ-aEb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPo-DJ-g0J">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1837,7 +1837,7 @@
             <objects>
                 <viewController id="7lY-V6-KgW" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKa-1e-yc2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1852,7 +1852,7 @@
             <objects>
                 <viewController id="2uz-yJ-sXB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUl-dN-9Nt">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1867,7 +1867,7 @@
             <objects>
                 <viewController id="JYX-OJ-Yfa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mB-hi-iDO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1882,11 +1882,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC41" storyboardIdentifier="EXC41" modalPresentationStyle="currentContext" id="huS-TG-jze" customClass="ExercisesFourtyOneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9LC-hJ-oAH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="yA2-Xa-Ddp">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="419"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="434"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -1932,7 +1932,7 @@
             <objects>
                 <viewController id="9Ya-4h-bKu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EeS-r0-FJW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1947,11 +1947,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC38" storyboardIdentifier="EXC38" modalPresentationStyle="currentContext" id="unN-Zp-1aj" customClass="ExercisesThirtyEigthViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQm-jg-KYs">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="9Ve-P6-8OA">
-                                <rect key="frame" x="44" y="33" width="680" height="449"/>
+                                <rect key="frame" x="44" y="33" width="680" height="464"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1991,7 +1991,7 @@
             <objects>
                 <viewController id="l7a-xk-Cli" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Elk-Wy-Nu7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2006,7 +2006,7 @@
             <objects>
                 <viewController id="xNc-Kg-dVo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVQ-b0-Fs8">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2021,7 +2021,7 @@
             <objects>
                 <viewController id="hCe-wv-23Z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cIe-ou-15U">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2036,7 +2036,7 @@
             <objects>
                 <viewController id="Le0-f7-7rX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lb8-tW-c63">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2051,7 +2051,7 @@
             <objects>
                 <viewController id="Qvb-L6-WPg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hT-rm-6yx">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2066,7 +2066,7 @@
             <objects>
                 <viewController id="J1v-A3-lsf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Gf-1l-e0H">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2081,7 +2081,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC29" storyboardIdentifier="EXC29" modalPresentationStyle="currentContext" id="UKY-RG-iMG" customClass="ExercisesTwentyNineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tir-46-J8n">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C4P-DS-VX9">
@@ -2115,7 +2115,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC23" storyboardIdentifier="EXC23" modalPresentationStyle="currentContext" id="hZJ-fE-OeJ" customClass="ExercisesTwentyThreeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUL-Qq-UWQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="huC-R0-sZf">
@@ -2158,7 +2158,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC24" storyboardIdentifier="EXC24" modalPresentationStyle="currentContext" id="Wdx-fe-NBe" customClass="ExercisesTwentyFourViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LkU-zl-XON">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eAa-Vo-D2W">
@@ -2193,7 +2193,7 @@
             <objects>
                 <viewController id="atm-wH-f6H" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cu-JN-iOM">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2208,7 +2208,7 @@
             <objects>
                 <viewController id="nZu-N1-qab" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ay6-iQ-aSb">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2223,7 +2223,7 @@
             <objects>
                 <viewController id="cWS-R0-ENP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jnA-CH-Iq2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2238,7 +2238,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC15" storyboardIdentifier="EXC15" modalPresentationStyle="currentContext" id="c1h-yy-rrL" customClass="ExercisesFifthteenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ly4-2J-FHD">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2253,7 +2253,7 @@
             <objects>
                 <viewController id="OId-z1-Vrf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AlU-FT-gkh">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2268,7 +2268,7 @@
             <objects>
                 <viewController id="VzO-3a-mFh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vio-Qr-oRp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2283,7 +2283,7 @@
             <objects>
                 <viewController id="mFd-qA-JX3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSZ-xR-FmL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2298,7 +2298,7 @@
             <objects>
                 <viewController id="Dgb-bj-KXZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpx-NL-7xE">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2308,12 +2308,12 @@
             </objects>
             <point key="canvasLocation" x="8991" y="-2785"/>
         </scene>
-        <!--Exercises Five View Controller-->
+        <!--CzytanieZ Obcymi Slowami View Controller-->
         <scene sceneID="UX7-Aq-Jqr">
             <objects>
-                <viewController restorationIdentifier="EXC5" storyboardIdentifier="EXC5" modalPresentationStyle="currentContext" id="5Qf-wu-FZM" customClass="ExercisesFiveViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC5" storyboardIdentifier="EXC5" modalPresentationStyle="currentContext" id="5Qf-wu-FZM" customClass="CzytanieZObcymiSlowamiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32o-Kv-SPG">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L7l-bE-14f">
@@ -2327,7 +2327,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="gI3-o9-Xha">
-                                <rect key="frame" x="100" y="0.0" width="568" height="613"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="613"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2339,35 +2339,80 @@
                     </view>
                     <navigationItem key="navigationItem" id="JQC-WK-LDg"/>
                     <connections>
-                        <outlet property="exercisesFiveStartButton" destination="L7l-bE-14f" id="2MO-X2-F8e"/>
-                        <outlet property="exercisesFiveText" destination="gI3-o9-Xha" id="Q41-lK-DOL"/>
+                        <outlet property="startButton" destination="L7l-bE-14f" id="KlM-SA-bFj"/>
+                        <outlet property="textView" destination="gI3-o9-Xha" id="luh-Ej-WZq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohJ-S4-kV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8927" y="-3769"/>
+            <point key="canvasLocation" x="11815" y="-4783"/>
         </scene>
-        <!--View Controller-->
+        <!--CzytanieZ Plamami View Controller-->
         <scene sceneID="VXw-sp-fux">
             <objects>
-                <viewController restorationIdentifier="EXC6" storyboardIdentifier="EXC6" id="TC7-H8-cKy" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC6" storyboardIdentifier="EXC6" modalPresentationStyle="currentContext" id="TC7-H8-cKy" customClass="CzytanieZPlamamiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9R-aP-C9f">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rem-jS-XYq">
+                                <rect key="frame" x="655" y="634" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="12" minValue="10" maxValue="40" id="zt5-30-vfY">
+                                <rect key="frame" x="617" y="584" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sizeChanged:" destination="TC7-H8-cKy" eventType="touchUpInside" id="yRJ-1a-amp"/>
+                                    <action selector="sizeDynamic:" destination="TC7-H8-cKy" eventType="valueChanged" id="msk-93-gpD"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3kN-qk-9qs">
+                                <rect key="frame" x="361" y="654" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="TC7-H8-cKy" eventType="touchUpInside" id="Zuf-2o-8Bb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="wVV-4s-SM7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="510"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" id="Ogq-nq-IfX">
+                                <rect key="frame" x="80" y="10" width="608" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uKD-7h-b6T"/>
+                    <connections>
+                        <outlet property="shadowView" destination="Ogq-nq-IfX" id="fT7-2W-1xw"/>
+                        <outlet property="startButtron" destination="3kN-qk-9qs" id="Mdm-Hg-Mwc"/>
+                        <outlet property="textSizeDescriptionLabel" destination="rem-jS-XYq" id="d3S-Gg-EIg"/>
+                        <outlet property="textSizeSlider" destination="zt5-30-vfY" id="hk0-43-reA"/>
+                        <outlet property="textView" destination="wVV-4s-SM7" id="f6H-z7-6pM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1j-ax-Ccp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9911" y="-3817"/>
+            <point key="canvasLocation" x="12757" y="-4783"/>
         </scene>
         <!--Exercises Seven View Controller-->
         <scene sceneID="jbM-zz-MYN">
             <objects>
                 <viewController restorationIdentifier="EXC7" storyboardIdentifier="EXC7" modalPresentationStyle="currentContext" id="NO4-GZ-c89" customClass="ExercisesSevenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXj-96-ZQY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D8Z-Qz-8SJ">
@@ -2406,7 +2451,7 @@
             <objects>
                 <viewController id="2Sh-zE-zt6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49q-Su-1LF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2416,32 +2461,55 @@
             </objects>
             <point key="canvasLocation" x="11799" y="-3761"/>
         </scene>
-        <!--Exercises Nine View Controller-->
+        <!--Czytanie Ze Wskaznikiem View Controller-->
         <scene sceneID="8RF-i6-ZY3">
             <objects>
-                <viewController restorationIdentifier="EXC9" storyboardIdentifier="EXC9" modalPresentationStyle="currentContext" id="DfW-E2-2W1" customClass="ExercisesNineViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC9" storyboardIdentifier="EXC9" modalPresentationStyle="currentContext" id="DfW-E2-2W1" customClass="CzytanieZeWskaznikiemViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZ9-OH-eBR">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" id="0jK-7P-RJD" customClass="DrawAnimation">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" id="BNX-A7-uFe">
+                                        <rect key="frame" x="39" y="639" width="118" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="pickerChange:" destination="DfW-E2-2W1" eventType="touchUpInside" id="vyu-3d-hJ5"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gFS-70-iuF">
+                                        <rect key="frame" x="77" y="677" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="fas-rL-tfa">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="fas-rL-tfa">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="608"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <view contentMode="scaleToFill" id="lmh-l5-6mz">
+                                <rect key="frame" x="80" y="0.0" width="608" height="608"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEq-zN-TMm"/>
                     <connections>
-                        <outlet property="exercisesNineAnimationView" destination="0jK-7P-RJD" id="iN3-Df-VBH"/>
-                        <outlet property="exercisesNineText" destination="fas-rL-tfa" id="abg-li-MIO"/>
+                        <outlet property="maskView" destination="lmh-l5-6mz" id="np3-km-7AY"/>
+                        <outlet property="pickStyleSlider" destination="BNX-A7-uFe" id="2Vl-EG-qFn"/>
+                        <outlet property="pickerValueLabel" destination="gFS-70-iuF" id="yng-uI-8tQ"/>
+                        <outlet property="pointerView" destination="0jK-7P-RJD" id="lGr-ib-z74"/>
+                        <outlet property="textView" destination="fas-rL-tfa" id="Txa-o6-GkJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8c-fy-mhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2453,7 +2521,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC1" title="EXC1" modalPresentationStyle="currentContext" id="jVJ-Sq-pTK" customClass="Czytanie2WierszeNaRazViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fT-pE-jNa">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelexc1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0H0-b9-cBd">
@@ -2462,7 +2530,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="xag-f6-0ld">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="xag-f6-0ld">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2533,11 +2601,11 @@
             <objects>
                 <viewController storyboardIdentifier="EXC2" modalPresentationStyle="currentContext" id="3i9-ZX-huw" customClass="CzytanieBezSpacjiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Es6-pl-jaH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="bSm-dX-V4V">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="bSm-dX-V4V">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2560,11 +2628,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC3" storyboardIdentifier="EXC3" modalPresentationStyle="currentContext" id="zJg-KD-PN5" customClass="CzytanieOdTyluViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzh-pq-heQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="701"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="R86-e9-A9o">
-                                <rect key="frame" x="98" y="0.0" width="573" height="557"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="R86-e9-A9o">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="557"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2575,21 +2643,23 @@
                                 </connections>
                             </textView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="16" minValue="10" maxValue="40" id="dsx-eO-yjX">
-                                <rect key="frame" x="513" y="600" width="118" height="31"/>
+                                <rect key="frame" x="515" y="565" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sizeChanged:" destination="zJg-KD-PN5" eventType="touchUpInside" id="BNs-gx-9Lu"/>
+                                    <action selector="sizeDynamic:" destination="zJg-KD-PN5" eventType="valueChanged" id="2Gy-WW-C5M"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1000" minValue="500" maxValue="3000" id="UuO-rR-0gm">
-                                <rect key="frame" x="96" y="600" width="118" height="31"/>
+                                <rect key="frame" x="107" y="565" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="speedDynamic:" destination="zJg-KD-PN5" eventType="valueChanged" id="zgm-1n-6ht"/>
                                     <action selector="timeChanged:" destination="zJg-KD-PN5" eventType="touchUpInside" id="Q0B-6Q-dq1"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lxI-S6-KxN">
-                                <rect key="frame" x="361" y="623" width="46" height="30"/>
+                                <rect key="frame" x="361" y="651" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2603,18 +2673,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="jumpChange:" destination="zJg-KD-PN5" eventType="touchUpInside" id="02t-t3-rfc"/>
+                                    <action selector="jumpDynamic:" destination="zJg-KD-PN5" eventType="valueChanged" id="SKh-BS-KEG"/>
                                 </connections>
                             </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LiP-gs-bRk">
+                                <rect key="frame" x="145" y="603" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hOW-NC-ER1">
+                                <rect key="frame" x="363" y="603" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qfc-oo-YIK">
+                                <rect key="frame" x="553" y="603" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rpG-Kv-2fN"/>
                     <connections>
-                        <outlet property="exercisesThreeJumpSlider" destination="gda-N1-yZ8" id="JWS-Yh-dih"/>
-                        <outlet property="exercisesThreeSizeSlider" destination="dsx-eO-yjX" id="XK5-lR-eqW"/>
-                        <outlet property="exercisesThreeStartButton" destination="lxI-S6-KxN" id="pxl-hy-kto"/>
-                        <outlet property="exercisesThreeText" destination="R86-e9-A9o" id="aTu-kY-TTW"/>
-                        <outlet property="exercisesThreeTimeSlider" destination="UuO-rR-0gm" id="nb6-Ty-8mM"/>
+                        <outlet property="frameSpeedDescriptionLabel" destination="LiP-gs-bRk" id="3iB-84-XPS"/>
+                        <outlet property="frameSpeedSlider" destination="UuO-rR-0gm" id="jsX-k1-UW7"/>
+                        <outlet property="numbersOfJumpDescriptionLabel" destination="hOW-NC-ER1" id="7i6-Kt-a2r"/>
+                        <outlet property="numbersOfJumpSlider" destination="gda-N1-yZ8" id="VKP-ze-hy5"/>
+                        <outlet property="startButton" destination="lxI-S6-KxN" id="7dX-hO-47g"/>
+                        <outlet property="textSizeDescriptionLabel" destination="Qfc-oo-YIK" id="bNf-rQ-kSj"/>
+                        <outlet property="textSizeSlider" destination="dsx-eO-yjX" id="Je4-xg-gMO"/>
+                        <outlet property="textView" destination="R86-e9-A9o" id="uxv-18-Uvg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-NX-6cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2640,6 +2735,19 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BcI-eL-AVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5676" y="-593"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="A2r-kx-5P8">
+            <objects>
+                <viewController id="e3B-0B-dXV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pon-rz-7SJ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wC-u4-oUR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

@@ -25,12 +25,13 @@
 		E91D317F199CEBAB009ECD76 /* exerciseTextsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E91D317E199CEBAB009ECD76 /* exerciseTextsPL.xml */; };
 		E91ED05C19AA4E790037A95A /* ExercisesTwentyNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91ED05B19AA4E790037A95A /* ExercisesTwentyNineViewController.m */; };
 		E91EF1E6198CF92A00069359 /* ListAccountToImportTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */; };
+		E920D65719AE3A5900A65B82 /* CzytanieZPlamamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E920D65619AE3A5900A65B82 /* CzytanieZPlamamiViewController.m */; };
 		E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925405819A0E40200ECE98E /* BaseExercisesViewController.m */; };
 		E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */; };
 		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
 		E92733E519AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */; };
 		E928EEE719A64F9E00833F29 /* ExercisesNinthteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E928EEE619A64F9E00833F29 /* ExercisesNinthteenViewController.m */; };
-		E92A6FFF19A1EFAF00404AA3 /* ExercisesFiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A6FFE19A1EFAF00404AA3 /* ExercisesFiveViewController.m */; };
+		E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */; };
 		E92A700119A1F5D800404AA3 /* wordsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E92A700019A1F5D800404AA3 /* wordsPL.xml */; };
 		E92BB5331992BF9F006D2E56 /* MetronumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BB5321992BF9F006D2E56 /* MetronumViewController.m */; };
 		E92BB5361992BFAC006D2E56 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92BB5351992BFAC006D2E56 /* TimerViewController.m */; };
@@ -67,7 +68,7 @@
 		E93BC5C619815FA700DE3408 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = E93BC5AE19815FA700DE3408 /* zutil.c */; };
 		E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E944DC3B19939A0F00A0442D /* SettingsViewController.m */; };
 		E948351219A36A3600AEC4B5 /* ExercisesSevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E948351119A36A3600AEC4B5 /* ExercisesSevenViewController.m */; };
-		E948351519A3A72300AEC4B5 /* ExercisesNineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E948351419A3A72300AEC4B5 /* ExercisesNineViewController.m */; };
+		E948351519A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E948351419A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m */; };
 		E948351719A3AA5C00AEC4B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E948351619A3AA5C00AEC4B5 /* QuartzCore.framework */; };
 		E948351A19A3AF2B00AEC4B5 /* DrawAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */; };
 		E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7A97199B76FC004F1B2D /* ExercisesDispatcherViewController.m */; };
@@ -162,6 +163,8 @@
 		E91ED05B19AA4E790037A95A /* ExercisesTwentyNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesTwentyNineViewController.m; path = SpeedReader/ViewControllers/ExercisesTwentyNineViewController.m; sourceTree = "<group>"; };
 		E91EF1E4198CF92A00069359 /* ListAccountToImportTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListAccountToImportTableViewController.h; path = SpeedReader/ViewControllers/ListAccountToImportTableViewController.h; sourceTree = "<group>"; };
 		E91EF1E5198CF92A00069359 /* ListAccountToImportTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListAccountToImportTableViewController.m; path = SpeedReader/ViewControllers/ListAccountToImportTableViewController.m; sourceTree = "<group>"; };
+		E920D65519AE3A5900A65B82 /* CzytanieZPlamamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieZPlamamiViewController.h; path = SpeedReader/ViewControllers/CzytanieZPlamamiViewController.h; sourceTree = "<group>"; };
+		E920D65619AE3A5900A65B82 /* CzytanieZPlamamiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieZPlamamiViewController.m; path = SpeedReader/ViewControllers/CzytanieZPlamamiViewController.m; sourceTree = "<group>"; };
 		E925405719A0E40200ECE98E /* BaseExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseExercisesViewController.h; path = SpeedReader/ViewControllers/BaseExercisesViewController.h; sourceTree = "<group>"; };
 		E925405819A0E40200ECE98E /* BaseExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseExercisesViewController.m; path = SpeedReader/ViewControllers/BaseExercisesViewController.m; sourceTree = "<group>"; };
 		E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedReader.xcdatamodel; sourceTree = "<group>"; };
@@ -169,8 +172,8 @@
 		E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesThirtyEigthViewController.m; path = SpeedReader/ViewControllers/ExercisesThirtyEigthViewController.m; sourceTree = "<group>"; };
 		E928EEE519A64F9E00833F29 /* ExercisesNinthteenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesNinthteenViewController.h; path = SpeedReader/ViewControllers/ExercisesNinthteenViewController.h; sourceTree = "<group>"; };
 		E928EEE619A64F9E00833F29 /* ExercisesNinthteenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesNinthteenViewController.m; path = SpeedReader/ViewControllers/ExercisesNinthteenViewController.m; sourceTree = "<group>"; };
-		E92A6FFD19A1EFAF00404AA3 /* ExercisesFiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesFiveViewController.h; path = SpeedReader/ViewControllers/ExercisesFiveViewController.h; sourceTree = "<group>"; };
-		E92A6FFE19A1EFAF00404AA3 /* ExercisesFiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesFiveViewController.m; path = SpeedReader/ViewControllers/ExercisesFiveViewController.m; sourceTree = "<group>"; };
+		E92A6FFD19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieZObcymiSlowamiViewController.h; path = SpeedReader/ViewControllers/CzytanieZObcymiSlowamiViewController.h; sourceTree = "<group>"; };
+		E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieZObcymiSlowamiViewController.m; path = SpeedReader/ViewControllers/CzytanieZObcymiSlowamiViewController.m; sourceTree = "<group>"; };
 		E92A700019A1F5D800404AA3 /* wordsPL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = wordsPL.xml; sourceTree = "<group>"; };
 		E92BB5301992BE74006D2E56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPad.strings; sourceTree = "<group>"; };
 		E92BB5311992BF9F006D2E56 /* MetronumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetronumViewController.h; path = SpeedReader/ViewControllers/MetronumViewController.h; sourceTree = "<group>"; };
@@ -243,8 +246,8 @@
 		E944DC3B19939A0F00A0442D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = SpeedReader/ViewControllers/SettingsViewController.m; sourceTree = "<group>"; };
 		E948351019A36A3600AEC4B5 /* ExercisesSevenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesSevenViewController.h; path = SpeedReader/ViewControllers/ExercisesSevenViewController.h; sourceTree = "<group>"; };
 		E948351119A36A3600AEC4B5 /* ExercisesSevenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesSevenViewController.m; path = SpeedReader/ViewControllers/ExercisesSevenViewController.m; sourceTree = "<group>"; };
-		E948351319A3A72300AEC4B5 /* ExercisesNineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesNineViewController.h; path = SpeedReader/ViewControllers/ExercisesNineViewController.h; sourceTree = "<group>"; };
-		E948351419A3A72300AEC4B5 /* ExercisesNineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesNineViewController.m; path = SpeedReader/ViewControllers/ExercisesNineViewController.m; sourceTree = "<group>"; };
+		E948351319A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieZeWskaznikiemViewController.h; path = SpeedReader/ViewControllers/CzytanieZeWskaznikiemViewController.h; sourceTree = "<group>"; };
+		E948351419A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieZeWskaznikiemViewController.m; path = SpeedReader/ViewControllers/CzytanieZeWskaznikiemViewController.m; sourceTree = "<group>"; };
 		E948351619A3AA5C00AEC4B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E948351819A3AF2B00AEC4B5 /* DrawAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawAnimation.h; path = SpeedReader/ViewControllers/DrawAnimation.h; sourceTree = "<group>"; };
 		E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawAnimation.m; path = SpeedReader/ViewControllers/DrawAnimation.m; sourceTree = "<group>"; };
@@ -618,12 +621,12 @@
 				E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */,
 				E925405719A0E40200ECE98E /* BaseExercisesViewController.h */,
 				E925405819A0E40200ECE98E /* BaseExercisesViewController.m */,
-				E92A6FFD19A1EFAF00404AA3 /* ExercisesFiveViewController.h */,
-				E92A6FFE19A1EFAF00404AA3 /* ExercisesFiveViewController.m */,
+				E92A6FFD19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.h */,
+				E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */,
 				E948351019A36A3600AEC4B5 /* ExercisesSevenViewController.h */,
 				E948351119A36A3600AEC4B5 /* ExercisesSevenViewController.m */,
-				E948351319A3A72300AEC4B5 /* ExercisesNineViewController.h */,
-				E948351419A3A72300AEC4B5 /* ExercisesNineViewController.m */,
+				E948351319A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.h */,
+				E948351419A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m */,
 				E948351819A3AF2B00AEC4B5 /* DrawAnimation.h */,
 				E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */,
 				E939DCF219A4709F00967E4A /* ExercisesTwelvViewController.h */,
@@ -644,6 +647,8 @@
 				E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */,
 				E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */,
 				E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */,
+				E920D65519AE3A5900A65B82 /* CzytanieZPlamamiViewController.h */,
+				E920D65619AE3A5900A65B82 /* CzytanieZPlamamiViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -894,6 +899,7 @@
 			files = (
 				E9371E73198D26B100DFCBF0 /* AppDataObject.m in Sources */,
 				E93BC5BD19815FA700DE3408 /* gzlib.c in Sources */,
+				E920D65719AE3A5900A65B82 /* CzytanieZPlamamiViewController.m in Sources */,
 				E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */,
 				E9A20F4C19A8B1ED001B73E4 /* ExercisesTwentyFourViewController.m in Sources */,
 				E93BC5B319815FA700DE3408 /* FileInZipInfo.m in Sources */,
@@ -924,8 +930,8 @@
 				E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */,
 				E915D70B197804A400846F31 /* StartViewController.m in Sources */,
 				E95C7AA5199BC12E004F1B2D /* ExercisesZeroViewController.m in Sources */,
-				E948351519A3A72300AEC4B5 /* ExercisesNineViewController.m in Sources */,
-				E92A6FFF19A1EFAF00404AA3 /* ExercisesFiveViewController.m in Sources */,
+				E948351519A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m in Sources */,
+				E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */,
 				E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */,
 				E93BC5BB19815FA700DE3408 /* deflate.c in Sources */,
 				E93BC5B919815FA700DE3408 /* compress.c in Sources */,

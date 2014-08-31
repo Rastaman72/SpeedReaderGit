@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesFiveViewController.h"
+#import "CzytanieZObcymiSlowamiViewController.h"
 #define lowNumber 3
 #define upNumber 10
-@interface ExercisesFiveViewController ()
+@interface CzytanieZObcymiSlowamiViewController ()
 
 @end
 
-@implementation ExercisesFiveViewController
+@implementation CzytanieZObcymiSlowamiViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,7 +33,7 @@
     //[self.xmlManager getExercisesWords];
     // Do any additional setup after loading the
     NSString* resultText=[NSString stringWithString:[self putRandomWord]];
-    self.exercisesFiveText.text=resultText;
+    self.textView.text=resultText;
 
 }
 

@@ -11,10 +11,10 @@
 #import "AppDelegateDataShared.h"
 #import <stdlib.h>
 
-@interface ExercisesFiveViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *exercisesFiveText;
-@property (weak, nonatomic) IBOutlet UIButton *exercisesFiveStartButton;
+@interface CzytanieZObcymiSlowamiViewController : UIViewController
 - (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 @property(nonatomic,strong)SharedData* xmlManager;
 
 @end

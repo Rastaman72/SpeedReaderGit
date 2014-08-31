@@ -10,6 +10,6 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface CzytanieBezSpacjiViewController : UIViewController
-@property(nonatomic,strong)SharedData* xmlManager;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property(nonatomic,strong)SharedData* xmlManager;
 @end

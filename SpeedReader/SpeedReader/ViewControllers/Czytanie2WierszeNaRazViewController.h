@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign) CGRect sizeR;
 @property(nonatomic,assign)bool done;
 @property(nonatomic,assign)bool startPush;
 @property(nonatomic,assign)float position;
