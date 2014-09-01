@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesTwelvViewController.h"
+#import "GimnastykaOczuObszarPolaWidzeniaViewController.h"
 #define P(x,y) CGPointMake(x, y)
 #define HALFSIZE object.frame.size.width/2
-@interface ExercisesTwelvViewController ()
+@interface GimnastykaOczuObszarPolaWidzeniaViewController ()
 
 @end
 
-@implementation ExercisesTwelvViewController
+@implementation GimnastykaOczuObszarPolaWidzeniaViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,13 +35,8 @@
     [self createPoints];
     [self addPointToLayer];
 
-   if (self.scrollingTimer == nil)
-    {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(3.0)
-                                                               target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
-    }
-   // [self addAnimationToPoint];
-    // Do any additional setup after loading the view.
+  
+       // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -128,7 +123,8 @@ else
     
         CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
         anim.path = trackPath.CGPath;
-        anim.duration = 1.0;
+        anim.duration = 500/self.speedSlider.value;
+        NSLog(@"%f",anim.duration);
         anim.removedOnCompletion = NO;
         anim.fillMode = kCAFillModeForwards;
          anim.delegate=self;
@@ -246,41 +242,8 @@ else
             
         }
         }
-    
-    
-    /*if( self.animFinish==9 && self.forward==YES)
-    
-    {
-        self.itWasBack=NO;
-        self.animFinish=0;
-        self.forward=NO;
-        return;
-    }*/
 }
-/*
-- (void)createPathForLoop
-{
-    NSMutableArray *allKeys = [[self.pointsArray allKeys] mutableCopy];
-    
-    for (NSString *key in allKeys) {
-        CALayer* object = [self.pointsArray objectForKey: key];
-        NSString* objectName=[self.pointsArray valueForKey:key];
-        
-        NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
-        
-        UIBezierPath *trackPath;
-        trackPath =  [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*10];
-        CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-        anim.delegate=self;
-        anim.path = trackPath.CGPath;
-        anim.duration = 1.0;
-        anim.removedOnCompletion = NO;
-        anim.fillMode = kCAFillModeForwards;
-        [object addAnimation:anim forKey:[NSString stringWithFormat:@"dot %d",[[words lastObject]intValue]]];
-        [self.pointsArray setValue:object forKey:[NSString stringWithFormat:@"dot %d",[[words lastObject]intValue]]];
-        
-    }
-}*/
+
 
 -(void)returnObjectToBegin
 {
@@ -306,5 +269,27 @@ else
     // Pass the selected object to the new view controller.
 }
 */
+//////////poprawic timingi
 
+
+- (IBAction)speedChange:(id)sender {
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer=nil;
+
+    if (self.scrollingTimer == nil)
+    {
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
+                                                               target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+    }
+
+}
+- (IBAction)startPush:(id)sender {
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer=nil;
+    if (self.scrollingTimer == nil)
+    {
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
+                                                               target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+    }
+}
 @end

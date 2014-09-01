@@ -1667,31 +1667,69 @@
             </objects>
             <point key="canvasLocation" x="10847" y="-4783"/>
         </scene>
-        <!--View Controller-->
+        <!--Gimnastyka Oczu8I View Controller-->
         <scene sceneID="8eb-Rn-2Ky">
             <objects>
-                <viewController id="unu-hB-438" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC10" storyboardIdentifier="EXC10" modalPresentationStyle="currentContext" id="unu-hB-438" customClass="GimnastykaOczu8IViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7TJ-cJ-thJ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7iw-pN-x94">
+                                <rect key="frame" x="353" y="621" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionChanged:" destination="unu-hB-438" eventType="touchUpInside" id="hkv-RB-jIc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XPt-xu-1BN"/>
+                    <connections>
+                        <outlet property="changeDirectionButton" destination="7iw-pN-x94" id="icZ-eU-Xbw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKM-6u-hiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7943" y="-2777"/>
         </scene>
-        <!--Exercises Twelv View Controller-->
+        <!--Gimnastyka Oczu Obszar Pola Widzenia View Controller-->
         <scene sceneID="6mO-pK-2kD">
             <objects>
-                <viewController restorationIdentifier="EXC12" storyboardIdentifier="EXC12" modalPresentationStyle="currentContext" id="75M-hL-8AL" customClass="ExercisesTwelvViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC12" storyboardIdentifier="EXC12" modalPresentationStyle="currentContext" id="75M-hL-8AL" customClass="GimnastykaOczuObszarPolaWidzeniaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTT-sC-DfL">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xBq-CU-Ntc">
+                                <rect key="frame" x="361" y="619" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPush:" destination="75M-hL-8AL" eventType="touchUpInside" id="zbB-4u-ziS"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="100" maxValue="1000" id="GEY-c0-9QA">
+                                <rect key="frame" x="36" y="619" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="speedChange:" destination="75M-hL-8AL" eventType="touchUpInside" id="icI-yn-HDJ"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gl3-qK-R3p"/>
+                    <connections>
+                        <outlet property="speedSlider" destination="GEY-c0-9QA" id="iZL-IK-J7z"/>
+                        <outlet property="startButton" destination="xBq-CU-Ntc" id="MIR-4U-n4p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK8-ct-vHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2469,26 +2507,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" id="0jK-7P-RJD" customClass="DrawAnimation">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" id="BNX-A7-uFe">
-                                        <rect key="frame" x="39" y="639" width="118" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <connections>
-                                            <action selector="pickerChange:" destination="DfW-E2-2W1" eventType="touchUpInside" id="vyu-3d-hJ5"/>
-                                        </connections>
-                                    </slider>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gFS-70-iuF">
-                                        <rect key="frame" x="77" y="677" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="fas-rL-tfa">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="608"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2496,19 +2514,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" id="lmh-l5-6mz">
-                                <rect key="frame" x="80" y="0.0" width="608" height="608"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" id="cOQ-zd-98a">
+                                <rect key="frame" x="111" y="631" width="118" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
+                                <connections>
+                                    <action selector="pickerChange:" destination="DfW-E2-2W1" eventType="touchUpInside" id="pXQ-bL-ugY"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xZa-nj-E51">
+                                <rect key="frame" x="149" y="668" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cEq-zN-TMm"/>
                     <connections>
-                        <outlet property="maskView" destination="lmh-l5-6mz" id="np3-km-7AY"/>
-                        <outlet property="pickStyleSlider" destination="BNX-A7-uFe" id="2Vl-EG-qFn"/>
-                        <outlet property="pickerValueLabel" destination="gFS-70-iuF" id="yng-uI-8tQ"/>
-                        <outlet property="pointerView" destination="0jK-7P-RJD" id="lGr-ib-z74"/>
+                        <outlet property="pickStyleSlider" destination="cOQ-zd-98a" id="kUB-1B-4g9"/>
+                        <outlet property="pickerValueLabel" destination="xZa-nj-E51" id="g19-vD-aOH"/>
                         <outlet property="textView" destination="fas-rL-tfa" id="Txa-o6-GkJ"/>
                     </connections>
                 </viewController>

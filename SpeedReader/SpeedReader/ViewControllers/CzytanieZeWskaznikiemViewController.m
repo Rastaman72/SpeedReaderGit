@@ -29,18 +29,12 @@
     [super viewDidLoad];
    
     
-    self.xmlManager=[self theAppDataObject];
+   self.xmlManager=[self theAppDataObject];
     [self.xmlManager getExercisesText];
     self.textView.text=self.xmlManager.exercisesText;
    // float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];
     float fontSize =16;
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.headIndent = 80.0;
-    paragraphStyle.firstLineHeadIndent = 80.0;
-    paragraphStyle.tailIndent = -80.0;
-    
-    NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:fontSize], NSParagraphStyleAttributeName: paragraphStyle};
-    self.textView.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
+[self.textView setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
     // [self.textView.layer insertSublayer:self.readFrameLayer atIndex:0];
 
     
@@ -52,7 +46,7 @@
                                    lineBreakMode:NSLineBreakByWordWrapping]; // default mode
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
-    self.actuallOffset=numberOfLines/3;
+    self.actuallOffset=numberOfLines;
     
     [self createFrame];
 
@@ -75,7 +69,7 @@
         case 0:
             [trackPath moveToPoint:P(self.textView.frame.origin.x, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight)];
             
-            for (int i=0; i<=1.5*self.actuallOffset; i++) {
+            for (int i=0; i<=0.6*self.actuallOffset; i++) {
                 
                 
                 [trackPath addLineToPoint:P(self.textView.frame.size.width,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+2*self.textView.font.lineHeight*i)];
@@ -85,7 +79,106 @@
             }
             break;
             case 1:
+            [trackPath moveToPoint:P(self.textView.frame.origin.x, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight)];
+            
+            for (int i=0; i<=0.3*self.actuallOffset; i++) {
+                
+                
+                [trackPath addLineToPoint:P(self.textView.frame.size.width,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
+                i++;
+                [trackPath addLineToPoint:P(0,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
+                i--;
+            }
             break;
+        case 2:
+            [trackPath moveToPoint:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight)];
+            
+            for (int i=0; i<=0.3*self.actuallOffset; i++) {
+                
+                
+                [trackPath addLineToPoint:P(self.textView.frame.origin.x,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
+                i++;
+                [trackPath addLineToPoint:P(self.textView.frame.size.width,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
+                i--;
+            }
+            break;
+        case 3:
+            [trackPath moveToPoint:P(self.textView.frame.origin.x, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight)];
+            
+            for (int i=0; i<=0.3*self.actuallOffset; i++) {
+                
+                if (i % 2)
+                {
+                    
+                    [trackPath addLineToPoint:P(100,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                    i++;
+                    [trackPath addCurveToPoint:P(100, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)
+                                 controlPoint1:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*(i-1))
+                                 controlPoint2:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                    
+                    // [trackPath addLineToPoint:P(0,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                    i--;
+                }
+                    else
+                    {
+                        
+                        [trackPath addLineToPoint:P(self.textView.frame.size.width-100,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                        i++;
+                        [trackPath addCurveToPoint:P(self.textView.frame.size.width-100, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)
+                                     controlPoint1:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*(i-1))
+                                     controlPoint2:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                        
+                        //[trackPath addLineToPoint:P(0,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+                        i--;
+                    }
+                
+                /*
+                [trackPath addLineToPoint:P(self.textView.frame.size.width,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
+                */
+            }
+            break;
+        case 4:
+            [trackPath moveToPoint:P(self.textView.frame.origin.x, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight)];
+            
+            for (int i=0; i<=0.6*self.actuallOffset; i++) {
+                if(i==0)
+                {
+                    [trackPath addCurveToPoint:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+2*self.textView.font.lineHeight)
+                                 controlPoint1:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight)
+                                 controlPoint2:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight)];
+                    
+                }
+                else {
+                    if (i % 2)
+                    {
+                        
+                        
+                        //i++;
+                        [trackPath addCurveToPoint:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)
+                                     controlPoint1:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i-3))
+                                     controlPoint2:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i+3))];
+                        
+                        
+                        // i--;
+                    }
+                    else
+                    {
+                        // i++;
+                        [trackPath addCurveToPoint:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)
+                                     controlPoint1:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i-3))
+                                     controlPoint2:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i+3))];
+                        
+                       
+                        //i--;
+                       
+                        
+                    }
+                }
+                
+                
+            }
+            break;
+
         default:
             break;
     }
@@ -116,21 +209,30 @@
 	racetrack.fillColor = [UIColor clearColor].CGColor;
 	racetrack.lineWidth = 5.0;
     [racetrack setOpacity:0.5];
-     NSLog(@"%@",self.view.layer.sublayers );
-	[self.view.layer insertSublayer:racetrack atIndex:0];//:racetrack];
+     NSLog(@"%@",self.textView.layer.sublayers );
+	
+    [self.textView.layer insertSublayer:racetrack atIndex:0];//:racetrack];
+    //[self.maskView.layer addSublayer:racetrack];
     
-     NSLog(@"%@",self.view.layer.sublayers );
+    
+    NSLog(@"%@",self.textView.layer.sublayers );
+
     CALayer *car = [CALayer layer];
 	car.bounds = CGRectMake(0, 0, 44.0, 20.0);
 	//car.position = P(self.exercisesNineText.frame.size.width/2, self.exercisesNineText.frame.size.height/2);
 	car.contents = (id)([UIImage imageNamed:@"image0.jpg"].CGImage);
-	[self.view.layer addSublayer:car];
 	
-	CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+    
+   [self.textView.layer insertSublayer:car atIndex:1];
+	// [self.maskView.layer addSublayer:car];
+	
+    NSLog(@"%@",self.textView.layer.sublayers );
+
+    CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
 	anim.path = trackPath.CGPath;
 	anim.rotationMode = kCAAnimationRotateAuto;
 	anim.repeatCount = HUGE_VALF;
-	anim.duration = 100.0;
+	anim.duration = 15.0;
 	[car addAnimation:anim forKey:@"race"];
 
 }
@@ -157,8 +259,16 @@
     
     self.pickerValueLabel.text=[[[NSNumber alloc]initWithInt:self.pickStyleSlider.value]description];
     self.chooseTrack=self.pickStyleSlider.value;
-    NSLog(@"%@",self.view.layer.sublayers );
-    [[self.view.layer.sublayers lastObject]replaceSublayer:[self.view.layer.sublayers firstObject] with:nil];
+    NSLog(@"%@",self.textView.layer.sublayers );
+
+ 
+     [[self.textView.layer.sublayers objectAtIndex:1] removeAnimationForKey:@"race"];
+    [self.textView.layer replaceSublayer:[self.textView.layer.sublayers objectAtIndex:0] with:nil];
+   
+ [self.textView.layer replaceSublayer:[self.textView.layer.sublayers objectAtIndex:0] with:nil];
+    NSLog(@"%@",self.textView.layer.sublayers );
+
+  
     [self createFrame];
     }
 @end
