@@ -87,6 +87,9 @@
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
 		E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */; };
 		E9ADA09C19AE0245001DA774 /* CzytanieBezSpacjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */; };
+		E9C8411419B7A1370000E3EB /* MetronumEXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */; };
+		E9C8411819B7AF660000E3EB /* metronom.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411619B7AF660000E3EB /* metronom.wav */; };
+		E9C8411919B7AF660000E3EB /* metronom2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411719B7AF660000E3EB /* metronom2.wav */; };
 		E9CE9D9F19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */; };
 		E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */; };
 		E9DB2A8919B5DBD3004596BA /* GimnastykaOczuWazViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */; };
@@ -290,6 +293,10 @@
 		E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsForDB.m; path = SpeedReader/Data/SettingsForDB.m; sourceTree = "<group>"; };
 		E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieBezSpacjiViewController.h; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.h; sourceTree = "<group>"; };
 		E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieBezSpacjiViewController.m; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.m; sourceTree = "<group>"; };
+		E9C8411219B7A1370000E3EB /* MetronumEXCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetronumEXCViewController.h; path = SpeedReader/ViewControllers/MetronumEXCViewController.h; sourceTree = "<group>"; };
+		E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetronumEXCViewController.m; path = SpeedReader/ViewControllers/MetronumEXCViewController.m; sourceTree = "<group>"; };
+		E9C8411619B7AF660000E3EB /* metronom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronom.wav; sourceTree = "<group>"; };
+		E9C8411719B7AF660000E3EB /* metronom2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronom2.wav; sourceTree = "<group>"; };
 		E9CE9D9D19B4C33B0062AB89 /* GimnastykaOczu8IViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczu8IViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczu8IViewController.h; sourceTree = "<group>"; };
 		E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczu8IViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczu8IViewController.m; sourceTree = "<group>"; };
 		E9DB2A8419B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; sourceTree = "<group>"; };
@@ -689,6 +696,8 @@
 				E981213F19B659C30053477E /* GraRiseViewController.m */,
 				E92750F919B759D6003B2F0D /* GraUkladankaViewController.h */,
 				E92750FA19B759D6003B2F0D /* GraUkladankaViewController.m */,
+				E9C8411219B7A1370000E3EB /* MetronumEXCViewController.h */,
+				E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -706,9 +715,20 @@
 			name = DB;
 			sourceTree = "<group>";
 		};
+		E9C8411519B7AF660000E3EB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E9C8411619B7AF660000E3EB /* metronom.wav */,
+				E9C8411719B7AF660000E3EB /* metronom2.wav */,
+			);
+			name = Sounds;
+			path = SpeedReader/Sounds;
+			sourceTree = "<group>";
+		};
 		E9E513FB1976A231001FDA03 = {
 			isa = PBXGroup;
 			children = (
+				E9C8411519B7AF660000E3EB /* Sounds */,
 				E91D317D199CEBAB009ECD76 /* ExercisesLanguageFile */,
 				E9FE88DD1996361000C97A35 /* Images */,
 				E9AC08C2199000F400ACD0C5 /* DB */,
@@ -909,6 +929,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E514451976A281001FDA03 /* Localizable.strings in Resources */,
+				E9C8411819B7AF660000E3EB /* metronom.wav in Resources */,
 				E9E5141E1976A231001FDA03 /* Main_iPad.storyboard in Resources */,
 				E92A700119A1F5D800404AA3 /* wordsPL.xml in Resources */,
 				E9E514231976A231001FDA03 /* Images.xcassets in Resources */,
@@ -916,6 +937,7 @@
 				E9E514121976A231001FDA03 /* InfoPlist.strings in Resources */,
 				E9FE88E51996361000C97A35 /* image3.jpg in Resources */,
 				E91D317F199CEBAB009ECD76 /* exerciseTextsPL.xml in Resources */,
+				E9C8411919B7AF660000E3EB /* metronom2.wav in Resources */,
 				E9FE88E21996361000C97A35 /* image0.jpg in Resources */,
 				E9FE88E31996361000C97A35 /* image1.jpg in Resources */,
 				E9FE88E41996361000C97A35 /* image2.jpg in Resources */,
@@ -1013,6 +1035,7 @@
 				E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */,
 				E93BC5B019815FA700DE3408 /* ioapi.c in Sources */,
 				E909E4EB19B5138B00EB441F /* GimnastykaOczuOkragViewController.m in Sources */,
+				E9C8411419B7A1370000E3EB /* MetronumEXCViewController.m in Sources */,
 				E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */,
 				E9054AB11997989300AC077D /* ImageForDB.m in Sources */,
 				E970B52A19ABB8FC0099243C /* ExercisesFourtyOneViewController.m in Sources */,
