@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesFifthteenViewController.h"
+#import "GimnastykaOczuRamkaViewController.h"
 
-@interface ExercisesFifthteenViewController ()
+@interface GimnastykaOczuRamkaViewController ()
 
 @end
 
-@implementation ExercisesFifthteenViewController
+@implementation GimnastykaOczuRamkaViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,11 +29,7 @@
     self.rectangleDic=[[NSMutableDictionary alloc] init];
     [self initFrames];
     [self addFrameToView];
-    if (self.scrollingTimer == nil)
-    {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:0.1
-                                                               target:self selector:@selector(resizeRectangular) userInfo:nil repeats:YES];
-    }
+   
     // Do any additional setup after loading the view.
 }
 
@@ -220,4 +216,34 @@
  }
  */
 
+
+//FINISH HIM
+- (IBAction)startPush:(id)sender {
+    if(!self.started)
+    {
+    if (self.scrollingTimer == nil)
+    {
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:40/self.speedSlider.value
+                                                               target:self selector:@selector(resizeRectangular) userInfo:nil repeats:YES];
+    }
+        self.started=!self.started;
+    }
+    else
+    {
+        self.started=!self.started;
+        [self.scrollingTimer invalidate];
+        self.scrollingTimer=nil;
+    }
+
+    
+}
+- (IBAction)speedChange:(id)sender {
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer=nil;
+    if (self.scrollingTimer == nil)
+    {
+        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:40/self.speedSlider.value
+                                                               target:self selector:@selector(resizeRectangular) userInfo:nil repeats:YES];
+    }
+}
 @end
