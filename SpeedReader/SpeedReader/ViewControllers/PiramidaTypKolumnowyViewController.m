@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesTwentyFourViewController.h"
+#import "PiramidaTypKolumnowyViewController.h"
 
-@interface ExercisesTwentyFourViewController ()
+@interface PiramidaTypKolumnowyViewController ()
 
 @end
 
-@implementation ExercisesTwentyFourViewController
+@implementation PiramidaTypKolumnowyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,8 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.mode=NO;
+    self.mode=YES;
     self.actuallSize=1;
+    self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
     [self create];
     // Do any additional setup after loading the view.
 }
@@ -62,11 +63,9 @@
     for (int i=0; i<10; i++) {
         for (int j=0; j<3; j++)
         {
-            
             switch (self.actuallSize)
             {
                 case 1:
-                    
                     if(self.mode)
                     {
                         bound=10;
@@ -114,7 +113,7 @@
                 case 3:
                     if(self.mode)
                     {
-                        bound=100;
+                        bound=1000;
                         lowBound=bound/10;
                     }
                     
@@ -128,7 +127,7 @@
                         letters=[NSString stringWithFormat:@"%c",[numValue intValue]+96];
 
                         if (j==1) {
-                            numValue=[[NSNumber alloc]initWithInt:rndValue/10];
+                            numValue=[[NSNumber alloc]initWithInt:rndValue/100];
                         }
                         else
                         {
@@ -166,17 +165,37 @@
             }
         }
     }
-    self.exercisesTwentyFourText.textAlignment=NSTextAlignmentCenter;
-    self.exercisesTwentyFourText.text=textToDisplay;
-    [self.exercisesTwentyFourText sizeToFit];
-    self.exercisesTwentyFourText.center = CGPointMake(self.view.frame.size.width/2, 300);
+    self.textLabel.textAlignment=NSTextAlignmentCenter;
+    self.textLabel.text=textToDisplay;
+    [self.textLabel sizeToFit];
+    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);
     
 }
 
 - (IBAction)sizeChange:(id)sender {
-    self.actuallSize=(int)self.exercisesTwentyFourSlider.value;
-    self.exercisesTwentyFourText.text=nil;
-     [self.exercisesTwentyFourText sizeToFit];
+    self.actuallSize=(int)self.wordLengthSlider.value;
+    self.textLabel.text=nil;
+   self.textLabel.textAlignment=NSTextAlignmentCenter;
+    [self.textLabel sizeToFit];
+
+    self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
+
+    [self create];
+}
+- (IBAction)modeChange:(id)sender {
+    self.mode=!self.mode;
+    self.textLabel.text=nil;
+    self.textLabel.textAlignment=NSTextAlignmentCenter;
+    [self.textLabel sizeToFit];
+   
+    [self create];
+    
+}
+- (IBAction)getNewLetters:(id)sender {
+    self.textLabel.text=nil;
+    self.textLabel.textAlignment=NSTextAlignmentCenter;
+    [self.textLabel sizeToFit];
+    
     [self create];
 }
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesTwentyNineViewController.h"
+#import "SzukanieSekwencjiWPiramidzieViewController.h"
 
-@interface ExercisesTwentyNineViewController ()
+@interface SzukanieSekwencjiWPiramidzieViewController ()
 
 @end
 
-@implementation ExercisesTwentyNineViewController
+@implementation SzukanieSekwencjiWPiramidzieViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,9 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.mode=YES;
-    self.actuallSize=(int)self.exercisesTwentyNineSlider.value;
+    self.mode=NO;
+    self.actuallSize=(int)self.sizeSlider.value;
     self.toFind=[[NSString alloc]init];
+    self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
     [self create];
     // Do any additional setup after loading the view.
 }
@@ -63,7 +64,7 @@
             rndValue= lowBound + arc4random() % (bound - lowBound);
             numValue=[[NSNumber alloc]initWithInt:rndValue];
             
-            self.toFind=[self.toFind stringByAppendingString:[NSString stringWithFormat:@"%d",[numValue intValue]+96]];
+            self.toFind=[self.toFind stringByAppendingString:[NSString stringWithFormat:@"%c",[numValue intValue]+96]];
         }
     }
     
@@ -103,7 +104,7 @@
                         rndValue= lowBound + arc4random() % (bound - lowBound);
                         numValue=[[NSNumber alloc]initWithInt:rndValue];
                         
-                        textToDisplay=[textToDisplay stringByAppendingString:[NSString stringWithFormat:@"%d",[numValue intValue]+96]];
+                        textToDisplay=[textToDisplay stringByAppendingString:[NSString stringWithFormat:@"%c",[numValue intValue]+96]];
                         
                     }
             }
@@ -112,7 +113,7 @@
     }
     
   
-    self.exercisesTwentyNineText.text=textToDisplay;
+    self.textLabel.text=textToDisplay;
     NSError *error = NULL;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:self.toFind options:NSRegularExpressionCaseInsensitive error:&error];
     NSUInteger numberOfMatches = [regex numberOfMatchesInString:textToDisplay options:0 range:NSMakeRange(0, [textToDisplay length])];
@@ -120,18 +121,20 @@
     
     self.goodAnswer=numberOfMatches-1;
 
-self.exercisesTwentyNineText.textAlignment=NSTextAlignmentCenter;
-self.exercisesTwentyNineText.text=textToDisplay;
-[self.exercisesTwentyNineText sizeToFit];
-self.exercisesTwentyNineText.center = CGPointMake(self.view.frame.size.width/2, 300);
+self.textLabel.textAlignment=NSTextAlignmentCenter;
+self.textLabel.text=textToDisplay;
+[self.textLabel sizeToFit];
+self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);
 
 }
 
 - (IBAction)sizeChange:(id)sender {
-    self.actuallSize=(int)self.exercisesTwentyNineSlider.value;
-    self.exercisesTwentyNineText.text=nil;
-    [self.exercisesTwentyNineText sizeToFit];
+    self.actuallSize=(int)self.sizeSlider.value;
+    self.textLabel.text=nil;
+    [self.textLabel sizeToFit];
     self.toFind=[[NSString alloc]init];
+    self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
+
     [self create];
 }
 
@@ -146,4 +149,18 @@ self.exercisesTwentyNineText.center = CGPointMake(self.view.frame.size.width/2, 
 }
 */
 
+- (IBAction)modeChange:(id)sender {
+    self.mode=!self.mode;
+    self.textLabel.text=nil;
+    [self.textLabel sizeToFit];
+    self.toFind=[[NSString alloc]init];
+    [self create];
+}
+
+- (IBAction)startPush:(id)sender {
+    self.textLabel.text=nil;
+    [self.textLabel sizeToFit];
+    self.toFind=[[NSString alloc]init];
+    [self create];
+}
 @end

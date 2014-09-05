@@ -35,7 +35,7 @@
     [self.timerLabel sizeToFit];
     self.metronom = [self createSoundID: @"metronom.wav"];
        self.metronom2 = [self createSoundID: @"metronom2.wav"];
-    self.soundCounter=0;
+    self.soundCounter=1;
 
     // Do any additional setup after loading the view.
 }
@@ -75,12 +75,14 @@
     if (self.audioPlayingTimer == nil) {
         if(self.setTimerLabel.enabled==YES)
         {
+             self.soundCounter=1;
         self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.timeForMetronumSlider.value/1000)
                                                                target:self selector:@selector(playSound) userInfo:nil repeats:YES];
         }
         else
         {
-            self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.timeForMetronumSlider.value/1000)
+            NSTimeInterval timer=60/(self.speedReadSlider.value/self.tickPerWordSlider.value);
+            self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(timer)
                                                                       target:self selector:@selector(playSound) userInfo:nil repeats:YES];
         }
             
@@ -95,20 +97,25 @@
 {
     if(self.setTimerLabel.enabled==YES)
     {
-    if(self.soundCounter<self.tickSlider.value)
-    AudioServicesPlaySystemSound(self.metronom);
-    else{
-        AudioServicesPlaySystemSound(self.metronom2);
-        self.soundCounter=0;
-    }
-    }
-    else{
-        if(self.soundCounter<self.tickPerWordSlider.value)
+        if((int)self.tickSlider.value==1)
+        {
             AudioServicesPlaySystemSound(self.metronom);
-        else{
-            AudioServicesPlaySystemSound(self.metronom);
-            self.soundCounter=0;
+            return;
         }
+            if(self.soundCounter<(int)self.tickSlider.value)
+        {
+            AudioServicesPlaySystemSound(self.metronom);
+            self.soundCounter++;
+        }
+        else{
+            AudioServicesPlaySystemSound(self.metronom2);
+            self.soundCounter=1;
+        }
+    }
+    else{
+        
+            AudioServicesPlaySystemSound(self.metronom);
+        
 
     }
 }
@@ -179,21 +186,59 @@
 
 - (IBAction)timerForMetronumChange:(id)sender {
     self.timeForMetronumCounterLabel.text=[[[NSNumber alloc]initWithInt:self.timeForMetronumSlider.value]description];
-}
+    self.soundCounter=1;
+
+    [self.audioPlayingTimer invalidate];
+    self.audioPlayingTimer = nil;
+
+    if (self.audioPlayingTimer == nil) {
+            self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.timeForMetronumSlider.value/1000)
+                                                                      target:self selector:@selector(playSound) userInfo:nil repeats:YES];
+    }
+    }
 
 - (IBAction)tickChange:(id)sender
 {
     self.tickCounterLabel.text=[[[NSNumber alloc]initWithInt:self.tickSlider.value]description];
+    self.soundCounter=1;
+
+    [self.audioPlayingTimer invalidate];
+    self.audioPlayingTimer = nil;
+    
+    if (self.audioPlayingTimer == nil) {
+        self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(self.timeForMetronumSlider.value/1000)
+                                                                  target:self selector:@selector(playSound) userInfo:nil repeats:YES];
+    }
 }
 
 -(IBAction)speedReadChange:(id)sender
 {
     self.speedReadCounter.text=[[[NSNumber alloc]initWithInt:self.speedReadSlider.value]description];
+    
+    [self.audioPlayingTimer invalidate];
+    self.audioPlayingTimer = nil;
+    
+    if (self.audioPlayingTimer == nil) {
+    
+    NSTimeInterval timer=60/(self.speedReadSlider.value/self.tickPerWordSlider.value);
+    self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(timer)
+                                                              target:self selector:@selector(playSound) userInfo:nil repeats:YES];
+    }
 }
 
 -(void)tickPerWordChange:(id)sender
 {
     self.tickPerWordCounterLabel.text=[[[NSNumber alloc]initWithInt:self.tickPerWordSlider.value]description];
+    [self.audioPlayingTimer invalidate];
+    self.audioPlayingTimer = nil;
+    
+    if (self.audioPlayingTimer == nil) {
+        
+        NSTimeInterval timer=60/(self.speedReadSlider.value/self.tickPerWordSlider.value);
+        self.audioPlayingTimer = [NSTimer scheduledTimerWithTimeInterval:(timer)
+                                                                  target:self selector:@selector(playSound) userInfo:nil repeats:YES];
+    }
+
 }
 - (void)didReceiveMemoryWarning
 {
