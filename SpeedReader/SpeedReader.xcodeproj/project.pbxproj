@@ -94,6 +94,7 @@
 		E9CE9D9F19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */; };
 		E9D12C3F19B858B100B7BD0C /* PiramidaMigawkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */; };
 		E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */; };
+		E9D56CCA19BB2FF40080A98F /* TabliceSchultzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */; };
 		E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */; };
 		E9DB2A8919B5DBD3004596BA /* GimnastykaOczuWazViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */; };
 		E9DBAC2F19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DBAC2E19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m */; };
@@ -309,6 +310,8 @@
 		E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaMigawkiViewController.m; path = SpeedReader/ViewControllers/PiramidaMigawkiViewController.m; sourceTree = "<group>"; };
 		E9D3777019B9B7EE00F36D2B /* PiramidaTypPelnyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiramidaTypPelnyViewController.h; path = SpeedReader/ViewControllers/PiramidaTypPelnyViewController.h; sourceTree = "<group>"; };
 		E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaTypPelnyViewController.m; path = SpeedReader/ViewControllers/PiramidaTypPelnyViewController.m; sourceTree = "<group>"; };
+		E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.h; sourceTree = "<group>"; };
+		E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.m; sourceTree = "<group>"; };
 		E9DB2A8419B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; sourceTree = "<group>"; };
 		E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; sourceTree = "<group>"; };
 		E9DB2A8719B5DBD3004596BA /* GimnastykaOczuWazViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuWazViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuWazViewController.h; sourceTree = "<group>"; };
@@ -718,6 +721,8 @@
 				E98D0A6B19B9FFB5001EA86C /* StoperEXCViewController.m */,
 				E98D0A6D19BA0817001EA86C /* SuperSzybkoscViewController.h */,
 				E98D0A6E19BA0817001EA86C /* SuperSzybkoscViewController.m */,
+				E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */,
+				E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -1069,6 +1074,7 @@
 				E93BC5B819815FA700DE3408 /* adler32.c in Sources */,
 				E91ED05C19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.m in Sources */,
 				E9179A2419B5F2580085A55C /* GimnastykaOczuZygzakViewController.m in Sources */,
+				E9D56CCA19BB2FF40080A98F /* TabliceSchultzaViewController.m in Sources */,
 				E9371E76198D272B00DFCBF0 /* SharedData.m in Sources */,
 				E93BC5B719815FA700DE3408 /* ZipWriteStream.m in Sources */,
 				E9E514141976A231001FDA03 /* main.m in Sources */,

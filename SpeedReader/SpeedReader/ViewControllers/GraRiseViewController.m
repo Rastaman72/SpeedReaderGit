@@ -97,7 +97,7 @@
         [label setFont:@"Helvetica-Bold"];
         [label setFontSize:20];
         [label setFrame:Rect];
-                [label setString:[NSString stringWithFormat:@"%d",i]];
+        [label setString:[NSString stringWithFormat:@"%d",i]];
         [label setAlignmentMode:kCAAlignmentCenter];
         [label setForegroundColor:[[UIColor blackColor] CGColor]];
         

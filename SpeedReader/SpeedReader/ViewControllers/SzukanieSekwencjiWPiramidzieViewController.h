@@ -25,4 +25,5 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *charModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
 @end

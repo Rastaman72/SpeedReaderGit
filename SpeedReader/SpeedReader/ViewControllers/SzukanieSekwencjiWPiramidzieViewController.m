@@ -31,6 +31,7 @@
     self.toFind=[[NSString alloc]init];
     self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
     [self create];
+    [self createButtons];
     // Do any additional setup after loading the view.
 }
 
@@ -39,6 +40,106 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)createButtons
+{
+    for (int i=0; i<11; i++) {
+        CGRect Rect1= CGRectMake(0+60*i,50, 60, 20);
+      //  CGRect Rect = CGRectMake(Rect1.origin.x, Rect1.origin.y+2, 20, 20);
+
+        CALayer* rectangleToAdd = [CALayer layer];
+        [rectangleToAdd setFrame:Rect1];
+        [rectangleToAdd setBounds:Rect1];
+        [rectangleToAdd setCornerRadius:5.0f];
+        [rectangleToAdd setBackgroundColor:[[UIColor redColor]CGColor]];
+        [rectangleToAdd setOpacity:1.0f];
+   
+       
+        CGRect Rect=rectangleToAdd.frame;
+        
+        CATextLayer *label = [[CATextLayer alloc] init];
+        [label setFont:@"Helvetica-Bold"];
+        [label setFontSize:20];
+        [label setFrame:Rect];
+        if (i==10) {
+             [label setString:[NSString stringWithFormat:@"%d+",10]];
+        }
+else
+        [label setString:[NSString stringWithFormat:@"%d",i]];
+        [label setAlignmentMode:kCAAlignmentCenter];
+        [label setForegroundColor:[[UIColor blackColor] CGColor]];
+        
+        /* [object setFrame:Rect];
+         [object setBounds:Rect];*/
+        
+        [rectangleToAdd addSublayer:label];
+        
+        [self.gameView.layer insertSublayer:rectangleToAdd atIndex:i];
+        [self.gameView.layer setValue:rectangleToAdd forKeyPath:[NSString stringWithFormat:@"Number %d",i]];
+
+    }
+}
+
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.gameView];
+  
+    for (CALayer* singleLayer in self.gameView.layer.sublayers)
+    {
+        
+        if ([singleLayer containsPoint:[self.gameView.layer convertPoint:P toLayer:singleLayer]])
+        {
+        
+                NSString* choosedAnswer=[[NSString alloc]init];
+                choosedAnswer=[[singleLayer.sublayers firstObject]string];
+                int answer=[choosedAnswer intValue];
+            
+            
+            int resultInPercent = 100;
+            if (self.goodAnswer != answer)
+            {
+                
+                if (self.goodAnswer != 0 && answer!= 0)
+                {
+                    if (self.goodAnswer < answer)
+                    {
+                        resultInPercent = (int)(((float)self.goodAnswer / (float)answer) * 100.0f);
+                    }
+                    else
+                    {
+                        resultInPercent = (int)(((float)answer / (float)self.goodAnswer) * 100.0f);
+                    }
+                }
+                
+                else
+                {
+                    resultInPercent = 0;
+                }
+            }
+            if (answer == 10 && self.goodAnswer >= 10)
+                resultInPercent = 100;
+            
+                UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"Result" message:[NSString stringWithFormat:@"You get %d %% correct. It was %d times",resultInPercent,self.goodAnswer] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+                [alert show];
+           
+            
+        }
+    }
+    
+    
+    
+    
+    
+    
+}
+- (void)alertView:(UIAlertView *)alert clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [self startPush:self];
+}
+
 -(void)create
 {
     int bound;

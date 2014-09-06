@@ -2137,16 +2137,102 @@
             </objects>
             <point key="canvasLocation" x="9551" y="3691"/>
         </scene>
-        <!--View Controller-->
+        <!--Tablice Schultza View Controller-->
         <scene sceneID="gjv-UN-Blo">
             <objects>
-                <viewController id="V5N-oc-QPq" sceneMemberID="viewController">
+                <viewController restorationIdentifier="EXC33" storyboardIdentifier="EXC33" modalPresentationStyle="currentContext" id="V5N-oc-QPq" customClass="TabliceSchultzaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie8-M1-2Cc">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1BL-4b-5NR">
+                                <rect key="frame" x="361" y="600" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CfU-1I-Mho">
+                                <rect key="frame" x="20" y="641" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tzF-w6-J8t">
+                                <rect key="frame" x="144" y="635" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tCM-hA-3U1">
+                                <rect key="frame" x="536" y="641" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cwC-10-mPt">
+                                <rect key="frame" x="656" y="641" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Yfq-Wc-yMe">
+                                <rect key="frame" x="656" y="574" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="omx-gJ-GVo">
+                                <rect key="frame" x="536" y="574" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="NC7-b0-4Yi">
+                                <rect key="frame" x="498" y="603" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="squareSizeChange:" destination="V5N-oc-QPq" eventType="touchUpInside" id="kyd-9G-6cc"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="SAg-fW-leH">
+                                <rect key="frame" x="620" y="603" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="wordLengthChange:" destination="V5N-oc-QPq" eventType="touchUpInside" id="lz5-UU-0aG"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="olj-JC-yIO">
+                                <rect key="frame" x="70" y="635" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="modeChange:" destination="V5N-oc-QPq" eventType="valueChanged" id="FCc-dB-8Cj"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" id="p9F-nc-v19">
+                                <rect key="frame" x="171" y="123" width="384" height="358"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wDi-Bf-ZiY"/>
+                    <connections>
+                        <outlet property="charModeLabel" destination="tzF-w6-J8t" id="deE-Ur-kpB"/>
+                        <outlet property="digitModeLabel" destination="CfU-1I-Mho" id="33z-dE-xKq"/>
+                        <outlet property="gameView" destination="p9F-nc-v19" id="bHl-0b-8Ie"/>
+                        <outlet property="legthWordDescriptionLabel" destination="Yfq-Wc-yMe" id="fRn-N2-QAw"/>
+                        <outlet property="selectModeSwitch" destination="olj-JC-yIO" id="0Td-dE-7Dd"/>
+                        <outlet property="squareSizeCounterLabel" destination="tCM-hA-3U1" id="voT-om-dZy"/>
+                        <outlet property="squareSizeDescriptionLabel" destination="omx-gJ-GVo" id="OsI-r2-k4H"/>
+                        <outlet property="squareSizeSlider" destination="NC7-b0-4Yi" id="usi-8D-KZc"/>
+                        <outlet property="startButton" destination="1BL-4b-5NR" id="80r-6X-SEI"/>
+                        <outlet property="startPush" destination="1BL-4b-5NR" id="IVv-st-yEm"/>
+                        <outlet property="wordLengthCounterLabel" destination="cwC-10-mPt" id="aRW-z4-PWb"/>
+                        <outlet property="wordLengthSlider" destination="SAg-fW-leH" id="Zva-PW-RlX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wG-Tg-TDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2458,7 +2544,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C4P-DS-VX9">
-                                <rect key="frame" x="0.0" y="218" width="768" height="21"/>
+                                <rect key="frame" x="0.0" y="110" width="768" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -2511,6 +2597,11 @@
                                     <action selector="modeChange:" destination="UKY-RG-iMG" eventType="valueChanged" id="oHR-SP-AXP"/>
                                 </connections>
                             </switch>
+                            <view contentMode="scaleToFill" id="ZOd-zn-hat">
+                                <rect key="frame" x="0.0" y="413" width="768" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2518,6 +2609,7 @@
                     <connections>
                         <outlet property="charModeLabel" destination="0iw-Wn-GaV" id="xCl-Q9-sPc"/>
                         <outlet property="digitModeLabel" destination="i33-f3-WGB" id="32I-kn-3ed"/>
+                        <outlet property="gameView" destination="ZOd-zn-hat" id="2eI-gq-Wn3"/>
                         <outlet property="selectModeSwitch" destination="Tuq-l7-qfg" id="HG0-Ml-xzm"/>
                         <outlet property="sizeCounterLabel" destination="zKn-Y9-t7s" id="DRN-ox-eaf"/>
                         <outlet property="sizeDescriptionLabel" destination="lFg-GV-QID" id="x69-KA-NMi"/>
