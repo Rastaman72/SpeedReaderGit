@@ -146,12 +146,6 @@
             }
         }
     }
-    
-    
-    
-    
-    
-    
 }
 
 - (SharedData*) theAppDataObject;

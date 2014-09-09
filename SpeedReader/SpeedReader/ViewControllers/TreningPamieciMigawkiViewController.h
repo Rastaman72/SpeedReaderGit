@@ -1,14 +1,15 @@
 //
-//  TabliceSchultzaViewController.h
+//  TreningPamieciMigawkiViewController.h
 //  SpeedReader
 //
-//  Created by LGBS dev on 9/6/14.
+//  Created by LGBS dev on 9/8/14.
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TabliceSchultzaViewController : UIViewController
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
+@interface TreningPamieciMigawkiViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (weak, nonatomic) IBOutlet UILabel *charModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;
@@ -18,7 +19,7 @@
 - (IBAction)modeChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
-
+@property(nonatomic,strong)SharedData* xmlManager;
 @property (weak, nonatomic) IBOutlet UILabel *squareSizeDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *squareSizeSlider;
 @property (weak, nonatomic) IBOutlet UILabel *squareSizeCounterLabel;
@@ -31,4 +32,9 @@
 @property(nonatomic,assign)int squareSize;
 @property(nonatomic,strong) NSMutableArray *numbersWordLength;
 @property(nonatomic,strong) NSMutableArray *numbersSquareSize;
+@property (weak, nonatomic) IBOutlet UILabel *wordShowTimeDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UISlider *wordShowSlider;
+@property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
+- (IBAction)showTimeChange:(id)sender;
+@property(nonatomic,strong) NSTimer *showTableTimer;
 @end

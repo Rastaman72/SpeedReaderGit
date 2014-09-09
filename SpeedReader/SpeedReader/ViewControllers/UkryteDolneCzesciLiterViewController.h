@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
-@interface ExercisesThirtyEigthViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *exercisesThirtyEigthText;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesThirtyEigthSizeSlider;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesThirtyEigthShadowSlider;
+@interface UkryteDolneCzesciLiterViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *exerciseTextView;
+@property (weak, nonatomic) IBOutlet UISlider *textSizeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *shadowSizeSlider;
 - (IBAction)shadowChange:(id)sender;
 - (IBAction)sizeChange:(id)sender;
 
@@ -21,7 +21,7 @@
 @property(nonatomic,strong)SharedData* xmlManager;
 @property(nonatomic,assign)int maxPosition;
 @property(nonatomic,assign)int actuallOffset;
-@property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign) CGSize exerciseTextViewSize;
 @property(nonatomic,assign)float numberOfLines;
 @property(nonatomic,strong)NSArray* toRetrieve;
 @end

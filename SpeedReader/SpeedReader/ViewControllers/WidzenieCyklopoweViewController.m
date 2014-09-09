@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesFourtyOneViewController.h"
+#import "WidzenieCyklopoweViewController.h"
 
-@interface ExercisesFourtyOneViewController ()
+@interface WidzenieCyklopoweViewController ()
 
 @end
 
-@implementation ExercisesFourtyOneViewController
+@implementation WidzenieCyklopoweViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,14 +29,14 @@
     
     self.xmlManager=[self theAppDataObject];
     [self.xmlManager getExercisesText];
-    self.exercisesFoutyOneText.text=self.xmlManager.exercisesText;
-    float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesFourtyOneSizeSlider.value]description]floatValue];
-    self.size = [self.exercisesFoutyOneText.text sizeWithFont:self.exercisesFoutyOneText.font
-                                            constrainedToSize:self.exercisesFoutyOneText.frame.size
+    self.exerciseTextView.text=self.xmlManager.exercisesText;
+    float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];
+    self.size = [self.exerciseTextView.text sizeWithFont:self.exerciseTextView.font
+                                            constrainedToSize:self.exerciseTextView.frame.size
                                                 lineBreakMode:NSLineBreakByWordWrapping]; // default mode
-    self.numberOfLines = self.size.height / self.exercisesFoutyOneText.font.lineHeight;
-    self.exercisesFoutyOneText.userInteractionEnabled=YES;
-    self.exercisesFoutyOneText.scrollEnabled=YES;
+    self.numberOfLines = self.size.height / self.exerciseTextView.font.lineHeight;
+    self.exerciseTextView.userInteractionEnabled=YES;
+    self.exerciseTextView.scrollEnabled=YES;
     self.radius = 50;
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.headIndent = 100.0;
@@ -44,12 +44,12 @@
     paragraphStyle.tailIndent = -100.0;
     
     NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:fontSize], NSParagraphStyleAttributeName: paragraphStyle};
-    self.exercisesFoutyOneText.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
+    self.exerciseTextView.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
     
-    [self tst];
+    [self createMask];
 }
 
--(void)tst
+-(void)createMask
 {
     
     [self.maskView setBackgroundColor:[UIColor clearColor]];
@@ -86,28 +86,38 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     
-    
-    NSLog(@"%@",self.exercisesFoutyOneText.layer.sublayers);
     CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.maskView];
     
     NSLog(@"%f",P.x);
     
     self.xPos=P.x;
     self.yPos=P.y;
-    [self tst];
+    
+    if(self.yPos<self.maskView.frame.size.height &&
+       self.xPos<self.maskView.frame.size.width  &&
+       self.yPos>0 &&
+       self.xPos>0)
+    [self createMask];
 }
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.maskView];
+    
     self.xPos=P.x;
     self.yPos=P.y;
-    [self tst];
+    
+    
+    if(self.yPos<self.maskView.frame.size.height &&
+       self.xPos<self.maskView.frame.size.width  &&
+       self.yPos>0 &&
+       self.xPos>0)
+    [self createMask];
 }
 
 - (IBAction)circleChange:(id)sender
 {
-    self.radius=self.exercisesFourtyOneCircleSizeSlider.value;
-    [self tst];
+    self.radius=self.circleSizeSlider.value;
+    [self createMask];
 }
 - (IBAction)sizeChange:(id)sender
 {
@@ -120,30 +130,30 @@
 
 - (void)resetView
 {
-    self.exercisesFoutyOneText.text=nil;
-    self.exercisesFoutyOneText.text=self.xmlManager.exercisesText;
-    [self.exercisesFoutyOneText setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.exercisesFourtyOneSizeSlider.value]];
-    [self.exercisesFoutyOneText setContentOffset:CGPointZero animated:YES];
+    self.exerciseTextView.text=nil;
+    self.exerciseTextView.text=self.xmlManager.exercisesText;
+    [self.exerciseTextView setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.textSizeSlider.value]];
+    [self.exerciseTextView setContentOffset:CGPointZero animated:YES];
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.headIndent = 100.0;
     paragraphStyle.firstLineHeadIndent = 100.0;
     paragraphStyle.tailIndent = -100.0;
-    float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesFourtyOneSizeSlider.value]description]floatValue];
+    float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];
     
     NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:fontSize], NSParagraphStyleAttributeName: paragraphStyle};
-    self.exercisesFoutyOneText.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
+    self.exerciseTextView.attributedText = [[NSAttributedString alloc] initWithString:self.xmlManager.exercisesText attributes:attrsDictionary];
     
     
     self.position=0;
 }
 
 - (void)countMaxPosition {
-    CGSize size = [self.exercisesFoutyOneText.text sizeWithFont:self.exercisesFoutyOneText.font
-                                              constrainedToSize:self.exercisesFoutyOneText.frame.size
+    CGSize size = [self.exerciseTextView.text sizeWithFont:self.exerciseTextView.font
+                                              constrainedToSize:self.exerciseTextView.frame.size
                                                   lineBreakMode:NSLineBreakByWordWrapping]; // default mode
-    float numberOfLines = size.height / self.exercisesFoutyOneText.font.lineHeight;
-    self.maxPosition=self.exercisesFoutyOneText.font.lineHeight*numberOfLines;
+    float numberOfLines = size.height / self.exerciseTextView.font.lineHeight;
+    self.maxPosition=self.exerciseTextView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
 }
 @end

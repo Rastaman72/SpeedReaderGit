@@ -10,11 +10,11 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 
-@interface ExercisesFourtyOneViewController : UIViewController<UIGestureRecognizerDelegate>
-@property (weak, nonatomic) IBOutlet UITextView *exercisesFoutyOneText;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesFourtyOneCircleSizeSlider;
+@interface WidzenieCyklopoweViewController : UIViewController<UIGestureRecognizerDelegate>
+@property (weak, nonatomic) IBOutlet UITextView *exerciseTextView;
+@property (weak, nonatomic) IBOutlet UISlider *circleSizeSlider;
 - (IBAction)circleChange:(id)sender;
-@property (weak, nonatomic) IBOutlet UISlider *exercisesFourtyOneSizeSlider;
+@property (weak, nonatomic) IBOutlet UISlider *textSizeSlider;
 - (IBAction)sizeChange:(id)sender;
 
 @property(nonatomic,strong)CALayer* readFrame;
@@ -32,7 +32,7 @@
 @property (nonatomic) float xPos;
 
 @property (nonatomic, assign) BOOL isMaskMoved;
-@property (nonatomic, strong) CAShapeLayer *maskLayer;
+
 @property (weak, nonatomic) IBOutlet UIView *maskView;
 @property (nonatomic,assign)int radius;
 

@@ -30,7 +30,7 @@
 		E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E925405819A0E40200ECE98E /* BaseExercisesViewController.m */; };
 		E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E926944C198FEBF900BE1BEF /* SpeedReader.xcdatamodeld */; };
 		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
-		E92733E519AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */; };
+		E92733E519AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */; };
 		E92750FB19B759D6003B2F0D /* GraUkladankaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92750FA19B759D6003B2F0D /* GraUkladankaViewController.m */; };
 		E928EEE719A64F9E00833F29 /* GraMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E928EEE619A64F9E00833F29 /* GraMemoryViewController.m */; };
 		E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */; };
@@ -78,9 +78,11 @@
 		E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA1199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m */; };
 		E95C7AA5199BC12E004F1B2D /* ExercisesZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */; };
 		E96DC64719B5179400563CEC /* GimnastykaOczuPilaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96DC64619B5179400563CEC /* GimnastykaOczuPilaViewController.m */; };
-		E970B52A19ABB8FC0099243C /* ExercisesFourtyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */; };
+		E970B52A19ABB8FC0099243C /* WidzenieCyklopoweViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E970B52919ABB8FC0099243C /* WidzenieCyklopoweViewController.m */; };
 		E97618B01990F5EB006CD981 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97618AF1990F5EB006CD981 /* MessageUI.framework */; };
 		E981214019B659C30053477E /* GraRiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E981213F19B659C30053477E /* GraRiseViewController.m */; };
+		E982C6D019BF551700107B54 /* ZaznaczCiagiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E982C6CF19BF551700107B54 /* ZaznaczCiagiViewController.m */; };
+		E983431719BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E983431619BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m */; };
 		E98D0A6C19B9FFB5001EA86C /* StoperEXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98D0A6B19B9FFB5001EA86C /* StoperEXCViewController.m */; };
 		E98D0A6F19BA0817001EA86C /* SuperSzybkoscViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98D0A6E19BA0817001EA86C /* SuperSzybkoscViewController.m */; };
 		E9A18158197E77E60046B48E /* UserParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A18157197E77E60046B48E /* UserParser.m */; };
@@ -91,13 +93,17 @@
 		E9C8411419B7A1370000E3EB /* MetronumEXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */; };
 		E9C8411819B7AF660000E3EB /* metronom.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411619B7AF660000E3EB /* metronom.wav */; };
 		E9C8411919B7AF660000E3EB /* metronom2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411719B7AF660000E3EB /* metronom2.wav */; };
+		E9CB3CD719BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CB3CD619BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m */; };
+		E9CB3CDA19BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CB3CD919BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m */; };
 		E9CE9D9F19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */; };
 		E9D12C3F19B858B100B7BD0C /* PiramidaMigawkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */; };
 		E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */; };
 		E9D56CCA19BB2FF40080A98F /* TabliceSchultzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */; };
+		E9D75DED19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */; };
 		E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */; };
 		E9DB2A8919B5DBD3004596BA /* GimnastykaOczuWazViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */; };
 		E9DBAC2F19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DBAC2E19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m */; };
+		E9E0794819BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E0794719BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m */; };
 		E9E514081976A231001FDA03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514071976A231001FDA03 /* Foundation.framework */; };
 		E9E5140A1976A231001FDA03 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E514091976A231001FDA03 /* CoreGraphics.framework */; };
 		E9E5140C1976A231001FDA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E5140B1976A231001FDA03 /* UIKit.framework */; };
@@ -186,8 +192,8 @@
 		E925405719A0E40200ECE98E /* BaseExercisesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseExercisesViewController.h; path = SpeedReader/ViewControllers/BaseExercisesViewController.h; sourceTree = "<group>"; };
 		E925405819A0E40200ECE98E /* BaseExercisesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseExercisesViewController.m; path = SpeedReader/ViewControllers/BaseExercisesViewController.m; sourceTree = "<group>"; };
 		E926944D198FEBF900BE1BEF /* SpeedReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpeedReader.xcdatamodel; sourceTree = "<group>"; };
-		E92733E319AA727C00AFDD9B /* ExercisesThirtyEigthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesThirtyEigthViewController.h; path = SpeedReader/ViewControllers/ExercisesThirtyEigthViewController.h; sourceTree = "<group>"; };
-		E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesThirtyEigthViewController.m; path = SpeedReader/ViewControllers/ExercisesThirtyEigthViewController.m; sourceTree = "<group>"; };
+		E92733E319AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UkryteDolneCzesciLiterViewController.h; path = SpeedReader/ViewControllers/UkryteDolneCzesciLiterViewController.h; sourceTree = "<group>"; };
+		E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UkryteDolneCzesciLiterViewController.m; path = SpeedReader/ViewControllers/UkryteDolneCzesciLiterViewController.m; sourceTree = "<group>"; };
 		E92750F919B759D6003B2F0D /* GraUkladankaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraUkladankaViewController.h; path = SpeedReader/ViewControllers/GraUkladankaViewController.h; sourceTree = "<group>"; };
 		E92750FA19B759D6003B2F0D /* GraUkladankaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraUkladankaViewController.m; path = SpeedReader/ViewControllers/GraUkladankaViewController.m; sourceTree = "<group>"; };
 		E928EEE519A64F9E00833F29 /* GraMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraMemoryViewController.h; path = SpeedReader/ViewControllers/GraMemoryViewController.h; sourceTree = "<group>"; };
@@ -281,11 +287,15 @@
 		E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesZeroViewController.m; path = SpeedReader/ViewControllers/ExercisesZeroViewController.m; sourceTree = "<group>"; };
 		E96DC64519B5179400563CEC /* GimnastykaOczuPilaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuPilaViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuPilaViewController.h; sourceTree = "<group>"; };
 		E96DC64619B5179400563CEC /* GimnastykaOczuPilaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczuPilaViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczuPilaViewController.m; sourceTree = "<group>"; };
-		E970B52819ABB8FC0099243C /* ExercisesFourtyOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExercisesFourtyOneViewController.h; path = SpeedReader/ViewControllers/ExercisesFourtyOneViewController.h; sourceTree = "<group>"; };
-		E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExercisesFourtyOneViewController.m; path = SpeedReader/ViewControllers/ExercisesFourtyOneViewController.m; sourceTree = "<group>"; };
+		E970B52819ABB8FC0099243C /* WidzenieCyklopoweViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WidzenieCyklopoweViewController.h; path = SpeedReader/ViewControllers/WidzenieCyklopoweViewController.h; sourceTree = "<group>"; };
+		E970B52919ABB8FC0099243C /* WidzenieCyklopoweViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WidzenieCyklopoweViewController.m; path = SpeedReader/ViewControllers/WidzenieCyklopoweViewController.m; sourceTree = "<group>"; };
 		E97618AF1990F5EB006CD981 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E981213E19B659C30053477E /* GraRiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraRiseViewController.h; path = SpeedReader/ViewControllers/GraRiseViewController.h; sourceTree = "<group>"; };
 		E981213F19B659C30053477E /* GraRiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraRiseViewController.m; path = SpeedReader/ViewControllers/GraRiseViewController.m; sourceTree = "<group>"; };
+		E982C6CE19BF551700107B54 /* ZaznaczCiagiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZaznaczCiagiViewController.h; path = SpeedReader/ViewControllers/ZaznaczCiagiViewController.h; sourceTree = "<group>"; };
+		E982C6CF19BF551700107B54 /* ZaznaczCiagiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZaznaczCiagiViewController.m; path = SpeedReader/ViewControllers/ZaznaczCiagiViewController.m; sourceTree = "<group>"; };
+		E983431519BDF6B0008445E7 /* TreningPamieciMigawkiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreningPamieciMigawkiViewController.h; path = SpeedReader/ViewControllers/TreningPamieciMigawkiViewController.h; sourceTree = "<group>"; };
+		E983431619BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreningPamieciMigawkiViewController.m; path = SpeedReader/ViewControllers/TreningPamieciMigawkiViewController.m; sourceTree = "<group>"; };
 		E98D0A6A19B9FFB5001EA86C /* StoperEXCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoperEXCViewController.h; path = SpeedReader/ViewControllers/StoperEXCViewController.h; sourceTree = "<group>"; };
 		E98D0A6B19B9FFB5001EA86C /* StoperEXCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoperEXCViewController.m; path = SpeedReader/ViewControllers/StoperEXCViewController.m; sourceTree = "<group>"; };
 		E98D0A6D19BA0817001EA86C /* SuperSzybkoscViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperSzybkoscViewController.h; path = SpeedReader/ViewControllers/SuperSzybkoscViewController.h; sourceTree = "<group>"; };
@@ -304,6 +314,10 @@
 		E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetronumEXCViewController.m; path = SpeedReader/ViewControllers/MetronumEXCViewController.m; sourceTree = "<group>"; };
 		E9C8411619B7AF660000E3EB /* metronom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronom.wav; sourceTree = "<group>"; };
 		E9C8411719B7AF660000E3EB /* metronom2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronom2.wav; sourceTree = "<group>"; };
+		E9CB3CD519BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreningPionowegoWidzeniaViewController.h; path = SpeedReader/ViewControllers/TreningPionowegoWidzeniaViewController.h; sourceTree = "<group>"; };
+		E9CB3CD619BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreningPionowegoWidzeniaViewController.m; path = SpeedReader/ViewControllers/TreningPionowegoWidzeniaViewController.m; sourceTree = "<group>"; };
+		E9CB3CD819BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TreningPoszerzajacyWidzenieViewController.h; path = SpeedReader/ViewControllers/TreningPoszerzajacyWidzenieViewController.h; sourceTree = "<group>"; };
+		E9CB3CD919BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TreningPoszerzajacyWidzenieViewController.m; path = SpeedReader/ViewControllers/TreningPoszerzajacyWidzenieViewController.m; sourceTree = "<group>"; };
 		E9CE9D9D19B4C33B0062AB89 /* GimnastykaOczu8IViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczu8IViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczu8IViewController.h; sourceTree = "<group>"; };
 		E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczu8IViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczu8IViewController.m; sourceTree = "<group>"; };
 		E9D12C3D19B858B100B7BD0C /* PiramidaMigawkiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiramidaMigawkiViewController.h; path = SpeedReader/ViewControllers/PiramidaMigawkiViewController.h; sourceTree = "<group>"; };
@@ -312,12 +326,16 @@
 		E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaTypPelnyViewController.m; path = SpeedReader/ViewControllers/PiramidaTypPelnyViewController.m; sourceTree = "<group>"; };
 		E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.h; sourceTree = "<group>"; };
 		E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.m; sourceTree = "<group>"; };
+		E9D75DEB19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaKolejneLiczbyViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaKolejneLiczbyViewController.h; sourceTree = "<group>"; };
+		E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaKolejneLiczbyViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaKolejneLiczbyViewController.m; sourceTree = "<group>"; };
 		E9DB2A8419B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; sourceTree = "<group>"; };
 		E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; sourceTree = "<group>"; };
 		E9DB2A8719B5DBD3004596BA /* GimnastykaOczuWazViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuWazViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuWazViewController.h; sourceTree = "<group>"; };
 		E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczuWazViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczuWazViewController.m; sourceTree = "<group>"; };
 		E9DBAC2D19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiramidaWyrazyViewController.h; path = SpeedReader/ViewControllers/PiramidaWyrazyViewController.h; sourceTree = "<group>"; };
 		E9DBAC2E19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaWyrazyViewController.m; path = SpeedReader/ViewControllers/PiramidaWyrazyViewController.m; sourceTree = "<group>"; };
+		E9E0794619BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaTreningPamieci1ViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaTreningPamieci1ViewController.h; sourceTree = "<group>"; };
+		E9E0794719BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaTreningPamieci1ViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaTreningPamieci1ViewController.m; sourceTree = "<group>"; };
 		E9E514041976A231001FDA03 /* SpeedReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E514071976A231001FDA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E9E514091976A231001FDA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -685,10 +703,10 @@
 				E9A20F4B19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.m */,
 				E91ED05A19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.h */,
 				E91ED05B19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.m */,
-				E92733E319AA727C00AFDD9B /* ExercisesThirtyEigthViewController.h */,
-				E92733E419AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m */,
-				E970B52819ABB8FC0099243C /* ExercisesFourtyOneViewController.h */,
-				E970B52919ABB8FC0099243C /* ExercisesFourtyOneViewController.m */,
+				E92733E319AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.h */,
+				E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */,
+				E970B52819ABB8FC0099243C /* WidzenieCyklopoweViewController.h */,
+				E970B52919ABB8FC0099243C /* WidzenieCyklopoweViewController.m */,
 				E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */,
 				E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */,
 				E920D65519AE3A5900A65B82 /* CzytanieZPlamamiViewController.h */,
@@ -723,6 +741,18 @@
 				E98D0A6E19BA0817001EA86C /* SuperSzybkoscViewController.m */,
 				E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */,
 				E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */,
+				E9D75DEB19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.h */,
+				E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */,
+				E9E0794619BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.h */,
+				E9E0794719BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m */,
+				E983431519BDF6B0008445E7 /* TreningPamieciMigawkiViewController.h */,
+				E983431619BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m */,
+				E9CB3CD519BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.h */,
+				E9CB3CD619BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m */,
+				E9CB3CD819BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.h */,
+				E9CB3CD919BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m */,
+				E982C6CE19BF551700107B54 /* ZaznaczCiagiViewController.h */,
+				E982C6CF19BF551700107B54 /* ZaznaczCiagiViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -988,6 +1018,7 @@
 				E93BC5BD19815FA700DE3408 /* gzlib.c in Sources */,
 				E920D65719AE3A5900A65B82 /* CzytanieZPlamamiViewController.m in Sources */,
 				E95C7A98199B76FC004F1B2D /* ExercisesDispatcherViewController.m in Sources */,
+				E9CB3CD719BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m in Sources */,
 				E9A20F4C19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.m in Sources */,
 				E93BC5B319815FA700DE3408 /* FileInZipInfo.m in Sources */,
 				E93BC5B619815FA700DE3408 /* ZipReadStream.m in Sources */,
@@ -1002,8 +1033,9 @@
 				E98D0A6C19B9FFB5001EA86C /* StoperEXCViewController.m in Sources */,
 				E96DC64719B5179400563CEC /* GimnastykaOczuPilaViewController.m in Sources */,
 				E92BB5361992BFAC006D2E56 /* TimerViewController.m in Sources */,
-				E92733E519AA727C00AFDD9B /* ExercisesThirtyEigthViewController.m in Sources */,
+				E92733E519AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m in Sources */,
 				E935AA171976EA3F00409E7B /* LessonData.m in Sources */,
+				E982C6D019BF551700107B54 /* ZaznaczCiagiViewController.m in Sources */,
 				E90248DC197D42CF004ADAEC /* GDataXMLNode.m in Sources */,
 				E95C7A9C199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m in Sources */,
 				E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */,
@@ -1015,6 +1047,7 @@
 				E93BC5BA19815FA700DE3408 /* crc32.c in Sources */,
 				E9E514211976A231001FDA03 /* ViewController.m in Sources */,
 				E905433619ACB897001A8DF0 /* SwipeableTextView.m in Sources */,
+				E9CB3CDA19BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m in Sources */,
 				E93BC5C019815FA700DE3408 /* infback.c in Sources */,
 				E935AA111976E70F00409E7B /* RootLessonTableViewController.m in Sources */,
 				E915D70B197804A400846F31 /* StartViewController.m in Sources */,
@@ -1023,6 +1056,7 @@
 				E948351519A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m in Sources */,
 				E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */,
 				E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */,
+				E983431719BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m in Sources */,
 				E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */,
 				E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */,
 				E92750FB19B759D6003B2F0D /* GraUkladankaViewController.m in Sources */,
@@ -1051,6 +1085,7 @@
 				E93BC5BC19815FA700DE3408 /* gzclose.c in Sources */,
 				E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */,
 				E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */,
+				E9E0794819BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m in Sources */,
 				E93BC5C319815FA700DE3408 /* inftrees.c in Sources */,
 				E93BC5BE19815FA700DE3408 /* gzread.c in Sources */,
 				E928EEE719A64F9E00833F29 /* GraMemoryViewController.m in Sources */,
@@ -1061,6 +1096,7 @@
 				E9E514181976A231001FDA03 /* AppDelegate.m in Sources */,
 				E93BC5C119815FA700DE3408 /* inffast.c in Sources */,
 				E948351A19A3AF2B00AEC4B5 /* DrawAnimation.m in Sources */,
+				E9D75DED19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m in Sources */,
 				E915D7011977FD1000846F31 /* RootStatisticsTableViewController.m in Sources */,
 				E93BC5B019815FA700DE3408 /* ioapi.c in Sources */,
 				E909E4EB19B5138B00EB441F /* GimnastykaOczuOkragViewController.m in Sources */,
@@ -1068,7 +1104,7 @@
 				E9D12C3F19B858B100B7BD0C /* PiramidaMigawkiViewController.m in Sources */,
 				E9E514581976A645001FDA03 /* ExportAccountViewController.m in Sources */,
 				E9054AB11997989300AC077D /* ImageForDB.m in Sources */,
-				E970B52A19ABB8FC0099243C /* ExercisesFourtyOneViewController.m in Sources */,
+				E970B52A19ABB8FC0099243C /* WidzenieCyklopoweViewController.m in Sources */,
 				E915D7071977FD3E00846F31 /* StatisticsViewController.m in Sources */,
 				E93BC5BF19815FA700DE3408 /* gzwrite.c in Sources */,
 				E93BC5B819815FA700DE3408 /* adler32.c in Sources */,

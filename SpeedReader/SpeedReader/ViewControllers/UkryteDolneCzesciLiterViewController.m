@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesThirtyEigthViewController.h"
+#import "UkryteDolneCzesciLiterViewController.h"
 
-@interface ExercisesThirtyEigthViewController ()
+@interface UkryteDolneCzesciLiterViewController ()
 
 @end
 
-@implementation ExercisesThirtyEigthViewController
+@implementation UkryteDolneCzesciLiterViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,20 +29,20 @@
  
     self.xmlManager=[self theAppDataObject];
     [self.xmlManager getExercisesText];
-    self.exercisesThirtyEigthText.text=self.xmlManager.exercisesText;
+    self.exerciseTextView.text=self.xmlManager.exercisesText;
     
     
-    float fontSize =[[[[NSNumber alloc]initWithInt:self.exercisesThirtyEigthSizeSlider.value]description]floatValue];
+    float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];
     
-    [self.exercisesThirtyEigthText setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
+    [self.exerciseTextView setFont:[UIFont fontWithName:@"Helvetica Neue" size: fontSize]];
     
-    self.size = [self.exercisesThirtyEigthText.text sizeWithFont:self.exercisesThirtyEigthText.font
-                                       constrainedToSize:self.exercisesThirtyEigthText.frame.size
+    self.exerciseTextViewSize = [self.exerciseTextView.text sizeWithFont:self.exerciseTextView.font
+                                       constrainedToSize:self.exerciseTextView.frame.size
                                            lineBreakMode:NSLineBreakByWordWrapping]; // default mode
-     self.numberOfLines = self.size.height / self.exercisesThirtyEigthText.font.lineHeight;
+     self.numberOfLines = self.exerciseTextViewSize.height / self.exerciseTextView.font.lineHeight;
     
-    NSLog(@"%f",self.exercisesThirtyEigthText.font.lineHeight);
-    self.maxPosition=self.exercisesThirtyEigthText.font.lineHeight*self.numberOfLines;
+    NSLog(@"%f",self.exerciseTextView.font.lineHeight);
+    self.maxPosition=self.exerciseTextView.font.lineHeight*self.numberOfLines;
     
     self.actuallOffset=self.maxPosition;
     self.position=0;
@@ -67,18 +67,18 @@
 
 -(void)createFrame
 {
-      self.toRetrieve=[[NSArray alloc]initWithArray:self.exercisesThirtyEigthText.layer.sublayers];
-    int numLines = self.exercisesThirtyEigthText.contentSize.height / self.exercisesThirtyEigthText.font.lineHeight;
+      self.toRetrieve=[[NSArray alloc]initWithArray:self.exerciseTextView.layer.sublayers];
+    int numLines = self.exerciseTextView.contentSize.height / self.exerciseTextView.font.lineHeight;
    
      for(int i=0;i< numLines;i++)
      {
          
-          int yPosition=self.exercisesThirtyEigthText.font.lineHeight+self.position;
-         int minus=(self.exercisesThirtyEigthShadowSlider.value*self.exercisesThirtyEigthText.font.lineHeight+self.position);
+          int yPosition=self.exerciseTextView.font.lineHeight+self.position;
+         int minus=(self.shadowSizeSlider.value*self.exerciseTextView.font.lineHeight+self.position)-8;
          yPosition-=minus;
          yPosition+=self.position;
          
-    CGRect Rect = CGRectMake(0, yPosition, self.exercisesThirtyEigthText.frame.size.width, self.exercisesThirtyEigthText.font.lineHeight*self.exercisesThirtyEigthShadowSlider.value);
+    CGRect Rect = CGRectMake(0, yPosition, self.exerciseTextView.frame.size.width, self.exerciseTextView.font.lineHeight*self.shadowSizeSlider.value);
     
     
     self.readFrame = [CALayer layer];
@@ -91,10 +91,10 @@
     [self.readFrame setBorderColor:[[UIColor whiteColor]CGColor]];
     [self.readFrame setBorderWidth:0.1f];
     [self.readFrame setShadowColor:[[UIColor whiteColor]CGColor]];
-         self.position+=self.exercisesThirtyEigthText.font.lineHeight;
+         self.position+=self.exerciseTextView.font.lineHeight;
          
-       NSLog(@"%@",self.exercisesThirtyEigthText.layer.sublayers);
-         [[[self exercisesThirtyEigthText]layer]insertSublayer:self.readFrame atIndex:i+3];//:self.readFrame];
+       NSLog(@"%@",self.exerciseTextView.layer.sublayers);
+         [[[self exerciseTextView]layer]insertSublayer:self.readFrame atIndex:i+3];//:self.readFrame];
         
      }
 }
@@ -111,10 +111,10 @@
 
 - (void)resetView
 {
-    self.exercisesThirtyEigthText.text=nil;
-    self.exercisesThirtyEigthText.text=self.xmlManager.exercisesText;
-    [self.exercisesThirtyEigthText setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.exercisesThirtyEigthSizeSlider.value]];
-    [self.exercisesThirtyEigthText setContentOffset:CGPointZero animated:YES];
+    self.exerciseTextView.text=nil;
+    self.exerciseTextView.text=self.xmlManager.exercisesText;
+    [self.exerciseTextView setFont:[UIFont fontWithName:@"Helvetica Neue" size:(int)self.textSizeSlider.value]];
+    [self.exerciseTextView setContentOffset:CGPointZero animated:YES];
 
     self.position=0;
 }
@@ -143,8 +143,8 @@
 
 -(void) cleanFrame
 {
-    int frameNumber=[self.exercisesThirtyEigthText.layer.sublayers count];
-    NSLog(@"%@",self.exercisesThirtyEigthText.layer.sublayers);
+    int frameNumber=[self.exerciseTextView.layer.sublayers count];
+    NSLog(@"%@",self.exerciseTextView.layer.sublayers);
     
    
     
@@ -152,19 +152,19 @@
       //[toRetrieve addObject:[self.exercisesThirtyEigthText.layer.sublayers objectAtIndex:2]];
     
     
-    self.exercisesThirtyEigthText.layer.sublayers=nil;
+    self.exerciseTextView.layer.sublayers=nil;
     
     
-    self.exercisesThirtyEigthText.layer.sublayers=[[NSMutableArray alloc]init];
+    self.exerciseTextView.layer.sublayers=[[NSMutableArray alloc]init];
     //self.exercisesThirtyEigthText.layer.sublayers=self.toRetrieve;
     for (id toAdd in self.toRetrieve) {
-        [self.exercisesThirtyEigthText.layer addSublayer:toAdd];//
+        [self.exerciseTextView.layer addSublayer:toAdd];//
     }
   //  [self.exercisesThirtyEigthText.layer addSublayer:[toRetrieve firstObject]];
      //[self.exercisesThirtyEigthText.layer addSublayer:[toRetrieve objectAtIndex:1]];
    //  [self.exercisesThirtyEigthText setContentOffset:CGPointZero animated:YES];
     // [self.exercisesThirtyEigthText.layer addSublayer:[toRetrieve objectAtIndex:2]];
-    NSLog(@"%@",self.exercisesThirtyEigthText.layer.sublayers);
+    NSLog(@"%@",self.exerciseTextView.layer.sublayers);
     /*
     for (CALayer* singleLayer in self.exercisesThirtyEigthText.layer.sublayers) {
         if ([singleLayer isKindOfClass:[CALayer class]]) {
@@ -185,12 +185,12 @@
 }
 
 - (void)countMaxPosition {
-    CGSize size = [self.exercisesThirtyEigthText.text sizeWithFont:self.exercisesThirtyEigthText.font
-                                         constrainedToSize:self.exercisesThirtyEigthText.frame.size
+    CGSize size = [self.exerciseTextView.text sizeWithFont:self.exerciseTextView.font
+                                         constrainedToSize:self.exerciseTextView.frame.size
                                              lineBreakMode:NSLineBreakByWordWrapping]; // default mode
-    float numberOfLines = size.height / self.exercisesThirtyEigthText.font.lineHeight;
-    int numLines = self.exercisesThirtyEigthText.contentSize.height / self.exercisesThirtyEigthText.font.lineHeight;
-    self.maxPosition=self.exercisesThirtyEigthText.font.lineHeight*numberOfLines;
+    float numberOfLines = size.height / self.exerciseTextView.font.lineHeight;
+    int numLines = self.exerciseTextView.contentSize.height / self.exerciseTextView.font.lineHeight;
+    self.maxPosition=self.exerciseTextView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
 }
 @end
