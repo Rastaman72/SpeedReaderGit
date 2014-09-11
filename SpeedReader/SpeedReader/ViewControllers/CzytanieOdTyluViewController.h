@@ -34,11 +34,15 @@
 - (IBAction)speedDynamic:(id)sender;
 - (IBAction)jumpDynamic:(id)sender;
 - (IBAction)sizeDynamic:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *textSizeView;
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfJumpDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIView *frameSpeedView;
 - (IBAction)jumpChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *numbersOfJumpView;
 @property(nonatomic,assign) float jumpWidth;
 @property(nonatomic,assign) float jumpOffset;
 @property(nonatomic,assign) int jumpCounter;
 @property(nonatomic,assign)bool startPush;
 @property(nonatomic,assign)bool resetLine;
+@property(nonatomic,assign)bool changePosition;
 @end

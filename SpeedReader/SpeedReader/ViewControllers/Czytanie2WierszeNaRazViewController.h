@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *frameSpeedSlider;
 @property (weak, nonatomic) IBOutlet UISlider *textSizeSlider;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIView *frameSpeedView;
+@property (weak, nonatomic) IBOutlet UIView *textSizeView;
 
 @property(nonatomic,assign) CGSize size;
 @property(nonatomic,assign) CGRect sizeR;
@@ -35,5 +37,6 @@
 @property(nonatomic,strong) NSTimer *scrollingTimer;
 @property(nonatomic,strong)CALayer* readFrame;
 @property(nonatomic,strong)SharedData* xmlManager;
+@property(nonatomic,assign)bool changePosition;
 
 @end

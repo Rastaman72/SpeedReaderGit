@@ -19,9 +19,12 @@
 - (IBAction)pickerChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *pickerValueLabel;
 
+@property (weak, nonatomic) IBOutlet UIView *pickStyleView;
 
 @property(nonatomic,assign)int chooseTrack;
 @property(nonatomic,assign)int actuallOffset;
 @property(nonatomic,assign)int maxPosition;
 @property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,strong)NSMutableArray*numberStyle;
 @end

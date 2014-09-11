@@ -32,13 +32,85 @@
     self.round=Begin;
     self.pointsArray=[[NSMutableDictionary alloc]init];
     self.increaseDistance=0;
+    self.step=10;
+    self.positionX=[self.gameView center].x-50;
+    self.positionY=[self.gameView center].y-50;
     [self createPoints];
     [self addPointToLayer];
-
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
   
        // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            CGRect toChangespeedSlider= self.speedView.frame;
+            toChangespeedSlider.origin.y-=225;
+            [self.speedView setFrame:toChangespeedSlider];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            CGRect toChangetGameView= self.gameView.frame;
+            toChangetGameView.size.height-=225;
+            [self.gameView setFrame:toChangetGameView];
+            
+            self.gameView.layer.sublayers=nil;
+            self.step=10;
+            self.positionX=[self.gameView center].x-100;
+            self.positionY-=100;
+            [self createPoints];
+            [self addPointToLayer];
+       
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangespeedSlider= self.speedView.frame;
+            toChangespeedSlider.origin.y+=225;
+            [self.speedView setFrame:toChangespeedSlider];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            CGRect toChangetGameView= self.gameView.frame;
+            toChangetGameView.size.height+=225;
+            [self.gameView setFrame:toChangetGameView];
+          
+            self.gameView.layer.sublayers=nil;
+            self.step=10;
+            self.positionX=[self.gameView center].x-100;
+            self.positionY+=100;
+            [self createPoints];
+            [self addPointToLayer];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -65,7 +137,7 @@
             horAdd=100*(i-6);
             verAdd=120;
         }
-        CGRect Rect = CGRectMake(250+horAdd, 250+verAdd, 20, 20);
+        CGRect Rect = CGRectMake(self.positionX+horAdd, self.positionY+verAdd, 20, 20);
         CALayer *point = [CALayer layer];
         [point setFrame:Rect];
         [point setBounds:Rect];
@@ -218,7 +290,7 @@
  
     for (NSString *key in allKeys) {
         CALayer* object = [self.pointsArray valueForKey: key];
-        [self.view.layer addSublayer:object];
+        [self.gameView.layer addSublayer:object];
        // NSLog(@"%@",self.view.layer.sublayers);
     }
 
@@ -250,7 +322,7 @@ else
         UIBezierPath *trackPath;
         
         
-        trackPath = [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*20];
+        trackPath = [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*self.step];
         
     
         CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
@@ -377,20 +449,7 @@ else
 }
 
 
--(void)returnObjectToBegin
-{
-   // self.forward=NO;
-    //self.increaseDistance++;
 
-   // [self addAnimationToPoint];
-    //[self createPathForLoop];
-  /*   if(self.increaseDistance<6)
-    {
-        self.forward=YES;
-        [self createPathForLoop];
- 
-    }*/
-}
 /*
 #pragma mark - Navigation
 
@@ -416,12 +475,24 @@ else
 
 }
 - (IBAction)startPush:(id)sender {
-    [self.scrollingTimer invalidate];
-    self.scrollingTimer=nil;
-    if (self.scrollingTimer == nil)
+    
+    
+    if(self.startPush)
     {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
-                                                               target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+        [self.scrollingTimer invalidate];
+        self.scrollingTimer=nil;
+        self.startPush=!self.startPush;
     }
+    else
+    {
+        
+        if (self.scrollingTimer == nil)
+        {
+            self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
+                                                                   target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+        }
+        self.startPush=!self.startPush;
+    }
+    
 }
 @end

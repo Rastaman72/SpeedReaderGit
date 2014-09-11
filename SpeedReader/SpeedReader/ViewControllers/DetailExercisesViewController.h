@@ -27,4 +27,7 @@
 - (IBAction)logOutPush:(id)sender;
 -(void)setExercises:(ExercisesData *)exercises;
 @property (nonatomic,strong)ExercisesDispatcherControllerViewController* controller;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)CGRect originRect;
+
 @end

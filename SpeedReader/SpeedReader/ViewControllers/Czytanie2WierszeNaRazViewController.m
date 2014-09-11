@@ -49,7 +49,7 @@
                                            lineBreakMode:NSLineBreakByWordWrapping]; // default mode
     
    //IOS 70000000
-    self.textView.selectable=YES;
+ /*   self.textView.selectable=YES;
     self.sizeR = [self.textView.text boundingRectWithSize:self.textView.frame.size
                                              options:NSStringDrawingUsesLineFragmentOrigin
                                           attributes:@{NSFontAttributeName:self.textView.font}
@@ -57,21 +57,27 @@
     self.textView.selectable=NO;
     
     self.size=self.sizeR.size;
-    
+    */
     
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
     self.position=0;
     //ios77777777
-    self.textView.scrollEnabled=YES;
+   // self.textView.scrollEnabled=YES;
     
     self.textSizeDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description];
     
     self.frameSpeedDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.frameSpeedSlider.value]description];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 }
 
-
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
 -(void)createFrame
 {
     CGRect Rect = CGRectMake(0, 5+self.position, self.textView.frame.size.width, self.textView.font.lineHeight*2);
@@ -195,4 +201,65 @@
     }
     self.startPush=YES;
 }
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+        CGRect toChangeTextView= self.textView.frame;
+        toChangeTextView.size.height-=225;
+        [self.textView setFrame:toChangeTextView];
+            
+            CGRect toChangeframeSpeedView= self.frameSpeedView.frame;
+            toChangeframeSpeedView.origin.y-=225;
+            [self.frameSpeedView setFrame:toChangeframeSpeedView];
+            
+            
+            
+            CGRect toChangetextSizeView= self.textSizeView.frame;
+            toChangetextSizeView.origin.y-=225;
+            [self.textSizeView setFrame:toChangetextSizeView];
+            
+            CGRect toChangetStartButton= self.startButtron.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButtron setFrame:toChangetStartButton];
+            
+            [self sizeChanged:self];
+        self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height+=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            CGRect toChangeframeSpeedView= self.frameSpeedView.frame;
+            toChangeframeSpeedView.origin.y+=225;
+            [self.frameSpeedView setFrame:toChangeframeSpeedView];
+            
+            
+            
+            CGRect toChangetextSizeView= self.textSizeView.frame;
+            toChangetextSizeView.origin.y+=225;
+            [self.textSizeView setFrame:toChangetextSizeView];
+            
+            CGRect toChangetStartButton= self.startButtron.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButtron setFrame:toChangetStartButton];
+           [self sizeChanged:self];
+            self.changePosition=NO;
+        }
+    }
+    
+  }
 @end

@@ -32,6 +32,7 @@
 		E926944F198FEC8D00BE1BEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90248D4197D2D81004ADAEC /* CoreData.framework */; };
 		E92733E519AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */; };
 		E92750FB19B759D6003B2F0D /* GraUkladankaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92750FA19B759D6003B2F0D /* GraUkladankaViewController.m */; };
+		E9283A1A19C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9283A1919C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.m */; };
 		E928EEE719A64F9E00833F29 /* GraMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E928EEE619A64F9E00833F29 /* GraMemoryViewController.m */; };
 		E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */; };
 		E92A700119A1F5D800404AA3 /* wordsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E92A700019A1F5D800404AA3 /* wordsPL.xml */; };
@@ -100,6 +101,7 @@
 		E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */; };
 		E9D56CCA19BB2FF40080A98F /* TabliceSchultzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */; };
 		E9D75DED19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */; };
+		E9D847D919BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D847D819BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m */; };
 		E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */; };
 		E9DB2A8919B5DBD3004596BA /* GimnastykaOczuWazViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */; };
 		E9DBAC2F19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DBAC2E19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m */; };
@@ -196,6 +198,8 @@
 		E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UkryteDolneCzesciLiterViewController.m; path = SpeedReader/ViewControllers/UkryteDolneCzesciLiterViewController.m; sourceTree = "<group>"; };
 		E92750F919B759D6003B2F0D /* GraUkladankaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraUkladankaViewController.h; path = SpeedReader/ViewControllers/GraUkladankaViewController.h; sourceTree = "<group>"; };
 		E92750FA19B759D6003B2F0D /* GraUkladankaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraUkladankaViewController.m; path = SpeedReader/ViewControllers/GraUkladankaViewController.m; sourceTree = "<group>"; };
+		E9283A1819C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UkrytePoczatkiIKonceViewController.h; path = SpeedReader/ViewControllers/UkrytePoczatkiIKonceViewController.h; sourceTree = "<group>"; };
+		E9283A1919C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UkrytePoczatkiIKonceViewController.m; path = SpeedReader/ViewControllers/UkrytePoczatkiIKonceViewController.m; sourceTree = "<group>"; };
 		E928EEE519A64F9E00833F29 /* GraMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraMemoryViewController.h; path = SpeedReader/ViewControllers/GraMemoryViewController.h; sourceTree = "<group>"; };
 		E928EEE619A64F9E00833F29 /* GraMemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraMemoryViewController.m; path = SpeedReader/ViewControllers/GraMemoryViewController.m; sourceTree = "<group>"; };
 		E92A6FFD19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieZObcymiSlowamiViewController.h; path = SpeedReader/ViewControllers/CzytanieZObcymiSlowamiViewController.h; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 		E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.m; sourceTree = "<group>"; };
 		E9D75DEB19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaKolejneLiczbyViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaKolejneLiczbyViewController.h; sourceTree = "<group>"; };
 		E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabliceSchultzaKolejneLiczbyViewController.m; path = SpeedReader/ViewControllers/TabliceSchultzaKolejneLiczbyViewController.m; sourceTree = "<group>"; };
+		E9D847D719BF870600D3D2AE /* ZaznaczCoWystapiloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZaznaczCoWystapiloViewController.h; path = SpeedReader/ViewControllers/ZaznaczCoWystapiloViewController.h; sourceTree = "<group>"; };
+		E9D847D819BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZaznaczCoWystapiloViewController.m; path = SpeedReader/ViewControllers/ZaznaczCoWystapiloViewController.m; sourceTree = "<group>"; };
 		E9DB2A8419B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.h; sourceTree = "<group>"; };
 		E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczuSzerokoscPolaWidzeniaViewController.m; sourceTree = "<group>"; };
 		E9DB2A8719B5DBD3004596BA /* GimnastykaOczuWazViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GimnastykaOczuWazViewController.h; path = SpeedReader/ViewControllers/GimnastykaOczuWazViewController.h; sourceTree = "<group>"; };
@@ -677,52 +683,44 @@
 		E95C7A99199B7A9F004F1B2D /* IndividualExercises */ = {
 			isa = PBXGroup;
 			children = (
-				E95C7A9A199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.h */,
-				E95C7A9B199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m */,
-				E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */,
-				E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */,
-				E9074B8E19A0B69E00009557 /* CzytanieOdTyluViewController.h */,
-				E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */,
 				E925405719A0E40200ECE98E /* BaseExercisesViewController.h */,
 				E925405819A0E40200ECE98E /* BaseExercisesViewController.m */,
-				E92A6FFD19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.h */,
-				E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */,
-				E948351019A36A3600AEC4B5 /* ExercisesSevenViewController.h */,
-				E948351119A36A3600AEC4B5 /* ExercisesSevenViewController.m */,
-				E948351319A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.h */,
-				E948351419A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m */,
-				E948351819A3AF2B00AEC4B5 /* DrawAnimation.h */,
-				E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */,
-				E939DCF219A4709F00967E4A /* GimnastykaOczuObszarPolaWidzeniaViewController.h */,
-				E939DCF319A4709F00967E4A /* GimnastykaOczuObszarPolaWidzeniaViewController.m */,
-				E90C5E7B19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.h */,
-				E90C5E7C19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.m */,
-				E928EEE519A64F9E00833F29 /* GraMemoryViewController.h */,
-				E928EEE619A64F9E00833F29 /* GraMemoryViewController.m */,
-				E9A20F4A19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.h */,
-				E9A20F4B19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.m */,
-				E91ED05A19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.h */,
-				E91ED05B19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.m */,
-				E92733E319AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.h */,
-				E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */,
-				E970B52819ABB8FC0099243C /* WidzenieCyklopoweViewController.h */,
-				E970B52919ABB8FC0099243C /* WidzenieCyklopoweViewController.m */,
+				E95C7A9A199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.h */,
+				E95C7A9B199B7AD8004F1B2D /* Czytanie2WierszeNaRazViewController.m */,
 				E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */,
 				E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */,
+				E9074B8E19A0B69E00009557 /* CzytanieOdTyluViewController.h */,
+				E9074B8F19A0B69E00009557 /* CzytanieOdTyluViewController.m */,
+				E948351319A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.h */,
+				E948351419A3A72300AEC4B5 /* CzytanieZeWskaznikiemViewController.m */,
+				E92A6FFD19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.h */,
+				E92A6FFE19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m */,
 				E920D65519AE3A5900A65B82 /* CzytanieZPlamamiViewController.h */,
 				E920D65619AE3A5900A65B82 /* CzytanieZPlamamiViewController.m */,
+				E948351819A3AF2B00AEC4B5 /* DrawAnimation.h */,
+				E948351919A3AF2B00AEC4B5 /* DrawAnimation.m */,
+				E948351019A36A3600AEC4B5 /* ExercisesSevenViewController.h */,
+				E948351119A36A3600AEC4B5 /* ExercisesSevenViewController.m */,
+				E95C7AA3199BC12E004F1B2D /* ExercisesZeroViewController.h */,
+				E95C7AA4199BC12E004F1B2D /* ExercisesZeroViewController.m */,
 				E9CE9D9D19B4C33B0062AB89 /* GimnastykaOczu8IViewController.h */,
 				E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */,
+				E939DCF219A4709F00967E4A /* GimnastykaOczuObszarPolaWidzeniaViewController.h */,
+				E939DCF319A4709F00967E4A /* GimnastykaOczuObszarPolaWidzeniaViewController.m */,
 				E909E4E919B5138B00EB441F /* GimnastykaOczuOkragViewController.h */,
 				E909E4EA19B5138B00EB441F /* GimnastykaOczuOkragViewController.m */,
 				E96DC64519B5179400563CEC /* GimnastykaOczuPilaViewController.h */,
 				E96DC64619B5179400563CEC /* GimnastykaOczuPilaViewController.m */,
+				E90C5E7B19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.h */,
+				E90C5E7C19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.m */,
 				E9DB2A8419B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.h */,
 				E9DB2A8519B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m */,
 				E9DB2A8719B5DBD3004596BA /* GimnastykaOczuWazViewController.h */,
 				E9DB2A8819B5DBD3004596BA /* GimnastykaOczuWazViewController.m */,
 				E9179A2219B5F2580085A55C /* GimnastykaOczuZygzakViewController.h */,
 				E9179A2319B5F2580085A55C /* GimnastykaOczuZygzakViewController.m */,
+				E928EEE519A64F9E00833F29 /* GraMemoryViewController.h */,
+				E928EEE619A64F9E00833F29 /* GraMemoryViewController.m */,
 				E981213E19B659C30053477E /* GraRiseViewController.h */,
 				E981213F19B659C30053477E /* GraRiseViewController.m */,
 				E92750F919B759D6003B2F0D /* GraUkladankaViewController.h */,
@@ -731,6 +729,8 @@
 				E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */,
 				E9D12C3D19B858B100B7BD0C /* PiramidaMigawkiViewController.h */,
 				E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */,
+				E9A20F4A19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.h */,
+				E9A20F4B19A8B1ED001B73E4 /* PiramidaTypKolumnowyViewController.m */,
 				E9D3777019B9B7EE00F36D2B /* PiramidaTypPelnyViewController.h */,
 				E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */,
 				E9DBAC2D19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.h */,
@@ -739,20 +739,30 @@
 				E98D0A6B19B9FFB5001EA86C /* StoperEXCViewController.m */,
 				E98D0A6D19BA0817001EA86C /* SuperSzybkoscViewController.h */,
 				E98D0A6E19BA0817001EA86C /* SuperSzybkoscViewController.m */,
-				E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */,
-				E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */,
+				E91ED05A19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.h */,
+				E91ED05B19AA4E790037A95A /* SzukanieSekwencjiWPiramidzieViewController.m */,
 				E9D75DEB19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.h */,
 				E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */,
 				E9E0794619BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.h */,
 				E9E0794719BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m */,
+				E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */,
+				E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */,
 				E983431519BDF6B0008445E7 /* TreningPamieciMigawkiViewController.h */,
 				E983431619BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m */,
 				E9CB3CD519BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.h */,
 				E9CB3CD619BEF27E002F8AD0 /* TreningPionowegoWidzeniaViewController.m */,
 				E9CB3CD819BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.h */,
 				E9CB3CD919BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m */,
+				E92733E319AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.h */,
+				E92733E419AA727C00AFDD9B /* UkryteDolneCzesciLiterViewController.m */,
+				E9283A1819C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.h */,
+				E9283A1919C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.m */,
+				E970B52819ABB8FC0099243C /* WidzenieCyklopoweViewController.h */,
+				E970B52919ABB8FC0099243C /* WidzenieCyklopoweViewController.m */,
 				E982C6CE19BF551700107B54 /* ZaznaczCiagiViewController.h */,
 				E982C6CF19BF551700107B54 /* ZaznaczCiagiViewController.m */,
+				E9D847D719BF870600D3D2AE /* ZaznaczCoWystapiloViewController.h */,
+				E9D847D819BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -1057,6 +1067,7 @@
 				E92A6FFF19A1EFAF00404AA3 /* CzytanieZObcymiSlowamiViewController.m in Sources */,
 				E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */,
 				E983431719BDF6B0008445E7 /* TreningPamieciMigawkiViewController.m in Sources */,
+				E9283A1A19C0ABB0006A549E /* UkrytePoczatkiIKonceViewController.m in Sources */,
 				E9DB2A8619B5D70B004596BA /* GimnastykaOczuSzerokoscPolaWidzeniaViewController.m in Sources */,
 				E944DC3C19939A0F00A0442D /* SettingsViewController.m in Sources */,
 				E92750FB19B759D6003B2F0D /* GraUkladankaViewController.m in Sources */,
@@ -1069,6 +1080,7 @@
 				E93BC5C419815FA700DE3408 /* trees.c in Sources */,
 				E9E5145B1976A71E001FDA03 /* MainViewController.m in Sources */,
 				E915D6F51977F4A400846F31 /* DetailExercisesViewController.m in Sources */,
+				E9D847D919BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m in Sources */,
 				E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */,
 				E93BC5C519815FA700DE3408 /* uncompr.c in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,

@@ -27,7 +27,7 @@
 {
     [super viewDidLoad];
     self.theDataObject=[self theAppDataObject];
-   
+  
        // Do any additional setup after loading the view.
 }
 
@@ -44,6 +44,9 @@
 	theDataObject = (SharedData*) theDelegate.theAppDataObject;
 	return theDataObject;
 }
+
+
+
 #pragma mark - Navigation
 /*-(void)test
 {

@@ -1,4 +1,4 @@
-//
+ //
 //  DetailExercisesViewController.m
 //  SpeedReader
 //
@@ -29,29 +29,25 @@
      [self refreshUI];
     [super viewDidLoad];
     self.theDataObject = [self theAppDataObject];
-
+self.originRect=self.detailExercisesPartView.frame;
    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
-     addObserver:self selector:@selector(orientationChanged:)
+     addObserver:self selector:@selector(deviceOrientationDidChange:)
      name:UIDeviceOrientationDidChangeNotification
      object:[UIDevice currentDevice]];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated
+-(void)checkOrientataion
 {
-    int a=4;
+    [self deviceOrientationDidChange:nil];
 }
-
--(void)viewDidAppear:(BOOL)animated
-{
-    int b=5;
-}
-
-
-- (void) orientationChanged:(NSNotification *)note
-{
-    UIDevice * device = note.object;
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    /*UIDevice * device = note.object;
     
     NSLog(@"%f",self.view.frame.size.width);
     NSLog(@"%f",self.view.frame.size.height);
@@ -80,7 +76,37 @@
             
         default:
             break;
-    };
+    };*/
+    
+    
+    
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChange=self.detailExercisesPartView.frame;
+            toChange.origin.y+=60;
+            [self.detailExercisesPartView setFrame:toChange];
+            self.changePosition=YES;
+
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+          //  CGRect toChange=self.detailExercisesPartView.frame;
+           // toChange.origin.y-=50;
+            [self.detailExercisesPartView setFrame:self.originRect];
+            self.changePosition=NO;
+        }
+    }
+    
+    
+    
 }
 -(void)setExercises:(ExercisesData *)exercises
 {

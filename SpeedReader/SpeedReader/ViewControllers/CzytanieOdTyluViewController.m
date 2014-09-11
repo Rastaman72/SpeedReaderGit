@@ -58,8 +58,88 @@
     self.textSizeDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description];
     self.numbersOfJumpDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.numbersOfJumpSlider.value]description];
     [self setJump];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 }
 
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height-=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            CGRect toChangeframeSpeedView= self.frameSpeedView.frame;
+            toChangeframeSpeedView.origin.y-=225;
+            [self.frameSpeedView setFrame:toChangeframeSpeedView];
+            
+            
+            
+            CGRect toChangetextSizeView= self.textSizeView.frame;
+            toChangetextSizeView.origin.y-=225;
+            [self.textSizeView setFrame:toChangetextSizeView];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=245;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            CGRect toChangenumbersOfJumpView= self.numbersOfJumpView.frame;
+            toChangenumbersOfJumpView.origin.y-=225;
+            [self.numbersOfJumpView setFrame:toChangenumbersOfJumpView];
+            
+            
+            [self sizeChanged:self];
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height+=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            CGRect toChangeframeSpeedView= self.frameSpeedView.frame;
+            toChangeframeSpeedView.origin.y+=225;
+            [self.frameSpeedView setFrame:toChangeframeSpeedView];
+            
+            
+            
+            CGRect toChangetextSizeView= self.textSizeView.frame;
+            toChangetextSizeView.origin.y+=225;
+            [self.textSizeView setFrame:toChangetextSizeView];
+            
+            
+            
+            CGRect toChangenumbersOfJumpView= self.numbersOfJumpView.frame;
+            toChangenumbersOfJumpView.origin.y+=225;
+            [self.numbersOfJumpView setFrame:toChangenumbersOfJumpView];
+            
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=245;
+            [self.startButton setFrame:toChangetStartButton];
+            [self sizeChanged:self];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 
 - (void) autoscrollTimerFired {
     if(self.position >=self.textView.contentSize.height) {

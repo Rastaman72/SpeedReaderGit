@@ -34,9 +34,57 @@
     // Do any additional setup after loading the
     NSString* resultText=[NSString stringWithString:[self putRandomWord]];
     self.textView.text=resultText;
-
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 }
 
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height-=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height+=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangetStartButton];
+
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -84,5 +132,8 @@
 */
 
 - (IBAction)startPush:(id)sender {
+    self.textView.text=nil;
+    NSString* resultText=[NSString stringWithString:[self putRandomWord]];
+    self.textView.text=resultText;
 }
 @end

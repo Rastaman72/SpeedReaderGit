@@ -21,9 +21,17 @@ typedef enum StateOfRound{
     Half,
     Finish}
 StateOfRound;
+@property (weak, nonatomic) IBOutlet UILabel *speedDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *speedSlider;
 - (IBAction)speedChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
+@property(nonatomic,assign)int step;
+@property (weak, nonatomic) IBOutlet UIView *speedView;
 
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int positionX;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
+@property(nonatomic,assign)int positionY;
+@property(nonatomic,assign)bool startPush;
 @end

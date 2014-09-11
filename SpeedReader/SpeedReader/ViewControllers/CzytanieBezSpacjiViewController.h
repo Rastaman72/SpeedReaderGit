@@ -12,4 +12,5 @@
 @interface CzytanieBezSpacjiViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property(nonatomic,strong)SharedData* xmlManager;
+@property(nonatomic,assign)bool changePosition;
 @end

@@ -47,9 +47,12 @@
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
     self.actuallOffset=numberOfLines;
-    
+     [self createSlider];
     [self createFrame];
-
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
    }
 
@@ -59,7 +62,75 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)createSlider
+{
+    self.numberStyle=[[NSMutableArray alloc]init];
+    for (int i=0; i<5; i++) {
+        [self.numberStyle addObject:[[NSNumber alloc]initWithInt:i]];
+    }
+    // slider values go from 0 to the number of values in your numbers array
+    NSInteger numberOfSteps = ((float)[self.numberStyle count] - 1);
+    self.pickStyleSlider.maximumValue = numberOfSteps;
+    self.pickStyleSlider.minimumValue = 0;
+    [self.pickStyleSlider setValue:0 animated:YES];
+    
+    self.chooseTrack=[[self.numberStyle objectAtIndex:0]integerValue];
+    // As the slider moves it will continously call the -valueChanged:
+    self.pickStyleSlider.continuous = NO; // NO makes it call only once you let go
+    [ self.pickStyleSlider addTarget:self
+                               action:@selector(pickerChange:)
+                     forControlEvents:UIControlEventValueChanged];
+    self.pickerValueLabel.text=[[[NSNumber alloc]initWithInt:self.chooseTrack]description];
+    
 
+}
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height-=225;
+            [self.textView setFrame:toChangeTextView];
+            
+            CGRect toChangepickStyleSlider= self.pickStyleView.frame;
+            toChangepickStyleSlider.origin.y-=225;
+            [self.pickStyleView setFrame:toChangepickStyleSlider];
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeTextView= self.textView.frame;
+            toChangeTextView.size.height+=225;
+            [self.textView setFrame:toChangeTextView];
+            
+          
+            
+            CGRect toChangepickStyleSlider= self.pickStyleView.frame;
+            toChangepickStyleSlider.origin.y+=225;
+            [self.pickStyleView setFrame:toChangepickStyleSlider];
+            
+           
+        }
+    }
+    
+}
 
 - (UIBezierPath *)createPathForPoint
 {
@@ -115,8 +186,6 @@
                     [trackPath addCurveToPoint:P(100, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)
                                  controlPoint1:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*(i-1))
                                  controlPoint2:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
-                    
-                    // [trackPath addLineToPoint:P(0,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
                     i--;
                 }
                     else
@@ -128,13 +197,11 @@
                                      controlPoint1:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*(i-1))
                                      controlPoint2:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
                         
-                        //[trackPath addLineToPoint:P(0,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+5*self.textView.font.lineHeight*i)];
+
                         i--;
                     }
                 
-                /*
-                [trackPath addLineToPoint:P(self.textView.frame.size.width,self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)];
-                */
+                
             }
             break;
         case 4:
@@ -152,24 +219,19 @@
                     if (i % 2)
                     {
                         
-                        
-                        //i++;
+                    
                         [trackPath addCurveToPoint:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)
                                      controlPoint1:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i-3))
                                      controlPoint2:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i+3))];
-                        
-                        
-                        // i--;
+                       
                     }
                     else
                     {
-                        // i++;
+                        
                         [trackPath addCurveToPoint:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+4*self.textView.font.lineHeight*i)
                                      controlPoint1:P(0, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i-3))
                                      controlPoint2:P(self.textView.frame.size.width, self.textView.frame.origin.y+1.75*self.textView.font.lineHeight+3*self.textView.font.lineHeight*(i+3))];
-                        
-                       
-                        //i--;
+                   
                        
                         
                     }
@@ -190,18 +252,6 @@
 {
     UIBezierPath *trackPath;
     trackPath = [self createPathForPoint];
-	/*
-     
-     NIESKONCZONOSC
-     
-     [trackPath moveToPoint:P(0, self.textView.frame.size.height/2)];
-     [trackPath addCurveToPoint:P(self.textView.frame.size.width, self.textView.frame.size.height/2)
-     controlPoint1:P(50, 0)
-     controlPoint2:P(700, 800)];
-     [trackPath addCurveToPoint:P(0, self.textView.frame.size.height/2)
-     controlPoint1:P(700, 0)
-     controlPoint2:P(50, 800)];
-     */
     
 	CAShapeLayer *racetrack = [CAShapeLayer layer];
 	racetrack.path = trackPath.CGPath;
@@ -211,20 +261,16 @@
     [racetrack setOpacity:0.5];
      NSLog(@"%@",self.textView.layer.sublayers );
 	
-    [self.textView.layer insertSublayer:racetrack atIndex:0];//:racetrack];
-    //[self.maskView.layer addSublayer:racetrack];
-    
+    [self.textView.layer insertSublayer:racetrack atIndex:0];
     
     NSLog(@"%@",self.textView.layer.sublayers );
 
     CALayer *car = [CALayer layer];
 	car.bounds = CGRectMake(0, 0, 44.0, 20.0);
-	//car.position = P(self.exercisesNineText.frame.size.width/2, self.exercisesNineText.frame.size.height/2);
 	car.contents = (id)([UIImage imageNamed:@"image0.jpg"].CGImage);
 	
     
    [self.textView.layer insertSublayer:car atIndex:1];
-	// [self.maskView.layer addSublayer:car];
 	
     NSLog(@"%@",self.textView.layer.sublayers );
 
@@ -257,9 +303,11 @@
 
 - (IBAction)pickerChange:(id)sender {
     
-    self.pickerValueLabel.text=[[[NSNumber alloc]initWithInt:self.pickStyleSlider.value]description];
-    self.chooseTrack=self.pickStyleSlider.value;
-    NSLog(@"%@",self.textView.layer.sublayers );
+    NSUInteger index = (NSUInteger)(self.pickStyleSlider.value + 0.5);
+    [self.pickStyleSlider setValue:index animated:NO];
+    NSNumber *number = self.numberStyle[index]; // <-- This numeric value you want
+    self.chooseTrack=[number intValue];
+    self.pickerValueLabel.text=[number description];
 
  
      [[self.textView.layer.sublayers objectAtIndex:1] removeAnimationForKey:@"race"];
