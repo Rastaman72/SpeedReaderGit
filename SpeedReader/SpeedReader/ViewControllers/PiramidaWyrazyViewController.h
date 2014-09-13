@@ -16,4 +16,6 @@
 - (IBAction)getNewWords:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *getNewWordButton;
 @property(nonatomic,strong)SharedData* xmlManager;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int positionY;
 @end

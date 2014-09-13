@@ -21,5 +21,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthDescriptionLabel;
 - (IBAction)getNewLetters:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property (weak, nonatomic) IBOutlet UIButton *changeElementsButton;
+- (IBAction)changeElements:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int positionY;
+@property(nonatomic,strong)NSArray* wordLengthArray;
+@property(nonatomic,assign)int chooseSize;
 @end

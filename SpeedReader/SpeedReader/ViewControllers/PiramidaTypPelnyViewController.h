@@ -16,7 +16,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *chooseModeSwitch;
 - (IBAction)modeChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
 @property(nonatomic,assign)int step;
 - (IBAction)getNewLetters:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *generateObjectsButton;
+@property (weak, nonatomic) IBOutlet UIButton *generateObjectPush;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int positionY;
 @end

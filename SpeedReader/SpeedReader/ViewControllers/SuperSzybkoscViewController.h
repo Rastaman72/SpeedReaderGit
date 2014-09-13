@@ -21,10 +21,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 
+@property (weak, nonatomic) IBOutlet UIView *gameView;
 - (IBAction)startPush:(id)sender;
 @property(nonatomic,assign)  SystemSoundID metronom;
 @property (nonatomic,assign)NSTimeInterval startTime;
 @property (nonatomic,assign)bool running;
 @property(nonatomic,assign)int soundCounter;
 @property(nonatomic,strong) NSTimer *audioPlayingTimer;
+@property(nonatomic,assign)bool changePosition;
 @end

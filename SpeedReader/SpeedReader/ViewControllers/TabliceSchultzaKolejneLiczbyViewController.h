@@ -25,5 +25,6 @@
 @property(nonatomic,strong)NSMutableDictionary* numberDic;
 @property(nonatomic,assign)int squareSize;
 @property(nonatomic,strong) NSMutableArray *numbersSquareSize;
+@property(nonatomic,assign)bool changePosition;
 
 @end

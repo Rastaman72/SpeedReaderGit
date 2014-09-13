@@ -27,11 +27,15 @@
 {
     [super viewDidLoad];
     self.mode=NO;
+    self.positionY=100;
     self.actuallSize=(int)self.sizeSlider.value;
     self.toFind=[[NSString alloc]init];
     self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
     [self create];
     [self createButtons];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
@@ -41,10 +45,84 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+
+            
+            CGRect toChangeSizeView= self.sizeView.frame;
+            toChangeSizeView.origin.y-=225;
+            [self.sizeView setFrame:toChangeSizeView];
+            
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=175;
+            [self.gameView setFrame:toChangeGameView];
+
+
+            
+            
+          
+            
+      
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            CGRect toChangeSizeView= self.sizeView.frame;
+            toChangeSizeView.origin.y+=225;
+            [self.sizeView setFrame:toChangeSizeView];
+            
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=175;
+            [self.gameView setFrame:toChangeGameView];
+      
+            self.changePosition=NO;
+        }
+    }
+    
+}
 -(void)createButtons
 {
     for (int i=0; i<11; i++) {
-        CGRect Rect1= CGRectMake(0+60*i,50, 60, 20);
+        CGRect Rect1= CGRectMake(10+60*i,3*self.gameView.frame.size.height/4, 60, 20);
       //  CGRect Rect = CGRectMake(Rect1.origin.x, Rect1.origin.y+2, 20, 20);
 
         CALayer* rectangleToAdd = [CALayer layer];
@@ -68,9 +146,6 @@ else
         [label setString:[NSString stringWithFormat:@"%d",i]];
         [label setAlignmentMode:kCAAlignmentCenter];
         [label setForegroundColor:[[UIColor blackColor] CGColor]];
-        
-        /* [object setFrame:Rect];
-         [object setBounds:Rect];*/
         
         [rectangleToAdd addSublayer:label];
         
@@ -225,7 +300,7 @@ else
 self.textLabel.textAlignment=NSTextAlignmentCenter;
 self.textLabel.text=textToDisplay;
 [self.textLabel sizeToFit];
-self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);
+self.textLabel.center = CGPointMake(self.gameView.frame.size.width/2, self.positionY);
 
 }
 

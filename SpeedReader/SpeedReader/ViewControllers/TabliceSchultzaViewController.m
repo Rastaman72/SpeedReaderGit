@@ -27,13 +27,102 @@
 {
     [super viewDidLoad];
     self.numberDic=[[NSMutableDictionary alloc]init];
+    self.objectSize=70;
     [self createSlider];
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            CGRect toChangGameView= self.gameView.frame;
+            toChangGameView.origin.y-=125;
+            [self.gameView setFrame:toChangGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeSqaureSizeView= self.squareSizeView.frame;
+            toChangeSqaureSizeView.origin.y-=225;
+            [self.squareSizeView setFrame:toChangeSqaureSizeView];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangetStartButton];
+            self.objectSize-=15;
+            
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangGameView= self.gameView.frame;
+            toChangGameView.origin.y+=125;
+            [self.gameView setFrame:toChangGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeSqaureSizeView= self.squareSizeView.frame;
+            toChangeSqaureSizeView.origin.y+=225;
+            [self.squareSizeView setFrame:toChangeSqaureSizeView];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangetStartButton];
+               self.objectSize+=15;
+            
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -87,7 +176,7 @@
         for(int j=0;j<sqrt(self.squareSize);j++)
         {
             // CGRect Rect= CGRectMake(0,0, 50, 50);
-            CGRect Rect1= CGRectMake(30+i*70,30+j*70, 70, 70);
+            CGRect Rect1= CGRectMake(10+i*self.objectSize,10+j*self.objectSize, self.objectSize, self.objectSize);
             
             CALayer* rectangleToAdd = [CALayer layer];
             [rectangleToAdd setFrame:Rect1];
@@ -98,16 +187,8 @@
             [rectangleToAdd setBorderColor:[[UIColor redColor]CGColor]];
             [rectangleToAdd setBorderWidth:10.0f];
             
-            /* CATextLayer *label = [[CATextLayer alloc] init];
-             [label setFont:@"Helvetica-Bold"];
-             [label setFontSize:20];
-             [label setFrame:Rect1];
-             [label setString:[NSString stringWithFormat:@"DD%d",i*self.horizontalSize+j]];
-             [label setAlignmentMode:kCAAlignmentCenter];
-             [label setForegroundColor:[[UIColor blackColor] CGColor]];
-             [label addSublayer:rectangleToAdd];*/
             [self.numberDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Number %d",i*(int)sqrt(self.squareSize)+j]];
-            // [self.numberDic setObject:label forKey:[NSString stringWithFormat:@"Number %d",i*self.horizontalSize+j]];
+
          }
     }
     
@@ -150,7 +231,7 @@
                     
                     break;
                 case 2:
-                    //if (self.mode) {
+    
                     if(self.mode)
                     {
                         bound=100;
@@ -165,9 +246,7 @@
                     rndValue = lowBound + arc4random() % (bound - lowBound);
                     numValue=[[NSNumber alloc]initWithInt:rndValue];
                     letters=[NSString stringWithFormat:@"%c",[numValue intValue]+96];
-                    
-                    // }
-                    // strValue=[NSString stringWithUTF8String:(char)[numValue intValue]];
+                   
                     break;
                 case 3:
                     if(self.mode)
@@ -219,10 +298,7 @@
         
     [singleLayer addSublayer:label];
     [self.numberDic setObject:singleLayer forKey:[NSString stringWithFormat:@"Number %d",i]];
-   /* self.textLabel.textAlignment=NSTextAlignmentCenter;
-    self.textLabel.text=textToDisplay;
-    [self.textLabel sizeToFit];
-    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);*/
+
     }
 }
 -(void)addObjectToLayer

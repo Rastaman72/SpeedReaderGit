@@ -27,12 +27,116 @@
 {
     [super viewDidLoad];
     self.mode=YES;
-    self.actuallSize=1;
+    self.positionY=300;
+    [self createSlider];
     self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
     [self create];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+-(void)createSlider
+{
+    self.wordLengthArray=[[NSArray alloc]init];
+    self.wordLengthArray = @[@(1), @(2), @(3)];
+    // slider values go from 0 to the number of values in your numbers array
+    NSInteger numberOfSteps = ((float)[self.wordLengthArray count] - 1);
+    self.wordLengthSlider.maximumValue = numberOfSteps;
+    self.wordLengthSlider.minimumValue = 0;
+    [self.wordLengthSlider setValue:0 animated:YES];
+    
+    //self.chooseSize=[[self.numberSize objectAtIndex:0]integerValue];
+    //    self.chooseSize = [[[NSNumber alloc]initWithInt: [self.numberSize[0]intValue]]intValue];
+    //    NSLog(@"%d",[[self.numberSize objectAtIndex:0]intValue]);
+    self.actuallSize=[[self.wordLengthArray objectAtIndex:0]intValue];
+    // As the slider moves it will continously call the -valueChanged:
+    self.wordLengthSlider.continuous = NO; // NO makes it call only once you let go
+    [ self.wordLengthSlider addTarget:self
+                         action:@selector(sizeChange:)
+               forControlEvents:UIControlEventValueChanged];
+    self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.actuallSize]description];
+
+
+    
+}
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeTextLabel= self.textLabel.frame;
+            toChangeTextLabel.origin.y-=90;
+            [self.textLabel setFrame:toChangeTextLabel];
+            
+            self.positionY-=90;
+            
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeChangeElements= self.changeElementsButton.frame;
+            toChangeChangeElements.origin.y-=225;
+            [self.changeElementsButton setFrame:toChangeChangeElements];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            
+            
+
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeTextLabel= self.textLabel.frame;
+            toChangeTextLabel.origin.y+=90;
+            [self.textLabel setFrame:toChangeTextLabel];
+            
+
+            
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeChangeElements= self.changeElementsButton.frame;
+            toChangeChangeElements.origin.y+=225;
+            [self.changeElementsButton setFrame:toChangeChangeElements];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+
+             self.positionY+=90;
+
+            
+           
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -168,12 +272,19 @@
     self.textLabel.textAlignment=NSTextAlignmentCenter;
     self.textLabel.text=textToDisplay;
     [self.textLabel sizeToFit];
-    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);
+    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, self.positionY);
     
 }
 
 - (IBAction)sizeChange:(id)sender {
-    self.actuallSize=(int)self.wordLengthSlider.value;
+    
+    NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
+    [self.wordLengthSlider setValue:index animated:NO];
+    NSNumber *number = self.wordLengthArray[index]; // <-- This numeric value you want
+    self.actuallSize=[number intValue];
+    self.wordLengthCounterLabel.text=[number description];
+
+    
     self.textLabel.text=nil;
    self.textLabel.textAlignment=NSTextAlignmentCenter;
     [self.textLabel sizeToFit];
@@ -197,5 +308,7 @@
     [self.textLabel sizeToFit];
     
     [self create];
+}
+- (IBAction)changeElements:(id)sender {
 }
 @end

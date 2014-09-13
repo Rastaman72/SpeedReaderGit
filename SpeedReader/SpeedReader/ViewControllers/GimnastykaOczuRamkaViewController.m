@@ -29,10 +29,71 @@
     self.rectangleDic=[[NSMutableDictionary alloc] init];
     [self initFrames];
     [self addFrameToView];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
    
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y-=60;
+            toChangeGameView.size.height-=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSpeedView=self.speedView.frame;
+            toChangeSpeedView.origin.y-=225;
+            [self.speedView setFrame:toChangeSpeedView];
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y+=60;
+            toChangeGameView.size.height+=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSpeedView=self.speedView.frame;
+            toChangeSpeedView.origin.y+=225;
+            [self.speedView setFrame:toChangeSpeedView];
+            
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -181,7 +242,7 @@
     {
         CALayer* object = [self.rectangleDic objectForKey: key];
         NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
-        [self.view.layer insertSublayer:object atIndex:[[words lastObject]intValue]];
+        [self.gameView.layer insertSublayer:object atIndex:[[words lastObject]intValue]];
     }
 }
 
@@ -200,7 +261,7 @@
         
         NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
         
-        [self.view.layer replaceSublayer:[self.view.layer.sublayers objectAtIndex:[[words lastObject]intValue]] with:object];
+        [self.gameView.layer replaceSublayer:[self.gameView.layer.sublayers objectAtIndex:[[words lastObject]intValue]] with:object];
     }
    
     

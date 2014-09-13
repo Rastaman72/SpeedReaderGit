@@ -26,10 +26,60 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.beginPoint=300;
+    self.firstControlPoint=300;
+    self.secondControlPoint=600;
      [self createFrame];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            self.beginPoint-=100;
+            self.firstControlPoint-=100;
+            self.secondControlPoint-=200;
+            CGRect toChangetStartButton= self.changeDirectionButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.changeDirectionButton setFrame:toChangetStartButton];
+            
+                [self directionChanged:self];  
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            self.beginPoint+=100;
+            self.firstControlPoint+=100;
+            self.secondControlPoint+=200;
+            CGRect toChangetStartButton= self.changeDirectionButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.changeDirectionButton setFrame:toChangetStartButton];
+            [self directionChanged:self];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -82,22 +132,22 @@
     int choose=self.direction;
     switch ( choose ) {
         case 0:
-            [trackPath moveToPoint:P(0, 300)];
-            [trackPath addCurveToPoint:P(self.view.frame.size.width, 300)
+            [trackPath moveToPoint:P(0, self.beginPoint)];
+            [trackPath addCurveToPoint:P(self.view.frame.size.width, self.firstControlPoint)
                          controlPoint1:P(0, 0)
                          controlPoint2:P(self.view.frame.size.width, 0)];
-            [trackPath addCurveToPoint:P(0, 300)
-                         controlPoint1:P(self.view.frame.size.width, 600)
-                         controlPoint2:P(0, 600)];
+            [trackPath addCurveToPoint:P(0, self.beginPoint)
+                         controlPoint1:P(self.view.frame.size.width, self.secondControlPoint)
+                         controlPoint2:P(0, self.secondControlPoint)];
             break;
         case 1:
-            [trackPath moveToPoint:P(self.view.frame.size.width, 300)];
-            [trackPath addCurveToPoint:P(0, 300)
+            [trackPath moveToPoint:P(self.view.frame.size.width, self.beginPoint)];
+            [trackPath addCurveToPoint:P(0, self.beginPoint)
                          controlPoint1:P(self.view.frame.size.width, 0)
                          controlPoint2:P(0, 0)];
-            [trackPath addCurveToPoint:P(self.view.frame.size.width, 300)
-                         controlPoint1:P(0, 600)
-                         controlPoint2:P(self.view.frame.size.width, 600)];
+            [trackPath addCurveToPoint:P(self.view.frame.size.width, self.firstControlPoint)
+                         controlPoint1:P(0, self.secondControlPoint)
+                         controlPoint2:P(self.view.frame.size.width, self.secondControlPoint)];
             
             break;
         default:

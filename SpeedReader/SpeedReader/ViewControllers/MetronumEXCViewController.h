@@ -20,6 +20,7 @@
 @property (nonatomic,assign)bool running;
 @property (weak, nonatomic) IBOutlet UIButton *startMetronumButton;
 @property (weak, nonatomic) IBOutlet UIButton *timerButton;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
 @property (weak, nonatomic) IBOutlet UILabel *timeForMetronumCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *setSpeedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *setTimerLabel;
@@ -39,5 +40,9 @@
 @property(nonatomic,assign)  SystemSoundID metronom;
 @property(nonatomic,assign)  SystemSoundID metronom2;
 @property(nonatomic,strong) NSTimer *audioPlayingTimer;
+@property (weak, nonatomic) IBOutlet UIView *setSpeedView;
+@property (weak, nonatomic) IBOutlet UIView *timerView;
 @property(nonatomic,assign)int soundCounter;
+@property (weak, nonatomic) IBOutlet UIView *timeSpanView;
+@property(nonatomic,assign)bool changePosition;
 @end

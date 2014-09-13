@@ -22,7 +22,8 @@
 @property(nonatomic,assign)int actualLetter;
 @property (weak, nonatomic) IBOutlet UIButton *helpButton;
 - (IBAction)helpPush:(id)sender;
-
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property(nonatomic,assign)bool changePosition;
 - (IBAction)startPush:(id)sender;
 
 @end

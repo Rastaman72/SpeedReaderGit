@@ -19,7 +19,10 @@
 @property (weak, nonatomic) IBOutlet UISlider *wordShowTimeSlider;
 @property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
 - (IBAction)wordShowTimeChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *minWordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *maxWordLengthView;
 
+@property (weak, nonatomic) IBOutlet UIView *wordShowTimeView;
 
 @property (weak, nonatomic) IBOutlet UILabel *minWordLengthCounterLabel;
 @property(nonatomic,assign)int maxLength;
@@ -32,4 +35,5 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
 @property(nonatomic,assign)bool startPush;
+@property(nonatomic,assign)bool changePosition;
 @end

@@ -28,9 +28,63 @@
     [super viewDidLoad];
     self.timerLabel.text=@"00:00.0";
     [self.timerLabel sizeToFit];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangetimerLabel= self.timerLabel.frame;
+            toChangetimerLabel.origin.y-=225;
+            [self.timerLabel setFrame:toChangetimerLabel];
+            
+            CGRect toChangestartTimerButton= self.startTimerButton.frame;
+            toChangestartTimerButton.origin.y-=225;
+            [self.startTimerButton setFrame:toChangestartTimerButton];
+            
+            
+            
+            
+            
+            
+                      self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangetimerLabel= self.timerLabel.frame;
+            toChangetimerLabel.origin.y+=225;
+            [self.timerLabel setFrame:toChangetimerLabel];
+            
+            CGRect toChangestartTimerButton= self.startTimerButton.frame;
+            toChangestartTimerButton.origin.y+=225;
+            [self.startTimerButton setFrame:toChangestartTimerButton];
+            
+            
+
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

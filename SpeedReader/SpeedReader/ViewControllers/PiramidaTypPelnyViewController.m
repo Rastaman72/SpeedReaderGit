@@ -27,12 +27,76 @@
 {
     [super viewDidLoad];
     self.mode=YES;
+    self.positionY=300;
     self.actuallSize=1;
     self.step=2;
     [self create];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeTextLabel= self.textLabel.frame;
+            toChangeTextLabel.origin.y-=100;
+            [self.textLabel setFrame:toChangeTextLabel];
+            
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangetGenerateObjectsButton= self.generateObjectsButton.frame;
+            toChangetGenerateObjectsButton.origin.y-=225;
+            [self.generateObjectsButton setFrame:toChangetGenerateObjectsButton];
+            
+            self.positionY-=90;
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+          
+            CGRect toChangeTextLabel= self.textLabel.frame;
+            toChangeTextLabel.origin.y+=100;
+            [self.textLabel setFrame:toChangeTextLabel];
+            
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangetGenerateObjectsButton= self.generateObjectsButton.frame;
+            toChangetGenerateObjectsButton.origin.y+=225;
+            [self.generateObjectsButton setFrame:toChangetGenerateObjectsButton];
+            
+           self.positionY+=90;
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -84,7 +148,7 @@
     self.textLabel.textAlignment=NSTextAlignmentCenter;
     self.textLabel.text=textToDisplay;
     [self.textLabel sizeToFit];
-    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, 300);
+    self.textLabel.center = CGPointMake(self.view.frame.size.width/2, self.positionY);
     
 }
 

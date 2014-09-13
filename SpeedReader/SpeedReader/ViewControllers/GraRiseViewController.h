@@ -22,5 +22,12 @@
 @property(nonatomic,assign)int lineSize;
 @property(nonatomic,strong)NSMutableDictionary* numberDic;
 @property(nonatomic,assign)int wrongChooseCounter;
+@property (weak, nonatomic) IBOutlet UIView *sizeView;
 @property(nonatomic,assign)int nextNumber;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,strong)NSArray* numberSize;
+@property(nonatomic,assign)int chooseSize;
+@property (weak, nonatomic) IBOutlet UILabel *sizeCounterLabel;
+@property(nonatomic,assign)int squareSize;
+@property(nonatomic,assign)int positionX;
 @end

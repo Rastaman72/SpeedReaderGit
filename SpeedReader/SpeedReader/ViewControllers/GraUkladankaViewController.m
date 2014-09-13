@@ -34,9 +34,78 @@
     [self createSquare];
     [self getWord];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+   
+            CGRect toChangetextGameView= self.gameView.frame;
+            toChangetextGameView.origin.y-=50;
+             toChangetextGameView.size.height-=100;
+            [self.gameView setFrame:toChangetextGameView];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            CGRect toChangetHelpButton= self.helpButton.frame;
+            toChangetHelpButton.origin.y-=225;
+            [self.helpButton setFrame:toChangetHelpButton];
+            
+            CGRect toChangetWordLengthView= self.wordLengthView.frame;
+            toChangetWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangetWordLengthView];
+            
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangetextGameView= self.gameView.frame;
+            toChangetextGameView.origin.y+=225;
+            [self.gameView setFrame:toChangetextGameView];
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            CGRect toChangetHelpButton= self.helpButton.frame;
+            toChangetHelpButton.origin.y+=225;
+            [self.helpButton setFrame:toChangetHelpButton];
+            
+            CGRect toChangetWordLengthView= self.wordLengthView.frame;
+            toChangetWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangetWordLengthView];
+            
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

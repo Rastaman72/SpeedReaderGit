@@ -36,8 +36,94 @@
     self.metronom = [self createSoundID: @"metronom.wav"];
        self.metronom2 = [self createSoundID: @"metronom2.wav"];
     self.soundCounter=1;
-
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
+}
+
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+          
+            CGRect toChangeTimeSpanView= self.timeSpanView.frame;
+            toChangeTimeSpanView.origin.x-=225;
+            [self.timeSpanView setFrame:toChangeTimeSpanView];
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=300;
+            toChangeSetModeView.origin.x+=400;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            CGRect toChangeSetSpeedView= self.setSpeedView.frame;
+            toChangeSetSpeedView.origin.x-=225;
+            [self.setSpeedView setFrame:toChangeSetSpeedView];
+            
+            CGRect toChangeTimerView= self.timerView.frame;
+            toChangeTimerView.origin.y-=425;
+            toChangeTimerView.origin.x+=225;
+            [self.timerView setFrame:toChangeTimerView];
+            
+            
+            CGRect toChangeStartMetronumButton= self.startMetronumButton.frame;
+            toChangeStartMetronumButton.origin.y-=225;
+              toChangeStartMetronumButton.origin.x+=225;
+            [self.startMetronumButton setFrame:toChangeStartMetronumButton];
+
+
+            
+                   
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeTimeSpanView= self.timeSpanView.frame;
+            toChangeTimeSpanView.origin.x+=225;
+            [self.timeSpanView setFrame:toChangeTimeSpanView];
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=300;
+            toChangeSetModeView.origin.x-=400;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            CGRect toChangeSetSpeedView= self.setSpeedView.frame;
+            toChangeSetSpeedView.origin.x+=225;
+            [self.setSpeedView setFrame:toChangeSetSpeedView];
+            
+            CGRect toChangeTimerView= self.timerView.frame;
+            toChangeTimerView.origin.y+=425;
+            toChangeTimerView.origin.x-=225;
+            [self.timerView setFrame:toChangeTimerView];
+            
+            
+            CGRect toChangeStartMetronumButton= self.startMetronumButton.frame;
+            toChangeStartMetronumButton.origin.y+=225;
+            toChangeStartMetronumButton.origin.x-=225;
+            [self.startMetronumButton setFrame:toChangeStartMetronumButton];
+                        self.changePosition=NO;
+        }
+    }
+    
 }
 - (IBAction)timerPush:(id)sender
 {

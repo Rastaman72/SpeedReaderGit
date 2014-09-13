@@ -33,9 +33,9 @@
     SettingsForDB* userSettings =[NSEntityDescription
                                   insertNewObjectForEntityForName:@"TeacherSettings"
                                   inManagedObjectContext:context];
-    userSettings.interface=[[NSNumber alloc]initWithInt:1];
-    userSettings.lastUsedText==[[NSNumber alloc]initWithInt:0];
-    userSettings.lastLessonDone==[[NSNumber alloc]initWithInt:-1];
+    userSettings.interface=[[[NSNumber alloc]initWithInt:1]intValue];
+    userSettings.lastUsedText=[[[NSNumber alloc]initWithInt:0]intValue];
+    userSettings.lastLessonDone=[[[NSNumber alloc]initWithInt:-1]intValue];
 
     
     UserAccountForDB *newUser = [NSEntityDescription

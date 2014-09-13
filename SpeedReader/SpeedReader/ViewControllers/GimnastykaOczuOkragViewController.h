@@ -12,4 +12,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *changeDirectionButton;
 - (IBAction)directionChanged:(id)sender;
 @property(nonatomic,assign)bool direction;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int beginPoint;
+@property(nonatomic,assign)int firstControlPoint;
+@property(nonatomic,assign)int secondControlPoint;
 @end

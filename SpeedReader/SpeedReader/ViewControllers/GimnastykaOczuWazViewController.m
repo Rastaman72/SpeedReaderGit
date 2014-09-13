@@ -28,10 +28,62 @@
 {
     [super viewDidLoad];
     [self createFrame];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+           
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y-=60;
+            toChangeGameView.size.height-=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeChangeDirectionButton=self.changeDirectionButton.frame;
+            toChangeChangeDirectionButton.origin.y-=225;
+            [self.changeDirectionButton setFrame:toChangeChangeDirectionButton];
+             [self directionChanged:self];
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y+=60;
+            toChangeGameView.size.height+=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeChangeDirectionButton=self.changeDirectionButton.frame;
+            toChangeChangeDirectionButton.origin.y+=225;
+            [self.changeDirectionButton setFrame:toChangeChangeDirectionButton];
+            [self directionChanged:self];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,7 +101,7 @@
 	racetrack.lineWidth = 5.0;
     [racetrack setOpacity:0.5];
    	
-    [self.view.layer insertSublayer:racetrack atIndex:0];
+    [self.gameView.layer insertSublayer:racetrack atIndex:0];
     
     
     
@@ -59,7 +111,7 @@
 	car.contents = (id)([UIImage imageNamed:@"image0.jpg"].CGImage);
 	
     
-    [self.view.layer insertSublayer:car atIndex:1];
+    [self.gameView.layer insertSublayer:car atIndex:1];
     
 	
     
@@ -81,14 +133,14 @@
 {
     UIBezierPath *trackPath = [UIBezierPath bezierPath];
     int choose=self.direction;
-    int x=50;
-    int y=350;
+    int x=30;
+    int y=self.gameView.frame.size.height/4;
     int offset=100;
     int offsetX=100;
     int j=0;
     switch ( choose ) {
         case 0:
-            [trackPath moveToPoint:P(x, 350)];
+            [trackPath moveToPoint:P(x, self.gameView.frame.size.height/4)];
            
             for (int i=1; i<=14; i++) {
                 if (i<=7) {
@@ -98,7 +150,7 @@
                     else
                         j=1;
                     x+=offsetX;
-                    [trackPath addCurveToPoint:P(x,350)
+                    [trackPath addCurveToPoint:P(x,self.gameView.frame.size.height/4)
                                  controlPoint1:P(x-offsetX,y+j*offset)
                                  controlPoint2:P(x,y+j*offset)];
                 }
@@ -109,18 +161,16 @@
                     else
                         j=1;
                     x-=offsetX;
-                    [trackPath addCurveToPoint:P(x,350)
+                    [trackPath addCurveToPoint:P(x,self.gameView.frame.size.height/4)
                                  controlPoint1:P(x+offsetX,y+j*offset)
                                  controlPoint2:P(x,y+j*offset)];
-                    
-                    
                 }
                 
             }
             break;
         case 1:
             x+=7*offsetX;
-            [trackPath moveToPoint:P(x, 350)];
+            [trackPath moveToPoint:P(x, self.gameView.frame.size.height/4)];
             
             for (int i=1; i<=14; i++) {
                 if (i<=7) {
@@ -130,7 +180,7 @@
                     else
                         j=1;
                     x-=offsetX;
-                    [trackPath addCurveToPoint:P(x,350)
+                    [trackPath addCurveToPoint:P(x,self.gameView.frame.size.height/4)
                                  controlPoint1:P(x+offsetX,y+j*offset)
                                  controlPoint2:P(x,y+j*offset)];
                 }
@@ -141,7 +191,7 @@
                     else
                         j=1;
                     x+=offsetX;
-                    [trackPath addCurveToPoint:P(x,350)
+                    [trackPath addCurveToPoint:P(x,self.gameView.frame.size.height/4)
                                  controlPoint1:P(x-offsetX,y+j*offset)
                                  controlPoint2:P(x,y+j*offset)];
                     
@@ -161,10 +211,10 @@
 - (IBAction)directionChanged:(id)sender {
     self.direction=!self.direction;
     
-    [self.view.layer replaceSublayer:[self.view.layer.sublayers objectAtIndex:0] with:nil];
-    [[self.view.layer.sublayers objectAtIndex:0]removeAllAnimations];
+    [self.gameView.layer replaceSublayer:[self.gameView.layer.sublayers objectAtIndex:0] with:nil];
+    [[self.gameView.layer.sublayers objectAtIndex:0]removeAllAnimations];
     
-    [self.view.layer replaceSublayer:[self.view.layer.sublayers objectAtIndex:0] with:nil];
+    [self.gameView.layer replaceSublayer:[self.gameView.layer.sublayers objectAtIndex:0] with:nil];
     [self createFrame];
 }
 /*

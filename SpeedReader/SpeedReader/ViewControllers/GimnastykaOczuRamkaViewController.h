@@ -15,6 +15,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *speedSlider;
+@property (weak, nonatomic) IBOutlet UILabel *speedDescriptionLabel;
 - (IBAction)speedChange:(id)sender;
 @property(nonatomic,assign)bool started;
+@property (weak, nonatomic) IBOutlet UIView *speedView;
+@property(nonatomic,assign)bool changePosition;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
 @end

@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *sizeSlider;
 @property(nonatomic,assign)bool change;
 @property(nonatomic,assign)int touchCounter;
-@property(nonatomic,assign)int choosedSize;
+
 @property(nonatomic,assign)int horizontalSize;
 @property(nonatomic,assign)int verticalSize;
 @property(nonatomic,strong)CATextLayer* firstChoose;
@@ -27,4 +27,11 @@
 @property(nonatomic,strong)NSString* secondObjectToDelete;
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property(nonatomic,strong)NSMutableArray* randomValueArray;
+@property (weak, nonatomic) IBOutlet UIView *sizeView;
+@property(nonatomic,assign)bool changePosition;
+@property (weak, nonatomic) IBOutlet UILabel *sizeCounterLabel;
+@property(nonatomic,strong)NSArray* numberSize;
+@property(nonatomic,assign)int chooseSize;
+@property(nonatomic,assign)int squareSize;
+@property(nonatomic,assign)int positionX;
 @end

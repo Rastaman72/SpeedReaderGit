@@ -31,4 +31,9 @@
 @property(nonatomic,assign)int squareSize;
 @property(nonatomic,strong) NSMutableArray *numbersWordLength;
 @property(nonatomic,strong) NSMutableArray *numbersSquareSize;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property (weak, nonatomic) IBOutlet UIView *squareSizeView;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int objectSize;
 @end

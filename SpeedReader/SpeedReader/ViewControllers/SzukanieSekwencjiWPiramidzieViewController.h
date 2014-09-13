@@ -22,8 +22,12 @@
 @property(nonatomic,assign)int goodAnswer;
 - (IBAction)modeChange:(id)sender;
 - (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *sizeView;
 
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
 @property (weak, nonatomic) IBOutlet UILabel *charModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;
 @property (weak, nonatomic) IBOutlet UIView *gameView;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int positionY;
 @end

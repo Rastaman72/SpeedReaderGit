@@ -37,20 +37,84 @@
     self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.wordShowTimeSlider.value]description];
     
     [self getWord];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     
     
    
-    /*else
-     {
-     [self.scrollingTimer invalidate];
-     self.scrollingTimer = nil;
-     
-     }
-     self.startPush=YES;*/
-    
-    // Do any additional setup after loading the view.
+      // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeWordShowTimeView= self.wordShowTimeView.frame;
+            toChangeWordShowTimeView.origin.y-=225;
+            [self.wordShowTimeView setFrame:toChangeWordShowTimeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangMinWordLengthView= self.minWordLengthView.frame;
+            toChangMinWordLengthView.origin.y-=225;
+            [self.minWordLengthView setFrame:toChangMinWordLengthView];
+            
+            CGRect toChangeMaxWordLengthView= self.maxWordLengthView.frame;
+            toChangeMaxWordLengthView.origin.y-=225;
+            [self.maxWordLengthView setFrame:toChangeMaxWordLengthView];
+            
+            CGRect toChangeExcTextLabel= self.exerciseTextLabel.frame;
+            toChangeExcTextLabel.origin.y-=225;
+            [self.exerciseTextLabel setFrame:toChangeExcTextLabel];
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeWordShowTimeView= self.wordShowTimeView.frame;
+            toChangeWordShowTimeView.origin.y+=225;
+            [self.wordShowTimeView setFrame:toChangeWordShowTimeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangMinWordLengthView= self.minWordLengthView.frame;
+            toChangMinWordLengthView.origin.y+=225;
+            [self.minWordLengthView setFrame:toChangMinWordLengthView];
+            
+            CGRect toChangeMaxWordLengthView= self.maxWordLengthView.frame;
+            toChangeMaxWordLengthView.origin.y+=225;
+            [self.maxWordLengthView setFrame:toChangeMaxWordLengthView];
+            
+            CGRect toChangeExcTextLabel= self.exerciseTextLabel.frame;
+            toChangeExcTextLabel.origin.y+=225;
+            [self.exerciseTextLabel setFrame:toChangeExcTextLabel];
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -84,11 +148,13 @@
 
 - (IBAction)minWordValueChange:(id)sender {
     self.minLength=self.minWordLengthSLider.value;
+    self.minWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.minLength]description];
 }
 
 - (IBAction)maxWordValueChange:(id)sender {
     
     self.maxLength=self.maxWordLengthSlider.value;
+     self.maxWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.maxLength]description];
 }
 
 - (SharedData*) theAppDataObject;

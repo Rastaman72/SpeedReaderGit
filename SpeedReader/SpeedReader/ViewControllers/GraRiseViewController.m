@@ -31,17 +31,116 @@
     self.nextNumber=1;
     self.wrongChooseCounter=0;
     self.lineSize=5;
+      self.positionX=100;
+    self.squareSize=70;
+    [self createSlider];
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=50;
+            toChangeGameView.size.height-=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeSizeView= self.sizeView.frame;
+            toChangeSizeView.origin.y-=225;
+            [self.sizeView setFrame:toChangeSizeView];
+            
+            
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            self.squareSize-=20;
+            self.positionX+=70;
+            [self sizeChange:self];
+             self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=50;
+            toChangeGameView.size.height-=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeSizeView= self.sizeView.frame;
+            toChangeSizeView.origin.y+=225;
+            [self.sizeView setFrame:toChangeSizeView];
+            
+            
+            
+            CGRect toChangetStartButton= self.startButton.frame;
+            toChangetStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangetStartButton];
+            
+            self.squareSize+=20;
+            self.positionX-=70;
+            [self sizeChange:self];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)createSlider
+{
+    self.numberSize=[[NSArray alloc]init];
+    self.numberSize = @[@(16), @(25), @(36)];
+    // slider values go from 0 to the number of values in your numbers array
+    NSInteger numberOfSteps = ((float)[self.numberSize count] - 1);
+    self.sizeSlider.maximumValue = numberOfSteps;
+    self.sizeSlider.minimumValue = 0;
+    [self.sizeSlider setValue:1 animated:YES];
+    
+    //self.chooseSize=[[self.numberSize objectAtIndex:0]integerValue];
+    //    self.chooseSize = [[[NSNumber alloc]initWithInt: [self.numberSize[0]intValue]]intValue];
+    //    NSLog(@"%d",[[self.numberSize objectAtIndex:0]intValue]);
+    self.chooseSize=[[self.numberSize objectAtIndex:1]intValue];
+    // As the slider moves it will continously call the -valueChanged:
+    self.sizeSlider.continuous = NO; // NO makes it call only once you let go
+    [ self.sizeSlider addTarget:self
+                         action:@selector(sizeChange:)
+               forControlEvents:UIControlEventValueChanged];
+    self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.chooseSize]description];
+    self.lineSize=5;
+    
+}
+
 
 -(void)createNumber
 {
@@ -50,7 +149,7 @@
         for(int j=0;j<self.lineSize;j++)
         {
             // CGRect Rect= CGRectMake(0,0, 50, 50);
-            CGRect Rect1= CGRectMake(75+i*50,75+j*50, 50, 50);
+             CGRect Rect1= CGRectMake(self.positionX+i*self.squareSize,50+j*self.squareSize, self.squareSize, self.squareSize);
             
             CALayer* rectangleToAdd = [CALayer layer];
             [rectangleToAdd setFrame:Rect1];
@@ -61,17 +160,8 @@
             [rectangleToAdd setBorderColor:[[UIColor redColor]CGColor]];
             [rectangleToAdd setBorderWidth:10.0f];
             
-            /* CATextLayer *label = [[CATextLayer alloc] init];
-             [label setFont:@"Helvetica-Bold"];
-             [label setFontSize:20];
-             [label setFrame:Rect1];
-             [label setString:[NSString stringWithFormat:@"DD%d",i*self.horizontalSize+j]];
-             [label setAlignmentMode:kCAAlignmentCenter];
-             [label setForegroundColor:[[UIColor blackColor] CGColor]];
-             [label addSublayer:rectangleToAdd];*/
             [self.numberDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Number %d",i*self.lineSize+j]];
-            // [self.numberDic setObject:label forKey:[NSString stringWithFormat:@"Number %d",i*self.horizontalSize+j]];
-        }
+            }
     }
     
     
@@ -81,8 +171,22 @@
     NSMutableArray *allKeys = [[self.numberDic allKeys] mutableCopy];
     int i=0;
    
-    for (NSString *key in allKeys)
-    {
+    
+    
+    int upperBound=self.chooseSize-1;
+    
+    
+     while (upperBound>=0) {
+        //  CALayer* singleLayer=[self.numberDic valueForKey:[NSString stringWithFormat:@"Number %d",i]];
+        
+        
+        
+        NSString* key=[allKeys objectAtIndex:arc4random_uniform(upperBound)];
+        [allKeys removeObject:key];
+        upperBound--;
+    
+   // for (NSString *key in allKeys)
+   // {
         
         
         NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
@@ -101,15 +205,9 @@
         [label setAlignmentMode:kCAAlignmentCenter];
         [label setForegroundColor:[[UIColor blackColor] CGColor]];
         
-       /* [object setFrame:Rect];
-        [object setBounds:Rect];*/
-        
         [object addSublayer:label];
         [self.numberDic setObject:object forKey:[NSString stringWithFormat:@"Number %d",[[words lastObject]intValue]]];
-        //       //        [self.gameView.layer insertSublayer:object atIndex:[[words lastObject]intValue]];
-        //        [self.gameView.layer setValue:object forKeyPath:[NSString stringWithFormat:@"Number %d",[[words lastObject]intValue]]];
-        
-    }
+        }
 }
 
 -(void)addObjectToLayer
@@ -126,43 +224,37 @@
 
 
 - (IBAction)sizeChange:(id)sender {
-    int size=(int)self.sizeSlider.value;
-    if(size<25)
-    {
-        self.choosedSize=16;
-        self.lineSize=4;
-        self.gameView.layer.sublayers=nil;
-        self.numberDic=[[NSMutableDictionary alloc]init];
-        [self createNumber];
-        [self addNumberToObject];
-        [self addObjectToLayer];
-         [self.sizeSlider setValue:16 animated:NO];
-        
-        
+    
+    
+    NSUInteger index = (NSUInteger)(self.sizeSlider.value + 0.5);
+    [self.sizeSlider setValue:index animated:NO];
+    NSNumber *number = self.numberSize[index]; // <-- This numeric value you want
+    self.chooseSize=[number intValue];
+    self.sizeCounterLabel.text=[number description];
+    
+    
+    switch (self.chooseSize) {
+        case 16:
+            self.lineSize=4;
+            break;
+        case 25:
+            self.lineSize=5;
+            break;
+        case 36:
+           
+            self.lineSize=6;
+            break;
+    
+            
+        default:
+            break;
     }
-    else if (size<36)
-    {
-        self.choosedSize=25;
-        self.lineSize=5;
-        [self.sizeSlider setValue:25 animated:NO];
-        self.gameView.layer.sublayers=nil;
-        self.numberDic=[[NSMutableDictionary alloc]init];
-        [self createNumber];
-        [self addNumberToObject];
-        [self addObjectToLayer];
-        
-    }
-        else
-    {
-        self.choosedSize=36;
-        self.lineSize=6;
-        [self.sizeSlider setValue:36 animated:NO];
-        self.gameView.layer.sublayers=nil;
-        self.numberDic=[[NSMutableDictionary alloc]init];
-        [self createNumber];
-        [self addNumberToObject];
-        [self addObjectToLayer];
-    }
+    
+    self.gameView.layer.sublayers=nil;
+    self.numberDic=[[NSMutableDictionary alloc]init];
+    [self createNumber];
+    [self addNumberToObject];
+    [self addObjectToLayer];
     
 }
 
@@ -206,16 +298,11 @@
     
 }
 
-//-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-//{
-//    for (CATextLayer* singleLayer in self.gameView.layer.sublayers) {
-//        [singleLayer removeAnimationForKey:@"flashAnimation"];
-//    }
-//    
-//}
+
 - (IBAction)sizeDynamic:(id)sender {
 }
 - (IBAction)startPush:(id)sender {
+      [self sizeChange:self];
 }
 /*
 #pragma mark - Navigation

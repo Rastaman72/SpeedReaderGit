@@ -35,9 +35,69 @@
     self.increaseDistance=0;
     [self createPoints];
     [self addPointToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y-=60;
+            toChangeGameView.size.height-=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSpeedView=self.speedView.frame;
+            toChangeSpeedView.origin.y-=225;
+            [self.speedView setFrame:toChangeSpeedView];
+            
+            CGRect toChangeStartButton=self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            
+            CGRect toChangeGameView =self.gameView.frame;
+            toChangeGameView.origin.y+=60;
+            toChangeGameView.size.height+=200;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSpeedView=self.speedView.frame;
+            toChangeSpeedView.origin.y+=225;
+            [self.speedView setFrame:toChangeSpeedView];
+            
+            CGRect toChangeStartButton=self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -49,12 +109,11 @@
     for (int i=0; i<2; i++)
     {
         int horAdd;
-        int verAdd;
         if (i<2) {
-            horAdd=100*i;
-            verAdd=0;
+            horAdd=50*i;
+            
     
-        CGRect Rect = CGRectMake(250+horAdd, 250+verAdd, 20, 20);
+        CGRect Rect = CGRectMake(self.view.center.x-40+horAdd, self.gameView.frame.size.height/2, 20, 20);
         CALayer *point = [CALayer layer];
         [point setFrame:Rect];
         [point setBounds:Rect];
@@ -62,8 +121,6 @@
         switch (i) {
             case 0:
             {
-                
-                
                 
                 CATextLayer *label = [[CATextLayer alloc] init];
                 [label setFont:@"Helvetica-Bold"];
@@ -107,7 +164,7 @@
     
     for (NSString *key in allKeys) {
         CALayer* object = [self.pointsArray valueForKey: key];
-        [self.view.layer addSublayer:object];
+        [self.gameView.layer addSublayer:object];
         // NSLog(@"%@",self.view.layer.sublayers);
     }
     
@@ -214,10 +271,6 @@
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    // NSLog(@"%@",@"animacja skonczona");
-    //    if (!self.forward) {
-    //        self.forward=YES;
-    //    }
     self.animFinish++;
     NSMutableArray *allKeys = [[self.pointsArray allKeys] mutableCopy];
     
@@ -273,13 +326,17 @@
   
 }
 - (IBAction)speedChange:(id)sender {
+    
     [self.scrollingTimer invalidate];
     self.scrollingTimer=nil;
     
-    if (self.scrollingTimer == nil)
+    if(self.started)
     {
-        self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
-                                                               target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+        if (self.scrollingTimer == nil)
+        {
+            self.scrollingTimer = [NSTimer scheduledTimerWithTimeInterval:(500/self.speedSlider.value+0.500)
+                                                                   target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+        }
     }
 }
 @end

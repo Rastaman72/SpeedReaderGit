@@ -12,4 +12,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *changeDirectionButton;
 - (IBAction)directionChanged:(id)sender;
 @property(nonatomic,assign)bool direction;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int beginPosition;
+@property(nonatomic,assign)int endPosition;
+@property(nonatomic,assign)int offsetX;
+@property(nonatomic,assign)int offsetY;
+
 @end
