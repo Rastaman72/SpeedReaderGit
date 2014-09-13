@@ -46,7 +46,94 @@
     self.squareSizeCounterLabel.text=[number description];
     self.wordLengthCounterLabel.text=[number1 description];
     self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt: self.wordShowSlider.value]description];
-    // Do any additional setup after loading the view.
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
+}
+
+
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            
+            CGRect toChangeframeGameView= self.gameView.frame;
+            toChangeframeGameView.origin.y-=125;
+            [self.gameView setFrame:toChangeframeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangewordShowTimeView= self.wordShowTimeView.frame;
+            toChangewordShowTimeView.origin.y-=225;
+            [self.wordShowTimeView setFrame:toChangewordShowTimeView];
+            
+            CGRect toChangeInfoView= self.infoView.frame;
+            toChangeInfoView.origin.y-=225;
+            [self.infoView setFrame:toChangeInfoView];
+
+            
+            CGRect toChangewordLengthView= self.wordLengthView.frame;
+            toChangewordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangewordLengthView];
+            
+            CGRect toChangesquareSizeView= self.squareSizeView.frame;
+            toChangesquareSizeView.origin.y-=225;
+            [self.squareSizeView setFrame:toChangesquareSizeView];
+            
+
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeframeGameView= self.gameView.frame;
+            toChangeframeGameView.origin.y+=125;
+            [self.gameView setFrame:toChangeframeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangewordShowTimeView= self.wordShowTimeView.frame;
+            toChangewordShowTimeView.origin.y+=225;
+            [self.wordShowTimeView setFrame:toChangewordShowTimeView];
+            
+            CGRect toChangeInfoView= self.infoView.frame;
+            toChangeInfoView.origin.y+=225;
+            [self.infoView setFrame:toChangeInfoView];
+            
+            
+            CGRect toChangewordLengthView= self.wordLengthView.frame;
+            toChangewordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangewordLengthView];
+            
+            CGRect toChangesquareSizeView= self.squareSizeView.frame;
+            toChangesquareSizeView.origin.y+=225;
+            [self.squareSizeView setFrame:toChangesquareSizeView];
+            
+
+            
+            self.changePosition=NO;
+        }
+    }
+    
 }
 
 -(void)createSlider
@@ -278,13 +365,14 @@ else
    
    
         self.showTableTimer = [NSTimer scheduledTimerWithTimeInterval:(self.wordShowSlider.value/1000)
-                                                               target:self selector:@selector(startGame) userInfo:nil repeats:YES];
+                                                               target:self selector:@selector(startGame) userInfo:nil repeats:NO];
     
         
 }
 -(void)startGame
 {
     self.gameView.layer.sublayers=nil;
+    self.hideNumber=!self.hideNumber;
 }
 
 - (void)didReceiveMemoryWarning
@@ -312,11 +400,12 @@ else
 
 }
 - (IBAction)showHidePush:(id)sender {
-    self.hideNumber=!self.hideNumber;
+     self.hideNumber=!self.hideNumber;
     if(   self.hideNumber)
     self.gameView.layer.sublayers=nil;
     else
     [self addObjectToLayer];
+   
 
 }
 @end

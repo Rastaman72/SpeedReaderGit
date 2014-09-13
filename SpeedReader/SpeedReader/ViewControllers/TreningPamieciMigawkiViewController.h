@@ -28,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthCounterLabel;
 - (IBAction)squareSizeChange:(id)sender;
 - (IBAction)wordLengthChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *squareSizeView;
 @property(nonatomic,strong)NSMutableDictionary* numberDic;
 @property(nonatomic,assign)int squareSize;
 @property(nonatomic,strong) NSMutableArray *numbersWordLength;
@@ -36,5 +38,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *wordShowSlider;
 @property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
 - (IBAction)showTimeChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *wordShowTImeView;
 @property(nonatomic,strong) NSTimer *showTableTimer;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property(nonatomic,assign)bool changePosition;
 @end

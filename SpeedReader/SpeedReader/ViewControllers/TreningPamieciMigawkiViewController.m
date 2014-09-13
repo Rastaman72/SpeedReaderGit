@@ -47,9 +47,110 @@
     self.squareSizeCounterLabel.text=[number description];
     self.wordLengthCounterLabel.text=[number1 description];
     self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt: self.wordShowSlider.value]description];
-    // Do any additional setup after loading the view.
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+         
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=25;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+
+            
+            
+            CGRect toChangeWordShowTimeView= self.wordShowTImeView.frame;
+            toChangeWordShowTimeView.origin.y-=225;
+            [self.wordShowTImeView setFrame:toChangeWordShowTimeView];
+
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+
+            
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+
+            
+            
+            CGRect toChangeSquareSizeView= self.squareSizeView.frame;
+            toChangeSquareSizeView.origin.y-=225;
+            [self.squareSizeView setFrame:toChangeSquareSizeView];
+
+            
+            
+            
+       
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=25;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            
+            CGRect toChangeWordShowTimeView= self.wordShowTImeView.frame;
+            toChangeWordShowTimeView.origin.y+=225;
+            [self.wordShowTImeView setFrame:toChangeWordShowTimeView];
+            
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            
+            
+            CGRect toChangeSquareSizeView= self.squareSizeView.frame;
+            toChangeSquareSizeView.origin.y+=225;
+            [self.squareSizeView setFrame:toChangeSquareSizeView];
+        
+            self.changePosition=NO;
+        }
+    }
+    
+}
 -(void)createSlider
 {
     self.numbersWordLength=[[NSMutableArray alloc]init];

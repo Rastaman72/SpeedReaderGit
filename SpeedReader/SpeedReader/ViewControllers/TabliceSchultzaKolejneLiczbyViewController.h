@@ -26,5 +26,9 @@
 @property(nonatomic,assign)int squareSize;
 @property(nonatomic,strong) NSMutableArray *numbersSquareSize;
 @property(nonatomic,assign)bool changePosition;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property (weak, nonatomic) IBOutlet UIView *infoView;
+@property (weak, nonatomic) IBOutlet UIView *squareSizeView;
+@property(nonatomic,assign)int objectSize;
 
 @end

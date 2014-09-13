@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     self.numberDic=[[NSMutableDictionary alloc]init];
+    self.objectSize=70;
     [self createSlider];
     [self createNumber];
     [self addNumberToObject];
@@ -53,6 +54,34 @@
         if(!self.changePosition)
         {
             
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=125;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeModeView= self.setModeView.frame;
+            toChangeModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeModeView];
+            
+            CGRect toChangeInfoView= self.infoView.frame;
+            toChangeInfoView.origin.y-=225;
+            [self.infoView setFrame:toChangeInfoView];
+            
+            
+            CGRect toChangeSquareSizeView= self.squareSizeView.frame;
+            toChangeSquareSizeView.origin.y-=225;
+            [self.squareSizeView setFrame:toChangeSquareSizeView];
+            
+            
+            self.objectSize-=20;
+            
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+
+
             self.changePosition=YES;
         }
     }
@@ -62,6 +91,32 @@
         if(self.changePosition)
         {
             
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=125;
+            [self.gameView setFrame:toChangeGameView];
+            
+            
+            CGRect toChangeModeView= self.setModeView.frame;
+            toChangeModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeModeView];
+            
+            CGRect toChangeInfoView= self.infoView.frame;
+            toChangeInfoView.origin.y+=225;
+            [self.infoView setFrame:toChangeInfoView];
+            
+            
+            CGRect toChangeSquareSizeView= self.squareSizeView.frame;
+            toChangeSquareSizeView.origin.y+=225;
+            [self.squareSizeView setFrame:toChangeSquareSizeView];
+            
+            self.objectSize+=20;
+            
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+
            
             self.changePosition=NO;
         }
@@ -101,7 +156,7 @@
         for(int j=0;j<sqrt(self.squareSize);j++)
         {
             // CGRect Rect= CGRectMake(0,0, 50, 50);
-            CGRect Rect1= CGRectMake(30+i*70,30+j*70, 70, 70);
+            CGRect Rect1= CGRectMake(10+i*self.objectSize,10+j*self.objectSize, self.objectSize, self.objectSize);
             
             CALayer* rectangleToAdd = [CALayer layer];
             [rectangleToAdd setFrame:Rect1];

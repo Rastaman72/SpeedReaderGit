@@ -18,7 +18,11 @@
 - (IBAction)modeChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *wordShowTimeView;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *squareSizeView;
 
+@property (weak, nonatomic) IBOutlet UIView *infoView;
 @property (weak, nonatomic) IBOutlet UILabel *squareSizeDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *squareSizeSlider;
 @property (weak, nonatomic) IBOutlet UILabel *squareSizeCounterLabel;
@@ -39,4 +43,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *showHideButton;
 - (IBAction)showHidePush:(id)sender;
 @property(nonatomic,assign)bool hideNumber;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property(nonatomic,assign)bool changePosition;
 @end
