@@ -77,8 +77,6 @@
             [self.exerciseTextView setFrame:toChangeExerciseTextView];
             
             CGRect toChangeShadowView= self.shadowView.frame;
-         //   toChangeShadowView.size.height-=150;
-          //  toChangeShadowView.origin.y-=50;
             [self.shadowView setFrame:toChangeShadowView];
             
             CGRect toChangeStartButton= self.startButton.frame;

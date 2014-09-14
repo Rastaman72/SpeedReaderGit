@@ -27,4 +27,8 @@
 @property(nonatomic,strong) NSString* goodAnswer;
 @property(nonatomic,assign)int goodAnswerCounter;
 @property(nonatomic,assign)bool startPushed;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property(nonatomic,assign)bool changePosition;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property(nonatomic,assign)int objectSize;
 @end

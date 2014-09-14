@@ -29,14 +29,104 @@
     self.gameView.layer.sublayers=nil;
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.startPushed=NO;
-    [self createGoodAnswer];
+    self.objectSize=60;
+   [self createGoodAnswer];
     [self createSlider];
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=10;
+              toChangeGameView.size.height-=100;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+
+            self.objectSize-=15;
+            self.startPushed=NO;
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            self.goodAnswerCounter=0;
+            self.goodAnswer=nil;
+            [self createGoodAnswer];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=10;
+              toChangeGameView.size.height+=100;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            self.objectSize+=15;
+            self.startPushed=NO;
+            self.gameView.layer.sublayers=nil;
+            self.numberDic=[[NSMutableDictionary alloc]init];
+            self.goodAnswerCounter=0;
+            self.goodAnswer=nil;
+            [self createGoodAnswer];
+            [self createNumber];
+            [self addNumberToObject];
+            [self addObjectToLayer];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 -(void)createGoodAnswer
 {
     if(self.mode)
@@ -93,7 +183,7 @@
     {
         for(int j=0;j<8;j++)
         {
-            CGRect Rect1= CGRectMake(50+i*60,50+j*60, 60, 60);
+            CGRect Rect1= CGRectMake(50+i*self.objectSize,50+j*self.objectSize, self.objectSize, self.objectSize);
             
             CALayer* rectangleToAdd = [CALayer layer];
             [rectangleToAdd setFrame:Rect1];
@@ -104,16 +194,7 @@
             [rectangleToAdd setBorderColor:[[UIColor clearColor]CGColor]];
             [rectangleToAdd setBorderWidth:10.0f];
             
-            /* CATextLayer *label = [[CATextLayer alloc] init];
-             [label setFont:@"Helvetica-Bold"];
-             [label setFontSize:20];
-             [label setFrame:Rect1];
-             [label setString:[NSString stringWithFormat:@"DD%d",i*self.horizontalSize+j]];
-             [label setAlignmentMode:kCAAlignmentCenter];
-             [label setForegroundColor:[[UIColor blackColor] CGColor]];
-             [label addSublayer:rectangleToAdd];*/
             [self.numberDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Number %d",i*8+j]];
-            // [self.numberDic setObject:label forKey:[NSString stringWithFormat:@"Number %d",i*self.horizontalSize+j]];
         }
     }
     

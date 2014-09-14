@@ -18,7 +18,10 @@
 - (IBAction)wordShowTimeChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *wordLengthSlider;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *numbersOfLineView;
 
+@property (weak, nonatomic) IBOutlet UIView *wordShowView;
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthCounterLabel;
 - (IBAction)wordLengthChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLineDescriptionLabel;
@@ -36,5 +39,7 @@
 @property(nonatomic,strong) NSMutableArray *numbersOfLineArray;
 @property(nonatomic,assign)int wordLength;
 @property(nonatomic,assign)int lineNumbers;
+@property(nonatomic,assign)bool changePosition;
 @property(nonatomic,strong)NSMutableArray* goodAnswer;
+@property(nonatomic,strong)NSMutableArray* tempList;
 @end

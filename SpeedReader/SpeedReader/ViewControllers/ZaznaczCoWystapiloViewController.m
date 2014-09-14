@@ -30,9 +30,96 @@
     [self createSlider];
     [self createObjects];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+         
+            
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=50;
+            toChangeGameView.size.height-=100;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeWordShowView= self.wordShowView.frame;
+            toChangeWordShowView.origin.y-=225;
+            [self.wordShowView setFrame:toChangeWordShowView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangeAnswerButton= self.answerButton.frame;
+            toChangeAnswerButton.origin.y-=225;
+            [self.answerButton setFrame:toChangeAnswerButton];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y-=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+
+            
+            
+         
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=50;
+            toChangeGameView.size.height+=100;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeWordShowView= self.wordShowView.frame;
+            toChangeWordShowView.origin.y+=225;
+            [self.wordShowView setFrame:toChangeWordShowView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangeAnswerButton= self.answerButton.frame;
+            toChangeAnswerButton.origin.y+=225;
+            [self.answerButton setFrame:toChangeAnswerButton];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y+=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+
+           
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -91,20 +178,61 @@
     NSNumber* numValue;
     NSString* textToDisplay=[[NSString alloc]init];
     self.goodAnswer=[[NSMutableArray alloc]init];
+    self.tempList=[[NSMutableArray alloc]init];
     lowBound=arc4random_uniform(8);
     bound=lowBound+3;
-    for (int i=0; i<self.lineNumbers+3; i++) {
-     //  CALayer* singleLayer=[self.numberDic valueForKey:[NSString stringWithFormat:@"Number %d",i]];
+    bool canUseThisValue;
+    
+    
+    
+    int numbersOfObjects=0;
+    while (numbersOfObjects < self.lineNumbers+3)
+    {
+        canUseThisValue = true;
+      
         for(int j=0;j<self.wordLength;j++)
         {
             rndValue= lowBound + arc4random() % (bound - lowBound);
             numValue=[[NSNumber alloc]initWithInt:rndValue];
             textToDisplay=[textToDisplay stringByAppendingString:[numValue stringValue]];
-            if(i==self.lineNumbers-1 && j==self.wordLength-1)
-                [self.goodAnswer addObject:textToDisplay];
+        }
+        
+        for (NSString* singleVale in self.tempList) {
+
+            if ([textToDisplay isEqualToString: singleVale])
+            {
+                canUseThisValue = false;
+                break;
+            }
+        }
+        
+        if (canUseThisValue == true)
+        {
+            [self.tempList addObject:textToDisplay];
+            numbersOfObjects++;
+            textToDisplay=[[NSString alloc]init];
+        }
+        textToDisplay=[[NSString alloc]init];
+    }
+    
+    
+    
+    for (int i=0; i<self.lineNumbers+3; i++) {
+     //  CALayer* singleLayer=[self.numberDic valueForKey:[NSString stringWithFormat:@"Number %d",i]];
+        for(int j=0;j<self.wordLength;j++)
+        {
+            /*rndValue= lowBound + arc4random() % (bound - lowBound);
+            numValue=[[NSNumber alloc]initWithInt:rndValue];
+            textToDisplay=[textToDisplay stringByAppendingString:[numValue stringValue]];*/
+            if(i<self.lineNumbers)
+            {
+            if(j==self.wordLength-1)
+                [self.goodAnswer addObject:self.tempList[i]];
+            }
             
 
         }
+        textToDisplay=[[self.tempList objectAtIndex:i ]description];
         CGRect Rect1= CGRectMake(0+i*90,100, 85, 50);
         
                CATextLayer *label = [[CATextLayer alloc] init];
@@ -287,6 +415,8 @@
                             
                                 [singleLayer setBackgroundColor:[[UIColor greenColor]CGColor]];
                                 [singleLayer setOpacity:1.0f];
+                            
+                            break;
                         }
                 
                             else

@@ -16,6 +16,7 @@
 - (IBAction)circleChange:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *textSizeSlider;
 - (IBAction)sizeChange:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *textSizeView;
 
 @property(nonatomic,strong)CALayer* readFrame;
 @property(nonatomic,assign)float position;
@@ -25,6 +26,7 @@
 
 @property(nonatomic,assign) CGSize size;
 @property(nonatomic,assign)float numberOfLines;
+@property (weak, nonatomic) IBOutlet UIView *circleSizeView;
 
 @property (nonatomic) CGPoint circleCenter;
 @property (nonatomic) float circleRadius;
@@ -35,5 +37,5 @@
 
 @property (weak, nonatomic) IBOutlet UIView *maskView;
 @property (nonatomic,assign)int radius;
-
+@property(nonatomic,assign)bool changePosition;
 @end
