@@ -32,9 +32,70 @@
     [self createSlider];
     [self createNumber];
     [self addObjectToLayer];
-      // Do any additional setup after loading the view.
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+         
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y-=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y+=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+            
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 -(void)createSlider
 {
     self.numbersOfLinesArray=[[NSMutableArray alloc]init];
@@ -161,6 +222,14 @@
     NSLog(@"sliderIndex: %i", (int)index);
     NSLog(@"number: %@", number);
 
+    self.gameView.layer.sublayers=nil;
+    self.objectDic=[[NSMutableDictionary alloc]init];
+    self.xmlManager=[self theAppDataObject];
+    self.step=2;
+    [self createNumber];
+    [self addObjectToLayer];
+}
+- (IBAction)startPush:(id)sender {
     self.gameView.layer.sublayers=nil;
     self.objectDic=[[NSMutableDictionary alloc]init];
     self.xmlManager=[self theAppDataObject];

@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIView *shadowView;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 - (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *shadowSizeView;
 
 @property (weak, nonatomic) IBOutlet UILabel *shadowDescriptionLabel;
 @property(nonatomic,assign)float position;
@@ -25,4 +26,5 @@
 @property(nonatomic,assign) CGSize exerciseTextViewSize;
 @property(nonatomic,assign)float numberOfLines;
 @property(nonatomic,strong)NSArray* toRetrieve;
+@property(nonatomic,assign)bool changePosition;
 @end

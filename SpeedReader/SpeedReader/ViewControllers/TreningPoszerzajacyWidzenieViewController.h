@@ -22,6 +22,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLineDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *numbersOfLineSlider;
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLineCounterLabel;
+@property (weak, nonatomic) IBOutlet UIView *setModeView;
+@property (weak, nonatomic) IBOutlet UIView *wordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *numbersOfLineView;
 
 @property (weak, nonatomic) IBOutlet UILabel *wordLengthDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *wordLengthSlider;
@@ -35,4 +38,17 @@
 @property(nonatomic,strong) NSMutableArray *numbersWordLengthArray;
 @property(nonatomic,strong) NSMutableArray *numbersOfLinesArray;
 @property(nonatomic,strong) NSTimer *moveObjects;
+typedef enum StateOfRound{
+	Begin,
+    Half,
+    Finish}
+StateOfRound;
+
+@property(nonatomic,assign)int animFinish;
+@property(nonatomic,assign)bool forward;
+@property(nonatomic,assign)bool itWasBack;
+@property(nonatomic,assign)int round;
+@property(nonatomic,assign)int increaseDistance;
+@property(nonatomic,assign)bool started;
+@property(nonatomic,assign)bool changePosition;
 @end

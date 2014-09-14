@@ -7,7 +7,8 @@
 //
 
 #import "TreningPoszerzajacyWidzenieViewController.h"
-
+#define P(x,y) CGPointMake(x, y)
+#define HALFSIZE object.frame.size.width/2
 @interface TreningPoszerzajacyWidzenieViewController ()
 
 @end
@@ -29,13 +30,86 @@
     self.objectDic=[[NSMutableDictionary alloc]init];
     self.xmlManager=[self theAppDataObject];
     self.mode=self.selectModeSwitch;
+    self.forward=YES;
     [self createSlider];
     [self createNumber];
     [self addObjectToLayer];
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
 
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y-=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y-=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y-=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y-=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+
+           
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            CGRect toChangeGameView= self.gameView.frame;
+            toChangeGameView.origin.y+=50;
+            [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeSetModeView= self.setModeView.frame;
+            toChangeSetModeView.origin.y+=225;
+            [self.setModeView setFrame:toChangeSetModeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangeWordLengthView= self.wordLengthView.frame;
+            toChangeWordLengthView.origin.y+=225;
+            [self.wordLengthView setFrame:toChangeWordLengthView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y+=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+
+            
+            self.changePosition=NO;
+        }
+    }
+    
+}
 -(void)createSlider
 {
     self.numbersOfLinesArray=[[NSMutableArray alloc]init];
@@ -192,18 +266,129 @@
             
     }
     }
-   
-    
-    
-    
-    
-    
-        // [self.numberDic setObject:label forKey:[NSString stringWithFormat:@"Number %d",i*self.horizontalSize+j]];
-        // }
-    
+   }
 
+- (void)addAnimationToPoint//:(int)i point:(CALayer *)point
+{
+    NSLog(@"%@",@"animacja dodana");
+    NSLog(@"%d",self.round);
+    NSMutableArray *allKeys = [[self.objectDic allKeys] mutableCopy];
+    self.animFinish=0;
+    
+    if(self.round==Finish)
+    {
+        if(self.increaseDistance>=3)
+            self.increaseDistance=0;
+        else
+            self.increaseDistance++;
+    }
     
     
+    for (NSString *key in allKeys)
+    {
+        CALayer* object = [self.objectDic objectForKey: key];
+        NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[key componentsSeparatedByString:@" "]];
+        UIBezierPath *trackPath;
+        trackPath = [self createForwardPath:object i:[[words lastObject]intValue] forward:self.forward increaseOffset:self.increaseDistance*10];
+        
+        
+        CAKeyframeAnimation *anim = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+        anim.path = trackPath.CGPath;
+        anim.duration = 0.2;
+        NSLog(@"%f",anim.duration);
+        anim.removedOnCompletion = NO;
+        anim.fillMode = kCAFillModeForwards;
+        anim.delegate=self;
+        [object addAnimation:anim forKey:[NSString stringWithFormat:@"Number %d",[[words lastObject]intValue]]];
+        [self.objectDic setValue:object forKey:[NSString stringWithFormat:@"Number %d",[[words lastObject]intValue]]];
+        self.animFinish++;
+    }
+    
+    if( self.animFinish==2*self.numbersOfLine)
+        
+    {
+        self.itWasBack=!self.itWasBack;
+        self.animFinish=0;
+        self.forward=!self.forward;
+        
+    }
+    
+    switch (self.round) {
+        case Begin:
+            self.round=Half;
+            break;
+            
+        case Half:
+            self.round=Finish;
+            break;
+        case Finish:
+            self.round=Half;
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    
+}
+
+- (UIBezierPath *)createForwardPath:(CALayer *)point i:(int)i forward:(BOOL)forward increaseOffset:(int)increaseOffset
+{
+    UIBezierPath *trackPath = [UIBezierPath bezierPath];
+    int offset=50+increaseOffset;
+    if(!forward)
+        offset=-offset;
+    int midX=CGRectGetMidX(point.frame);
+    int midY=CGRectGetMidY(point.frame);
+    int bound=self.numbersOfLine;
+    int side=0;
+    
+    if (i<bound) {
+        side=0;
+    }
+    else
+        side=1;
+    [trackPath moveToPoint:P(midX, midY)];
+    
+    switch (side) {
+        case 0:
+            [trackPath addLineToPoint:P(midX-offset,midY)];
+            
+            break;
+            
+        case 1:
+            [trackPath addLineToPoint:P(midX+offset,midY)];
+            
+            break;
+            
+            
+        default:
+            break;
+    };
+    return trackPath;
+}
+
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    self.animFinish++;
+    NSMutableArray *allKeys = [[self.objectDic allKeys] mutableCopy];
+    
+    for (id key in allKeys)
+    {
+        CALayer* object = [self.objectDic objectForKey: key];
+        CAKeyframeAnimation* test=[object animationForKey:key];
+        CGRect newFrame;
+        CGPoint currentPosition = [[object presentationLayer] position];
+        if (anim==test)
+        {
+            newFrame=CGRectMake(currentPosition.x-HALFSIZE, currentPosition.y-HALFSIZE, object.frame.size.width, object.frame.size.width);
+            [object setFrame:newFrame];
+            [object setBounds:[[object presentationLayer] bounds]];
+            [self.objectDic setObject:object forKey:key];
+            
+        }
+    }
 }
 
 -(void)addObjectToLayer
@@ -240,6 +425,11 @@
     self.xmlManager=[self theAppDataObject];
     [self createNumber];
     [self addObjectToLayer];
+    [self.moveObjects invalidate];
+    self.moveObjects=nil;
+    self.started=NO;
+    self.forward=YES;
+    self.itWasBack=NO;
 }
 
 
@@ -258,6 +448,12 @@
     self.xmlManager=[self theAppDataObject];
     [self createNumber];
     [self addObjectToLayer];
+    
+    [self.moveObjects invalidate];
+    self.moveObjects=nil;
+    self.started=NO;
+    self.forward=YES;
+    self.itWasBack=NO;
 
 }
 
@@ -274,28 +470,55 @@
     self.objectDic=[[NSMutableDictionary alloc]init];
     [self createNumber];
     [self addObjectToLayer];
-    //self.gameView.layer.sublayers=nil;
     
+    [self.moveObjects invalidate];
+    self.moveObjects=nil;
+    self.started=NO;
+    self.forward=YES;
+    self.itWasBack=NO;
     
     
 }
 
 - (IBAction)startPush:(id)sender {
-    self.gameView.layer.sublayers=nil;
-    self.objectDic=[[NSMutableDictionary alloc]init];
-    [self createNumber];
-    [self addObjectToLayer];
-    
-    
+        if(!self.started)
+    {
+        if (self.moveObjects == nil)
+        {
+            
+            self.gameView.layer.sublayers=nil;
+            self.objectDic=[[NSMutableDictionary alloc]init];
+            [self createNumber];
+            [self addObjectToLayer];
+            
+            [self.moveObjects invalidate];
+            self.moveObjects=nil;
+            self.forward=YES;
+            self.itWasBack=NO;
+
+            
     self.moveObjects = [NSTimer scheduledTimerWithTimeInterval:(0.5)
-                                                           target:self selector:@selector(startGame) userInfo:nil repeats:YES];
-    
+                                                          target:self selector:@selector(addAnimationToPoint) userInfo:nil repeats:YES];
+        }
+    }
+        else
+        {
+            [self.moveObjects invalidate];
+            self.moveObjects=nil;
+            
+
+        }
+    self.started=!self.started;
+
     
 }
 
--(void)startGame
+-(void)viewWillDisappear:(BOOL)animated
 {
-    self.gameView.layer.sublayers=nil;
+    [self.moveObjects invalidate];
+    self.moveObjects=nil;
+    
+
 }
 /*
 #pragma mark - Navigation

@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property(nonatomic,strong)SharedData* xmlManager;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
-@property (weak, nonatomic) IBOutlet UIButton *startPush;
+- (IBAction)startPush:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLinesDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *numbersOfLineSlider;
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLinesCounterLabel;
@@ -22,5 +23,6 @@
 @property(nonatomic,strong)NSMutableDictionary* objectDic;
 @property(nonatomic,assign)int numbersOfLine;
 @property(nonatomic,assign)int step;
-
+@property (weak, nonatomic) IBOutlet UIView *numbersOfLineView;
+@property(nonatomic,assign)bool changePosition;
 @end

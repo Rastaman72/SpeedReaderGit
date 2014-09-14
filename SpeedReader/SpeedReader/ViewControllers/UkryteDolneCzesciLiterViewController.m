@@ -53,10 +53,77 @@
    // [self.toRetrieve addObject:[self.exercisesThirtyEigthText.layer.sublayers firstObject]];
     
     [self createFrame];
-    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
+    [self checkOrientataion];
     // Do any additional setup after loading the view.
 }
 
+
+-(void)checkOrientataion
+{
+    [self deviceOrientationDidChange:nil];
+}
+
+
+- (void)deviceOrientationDidChange:(NSNotification *)notification {
+    //Obtain current device orientation
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
+    if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
+    {
+        if(!self.changePosition)
+        {
+      
+            
+            CGRect toChangeExerciseTextView= self.exerciseTextView.frame;
+            toChangeExerciseTextView.origin.y-=10;
+            toChangeExerciseTextView.size.height-=175;
+            [self.exerciseTextView setFrame:toChangeExerciseTextView];
+            
+            CGRect toChangeSizeView= self.textSizeView.frame;
+            toChangeSizeView.origin.y-=225;
+            [self.textSizeView setFrame:toChangeSizeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y-=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangeShadowSizeView= self.shadowSizeView.frame;
+            toChangeShadowSizeView.origin.y-=225;
+            [self.shadowSizeView setFrame:toChangeShadowSizeView];
+            
+           
+            self.changePosition=YES;
+        }
+    }
+    
+    else if(orientation==UIDeviceOrientationPortrait || orientation==UIDeviceOrientationPortraitUpsideDown)
+    {
+        if(self.changePosition)
+        {
+            
+            CGRect toChangeExerciseTextView= self.exerciseTextView.frame;
+            toChangeExerciseTextView.origin.y+=10;
+              toChangeExerciseTextView.size.height+=175;
+            [self.exerciseTextView setFrame:toChangeExerciseTextView];
+            
+            CGRect toChangeSizeView= self.textSizeView.frame;
+            toChangeSizeView.origin.y+=225;
+            [self.textSizeView setFrame:toChangeSizeView];
+            
+            CGRect toChangeStartButton= self.startButton.frame;
+            toChangeStartButton.origin.y+=225;
+            [self.startButton setFrame:toChangeStartButton];
+            
+            CGRect toChangeShadowSizeView= self.shadowSizeView.frame;
+            toChangeShadowSizeView.origin.y+=225;
+            [self.shadowSizeView setFrame:toChangeShadowSizeView];
+            self.changePosition=NO;
+        }
+    }
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -192,5 +259,7 @@
     int numLines = self.exerciseTextView.contentSize.height / self.exerciseTextView.font.lineHeight;
     self.maxPosition=self.exerciseTextView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
+}
+- (IBAction)startPush:(id)sender {
 }
 @end
