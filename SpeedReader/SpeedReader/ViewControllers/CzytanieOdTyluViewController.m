@@ -31,6 +31,7 @@
     [self.scrollingTimer invalidate];
     self.scrollingTimer = nil;
     self.position=0;
+    
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -218,13 +219,33 @@
         }
         self.jumpWidth+=self.jumpOffset;
         self.jumpCounter++;
-        Rect = CGRectMake(self.textView.frame.size.width-self.jumpWidth, 5+self.position, 25, 25);
+        if(self.xmlManager.useOtherVersion)
+        {
+             Rect = CGRectMake(self.jumpWidth, 5+self.position, 25, 25);
+        }
+       
+        else
+        {
+             Rect = CGRectMake(self.textView.frame.size.width-self.jumpWidth, 5+self.position, 25, 25);
+        }
     } else {
         self.jumpCounter=0;
         self.jumpWidth=0;
         self.position+=self.textView.font.lineHeight;
-        Rect = CGRectMake(self.textView.frame.size.width-self.jumpOffset, 5+self.position, 25, 25);
-        self.resetLine=YES;
+        
+        if(self.xmlManager.useOtherVersion)
+        {
+            Rect = CGRectMake(self.jumpOffset, 5+self.position, 25, 25);
+
+        }
+        
+        else
+        {
+            Rect = CGRectMake(self.textView.frame.size.width-self.jumpOffset, 5+self.position, 25, 25);
+
+        }
+        
+              self.resetLine=YES;
     }
     self.readFrame = [CALayer layer];
     [self.readFrame setFrame:Rect];

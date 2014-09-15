@@ -197,14 +197,6 @@ else
             [rectangleToAdd setBorderColor:[[UIColor redColor]CGColor]];
             [rectangleToAdd setBorderWidth:10.0f];
             
-            /* CATextLayer *label = [[CATextLayer alloc] init];
-             [label setFont:@"Helvetica-Bold"];
-             [label setFontSize:20];
-             [label setFrame:Rect1];
-             [label setString:[NSString stringWithFormat:@"DD%d",i*self.horizontalSize+j]];
-             [label setAlignmentMode:kCAAlignmentCenter];
-             [label setForegroundColor:[[UIColor blackColor] CGColor]];
-             [label addSublayer:rectangleToAdd];*/
             [self.numberDic setObject:rectangleToAdd forKey:[NSString stringWithFormat:@"Number %d",i*(int)sqrt(self.squareSize)+j]];
             if(self.squareSize==2)
                 break;

@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 LGBS. All rights reserved.
 //
 
-#import "ExercisesSevenViewController.h"
+#import "CzytanieZPodzialemNa2ViewController.h"
 #define maxLength 25
 #define splitLine 11
-@interface ExercisesSevenViewController ()
+@interface CzytanieZPodzialemNa2ViewController ()
 
 @end
 
-@implementation ExercisesSevenViewController
+@implementation CzytanieZPodzialemNa2ViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,9 +33,12 @@
     //[self.xmlManager getExercisesWords];
     // Do any additional setup after loading the
     NSString* resultText=[NSString stringWithString:[self createSplitText]];
-     self.exercisesSevenText.textAlignment = NSTextAlignmentJustified;
     self.exercisesSevenText.text=resultText;
     self.exercisesSevenText.textAlignment = NSTextAlignmentJustified;
+    CGRect newFrame=self.exercisesSevenText.frame;
+    newFrame.origin.y+=self.excTextLabel.frame.size.height;
+   [ self.exercisesSevenText setFrame:newFrame];
+    self.gameView.scrollEnabled=YES;
     // Do any additional setup after loading the view.
 }
 
@@ -58,11 +61,10 @@
     separatorS=[@"" stringByPaddingToLength:test withString:@" " startingAtIndex:0];
     
     for (NSString* singleWord in words) {
-        
+       
         if (lineCounter<splitLine)
         {
             tempString=[tempString stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
-            NSLog(@"%d",[tempString length]+[[tempString componentsSeparatedByString:@" "] count]-1);
             if (([tempString length]+[[tempString componentsSeparatedByString:@" "] count]-1)<=maxLength)
             {
                 resultText=[resultText stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
@@ -77,26 +79,38 @@
                     inSameLine=0;
                     tempString=nil;
                     tempString=[[NSString alloc]init];
+                    if (lineCounter<splitLine)
+                    {
                     resultText=[resultText stringByAppendingString:@"\n"];
                     resultText=[resultText stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
                      tempString=[tempString stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
+                    }
                     
                 }
                 else
                 {
-                    resultText=[resultText stringByAppendingString:@" "];//[NSString stringWithFormat:@"%@ ",separatorS]];
+                    resultText=[resultText stringByAppendingString:[NSString stringWithFormat:@"%@ ",separatorS]];
                     resultText=[resultText stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
                     tempString=nil;
                     tempString=[[NSString alloc]init];
                     tempString=[tempString stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
-                    NSLog(@"%d",[tempString length]+[[tempString componentsSeparatedByString:@" "] count]-1);
                     
                 }
             }
+            self.lastWord++;
         }
-        else
+        else if(lineCounter==splitLine)
         {
-             resultText=[resultText stringByAppendingString:[NSString stringWithFormat:@"%@ ",singleWord]];
+            NSMutableParagraphStyle *paragraphStyle = NSMutableParagraphStyle.new;
+            paragraphStyle.alignment                = NSTextAlignmentCenter;
+
+            NSDictionary *attrsDictionary = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:16], NSParagraphStyleAttributeName: paragraphStyle};
+            self.excTextLabel.attributedText = [[NSAttributedString alloc] initWithString:resultText attributes:attrsDictionary];
+            [self.excTextLabel sizeToFit];
+            CGRect newFrame=self.excTextLabel.frame;
+            newFrame.size.width=self.gameView.frame.size.width;
+            [self.excTextLabel setFrame:newFrame];
+            lineCounter++;
         }
     }
     

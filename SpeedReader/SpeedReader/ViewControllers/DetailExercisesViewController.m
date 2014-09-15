@@ -47,40 +47,7 @@ self.originRect=self.detailExercisesPartView.frame;
     //Obtain current device orientation
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     
-    /*UIDevice * device = note.object;
-    
-    NSLog(@"%f",self.view.frame.size.width);
-    NSLog(@"%f",self.view.frame.size.height);
-
-    
-    
-    NSLog(@"%f",  self.detailExercisesPartView.frame.size.width);
-    
-    NSLog(@"%f",  self.detailExercisesPartView.frame.size.height);
-    NSLog(@"%f",  self.detailExercisesPartView.frame.origin.x);
-
-    NSLog(@"%f",  self.detailExercisesPartView.frame.origin.y);
-
-
-    switch(device.orientation)
-    {
-        case UIDeviceOrientationPortrait:
-   [self.detailExercisesPartView setNeedsDisplay];
-            break;
-            
-        case UIDeviceOrientationLandscapeLeft:
-        case UIDeviceOrientationLandscapeRight:
-           // [self.detailExercisesPartView setNeedsDisplay];
-         //  [self.detailExercisesPartView setFrame:CGRectMake(self.detailExercisesPartView.frame.origin.x,self.detailExercisesPartView.frame.origin.y,self.view.frame.size.width, self.view.frame.size.height)];
-            break;
-            
-        default:
-            break;
-    };*/
-    
-    
-    
-    
+       
     if(orientation==UIDeviceOrientationLandscapeLeft || orientation==UIDeviceOrientationLandscapeRight)
     {
         if(!self.changePosition)
@@ -135,6 +102,28 @@ self.originRect=self.detailExercisesPartView.frame;
 
 -(void)selectedExercises:(ExercisesData *)newExercises
 {
+    int choosedEXC=newExercises.choosedExercises;
+     self.theDataObject.useOtherVersion=NO;
+    switch (choosedEXC) {
+        case 4:
+            self.theDataObject.useOtherVersion=YES;
+            newExercises=[ExercisesData newExercisesWithName:@"Exercises 3" description:@"Third Exercises" number:3];
+            self.theDataObject.selectPart=newExercises;
+            break;
+            case 11:
+            self.theDataObject.useOtherVersion=YES;
+            newExercises=[ExercisesData newExercisesWithName:@"Exercises 10" description:@"Tenth Exercises" number:10];
+            self.theDataObject.selectPart=newExercises;
+            
+        case 30:
+            self.theDataObject.useOtherVersion=YES;
+            newExercises=[ExercisesData newExercisesWithName:@"Exercises 29" description:@"TwenthyNine Exercises" number:29];
+            self.theDataObject.selectPart=newExercises;
+            
+
+        default:
+            break;
+    }
     [self setExercises:newExercises];
     if (_popover != nil) {
         [_popover dismissPopoverAnimated:YES];

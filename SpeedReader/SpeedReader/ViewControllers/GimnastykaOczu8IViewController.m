@@ -26,9 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject=[self theAppDataObject];
+    if(self.theDataObject.useOtherVersion)
+    {
     self.beginPoint=300;
-    self.firstControlPoint=-100;
-    self.secondControlPoint=700;
+    self.firstControlPoint=-300;
+    self.secondControlPoint=900;
+    }
+        else
+    {
+        self.beginPoint=300;
+        self.firstControlPoint=-100;
+        self.secondControlPoint=700;
+    }
     [self createFrame];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
@@ -36,6 +46,14 @@
     // Do any additional setup after loading the view.
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
+       
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

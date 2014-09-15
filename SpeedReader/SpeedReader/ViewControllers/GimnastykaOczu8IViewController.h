@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface GimnastykaOczu8IViewController : UIViewController
-
+@property(nonatomic,strong)SharedData* theDataObject;
 @property (weak, nonatomic) IBOutlet UIButton *changeDirectionButton;
 - (IBAction)directionChanged:(id)sender;
 @property(nonatomic,assign)bool direction;

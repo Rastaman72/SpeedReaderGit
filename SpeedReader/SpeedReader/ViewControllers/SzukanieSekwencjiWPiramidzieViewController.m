@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+
     self.mode=NO;
     self.positionY=100;
     self.actuallSize=(int)self.sizeSlider.value;
@@ -37,6 +39,13 @@
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
     [self checkOrientataion];
     // Do any additional setup after loading the view.
+}
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 
 - (void)didReceiveMemoryWarning
@@ -226,7 +235,8 @@ else
     for(int x=0;x<self.actuallSize;x++)
     {
         if (self.mode)
-        {bound=10;
+        {
+            bound=10;
             lowBound=0;
             rndValue= lowBound + arc4random() % (bound - lowBound);
             numValue=[[NSNumber alloc]initWithInt:rndValue];
@@ -246,6 +256,50 @@ else
     
     textToDisplay=[textToDisplay stringByAppendingString:self.toFind];
     
+    if(self.theDataObject.useOtherVersion)
+    {
+        for (int x = 0; x < 41; x++)
+        {
+            if(x==0)
+            {
+                textToDisplay=[textToDisplay stringByAppendingString:@"   "];
+            }
+            if (self.mode)
+            {
+                if (arc4random_uniform(10) == 5 && x < 40 - self.actuallSize)
+                {
+                    textToDisplay=[textToDisplay stringByAppendingString:self.toFind];
+                    x += self.actuallSize;
+                }
+                bound=10;
+                lowBound=0;
+                rndValue= lowBound + arc4random() % (bound - lowBound);
+                numValue=[[NSNumber alloc]initWithInt:rndValue];
+                
+                textToDisplay=[textToDisplay stringByAppendingString:[NSString stringWithFormat:@"%d",[numValue intValue]]];
+            }
+            else
+            {
+               if (arc4random_uniform(10)  == 5 && x < 40 - self.actuallSize)
+                {
+                    textToDisplay=[textToDisplay stringByAppendingString:self.toFind];
+                    x += self.actuallSize;
+
+                }
+                
+                
+                bound=26;
+                lowBound=1;
+                rndValue= lowBound + arc4random() % (bound - lowBound);
+                numValue=[[NSNumber alloc]initWithInt:rndValue];
+                
+                textToDisplay=[textToDisplay stringByAppendingString:[NSString stringWithFormat:@"%c",[numValue intValue]+96]];
+        }
+           
+        }
+    }
+    else
+    {
     for (int i=0; i<10; i++)
     {
         for (int x = 0; x < i * 2; x++)
@@ -287,7 +341,7 @@ else
         
           textToDisplay=[textToDisplay stringByAppendingString:@"\n"];
     }
-    
+    }
   
     self.textLabel.text=textToDisplay;
     NSError *error = NULL;

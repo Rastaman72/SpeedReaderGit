@@ -64,6 +64,7 @@
 -(void)getExercisesText;
 -(void)getExercisesWords;
 -(NSString*)getWord:(int)length;
+@property(nonatomic,assign)bool useOtherVersion;
 /*-(void)addPicker:(UIViewController*)view;
 @property(nonatomic,strong)UIImagePickerController* picker;
 @property(nonatomic,strong)UIViewController* tempView;*/
