@@ -142,7 +142,15 @@
          
           int yPosition=self.exerciseTextView.font.lineHeight+self.position;
          int minus=(self.shadowSizeSlider.value*self.exerciseTextView.font.lineHeight+self.position)-8;
-         yPosition-=minus;
+         if(self.xmlManager.useOtherVersion)
+         {
+               yPosition-=self.exerciseTextView.font.lineHeight-5+self.position;
+         }
+         else
+         {
+               yPosition-=minus;
+         }
+       
          yPosition+=self.position;
          
     CGRect Rect = CGRectMake(0, yPosition, self.exerciseTextView.frame.size.width, self.exerciseTextView.font.lineHeight*self.shadowSizeSlider.value);

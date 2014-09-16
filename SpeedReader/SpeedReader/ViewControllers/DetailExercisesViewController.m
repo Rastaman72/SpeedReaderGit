@@ -114,12 +114,23 @@ self.originRect=self.detailExercisesPartView.frame;
             self.theDataObject.useOtherVersion=YES;
             newExercises=[ExercisesData newExercisesWithName:@"Exercises 10" description:@"Tenth Exercises" number:10];
             self.theDataObject.selectPart=newExercises;
-            
+              break;
         case 30:
             self.theDataObject.useOtherVersion=YES;
             newExercises=[ExercisesData newExercisesWithName:@"Exercises 29" description:@"TwenthyNine Exercises" number:29];
             self.theDataObject.selectPart=newExercises;
+            break;
+        case 35:
+            self.theDataObject.useOtherVersion=YES;
+            newExercises=[ExercisesData newExercisesWithName:@"Exercises 34" description:@"ThirtyFiveExercises" number:34];
+            self.theDataObject.selectPart=newExercises;
+              break;
             
+        case 40:
+            self.theDataObject.useOtherVersion=YES;
+            newExercises=[ExercisesData newExercisesWithName:@"Exercises 39" description:@"ThirtyFiveExercises" number:39];
+            self.theDataObject.selectPart=newExercises;
+            break;
 
         default:
             break;

@@ -49,9 +49,22 @@
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
     [self checkOrientataion];
+    self.theDataObject=[self theAppDataObject];
+    
+    if(self.theDataObject.useOtherVersion)
+    {
+        self.wordShowTimeView.hidden=YES;
+    }
+    
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 -(void)checkOrientataion
 {
@@ -363,8 +376,20 @@ else
 }
 -(void)startGame
 {
-    self.gameView.layer.sublayers=nil;
-    self.hideNumber=!self.hideNumber;
+    if (!self.startedPush) {
+        self.gameView.layer.sublayers=nil;
+        self.hideNumber=!self.hideNumber;
+        self.startedPush=!self.startedPush;
+    }
+    else
+    {
+        if(self.theDataObject.useOtherVersion)
+        {
+        UIAlertView* alert=[[UIAlertView alloc]initWithTitle:@"WARNING" message:@"DOne" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
+        }
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

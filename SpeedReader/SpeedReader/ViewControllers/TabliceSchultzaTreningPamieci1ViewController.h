@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface TabliceSchultzaTreningPamieci1ViewController : UIViewController
+@property(nonatomic,strong)SharedData* theDataObject;
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (weak, nonatomic) IBOutlet UILabel *charModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;
@@ -45,4 +47,5 @@
 @property(nonatomic,assign)bool hideNumber;
 @property (weak, nonatomic) IBOutlet UIView *setModeView;
 @property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)bool startedPush;
 @end
