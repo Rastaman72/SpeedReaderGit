@@ -50,6 +50,20 @@
     self.size = [self.textView.text sizeWithFont:self.textView.font
                                        constrainedToSize:self.textView.frame.size
                                            lineBreakMode:NSLineBreakByWordWrapping]; // default mode
+    
+    if(self.xmlManager.iOSVersion==7)
+    {
+        self.textView.selectable=YES;
+        self.size7 = [self.textView.text boundingRectWithSize:self.textView.frame.size
+                                                      options:NSStringDrawingUsesLineFragmentOrigin
+                                                   attributes:@{NSFontAttributeName:self.textView.font}
+                                                      context:nil];
+        self.textView.selectable=NO;
+        
+        self.size=self.size7.size;
+        
+    }
+    
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;

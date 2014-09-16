@@ -48,24 +48,24 @@
                                        constrainedToSize:self.textView.frame.size
                                            lineBreakMode:NSLineBreakByWordWrapping]; // default mode
     
-   //IOS 70000000
- /*   self.textView.selectable=YES;
-    self.sizeR = [self.textView.text boundingRectWithSize:self.textView.frame.size
+    if(self.xmlManager.iOSVersion==7)
+    {
+    self.textView.selectable=YES;
+    self.size7 = [self.textView.text boundingRectWithSize:self.textView.frame.size
                                              options:NSStringDrawingUsesLineFragmentOrigin
                                           attributes:@{NSFontAttributeName:self.textView.font}
                                              context:nil];
     self.textView.selectable=NO;
     
-    self.size=self.sizeR.size;
-    */
-    
+    self.size=self.size7.size;
+  
+    }
     float numberOfLines = self.size.height / self.textView.font.lineHeight;
     self.maxPosition=self.textView.font.lineHeight*numberOfLines;
     self.actuallOffset=self.maxPosition;
     self.position=0;
     //ios77777777
-   // self.textView.scrollEnabled=YES;
-    
+   
     self.textSizeDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description];
     
     self.frameSpeedDescriptionLabel.text=[[[NSNumber alloc]initWithInt:self.frameSpeedSlider.value]description];
@@ -80,7 +80,7 @@
 }
 -(void)createFrame
 {
-    CGRect Rect = CGRectMake(0, 5+self.position, self.textView.frame.size.width, self.textView.font.lineHeight*2);
+    CGRect Rect = CGRectMake(0, 8+self.position, self.textView.frame.size.width, self.textView.font.lineHeight*2);
     self.readFrame = [CALayer layer];
     [self.readFrame setFrame:Rect];
     [self.readFrame setBounds:Rect];
@@ -134,7 +134,13 @@
         }
         
         [[[self textView]layer]replaceSublayer:[self.textView.layer.sublayers objectAtIndex:0] with:self.readFrame];
-        self.position+=self.textView.font.lineHeight*2;
+      /*  if (self.xmlManager.iOSVersion==7) {
+            self.position+=self.textView.font.lineHeight*2;
+        }
+        else
+        {*/
+            self.position+=self.textView.font.lineHeight*2;
+        //}
     }
 }
 

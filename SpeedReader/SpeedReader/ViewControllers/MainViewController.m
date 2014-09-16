@@ -62,7 +62,16 @@
 {
     [self goToImport];
         [super viewDidLoad];
-    // Do any additional setup after loading the view.    
+    
+    if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+        self.theDataObject.iOSVersion=7;
+        // here you go with iOS 7
+    }
+    else
+    {
+          self.theDataObject.iOSVersion=6;
+    }
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

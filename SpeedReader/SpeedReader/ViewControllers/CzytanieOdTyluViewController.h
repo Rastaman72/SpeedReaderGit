@@ -23,6 +23,7 @@
 @property(nonatomic,assign)int actuallOffset;
 - (void) autoscrollTimerFired;
 @property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign) CGRect size7;
 @property(nonatomic,assign)bool done;
 @property (weak, nonatomic) IBOutlet UISlider *frameSpeedSlider;
 @property (weak, nonatomic) IBOutlet UILabel *frameSpeedDescriptionLabel;

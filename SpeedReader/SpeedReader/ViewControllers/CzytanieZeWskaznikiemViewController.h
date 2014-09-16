@@ -25,6 +25,7 @@
 @property(nonatomic,assign)int actuallOffset;
 @property(nonatomic,assign)int maxPosition;
 @property(nonatomic,assign) CGSize size;
+@property(nonatomic,assign)CGRect size7;
 @property(nonatomic,assign)bool changePosition;
 @property(nonatomic,strong)NSMutableArray*numberStyle;
 @end
