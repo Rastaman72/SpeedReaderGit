@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UISlider *wordShowTimeSlider;
 @property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
 @property (weak, nonatomic) IBOutlet UIView *wordShowTimeView;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 - (IBAction)wordShowTimeView:(id)sender;
 @property (weak, nonatomic) IBOutlet UISlider *numbersOfLineSlider;

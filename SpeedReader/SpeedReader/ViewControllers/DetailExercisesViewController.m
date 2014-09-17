@@ -175,11 +175,6 @@ self.originRect=self.detailExercisesPartView.frame;
     
     //Set the title of the bar button item
     barButtonItem.title = @"Exercises";
-//    _logOutButton.title =@"Log Out";
-//    NSMutableArray* buttons=[[NSMutableArray alloc]init];
-//    [buttons addObject:barButtonItem];
-//    [buttons addObject:_logOutButton];
-    
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[_navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
     [_navBarItem setLeftBarButtonItem:barButtonItem];

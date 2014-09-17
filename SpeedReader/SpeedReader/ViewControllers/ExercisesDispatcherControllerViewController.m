@@ -55,7 +55,8 @@
     UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
     self.theDataObject.dismmisView=YES;
 
-        
+     //ERROR after logout
+    
     [self presentViewController:controller animated:YES completion:nil];
 }
 /*

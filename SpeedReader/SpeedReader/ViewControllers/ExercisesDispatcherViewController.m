@@ -48,24 +48,7 @@
 
 
 #pragma mark - Navigation
-/*-(void)test
-{
-//    UIViewController *toViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"EXC1"];
-//    UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] initWithIdentifier:@"" source:self destination:toViewController];
-//
-//    [self prepareForSegue:segue sender:self];
-//    
-    ExercisesData* choosedExercises=(ExercisesData*)self.theDataObject.selectPart;
 
-
-   
-    NSString * storyboardName = @"Main_iPad";
-    NSString * viewControllerID = [NSString stringWithFormat:@"EXC%d",choosedExercises.choosedExercises];
-    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
-    [self presentViewController:controller animated:YES completion:nil];
-    }
-*/
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

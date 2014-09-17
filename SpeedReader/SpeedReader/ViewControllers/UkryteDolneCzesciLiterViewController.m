@@ -78,7 +78,7 @@
             
             CGRect toChangeExerciseTextView= self.exerciseTextView.frame;
             toChangeExerciseTextView.origin.y-=10;
-            toChangeExerciseTextView.size.height-=175;
+            toChangeExerciseTextView.size.height-=50;
             [self.exerciseTextView setFrame:toChangeExerciseTextView];
             
             CGRect toChangeSizeView= self.textSizeView.frame;
@@ -105,7 +105,7 @@
             
             CGRect toChangeExerciseTextView= self.exerciseTextView.frame;
             toChangeExerciseTextView.origin.y+=10;
-              toChangeExerciseTextView.size.height+=175;
+              toChangeExerciseTextView.size.height+=50;
             [self.exerciseTextView setFrame:toChangeExerciseTextView];
             
             CGRect toChangeSizeView= self.textSizeView.frame;

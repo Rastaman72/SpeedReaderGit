@@ -25,4 +25,5 @@
 - (IBAction)logOutPush:(id)sender;
 @property(nonatomic,strong)SharedData* theDataObject;
 -(void)setLesson:(LessonData *)lesson;
+@property (weak, nonatomic) IBOutlet UIButton *goToExerciseButton;
 @end

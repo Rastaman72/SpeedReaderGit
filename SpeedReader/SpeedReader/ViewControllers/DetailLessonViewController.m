@@ -78,10 +78,7 @@
     
     //Set the title of the bar button item
     barButtonItem.title = @"Lessons";
-//    self.logOutButton.title =@"Log Out";
-//    NSMutableArray* buttons=[[NSMutableArray alloc]init];
-//    [buttons addObject:barButtonItem];
-//    [buttons addObject:self.logOutButton];
+
     
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[self.navBarItem setLeftBarButtonItem:barButtonItem animated:YES];

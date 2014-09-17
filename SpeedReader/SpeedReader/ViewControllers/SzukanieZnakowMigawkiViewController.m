@@ -145,12 +145,22 @@
             [self.sizeView setFrame:toChangeSizeView];
             
             CGRect toChangeGameView= self.gameView.frame;
-            toChangeGameView.origin.y-=150;
+            toChangeGameView.origin.y-=50;
             [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeAnswerLabel= self.answerLabel.frame;
+            toChangeAnswerLabel.origin.y-=20;
+            [self.answerLabel setFrame:toChangeAnswerLabel];
             
             CGRect toChangeWordShowTimeView= self.wordShowTimeView.frame;
             toChangeWordShowTimeView.origin.y-=225;
             [self.wordShowTimeView setFrame:toChangeWordShowTimeView];
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y-=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+            
+            
             
             
             
@@ -182,13 +192,25 @@
             [self.sizeView setFrame:toChangeSizeView];
             
             CGRect toChangeGameView= self.gameView.frame;
-            toChangeGameView.origin.y+=150;
+            toChangeGameView.origin.y+=50;
             [self.gameView setFrame:toChangeGameView];
+            
+            CGRect toChangeAnswerLabel= self.answerLabel.frame;
+            toChangeAnswerLabel.origin.y+=20;
+            [self.answerLabel setFrame:toChangeAnswerLabel];
+            
             
             
             CGRect toChangeWordShowTimeView= self.wordShowTimeView.frame;
             toChangeWordShowTimeView.origin.y+=225;
             [self.wordShowTimeView setFrame:toChangeWordShowTimeView];
+            
+            
+            CGRect toChangeNumbersOfLineView= self.numbersOfLineView.frame;
+            toChangeNumbersOfLineView.origin.y+=225;
+            [self.numbersOfLineView setFrame:toChangeNumbersOfLineView];
+            
+            
             
 
             
@@ -347,16 +369,17 @@
 
 -(void)create
 {
-   
-    int lowBound = 0;
-    int rndValue;
-    NSNumber* numValue;
     NSString* textToDisplay=[[NSString alloc]init];
      int bound=self.choosedNumbersOfLine/2;
     int size=self.choosedSize;
-   // textToDisplay=[textToDisplay stringByAppendingString:self.toFind];
+    textToDisplay=[textToDisplay stringByAppendingString:[NSString stringWithFormat:@"Find %@ in text\n",self.toFind]];
     
-    
+    self.answerLabel.text=textToDisplay;
+    [self.answerLabel sizeToFit];
+    CGRect newFrame=self.answerLabel.frame;
+    newFrame.origin.x=self.view.center.x-newFrame.size.width/2;
+    [self.answerLabel setFrame:newFrame];
+    textToDisplay=[[NSString alloc]init];
         for (int i=0; i<self.choosedNumbersOfLine; i++)
         {
             if (i<bound)
@@ -401,7 +424,8 @@
     NSLog(@"Found %i",numberOfMatches);
     
     self.goodAnswer=numberOfMatches;
-    
+    self.textLabel.text=nil;
+    [self.textLabel sizeToFit];
     self.textLabel.textAlignment=NSTextAlignmentCenter;
     self.textLabel.text=textToDisplay;
     [self.textLabel sizeToFit];
