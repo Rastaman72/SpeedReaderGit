@@ -8,11 +8,17 @@
 
 #import "DetailLessonViewController.h"
 #import "LessonData.h"
+#import "ExercisesData.h"
 @interface DetailLessonViewController ()
 
 @end
 
 @implementation DetailLessonViewController
+- (IBAction)nextPartPush:(id)sender {
+    
+   
+          [(LessonPartDispatcherViewController*)self.lessonPart test1];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -94,6 +100,22 @@
     //Nil out the pointer to the popover.
     self.popover = nil;
 }
+
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"%@",segue.identifier);
+    if([segue.identifier isEqualToString:@"LessonTOPart"]){
+        self.lessonPart=(LessonPartDispatcherViewController*)segue.destinationViewController;
+        
+        /*id test=self.controller.viewControllers;
+        id test1=self.controller.view;*/
+        
+    }}
+
+
 /*
 #pragma mark - Navigation
 

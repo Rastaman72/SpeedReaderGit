@@ -10,10 +10,12 @@
 #import "LessonSelectionDelegate.h"
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
+#import "LessonPartDispatcherViewController.h"
 
 @class LessonData;
 @interface DetailLessonViewController : UIViewController<LessonSelectionDelegate,UISplitViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *lessonSinglePart;
 @property(nonatomic,retain)LessonData* lessonData;
 @property (weak, nonatomic) IBOutlet UIImageView *detailLessonUserImage;
 @property (weak, nonatomic) IBOutlet UITextView *detailLessonDecription;
@@ -26,4 +28,6 @@
 @property(nonatomic,strong)SharedData* theDataObject;
 -(void)setLesson:(LessonData *)lesson;
 @property (weak, nonatomic) IBOutlet UIButton *goToExerciseButton;
+@property(nonatomic,strong)LessonPartDispatcherViewController* lessonPart;
+
 @end

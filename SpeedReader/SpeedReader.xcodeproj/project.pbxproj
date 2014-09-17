@@ -107,6 +107,8 @@
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
 		E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */; };
 		E9ADA09C19AE0245001DA774 /* CzytanieBezSpacjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */; };
+		E9C74B5A19C9F1980033132C /* LessonPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C74B5919C9F1980033132C /* LessonPartViewController.m */; };
+		E9C74B5D19C9F4D80033132C /* LessonPartDispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C74B5C19C9F4D80033132C /* LessonPartDispatcherViewController.m */; };
 		E9C8411419B7A1370000E3EB /* MetronumEXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */; };
 		E9C8411819B7AF660000E3EB /* metronom.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411619B7AF660000E3EB /* metronom.wav */; };
 		E9C8411919B7AF660000E3EB /* metronom2.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9C8411719B7AF660000E3EB /* metronom2.wav */; };
@@ -347,6 +349,10 @@
 		E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsForDB.m; path = SpeedReader/Data/SettingsForDB.m; sourceTree = "<group>"; };
 		E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieBezSpacjiViewController.h; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.h; sourceTree = "<group>"; };
 		E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieBezSpacjiViewController.m; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.m; sourceTree = "<group>"; };
+		E9C74B5819C9F1980033132C /* LessonPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonPartViewController.h; path = SpeedReader/ViewControllers/LessonPartViewController.h; sourceTree = "<group>"; };
+		E9C74B5919C9F1980033132C /* LessonPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonPartViewController.m; path = SpeedReader/ViewControllers/LessonPartViewController.m; sourceTree = "<group>"; };
+		E9C74B5B19C9F4D80033132C /* LessonPartDispatcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonPartDispatcherViewController.h; path = SpeedReader/ViewControllers/LessonPartDispatcherViewController.h; sourceTree = "<group>"; };
+		E9C74B5C19C9F4D80033132C /* LessonPartDispatcherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonPartDispatcherViewController.m; path = SpeedReader/ViewControllers/LessonPartDispatcherViewController.m; sourceTree = "<group>"; };
 		E9C8411219B7A1370000E3EB /* MetronumEXCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetronumEXCViewController.h; path = SpeedReader/ViewControllers/MetronumEXCViewController.h; sourceTree = "<group>"; };
 		E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MetronumEXCViewController.m; path = SpeedReader/ViewControllers/MetronumEXCViewController.m; sourceTree = "<group>"; };
 		E9C8411619B7AF660000E3EB /* metronom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = metronom.wav; sourceTree = "<group>"; };
@@ -498,6 +504,10 @@
 				E935AA131976E79000409E7B /* DetailLessonViewController.m */,
 				E935AA1A1976F48900409E7B /* LessonsViewController.h */,
 				E935AA1B1976F48900409E7B /* LessonsViewController.m */,
+				E9C74B5819C9F1980033132C /* LessonPartViewController.h */,
+				E9C74B5919C9F1980033132C /* LessonPartViewController.m */,
+				E9C74B5B19C9F4D80033132C /* LessonPartDispatcherViewController.h */,
+				E9C74B5C19C9F4D80033132C /* LessonPartDispatcherViewController.m */,
 			);
 			name = Lesson;
 			sourceTree = "<group>";
@@ -1161,6 +1171,7 @@
 				E9D847D919BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m in Sources */,
 				E939E1BC197AA60500EAD654 /* AccountTable.m in Sources */,
 				E93BC5C519815FA700DE3408 /* uncompr.c in Sources */,
+				E9C74B5A19C9F1980033132C /* LessonPartViewController.m in Sources */,
 				E9E514551976A635001FDA03 /* ImportAccountViewController.m in Sources */,
 				E95C7AA2199B8E26004F1B2D /* ExercisesDispatcherControllerViewController.m in Sources */,
 				E93BC5B419815FA700DE3408 /* ZipException.m in Sources */,
@@ -1168,6 +1179,7 @@
 				E9FE88DC1996304800C97A35 /* ImageTableViewCell.m in Sources */,
 				E9DBAC2F19B9F5AB00FA95A0 /* PiramidaWyrazyViewController.m in Sources */,
 				E9FEE6131977D39700463B32 /* ModuleViewController.m in Sources */,
+				E9C74B5D19C9F4D80033132C /* LessonPartDispatcherViewController.m in Sources */,
 				E90C5E7D19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.m in Sources */,
 				E93BC5C219815FA700DE3408 /* inflate.c in Sources */,
 				E98D0A6F19BA0817001EA86C /* SuperSzybkoscViewController.m in Sources */,
