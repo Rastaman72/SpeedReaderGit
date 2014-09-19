@@ -42,17 +42,18 @@
 	return theDataObject;
 }
 
--(void)test1
+-(void)test1:(int)excNumber
 {
     self.theDataObject=[self theAppDataObject];
-    ExercisesData* choosedExercises=(ExercisesData*)self.theDataObject.selectPart;
+ //   ExercisesData* choosedExercises=(ExercisesData*)self.theDataObject.selectPart;
     
+    //FIX LOAD VIEW
     
-    
-    NSString * storyboardName1 = @"Main_iPad";
-    NSString * viewControllerID1 = [NSString stringWithFormat:@"EXC%d",1];
-    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName1 bundle:nil];
-    UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID1];
+    NSString * storyboardName = @"Main_iPad";
+    NSString * viewControllerID = [NSString stringWithFormat:@"EXC%d",11];
+     //  NSString * viewControllerID = @"EXC11";
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
     self.theDataObject.dismmisView=YES;
     
     //ERROR after logout

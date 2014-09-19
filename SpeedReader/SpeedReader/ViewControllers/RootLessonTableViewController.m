@@ -20,21 +20,21 @@
     if(self=[super initWithCoder:aDecoder])
     {
         self.lessons = [NSMutableArray array];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Intro" description:NSLocalizedString(@"Test", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 1" description:NSLocalizedString(@"First lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 2" description:NSLocalizedString(@"Secound lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 3" description:NSLocalizedString(@"Third lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 4" description:NSLocalizedString(@"Fouth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 5" description:NSLocalizedString(@"Fifth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 6" description:NSLocalizedString(@"Sixth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 7" description:NSLocalizedString(@"Seventh lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 8" description:NSLocalizedString(@"Eighth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 9" description:NSLocalizedString(@"Ninth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 10" description:NSLocalizedString(@"Tenth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 11" description:NSLocalizedString(@"Eleventh lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 12" description:NSLocalizedString(@"Twelfth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 13" description:NSLocalizedString(@"Thirteenth lesson", nil)]];
-        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 14" description:NSLocalizedString(@"Fouthteenth lesson", nil)]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Intro" description:NSLocalizedString(@"Test", nil)number:0]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 1" description:NSLocalizedString(@"First lesson", nil)number:1]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 2" description:NSLocalizedString(@"Secound lesson", nil)number:2]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 3" description:NSLocalizedString(@"Third lesson", nil)number:3]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 4" description:NSLocalizedString(@"Fouth lesson", nil)number:4]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 5" description:NSLocalizedString(@"Fifth lesson", nil)number:5]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 6" description:NSLocalizedString(@"Sixth lesson", nil)number:6]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 7" description:NSLocalizedString(@"Seventh lesson", nil)number:7]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 8" description:NSLocalizedString(@"Eighth lesson", nil)number:8]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 9" description:NSLocalizedString(@"Ninth lesson", nil)number:9]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 10" description:NSLocalizedString(@"Tenth lesson", nil)number:10]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 11" description:NSLocalizedString(@"Eleventh lesson", nil)number:11]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 12" description:NSLocalizedString(@"Twelfth lesson", nil)number:12]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 13" description:NSLocalizedString(@"Thirteenth lesson", nil)number:13]];
+        [self.lessons addObject:[LessonData newLessonWithName:@"Lesson 14" description:NSLocalizedString(@"Fouthteenth lesson", nil)number:14]];
         
     }
     return self;

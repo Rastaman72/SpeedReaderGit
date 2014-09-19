@@ -15,5 +15,6 @@
 @interface ExercisesDispatcherViewController : UIViewController<UITextFieldDelegate>
 - (IBAction)push:(id)sender;
 @property(nonatomic,strong)SharedData* theDataObject;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 -(void)test;
 @end

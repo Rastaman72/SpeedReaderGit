@@ -11,6 +11,8 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 #import "LessonPartDispatcherViewController.h"
+#import "GDataXMLNode.h"
+#import "SingleExc.h"
 
 @class LessonData;
 @interface DetailLessonViewController : UIViewController<LessonSelectionDelegate,UISplitViewControllerDelegate>
@@ -29,5 +31,8 @@
 -(void)setLesson:(LessonData *)lesson;
 @property (weak, nonatomic) IBOutlet UIButton *goToExerciseButton;
 @property(nonatomic,strong)LessonPartDispatcherViewController* lessonPart;
+@property(nonatomic,strong)NSMutableDictionary* listOfExercises;
+@property(nonatomic,strong)NSMutableDictionary* dictionaryOfParams;
+@property(nonatomic,strong)NSArray* sortedExcNumber;
 
 @end

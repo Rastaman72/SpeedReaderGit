@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface LessonData : NSObject
-@property (nonatomic,retain)NSString* name;
-@property (nonatomic,retain)NSString* description;
-@property (nonatomic,retain)NSString* header;
-@property (nonatomic,retain)NSString* userImage;
+@property (nonatomic,strong)NSString* name;
+@property (nonatomic,strong)NSString* description;
+@property (nonatomic,strong)NSString* header;
+@property (nonatomic,strong)NSString* userImage;
+@property(nonatomic,strong)NSMutableDictionary* lessonPart;
+@property(nonatomic,assign)int number;
 
-+(LessonData*) newLessonWithName : (NSString*)name description:(NSString*)description;
++(LessonData*) newLessonWithName : (NSString*)name description:(NSString*)description number:(int)number;
 
 @end

@@ -10,11 +10,14 @@
 
 @implementation LessonData
 
-+(LessonData*) newLessonWithName : (NSString*)name description:(NSString*)description
++(LessonData*) newLessonWithName : (NSString*)name description:(NSString*)description number:(int)number
 {
     LessonData* lesson=[[LessonData alloc]init];
+    lesson.lessonPart=[[NSMutableDictionary alloc]init];
     lesson.name=name;
     lesson.description=description;
+    lesson.number=number;
     return lesson;
 }
+
 @end

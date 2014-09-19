@@ -12,5 +12,5 @@
 #import "AppDelegateDataShared.h"
 @interface LessonPartDispatcherViewController : UINavigationController
 @property(nonatomic,strong)SharedData* theDataObject;
--(void)test1;
+-(void)test1:(int)excNumber;
 @end

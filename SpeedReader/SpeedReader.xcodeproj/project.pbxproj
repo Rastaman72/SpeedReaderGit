@@ -117,6 +117,8 @@
 		E9CB3CDA19BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CB3CD919BF211F002F8AD0 /* TreningPoszerzajacyWidzenieViewController.m */; };
 		E9CE9D9F19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */; };
 		E9D12C3F19B858B100B7BD0C /* PiramidaMigawkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */; };
+		E9D258ED19CC64EB00EB44AC /* SingleExc.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D258EC19CC64EB00EB44AC /* SingleExc.m */; };
+		E9D258EF19CC7A6700EB44AC /* excParserIMP.xml in Resources */ = {isa = PBXBuildFile; fileRef = E9D258EE19CC7A6700EB44AC /* excParserIMP.xml */; };
 		E9D3777219B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */; };
 		E9D56CCA19BB2FF40080A98F /* TabliceSchultzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D56CC919BB2FF40080A98F /* TabliceSchultzaViewController.m */; };
 		E9D75DED19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9D75DEC19BB687B006D40BD /* TabliceSchultzaKolejneLiczbyViewController.m */; };
@@ -367,6 +369,9 @@
 		E9CE9D9E19B4C33B0062AB89 /* GimnastykaOczu8IViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GimnastykaOczu8IViewController.m; path = SpeedReader/ViewControllers/GimnastykaOczu8IViewController.m; sourceTree = "<group>"; };
 		E9D12C3D19B858B100B7BD0C /* PiramidaMigawkiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiramidaMigawkiViewController.h; path = SpeedReader/ViewControllers/PiramidaMigawkiViewController.h; sourceTree = "<group>"; };
 		E9D12C3E19B858B100B7BD0C /* PiramidaMigawkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaMigawkiViewController.m; path = SpeedReader/ViewControllers/PiramidaMigawkiViewController.m; sourceTree = "<group>"; };
+		E9D258EB19CC64EB00EB44AC /* SingleExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleExc.h; path = SpeedReader/SingleExc.h; sourceTree = "<group>"; };
+		E9D258EC19CC64EB00EB44AC /* SingleExc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingleExc.m; path = SpeedReader/SingleExc.m; sourceTree = "<group>"; };
+		E9D258EE19CC7A6700EB44AC /* excParserIMP.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = excParserIMP.xml; sourceTree = "<group>"; };
 		E9D3777019B9B7EE00F36D2B /* PiramidaTypPelnyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiramidaTypPelnyViewController.h; path = SpeedReader/ViewControllers/PiramidaTypPelnyViewController.h; sourceTree = "<group>"; };
 		E9D3777119B9B7EE00F36D2B /* PiramidaTypPelnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiramidaTypPelnyViewController.m; path = SpeedReader/ViewControllers/PiramidaTypPelnyViewController.m; sourceTree = "<group>"; };
 		E9D56CC819BB2FF40080A98F /* TabliceSchultzaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabliceSchultzaViewController.h; path = SpeedReader/ViewControllers/TabliceSchultzaViewController.h; sourceTree = "<group>"; };
@@ -508,6 +513,8 @@
 				E9C74B5919C9F1980033132C /* LessonPartViewController.m */,
 				E9C74B5B19C9F4D80033132C /* LessonPartDispatcherViewController.h */,
 				E9C74B5C19C9F4D80033132C /* LessonPartDispatcherViewController.m */,
+				E9D258EB19CC64EB00EB44AC /* SingleExc.h */,
+				E9D258EC19CC64EB00EB44AC /* SingleExc.m */,
 			);
 			name = Lesson;
 			sourceTree = "<group>";
@@ -588,6 +595,7 @@
 		E91D317D199CEBAB009ECD76 /* ExercisesLanguageFile */ = {
 			isa = PBXGroup;
 			children = (
+				E9D258EE19CC7A6700EB44AC /* excParserIMP.xml */,
 				E9A494A819C978D4007FA02D /* EXCText */,
 				E9A494A619C9769F007FA02D /* lessonsPL.xml */,
 				E92A700019A1F5D800404AA3 /* wordsPL.xml */,
@@ -1086,6 +1094,7 @@
 				E9FE88E51996361000C97A35 /* image3.jpg in Resources */,
 				E91D317F199CEBAB009ECD76 /* exerciseTextsPL.xml in Resources */,
 				E9C8411919B7AF660000E3EB /* metronom2.wav in Resources */,
+				E9D258EF19CC7A6700EB44AC /* excParserIMP.xml in Resources */,
 				E9FE88E21996361000C97A35 /* image0.jpg in Resources */,
 				E9FE88E31996361000C97A35 /* image1.jpg in Resources */,
 				E9A494C519C978D4007FA02D /* 8.rtf in Resources */,
@@ -1191,6 +1200,7 @@
 				E93BC5C319815FA700DE3408 /* inftrees.c in Sources */,
 				E93BC5BE19815FA700DE3408 /* gzread.c in Sources */,
 				E928EEE719A64F9E00833F29 /* GraMemoryViewController.m in Sources */,
+				E9D258ED19CC64EB00EB44AC /* SingleExc.m in Sources */,
 				E9A18158197E77E60046B48E /* UserParser.m in Sources */,
 				E92BB5331992BF9F006D2E56 /* MetronumViewController.m in Sources */,
 				E915D7041977FD2700846F31 /* DetailStatisticsViewController.m in Sources */,
