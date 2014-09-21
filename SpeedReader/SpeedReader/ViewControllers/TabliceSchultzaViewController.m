@@ -26,10 +26,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        [self createSlider];
+
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.squareSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"size"]intValue];
+        self.wordSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linewidth"]intValue];
+        self.setModeView.hidden=YES;
+        self.squareSizeView.hidden=YES;
+        self.wordLengthView.hidden=YES;
+
+        
+    }
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.objectSize=70;
-    [self createSlider];
-    [self createNumber];
+       [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
@@ -167,6 +189,14 @@
     
     
     
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 
 -(void)createNumber

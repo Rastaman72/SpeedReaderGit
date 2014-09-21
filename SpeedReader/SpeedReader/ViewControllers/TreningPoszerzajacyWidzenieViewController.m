@@ -27,11 +27,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
     self.objectDic=[[NSMutableDictionary alloc]init];
     self.xmlManager=[self theAppDataObject];
-    self.mode=self.selectModeSwitch;
+    
+    if (self.xmlManager.excMode) {
+        
+         self.mode=self.selectModeSwitch;
+        [self createSlider];
+    }
+    else
+    {
+        
+        if ([[self.xmlManager.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.numbersOfLineView.hidden=YES;
+        self.setModeView.hidden=YES;
+         self.wordLengthView.hidden=YES;
+        self.numbersOfLine=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"linecount"]intValue];
+         self.wordLength=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"linewidth"]intValue];
+    }
+   
     self.forward=YES;
-    [self createSlider];
+    
     [self createNumber];
     [self addObjectToLayer];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];

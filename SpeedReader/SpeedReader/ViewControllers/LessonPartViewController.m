@@ -9,6 +9,7 @@
 #import "LessonPartViewController.h"
 
 @interface LessonPartViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 

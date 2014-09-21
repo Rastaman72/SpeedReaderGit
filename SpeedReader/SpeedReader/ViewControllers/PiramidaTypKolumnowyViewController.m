@@ -7,7 +7,7 @@
 //
 
 #import "PiramidaTypKolumnowyViewController.h"
-
+#define  char NO;
 @interface PiramidaTypKolumnowyViewController ()
 
 @end
@@ -26,10 +26,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.mode=YES;
+    self.theDataObject = [self theAppDataObject];
     self.positionY=300;
-    [self createSlider];
-    self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
+    if(self.theDataObject.excMode)
+    {
+        self.mode=YES;
+        [self createSlider];
+        self.wordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
+
+    }
+    else
+    {
+        self.actuallSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"columnWidth"]intValue];
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.setModeView.hidden=YES;
+        self.wordLengthView.hidden=YES;
+    }
+   
+    
+   
+    
     [self create];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
@@ -37,7 +57,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

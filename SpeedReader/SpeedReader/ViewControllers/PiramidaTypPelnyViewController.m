@@ -26,9 +26,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.mode=YES;
+self.theDataObject = [self theAppDataObject];
+
+    if (self.theDataObject.excMode) {
+        
+        self.mode=YES;
+    }
+    else
+    {
+        
+        self.setModeView.hidden=YES;
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        
+
+      }
     self.positionY=300;
-    self.actuallSize=1;
+    self.actuallSize=1;         
     self.step=2;
     [self create];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
@@ -37,7 +54,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

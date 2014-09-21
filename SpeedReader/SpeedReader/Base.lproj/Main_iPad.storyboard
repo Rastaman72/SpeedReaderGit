@@ -265,7 +265,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <containerView contentMode="scaleToFill" id="NQB-Pq-g99">
-                                <rect key="frame" x="0.0" y="226" width="768" height="690"/>
+                                <rect key="frame" x="0.0" y="226" width="768" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
@@ -1572,11 +1572,11 @@
             <objects>
                 <viewController storyboardIdentifier="EXC100" title="EXC0" modalPresentationStyle="currentContext" id="Lwi-b9-g7A" customClass="ExercisesZeroViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rgd-G2-o6h">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3.jpg" id="MbO-Tf-NXT">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -1593,11 +1593,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC0" storyboardIdentifier="EXC0" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="currentContext" id="6Bc-jz-nVr" customClass="ExercisesDispatcherViewController" sceneMemberID="viewController">
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ifm-ze-tnT">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="tlL-xv-G3o">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1613,46 +1613,46 @@
                         <outlet property="textView" destination="tlL-xv-G3o" id="uRD-qt-ae7"/>
                         <segue destination="jVJ-Sq-pTK" kind="push" identifier="EXC1" id="L17-TY-3vG"/>
                         <segue destination="3i9-ZX-huw" kind="push" identifier="EXC2" id="XYd-4a-w9s"/>
-                        <segue destination="zJg-KD-PN5" kind="push" id="TGN-UM-dmd"/>
+                        <segue destination="zJg-KD-PN5" kind="push" identifier="EXC3" id="TGN-UM-dmd"/>
                         <segue destination="RFQ-RD-NVT" kind="push" id="Oed-gQ-J6g"/>
-                        <segue destination="5Qf-wu-FZM" kind="push" id="hmJ-fy-LjP"/>
-                        <segue destination="TC7-H8-cKy" kind="push" id="V8m-bw-TzA"/>
-                        <segue destination="NO4-GZ-c89" kind="push" id="qaF-BF-ffY"/>
+                        <segue destination="5Qf-wu-FZM" kind="push" identifier="EXC5" id="hmJ-fy-LjP"/>
+                        <segue destination="TC7-H8-cKy" kind="push" identifier="EXC6" id="V8m-bw-TzA"/>
+                        <segue destination="NO4-GZ-c89" kind="push" identifier="EXC7" id="qaF-BF-ffY"/>
                         <segue destination="2Sh-zE-zt6" kind="push" id="eCU-T2-F64"/>
-                        <segue destination="DfW-E2-2W1" kind="push" id="nvO-XX-ggT"/>
-                        <segue destination="unu-hB-438" kind="push" id="NpD-sA-9WQ"/>
-                        <segue destination="Dgb-bj-KXZ" kind="push" id="HKW-5x-VwF"/>
-                        <segue destination="75M-hL-8AL" kind="push" id="h07-fQ-T7M"/>
-                        <segue destination="mFd-qA-JX3" kind="push" id="4Ut-3v-vS5"/>
-                        <segue destination="nBo-Dg-7Bg" kind="push" id="2c8-me-atb"/>
-                        <segue destination="c1h-yy-rrL" kind="push" id="bTy-6B-AC3"/>
-                        <segue destination="OId-z1-Vrf" kind="push" id="EGu-N4-LWR"/>
-                        <segue destination="VzO-3a-mFh" kind="push" id="xtr-EP-e4Q"/>
-                        <segue destination="q4E-TY-pHf" kind="push" id="Mh6-46-u7S"/>
-                        <segue destination="b9A-co-ZrM" kind="push" id="PTg-PH-vNb"/>
-                        <segue destination="nZu-N1-qab" kind="push" id="Llm-lj-oQU"/>
-                        <segue destination="cWS-R0-ENP" kind="push" id="X3j-LT-TzS"/>
-                        <segue destination="bVT-Xj-bCw" kind="push" id="B9q-kS-CcY"/>
-                        <segue destination="hZJ-fE-OeJ" kind="push" id="uMh-mQ-kWx"/>
-                        <segue destination="Wdx-fe-NBe" kind="push" id="fz2-3G-D6A"/>
-                        <segue destination="atm-wH-f6H" kind="push" id="Raa-oj-dtw"/>
-                        <segue destination="fb1-38-smq" kind="push" id="DIz-I4-7JJ"/>
-                        <segue destination="J1v-A3-lsf" kind="push" id="GbN-Cq-cWT"/>
-                        <segue destination="UKY-RG-iMG" kind="push" id="rSv-0f-mnZ"/>
-                        <segue destination="RkY-p8-qB1" kind="push" id="POV-jb-LGe"/>
+                        <segue destination="DfW-E2-2W1" kind="push" identifier="EXC9" id="nvO-XX-ggT"/>
+                        <segue destination="unu-hB-438" kind="push" identifier="EXC10" id="NpD-sA-9WQ"/>
+                        <segue destination="Dgb-bj-KXZ" kind="push" identifier="EXC11" id="HKW-5x-VwF"/>
+                        <segue destination="75M-hL-8AL" kind="push" identifier="EXC12" id="h07-fQ-T7M"/>
+                        <segue destination="mFd-qA-JX3" kind="push" identifier="EXC13" id="4Ut-3v-vS5"/>
+                        <segue destination="nBo-Dg-7Bg" kind="push" identifier="EXC14" id="2c8-me-atb"/>
+                        <segue destination="c1h-yy-rrL" kind="push" identifier="EXC15" id="bTy-6B-AC3"/>
+                        <segue destination="OId-z1-Vrf" kind="push" identifier="EXC16" id="EGu-N4-LWR"/>
+                        <segue destination="VzO-3a-mFh" kind="push" identifier="EXC17" id="xtr-EP-e4Q"/>
+                        <segue destination="q4E-TY-pHf" kind="push" identifier="EXC18" id="Mh6-46-u7S"/>
+                        <segue destination="b9A-co-ZrM" kind="push" identifier="EXC19" id="PTg-PH-vNb"/>
+                        <segue destination="nZu-N1-qab" kind="push" identifier="EXC20" id="Llm-lj-oQU"/>
+                        <segue destination="cWS-R0-ENP" kind="push" identifier="EXC21" id="X3j-LT-TzS"/>
+                        <segue destination="bVT-Xj-bCw" kind="push" identifier="EXC22" id="B9q-kS-CcY"/>
+                        <segue destination="hZJ-fE-OeJ" kind="push" identifier="EXC23" id="uMh-mQ-kWx"/>
+                        <segue destination="Wdx-fe-NBe" kind="push" identifier="EXC24" id="fz2-3G-D6A"/>
+                        <segue destination="atm-wH-f6H" kind="push" identifier="EXC25" id="Raa-oj-dtw"/>
+                        <segue destination="fb1-38-smq" kind="push" identifier="EXC26" id="DIz-I4-7JJ"/>
+                        <segue destination="J1v-A3-lsf" kind="push" identifier="EXC27" id="GbN-Cq-cWT"/>
+                        <segue destination="UKY-RG-iMG" kind="push" identifier="EXC29" id="rSv-0f-mnZ"/>
+                        <segue destination="RkY-p8-qB1" kind="push" identifier="EXC28" id="POV-jb-LGe"/>
                         <segue destination="Le0-f7-7rX" kind="push" id="QbX-3I-Z5b"/>
-                        <segue destination="Qvb-L6-WPg" kind="push" id="Ttd-HT-dvP"/>
-                        <segue destination="QXl-CQ-aEb" kind="push" id="4Wf-0K-8lZ"/>
-                        <segue destination="JYX-OJ-Yfa" kind="push" id="u4Z-TN-1YZ"/>
-                        <segue destination="7lY-V6-KgW" kind="push" id="8T9-zR-63b"/>
-                        <segue destination="2uz-yJ-sXB" kind="push" id="Yog-iT-jh2"/>
-                        <segue destination="huS-TG-jze" kind="push" id="gKq-39-fPi"/>
-                        <segue destination="via-B3-ZwS" kind="push" id="Ba2-oc-Mq9"/>
-                        <segue destination="9Ya-4h-bKu" kind="push" id="njF-Bd-odo"/>
-                        <segue destination="unN-Zp-1aj" kind="push" id="Llv-FD-WrD"/>
-                        <segue destination="V5N-oc-QPq" kind="push" id="s6O-Jr-ooE"/>
-                        <segue destination="l7a-xk-Cli" kind="push" id="ECA-TP-O01"/>
-                        <segue destination="xNc-Kg-dVo" kind="push" id="l4H-PI-1FI"/>
+                        <segue destination="Qvb-L6-WPg" kind="push" identifier="EXC31" id="Ttd-HT-dvP"/>
+                        <segue destination="QXl-CQ-aEb" kind="push" identifier="EXC43" id="4Wf-0K-8lZ"/>
+                        <segue destination="JYX-OJ-Yfa" kind="push" identifier="EXC44" id="u4Z-TN-1YZ"/>
+                        <segue destination="7lY-V6-KgW" kind="push" identifier="EXC38" id="8T9-zR-63b"/>
+                        <segue destination="2uz-yJ-sXB" kind="push" identifier="EXC41" id="Yog-iT-jh2"/>
+                        <segue destination="huS-TG-jze" kind="push" identifier="EXC42" id="gKq-39-fPi"/>
+                        <segue destination="via-B3-ZwS" kind="push" identifier="EXC36" id="Ba2-oc-Mq9"/>
+                        <segue destination="9Ya-4h-bKu" kind="push" identifier="EXC37" id="njF-Bd-odo"/>
+                        <segue destination="unN-Zp-1aj" kind="push" identifier="EXC39" id="Llv-FD-WrD"/>
+                        <segue destination="V5N-oc-QPq" kind="push" identifier="EXC32" id="s6O-Jr-ooE"/>
+                        <segue destination="l7a-xk-Cli" kind="push" identifier="EXC33" id="ECA-TP-O01"/>
+                        <segue destination="xNc-Kg-dVo" kind="push" identifier="EXC34" id="l4H-PI-1FI"/>
                         <segue destination="hCe-wv-23Z" kind="push" id="DSX-OQ-JO5"/>
                         <segue destination="Lwi-b9-g7A" kind="push" id="UqC-Do-6Sd"/>
                     </connections>
@@ -1666,7 +1666,7 @@
             <objects>
                 <viewController id="RFQ-RD-NVT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cdu-5c-l5e">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1681,7 +1681,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC10" storyboardIdentifier="EXC10" modalPresentationStyle="currentContext" id="unu-hB-438" customClass="GimnastykaOczu8IViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7TJ-cJ-thJ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7iw-pN-x94">
@@ -1711,7 +1711,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC12" storyboardIdentifier="EXC12" modalPresentationStyle="currentContext" id="75M-hL-8AL" customClass="GimnastykaOczuObszarPolaWidzeniaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uTT-sC-DfL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xBq-CU-Ntc">
@@ -1770,7 +1770,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC14" storyboardIdentifier="EXC14" modalPresentationStyle="currentContext" id="nBo-Dg-7Bg" customClass="GimnastykaOczuPilaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbY-zM-mwF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ofT-GX-cRO">
@@ -1798,14 +1798,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHp-I0-kFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8913" y="-937"/>
+            <point key="canvasLocation" x="8945" y="-901"/>
         </scene>
         <!--Gimnastyka Oczu Zygzak View Controller-->
         <scene sceneID="gU6-bX-lTJ">
             <objects>
                 <viewController restorationIdentifier="EXC18" storyboardIdentifier="EXC18" modalPresentationStyle="currentContext" id="q4E-TY-pHf" customClass="GimnastykaOczuZygzakViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4t-a1-BXp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jqe-F6-Abk">
@@ -1841,7 +1841,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC19" storyboardIdentifier="EXC19" modalPresentationStyle="currentContext" id="b9A-co-ZrM" customClass="GraMemoryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fcn-4C-oxY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cyH-uw-Rhl">
@@ -1907,7 +1907,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC22" modalPresentationStyle="currentContext" id="bVT-Xj-bCw" customClass="MetronumEXCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LLm-dg-u8U">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NYI-7x-oXm">
@@ -2097,7 +2097,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC26" storyboardIdentifier="EXC26" modalPresentationStyle="currentContext" id="fb1-38-smq" customClass="PiramidaWyrazyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYC-vR-Efz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K9J-9H-h8d">
@@ -2135,7 +2135,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC28" storyboardIdentifier="EXC28" modalPresentationStyle="currentContext" id="RkY-p8-qB1" customClass="SuperSzybkoscViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8IM-su-KcO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="6As-Vz-i0C">
@@ -2236,7 +2236,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC32" modalPresentationStyle="currentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V5N-oc-QPq" customClass="TabliceSchultzaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie8-M1-2Cc">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1BL-4b-5NR">
@@ -2362,7 +2362,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC36" storyboardIdentifier="EXC36" modalPresentationStyle="currentContext" id="via-B3-ZwS" customClass="TreningPamieciMigawkiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kON-7P-2wP">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vEY-rh-F75">
@@ -2519,7 +2519,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC43" storyboardIdentifier="EXC43" modalPresentationStyle="currentContext" id="QXl-CQ-aEb" customClass="ZaznaczCiagiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LPo-DJ-g0J">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GTp-nN-3s6">
@@ -2615,7 +2615,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC38" modalPresentationStyle="currentContext" id="7lY-V6-KgW" customClass="TreningPoszerzajacyWidzenieViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKa-1e-yc2">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Hk-QM-tSv">
@@ -2747,7 +2747,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC41" modalPresentationStyle="currentContext" id="2uz-yJ-sXB" customClass="UkrytePoczatkiIKonceViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dUl-dN-9Nt">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bgw-zF-Xvy">
@@ -2815,11 +2815,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC44" storyboardIdentifier="EXC44" modalPresentationStyle="currentContext" id="JYX-OJ-Yfa" customClass="ZaznaczCoWystapiloViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mB-hi-iDO">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="PDA-IL-Oag">
-                                <rect key="frame" x="0.0" y="35" width="768" height="422"/>
+                                <rect key="frame" x="0.0" y="35" width="768" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -2958,11 +2958,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC42" storyboardIdentifier="EXC42" modalPresentationStyle="currentContext" id="huS-TG-jze" customClass="WidzenieCyklopoweViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9LC-hJ-oAH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="yA2-Xa-Ddp">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="542"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="600"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -3043,7 +3043,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC37" storyboardIdentifier="EXC37" modalPresentationStyle="currentContext" id="9Ya-4h-bKu" customClass="TreningPionowegoWidzeniaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EeS-r0-FJW">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HXq-UU-for">
@@ -3111,11 +3111,11 @@
             <objects>
                 <viewController restorationIdentifier="EXC39" storyboardIdentifier="EXC39" modalPresentationStyle="currentContext" id="unN-Zp-1aj" customClass="UkryteDolneCzesciLiterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQm-jg-KYs">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="9Ve-P6-8OA">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="544"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="602"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -3206,7 +3206,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC33" storyboardIdentifier="EXC33" modalPresentationStyle="currentContext" id="l7a-xk-Cli" customClass="TabliceSchultzaKolejneLiczbyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Elk-Wy-Nu7">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="mXc-Of-F6w">
@@ -3318,7 +3318,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC34" storyboardIdentifier="EXC34" modalPresentationStyle="currentContext" id="xNc-Kg-dVo" customClass="TabliceSchultzaTreningPamieci1ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AVQ-b0-Fs8">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="bxx-gQ-fNl">
@@ -3493,7 +3493,7 @@
             <objects>
                 <viewController id="hCe-wv-23Z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cIe-ou-15U">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3508,7 +3508,7 @@
             <objects>
                 <viewController id="Le0-f7-7rX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lb8-tW-c63">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3523,7 +3523,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC31" modalPresentationStyle="currentContext" id="Qvb-L6-WPg" customClass="SzukanieZnakowMigawkiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hT-rm-6yx">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="id2-CC-5QS">
@@ -3693,7 +3693,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC27" storyboardIdentifier="EXC27" modalPresentationStyle="currentContext" id="J1v-A3-lsf" customClass="StoperEXCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Gf-1l-e0H">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jYO-v6-u9U">
@@ -3731,7 +3731,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC29" storyboardIdentifier="EXC29" modalPresentationStyle="currentContext" id="UKY-RG-iMG" customClass="SzukanieSekwencjiWPiramidzieViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tir-46-J8n">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bvl-AN-5o3">
@@ -3836,7 +3836,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC23" storyboardIdentifier="EXC23" modalPresentationStyle="currentContext" id="hZJ-fE-OeJ" customClass="PiramidaMigawkiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUL-Qq-UWQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="huC-R0-sZf">
@@ -3964,7 +3964,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC24" storyboardIdentifier="EXC24" modalPresentationStyle="currentContext" id="Wdx-fe-NBe" customClass="PiramidaTypKolumnowyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LkU-zl-XON">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eAa-Vo-D2W">
@@ -4064,7 +4064,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC25" storyboardIdentifier="EXC25" modalPresentationStyle="currentContext" id="atm-wH-f6H" customClass="PiramidaTypPelnyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cu-JN-iOM">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jbF-Nw-KBE">
@@ -4132,7 +4132,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC20" storyboardIdentifier="EXC20" modalPresentationStyle="currentContext" id="nZu-N1-qab" customClass="GraRiseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ay6-iQ-aSb">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5FH-8o-6af">
@@ -4198,7 +4198,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC21" modalPresentationStyle="currentContext" id="cWS-R0-ENP" customClass="GraUkladankaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jnA-CH-Iq2" customClass="GraU">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Srz-l8-E0F">
@@ -4276,7 +4276,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC15" storyboardIdentifier="EXC15" modalPresentationStyle="currentContext" id="c1h-yy-rrL" customClass="GimnastykaOczuRamkaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ly4-2J-FHD">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rnc-gK-DTP">
@@ -4329,14 +4329,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agi-CQ-Za0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9969" y="-977"/>
+            <point key="canvasLocation" x="9949" y="-1077"/>
         </scene>
         <!--Gimnastyka Oczu Szerokosc Pola Widzenia View Controller-->
         <scene sceneID="a2B-UB-WqR">
             <objects>
                 <viewController restorationIdentifier="EXC16" storyboardIdentifier="EXC16" modalPresentationStyle="currentContext" id="OId-z1-Vrf" customClass="GimnastykaOczuSzerokoscPolaWidzeniaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AlU-FT-gkh">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mOi-Wu-WDf">
@@ -4395,7 +4395,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC17" storyboardIdentifier="EXC17" modalPresentationStyle="currentContext" id="VzO-3a-mFh" customClass="GimnastykaOczuWazViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vio-Qr-oRp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6Vx-6q-EAp">
@@ -4431,7 +4431,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC13" storyboardIdentifier="EXC13" modalPresentationStyle="currentContext" id="mFd-qA-JX3" customClass="GimnastykaOczuOkragViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BSZ-xR-FmL">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5c6-H1-A5k">
@@ -4461,7 +4461,7 @@
             <objects>
                 <viewController id="Dgb-bj-KXZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tpx-NL-7xE">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4476,7 +4476,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC5" storyboardIdentifier="EXC5" modalPresentationStyle="currentContext" id="5Qf-wu-FZM" customClass="CzytanieZObcymiSlowamiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="32o-Kv-SPG">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L7l-bE-14f">
@@ -4515,7 +4515,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC6" storyboardIdentifier="EXC6" modalPresentationStyle="currentContext" id="TC7-H8-cKy" customClass="CzytanieZPlamamiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L9R-aP-C9f">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rem-jS-XYq">
@@ -4575,7 +4575,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC7" storyboardIdentifier="EXC7" modalPresentationStyle="currentContext" id="NO4-GZ-c89" customClass="CzytanieZPodzialemNa2ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXj-96-ZQY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D8Z-Qz-8SJ">
@@ -4589,7 +4589,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="egQ-5R-pma">
-                                <rect key="frame" x="0.0" y="-25" width="768" height="514"/>
+                                <rect key="frame" x="0.0" y="33" width="768" height="514"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XCS-3I-J3q">
@@ -4629,7 +4629,7 @@
             <objects>
                 <viewController id="2Sh-zE-zt6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="49q-Su-1LF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4644,7 +4644,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC9" storyboardIdentifier="EXC9" modalPresentationStyle="currentContext" id="DfW-E2-2W1" customClass="CzytanieZeWskaznikiemViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZ9-OH-eBR">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="fas-rL-tfa">
@@ -4695,7 +4695,7 @@
             <objects>
                 <viewController storyboardIdentifier="EXC1" title="EXC1" modalPresentationStyle="currentContext" id="jVJ-Sq-pTK" customClass="Czytanie2WierszeNaRazViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9fT-pE-jNa">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelexc1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0H0-b9-cBd">
@@ -4716,7 +4716,7 @@
                                 </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pHQ-cv-G6x">
-                                <rect key="frame" x="361" y="671" width="46" height="30"/>
+                                <rect key="frame" x="363" y="652" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -4790,11 +4790,11 @@
             <objects>
                 <viewController storyboardIdentifier="EXC2" modalPresentationStyle="currentContext" id="3i9-ZX-huw" customClass="CzytanieBezSpacjiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Es6-pl-jaH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="bSm-dX-V4V">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="670"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="728"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -4818,7 +4818,7 @@
             <objects>
                 <viewController restorationIdentifier="EXC3" storyboardIdentifier="EXC3" modalPresentationStyle="currentContext" id="zJg-KD-PN5" customClass="CzytanieOdTyluViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dzh-pq-heQ">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="690"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="R86-e9-A9o">
@@ -4998,10 +4998,23 @@
                     <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="v5z-sD-pLY">
                         <rect key="frame" x="0.0" y="0.0" width="767" height="698"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="2Zc-nY-jKO">
+                                <rect key="frame" x="0.0" y="0.0" width="767" height="698"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7ck-xw-eaw"/>
+                    <connections>
+                        <outlet property="textView" destination="2Zc-nY-jKO" id="Abd-uE-Sq6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVw-no-kxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -5010,9 +5023,10 @@
         <!--Navigation Controller-->
         <scene sceneID="Z2c-vd-LaH">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c26-7E-bCm" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="c26-7E-bCm" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7X9-DE-Myi"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zr7-pj-UxN">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -5029,8 +5043,9 @@
         <!--Lesson Part Dispatcher View Controller-->
         <scene sceneID="4ef-rO-hZg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qRy-92-LWs" customClass="LessonPartDispatcherViewController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="qRy-92-LWs" customClass="LessonPartDispatcherViewController" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1O1-zm-xgZ">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

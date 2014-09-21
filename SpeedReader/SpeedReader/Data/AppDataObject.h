@@ -67,6 +67,8 @@
 @property(nonatomic,assign)bool useOtherVersion;
 @property(nonatomic,assign)int iOSVersion;
 @property(nonatomic,strong)NSString* choosedLanguage;
+@property(nonatomic,strong)NSMutableDictionary*paramsForSpecifyExc;
+@property(nonatomic,assign)bool excMode;
 /*-(void)addPicker:(UIViewController*)view;
 @property(nonatomic,strong)UIImagePickerController* picker;
 @property(nonatomic,strong)UIViewController* tempView;*/

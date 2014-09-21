@@ -33,6 +33,7 @@
 @property(nonatomic,strong)LessonPartDispatcherViewController* lessonPart;
 @property(nonatomic,strong)NSMutableDictionary* listOfExercises;
 @property(nonatomic,strong)NSMutableDictionary* dictionaryOfParams;
-@property(nonatomic,strong)NSArray* sortedExcNumber;
+@property(nonatomic,strong)NSMutableArray* sortedExcNumber;
+@property(nonatomic,assign)int actuallExc;
 
 @end

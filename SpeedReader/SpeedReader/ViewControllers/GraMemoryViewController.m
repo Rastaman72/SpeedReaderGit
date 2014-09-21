@@ -26,16 +26,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        self.horizontalSize=6;
+        self.verticalSize=6;
+          [self createSlider];
+    }
+    else
+    {
+        self.chooseSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"size"]intValue];
+        self.horizontalSize=sqrt(self.chooseSize);
+        self.verticalSize=sqrt(self.chooseSize);
+        self.sizeView.hidden=YES;
+
+        
+    }
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.keyToDelete=[[NSMutableDictionary alloc]init];
     self.touchCounter=0;
-    self.horizontalSize=6;
-    self.verticalSize=6;
+  
     self.squareSize=70;
     self.positionX=100;
     //self.gameView.layer.sublayers=nil;
     self.randomValueArray=[[NSMutableArray alloc]init];
-    [self createSlider];
+  
     [self createRandomValue];
     [self createNumber];
     [self addNumberToObject];
@@ -311,14 +327,23 @@
     }
     
 }
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 - (IBAction)sizeChange:(id)sender {
-    
+   if(self.theDataObject.excMode)
+   {
     NSUInteger index = (NSUInteger)(self.sizeSlider.value + 0.5);
     [self.sizeSlider setValue:index animated:NO];
     NSNumber *number = self.numberSize[index]; // <-- This numeric value you want
     self.chooseSize=[number intValue];
     self.sizeCounterLabel.text=[number description];
+   }
+    
 
     
     switch (self.chooseSize) {

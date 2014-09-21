@@ -26,9 +26,29 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+self.theDataObject = [self theAppDataObject];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        [self createSlider];
+
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.squareSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"size"]intValue];
+               self.setModeView.hidden=YES;
+        self.squareSizeView.hidden=YES;
+        
+    }
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.objectSize=70;
-    [self createSlider];
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
@@ -38,6 +58,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 -(void)checkOrientataion
 {

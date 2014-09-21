@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface PiramidaTypPelnyViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @property(nonatomic,assign)bool mode;
+@property(nonatomic,strong)SharedData* theDataObject;
 @property(nonatomic,assign)int actuallSize;
 @property (weak, nonatomic) IBOutlet UILabel *charModeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *digitModeLabel;

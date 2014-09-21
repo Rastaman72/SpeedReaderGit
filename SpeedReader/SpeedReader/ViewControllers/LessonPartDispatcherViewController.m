@@ -1,4 +1,4 @@
-//
+ //
 //  LessonPartDispatcherViewController.m
 //  SpeedReader
 //
@@ -42,24 +42,62 @@
 	return theDataObject;
 }
 
--(void)test1:(int)excNumber
+-(void)test1:(int)excNumber params:(NSMutableDictionary*)dicParams
 {
     self.theDataObject=[self theAppDataObject];
  //   ExercisesData* choosedExercises=(ExercisesData*)self.theDataObject.selectPart;
     
     //FIX LOAD VIEW
-    
+    self.theDataObject.useOtherVersion=NO;
     NSString * storyboardName = @"Main_iPad";
-    NSString * viewControllerID = [NSString stringWithFormat:@"EXC%d",11];
+    
+    switch (excNumber) {
+        case 4:
+            excNumber=3;
+            self.theDataObject.useOtherVersion=YES;
+
+            break;
+        
+        case 11:
+            excNumber=10;
+            self.theDataObject.useOtherVersion=YES;
+
+            break;
+            
+        case 30:
+            excNumber=29;
+            self.theDataObject.useOtherVersion=YES;
+            break;
+            
+        case 35:
+            excNumber=34;
+            self.theDataObject.useOtherVersion=YES;
+            break;
+            
+        case 40:
+            excNumber=39;
+            self.theDataObject.useOtherVersion=YES;
+            break;
+            
+        default:
+            break;
+    }
+    
+    
+    NSString * viewControllerID = [NSString stringWithFormat:@"EXC%d",excNumber];
      //  NSString * viewControllerID = @"EXC11";
     UIStoryboard * storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController * controller = (UIViewController *)[storyboard instantiateViewControllerWithIdentifier:viewControllerID];
     self.theDataObject.dismmisView=YES;
-    
+    self.theDataObject.paramsForSpecifyExc=[[NSMutableDictionary alloc]initWithDictionary:dicParams copyItems:YES];
+    self.theDataObject.excMode=NO;
+  //  [self setExcParams:controller params:dicParams excNumber:excNumber];
     //ERROR after logout
     
     [self presentViewController:controller animated:YES completion:nil];
 }
+
+
 /*
 #pragma mark - Navigation
 

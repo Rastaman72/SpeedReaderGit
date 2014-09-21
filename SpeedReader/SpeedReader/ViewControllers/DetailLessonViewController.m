@@ -15,14 +15,34 @@
 @end
 
 @implementation DetailLessonViewController
-- (IBAction)nextPartPush:(id)sender {
-    
-    int excNumber=[[self.sortedExcNumber objectAtIndex:1]intValue];
+
+
+- (void)showExercise {
+    int excNumber=[[self.sortedExcNumber objectAtIndex:self.actuallExc]intValue];
     NSString* excId=[(SingleExc*)[self.listOfExercises valueForKey:[NSString stringWithFormat:@"%d",excNumber]]excId];
     NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[excId componentsSeparatedByString:@"-"]];
     
- excNumber=[[words lastObject]intValue];
-    [(LessonPartDispatcherViewController*)self.lessonPart test1:excNumber];
+    excNumber=[[words lastObject]intValue];
+    NSString* exc=[self.sortedExcNumber objectAtIndex:self.actuallExc];
+    [(LessonPartDispatcherViewController*)self.lessonPart test1:excNumber params:[[self.listOfExercises valueForKey:[NSString stringWithFormat:@"%@",exc]]params]];
+    //[self.sortedExcNumber removeObject:exc];
+    
+    
+    self.theDataObject.dismmisView=YES;
+}
+
+- (IBAction)nextPartPush:(id)sender {
+    
+    if(self.theDataObject.dismmisView)
+    {
+        [[self.lessonPart.viewControllers firstObject] dismissViewControllerAnimated:NO completion:^{
+            [self showExercise];
+        }];
+    }
+    else
+        
+        [self showExercise];
+    self.actuallExc++;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,13 +59,14 @@
     self.theDataObject=[self theAppDataObject];
     self.listOfExercises=[[NSMutableDictionary alloc]init];
     self.dictionaryOfParams=[[NSMutableDictionary alloc]init];
-   // NSString * language
+    self.actuallExc=1;
+    // NSString * language
     self.theDataObject.choosedLanguage= [[[NSLocale preferredLanguages] objectAtIndex:0]uppercaseString];
-
+    
     [self refreshUI];
     [super viewDidLoad];
-
-        // Do any additional setup after loading the view.
+    
+    // Do any additional setup after loading the view.
 }
 
 -(void)setLesson:(LessonData *)lesson
@@ -56,8 +77,15 @@
         self.lessonData=lesson;
         [self setLessonParts];
         [self refreshUI];
-      
+        
     }
+    if(self.theDataObject.dismmisView)
+    {
+        [[self.lessonPart.viewControllers firstObject] dismissViewControllerAnimated:NO completion:^{
+            self.theDataObject.dismmisView=NO;
+        }];
+    }
+    
 }
 
 -(void)setLessonParts
@@ -67,31 +95,28 @@
     NSError *error;
     GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:xmlData
                                                            options:0 error:&error];
-   // if (doc == nil) { return nil; }
-   NSString* createNode=[NSString stringWithFormat:@"//lesson[nr=\"%d\"]/exercises",self.lessonData.number];
+    // if (doc == nil) { return nil; }
+    NSString* createNode=[NSString stringWithFormat:@"//lesson[nr=\"%d\"]/exercises",self.lessonData.number];
     
     
     NSArray* resultNodes = [doc nodesForXPath:createNode error:&error];
     NSMutableArray* exercise=[[NSMutableArray alloc]init];
     for (GDataXMLElement *resultElement in resultNodes) {
         
-       NSLog(@"%@", resultElement);
-         exercise  = [resultElement elementsForName:@"exercise"];
-        for (GDataXMLElement *singleExc in exercise) {
-              NSLog(@"%@", singleExc);
-             NSArray *singleParts = [singleExc children];
+        NSLog(@"%@", resultElement);
+        exercise  = [resultElement elementsForName:@"exercise"];
+        for (GDataXMLElement *singleExc in exercise)
+        {
+            NSLog(@"%@", singleExc);
+            NSArray *singleParts = [singleExc children];
             NSString* excId=[[NSString alloc]init];
             int excOrder = 0;
             int excTime = 0;
             if(self.lessonData.number!=0)
             {
-            for(GDataXMLElement* partsOfExc in singleParts)
-            {
-                NSLog(@"%@", partsOfExc);
-                
-                
-
-                
+                for(GDataXMLElement* partsOfExc in singleParts)
+                {
+                    NSLog(@"%@", partsOfExc);
                     
                     if([partsOfExc.name isEqualToString:@"id"])
                     {
@@ -99,14 +124,12 @@
                     }
                     else if([partsOfExc.name isEqualToString:@"order"])
                     {
-                     
-                        
                         NSString *stringWithoutSpaces = [partsOfExc.XMLString
                                                          stringByReplacingOccurrencesOfString:@"<order>" withString:@""];
                         NSString* tempOrder = [stringWithoutSpaces
-                                 stringByReplacingOccurrencesOfString:@"</order>" withString:@""];
+                                               stringByReplacingOccurrencesOfString:@"</order>" withString:@""];
                         
-                         excOrder=[tempOrder intValue];
+                        excOrder=[tempOrder intValue];
                     }
                     else if([partsOfExc.name isEqualToString:@"time"])
                     {
@@ -114,27 +137,34 @@
                     }
                     else
                     {
-                        [self.dictionaryOfParams setObject:partsOfExc.XMLString forKey:partsOfExc.name];
+                        NSString *stringWithoutSpaces = [partsOfExc.XMLString
+                                                         stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"<%@>",partsOfExc.name]/*@"<order>"*/ withString:@""];
+                        NSString* paramsValue = [stringWithoutSpaces
+                                               stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"</%@>",partsOfExc.name]/*@"<order>"*/ withString:@""];
+                        
+                        //excOrder=[tempOrder intValue];
+                        [self.dictionaryOfParams setObject:paramsValue forKey:partsOfExc.name];
                     }
-
-                  
+                    
+                    
                     
                 }
                 
-               excId=[self translateExcIdToExcStoryboard:excId];
+                excId=[self translateExcIdToExcStoryboard:excId];
                 
                 SingleExc* newExc=[SingleExc createExc:excId order:excOrder time:excTime params:self.dictionaryOfParams];
                 [self.listOfExercises setObject:newExc forKey:[NSString stringWithFormat:@"%d",excOrder]];
                 self.dictionaryOfParams=[[NSMutableDictionary alloc]init];
-
+                
             }
-                     }
+        }
     }
-
+    
     NSMutableArray *allKeys = [[self.listOfExercises allKeys] mutableCopy];
     NSSortDescriptor* sortOrder = [NSSortDescriptor sortDescriptorWithKey: @"self" ascending: YES];
-     self.sortedExcNumber=[allKeys sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]];
- 
+    //  self.sortedExcNumber=;
+    self.sortedExcNumber=[[NSMutableArray alloc] initWithArray:[allKeys sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]] copyItems:YES];
+    
 }
 
 
@@ -151,15 +181,15 @@
     NSArray* resultNodes = [doc nodesForXPath:createNode error:&error];
     
     for (GDataXMLElement* singleEXC in resultNodes) {
-                NSArray *singleParts = [singleEXC children];
-         for (GDataXMLElement* singlePart in singleParts) {
+        NSArray *singleParts = [singleEXC children];
+        for (GDataXMLElement* singlePart in singleParts) {
             if ([singlePart.XMLString rangeOfString:excId].location != NSNotFound) {
                 NSString *stringWithoutSpaces = [[[singleParts objectAtIndex:1]XMLString]
                                                  stringByReplacingOccurrencesOfString:@"<exc>" withString:@""];
                 excId = [stringWithoutSpaces
-                                                 stringByReplacingOccurrencesOfString:@"</exc>" withString:@""];
+                         stringByReplacingOccurrencesOfString:@"</exc>" withString:@""];
             }
-    }
+        }
     }
     
     return excId;
@@ -204,7 +234,7 @@
     
     //Set the title of the bar button item
     barButtonItem.title = @"Lessons";
-
+    
     
     //Set the bar button item as the Nav Bar's leftBarButtonItem
     //[self.navBarItem setLeftBarButtonItem:barButtonItem animated:YES];
@@ -231,25 +261,25 @@
         self.lessonPart=(LessonPartDispatcherViewController*)segue.destinationViewController;
         
         /*id test=self.controller.viewControllers;
-        id test1=self.controller.view;*/
+         id test1=self.controller.view;*/
         
     }}
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)logOutPush:(id)sender {
-  
-        [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

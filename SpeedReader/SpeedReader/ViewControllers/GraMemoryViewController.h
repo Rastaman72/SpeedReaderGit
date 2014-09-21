@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface GraMemoryViewController : UIViewController
 - (IBAction)sizeChange:(id)sender;
 - (IBAction)sizeDynamic:(id)sender;
 - (IBAction)startPush:(id)sender;
+@property(nonatomic,strong)SharedData* theDataObject;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *sizeDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *sizeSlider;
