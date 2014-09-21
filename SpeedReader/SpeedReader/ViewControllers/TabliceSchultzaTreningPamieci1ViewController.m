@@ -27,29 +27,55 @@
 {
     [super viewDidLoad];
     self.numberDic=[[NSMutableDictionary alloc]init];
-    [self createSlider];
+    self.theDataObject=[self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        [self createSlider];
+        NSUInteger index = (NSUInteger)(self.squareSizeSlider.value + 0.5);
+        [self.squareSizeSlider setValue:index animated:NO];
+        NSNumber *number = self.numbersSquareSize[index]; // <-- This numeric value you want
+        self.squareSize=[number intValue];
+        NSUInteger index1 = (NSUInteger)(self.wordLengthSlider.value + 0.5);
+        [self.wordLengthSlider setValue:index1 animated:NO];
+        NSNumber *number1 = self.numbersWordLength[index1]; // <-- This numeric value you want
+        self.wordSize=[number1 intValue];
+        
+        
+        self.squareSizeCounterLabel.text=[number description];
+        self.wordLengthCounterLabel.text=[number1 description];
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        
+        self.setModeView.hidden=YES;
+        self.squareSizeView.hidden=YES;
+        self.wordLengthView.hidden=YES;
+        self.wordShowTimeView.hidden=YES;
+
+        self.wordSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linewidth"]intValue];
+         self.squareSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"size"]intValue];
+        self.wordShowSlider.value=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"interval"]intValue];
+        
+    }
+    
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
     self.hideNumber=NO;
     
-    NSUInteger index = (NSUInteger)(self.squareSizeSlider.value + 0.5);
-    [self.squareSizeSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersSquareSize[index]; // <-- This numeric value you want
-    self.squareSize=[number intValue];
-    NSUInteger index1 = (NSUInteger)(self.wordLengthSlider.value + 0.5);
-    [self.wordLengthSlider setValue:index1 animated:NO];
-    NSNumber *number1 = self.numbersWordLength[index1]; // <-- This numeric value you want
-    self.wordSize=[number1 intValue];
-
-    
-    self.squareSizeCounterLabel.text=[number description];
-    self.wordLengthCounterLabel.text=[number1 description];
+   
     self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt: self.wordShowSlider.value]description];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
     [self checkOrientataion];
-    self.theDataObject=[self theAppDataObject];
+    
     
     if(self.theDataObject.useOtherVersion)
     {

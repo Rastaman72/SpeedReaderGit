@@ -10,30 +10,29 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface PiramidaMigawkiViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *exerciseTextLabel;
-@property (weak, nonatomic) IBOutlet UISlider *minWordLengthSLider;
-@property (weak, nonatomic) IBOutlet UISlider *maxWordLengthSlider;
-- (IBAction)minWordValueChange:(id)sender;
+
 - (IBAction)maxWordValueChange:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *maxWordLengthCounterLabel;
-@property (weak, nonatomic) IBOutlet UISlider *wordShowTimeSlider;
-@property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
+- (IBAction)minWordValueChange:(id)sender;
+- (IBAction)startPush:(id)sender;
 - (IBAction)wordShowTimeChange:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *minWordLengthView;
-@property (weak, nonatomic) IBOutlet UIView *maxWordLengthView;
-
-@property (weak, nonatomic) IBOutlet UIView *wordShowTimeView;
-
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UILabel *exerciseTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *maxWordLengthCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *minWordLengthCounterLabel;
-@property(nonatomic,assign)int maxLength;
-@property(nonatomic,assign) int minLength;
+@property (weak, nonatomic) IBOutlet UILabel *wordShowTimeCounterLabel;
+@property (weak, nonatomic) IBOutlet UISlider *maxWordLengthSlider;
+@property (weak, nonatomic) IBOutlet UISlider *minWordLengthSLider;
+@property (weak, nonatomic) IBOutlet UISlider *wordShowTimeSlider;
+@property (weak, nonatomic) IBOutlet UIView *maxWordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *minWordLengthView;
+@property (weak, nonatomic) IBOutlet UIView *wordShowTimeView;
 @property(nonatomic,assign) int actuallLength;
+@property(nonatomic,assign) int minLength;
+@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)bool startPush;
+@property(nonatomic,assign)int maxLength;
 @property(nonatomic,assign)int step;
-@property(nonatomic,strong)SharedData* xmlManager;
 @property(nonatomic,strong) NSTimer *scrollingTimer;
 @property(nonatomic,strong)NSString* actuallWord;
-@property (weak, nonatomic) IBOutlet UIButton *startButton;
-- (IBAction)startPush:(id)sender;
-@property(nonatomic,assign)bool startPush;
-@property(nonatomic,assign)bool changePosition;
+@property(nonatomic,strong)SharedData* xmlManager;
 @end

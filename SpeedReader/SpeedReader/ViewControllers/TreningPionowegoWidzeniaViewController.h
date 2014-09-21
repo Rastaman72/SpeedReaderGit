@@ -10,19 +10,19 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface TreningPionowegoWidzeniaViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIView *gameView;
-@property(nonatomic,strong)SharedData* xmlManager;
-@property (weak, nonatomic) IBOutlet UIButton *startButton;
-- (IBAction)startPush:(id)sender;
 
+- (IBAction)numberOfLinesChange:(id)sender;
+- (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UILabel *numbersOfLinesCounterLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numbersOfLinesDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *numbersOfLineSlider;
-@property (weak, nonatomic) IBOutlet UILabel *numbersOfLinesCounterLabel;
-- (IBAction)numberOfLinesChange:(id)sender;
-@property(nonatomic,strong)NSMutableArray* numbersOfLinesArray;
-@property(nonatomic,strong)NSMutableDictionary* objectDic;
-@property(nonatomic,assign)int numbersOfLine;
-@property(nonatomic,assign)int step;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (weak, nonatomic) IBOutlet UIView *numbersOfLineView;
 @property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)int numbersOfLine;
+@property(nonatomic,assign)int step;
+@property(nonatomic,strong)NSMutableArray* numbersOfLinesArray;
+@property(nonatomic,strong)NSMutableDictionary* objectDic;
+@property(nonatomic,strong)SharedData* xmlManager;
 @end

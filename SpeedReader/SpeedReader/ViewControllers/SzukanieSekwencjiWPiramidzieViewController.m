@@ -27,12 +27,30 @@
 {
     [super viewDidLoad];
     self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        self.actuallSize=(int)self.sizeSlider.value;
+        self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
+        
 
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.setModeView.hidden=YES;
+        self.sizeView.hidden=YES;
+        self.actuallSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"wordlength"]intValue];
+        
+    }
     self.mode=NO;
     self.positionY=100;
-    self.actuallSize=(int)self.sizeSlider.value;
-    self.toFind=[[NSString alloc]init];
-    self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
+       self.toFind=[[NSString alloc]init];
     [self create];
     [self createButtons];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];

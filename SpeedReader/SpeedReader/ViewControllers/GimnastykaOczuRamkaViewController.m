@@ -26,6 +26,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        
+    }
+    else
+    {
+        
+        self.speedView.hidden=YES;
+        
+    }
     self.rectangleDic=[[NSMutableDictionary alloc] init];
     [self initFrames];
     [self addFrameToView];
@@ -36,7 +48,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

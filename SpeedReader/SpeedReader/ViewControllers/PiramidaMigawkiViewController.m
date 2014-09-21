@@ -29,12 +29,32 @@
     self.step=2;
     self.actuallLength=3;
     self.xmlManager=[self theAppDataObject];
-    self.minLength=self.minWordLengthSLider.value;
-    self.maxLength=self.maxWordLengthSlider.value;
     
-    self.minWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.minLength]description];
-     self.maxWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.maxLength]description];
-    self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.wordShowTimeSlider.value]description];
+    
+    if (self.xmlManager.excMode) {
+        
+        self.minLength=self.minWordLengthSLider.value;
+        self.maxLength=self.maxWordLengthSlider.value;
+        self.minWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.minLength]description];
+        self.maxWordLengthCounterLabel.text=[[[NSNumber alloc]initWithInt:self.maxLength]description];
+        self.wordShowTimeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.wordShowTimeSlider.value]description];
+    }
+    else
+    {
+        
+        self.minLength=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"min"]intValue];
+        self.maxLength=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"max"]intValue];
+        self.wordShowTimeSlider.value=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"interval"]intValue];
+        
+        
+        self.maxWordLengthView.hidden=YES;
+        self.minWordLengthView.hidden=YES;
+        self.wordShowTimeView.hidden=YES;
+        
+    }
+    
+    
+   
     
     [self getWord];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
@@ -192,4 +212,13 @@
     }
     
 }
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [self.scrollingTimer invalidate];
+    self.scrollingTimer=nil;
+
+}
+
+
 @end

@@ -26,14 +26,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
     
-    self.mode=NO;
+    if (self.theDataObject.excMode) {
+        
+        self.mode=NO;
+        self.actuallSize=(int)self.sizeSlider.value;
+        self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
+        [self createSlider];
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.setModeView.hidden=YES;
+        self.sizeView.hidden=YES;
+        self.numbersOfLineView.hidden=YES;
+        self.wordShowTimeView.hidden=YES;
+        
+        self.choosedNumbersOfLine=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linecount"]intValue];
+        self.choosedSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linewidth"]intValue];
+        self.wordShowTimeSlider.value=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"interval"]intValue];
+
+        
+    }
+    
     self.step=2;
     self.positionY=100;
-    self.actuallSize=(int)self.sizeSlider.value;
+    
     self.toFind=[[NSString alloc]init];
-    self.sizeCounterLabel.text=[[[NSNumber alloc]initWithInt:self.sizeSlider.value]description];
-    [self createSlider];
+    
     [self createGoodAnswer];
     [self create];
     [self createButtons];
@@ -41,6 +67,14 @@
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
     [self checkOrientataion];
     // Do any additional setup after loading the view.
+}
+
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
 }
 
 -(void)checkOrientataion

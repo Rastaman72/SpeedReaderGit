@@ -28,8 +28,22 @@
     [super viewDidLoad];
     self.objectDic=[[NSMutableDictionary alloc]init];
     self.xmlManager=[self theAppDataObject];
+    
+    
+    if (self.xmlManager.excMode) {
+        
+        [self createSlider];
+    }
+    else
+    {
+        
+        
+        self.numbersOfLine=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"linecount"]intValue];
+        self.numbersOfLineView.hidden=YES;
+        
+    }
     self.step=2;
-    [self createSlider];
+    
     [self createNumber];
     [self addObjectToLayer];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];

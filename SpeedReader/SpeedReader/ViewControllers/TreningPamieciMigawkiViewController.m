@@ -46,8 +46,15 @@
     }
     else
     {
-        
       
+            
+            if ([[self.xmlManager.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+                self.mode=NO;
+            }
+            else
+                self.mode=YES;
+        
+            
        
         self.setModeView.hidden=YES;
         self.squareSizeView.hidden=YES;
