@@ -23,6 +23,7 @@
 
 #import "MBProgressHUD.h"
 @interface AppDataObject : NSObject<UIApplicationDelegate,UIImagePickerControllerDelegate>
+@property(nonatomic,assign)int selectLesson;
 @property(nonatomic,strong)NSMutableArray* actuallUserList;
 @property (nonatomic,strong)NSMutableDictionary* importUserList;
 @property (nonatomic,strong)NSMutableArray* userSettings;

@@ -28,6 +28,17 @@
     [super viewDidLoad];
     
     self.xmlManager=[self theAppDataObject];
+      if (self.xmlManager.excMode) {
+    
+        
+    }
+    else
+    {
+        
+        self.textSizeView.hidden=YES;
+        self.circleSizeView.hidden=YES;
+        
+    }
     [self.xmlManager getExercisesText];
     self.exerciseTextView.text=self.xmlManager.exercisesText;
     float fontSize =[[[[NSNumber alloc]initWithInt:self.textSizeSlider.value]description]floatValue];

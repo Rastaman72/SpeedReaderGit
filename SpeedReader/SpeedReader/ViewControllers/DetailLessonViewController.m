@@ -77,6 +77,7 @@
         self.lessonData=lesson;
         [self setLessonParts];
         [self refreshUI];
+        self.theDataObject.selectLesson=lesson.number;
         
     }
     if(self.theDataObject.dismmisView)
@@ -97,7 +98,7 @@
                                                            options:0 error:&error];
     // if (doc == nil) { return nil; }
     NSString* createNode=[NSString stringWithFormat:@"//lesson[nr=\"%d\"]/exercises",self.lessonData.number];
-    
+    self.listOfExercises=[[NSMutableDictionary alloc]init];
     
     NSArray* resultNodes = [doc nodesForXPath:createNode error:&error];
     NSMutableArray* exercise=[[NSMutableArray alloc]init];

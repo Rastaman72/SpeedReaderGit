@@ -26,12 +26,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+          [self createSlider];
+    }
+    else
+    {
+        
+        if ([[self.theDataObject.paramsForSpecifyExc valueForKey:@"type"]isEqualToString:@"char"]) {
+            self.mode=NO;
+        }
+        else
+            self.mode=YES;
+        self.setModeView.hidden=YES;
+        self.wordLengthView.hidden=YES;
+        self.wordSize=[[self.theDataObject.paramsForSpecifyExc valueForKeyPath:@"wordlength"]intValue];
+        
+        
+        
+    }
     self.gameView.layer.sublayers=nil;
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.startPushed=NO;
     self.objectSize=60;
    [self createGoodAnswer];
-    [self createSlider];
+  
     [self createNumber];
     [self addNumberToObject];
     [self addObjectToLayer];
@@ -41,7 +62,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

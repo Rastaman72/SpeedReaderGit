@@ -28,6 +28,17 @@
 {
     [super viewDidLoad];
     self.xmlManager = [self theAppDataObject];
+    
+    if (self.xmlManager.excMode) {
+        
+        
+    }
+    else
+    {
+        self.wordLengthView.hidden=YES;
+        self.wordLengthSlider.value=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"wordlength"]intValue];
+        
+    }
     self.lettersDic=[[NSMutableDictionary alloc]init];
     self.wordCountLabel.text=[[[NSNumber alloc]initWithInt:(int)self.wordLengthSlider.value]description];
 

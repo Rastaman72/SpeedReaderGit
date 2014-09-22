@@ -45,7 +45,7 @@
             self.mode=YES;
         self.setModeView.hidden=YES;
         self.sizeView.hidden=YES;
-        self.actuallSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"wordlength"]intValue];
+        self.actuallSize=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linecount"]intValue];
         
     }
     self.mode=NO;

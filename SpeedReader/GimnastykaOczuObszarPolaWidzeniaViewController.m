@@ -27,6 +27,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        
+    }
+    else
+    {
+        
+       
+        self.speedView.hidden=YES;
+        
+    }
     self.forward=YES;
     self.itWasBack=NO;
     self.round=Begin;
@@ -43,7 +56,13 @@
   
        // Do any additional setup after loading the view.
 }
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 -(void)checkOrientataion
 {

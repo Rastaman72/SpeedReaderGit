@@ -1,0 +1,1209 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <name>
+    <speed>Test szybkości czytania</speed>
+    <comprehension>Test stopnia zrozumienia</comprehension>
+  </name>
+  <desc>
+    <speed>Kliknij 'Play', aby wyświetlić tekst. Staraj się go przeczytać jak najszybciej, ale staraj się też rozumieć jego treść. Niniejszy sprawdzian kończy się testem zrozumienia.</speed>
+    <comprehension>Poniżej widnieje 6 pytań nawiązujących do przeczytanego przed momentem tekstu. Udzielenie odpowiedzi na te pytania pozwoli uzyskać wyznacznik zrozumienia tekstu. Uzyskany wynik nie jest oczywiście dokładny (nie istnieje sposób dokładnego badania stopnia zrozumienia), ale pozwala śledzić postępy.</comprehension>
+  </desc>
+  <test>
+    <nr>0</nr>
+    <text>LUSTRACJA, AMNESTIA I CYKUTA
+
+      Dziś Polską wstrząsają afery związane z teczkami i lustracją osób publicznych. Jeszcze przez wiele miesięcy atmosferę podgrzewać będą zapewne oskarżenia wobec kolejnych polityków. Dlaczego tak się dzieje i kto jest winny temu zamieszaniu? Zwolennicy lustracji powołują się na: "grubą kreskę" i zatrzymanie dekomunizacji w początkach III RP. Przeciwnicy lustracji twierdzą, że archiwa Służby Bezpieczeństwa należało od razu zalać betonem (lub spalić), żeby ubeckie teczki nikomu nie zatruwały życia. Historyk starożytności powie natomiast, że oba stanowiska są równie naiwne. Zacznijmy jednak od początku, czyli właściwie od końca.
+
+      Kiedy w 399 roku przed Chrystusem po wypiciu kielicha trucizny w państwowym więzieniu umierał w Atenach Sokrates, ani jego wierni uczniowie, ani liczni wrogowie - nie przypuszczali, że śmierć ta wyznacza początek nowych czasów. W osobie Sokratesa europejska myśl znalazła intelektualną inspirację - był wszak mistrzem Platona, ojca antycznej, a i nowożytnej filozofii. Z kolei postawa Sokratesa w obliczu śmierci wyznaczyła ideał intelektualnej niezgody na narzucane przez "milczącą większość" standardy. Podczas procesu filozof zdecydował się wręcz na prowokację. Gdy już zapadła wstępna decyzja o uznaniu jego winy, zapytano go, jaką proponuje dla siebie karę. Mógł zasugerować wygnanie albo wysoką grzywnę, on jednak poprosił o… dożywotnie utrzymanie na koszt państwa, po raz ostatni podkreślając, jak użyteczny dla Aten jest jego niespokojny i niepokojący umysł. Zachowanie Sokratesa zaskakuje do dziś. Była to prawdopodobnie bohaterska forma sądowego samobójstwa, choć możliwe jest też, że filozof zdecydował się na prowokację w przeświadczeniu, że i tak nie uniknie najwyższej kary.
+      Sokrates został oskarżony o "psucie młodzieży" i o "nieuznawanie bogów, których uznaje państwo", czyli o religijne odszczepieństwo. Ten drugi zarzut był wyssany z palca. Chodziło wyłącznie o to, by skompromitować filozofa w oczach sądu, składającego się z pięciuset zwykłych, a więc pobożnych i konserwatywnych obywateli. Zarzut pierwszy był merytorycznie poważniejszy.
+      Przez lata Sokrates nauczał ateńską młodzież - na ulicach, publicznych placach i w prywatnych domach. Wszędzie podążały za nim liczne grupy słuchaczy, z czasem słuchanie go stało się wręcz modne. Jego nauki podważały przyjęty ogólnie system wartości, kwestionowały uznane autorytety, zmuszały rozmówców do tego, by dostrzegli swoją głupotę, hipokryzję, niewiedzę. Sokrates, który "wiedział, że nic nie wie", tego samego nauczał innych.
+      Pod koniec wyniszczającej wojny peloponeskiej (432-404 p.n.e.) grupa przeciwników demokracji - pod osłoną zwycięskiego wojska spartańskiego - przejęła władzę w Atenach. Do kolaboracji szybko dołączyło okrucieństwo i brutalne metody sprawowania władzy, tak że reżim wkrótce zyskał miano "Trzydziestu Tyranów". Sokrates wykazał się wówczas rzadką w tamtych czasach odwagą. Odmówił jakiejkolwiek współpracy z "juntą", co jej przedstawiciele dobrze sobie zapamiętali.
+      Miał jednak pecha. W gronie "Trzydziestu" znalazło się kilku przedstawicieli ateńskiej młodzieży - błyskotliwych młodzieńców ze znakomitych arystokratycznych rodów, którzy przedtem, jak wielu ich rówieśników, fascynowali się naukami filozofa. W 403 r. p.n.e. obywatele powstali przeciwko reżimowi "Trzydziestu", a po czterech latach obwinili Sokratesa - zagorzałego demokratę - o nadużycia i okrucieństwa, których dopuścili się jego prawdziwi lub domniemani uczniowie. A zarzucano im m.in. to, że w czasie swoich krótkich rządów wydali na śmierć półtora tysiąca obywateli. W oczach Ateńczyków Sokrates stał się więc wychowawcą zdrajców i morderców. Jego nauki, polegające na podważaniu tradycyjnej moralności i tradycyjnych wartości,bliskich "szarym Ateńczykom", uznano za źródło wszelkiego zła.
+
+      Polityka w starożytnej Grecji była działalnością bardzo mocno związaną z życiem osobistym. Obowiązkiem każdego polityka było w tej samej mierze służyć ojczyźnie, co wspomagać i popierać… krewnych i przyjaciół. Uważano, że ten, kto potrafi zadbać o bliskich, również o ojczyznę zadba odpowiednio. A ponieważ nie istniały partie polityczne, wszystkie alianse działające w interesie publicznym miały charakter prywatny i towarzyski. Naturalną metodą walki politycznej było popieranie "swoich" i bezpardonowe tępienie przeciwników. Zdarzało się, że gdy jedno stronnictwo wygrywało, zgarniało dosłownie wszystko - od władzy w państwie po majątki pokonanych, którzy musieli chronić się na wygnaniu, bo mordy polityczne też nie należały w Grecji do rzadkości. Gdy sytuacja się odwracała, wygnańcy wracali do kraju, pałając żądzą zemsty. Jednak "demokraci" wracający z wygnania po upadku rządów "Trzydziestu" uznali, że należy skończyć z takimi metodami uprawiania polityki i że jedyną gwarancją stabilności państwa po okresie władzy uzurpatorów jest "amnestia", dosłownie "puszczenie w niepamięć". To greckie słowo miało w przyszłości zrobić ogromną karierę.
+      W 403 roku p.n.e. Ateńczycy postanowili, że nie wolno oskarżać nikogo o przestępstwa popełniane w przeszłości, a więc i o zbrodnie z czasów "Trzydziestu". Amnestia nie objęła oligarchicznych prowodyrów, wyjątkiem były też czyny popełnione własnoręcznie. Posunięto się jednak do tego, że jakiekolwiek publiczne powracanie do spraw z ponurego okresu tyranii mogło zostać ukarane śmiercią. Nie można było np. oskarżyć osoby, która pośrednio przyczyniła się do śmierci naszego krewnego czy przyjaciela. I wszystko w trosce o spokój w państwie. Możemy się tylko domyślać, jakie frustracje gromadziły się pod powierzchnią pozornie spokojnego ateńskiego życia politycznego. W latach 400-399 p.n.e. emocje wreszcie wybuchły. W ciągu kilku miesięcy odbyło się parę sądowych procesów, w których w istocie chodziło o coś zupełnie innego, niż głosił oficjalny akt oskarżenia.
+      Często słyszymy powiedzenie, że gdy nie wiadomo, o co chodzi, to na pewno chodzi o pieniądze. Swoje reguły ma także polityka. Ci, którzy mają władzę - i dotyczy to nie tylko starożytnej Grecji - gdy nie chcą powiedzieć, o co naprawdę im chodzi, mówią o zagrożeniu tradycyjnej moralności i religii. Ateńskie procesy dokładnie potwierdzały tę regułę.
+
+      Pewnego zamożnego Ateńczyka Andokidesa oskarżono o uchybienie religijnemu zakazowi, którego w ogóle nie był świadomy. Kilkanaście lat wcześniej, w 415 r. p.n.e., pełnił rolę "świadka koronnego" w śledztwie, które miało wykryć domniemany spisek części ateńskich elit przeciwko demokracji. Spisek prawdopodobnie w ogóle nie istniał, ale ateński lud ogarnęła zbiorowa histeria, na fali której większość aresztowanych skazano na śmierć i konfiskatę mienia. Oskarżano ich nie tylko o chęć obalenia ustroju, ale również o bezbożność oraz świętokradztwo, m.in. uszkodzenie stojących w całym mieście posągów boga Hermesa oraz o parodiowanie najświętszych ateńskich ceremonii religijnych - misteriów eleuzyńskich. Tych, których nie udało się schwytać, wyklęto, wykluczając ich z życia religijnego, co stanowiło wtedy karę niezwykle dotkliwą.
+      Jednym z podejrzanych był Andokides, który ocalił życie tylko dzięki temu, że doniósł na swoich znajomych. Krewni i przyjaciele ofiar tego "polowania na czarownice" zemścili się po latach, oskarżając z kolei Andokidesa o udział w pewnych ceremoniach religijnych, do czego, jako rzekomo winny świętokradztwa, nie miał prawa. To, że już w 415 roku został uniewinniony, nie miało dla oskarżycieli znaczenia.
+      W 399 r. p.n.e. także Sokratesa oskarżono o bezbożność. Filozof miał wystarczająco wielu wrogów, by jego życie, podobnie jak Andokidesa, znalazło się w niebezpieczeństwie. Przez lata ośmieszał i bezpardonowo krytykował wielu możnych i pomniejszych Ateńczyków, przeciwko wielu z nich nastawił - rzecz szczególnie bolesna - ich własnych synów. Nic dziwnego, że niejeden Ateńczyk czekał tylko na okazję, by dać Sokratesowi nauczkę.
+      Przedsiębiorca Anytos, którego syn poszedł kiedyś za Sokratesem, zamiast pilnować rodzinnego interesu, wynajął poetę Meletosa, by ten sformułował oskarżenie przeciwko "gorszycielowi". Zostało ono potem wspólnie wniesione do sądu przez sfrustrowanych ojców. Pretekst, który znaleźli, rzekoma "bezbożność" filozofa, skutecznie ukierunkował falę długo tłumionej niechęci. "Zamrożenie" politycznych emocji Ateńczyków, którzy przez lata nie mogli rozliczyć się z przeszłością i osobistymi wrogami, ułatwiło sprawę oskarżycielom.
+      Czy Sokrates mógłby pożyć dłużej, gdyby nie frustrująca "amnestia" z 403 roku? Być może, należy jednak przypuszczać, że w żadnym razie nie uniknąłby kłopotów. Gdyby rozliczenia były możliwe, już wcześniej wysunięto by wobec niego oskarżenia natury politycznej - dla wielu był przecież wychowawcą tyranów. Amnestia na jakiś czas odwlekła tylko atak na kontrowersyjnego filozofa.
+
+      Zastępczy proces wydaje się naturalnym epilogiem dramatycznych dziejów Aten przełomu V i IV wieku p.n.e. Epilogiem tym smutniejszym, że w 399 roku p.n.e. prawdziwi sprawcy tragedii byli już i tak poza zasięgiem karzącej ręki ateńskiego ludu. Oligarchowie z grupy "Trzydziestu" albo wcześniej zginęli w walkach z demokratami, albo w porę uciekli zagranicę. Jak zawsze bolesnej przeszłości musieli stawić czoła ludzie, którzy niewiele zawinili, lub byli zgoła niewinni - ci, którzy pozostali pod ręką.
+      Jaki morał można wysnuć z tej ateńskiej historii? Prosty i smutny zarazem. Napełniany przez lata politycznego ucisku rezerwuar nienawiści jest zwykle tak wielki, że bolesnych skutków pamięci nie zaleczą ani "oczyszczające" rozliczenia, ani zamiatanie problemów pod dywan. Zarówno narodowe pojednanie pod pięknie brzmiącym hasłem odpuszczenia win i "zapomnienia", jak i próby rozliczenia winnych prowadzą tylko do cierpień, gdy ani zapomnieć, ani niczego sprawiedliwie wyjaśnić do końca się nie udaje.
+      Do tego pesymistycznego morału można jednak dołożyć jeszcze jeden, bardziej już konstruktywny, choć równie banalny: nie wierzmy politykom i publicystom, którzy wiedzą lepiej i obiecują, że za najbliższym rogiem czeka na nas raj na ziemi - czy to raj dziejowego pojednania, czy też raj historycznej sprawiedliwości. To wszystko już było. I to wiele razy.
+
+      Marek Węcowski
+      Focus Grudzień 2006 (str.62)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Według starożytnych greków polityk powinien dbać o swój kraj:</q>
+        <a1>...tak samo jak o rodzinę i przyjaciół.</a1>
+        <a2>...jak o własne życie. Stawiać kraj ponad wszystko.</a2>
+        <a3>...tak samo jak przychylność bogów.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Sokrates zginął w 399 r. p.n.e. :</q>
+        <a1>...śmiercią samobójczą na wygnaniu.</a1>
+        <a2>...z wyroku sądu. Został skazany na śmierć.</a2>
+        <a3>...został zamordowany przez swoich wrogów.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Grupa "Trzydziestu" to:</q>
+        <a1>Skład sędziów w procesie Sokratesa.</a1>
+        <a2>Grupa tyranów będąca u władzy.</a2>
+        <a3>Uczniowie Sokratesa głoszący jego poglądy po śmierci.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Sokrates umarł:</q>
+        <a1>W Atenach.</a1>
+        <a2>W Rzymie.</a2>
+        <a3>Nie jest znane dokładne miejsce śmierci Sokratesa.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Kto ostatecznie został ukarany za brutalne rządy w Atenach?</q>
+        <a1>Sokrates.</a1>
+        <a2>Nikt. Ogłoszono amnestię i winnym darowano winy.</a2>
+        <a3>Właściwie niewinne osoby.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Czy autor tekstu wspomina i którymś z synów Sokratesa?</q>
+        <a1>Tak, w pierwszej części tekstu.</a1>
+        <a2>Tak, w końcówce tekstu.</a2>
+        <a3>Nie, tekst nie dotyczy żadnego z synów Sokratesa.</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>1</nr>
+    <text>PROGNOZA ZDROWIA
+
+      Należy mieć się na baczności w trakcie zmian pogody i unikać w tym czasie puszczania krwi z żył, wszelkich wypalań i stosowania noża - takie zalecenia dawał starożytnym lekarzom Hipokrates. Dziś podobną rolę zaczynają odgrywać precyzyjne prognozy pogody, które uwzględniają wpływ zmian temperatury, wilgotności i ciśnienia atmosferycznego na zdrowie człowieka. W ten sposób można przewidzieć z kilkudniowym wyprzedzeniem, że tysiące osób będą zagrożone ostrym atakiem astmy, zawałem serca czy udarem mózgu. Meteorologia pozwoli wielu z nich uniknąć choroby, a ci, którzy będą musieli poddać się leczeniu, nie będą czekali w kolejkach. "Dzięki medycznym prognozom pogody udało nam się lepiej zorganizować pracę szpitala i zaoszczędzić 400 tys. funtów rocznie" - twierdzi prof. William Bird z RoyalBerkshire Hospital w Anglii, jeden z pionierów badań nad biometeorologią. Ta szybko rozwijająca się dziedzina nauki ma niewiele wspólnego z powszechnie znanym zjawiskiem meteoropatii. Aż 70 proc. Europejczyków skarży się na złe samopoczucie w czasie zmian pogody, ale w większości przypadków jest to ból głowy czy zmęczenie. Tymczasem osoby cierpiące na nadciśnienie lub zbyt wysoki poziom cholesterolu mogą umrzeć tylko dlatego, że jesienią lub zimą temperatura za oknem spadła o 10 stopni. W takich warunkach ryzyko ataku serca rośnie u nich o 13 proc., a u tych, którzy wcześniej przeżyli już zawał, aż o 38 proc. - wynika z badań naukowców z uniwersytetu w Lille. Dlatego już niedługo prognozy pogody będą zawierać nie tylko komunikaty dla alergików czy informacje o natężeniu promieniowania UV, ale także konkretne porady dla osób cierpiących na astmę czy chorobę wieńcową.
+
+      Lekarze szacują, że letnia fala upałów w 2004 r. zabiła od 22 do 35 tys. Europejczyków. Podobnie mogło być latem 2006 roku. Ludzki organizm radzi sobie z upałem w ciągu dnia, jeśli nocą ma szansę się ochłodzić i odpocząć. Jednak dwa lata temu - podobnie jak w tym roku - także noce były bardzo upalne. Ofiarą wysokiej temperatury padły głównie osoby starsze i cierpiące na przewlekłe schorzenia, u których najłatwiej dochodzi do odwodnienia, zaburzeń krzepnięcia krwi i skoków ciśnienia tętniczego. Wielu zejść można by jednak uniknąć, gdyby w Europie funkcjonowały systemy ostrzegawcze takie jak w USA.W Filadelfii informacje o nadejściu fali upałów pojawiają się z wyprzedzeniem, a władze udostępniają mieszkańcom infolinie, organizują samopomoc i otwierają klimatyzowane schronienia dla najuboższych. "Ten system uchronił przed śmiercią dziesiątki osób podczas wyjątkowo gorącego lata w 1995 r." - zapewnia dr Laurence Kalkstein z University of Delaware.
+      Niestety, nasze ministerstwo zdrowia zorganizowało oficjalną konferencję dopiero wtedy, gdy największe upały już minęły".
+      Jeszcze lepsze efekty można uzyskać dzięki zimowym prognozom. Z badań prowadzonych w wielu krajach europejskich - w tym w Polsce - wynika, że każda fala mrozów zabija wiele osób nie tylko wskutek wychłodzenia organizmu czy wypadków i urazów na śliskich drogach. Niska temperatura zwiększa obciążenie układu krążenia i prowadzi do zagęszczenia krwi, co sprzyja pękaniu blaszek miażdżycowych i powstawaniu zakrzepów. Dwa dni po gwałtownym spadku temperatury znacznie wzrasta liczba zawałów serca, po kolejnych trzech dniach do szpitali trafia więcej niż zwykle ludzi z udarem mózgu. Zgony z powodu chorób układu oddechowego, a zwłaszcza tzw. przewlekłej obturacyjnej choroby płuc (POChP), osiągają maksimum dopiero po 12 dniach od początku fali mrozów, ponieważ są związane z powoli rozwijającymi się infekcjami wirusowymi i bakteryjnymi.
+      Zabić mogą także nagłe skoki ciśnienia atmosferycznego. Gdy szybko spada ono poniżej najlepiej tolerowanej wartości 1016 hektopaskali, może dojść do niedokrwienia mięśnia sercowego. Robin Cook, były minister spraw zagranicznych Wielkiej Brytanii, zmarł na zawał podczas pobytu w górach, gdzie ciśnienie jest niższe. Z kolei gwałtowne nadejście wyżu pogarsza stan zdrowia u osób z nadciśnieniem, prowadząc do zwiększonego ryzyka ataku serca i udaru krwotocznego mózgu. Dla alergików najgroźniejsze są letnie burze, w czasie których dochodzi do gwałtownego wzrostu stężenia alergenów w powietrzu. Powoduje to silne ataki astmatyczne nawet u tych osób, które wcześniej uskarżały się jedynie na łagodniejsze dolegliwości, takie jak katar sienny. W 1994 r. po burzy nad Londynem szpitalne izby przyjęć zostały wypełnione przez tysiące pacjentów z nasiloną dusznością. Dwa lata temu władze miasta zdążyły ostrzec alergików, dzięki czemu wiele osób zostało w domu lub przyjęło dodatkowe dawki leków, osłabiające objawy choroby.
+
+      Zmiany pogody bardziej szkodzą mieszkańcom miast niż wsi - głównie z powodu wysokiej zabudowy, która ogranicza ruch mas powietrza i zwiększa subiektywne odczucie gorąca. "W 'kanionach' ulic temperatura odczuwana przez mieszkańców sięga 65 stopni - to tak, jak-byśmy nagle weszli do sauny" - porównuje prof. Krzysztof Błażejczyk z Instytutu Geografii i Przestrzennego Zagospodarowania Polskiej Akademii Nauk. Z prowadzonych przez niego badań wynika, że warunki pogodowe mogą znacznie różnić się między poszczególnymi miastami. Warszawę najlepiej odwiedzać wiosną (między 25 kwietnia a 10 maja) lub jesienią (od 4 września do 26 października). Zimą stolica - podobnie jak inne metropolie - staje się wyjątkowo "niezdrowa" z powodu temperatury i złej jakości powietrza.
+      W rejonach miejskich zanieczyszczenia atmosferyczne mogą być równie ważne dla stanu zdrowia mieszkańców jak temperatura czy ciśnienie. Toksyczne gazy prowadzą do niedotlenienia organizmu i podwyższenia ciśnienia tętniczego, a drobne pyły wnikają do płuc i krwiobiegu, gdzie mogą uszkadzać naczynia wieńcowe. W metropolii takiej jak Ateny wzrost stężenia tlenku węgla w powietrzu o jeden miligram na metr sześcienny oznacza dwa śmiertelne zawały więcej w ciągu dnia. Badania we Francji wykazały, że gdy poziom pyłów zawartych w spalinach samochodowych przekracza 25 mg/m sześc., do szpitali trafia o 91 proc. więcej ofiar ataku serca. Według szacunków Światowej Organizacji Zdrowia (WHO), zanieczyszczonym powietrzem oddycha 5 mld mieszkańców świata, a rocznie wskutek tego umierają trzy miliony ludzi.
+
+      Specjaliści radzą, aby osoby mające problemy z układem krążenia unikały miejsc o dużym stężeniu toksycznych substancji: zakorkowanych dróg, gęstej zabudowy miejskiej, okolic zakładów przemysłowych. Kiedy poziom zanieczyszczeń wzrasta, najlepiej byłoby w ogóle nie wychodzić z domu. Dopiero od niedawna w Internecie można sprawdzić, jaka jest jakość powietrza w miastach, które monitoruje ponad sto stacji pomiarowych w całej Polsce.
+      Biometeorolodzy koncentrują się na danych dotyczących pogody. "Cały czas bierzemy udział w międzynarodowych projektach i doskonalimy nasz komputerowy model Menex, który pozwala przewidywać statystyczny wzrost zachorowań na różne jednostki chorobowe związany ze zmianami atmosferycznymi. Niestety polska służba zdrowia nie jest zainteresowana korzystaniem z takich analiz" - mówi prof. Błażejczyk. Tymczasem systemy biometeorologiczne zaczynają już działać w Australii i Wielkiej Brytanii, a w USA za rok w prognozach pogody mają pojawić się ostrzeżenia dla osób chorych na serce.
+      Lekarze twierdzą, że w większości wypadków wystarczą proste środki zapobiegawcze, takie jak cieplejsze ubranie czy zadbanie o ogrzanie domu podczas mrozów. "W przyszłości prognozy zdrowotne będą przepisywane przez lekarza tak jak leki, a do pacjentów trafią za pośrednictwem Internetu lub SMS-ów" - przewiduje prof. William Bird. Z badań klimatologów wynika, że zapotrzebowanie na takie usługi będzie coraz większe, ponieważ globalne ocieplenie sprzyja gwałtownym zmianom pogody - silnym mrozom czy letnim falom gorąca.
+
+      Jan Stradowski
+      Focus Grudzień 2006 (str.68)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Przy spadku temperatury na zewnątrz o 10 stopni Celsjusza ryzyko wystąpienia ataku serca u osób po zawale wzrasta o:</q>
+        <a1>13,00%</a1>
+        <a2>28,00%</a2>
+        <a3>38,00%</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Latem skoki temperatury pomiędzy dniem i nocą:</q>
+        <a1>Pozwalają odpocząć organizmowi w nocy.</a1>
+        <a2>Powodują, że organizm nie może się przyzwyczaić do wysokich temperatur.</a2>
+        <a3>Powodują wzrost liczby ataków alergicznych.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Najprędzej po gwałtownym spadku temperatury wzrasta:</q>
+        <a1>Liczba zawałów.</a1>
+        <a2>Liczba udarów mózgu.</a2>
+        <a3>Liczba złamań i potłuczeń.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Optymalna wartość ciśnienia atmosferycznego dla ludzi wynosi:</q>
+        <a1>980</a1>
+        <a2>1016</a2>
+        <a3>1018</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. W wielkich miastach najzdrowiej jest przebywać:</q>
+        <a1>Zimą.</a1>
+        <a2>Wiosną.</a2>
+        <a3>Latem.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Czy prawdą jest, że letnie burze oczyszczają powietrze?</q>
+        <a1>Nie, jest wręcz przeciwnie.</a1>
+        <a2>Tak, powietrze po burzy jest nawilżone i zjonizowane.</a2>
+        <a3>Tak, burza ochładza, a padający deszcz czyści powietrze.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>2</nr>
+    <text>PIERZASTE IQ
+
+      Ma duży mózg, jest towarzyski, jego dzieciństwo trwa długo, a w tym czasie zdobywa wiedzę o świecie od rodziców i rówieśników. Ma skłonność do wynajdowania nowych sposobów rozwiązania problemów - od wytwarzania i używania narzędzi, przez przewidywanie reakcji innego osobnika, po manipulację jego stanem świadomości. Kto to taki? Człowiek? Dziecko? A może szympans lub tresowany pies? Nie - to zwykły gawron.
+
+      Choć wspólny przodek ssaków i ptaków żył blisko 280 mln lat temu, w obu grupach kręgowców są gatunki cechujące się tak samo wysokim IQ. O zachowania inteligentne podejrzewano małpy człekokształtne jeszcze w czasach, gdy cała wiedza o nich pochodziła od treserów cyrkowych. Natomiast dopiero w latach 90. ubiegłego stulecia okazało się, że i ptasie móżdżki mogą być całkiem mądre. Inteligencja to domena przede wszystkim papug (Psittacidae) i krukowatych (Corvidae). Wśród tych drugich wytwarzanie narzędzi - działalność, wydawałoby się, charakterystyczna tylko dla ludzi i kilku gatunków małp - okazało się powszechną praktyką. W swoim środowisku naturalnym potrafią wykorzystać patyki i liście, na przykład do wydłubania larw ze szczelin drzew. Nawet w laboratorium, gdzie do dyspozycji mają inny zestaw przyborów, potrafią improwizować. Wrona nowokaledońska o imieniu Betty zasłynęła z produkcji haków z drutu, dzięki którym dobierała się do pożywienia. Naukowcy podejrzewają ptaki także o tworzenie kultur posługiwania się narzędziami. O kulturze mówimy wtedy, gdy lokalna populacja wymyśli jakiś innowacyjny sposób wykorzystywania środowiska naturalnego do zdobywania pożywienia. Zwyczaj ten jest przekazywany z pokolenia na pokolenie i nie występuje wśród innych populacji tego gatunku. Kulturę łupania orzechów stworzyły japońskie wrony z miasta Sendai, które siadały na ulicznym sygnalizatorze, zrzucały orzechy i czekały, aż światło zmieni się na czerwone. Wtedy, z zachowaniem wszelkich reguł ruchu drogowego, wchodziły na pasy i zbierały rozgniecione przez samochody orzechy. Z kolei kulturę dobierania się do śmietnika stworzyły angielskie gawrony mieszkające w pobliżu jednej z autostrad. Nauczyły się współpracować przy otwieraniu klapy od kubła, by następnie wspólnie przebrać jego zawartość. Taka innowacyjność, umiejętność plastycznego dostosowania zachowania do nowych okoliczności - zwłaszcza w odniesieniu do wytwarzania narzędzi - świadczy o wyższej inteligencji, przypisywanej dotychczas tylko ssakom naczelnym.
+
+      Co więcej, Natan Emery z uniwersytetu w Cambridge wykazał, że niektóre gatunki ptaków potrafią wczuć się w stan psychiczny innych osobników - domyślają się, o czym inny ptak myśli, i na tej podstawie podejmują odpowiednie działania. Wiele gatunków krukowatych chowa pożywienie - nawet do 30 tysięcy nasion w kilku tysiącach miejsc - aby sięgnąć po nie, gdy znajdą się w trudnej sytuacji. I jak to zwykle bywa, zdarzają się kradzieże. Aby nie zostać z pustą lodówką w środku zimy, trzeba tak chować zapasy, żeby nikt tego nie widział. Przede wszystkim trzeba się ustrzec podglądaczy. Krukowate rozumieją, że jeśli jakiś ptak ma skierowany wzrok w stronę kryjówki, to znaczy, że wie i zapamięta, iż tam może być pokarm. Dlatego ptaki te rozwinęły szereg strategii, aby wywieść w pole złodzieja. Czekają, aż uwaga konkurenta na chwilę skoncentruje się na innym ptaku. Albo tylko udają, że coś zakopują, lub zmieniają co chwila kryjówkę tak, aby podglądający konkurent się pogubił. Zachowania te - typowe dla wyższych ssaków naczelnych - świadczą, że również ptaki mogą mieć "teorię umysłu", czyli wyobrażenia na temat procesów myślowych innych osobników swojego gatunku.
+      Do niezwykłych osiągnięć ptasiego umysłu należy - przypisywana do niedawna wyłącznie naczelnym - zdolność uczenia się reguł, w przeciwieństwie do "wkuwania na pamięć". Test wygląda tak: do wyboru są dwa kolory A i B, za wybranie jednego (A) jest nagroda, za drugi (B) nie ma nagrody. W kolejnych powtórzeniach trzeba więc wybierać kolor A i nie zmieniać tej strategii, dopóki będzie nagroda. Ale trzeba natychmiast zmienić preferencje, jeśli okaże się, że kolor A przestał przynosić nagrody. Po pewnym czasie eksperymentatorzy wprowadzają następne kolory: C, D itd. Gołębie, które mają niezwykłą pamięć fotograficzną (mogą zapamiętać setki obiektów, rozróżniać style w malarstwie!), uczą się na pamięć wybierania pierwszego koloru, za który była nagroda (A), i nie reagują zmianą strategii, gdy za ten wybór nie ma już nagrody. Krukowate i małpy za każdym razem, gdy wprowadzane są nowe pary kolorów, stosują opanowaną na początku regułę "nagroda - nie zmieniaj; pudło - zmieniaj".Zła sława, która otacza "ptasi móżdżek", wzięła się prawdopodobnie z XIX-wiecznego myślenia o naturze jak o drabinie, tzw. scala naturae. Na samym jej dole umieszczano najprostsze organizmy jednokomórkowe, wyżej organizmy bardziej złożone, a najwyżej - oczywiście nas. Tymczasem ewolucja chodzi różnymi drogami, które czasami się krzyżują. Dlatego dwa gatunki bardzo daleko spokrewnione mogą być pod pewnymi względami podobne. Decydujące znaczenie ma tzw. presja selekcyjna, czyli warunki środowiskowe, które wywołały powstanie podobnych cech.
+
+      Podstawowe pytanie brzmi: dlaczego nie wszystkie zwierzęta są inteligentne? Przecież zawsze lepiej być mądrzejszym niż głupszym. Ale inteligencja jest kosztowna. Mózg to narząd o bardzo dużym zapotrzebowaniu na energię i nie każde zwierzę może sobie pozwolić na taki luksus. Zwłaszcza jeśli i tak skutecznie rozmnaża się z mniejszym mózgiem. Gazela może z powodzeniem uniknąć drapieżnika dzięki sile nóg. Dlatego zwierzęta najczęściej inwestują w "tańsze" energetycznie tkanki, na przykład w mięśnie.
+      W jakich więc warunkach inteligencja staje się opłacalna? Pierwsze badania koncentrowały się na ekologii inteligentnych zwierząt, czyli na ich związkach ze środowiskiem, w którym żyją. Okazało się na przykład, że małpy liściożerne mają mniejsze mózgi niż małpy owocożerne. Owoce są zasobem, który pojawia się i znika. Trzeba nie tylko pamiętać, gdzie rośnie owocodajne drzewo, ale także kiedy jego owoce są jadalne. Zwierzęta odżywiające się owocami żyją na dużo większym obszarze niż liściożerne, zatem muszą również lepiej orientować się w terenie. Wysunięto więc hipotezę, że większe mózgi mogły ewoluować wraz z większymi wymaganiami intelektualnymi, związanymi z wyszukiwaniem pożywienia.
+      Inna hipoteza akcentowała trudności techniczne w pozyskiwaniu owoców. Większość z nich trzeba obrobić - zdjąć kolce, twardą skorupę, gorzką skórę itp. Ale mogło być przecież tak, że inteligentniejsze z innych przyczyn zwierzęta zaczęły wykorzystywać zasoby niedostępne mniej inteligentnym, czyli pożywne owoce.
+
+      Pojawiły się więc przypuszczenia, że inteligencja może być związana z wymaganiami życia społecznego. Tym tropem poszedł Robin Dunbar, wybitny prymatolog z uniwersytetu w Liverpoolu. Zmierzył stosunek wielkości kresomózgowia - tej części mózgu, która ewolucyjnie pojawiła się najpóźniej (i jest odpowiedzialna za podejmowanie decyzji i rozwiązywanie problemów) - do wielkości ciała. Założył, że im proporcjonalnie większy jest mózg, tym większa będzie inteligencja. A potem porównał mierzoną w ten sposób inteligencję z liczbą pobratymców, z którymi osobnik danego gatunku na co dzień się kontaktuje. Okazało się, że im większy mózg, tym większa grupa, lub na odwrót - im większa grupa, tym inteligentniejsze osobniki. Podobne badania przeprowadzono na innych zwierzętach uznawanych za inteligentne - waleniach, hienach, lwach, słoniach, krukowatych - wyniki były podobne.
+      W ten sposób powstała hipoteza inteligencji społecznej, według której życie w grupie promuje inteligencję. Ale dowody przemawiające za tą hipotezą pojawiły się dopiero w 2003 roku. Były to dwie prace naukowe dotyczące pawianów. Pierwsza dowiodła, że pawiany są inteligentne i rozumieją złożone układy społeczne: wiedzą, kto ma jaką pozycję w grupie, kto z kim jest spokrewniony i jak ma się do tego wszystkiego ich własna pozycja w grupie. Druga praca pokazała, że od zrozumienia układów wiążących członków grupy zależy sukces rozrodczy samicy. Oznacza to, że niska rangą samica może odchować więcej młodych, jeśli tylko będzie się orientować, kogo i kiedy należy iskać, a kogo i kiedy można pogryźć. Jest to dowód na to, że dzięki samej tylko inteligencji można osiągnąć większy sukces reprodukcyjny - a to przecież najważniejsze dla ewolucji.
+      Jednak nie musi to być jedyna możliwa "recepta na inteligencję". Inną koncepcję przedstawił Daniel Sol z Universitat Autònoma w Barcelonie. Dowiódł, że ptaki o większym mózgu są lepiej predysponowane do wynajdywania innowacyjnych rozwiązań nowych problemów i w związku z tym odnoszą większy sukces w zasiedlaniu nowych, nieznanych dotąd terenów. Ta hipoteza nie wyklucza wszystkich poprzednich, lecz osadza je w szerszych ramach.
+      Zmienność i nieprzewidywalność środowiska - czy to naturalnego, czy społecznego - jest sednem wszystkich dotychczasowych scenariuszy ewolucji inteligencji. Duży mózg jest potrzebny do odnajdywania jadalnych owoców ale też do ich technicznej "obróbki" przed zjedzeniem. Hipoteza inteligencji społecznej koncentruje się na przydatności dużego mózgu w radzeniu sobie ze zmiennymi sojuszami w grupie społecznej. Sol twierdzi więc, że wspólnym mianownikiem tych wszystkich koncepcji jest stawianie czoła kapryśnej naturze. Wygląda na to, że tylko te zwierzęta, które prowadzą nudne życie, nie mają potrzeby wykształcenia inteligencji.
+
+      Magdalena Tilszer
+      Focus Grudzień 2006 (str.84)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Z jakiego kraju wywodzi się kultura łupania orzechów przez wrony?</q>
+        <a1>Z Japonii.</a1>
+        <a2>Z Chin.</a2>
+        <a3>Z Włoch.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Inteligentniejsze zwierzęta:</q>
+        <a1>...nie szukają pokarmu, jedzą to co łatwiej znaleźć. Np. Liście.</a1>
+        <a2>...wędrują samotnie i unikają życia w stadzie.</a2>
+        <a3>...mają większe trudności ze znalezieniem pokarmu.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Czy wielkość mózgu u zwierząt przekłada się na ich inteligencję?</q>
+        <a1>Tak, im proporcjonalnie do ciała mózg jest większy, tym inteligentniejszy jest jego właściciel.</a1>
+        <a2>Tak, mniejszy mózg może efektywniej pracować, bo spala mniej energii.</a2>
+        <a3>Nie, wielkość mózgu nie ma znaczenia.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Robin Dunbar badający wpływ proporcji wielkości mózgu do wielkości ciała na inteligencję pracował:</q>
+        <a1>Na uniwersytecie w Barcelonie.</a1>
+        <a2>Na uniwersytecie w Paryżu.</a2>
+        <a3>Na uniwersytecie w Liverpoolu.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Który ptak najlepiej radzi sobie z zapamiętywaniem obrazów?</q>
+        <a1>Sroka.</a1>
+        <a2>Gołąb.</a2>
+        <a3>Sowa.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Daniel Sol prowadził badania na temat:</q>
+        <a1>Ptaków.</a1>
+        <a2>Szympansów.</a2>
+        <a3>Goryli.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>3</nr>
+    <text>ZAGRAJ O PRZEZNACZENIE
+
+      Evelyn Marie Adams wygrała w 1985 roku cztery miliony dolarów w loterii stanu New Jersey. Cztery lata później ponownie spróbowała szczęścia i wygrała kolejne półtora miliona.
+      Maureen Wilcox w 1980 roku kupiła losy na loterie w dwóch stanach. Skreśliła co prawda zwycięskie liczby z obu loterii, ale nic nie wygrała - numery z Rhode Island zwyciężyły bowiem w Massachusetts, a te z Massachusetts wygrały na Rhode Island. Podobnego pecha miał Stephen Carter. Kupił gazetę, w której znalazł zwycięski los, ale... w wyniku pomyłki drukarskiej tę samą nagrodę wygrało 30 tysięcy osób i każdy dostał po kilka funtów.
+
+      Większość ludzi utożsamia szczęście z fartem - pomyślnym zrządzeniem losu. Od czego to szczęście zależy? Dlaczego jednym stale dopisuje, podczas gdy inni jak magnes przyciągają pecha?
+      Starożytni rozwiązali problem - wymyślili przeznaczenie. Teoria zakładała, że losy człowieka są z góry określone, a wszelkie zrządzenia trzeba przyjmować z pokorą. Niezwykłą gorliwość w tej mierze wykazywał Epiktet. W "Encheiridionie" pisze: "Prowadź mię tedy, Zeusie, i ty: Przeznaczenie. Rad pójdę i bez zwłoki na wasze skinienie. Jaką w życiu mi losy wyznaczyły drogą: bunt - zbrodnią, iść - konieczność, skargi - nie pomogą. Kto przed potęgą losu gnie czoło beztroskie, ten dla mnie mędrzec, poznał tajemnice boskie".
+      Grecy wierzyli, że losem władają Mojry - boginie przeznaczenia: Kloto przędła nici żywota, Lachesis je przydzielała, a Atropos - przecinała. Rzymianie Mojry przemianowali na Parki, wyznawali też Fatum - bóstwo nieodwołalnej konieczności.
+      I tak ludzkość, pogodzona z losem, trwała w apatii. Aż w latach 60. XX wieku Martin E.P. Seligman, przewodniczący Amerykańskiego Towarzystwa Psychologicznego, postawił tezę, że ludzi można oduczyć bezradności i nauczyć optymizmu. Zapoczątkowana przez niego psychologia pozytywna stała się opozycją wobec psychologii negatywnej, która zdominowała wiek XX. Jak obliczył prof. Janusz Czapiński, w PsycInfo, elektronicznej bazie danych Psychological Abstracts, od 1967 do 1999 roku na 21 artykułów o negatywnych emocjach przypadał zaledwie jeden o emocjach pozytywnych!
+      To się musiało zmienić. Psychologia pozytywna potwierdziła bowiem, że ludzie są w dużej mierze kowalami własnego losu. Że jeśli się odpowiednio do życia nastawią, zostaną odpowiednio nagrodzeni. Zawrotną karierę zrobiło pozytywne myślenie, którym syciły się poradniki. Tematem zajęli się też poważnie naukowcy. Wyniki ich badań oferują rzetelną wiedzę, a nie tylko zachętę.
+      Jednym z najsłynniejszych badaczy fartu i pecha jest brytyjski psycholog, dr Richard Wiseman. Swoją karierę zaczynał jako... iluzjonista. Niezwykła przeszłość sprawiła, że postanowił zmierzyć się z niezwykłymi obszarami psychologii, którym nie poświęcano wcześniej wiele uwagi.
+
+      Okazało się, że osoby, którym szczęście sprzyja w finansach, mają je również w życiu osobistym, a ci, którym nie wiedzie się w pracy, brakuje też szczęścia w miłości. Tak jakby do jednych los stale się uśmiechał, podczas gdy inni byli skazani na nieszczęście. Wszyscy byli przekonani, że winny jest przypadek. Ów traf, który w kilka sekund potrafi odmienić życie człowieka, prof. Władysław Tatarkiewicz nazwał zewnętrznym fatum. Ale obok niego istnieje też fatum wewnętrzne - ostrzegał. Nasza natura.
+      To, czy człowiek jest szczęśliwy, zależy bowiem nie tylko od tego, co go w życiu spotyka, ale i od tego, jak na te wydarzenia reaguje. "Aby być zadowolonym, nie dość jest mieć majątek, zdrowie czy urodę, lecz potrzeba w nich znajdować upodobanie" - twierdził prof. Tatarkiewicz w słynnym traktacie "O szczęściu". Szczęściarze w istocie charakteryzują się cechami, których brakuje pechowcom. I na odwrót. Tak jakby ludzie ci żyli w dwóch różnych światach - zachowując się w zupełnie odmienny sposób, w efekcie kreują własne szczęście lub nieszczęście.
+      Tatarkiewicz podzielił ich na dwie grupy. Cyklotymicy interesują się światem, życzliwie patrzą na ludzi, wdzięcznie przyjmują dary losu, łatwo przystosowują się do otoczenia, są towarzyscy, mili, dobroduszni, otwarci i naturalni. "Odczuwają rzeczy po prostu, a to, co odczuwają, objawiają na zewnątrz. Dostosowują się do warunków, nie upierają przy swoim, żyją bez fanatyzmu i napięcia" - pisał. Co innego schizotymicy. Ci są skryci i powściągliwi, choć przeczuleni. Ludzi traktują powierzchownie albo z dystansem. Najlepiej czują się w swoim towarzystwie, tłumią emocje i łatwo wpadają w kompleksy.
+      Przynależność do którejś z tych grup zdaje się decydować o predestynacji do szczęścia. Cechy takie jak otwartość, luz czy optymizm ułatwiają życie, podczas gdy autyzm, znerwicowanie i pesymizm je utrudniają. "Rzec by można, że sama idea trwałego i pogodnego szczęścia jest tworem cyklotymików; w umysłach schizotymików nigdy by nie powstała" - pisał Tatarkiewicz. "Szczęśliwi mają naprawdę inną osobowość od nieszczęśliwych: są mniej neurotyczni, bardziej ekstrawertywni, otwarci, ugodowi i sumienni. Problem w tym, że zarówno szczęście, jak i cechy osobowości są w znacznej mierze wrodzone" - pisze prof. Janusz Czapiński w "Osobowości szczęśliwego człowieka". Czy w takim razie pech to wyrok? Niekoniecznie.
+      "Szczęściu różnych ludzi stoją na drodze różne przeszkody i różne są sposoby, jakimi mogą je zwalczać. Jednym łatwiej będzie przemienić fizyczne, innym psychiczne warunki życia, jednym świat, innym siebie, jednym potrzebny będzie wysiłek, innym przeszkody usuną się same" - pisał Tatarkiewicz.
+      Wiseman poszedł jeszcze dalej i stworzył gotową receptę na to, jak odmienić los. Udowodnił, że szczęściarzy i pechowców nie różnią zdolności parapsychiczne ani poziom inteligencji, lecz podstawowe cechy osobowości: ekstrawersja, neurotyzmi stopień otwartości. Cechy te przekładają się bezpośrednio na styl bycia i sposób zachowania, w którym Wiseman dopatrzył się reguł i opisał je w książce "Kod szczęścia": "Szczęściarze, nie zdając sobie z tego sprawy, stosują cztery podstawowe prawa, które pozwalają im pełniej korzystać z łask losu. Jeśli zrozumiemy te prawa, zrozumiemy istotę szczęścia". Oto one.
+
+      PRAWO PIERWSZE
+      "Szczęściarze tworzą, zauważają i wykorzystują przypadkowe okazje, a los częściej niż innym podsuwa im szanse do wykorzystania". Sami zainteresowani twierdzą, że znaleźli się po prostu we właściwym miejscu i czasie. Wiseman - że znaleźli się we właściwym stanie umysłu. Szczęściarze to zwykle ekstrawertycy. Przystępni i towarzyscy, łatwo nawiązują przyjaźnie i podtrzymują kontakty. Częściej się uśmiechają, pokazują otwarte dłonie, nie krzyżują rąk i nóg, patrzą w oczy - ich język ciała przyciąga ludzi. A im więcej osób poznają, tym większa szansa, że natkną się na kogoś, kto pozytywnie odmieni ich życie.
+      Wiseman podaje przykład. Załóżmy, że każdy z nas zna 300 osób, z którymi jest po imieniu. Gdy spotykamy znajomego, jesteśmy o krok od 300 jego znajomych. Jeśli akurat szukamy pracy, on może szepnąć o nas komuś, kto być może zna kogoś, kto będzie chciał nas zatrudnić. I nagle okazuje się, że jesteśmy o dwa uściski dłoni od 90 tys. osób (300 x 300) - ogromny potencjał przypadkowych okazji. Sieć szczęścia.
+      Pechowcy oczywiście nie doświadczają takich zbiegów okoliczności (bo nie są towarzyscy) albo spotykają ludzi, którzy destrukcyjnie wpływają na ich los (ich postawa prowokuje). Zazwyczaj są neurotykami. Spięci i zestresowani skupiają się na jednej sprawie (np. znalezieniu pracy lub partnera), przez to strumień ich uwagi jest zawężony. Nie dostrzegają więc potencjalnych okazji. Inaczej szczęściarze - spokojni i rozluźnieni zauważają okazje, które pozytywnie wpływają na ich życie. "Nauczyłem się, że gdybym miał sztywne wymagania, nie miałbym tyle szczęścia. Ale ponieważ podchodzę do życia na luzie i zdaję się na los, wszystko idzie mi lepiej" - mówi John, uczestnik badań.
+      Szczęśliwi ludzie uwielbiają niespodzianki, zmiany i nowości. Chętnie eksperymentują, są niekonwencjonalni i otwarci. Tak zwiększają swoje szanse na spotkanie ciekawych ludzi i okazji. W przeciwieństwie do nich pechowcy chodzą utartymi ścieżkami - wakacje spędzają w tym samym miejscu, do pracy jeżdżą tą samą drogą, zadają się z tymi samymi ludźmi. Ograniczają w ten sposób możliwości odmiany losu. Chodząc codziennie w to samo miejsce po grzyby, szybko je wyzbieramy. Ale wystarczy wybrać się do innej części lasu, żeby wrócić z pełnym koszem.
+
+      PRAWO DRUGIE
+      "Szczęściarze podejmują trafne decyzje, słuchając swojej intuicji i przeczuć. Decyzje pechowców zwykle kończą się porażką". Wiadomo, że osoby pewnego typu zachowują się w określony sposób. Nasza podświadomość potrafi wyłapywać takie wzory i w stosownych momentach - gdy sytuacja lub osoba wydaje się niepewna - uruchamia alarm pod postacią złych przeczuć. Szczęściarze częściej niż pechowcy ufają intuicji przy podejmowaniu decyzji prywatnych i zawodowych. Zazwyczaj dobrze na tym wychodzą.
+      Pechowcy - przeciwnie. Wierzą w to, w co chcą wierzyć, zaprzeczają faktom. Ufają nierzetelnym ludziom, kupują akcje przed krachem i obstawiają konie, które się przewracają. Nie ufają swojej intuicji, a jeśli już zapali im się czerwona lampka, to ją bagatelizują. Potem żałują.
+      Intuicję można wzmacniać i rozwijać, zwiększając udział szczęścia w życiu. I szczęściarze to robią. 40% z nich medytuje, kontempluje albo inaczej oczyszcza umysł. Podobnie czyni tylko 18%-30% pechowców.
+
+      PRAWO TRZECIE
+      "Marzenia i ambicje szczęściarzy często się spełniają, podczas gdy pechowcy rzadko osiągają w życiu to, czego pragną". Przyczyną są ich inne oczekiwania.
+      Szczęściarze to urodzeni optymiści - wierzą, że przyszłość będzie wspaniała, a los przychylny, więc wytrwale dążą do celu. Bagatelizują niepowodzenia i uczą się na błędach - sądzą, że wyjdą im na dobre.
+      Niepowodzenia pechowców zwykle prowadzą do klęsk. Jako pesymiści zakładają, że wszystko pójdzie źle, i wciąż czekają na przepisową "dawkę pecha". "Jeśli zaczyna mi się układać, wydaje mi się, że zaraz przyjdzie ktoś w wielkich buciorach, rozdepcze mnie i powie: o nie, ona się za dobrze bawi - i znów będzie po staremu" - mówi jedna z podopiecznych Wisemana. "Gdybym wygrała pieniądze na loterii, spodziewałabym się, że ktoś mi je zabierze, albo że wcale nic nie wygrałam, albo coś w tym stylu" - dodaje inna. Już Epikur mówił, że ludzie nie są szczęśliwi, bo sobie wyobrażają, że szczęśliwi być nie mogą.
+      Zakładając, że przyszłość będzie nieudana, pechowcy szybko się poddają, zamykając sobie drogę do realizacji marzeń. Nie chodzą na randki, więc nie znajdują partnerów. Nie grają na loteriach, więc nic nie wygrywają. Nie podchodzą do egzaminów, więc ich nie zdają. Nie szukają pracy, więc jej nie znajdują. Ich nastawienie wpływa na reakcje innych. Myślenie przekształca się w rzeczywistość.
+      Czarne myśli są nie tylko pechotwórcze, ale i szkodliwe - można się od nich rozchorować. Wywołują stres, a to wzmaga podatność na wypadki i choroby.
+      Przykładem jest historia Susan. Jako dziecko rozbiła sobie czaszkę o kamień, zbierając stokrotki. Uwalniali ją strażnicy, gdy noga ugrzęzła jej między prętami kraty. Została uderzona w głowę tablicą, która spadła ze ściany budynku. Jej partner, jadąc na randkę, miał wypadek motocyklowy i połamał nogi. Następny wpadł na szybę i złamał nos. Kościół, w którym miała wziąć ślub, spłonął dwa dni przed uroczystością. Zdając egzamin na prawo jazdy, wjechała w mur i rozbiła samochód. Podczas 80-kilometrowej podróży uczestniczyła w ośmiu wypadkach.
+
+      PRAWO CZWARTE
+      "Szczęściarze potrafią przekształcić swojego pecha w szczęście". Podświadomie stosują techniki, które chronią ich przed złośliwościami losu.
+      Wyobrażają sobie, że ich sprawy mogły potoczyć się gorzej i porównują się z ludźmi, którzy nie mieli tyle szczęścia, co oni.
+      Starają się patrzeć perspektywicznie i zakładają, że z ich pecha wyniknie coś dobrego. Potknięcia traktują jak nauczki na przyszłość. Wierzą, że to nie jest fatum, lecz wyzwanie, któremu należy stawić czoła.
+      Nie rozpamiętują swoich nieszczęść i niepowodzeń. Potrafią sobie "odpuścić" i żyć dalej. Zachowując dobry nastrój, zachowują dobre wspomnienia.
+      Nie poddają się łatwo i podchodzą do problemu konstruktywnie. Jeśli trzeba, spojrzą na niego z innej perspektywy albo znajdują nowatorskie rozwiązanie. Zdobędą brązowy medal - są dumni, że stanęli na podium. W wypadku złamią rękę - cieszą się, że uszli z życiem itd. Przecież mogło być gorzej!
+      Tymczasem pechowcy traktują niepowodzenia jak wyrok, przeznaczenie, którego nie da się zmienić. Nie podejmują więc walki albo szybko się poddają, zamykają się w swoim świecie, duszą emocje. "Co byś zrobił, gdybyś miał trzy nieudane randki z rzędu?" - zapytał Wiseman. "Próbowałbym aż do skutku" - odpowiedział szczęściarz. "Zostałbym księdzem" - stwierdził pechowiec. Ten sam problem, inne postrzeganie. Trzeba umieć mieć szczęście.
+
+      Joanna Nikodemska
+      Focus Listopad 2006 (str.36)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Kto ma większe skłonności do medytacji?</q>
+        <a1>Ludzie, którzy chcą odmienić swój los.</a1>
+        <a2>Pechowcy, odreagowują w ten sposób stres.</a2>
+        <a3>Ludzie, którym dopisuje szczęście.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Kto jest autorem traktatu "O szczęściu"?</q>
+        <a1>Prof. Tatarkiewicz.</a1>
+        <a2>Prof. Czapiński.</a2>
+        <a3>Dr Wiseman.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Kto rozbił głowę zbierając stokrotki?</q>
+        <a1>Stephen.</a1>
+        <a2>Maureen.</a2>
+        <a3>Susan.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Kiedy narodziła się psychologia pozytywna?</q>
+        <a1>W IV wieku p.n.e.</a1>
+        <a2>W XVIII wieku n.e.</a2>
+        <a3>W XX wieku n.e.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Kto wierzył, że losem władają Majory – boginie przeznaczenia?</q>
+        <a1>Rzymianie.</a1>
+        <a2>Grecy.</a2>
+        <a3>Egipcjanie.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Kto częściej kieruje się intuicją?</q>
+        <a1>Szczęściarze.</a1>
+        <a2>Pechowcy.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>4</nr>
+    <text>PIĘĆ OSÓB NA METR KWADRATOWY
+
+      Shenzhen to miasto o największej migracji w całych Chinach. Według nieoficjalnych danych, w ciągu ostatnich 7 lat populacja wzrosła tu z 4 do 10 mln (podczas gdy we Wrocławiu liczba mieszkańców jedynie się podwoiła w ciągu 42 lat). Pięć osób na m2. Gdyby nie uruchomiono tu metra, miasto byłoby zupełnie sparaliżowane.
+      Codziennie wieczorem na postoju przy granicy Hongkongu z Shenzhen na taksówki czeka 200 osób. W weekendy centra handlowe i targowiska stają się morzem ludzi, w którym trzeba umieć się poruszać. Tłum, hałas, pośpiech, przepychanie i nadeptywanie bez przeprosin to tu coś normalnego. "Nadmiar bodźców męczy i to bez względu na granice wytrzymałości. A tłum jest takim właśnie nadmiarem" - mówi psycholog kliniczny Tatiana Ostaszewska-Mosak. "Trzeba być czujnym, uważnym, ciągle zdolnym do szybkiego reagowania". To wykańcza.
+      W czasie chińskich świąt środki komunikacji są tak oblegane, że na pociąg z Shenzhen do Changshy w prowincji Hunan bilet trzeba kupić z pięciodniowym wyprzedzeniem. Turystyczne atrakcje i takie miejscowości, jak Pekin, Xi’an, Hangzhou czy Sanya, przeżywają najazd rodzimych turystów. Tylko Chińczycy potrafią cieszyć się z wypraw, podczas których trzeba czekać nawet w kolejce do parku.
+
+      Na turystów z Chin otworzył się też Hongkong, specjalny region administracyjny (około 7 mln mieszkańców, 6 osób na m2). W sobotnie popołudnie na Nathan Road przy skrzyżowaniu z Austin Road dochodzi do korków ulicznych wśród przechodniów! O ile w Hongkongu obowiązują przepisy porządkujące ruch pieszych, o tyle w pozostałych miastach Chin człowiek jest bezradny, sponiewierany przez tłum, który dyktuje, gdzie i kiedy możemy się zatrzymać, ile czasu mamy na zjedzenie obiadu, zanim ustawi się kolejka do naszego stolika.
+      Wielu mieszkańców Kraju Środka przyzwyczaiło się do takiego życia, klasy liczące 60 uczniów nikogo nie dziwią. 30-letnią Vicky, Chinkę, która wybrała się na wycieczkę po Europie, zdziwiła pustka i cisza, "jakby nikt tam nie żył". Jej koleżanka Liu we Wrocławiu wbiegła do autobusu i szybko zajęła siedzenie. Po chwili uświadomiła sobie, że jest tam pięć osób i nie trzeba jak w Chinach walczyć o miejsce.
+
+      Chińczycy są coraz bogatsi, kupują samochody - w godzinach szczytu Kanton i Shenzhen są sparaliżowane. Jedynym ratunkiem jest metro, ale i tam trzeba czekać w kolejce. Wieczorem złapanie taksówki w centrum miasta to wyczyn, który wymaga ryzykownego biegania między samochodami. Oba miasta łączy szybka kolej, a mimo to ciągle jest zatłoczona. "Skąd się biorą ci ludzie? Przecież pociągi jeżdżą tak często, a tu ciągle tysiąc osób w poczekalni!" - Radek, który przyjechał do Kantonu na targi, nie mógł uwierzyć, jaki tłum podróżuje ze stolicy prowincji Guangdong do biznesowego Shenzhen.
+      Uciążliwość życia w przeludnionym mieście daje się we znaki szczególnie obcokrajowcom, chociaż Amerykanie i Hindusi, których populacja jest drugą co do wielkości na świecie, lepiej radzą sobie z tłumem. "Niektórzy potrafią się wyłączyć, zatopić w wewnętrznym świecie i odizolować od setek ludzi, z którymi się stykają się często w bezpośredni sposób" - mówi Tatiana Ostaszewska-Mosak. Najtrudniej przyzwyczaić się osobom, które wcześniej mieszkały na spokojnej prowincji. "Niektórzy reagują na takie otoczenie rozdrażnieniem, stresem, co może przerodzić się w agresję, frustrację lub depresję. To osoby o tzw. reaktywności. Im wiele bodźców przeszkadza, szybko się pobudzają, a to utrudnia funkcjonowanie" - dodaje psycholog.
+      Polityka jednego dziecka w Chinach dotyczy już tylko biednych rodzin. Na wsi ludzie zmuszani są do aborcji albo nie otrzymują zezwolenia na potomstwo od władz. W miastach kobiety same zgłaszają się na usunięcie ciąży, mają łatwy dostęp do środków antykoncepcyjnych. Coraz więcej osób stać też na płacenie kar za "nadprogramowe" dzieci. 30-letni Yao żali się, że jego żona chciała usunąć ciążę, gdy dowiedziała się, że będą mieli córkę: "Namówiłem ją, by tego nie robiła. Teraz chce drugiego dziecka, chłopca, dlatego odkładam pieniądze". Fabryka, w której Yao zajmuje się sprzedażą zagraniczną, dobrze prosperuje, więc pewnie mu się uda. Jego przykład dowodzi, że polityka jednego dziecka w Kraju Środka już nie pomaga, a jedynie zmienia naturę problemu, jak twierdzi prof. Zhang Juwei z Chińskiej Akademii Nauk Społecznych. Na jedną kobietę w Chinach przypada 1,7 dziecka - każda ma więc teoretycznie prawie dwójkę. Wiele z nich nie pracuje, a te, które chcą robić karierę, nie muszą rezygnować z macierzyństwa - stać je na opiekunki. Jeśli kolejne pokolenie będzie równie zamożne i założy taką samą rodzinę, populacja Chin będzie się systematycznie powiększać."W ciągu najbliższych pięciu lat Chiny spodziewają się kolejnej fali przyrostu liczby ludności, a pierwsze dzieci z pokolenia 'jednego dziecka' wchodzą właśnie w wiek reprodukcyjny, co sprawia, że jeszcze trudniej utrzymać niską liczbę narodzin" - przyznaje minister Zhang Weiqing, odpowiedzialny za populację i planowanie rodziny.
+      Kolejny problem Chin to nadmiar mężczyzn. Na każde 100 dziewczynek rodzi się 119 chłopców. W przyszłości wielu mężczyzn nie będzie miało szans na znalezienie partnerki i założenie rodziny. To rezultat chińskiej mentalności - przez lata dziewczynki uważano za bezużyteczne dla rodziny. Tymczasem dziś wiele młodych Chinek ma doskonale płatną pracę w mieście i wspiera rodzinę na wsi. Rząd dostrzegł problem, rodziny z córkami mogą liczyć na pomoc finansową i zgodę na kolejnego potomka. Ale czy nie za późno? Różnica w proporcjach płci jest bardzo poważna.
+      W 2025 r. populacja Chin ma przekroczyć 1 mld 400 mln. W 1997 r. na każde 100 dzieci poniżej piątego roku życia przypadało 80 osób w wieku powyżej 65 lat. Za 20 lat na 100 dzieci przypadnie 250 emerytów. Ludzie starsi będą więc przeważać, zmniejszy się liczba dzieci i osób w wieku reprodukcyjnym. Dopiero od tego czasu populacja Kraju Środka może się stabilizować.
+      O Chińczykach krąży wiele złośliwych anegdot. Między innymi taka, że gdyby wszyscy podskoczyli jednocześnie, wytrąciliby Ziemię z orbity. Pozostaje modlić się, aby najliczniejszy naród świata nigdy nie wykonał synchronicznego skoku.
+
+      Bartłomiej Magierowski
+      Focus Luty 2007 (str. 39)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. O jakim problemie Chin jest ten artykuł?</q>
+        <a1>Ich populacja wciąż rośnie.</a1>
+        <a2>Ich populacja drastycznie maleje.</a2>
+        <a3>Ludność migruje na północ Chin.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Co się dzieje w czasie chińskich świąt?</q>
+        <a1>Środki komunikacji są oblegane tak, że bilet trzeba kupować kilka dni wcześniej.</a1>
+        <a2>Można podróżować bez biletu.</a2>
+        <a3>Środki komunikacji świecą pustkami.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Co o chińskich klasach w szkołach wspomina artykuł?</q>
+        <a1>W klasach jest przeciętnie 2 razy więcej chłopców niż dziewcząt.</a1>
+        <a2>Klasy liczące 60 osób nikogo nie dziwią.</a2>
+        <a3>Przeciętna chińska szkoła kształci 200 klas.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Kogo dotyczy polityka jednego dziecka w Chinach?</q>
+        <a1>Małżeństw ze stażem większym niż 5 lat.</a1>
+        <a2>Ta polityka już nie istnieje.</a2>
+        <a3>Jedynie biednych rodzin.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. W Chinach rodzi się więcej:</q>
+        <a1>Mężczyzn.</a1>
+        <a2>Kobiet.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. O jakiej złośliwej anegdocie dot. Chińczyków wspomina autor?</q>
+        <a1>Autor nie przytacza żadnej anegdoty.</a1>
+        <a2>Gdyby wszyscy razem weszli do oceanu, to na Ziemi zniknęłoby większość plaż.</a2>
+        <a3>Gdyby wszyscy razem podskoczyli wytrąciliby Ziemię z orbity.</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>5</nr>
+    <text>KTO NAM UKRADŁ SAMOCHODY?
+
+      Głosami międzynarodowego jury samochodem roku zostaje Syrena 110! - tu rozlegają się oklaski, a sylwetka najnowszego auta z fabryki na warszawskim Żeraniu trafia na okładki wszystkich magazynów motoryzacyjnych Europy. Marzenia? Niestety, tak. Ale piekielnie bliskie rzeczywistości.
+      Współczesny samochód miejski to z reguły tak zwany hatchback - zwarte auto z dużą klapą na "plecach", dzięki której nawet małym samochodem można przewieźć szafę. Nic dziwnego, że hatchbacki podbiły świat. Za pierwszy seryjny samochód tego typu uchodzi słynny Renault 16 z 1965 roku. Okazuje się jednak, że to wcale nie Francuzi zbudowali pierwszego hatchbacka!
+
+      Na początku lat 60. w Biurze Konstrukcyjnym Przemysłu Motoryzacyjnego (BKPMot) w Warszawie toczyły się prace nad autem, które zastąpiłoby Syrenę. Zadaniem zaprojektowania nadwozia obarczono nieżyjącego już inżyniera Andrzeja Zgliczyńskiego. Ten okazał się nie lada wizjonerem. Przewidując, że samochód będzie wykorzystywany do różnych celów, wymyślił, że auto osobowe powinno być hybrydą auta dostawczego. Dlatego rozmiary pierwszego prototypu - małej limuzyny nazwanej roboczo "alfa" - dopasował właśnie do pralki "Frani" - szczytu marzeń obywatela PRL. Co prawda aby załadować pralkę do auta, należało wyjąć przedni fotel pasażera; nie było to zbyt praktyczne. Szczęśliwie jednak w kolejnych dwóch prototypach ("beta" i "delta") zmieniła się koncepcja napędu - silnik z tylnej części nadwozia powędrował pod przednią maskę. Zgliczyński wpadł wtedy na pomysł, by "Franię" spróbować upchnąć w bagażniku, i z tyłu nadwozia umieścił duże trzecie drzwi, tak typowe dla współczesnych hatchbacków.
+      Wkrótce potem, w 1964 roku - jednocześnie z pierwszymi zdjęciami Renaulta 16 - pokazano publicznie dojrzały prototyp Syreny 110 - stuprocentowego hatchbacka!
+      Oba samochody powstawały niemal jednocześnie i wygląda na to, że nikt nikogo nie podpatrywał. Jest jednak pewne "ale".
+
+      Jak wspomina Zdzisław Podbielski, dziś ekspert motoryzacyjny, wówczas pracujący w BKP-Mot, zagraniczni goście, także z Francji, bywali w polskim biurze i oglądali prototypy inżyniera Zgliczyńskiego. - "Edward Loth (pracujący przy tworzeniu zespołów napędowych prototypów) był wówczas prezesem międzynarodowej federacji samochodowej i miał rozległe kontakty" - wspomina Podbielski. Nie przypuszcza, by Francuzi wzorowali się na Syrenie 110, ale przyznaje, że mogli widzieć "betę". Czy zatem załadowana do bagażnika "Frania" przysłużyła się do zdobycia przez Renaulta 16 tytułu Samochodu Roku 1966?
+      Żadnych dowodów nie ma, ale podglądania pomysłów nie można wykluczyć. Jak mówi Andrzej Kiński, ekspert wojskowy, zorientowany w pracy wywiadów: "Byliśmy z Francją w przeciwstawnych blokach wojskowych. To normalne, że skoro jest ambasada, to w tej ambasadzie działa jakiś wywiad MSZ, wywiad wojskowy, tak jak w każdym ważniejszym kraju świata".
+      Syrenę 110 możemy oglądać do dziś, głównie dzięki temu, że powstało aż 30 prototypów. Jeden egzemplarz stoi w Muzeum Techniki, co najmniej jeszcze jedna sztuka została z pietyzmem odrestaurowana przez kolekcjonera.
+
+      O ile historia Syreny 110 składa się z przypuszczeń i domysłów, to dzieje nowej wersji Warszawy są wręcz sensacyjne. Zaczęło się od rządowego zamówienia, pod koniec lat 50., we włoskiej pracowni wzorniczej Ghia, nowoczesnej karoserii dla przestarzałej "garbuski". Włosi wywiązali się z umowy, ale pomysł wydawania tysięcy dolarów na zachodni projekt nadwozia doklejonego do muzealnej reszty auta szybko umarł.
+      W 1961 roku zespół projektantów FSO zaczął prace nad zupełnie nowym samochodem - Warszawą 210. Trzy lata później pokazano jego prototyp. I tu zaczyna się zagadka.
+      Samochód - choć, jak na owe czasy, całkiem nowoczesny i na dodatek niebrzydki - nie wszedł do produkcji, ponieważ za rogiem czaił się już plan kontraktu na zakup licencji Fiata 125. A co się stało z prototypem?
+      Zbigniew Skoczek, dziś dziennikarz motoryzacyjny, pod koniec lat 60. pracował w Ośrodku Badawczo-Rozwojowym FSO. - "Widziałem Warszawę 210 dokładnie przykrytą plandeką, schowaną przed wzrokiem ciekawskich" - wspomina. "Około 1973 roku auto zostało przekazane do Krakowa, później trafiło do prowincjonalnego Muzeum Staropolskiego w Sielpi koło Końskich. W monografii wydanej na 25-lecie FSO pojawiły się zdjęcia wszystkich żerańskich prototypów, zabrakło tylko tego jednego samochodu! Wyglądało to tak, jakby komuś zależało, by o Warszawie 210 wszyscy zapomnieli. Dlaczego?".
+
+      W 1967 roku w fabryce w Gorki ruszyła, na razie na pół gwizdka, produkcja nowej Wołgi GAZ-24. Auto było łudząco podobne do Warszawy 210. Przypadek? Przy projekcie nadwozia Warszawy pracował inżynier Stanisław Łukaszewicz. Pod koniec lat 70. w rozmowie ze Zbigniewem Skoczkiem ujawnił, że w 1964 roku powstał nie jeden, ale dwa prototypy - ten drugi miał zostać wysłany na Wschód i posłużyć Rosjanom z Gorki.
+      Czy istotnie tak było? Inżynier Łukaszewicz już nie żyje, a nikt inny nie potwierdza rewelacji o "radzieckim śladzie". Mirosław Górski, szef zespołu projektowego, mówi wprost: - "To bujda. Był tylko jeden prototyp. Cały czas miałem wóz i dokumentację w swoich rękach".Tego samego zdania jest Roman Skwarek, wówczas główny konstruktor FSO.
+      Zbigniew Skoczek zwraca jednak uwagę na pewien istotny fakt. - "Warszawę 210 ukryto, ponieważ całą dokumentację przekazano Rosjanom" - mówi.
+      Trzeba jednak przyznać, że, choć oba samochody są do siebie podobne, to silniki i zawieszenie Rosjanie mieli na pewno swoje. Linia nadwozia była ponadto zgodna z panującą wówczas modą - jeśli Warszawa 210 była wzorowana na Fordzie Falconie, to rosyjscy inżynierowie tym bardziej mogli skorzystać z tego samego wzoru, wiadomo przecież, z jakim lekceważeniem traktowali kwestię praw autorskich. A "buzia" Wołgi bardziej nawet przypomina właśnie Forda (model 1962) niż Warszawę. - "Nawet jeżeli ukradli, nie róbmy z tego afery " - uspokaja Władysław Skoczyński, który w FSO pracował od 1951 roku. - "Współpraca z ludźmi z Gorki była bardzo dobra, wszystko świetnie szło, z zaufaniem, poświęceniem, bez żadnych politycznych podtekstów".
+      "Sowieci ściągali od nas różne rzeczy" - zauważa jednak Zdzisław Podbielski. - "Przykład? Dostawcza Gazela. Interesowali się Lublinem, miał powstać wspólny samochód, powstała Gazela".
+
+      Zapomnianą Warszawę 210 udało się odnaleźć w 1997 roku po tym, jak jeden z czytelników "Motoru" zadzwonił do redakcji, z informacją, że w muzeum w Sielpi stoi coś, co może być opisaną wcześniej na łamach tygodnika prototypową Warszawą. Jak na eksponat muzealny auto było w opłakanym stanie. Po interwencji Zbigniewa Skoczka, dyrekcja Muzeum Techniki poczuła się w obowiązku zająć Warszawą i od kilku lat możemy ją wreszcie oglądać.
+      Plotka o tajemniczej kradzieży Warszawy trafiła na podatny grunt. W Internecie można znaleźć karkołomną hipotezę, że drugi prototyp pojechał nie do Gorki, ale w drugą stronę - do Eisenach, gdzie posłużył wschodnim Niemcom przy projektowaniu nadwozia nowego Wartburga. W warszawskim Muzeum Techniki na wystawie, zorganizowanej z okazji 55-lecia FSO, za szybą Warszawy 210 leżała nawet oficjalna, muzealna metryczka auta z informacją o "tajemniczych losach" drugiego egzemplarza! Starzy pracownicy FSO pukają się w czoło.
+
+      Tak samo nie dowiemy się już niczego o najładniejszym chyba polskim samochodzie - Syrenie Sport, z nadwoziem projektu zmarłego dwa lata temu Cezarego Nawrota. Auto, pokazane publicznie na imprezie pierwszomajowej w 1960 roku, zrobiło furorę. Wszyscy pytali, kiedy wejdzie do produkcji.
+      Syrena Sport okazała się jednak najbardziej pechowym polskim prototypem. Nie dość, że powstała tylko w jednym egzemplarzu, to została pokrajana na plasterki, i to na polecenie samego głównego konstruktora fabryki. Tej decyzji do dziś nie może przeboleć Władysław Skoczyński, autor silnika tej Syreny. - "Skwarek kazał ją pociąć! Chybazazdrościł, że to nie jego projekt" - mówi zdenerwowany. Inżynier Skoczyński specjalnie dla tego samochodu opracował nowatorski silnik o tłokach umieszczonych przeciwsobnie, tak zwanego "boksera". Zresztą Cezary Nawrot, projektując maskę, celowo poprowadził ją nisko, by pod spodem nie zmieścił się przestarzały silnik seryjnej Syreny. W ten sposób wymusił zaprojektowanie nowego napędu, pasującego do sportowego auta.
+      Roman Skwarek, dziś już dobijający dziewięćdziesiątki, pamięta swoją decyzję, ale tłumaczy ją ogólną niechęcią kierownictwa państwa do indywidualnej motoryzacji. - "Fakt, Syrena Sport w żadnym razie nie wpisywała się w socjalistyczny model 'przewozu osób' i samo jej powstanie (1960 rok!) było kuriozalne. Kiedyś w czasie mojego referatu na temat Syreny Gomułka, chociaż byłem bezpartyjny, powiedział do mnie: Towarzyszu Skwarek, a po co robotnikowi samochód? Gdzie on będzie jeździł?".
+
+      Jak wspomina Zbigniew Skoczek, na początku lat 70. w Ośrodku Badawczo-Rozwojowym leżało jeszcze "kopyto", czyli negatyw karoserii Syreny Sport, według którego można było odrestaurować auto. Niestety "kopyto", przy okazji rozbudowy ośrodka, zostało po prostu spalone. Barbarzyństwo?
+      Inna sprawa, że Syrena Sport - jak to prototyp - nie jeździła nadzwyczajnie, co przyznawał sam Cezary Nawrot. Nadwozie z tworzyw sztucznych, zrobione w jednym egzemplarzu, kryło sporo niedopracowanych szczegółów. - "Te szprychowe obręcze z centralną nakrętką to atrapa" - przyznał Nawrot pięć lat temu w rozmowie ze mną. - "Przyspawaliśmy takie dekle do felg zwykłej Syreny i koła wyglądały jak aluminiowe".
+      Późniejsze efektowne projekty - sportowy Ogar, koncepty aut Coupé z nadwoziami stylisty Zbigniewa Wattsona - były już tylko pięknymi narzędziami propagandowymi, bo realnie nikt nie myślał o wprowadzeniu ich do produkcji. Prezentowane na Targach Poznańskich czy imprezach rocznicowych, miały dokumentować świetność polskiej myśli technicznej. Myśli, która tak naprawdę nigdy nie doczekała się poparcia partyjnej "góry". Nad obchodzącą obecnie 55-lecie żerańską fabryką ciążyło fatum: wpychane przez polityczne układy licencje, brak pieniędzy, fatalny kontrakt z Daewoo, wreszcie brak firmowego muzeum. Fabryka chyba wstydzi się własnej pechowej historii. Może słusznie.
+
+      Max Suski
+      Focus Luty 2007 (str. 54)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Czy Syrena 110 została kiedyś międzynarodowym samochodem roku?</q>
+        <a1>Tak.</a1>
+        <a2>Nie.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. O jakiej wizjonerskiej myśli inż. Andrzeja Zgliczyńskiego wspomina autor artykułu?</q>
+        <a1>Auta przyszłości będą działały na energię elektryczną.</a1>
+        <a2>Auto osobowe powinno być hybrydą auta dostawczego.</a2>
+        <a3>Jako pierwszy wymyślił on koncepcję zamka centralnego.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Jakie istnieją dowody, iż Francuzi skopiowali pomysł inż. Zgliczyńskiego?</q>
+        <a1>Żadnych dowodów nie ma.</a1>
+        <a2>Są zeznania Andrzeja Kińskiego.</a2>
+        <a3>We francuskich archiwach znaleziono kopie dokumentacji.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Ile powstało prototypów Syreny 110?</q>
+        <a1>10</a1>
+        <a2>20</a2>
+        <a3>30</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. "Towarzyszu Skwarek, a po co robotnikowi samochód?" to słowa:</q>
+        <a1>Bolesława Bieruta</a1>
+        <a2>Władysława Gomułki</a2>
+        <a3>Cezarego Nawrota</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Jak sprawowała się Syrena Sport jako prototyp?</q>
+        <a1>Nie jeździła nadzwyczajnie.</a1>
+        <a2>Nigdy nie ruszyła.</a2>
+        <a3>Sprawowała się bardzo dobrze.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>6</nr>
+    <text>O OBROCIE ŚMIECI NIEBIESKICH
+
+      Kiedy w październiku 2003 roku na pokładzie pojazdu Shenzhou 5 - zmodyfikowanego rosyjskiego Sojuza - pułkownik Yang Liwei jako pierwszy Chińczyk poleciał na okołoziemską orbitę, do USA i Rosji dołączyła nowa potęga kosmiczna. Wszystko wskazuje na to, że w najbliższym czasie ekskluzywny klub państw, które wysyłają ludzi w kosmos, będzie szybko się powiększał. Problem polega na tym, że w taką podróż ludzie muszą zabierać ze sobą wiele rzeczy, które potem stają się im zbędne. Nad naszymi głowami zaczyna się powtórka ze scenariusza, który już przerobiliśmy: ilość śmieci zaczyna rosnąć w zastraszającym tempie, a chętnych do sprzątania nie widać.
+
+      W najbliższych latach przestrzeń wokół Ziemi może stać się areną przepychanki, porównywalnej z zimnowojenną rywalizacją USA i ZSRR. Chiny zapowiadają, że do 2008 roku opanują technikę wychodzenia w otwartą przestrzeń kosmiczną.
+      Do 2012 r. będą dokować na orbicie swoje pojazdy i wkrótce potem zainstalują się na stałe w przestrzeni wokół Ziemi. Ukoronowaniem ma być założenie kolonii na Księżycu w 2020 roku. A przecież żaden człowiek nie stanął na Srebrnym Globie od grudnia 1972 roku...
+      Także inne kraje Azji nie marnują czasu. Pierwszy indyjski satelita został wystrzelony w 1975 roku. Dziś z kosmodromu koło Madrasu Hindusi regularnie wysyłają na orbitę własne satelity meteorologiczne i telekomunikacyjne. - "Robimy to tak tanio, że taniej już się nie da. Rocznie wydajemy tylko pół miliarda dolarów" - mówi Krishnaswamy Kasturirangan, szef indyjskiego programu kosmicznego. To rzeczywiście niewiele w porównaniu z budżetem wojskowym Indii, sięgającym 14 mld dol. Projektowi patronuje sam prezydent Indii A.P.J. Abdul Kalam, spec od technologii rakietowej i ojciec indyjskiej broni atomowej. W 2008 roku w kierunku Księżyca ma polecieć Chandrayan 1 - automatyczna sonda, która sporządzi mapy nieznanych dotąd części Srebrnego Globu.
+      W podniebnym wyścigu bierze udział również Japonia, ale z coraz mniejszym wigorem. Jak dotąd może pochwalić się najwyższym w świecie wskaźnikiem awaryjności: od 1980 roku na 49 lotów zawiodło pięć pojazdów. W listopadzie 2003 roku, zaledwie w miesiąc po chińskim sukcesie, Japończycy musieli zniszczyć podczas startu rakietę nośną H-2A - flagowy pojazd swego programu kosmicznego - bo jeden z jej członów nie odłączył się. Wraz z nią spłonęły dwa satelity szpiegowskie.
+
+      Symbolem nieudolności człowieka w eksploracji kosmosu stała się stacja orbitalna Mir, która słynęła z mnożących się awarii. W rzeczywistości był to jednak jeden z najbardziej udanych projektów kosmicznych w historii. Wystrzelony na orbitę w 1986 roku Mir nie miał ze strony USA godnego konkurenta, pozostając jedynym załogowym obiektem stale obecnym w przestrzeni pozaziemskiej. Faktem jednak jest, że pod koniec lat 90. ten sklecony z kilku modułów labirynt korytarzy, zapchanych sprzętem naukowym, kablami i przedmiotami osobistymi załogi, zaczął zamieniać się w śmiertelną pułapkę dla kosmonautów. 23 marca 2001 roku ogołoconą ze sprzętu stację sprowadzono na niższą orbitę. W czasie wchodzenia w atmosferę ziemską rozpadła się na kilka części, które utonęły w Pacyfiku, nie robiąc nikomu krzywdy.
+      Do czasu "zezłomowania" Mira największym kawałkiem kosmicznego śmiecia, który spadł na Ziemię, była amerykańska stacja kosmiczna Skylab. W założeniu miała działać co najmniej osiem lat, ale wytrzymała tylko sześć. W 1979 roku zeszła z orbity, rozpadła się na kawałki i wylądowała w Oceanie Indyjskim oraz na pustkowiach zachodniej Australii.
+      Współcześnie nie brak głosów, że największym kosmicznym bublem jest Międzynarodowa Stacja Kosmiczna (ISS). Planowana pierwotnie jako zachodnia konkurencja dla Mira, po zakończeniu zimnej wojny stała się wspólnym projektem Rosji, USA, Europy, Japonii, Kanady i kilku innych państw. Szacowany na 100 miliardów euro projekt od początku ma kłopoty finansowe. Problemem jest też skomplikowany status prawny modułów dostarczanych przez poszczególne państwa oraz uzależnienie od amerykańskich wahadłowców. Niedawna katastrofa Columbii i "uziemienie" amerykańskiej floty kosmicznej postawiło cały projekt pod znakiem zapytania. Podobnie jak niedawne amerykańskie zapowiedzi całkowitego wycofania wahadłowców ze służby w ciągu kilku lat i zastąpienia ich innymi pojazdami, które na razie są w fazie projektowania.
+
+      Międzynarodowa stacja kosmiczna nie przetrwałaby ostatnich lat, gdyby nie zaangażowanie Rosjan. A ci - jakby złapali w kosmosie drugi oddech. Po katastrofie Columbii zapewniali dostawy surowców, żywności i regularne wymiany dwuosobowej załogi. Rosja też cierpi na braki budżetowe, ale - w odróżnieniu od Ameryki - stara się je łatać w prawdziwie wolnorynkowy sposób. Każda okazja do zarobienia pieniędzy jest dobra. To Rosjanie wysłali w kosmos pierwszego turystę - amerykańskiego multimilionera Dennisa Tito - a po nim trzy inne osoby. I choć za tygodniowy pobyt na stacji kosmicznej trzeba zapłacić 20 mln dol., wszystkie "orbitalne bilety" są już wykupione do 2009 roku. Nic dziwnego, że do pracy wzięły się firmy prywatne, które w ciągu kilku lat chcą regularnie wysyłać turystów w krótkie loty suborbitalne, podczas których będzie można popatrzeć na kosmos i zaznać stanu nieważkości. Rosjanie nie mają też oporów przed zarabianiem na kosmicznej reklamie. W 1996 roku wypuścili ze stacji Mir metrowej wysokości puszkę pepsi, która trafiła potem do filmu reklamowego i zainkasowali za to 5 mln dol. 22 listopada 2006 r. rosyjski kosmonauta Michaił Tiurin zagrał w orbitalnego golfa. Wyszedł z ISS w przestrzeń kosmiczną i uderzył pozłacaną piłkę golfową kijem kanadyjskiej firmy E21 Golf, która sponsorowała całe wydarzenie (wysokości kontraktu nie ujawniono). Amerykanie mocno krytykowali ten pomysł, obawiając się, że piłka może wejść na kurs kolizyjny ze stacją i uszkodzić ją.
+
+      Śmiecenie na orbicie zaczęło się właściwie już od wystrzelenia Sputnika w 1957 roku. Od tego czasu z roku na rok bałagan w przestrzeni wokół Ziemi rośnie. Najstarszym kosmicznym złomem jest drugi w historii amerykański satelita Vanguard, wystrzelony w 1957 roku, który działał tylko sześć lat i od prawie pół wieku krąży bezużytecznie wokół Ziemi. Setki misji, wykonywanych przez Amerykanów, Rosjan, ale także Francuzów, Brytyjczyków, Japończyków, Chińczyków, Hindusów i Brazylijczyków, doprowadziły do stworzenia na niskich orbitach okołoziemskich chmury różnego rodzaju urządzeń.
+      Dziś wokół Ziemi krąży około 35 mln obiektów ziemskiego pochodzenia. 11 tys. spośród nich ma średnicę większą niż 10 cm, toteż mogą być śledzone przez radary. Zaledwie około 600 z nich to działające satelity. Ponad dwa tysiące to popsute i niedziałające urządzenia, kolejne 1,7 tys. to zużyte człony rakiet, a ponad pięć tysięcy to zwykłe śmieci - od śrubokrętów, pudełek po płytach CD, aparatów fotograficznych, kawałków blach i śrub, po zamarznięte, radioaktywne chłodziwo z popsutych radzieckich satelitów zasilanych reaktorami jądrowymi oraz wyrzucane ze  stacji orbitalnej Mir worki ze śmieciami. Dwieście takich worów z resztkami jedzenia i ekskrementami załogi wiruje wokół Ziemi z prędkością od kilkunastu do nawet 50 tys. km/godz.
+      Zetknięcie z zamarzniętymi na kamień nieczystościami byłoby dla maszyn i ludzi pracujących w kosmosie nie tylko nieprzyjemne, ale i bardzo groźne. Łatwo wyobrazić sobie, czym dla przebywającego w otwartej przestrzeni kosmicznej astronauty zakończyłoby się zderzenie z masywną stalową śrubą, mknącą z prędkością 20 razy większą od kuli karabinowej. Niebezpieczna jest też cała drobnica: tysiące odprysków farby i innych niewielkich obiektów o wymiarach nieco większych niż 1 cm. Gdy w marcu 2002 roku, po ośmiu latach na orbicie wymieniano panele baterii słonecznych zasilających orbitalny teleskop Hubble’a, na ich powierzchni znaleziono tysiące drobnych uszkodzeń, spowodowanych przez krążący na orbicie mikrozłom. Mierzące ponad 40 metrów kwadratowych powierzchni panele zostały przebite na wylot 174 razy. Nic dziwnego - podróżujący z prędkością 28-30 tys. km/godz. milimetrowy obiekt uderza z siłą pocisku karabinowego kaliber 22.
+
+      Najwięcej do kosmicznego śmietnika wrzucają oczywiście USA i kraje dawnego ZSRR. Na 3758 amerykańskich obiektów kosmicznych trzy tysiące to złom. Z dawnym ZSRR jest nieco lepiej, bo tylko nieco ponad 2,5 tys. z prawie czterech tysięcy urządzeń to graty, zagrażające innym misjom . W przypadku Europejskiej Agencji Kosmicznej liczba obiektów jest oczywiście mniejsza, ale z 259 obecnych na orbicie działa tylko 26. Chińczycy mają tyle samo sprawnych satelitów, ile Europa, ale aż 324 sztuki złomu. Najwięcej drobnych śmieci pochodzi z rakiety Pegasus, która eksplodowała w 1996 roku, rozpadając się na 300 tys. fragmentów.
+      Nic dziwnego, że amerykańskie siły powietrzne monitorują ruch tysięcy największych kawałków kosmicznych odpadów i alarmują NASA, jeśli istnieje ryzyko kolizji ze startującym promem kosmicznym czy stacją orbitalną. Podobną robotę wykonują obserwatoria Europejskiej Agencji Kosmicznej.
+      Po dekadach całkowitej samowoli w śmieceniu pojawiły się próby uporządkowania przestrzeni kosmicznej - powołano Międzyagencyjny Komitet Koordynacyjny ds. Zanieczyszczenia Kosmosu. Dzięki niemu kraje, które kiedykolwiek wysłały cokolwiek poza Ziemię, wymieniają się informacjami na temat położenia i rozmiarów złomu. Od 2002 roku komitet wymaga od swoich członków ograniczania "produkcji" orbitalnych nieczystości, choć ciągle jest to raczej kwestia dobrej woli i zdrowego rozsądku niż regulacji prawnych.
+      Jak dotąd udawało się uniknąć w zaśmieconej przestrzeni zderzenia, które miałoby jakieś poważne skutki. Ekipy remontowe musiały się jednak sporo napocić. W 1993 r. odkryto centymetrową dziurę w antenie kosmicznego teleskopu Hubble’a. Trzy lata później kawał złomu poważnie uszkodził francuskiego satelitę wojskowego. Największego pecha miały promy kosmiczne, w których trzeba było ponad 80 razy wymieniać okna uszkodzone przez drobne zanieczyszczenia kosmiczne. Warto zresztą pamiętać, że katastrofa Columbiiw 2003 roku wywołana była przez ekwiwalent kolizji ze śmieciem - uderzenie kawałka izolacji pokrywającej wahadłowca w jego skrzydło.
+
+      Oczywiście w kosmosie miejsca jest - jak na nasze dzisiejsze możliwości śmiecenia - jeszcze bardzo dużo i na razie szansa na uszkodzenie rakiety, promu czy satelity przez orbitujące śmieci jest stosunkowo niewielka. Co więcej, zanieczyszczanie kosmosu staje się uznaną metodą badawczą. Niedawno uczeni doprowadzili do celowego zderzenia sondy SMART-1 z Księżycem, uzyskując w ten sposób nowe dane na temat budowy jego powierzchni. Liczne bezzałogowe maszyny zakończyły też swój żywot w okolicach Marsa, a niektóre nawet na jego powierzchni. I nie jest do końca jasne, jak bardzo ją zaśmieciły. Część badaczy podejrzewała, że brytyjska sonda Beagle 2, która w 2003 r. rozbiła się podczas lądowania, mogła zawierać niewielkie ilości ziemskich bakterii. Oznaczałoby to, że ludzkość zaczęła już kolonizację Czerwonej Planety, choć nie do końca zgodnie z wizjami agencji kosmicznych.
+      Zaśmiecania przestrzeni kosmicznej nie sposób już powstrzymać, o ile nie wydarzy się jakaś katastrofa, która zmiotłaby nas z powierzchni Ziemi albo cofnęła nasz rozwój cywilizacyjny. Ludzie będą latać w kosmos z powodów naukowych, militarnych, gospodarczych albo po prostu po to, by podjąć kolejne wyzwanie. Wraz z pojawieniem się w kosmosie nowych graczy: Chińczyków, Hindusów, być może także Japończyków, ilość śmieci - a wraz z nimi ryzyko poważnej katastrofy - będzie rosnąć. Każdy lot w kosmos pozostawia jakieś nieczystości - paliwo rakietowe jest zbyt cenne i zbyt ciężkie, aby marnować je na transportowanie rzeczy zbędnych z powrotem na Ziemię. Wyjątkiem są wciąż tylko śmieci i ekskrementy astronautów, które od czasu "zezłomowania" Mira nie krążą już na orbicie, tylko w specjalnych pojemnikach wracają na Ziemię. Ale już na przykład mocz nie jest traktowany tak poważnie - toalety na promach kosmicznych wypompowują go w przestrzeń, gdzie natychmiast zmienia się on w błyszczące lodowe kryształki.
+      Pod koniec lat 70. ludzkość wysyłała w kosmos sondę Pioneer 10, na której pokładzie umieszczono słynną płytkę z wyrytym na niej przesłaniem do innych cywilizacji: portretem mężczyzny i kobiety, modelem atomu wodoru i schematem Układu Słonecznego. Sonda ta już w 1983 roku minęła orbitę Neptuna i poleciała w nieznane - być może na spotkanie z mieszkańcami innych układów planetarnych. Kosmos był wtedy znacznie czystszy niż obecnie, gdy okolice Ziemi wypełniają miliony pozostawionych przez człowieka śmieci. Część z nich powoli, choć nieubłaganie opada na Ziemię i spala się w jej atmosferze. Niektórym kosmicznym paprochom taka naturalna degradacja zabierze setki lat. Inne, jak kilkucentymetrowy kawałek zbiornika paliwa amerykańskiej rakiety Delta II, który 22 stycznia 1997 roku uderzył w ramię Lottie Williams, spacerującej w parku w Tulsa w USA, wrócą na Ziemię w ciągu kilku miesięcy. Jeszcze inne, wyrzucone na dalekiej orbicie, a potem wypchnięte poza wpływ ziemskiej grawitacji, mogą swobodnie przemierzać galaktykę. A wtedy może okazać się, że pierwszy kontakt z pozaziemską cywilizacją odbędzie się za pośrednictwem zamarzniętego na kamień worka ze śmieciami z Mira.
+
+      Jakub Mielnik
+      Focus Luty 2007 (str. 60)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Co stało się w październiku 2003 roku?</q>
+        <a1>Chińczycy wysłali pierwszego swojego człowieka w kosmos.</a1>
+        <a2>Chińczycy ukończyli budowę swojej pierwszej rakiety kosmicznej.</a2>
+        <a3>Nastąpiła katastrofa podczas startu pierwszej, chińskiej rakiety.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Który kraj ma największy współczynnik awaryjności w kosmicznych wyprawach?</q>
+        <a1>USA</a1>
+        <a2>Japonia</a2>
+        <a3>Rosja</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Ile obiektów ziemskiego pochodzenia krąży obecnie wokół Ziemi?</q>
+        <a1>100 tys.</a1>
+        <a2>35 mln.</a2>
+        <a3>200 mln.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Czy zaśmiecanie kosmosu posiada już jakieś regulacje prawne?</q>
+        <a1>Powołano Międzyagencyjny Komitet Koordynacyjny ds. Zanieczyszczenia Kosmosu.</a1>
+        <a2>Jak dotąd tylko USA wprowadziło stosowne przepisy.</a2>
+        <a3>Jak dotąd panuje całkowita samowola, ale są plany kontroli tego zjawiska.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Czy latające w kosmosie śmieci mogą blokować sygnały wysyłane z sond kosmicznych?</q>
+        <a1>Tak.</a1>
+        <a2>Nie.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Czy kosmiczne śmieci ulegną kiedyś naturalnej degradacji?</q>
+        <a1>Tak, ale zajmie im to bardzo dużo czasu.</a1>
+        <a2>Tak, degradacja tam przebiega około 10 razy szybciej niż w warunkach ziemskich.</a2>
+        <a3>Nie, warunki panujące w kosmosie uniemożliwiają naturalną degradację.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>7</nr>
+    <text>POŻEGNANIE ZE SNEM
+
+      Spora część Ziemi jawi się na nocnym zdjęciu satelitarnym jako bajkowa kraina, migocząca tysiącami świateł. Roziskrzona planeta musi wydawać się kosmitom niezwykle pociągająca, jednak to nie robaczki świętojańskie dodają jej urody. To współczesne miasta - molochy, w których nigdy nie gasną światła. Tam interes kręci się całą dobę. Globalizacja stworzyła nie tylko całodobowe punkty usługowe, ale też całodobowe korporacje. "Oto rewolucja, która wkracza w dziedzinę bankowości. Citibank nigdy nie śpi" - głosiła reklama, gdy bank przechodził na 24-godzinny system pracy.
+      Cywilizacyjne przyśpieszenie, które miało miejsce w XX wieku, sprawiło, że długi sen przestał być w cenie. O ile w kulturze południowej nadal twardo trzyma się zjawisko sjesty i generalny brak pośpiechu, to kraje takie jak USA czy Japonia walczą o zwiększenie produktywności za wszelką cenę. Aż 60 proc. pracujących deklaruje, że stara się pracować coraz szybciej i wydajniej - wykazały badania Europejskiej Fundacji Poprawy Warunków Życia i Pracy. Dłuższego okresu aktywności, a więc krótszego snu, potrzebują praktycznie wszyscy: od kierowców po biznesmenów.
+      Dla wielu osób sen jest niepotrzebną stratą czasu. Nocą nadganiają zaległości dnia. "Bezsenność to już choroba cywilizacyjna, na którą cierpi ponad jedna trzecia ludzi w krajach wysoko rozwiniętych" - mówi dr Wojciech Jernajczyk z Akademii Medycznej w Gdańsku. Statystyki pokazują jednak, że "epidemia drzemek" to zmora dzisiejszych pracodawców. Niemal połowa uczestników badań, przeprowadzonych przez sieć hoteli Travellodge, w ciągu dnia czuje się zmęczona, zdarza im się przysnąć w pracy. Dzieje się tak, ponieważ organizm bezwzględnie rozlicza nas z godzin snu.
+      A gdyby tak udało się go oszukać i zregenerować się bez konieczności marnowania nocy na bezczynne leżenie w łóżku? Perspektywa jest niezwykle kusząca, a naukowcy już pracują nad wyłącznikiem snu. Największe nadzieje jak zwykle pokłada się w genetyce i farmakologii.
+
+      Możliwość spokojnego nocnego odpoczynku jest dla nas nowością, przynajmniej w ewolucyjnej skali. Przed dwoma milionami lat, kiedy rozpoczęła się szybka ewolucja hominidów, to one były zwierzyną, na którą polowały tygrysy szablozębe, niedźwiedzie, a nawet orły. Trudno więc było spać spokojnie - wiele drapieżników doskonale widzi w nocy. Dlatego uczeni uważają, że osiem godzin snu na dobę wcale nie jest normą dla człowieka. Pomijając indywidualne różnice, średnia wynosi raczej siedem i przez setki tysięcy lat była dzielona na krótsze kawałki, czyli drzemki. Jeszcze 500 lat temu w Europie częste nocne wybudzenia były powszechne. Leonardo da Vinci potrzebował tylko 15-minutowych drzemek co cztery godziny.
+      Jak skuteczne mogą być drzemki, dowodzą eksperymenty przeprowadzone na Harvard University. Jedna grupa ochotników nie spała przez całą dobę, podczas gdy drugiej pozwolono na godzinną drzemkę ok. godz. 14. Nawet tak niewielka dawka poprawiła zdolność do uczenia się i zapamiętywania nowych informacji, przy czym osoby, którym udało się "zaliczyć" obie fazy snu - płytką i głęboką, miały wyniki takie same jak z rana po przespanej spokojnie nocy. "Nie znaczy to jednak, że drzemka może całkowicie zastąpić kilkugodzinny odpoczynek nocny" - ostrzega dr Derk-ja Dijk z University of Surrey. Godzinny sen w ciągu dnia pomaga jedynie skrócić nocny wypoczynek i sprawić, że per saldo mniej czasu będziemy marnować w łóżku. Drzemka to komfort, na który rzadko można sobie pozwolić. Musieliśmy nauczyć się innych sposobów, które utrzymałyby aktywność mózgu. Najprościej było coś zjeść lub wypić. Niemal w każdym rejonie świata znano rośliny orzeźwiające. Ich pobudzające właściwości to sprawka alkaloidów, silnie oddziałujących na fizjologię człowieka.
+
+      Teobrominę i kofeinę zawierają krzewy herbaciane - znane w Chinach już 2300 lat temu. Według tamtejszej tradycji, herbata pobudza myśli i zwiększa koncentrację, przyspiesza krążenie krwi, podnosi odporność organizmu, a nawet zapobiega psuciu się zębów i przedłuża życie (wszystkie te właściwości zostały potwierdzone w ostatnich latach badaniami naukowymi). Lu T’ang w VIII w. rozsławił rozkosze picia herbaty w poemacie "Podziękowania Cesarskiemu Cenzorowi Meng za dar świeżych liści herbacianych": "Pierwsza czarka zwilża mi wargi i przełyk, druga wyzwala z osamotnienia, trzecia przenika me jałowe wnętrze, przy czwartej lekko się pocę - całe życie uchodzi ze mnie porami. Przy piątej czuję się oczyszczony, szósta zaprasza mnie do królestwa nieśmiertelnych".
+      Indian Ameryki Południowej wspomagały nasiona kakaowca, zawierające teobrominę, oraz liście krasnodrzewu pospolitego - źródło kokainy. Umieszcza się je między dziąsłem a policzkiem, mieszając uprzednio z pastą wapienną, która uwalnia z liści psychoaktywne alkaloidy. Ich działanie można porównać do wypicia filiżanki mocnej kawy. Hiszpańscy najeźdźcy zrobili z koki niezwykle cyniczny użytek - wykorzystywali jej pobudzające właściwości do podniesienia efektywności pracy indiańskich niewolników.
+      Muzułmańskie plemiona zachodniej Afryki, którym religia zabraniała używania substancji odurzających, żuły orzeszki kola, czyli nasiona drzew koli błyszczącej i zaostrzonej. Zawierają kofeinę, teobrominę i kolatynę - alkaloidy godzące zmęczenie i głód. Podobno pomagają też na kaca i leczą potencję. Południowoamerykańską kokę i afrykańską kolę zmieszał z wodą sodową J. S. Pemberton - aptekarz z Atlanty, tworząc pod koniec XIX w. coca-colę (dziś ten napój orzeźwiający wytwarza się w procesie chemicznym i nie zawiera on już koki ani koli).
+      300 lat przed tym wydarzeniem Stary Kontynent zachwycił się aromatyczną kawą, którą w VI w. n.e. sprowadzili z Etiopii i udomowili Arabowie. Dzięki zawartości kofeiny i innych alkaloidów kawa pobudza i orzeźwia, przyśpiesza przemianę materii i zwiększa sprawność myślenia. Skuteczność działania napoju potwierdzają naukowcy z Rush University Medical Center w Brigham oraz z harwardzkich Women’s Hospital i Medical School. Sugerują jednak, by pić go mniej, a częściej. Dowiedli, że pracujący na zmiany robotnicy, lekarze i kierowcy, często pijący małe ilości kawy, dłużej obywali się bez snu niż ci, którzy rzadziej sięgali po duży kubek.
+
+      Dość ryzykowny w walce ze snem bywa alkohol. Aleksander Macedoński potrzebował podobno tylko czterech godzin snu na dobę. I choć Egipcjanie ogłosili go synem Amona, to nie boskie przymioty spędzały mu sen z oczu, lecz wino. Ale coś za coś. Plutarch donosił, że 30-letni władca całego ówczesnego cywilizowanego świata potrafił czasem zapaść w ciężki sen, trwający nawet dobę. Znany był też z ataków złości, które wraz z napadową sennością wskazują na objawy hipersomni - choroby podwzgórza, które pełni w naszym mózgu rolę koordynatora zegara biologicznego.
+      Whisky wspomagał się depresyjny Winston Churchill. Thomas Edison, John F. Kennedy, Margaret Thatcher przyznawali, że po 3-6 godzinach snu są całkowicie wypoczęci i gotowi do pracy. Napoleon pracował nieustannie, zadręczając swoją nadaktywnością współpracowników. Nie potrzebując wiele snu "w jednym kawałku", korzystał z niego, kiedy tylko nadarzyła się okazja. W młodości uważał sen za niepotrzebną stratę czasu, ale już podczas kampanii rosyjskiej ogarniała go nagła senność. Pobyt na Świętej Helenie przerodził się w jeden wielki sen.
+      Znany z nadaktywności John F. Kennedy cierpiał na chorobę Addisona: niewydolność kory nadnerczy i niezdolność do wytwarzania hormonu stresu - kortyzolu. Podczas kampanii wyborczej wspomagał się hydrokortyzonem. Prawdopodobnie ten steryd przyczyniał się do wzrostu napięcia, zwiększonego popędu płciowego i właśnie bezsenności prezydenta. Zażywana na bóle kręgosłupa amfetamina tylko ten stan pogłębiała.
+      "Jeżeli chcesz być miliarderem, śpij tak krótko, jak to tylko możliwe" - radzi zdeterminowanym biznesmenom Donald Trump, jeden z najbogatszych ludzi Ameryki. Czy amerykański sen, nomen omen, może się ziścić tylko siłą woli? Wątpliwe. Trump dobrze funkcjonuje prawdopodobnie dlatego, że stymuluje swój organizm kortyzolem, podobnie jak Kennedy.
+
+      Bez snu musi się też obyć Mike Golding, uczestnik tegorocznych regat Velux 5 Oceans. Ten okołoziemski wyścig jachtów to jeden z najpoważniejszych testów ludzkiej wytrzymałości. W październiku 2006 roku w samotny rejs dookoła świata wyruszyło pięciu żeglarzy. 56 tysięcy kilometrów do pokonania, trzy miesiące na morzu.
+      "Podczas samotnych wypraw morskich kładę się w nocy na cztery i pół godziny, ale w tym czasie nigdy nie sypiam bez przerwy dłużej niż 20 minut" - opowiadał Golding telewizji BBC. Do tej pory Ziemię udało się okrążyć ponad 150 samotnym żeglarzom - w tym Polakom. W kosmosie było już prawie trzykrotnie więcej osób. Wszyscy przyznają, że najpoważniejszy problem, z jakim borykali się podczas wielotygodniowego rejsu, to brak snu. Teraz temu wyzwaniu stawi czoła nasz kolejny rodak - na supernowoczesnym katamaranie "Bioton" Ziemię zamierza opłynąć Roman Paszke. "Jestem przygotowany do snu w rytmie kilku, kilkunastu sesji dziennie po kilka minut każda. Nie spodziewam się, aby na najtrudniejszych akwenach mój najdłuższy sen miał potrwać pół godziny" - mówił Paszke. Do rejsu przygotowuje się od dwóch lat, a od dwóch miesięcy mało śpi i pracuje po 20 godzin na dobę.
+      To, że nawet w ekstremalnych warunkach i samotności człowiek potrafi ograniczyć sen, potwierdzają badania naukowców z Uniwersytetu Kalifornijskiego w San Diego. Podczas eksperymentów uczeni odkryli, że w mózgach ochotników, którzy nie spali przez 35 godzin, zachodzą reakcje obronne. Cały czas z podobną łatwością uczyli się obcych słów, ale z każdą godziną bezsenności z coraz większym trudem sumowali niewielkie liczby. To oznacza, że jeśli długo nie śpimy, pewne rejony naszego mózgu zostają "odłączone", a mózg pilnuje, by procesy, które są dla naszego funkcjonowania najważniejsze, przebiegały sprawnie.
+      "Mózg długo pozbawiony snu dostosowuje się do nowej sytuacji. Organizm cierpiącego na bezsenność człowieka funkcjonuje, ale to nie zmienia faktu, że długotrwały brak snu ma katastrofalne skutki" - potwierdza dr Wojciech Jernajczyk.
+
+      W takich sytuacjach nieocenione byłyby leki pobudzające - nic dziwnego, że biją rekordy sprzedaży i są obiektem intensywnych badań naukowych.
+      W roli pierwszych metodycznie stosowanych "pigułek bezsenności" wystąpiły różne odmiany amfetaminy. Piloci wojskowi łykali takie pigułki już podczas II wojny światowej. Narkotyczne tabletki są zresztą używane do dziś. Podczas jednego z eksperymentów okazało się, że dekstroamfetamina jest w stanie wydłużyć dobę nawet do 40 godzin. Podobne - choć niepotwierdzone badaniami - osiągi dawać ma metylofenidat, środek pobudzający, stosowany w terapii zespołu nadpobudliwości psychoruchowej z deficytem uwagi (ADHD). Problem polega na tym, że stymulanty mają działanie narkotyczne. Gdy są przyjmowane pod kontrolą lekarza lub dowódcy wojskowego, można je uważać za w miarę bezpieczne. Jednak kupowane na czarnym rynku i zażywane bez umiaru łatwo mogą doprowadzić do uzależnienia.
+      Dlatego za oceanem wielką karierę zrobił modafinil (na polskim rynku dostępny pod nazwą vigil). Pierwotnie przeznaczony do leczenia narkolepsji, czyli napadowej senności, okazał się też skuteczną i bezpieczną "drzemką w pigułce". Nieoficjalne zastosowania modafinilu są szerokie: od zwalczania skutków szybkiej zmiany strefy czasowej po wydłużanie aktywności nawet do dwóch dób. Skutki uboczne pojawiają się rzadko, a w mózgu osoby zażywającej nie widać praktycznie żadnych zmian. Naukowcy podejrzewają więc, że modafinil nie tyle stymuluje neurony, ile pomaga im osiągnąć stan równowagi.
+      Podobne nadzieje wiązane są z substancją o kodowej nazwie CX717, testowaną na University of Surrey w Wielkiej Brytanii. Po zaaplikowaniu tego środka ochotnicy, pozbawieni snu przez kilkadziesiąt godzin, byli bardziej wypoczęci i sprawni niż ci, którzy przespali kilka godzin.
+      Jednak często badania wykazują, że obiecujący środek nie jest tak skuteczny, jak się zdawało. Tak było w przypadku melatoniny - hormonu produkowanego przez szyszynkę, który reguluje cykl dobowej aktywności. Badacze z angielskiego University of Alberta wykazali, że substancja ta działa tylko w niewielkim zakresie: ułatwia zasypianie tym, którzy i tak nie mają z tym większych problemów.
+
+      "Sen jest istotną alternatywą czuwania, której nie można zastąpić inną formą aktywności mózgu. Mózgowie człowieka zbudowane jest w ten sposób, że po prostu musimy spać" - twierdzi dr Daria Pracka z Katedry Fizjologii Collegium Medicum UMK w Bydgoszczy.
+      Nie oznacza to jednak, że nie będziemy chcieli sięgnąć granic ludzkiej wytrzymałości na brak snu. Gdzie się one znajdują? Nie wiadomo, bo czym innym jest jednorazowe zarwanie kilku nocy, a czym innym - długofalowe, przewlekłe niedosypianie.
+      Bardzo wymowne są wyniki doświadczeń przeprowadzonych na muszkach owocówkach, których cykle aktywności bardzo przypominają ludzkie (muchy śpią od sześciu do dwunastu godzin na dobę). Uczeni z University of Wisconsin-Madison wyhodowali odmianę z mutacją, która pozwalała owadom obyć się bez snu znacznie dłużej i prowadzić bardziej aktywny tryb życia. Sęk w tym, że muszki żyły o wiele krócej niż inne. Uszkodzenie innego genu sprawiało, że owady umierały już po 10 godzinach bezsenności, w ich organizmach brakowało niezbędnych do życia białek.
+      Podobny system może działać także w naszych mózgach. Naukowcy z Massachusetts General Hospital dowiedli, że u zdrowego człowieka komórki produkują dwa białka, które rankiem łączą się w odpowiednich proporcjach w tzw. kryptochrom. W ten sposób jesteśmy mobilizowani do działania. Poziom kryptochromu rośnie i po 12 godzinach osiąga maksimum. Wówczas synteza białka zostaje zablokowana, a organizm dostaje sygnał, że pora na spoczynek. Być może podając syntetyczny kryptochrom, moglibyśmy oszukać organizm i przekonać go, że sen nie jest potrzebny. "Niedługo nauczymy się resetować nasz zegar biologiczny i ludzki dobowy cykl aktywności może trafić do lamusa" - uważa dr Steven Reppert, jeden z odkrywców zjawiska.
+
+      Jednak nawet jeśli uda nam się oszukać ten zegar, pozostają jeszcze inne ważne aspekty snu, których nie da się uregulować za pomocą jednej pigułki.
+      Niedobór snu zaburza działanie układu odpornościowego - wykazano m.in., że kobiety pracujące w systemie zmianowym częściej chorują na raka. Bezsenność sprzyja też przejadaniu się i otyłości: wywołuje zmiany hormonalne, a w efekcie - zaburzenia metabolizmu.
+      Istnieją dowody na to, że w czasie snu porządkowana jest zawartość pamięci - część przyswojonych w ciągu dnia informacji zostaje utrwalona, reszta trafia do kosza. Marzenia senne mogą być skutkiem ubocznym tego sprzątania. Sztucznie skracając sen, możemy doprowadzić do tego, że organizm będzie potrzebował kolejnych pigułek, poprawiających chociażby pamięć czy odporność...
+      "Konsekwencje długotrwałych niedoborów snu są poważne. Kiedy rośnie zmęczenie, spada odporność, reakcje na bodźce są wolniejsze. Bezsenność porównywalnie z nietrzeźwością jest główną przyczyną wypadków" - mówi dr Pracka. Wyliczono, że niedosypianie kosztuje Amerykanów 100 mld dolarów rocznie (mniejsza wydajność pracy, wypadki, leczenie zaburzeń snu i alkoholizmu).
+      Rekordzista w utrzymywaniu oczu szeroko otwartych Randy Gardner z USA w 1964 r. obył się bez snu 11 dni, ale już czwartego dnia miał halucynacje: znak drogowy postrzegał jako człowieka, wydawało mu się, że jest czarnoskórym piłkarzem. Podobne objawy towarzyszą wstępnej fazie zasypiania. Pozbawiony snu organizm będzie się tych omamów przysennych domagał. Nie przechodząc do następnej fazy, czyli czuwając, znajdziemy się jednocześnie w dwóch rzeczywistościach. Gardner nie przypłacił na szczęście eksperymentu trwałymi urazami, ale po jego zakończeniu zasnął jak kamień. Podobne odczucia mieli uczestnicy brytyjskiego reality show "Shattered" ("Zdruzgotani"). 180 godzin bez snu (w nadziei na 100 tys. funtów nagrody) przypłacili halucynacjami, dezorientacją, kłopotami z sercem - i załamaniem nerwowym.
+      Pozbawienie snu to jedno z największych cierpień, dlatego było wykorzystywane jako tortura. "Po tygodniu ludzie tracą orientację w czasie i przestrzeni, mają sny na jawie i inne objawy psychozy" - mówi John Schlapobersky, psychoterapeuta z Medical Foundation for Victims of Torture, sam katowany w ten sposób w latach 60. w RPA. Amnesty International ma dowody na stosowanie bezsenności wobec więźniów obozów w Guantanamo i w Iraku, wykorzystuje się ją też w więzieniach w Chinach i Arabii Saudyjskiej. "Każdy, kto tego kiedyś doświadczył, wie, że największy głód ani pragnienie nie mogą się równać z potrzebą snu" - mówił premier Izraela Menachem Begin, torturowany niegdyś przez KGB.
+      Czy istnieje jakikolwiek powód, dla którego mielibyśmy dobrowolnie skazywać się na męczarnie tego rodzaju? Niektóre zwierzęta, takie jak delfiny, foki, pingwiny czy kaczki, potrafią spać tylko połową mózgu. W ten sposób mogą odpoczywać i czuwać jednocześnie. Jednak połowiczny sen jest mniej efektywny i nie pozwala na pełne zregenerowanie sił. Dlatego bezsenność powinniśmy sobie dawkować ostrożnie. Przynajmniej dopóki naukowcy nie wynajdą jakiejś cudownej metody, która całkowicie uwolni nas od snu.
+
+      Anna Bugajska
+      Focus Marzec 2007 (str. 38)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Dr Wojciech Jernajczyk twierdzi, iż w krajach rozwiniętych na bezsenność cierpi:</q>
+        <a1>1/5 ludzkości.</a1>
+        <a2>1/4 ludzkości.</a2>
+        <a3>1/3 ludzkości.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Człowiekiem, który potrzebował tylko 15-minutowych drzemek co 4 godziny był:</q>
+        <a1>Albert Einstein</a1>
+        <a2>Leonardo da Vinci</a2>
+        <a3>Winston Churchill</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Wg naukowców pracujący na zmiany robotnicy dłużej obywają się bez snu, gdy:</q>
+        <a1>Piją często małe ilości kawy.</a1>
+        <a2>Piją rzadziej duże ilości kawy.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Jak funkcjonuje pan Golding podczas samotnych wypraw morskich?</q>
+        <a1>Sypia 4,5 godziny dziennie, ale nigdy nie śpi dłużej niż 20 minut.</a1>
+        <a2>Sypia około 3 godzin dziennie, dryfując w tym czasie ze zwiniętymi żaglami.</a2>
+        <a3>Śpi 5 razy dziennie po ok. 40 minut.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Jak długo obył się bez snu rekordzista świata?</q>
+        <a1>Konkursy tego typu są zabronione.</a1>
+        <a2>7 dnia, ale już czwartego dnia miał halucynacje.</a2>
+        <a3>11 dni, ale już czwartego dnia miał halucynacje.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Czy istnieją zwierzęta potrafiące spać tylko połową mózgu?</q>
+        <a1>Tak, zdolność tą posiadają jednak tylko gady.</a1>
+        <a2>Tak, są to np. kaczki.</a2>
+        <a3>Nie, nauka nie zna takich przypadków.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>8</nr>
+    <text>ZAMIENIONE MIEJSCAMI
+
+      Latem biegamy za piłką i uprawiamy lekkoatletykę, zimą jeździmy na nartach i snowboardzie. Taki jest podział klasyczny, ale czego nie robi się dla zabicia nudy? Wystarczy zmienić podejście i poszczególne dyscypliny przestać wiązać z porami roku. Sportowa rywalizacja, która - przynajmniej na pierwszy rzut oka - nie pasuje do aury, stanie się jeszcze ciekawsza. Dyscypliny zimowe coraz częściej zamieniają się miejscami ze sportami uprawianymi latem, co czasem daje naprawdę zaskakujące efekty.
+
+      Wystarczy spojrzeć za okno, żeby przekonać się o efekcie cieplarnianym. Zimy przychodzą coraz później i coraz rzadziej w Europie pojawia się śnieg. W wystarczającej ilości nie ma go nawet w Alpach, co powoduje oczywistą frustrację u narciarzy. Trudno znaleźć miejsce do jeżdżenia po białym puchu, ale na nartach lub snowboardzie można jeździć także po piasku.
+      Centrum dyscypliny zwanej sandski w Europie to słynna Monte Kaolino, która znajduje się w okolicach niemieckiego miasta Hirschau. Ponad stumetrowej wysokości wydma jest tak oblegana latem, że trzeba było wybudować stację dla sandnarciarzy i uruchomić dla nich wyciąg! Narciarstwo i snowboarding "piaskowy" można także uprawiać w Stella Plage we Francji, ale warto wybrać się nieco dalej. Piasek do zjeżdżania można znaleźć w Algierii, południowej Afryce oraz w Egipcie, zaś w amerykańskim stanie Oregon działa już całoroczne centrum narciarskie. Sand Master Park dysponuje nawet rampami do zjazdów i ewolucji! W sandski nie trzeba zmieniać sprzętu - można jeździć na zwykłych nartach. W sandboardingu lepiej sprawdzają się deski z ostrym dziobem, który skuteczniej przecina piasek i odrzuca go na boki. Ubiór zależy od temperatury i przyzwyczajeń sportowców. W odróżnieniu od szaleństw na śniegu, obie dyscypliny można uprawiać nawet w samych kąpielówkach. Technika zjazdu jest identyczna jak na zwykłych nartach czy snowboardzie. Trzeba tylko założyć większe zniszczenie sprzętu - mimo zastosowania specjalnych "piaskowych" smarów drobiny kwarcu są tak szorstkie, że niczym papier ścierny niszczą bezpowrotnie ślizgi i krawędzie.
+
+      O ile sandski i sandboarding można potraktować z przymrużeniem oka, o tyle tzw. nordic walking (spacer nordycki) ma poważną podbudowę naukową. Spacer z użyciem kijów wzorowany na zimowych wyprawach na nartach biegowych i rakietach śnieżnych jest niezwykle efektywny i zdaniem lekarzy o połowę bardziej "energochłonny " od zwykłego chodzenia. W czasie przechadzki pracuje niemal wszystko - nogi, ramiona, ręce, brzuch, klatka piersiowa i kręgosłup. Razem około 600 mięśni, co przekłada się na uruchomienie blisko 90 proc. całej ludzkiej muskulatury!
+      Twórcy strony www.nordicwalking.pl, którzy próbują rozpropagować ten sport w Polsce, podają także inne sensacyjnie brzmiące informacje. Spacer nordycki przyspiesza spalanie kalorii co najmniej o 20 proc., zaś obciążenie kręgosłupa przy godzinnym treningu udaje się obniżyć aż o 13 ton. Specjalne kije z uchwytami pozwalają odciążyć stawy kolanowe i kręgosłup, więc spacery na długich dystansach mogą uprawiać także ludzie w podeszłym wieku. Tego nie uda się powtórzyć na siłowni!
+      Polacy na razie nie palą się do chodzenia z kijkami. "Lubimy klasykę i nie wierzymy w nowości. Wydajemy dużo pieniędzy na domowe siłownie, ale zapominamy o prostych i tanich rozwiązaniach. Na przykład o nordic walking, do którego pełny ekwipunek kosztuje zaledwie 300-400 zł" - twierdzi Jarek Kazberuk, trener judo, wielokrotny uczestnik terenowego maratonu Camel Trophy i Rajdu Dakar.
+      Ze Skandynawii wywodzą się również tzw. rollerski, czyli rolki zastępujące narty biegowe. Mają bardzo prostą konstrukcję - przypominają metalowe listwy z dwoma kołami, do których przykręca się wiązania identyczne ze stosowanymi w biegówkach. "Asfaltowe narty" nadają się do jazdy po każdej nawierzchni. Wystarczy zwiększyć średnicę kółek, żeby na rollerski dało się jeździć nawet w terenie. Niestety, z niewiadomych powodów w Polsce letnie narty się nie przebiły. Zainteresowanie rollerski jest znikome, podczas gdy w Skandynawii narciarzy na rolkach latem spotyka się dosłownie wszędzie, nawet na poboczach głównych dróg.
+
+      Golf wywołuje jednoznaczne skojarzenia z ekskluzywnym klubem i wiecznie zieloną, krótko przystrzyżoną murawą. Tymczasem grać można także na śniegu! Specjalizują się w tym Szwajcarzy i Francuzi, którzy okazjonalnie organizują swoje "snowgolf party" w znanych uzdrowiskach alpejskich, oraz Duńczycy i Szwedzi, grający w golfa na odległej i wyludnionej Grenlandii.
+      Gra odbywa się tylko do dziewięciu dołków, bo w białym puchu trafienie do celu jest znacznie trudniejsze niż na trawie. Przeszkadza bardzo słabe tarcie - pomarańczowe piłki (barwione, żeby można je było łatwiej znaleźć) lądują i zatrzymują się całkowicie nieprzewidywalnie. Groźna jest także temperatura. Uczestnicy zimowych eskapad golfowych narzekają na błyskawiczną utratę ciepła i sztywniejące mięśnie. Latem golf oznacza pot, zimą może się skończyć przykrymi odmrożeniami albo wręcz hipotermią.
+      Snowgolf wykorzystuje do promocji m.in. producent whisky Chivas i likieru Drambuie (whisky z dodatkiem miodu i ziół). Szczególna atmosfera przyciąga wiele gwiazd. Nie bez powodu! W Sankt Moritz, gdzie znajduje się jedno z bardziej znanych lodowych pól golfowych, można także pobawić się w nie mniej ekskluzywne polo na śniegu.
+      Historia tej imprezy sięga lat 80., kiedy w tak nietypowych warunkach zaczęli rywalizować lokalni playboye - miłośnicy zwykłego polo. Z czasem zabawa przerodziła się w poważne i bardzo ekskluzywne zawody. Polo na śniegu sponsoruje m.in. producent limuzyn Maybach, a w zawodach biorą udział najlepsze zespoły złożone z gwiazd "zwykłego" polo.
+
+      W San Francisco śnieg wprawdzie nigdy nie pada, ale paradoksalnie to właśnie tu narodził się streetluge (letni zjazd na sankach). Nie są to oczywiście sanki klasyczne - nie mają płóz, lecz małe kółka. Działają zresztą na takiej samej zasadzie jak zawieszenie w deskorolkach - sterowanie sankami wymaga wychylania środka ciężkości. Reszta odbywa się prawie identycznie jak w zawodach rozgrywanych zimą: zawodnicy zjeżdżają na leżąco, rywalizując w grupie; jadą na czas, ale walczą przede wszystkim o punkty.
+      To tłumaczy ogromne prędkości, jakie rozwijają uliczne sanki - wprawny zawodnik na prostych może uzyskać nawet 160 km/godz. Sanki często odrywają się od nawierzchni na szczycie wzniesień i lądują z impetem, więc ich opanowanie wymaga ogromnej siły fizycznej. Każdy z zawodników musi spędzać długie tygodnie na wzmacnianiu mięśni kręgosłupa, brzucha i ramion.
+      Nie mniej ważny jest też odpowiedni ekwipunek: kombinezon ze wstawkami z kevlaru, motocyklowy kask i wzmocnione metalem rękawice. Do hamowania służą buty. Koniecznie z bardzo grubą i mocną podeszwą, bo na asfalcie wycierają się tak samo szybko jak opony samochodowe podczas jazdy z zaciągniętym hamulcem ręcznym.
+      Streetluge jest efektowny i niebezpieczny. Pasuje do słowa "sport", które nierozerwalnie wiąże się z rywalizacją, pogonią za czasem, potem i często także łzami bezsilności. Nie musi natomiast zawsze wiązać się ze śmiertelną powagą. Dowodem jest snowkayaking, czyli zjazd kajakami po śniegu. Trudno oczywiście doszukiwać się naukowego wytłumaczenia i typowania partii mięśni, które w ten przedziwny sposób można rozwijać. Kajak na śniegu wymaga przede wszystkim siły i sporej wytrzymałości. Zaprojektowany do pływania po wodzie i rozcinania fal, na zaśnieżonym lądzie zachowuje się z gracją grubasa na łyżwach - kajak jedzie, gdzie chce. Sterowanie wiosłami wbijanymi w ziemię nie jest zbyt skuteczne, podobnie jak hamowanie, które na wzór nart odbywa się bokiem.
+      Nikt oczywiście nie myśli o przekształcaniu snowkayakingu w poważną dyscyplinę, w której będą odbywały się zawody rangi mistrzowskiej. Nikt nie wróży mu kariery olimpijskiej, ale nie da się zaprzeczyć, że ten dziwaczny nowy sport cieszy się coraz większą popularnością. Na zawody organizowane w Austrii, Niemczech i Czechach przyjeżdżają tysiące kibiców. I o to także chodzi. W końcu sport może i powinien służyć również zabawie.
+
+      Rafał Jemielita
+      Focus Marzec 2007 (str. 80)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Czy do uprawiania sandski wystarczają zwykłe narty?</q>
+        <a1>Tak, używa się jednak specjalnych smarów.</a1>
+        <a2>Nie, zwykłe narty niszczą się już po kilkudziesięciu minutach jazdy.</a2>
+        <a3>Nie, używa się tutaj nart ze specjalnego tworzywa.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Dlaczego naukowcy polecają nordic walking (spacer nordycki)?</q>
+        <a1>Taki trening uruchamia blisko 70% muskulatury ludzkiego ciała.</a1>
+        <a2>Jest on około 50% bardziej energochłonny od zwykłego chodzenia.</a2>
+        <a3>Jest on około 20% bardziej energochłonny od zwykłego chodzenia.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Który z popularnych w Skandynawii sportów zupełnie nie przyjął się w Polsce?</q>
+        <a1>Rollerski</a1>
+        <a2>Nordic Walking</a2>
+        <a3>Sandboarding</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Podczas gry w golfa na śniegu, trafienie do dołka zajmuje więcej czasu?</q>
+        <a1>Piłki często się gubią.</a1>
+        <a2>Gracze nie mają do dyspozycji wózków akumulatorowych.</a2>
+        <a3>Bo tarcie piłki o podłoże jest bardzo słabe, a jej zachowanie nieprzewidywalne.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Jakie prędkości uzyskuje się  w streetluge (letni zjazd na sankach)?</q>
+        <a1>80 km/h</a1>
+        <a2>100 km/h</a2>
+        <a3>160 km/h</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Na czym polega snowdiving (śnieżne nurkowanie)?</q>
+        <a1>Autor tekstu o tym nie wspominał.</a1>
+        <a2>Jest to zabawa, w której buduje się tunele drążąc je w ubitym śniegu.</a2>
+        <a3>Jest to sport leczniczy. Ludzie w strojach kąpielowych zakopują się w śniegu.</a3>
+        <correct>1</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>9</nr>
+    <text>KLESZCZE ZABÓJCY PSÓW
+
+      Kto z nas pojechałby w tropiki bez szczepień? Niewielu - wszak słyszeliśmy o malarii, febrze, zabójczych pierwotniakach i gorączkach. Kto zdaje sobie jednak sprawę, że podobne mikroorganizmy czyhają w lesie i na łąkach również w naszym kraju? Ich ofiarami padają zwykle nie ludzie, lecz domowe zwierzęta, głównie psy. Choroby atakują podstępnie, wypluwane do krwi przez kleszcze - swoich pośrednich żywicieli.
+      Główny sprawca zagrożenia to Ixodes ricinus, czyli kleszcz pospolity: paskudztwo wielkości łebka szpilki, które po nassaniu się krwią zwiększa objętość do rozmiarów fasoli. Jest pajęczakiem - jeśli przyjrzeć się bliżej postaci dorosłej, widać cztery pary odnóży. To tylko jeden z 21 gatunków kleszczy występujących w Polsce: oprócz niego zmorą dla domowych zwierząt jest kleszcz łąkowy (Dermacentor reticulatus) i kleszcz psi (Rhipicephalus sanguineus).
+      Na świecie znanych jest ponad 800 gatunków kleszczy. Każdy ma ten sam brzydki zwyczaj: wgryza się w skórę, by wyssać trochę krwi, niezbędnej do rozwoju. Jednak to nie same kleszcze ani ich ugryzienia są zabójcze dla psów. Naprawdę niebezpieczne są wirusy, bakterie i pierwotniaki podróżujące na gapę we wnętrznościach kleszczy. Zdaniem prof. Romana Lechowskiego, specjalisty dermatologii i chorób wewnętrznych zwierząt, najczęstsze choroby roznoszone przez kleszcze (kleszczozy) to babeszjoza, borelioza i ehrlichioza.
+
+      Dla pasożytów zmienność jest główną szansą przetrwania. Co sezon przybierają nowe oblicze, żeby umknąć uwadze lekarzy i parazytologów. Z uwagą śledzą oni te przemiany, żeby uprzedzać zagrożenie. Ostrzegają, jakie nowe strategie przyjęły patogeny roznoszone przez kleszcze.
+      Po pierwsze, pasożyty odkleszczowe atakują już nie pojedynczo, jak dawniej bywało. Staje się regułą, że jeden kleszcz jest nosicielem różnych chorób jednocześnie.
+      Kolejnym problemem są nietypowe objawy. Jak zauważa prof. Lechowski: "Coraz rzadziej spotyka się klasyczną postać babeszjozy - z anemią, osłabieniem i krwiomoczem. Zamiast tego psy, szczególnie te młode, mają nietypowe objawy: niewydolność nerek, wodobrzusze albo kuleją. Kiedy pies zaczyna źle się czuć z niewiadomego powodu, to należy podejrzewać choroby odkleszczowe nawet wtedy, gdy objawy nie pasują do schematu".
+      Po trzecie: pasożyty ulegają mutacjom i wędrują z kontynentu na kontynent, poszukując nieuodpornionych, nowych ofiar. I tak ofiarami babeszjozy (powodowanej przez różne gatunki pierwotniaków z rodzaju Babesia) okazjonalnie zaczynają padać koty, które do tej pory nic sobie nie robiły z ugryzień kleszczy. Z południa Afryki wędruje "koci" pierwotniak Babesia felis, a z Indii - Babesia cati. W dodatku w Niemczech, Francji, Hiszpanii i Portugalii kocim problemem stają się inwazje Babesia canis, czyli pierwotniaka powszechnego dotychczas u psów. Prof. Lechowski uspokaja jednak: "W Polsce koty nie mają problemów z kleszczami. Nie spotkałem w swojej praktyce żadnego kota, który zachorowałby z powodu kleszcza. Niemniej babeszjozy psów kiedyś w Polsce też nie było - a teraz jest".
+      Nowością jest nietypowy czas ataków kleszczy. Dawniej największe żniwo zbierały wiosną i jesienią. Jednak gdy zimy są łagodne, zagrożenie trwa przez cały rok, bo aktywność pasożytów zależy od temperatury.
+
+      Jeśli właścicielowi psa marzą się beztroskie wakacje z czworonogiem, musi zainwestować w preparat przeciw kleszczom. Inaczej ryzykuje, że zamiast na plaży spędzi urlop z pupilem podłączonym do kroplówki - bez gwarancji, że kuracja się powiedzie. Lepiej (i taniej) zamiast tego kupić psu obrożę lub preparat spot-on na grzbiet. Środki te odstraszą kleszcze, sprawiając, że psia skóra stanie się dla nich obrzydliwa i trująca. Nawet jeśli jakiś kleszcz-desperat wgryzie się w nią, to szybko odpadnie, a krótkie ugryzienie nie jest groźne. Prof. Lechowski wyjaśnia, że jeżeli kleszcz był na psie krócej niż 12 godzin, to ryzyko przeniesienia pasożyta jest żadne. Praktycznie przez pierwsze 24 godziny od wczepienia się kleszcza nie zaraża on jeszcze boreliozą ani babeszjozą. Musi się najeść krwią, żeby patogeny uśpione w jego ciele stały się aktywne. Dopiero wtedy zaczynają inwazję. Oczywiście im dłużej kleszcz pozostaje w psiej skórze, tym pewniejsze, że zwierzę coś złapie.
+      Co zrobić, gdy jednak znajdziemy w skórze ulubieńca wypasionego kleszcza? Przede wszystkim należy go wyjąć, a potem odwiedzić z psem lekarza. I to niezależnie od tego, czy pupil wygląda na chorego, czy też nie! Prof. Lechowski radzi: "Gdyby to mój pies złapał kleszcza, od razu poszedłbym z nim do lecznicy. W tych wypadkach daje się zwykle zastrzyk imizolu. Na terenach, gdzie ryzyko zarażenia jest duże, zaleca się podawać go profilaktycznie raz na trzy tygodnie, w trzech dawkach. Nie szkodzi to psu, a eliminuje ryzyko praktycznie na trzy miesiące. Jeżeli zauważyłbym, że skóra wokół miejsca po kleszczu jest czerwona lub zgrubiała, a pies drapie się tam lub liże, to dodatkowo można podejrzewać boreliozę".
+      Ile ma się czasu od znalezienia kleszcza do rozpoczęcia leczenia? Prof. Lechowski rozwiewa złudzenia: "Nie ma się go wcale. Im dłużej czekamy, tym gorzej dla psa". Im szybciej zainterweniujemy, tym większa pewność, że zwierzę uniknie kłopotów. Nieleczona babeszjoza może powodować zapalenie stawów lub mięśni: układ odpornościowy atakuje własny organizm. Pies wyraźnie cierpi, bolą go stawy, kuleje, ma temperaturę - pomimo że pierwotniaki już w krwi nie występują. Lepiej więc nie ryzykować i walczyć z kleszczami, zamiast z chorobą.
+
+      Katarzyna Filipek
+      Focus Sierpień 2006 (str. 80)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Ile gatunków kleszczy występuje w Polsce?</q>
+        <a1>8</a1>
+        <a2>17</a2>
+        <a3>21</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Co należy zrobić, gdy zobaczymy kleszcza na ciele naszego zwierzaka?</q>
+        <a1>Należy usunąć kleszcza przez ukręcenie go.</a1>
+        <a2>Należy posmarować kleszcza specjalnym preparatem, aby odpadł razem z głową.</a2>
+        <a3>Nie należy samodzielnie usuwać kleszcza i pojechać z naszym zwierzakiem do lecznicy.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Kiedy kleszcze nie są dla nas zagrożeniem?</q>
+        <a1>Kleszcze nie atakują zimą.</a1>
+        <a2>Nie ma reguły. Kleszcze atakują przez cały rok.</a2>
+        <a3>Kleszcze nie atakują w upalne i suche lato.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Czy istnieją skuteczne preparaty odstraszające kleszcze?</q>
+        <a1>Tak</a1>
+        <a2>Nie</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Czy człowiek może zarazić się od psa boreliozą?</q>
+        <a1>Tak</a1>
+        <a2>Nie</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Zastrzyk z imizolu podany psu po ugryzieniu przez kleszcza:</q>
+        <a1>Osłabia psa i przez kilka dni pies powinien odpoczywać.</a1>
+        <a2>Nie szkodzi psu.</a2>
+        <a3>Jest bolesny i powoduje, że przez kilka dni pies kuleje.</a3>
+        <correct>2</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>10</nr>
+    <text>EMERYTURA W WERSJI EKSTREMALNEJ
+
+      Zdobycie Mount Everestu wymaga żelaznej kondycji i mocnych nerwów. Na wysokości kilku tysięcy metrów płuca łapczywie chwytają rozrzedzone powietrze, zmęczone mięśnie odmawiają posłuszeństwa. Po drodze piętrzą się urwiska, lodowe szczeliny, marsz opóźnia zdradliwa pogoda.
+      Wydaje się, że tylko młodzi, silni i wyszkoleni alpiniści mogą wdrapać się na Dach Świata. Przed dwoma laty do walki z lodowym kolosem stanął 70-letni Japończyk Yuichiro Miura. Na przekór sceptykom, 22 maja 2003 r. zatknął chorągiewkę na szczycie góry.
+      Jak to się dzieje, że kiedy już 50-latkowie mają czasem problemy z wejściem na pierwsze piętro, inni, znacznie starsi, dokonują wyczynów, które przekraczają możliwości zdrowych młodych ludzi? Ktoś mógłby rzec, że ten dzielny starszy pan jest tylko wyjątkiem, który burzy porządek natury. Jak w takim razie wytłumaczyć wyczyn 99-letniego ojca Miury, który zjechał z synem i wnuczkiem na nartach z Mont Blanc? Dwa wyjątki w jednej rodzinie czy niebywale silne geny?
+
+      Zanim ktokolwiek zaczął zastanawiać się nad jakością długiego życia, przez tysiąclecia los starszych ludzi zależał od tradycji kulturowych. W wielu plemionach koczowniczych staruszków, którzy byli niezdolni do dalszej wędrówki, po prostu zabijano albo porzucano na pastwę dzikich zwierząt.
+      "Mieszkańcy Ziemi Ognistej w czasie głodów zabijali i pożerali stare kobiety. Dopiero gdy ich zabrakło, celem stawały się psy. Gdy pytano, dlaczego nie zmienią tej potwornej kolejności, odpowiadali: bo psy łapią foki, a stare kobiety tego nie potrafią" - pisze Irena Gumowska w książce "Życie bez starości".
+      Szacunkiem starych ludzi od tysięcy lat otaczali natomiast Chińczycy. Opiekują się seniorami pomimo uciążliwości, jaką niesie ze sobą ten obowiązek. Chińscy medycy poznali też tajniki długowieczności. Już 2000 lat temu sprzedawali pigułki nieśmiertelności z rtęcią i miodem, dziś karierę robi korzeń żeń-szenia. Z kolei w starożytnym Egipcie próbowano zapobiec starości, oblewając zasłużonych starców krwią zabitych młodzieńców... Dopiero medycyna XX wieku pozwoliła skutecznie przedłużać młodość.
+
+      Dlaczego niektórzy ludzie dożywają "zaledwie" kilkudziesięciu lat, a inni cieszą się dobrym zdrowiem ukończywszy setkę? Przeważnie dlatego, że ci drudzy kochają życie. Pomimo dolegliwości, które przychodzą z wiekiem, nie porzucają wcześniejszych zajęć, nie rezygnują z pasji.
+      Połóżcie młodego człowieka do łóżka, a po dłuższym czasie takiego bezproduktywnego leżenia i on straci siłę do życia - tłumaczą lekarze. Zgodnie z tą regułą, proporcjonalnie do rosnącej aktywności maleje tempo starzenia.
+      82-letni Amerykanin James Janssen pracuje na basenie klubu Davenport Outing w stanie Iowa jako ratownik, 103-letni dr Ishwar C. Dalal z Indii jest wciąż praktykującym lekarzem, a inny jego rodak - dr Valanjatti Kuruvilla Mani - od 1935 roku prowadzi praktykę stomatologiczną. Wszyscy zgodnie twierdzą, że nie porzucą swoich zajęć.
+      Liczne przykłady dowodzą, że ludzie w podeszłym wieku stają się bardziej twórczy niż byli za młodu. Adolf Visher, autor książki "Starość jako los i przeznaczenie", wykazał, że późne dzieła znanych artystów były najdoskonalsze. Vischer dowodzi swej teorii na przykładach ostatnich prac Leonarda da Vinci, Dürera, Michała Anioła, Rembrandta...
+      Teoria ta nie traci dziś na ważności. Rumuńska pianistka Cella Delevrancea dała swój ostatni publiczny recital w wieku 103 lat. Zdaniem krytyków, był to najlepszy występ artystki, która musiała bisować aż sześciokrotnie.
+      Intensywny wysiłek fizyczny w podeszłym wieku można też przypłacić życiem.
+
+      Pozornie bezpieczna przejażdżka rowerem może zakończyć się zawałem, a wyprawa w góry - upadkiem i skomplikowanym złamaniem - komentują pracownicy pogotowia. "Nawet jeżeli osoba starsza od wielu lat prowadzi aktywny tryb życia, powinna wykonywać okresowe badania kontrolne. Jeżeli dopiero rozpoczyna zajęcia ruchowe, badania muszą być jeszcze dokładniejsze. To rodzaj testu, pozwalający zminimalizować ryzyko" - opowiadał w jednym z wywiadów Sam Ghospy, lekarz z International Flying Farmers. "Tak postępujemy z 99-letnim Colem Kugelem, który wciąż pilotuje samolot. Kilka razy w miesiącu przechodzi szczegółowe badania, w każdej chwili lekarz może zabronić mu latania" - dodał.
+      Nie rezygnując z pasji, ruchu i odrobiny szaleństwa, nie można też tracić zdrowego rozsądku. Jak twierdzą specjaliści, w pewnym wieku nawet dźwiganie zakupów dobrze jest skonsultować z lekarzem.
+
+      Nowoczesna opieka medyczna dokonuje cudów, wydłużając średnią długość życia. Przez ostatni wiek liczba 65-latków na świecie wzrosła niemal 25-krotnie! Jeśli będzie nadal rosła w takim tempie - zakładając, że ustabilizuje się na poziomie 85-100 lat - aż 90% ludności przekroczy wiek 65 lat, a dwie trzecie będzie żyć powyżej 85. Po baby boomie z lat 50. czeka nas boom staruszków. Gospodarka tego nie udźwignie, jest zbyt mało młodych ludzi, by utrzymać tylu emerytów - przestrzegają ekonomiści. Geriatrzy ripostują: wiek przestaje być barierą uniemożliwiającą pracę. Dzięki postępom nauki starcy mogą nie tylko pracować, ale na równi z młodymi cieszyć się życiem. Potwierdzają to francuskie statystyki: 724 tys. osób w wieku 60-65 lat pracuje, 83% płatników podatków od majątku to emeryci...
+      "Jeśli nauka będzie rozwijać się w takim tempie, za około 20-25 lat poznamy wszystkie geny, odpowiadające za długowieczność" - tłumaczy Marta Fikus, dr genetyk. "Nie można wykluczyć, że odkryjemy mutacje, które zapewnią nam dłuższe i zdrowsze życie. Pamiętajmy jednak, że starzenie się jest zjawiskiem kompleksowym, zależy nie tylko od informacji genetycznych, ale i od stylu życia" - dodaje.
+      Górna granica ludzkiego życia dziś wynosi ok. 120 lat. Wiadomo też, że większość ludzi może dożyć sędziwego wieku pracując, uprawiając nawet ekstremalne sporty lub oddając się pozornie młodzieńczym pasjom. I nie jest to przejaw starczego zdziecinnienia, ale zapowiedź nadchodzącej cywilizacji staruszków.
+
+      Maciej Nowakowski
+      Focus Luty 2006 (str. 46)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Jakiego wyczynu dokonał 99-latek wraz z synem i wnukiem?</q>
+        <a1>Zjechali razem na nartach w Mont Blanc.</a1>
+        <a2>Razem skoczyli ze spadochronami.</a2>
+        <a3>Wystartowali w zawodach saneczkarskich.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Naukowcy szacują, że za 100 lat wieku 85 lat dożywać będzie:</q>
+        <a1>1/2 ludzi.</a1>
+        <a2>2/3 ludzi.</a2>
+        <a3>3/4 ludzi.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Jak często przechodzi badania kontrolne 99-cio latek, który wciąż pilotuje samolot?</q>
+        <a1>Przed każdym lotem.</a1>
+        <a2>Kilka razy w roku.</a2>
+        <a3>Kilka razy w miesiącu.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Z jakiego kraju pochodzi 70-cio latek, który stanął 23 maja 2003 na najwyższym szczycie świata?</q>
+        <a1>Z USA.</a1>
+        <a2>Ze Szwajcarii.</a2>
+        <a3>Z Japonii.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Który produkt sprzedawano w Chinach już 2000 lat temu, jako środek na nieśmiertelność?</q>
+        <a1>Pigułki z mączki perłowej z imbirem.</a1>
+        <a2>Pigułki z rtęci i miodu.</a2>
+        <a3>Korzeń żeń-szenia.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Ile razy bisowała 103 letnia rumuńska pianistka na swoim ostatnim publicznym koncercie?</q>
+        <a1>4</a1>
+        <a2>5</a2>
+        <a3>6</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>11</nr>
+    <text>POLIMERY NA WIESZAKU
+
+      Syntetyczne włókna stosowane w produkcji ubrań kiedyś fascynowały swoimi właściwościami - ortalion nie przemakał, a koszulowy non-iron błyskawicznie wysychał i nie wymagał prasowania. Wygoda, użyteczność, niska cena - same zalety.
+      Z czasem pojawili się ich przeciwnicy, a nawet zaciekli wrogowie. Odzież z włókien sztucznych nazywano pogardliwie "plastikami". Zimne w dotyku, okropnie się elektryzowały, nie wchłaniały wilgoci. Wiele starszych osób obarcza je nawet winą za swój późniejszy reumatyzm.
+      Jednak nie ma wątpliwości - świat bez sztucznych włókien już nie wróci. Są coraz doskonalsze, coraz bardziej przyjazne i praktyczne. To nie tylko powrót mody na lata 60. To także efekt rewolucji naukowo-technicznej.
+
+      Wśród materiałów wykorzystywanych w przemyśle odzieżowym dominują dwa typy: tkanina i dzianina. Jeśli wyrób powstaje poprzez przeplatanie wzajemnie prostopadłych układów nitek, otrzymujemy tkaninę. Gdy oczka są tworzone jak np. przy robieniu na drutach - mamy dzianinę. Tym drugim sposobem wykonuje się głównie skarpety, rajstopy, niektóre bluzki, swetry, czapki, szaliki oraz wszelkiego rodzaju bieliznę i koszulki. Dzianina idealnie się do tego nadaje ze względu na swą miękkość, przewiewność i rozciągliwość we wszystkich kierunkach. Tkaniny są mniej elastyczne, ale bardziej wytrzymałe. Różnorodność splotów pozwala otrzymywać tkaniny o różnym wyglądzie i parametrach.
+      Aby uzyskać materiał bardzo delikatny, należy do jego wykonania użyć bardzo cienkiego włókna. Jego grubość (w fachowej nomenklaturze - gęstość liniowa) musi mieć jak najmniejszy współczynnik denier. Denier ("den") to jednostka wagi włókien wykonanych z tworzyw sztucznych, oznacza masę - podaną w gramach - 9000 m włókna, np. jeśli odcinek włókna o długości 9000 metrów waży 4500 g, to jego gęstość wynosi 4500 denier). Inaczej mówiąc: im mniejszy denier, tym włókno cieńsze. Niektóre są tak cienkie, że niemal ich nie widać. Nazywane są mikrowłóknami i najczęściej są wykorzystywane do dziania bielizny i innej bardzo delikatnej odzieży. Tak naprawdę do wytwarzania super delikatnych materiałów nie używa się pojedynczych pasm, ale nici skręconych z wielu włókien, które w wielkim powiększeniu bardziej przypominają wielokrotnie splecioną linę okrętową niż pojedynczy włos.
+      Wiele zależy od techniki, jaką materiał został wykonany. Materiały z tego samego włókna (np. bawełnianego), ale o różnej grubości lub innym splocie, będą znacznie różnić się od siebie właściwościami. Jednak ani różne sposoby splatania tkaniny, ani różna gramatura samego włókna nie zmieniają jego właściwości fizycznych - jedwab nadal będzie się gniótł, a wełna będzie chłonąć wodę jak gąbka. Właśnie wtedy, kiedy chcemy uzyskać nowe cechy, przydaje się pomoc syntetyków.
+
+      Dawno już zauważono, że syntetyczne dodatki mogą znacznie poprawić niektóre cechy materiałów naturalnych (w drugą stronę działa to równie skutecznie). Dodając sztuczne włókno do naturalnego, możemy np. sprawić, że materiał będzie się mniej gniótł. Ta cecha zależy od kształtu przekroju poprzecznego pojedynczego włókna. To identyczna zależność jak w wypadku ludzkich włosów: proste i niepodatne na kręcenie są w przekroju okrągłe, a im bardziej przekrój włókna jest "kanciasty", tym bardziej nici się kręcą. Dla zwiększenia odporności na gniecenie wystarczy więc do "kanciastego" lnu czy "graniastej" bawełny dodać nieco okrągłego włókna poliestrowego.
+      Dzięki dodatkom włókien syntetycznych można także zwiększyć trwałość kolorów materiałów. Nie będą traciły intensywności, jak to bywa w wypadku odzieży np. z czystej bawełny. Czasem już po kilkunastu praniach ubrania są wyblakłe i nieestetyczne. Dlaczego? Włókna naturalne najczęściej intensywnie chłoną wodę, co w wypadku tkanin (i dzianin) farbowanych może powodować szybsze "wymywanie" barwnika.
+      Składnikiem poprawiającym elastyczność, czyli rozciągliwość materiałów, są włókna poliuretanowe, spośród których najbardziej znane to lycra. Dzięki niej odzież zawsze w jednakowym stopniu przylega do ciała, dlatego stosuje się ją np. w bluzkach, bieliźnie czy w kostiumach kąpielowych lub ubraniach sportowych.
+      Nietypowe domieszki stosuje się dla uzyskania nietypowych rezultatów. Karierę robią obecnie materiały określane jako bioaktywne lub bakteriobójcze. Z choroby wprawdzie wyleczyć nie mogą, ale kiedy się spocimy, skutecznie zapobiegają nieprzyjemnemu zapachowi, który jest efektem gwałtownego rozwoju drobnoustrojów. Włókna z "wtopionymi" jonami srebra wykazują bardzo silne działanie antybakteryjne, anty-wirusowe i grzybobójcze. Nawet wielokrotne pranie nie zaszkodzi takiej antybakteryjnej tarczy ochronnej.
+      Inna nietypowa domieszka to teflon, który kojarzy się bardziej z gotowaniem niż z odzieżą. W obu wypadkach wykorzystuje się te same jego właściwości: wysoką odporność chemiczną oraz bardzo niechętne przywieranie doń ciał obcych. Są to cechy pożądane zarówno w kuchni, jak i na krawatach, ale również przy produkcji np. łożysk i elementów trących.
+
+      Odzież wykonana w 100 procentach z włókien syntetycznych ma niezagrożoną pozycję. Włókna naturalne (i naturalne z domieszkami) są używane przede wszystkim do produkcji ubrań codziennych, zakładanych do szkoły, do pracy, także na przyjęcia. Chodzi nie tyle o elegancję, co o charakterystyk ę tkanin - odzież musi być miękka, dobrze się układać, powinna być łatwa w codziennej "obsłudze", czyli łatwo się prać i obywać się bez prasowania.
+      Zupełnie inne wymagania stawia się tzw. odzieży outdoorowej. Jej głównym zadaniem jest jak najlepsza ochrona przed niesprzyjającymi warunkami atmosferycznymi: chłodem i wilgocią. Musi być zatem ciepła (czasem ważniejsze bywa szybkie odprowadzenie nadmiaru ciepła), powinna "oddychać" (przepuszczać powietrze w jedną lub w obie strony), być wodoodporna, wiatroszczelna i odporna na uszkodzenia mechaniczne. Dzięki badaniom i próbom naukowców, głównie chemików, coraz więcej mamy włókien, które spełniają nasze zachcianki.
+      Jedno z najpopularniejszych włókien to dziś polar, dzianina wykonana z poliestrowych włókien wzorowanych na sierści niedźwiedzi polarnych (jej włosy są puste w środku). Zamknięte w nich powietrze tworzy doskonałą warstwę termoizolacyjną. Włókna są wytrzymałe, rozciągliwe, a przy tym niezwykle lekkie: pojedyncza nić może mieć długość nawet kilkudziesięciu kilometrów, a ważyć tylko kilka gramów. Ponieważ włókno to poliester, fleece - jak w niektórych krajach nazywa się dzianinę tego typu - nie chłonie wilgoci, dzięki czemu skutecznie chroni przed niewielkim deszczem, a po nałożeniu na wierzch ortalionu (ten również wykonano z włókien poliestrowych) - także przed większymi opadami. Jednocześnie materiał oddycha, czyli pozwala parze wodnej wydostawać się na zewnątrz, dzięki czemu skóra pozostaje sucha. Oznaczenia 100/200/300 odpowiadają gramaturze materiału, czyli jego gęstości i grubości. I tak 100g/m2 to materiał najcieńszy, tzw. typu miejskiego. Najcieplejszy i najdroższy jest typ 300g/m2.
+      Z poliestru robi się także ubrania, które mają za zadanie jak najszybciej odprowadzać wilgoć na zewnątrz, a więc nie ogrzewanie, lecz chłodzenie (o czym informuje już sama nazwa coolmax - "maksymalny chłód"). Niezwykłość odzieży chłodzącej to efekt nietypowego kształtu włókien - mają one strukturę czterokanalikową, dzięki czemu bardzo efektywnie odsysają pot z ciała i błyskawicznie schną. Testy potwierdziły pozytywny wpływ na przegrzewający się organizm - materiał nie tylko obniża temperaturę skóry, ale także redukuje przyspieszony puls.
+
+      Wyśmiewane jeszcze do niedawna "plastiki" są wygodne i tanie. Sprawdzają się w warunkach, w których naturalne materiały zamieniłyby się w bezużyteczne strzępy. Stały się niezbędne, dlatego ich produkcja rośnie z każdym rokiem, trwają nieustannie prace nad wynalezieniem coraz nowszych ich odmian, które będą spełniać coraz więcej potrzeb.
+      Na razie na pierwszym miejscu używanych tkanin ciągle jest bawełna, ale tuż za nią plasuje się już poliester, którego zastosowań ciągle przybywa. Zapewne niedługo do rywalizacji wejdą nowe syntetyczne włókna - coraz częściej słyszy się np. o sztucznej bawełnie, której zalety przewyższają właściwości naturalnej.
+      Syntetyczne tkaniny nie znikną z naszych szaf. Przeciwnie: będzie ich tam coraz więcej, bo trudno zliczyć, ile jest kombinacji mieszania ze sobą włókien naturalnych z syntetycznymi i syntetycznych między sobą. Wszystko wskazuje na to, że plastikowych nici, mikrowłókien i przędz będziemy używać nie tylko do produkcji odzieży. Tworzywa sztuczne ciągle są jeszcze w wieku rozwojowym.
+
+      Agnieszka Frydrych-Jarczewska
+      Focus Marzec 2006 (str. 54)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Co to jest denier ("den")?</q>
+        <a1>Jednostka wagi włókien sztucznych.</a1>
+        <a2>Parametr określający elastyczność włókien sztucznych.</a2>
+        <a3>Jednostka wchłanialności wilgoci włókien sztucznych.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Jaką domieszkę stosuje się w tkaninach określanych jako bakteriobójcze?</q>
+        <a1>Teflon.</a1>
+        <a2>Specjalne barwniki chemiczne na bazie nafty.</a2>
+        <a3>Jony srebra.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Która tkanina jest najczęściej używana na świecie?</q>
+        <a1>Poliester.</a1>
+        <a2>Bawełna.</a2>
+        <a3>Ortalion.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Dlaczego niektóre materiały są podatne na gniecenie, a inne nie?</q>
+        <a1>To kwestia kształtu przekroju poprzecznego włókna.</a1>
+        <a2>To kwestia elastyczności włókna.</a2>
+        <a3>To kwestia grubości przekroju poprzecznego włókna.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Czy w Polsce jest fabryka polaru?</q>
+        <a1>Tak</a1>
+        <a2>Nie</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Odzież z włókien o strukturze czterokanalikowej:</q>
+        <a1>Grzeje.</a1>
+        <a2>Jest odporna na tarcie.</a2>
+        <a3>Chłodzi przegrzany organizm.</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>12</nr>
+    <text>MAŁPA NIE MAŁPUJE
+
+      Naukowców od zawsze interesowało, czym człowiek różni się od małpy. Musi istnieć coś, co nadało ewolucji człowieka inny kierunek. Chwytne kciuki, duży mózg, pionowa postawa, posługiwanie się językiem? To cechy, które nas wyróżniają, ale prawdziwie ciekawe pytanie brzmi: dlaczego one powstały? Odczytanie genomów człowieka i szympansa nie przyniosło odpowiedzi - okazało się, że aż 98 proc. DNA jest identyczne u obu gatunków. Wszystko wskazuje na to, że różnica między małpami a ludźmi dotyczy przede wszystkim mózgu, który u nas pracuje podobnie jak u... psów.
+
+      Gdy wybitny antropolog Michael Tomasello zajął się pracą z szympansami, jego uwagę zwróciło to, że szympansy nigdy nie pokazują czegoś palcem, tak jak robią to ludzie, a zwłaszcza dzieci. Kiedy eksperymentator wskazywał na zamknięty kubeł z owocami, zwierzęta zupełnie zignorowały tę wskazówkę. Natomiast gdy wkładał rękę do pojemnika tak, jakby chciał z niego coś wyjąć, małpy natychmiast interesowały się jego zawartością. Można więc przypuszczać, że szympansy rozumieją celowość i intencję w działaniu innych osobników. Gdy człowiek wkłada rękę do wiadra, małpa wnioskuje, że coś chce z niego wyjąć, a więc prawdopodobnie coś się w nim znajduje. Ale wskazywanie palcem jest dla niej zbyt abstrakcyjne.
+      Szympans nie rozumie, po co człowiek pokazuje wiadro. Być może myśli sobie: "No przecież widzę wiadro. Pokaż, gdzie są owoce". Ten sam test znakomicie rozwiązywały 14-miesięczne dzieci. Po wskazaniu wiadra, maluch od razu ruszał, by je otworzyć, licząc, że będzie tam zabawka. Dziecko od razu wiedziało, że gest dorosłego służy temu, by skierować jego uwagę na konkretny przedmiot. Gdyby bez żadnej przyczyny wskazać na wiadro, to dziecko, podobnie jak i dorosły, zdziwiłoby się, o co nam chodzi. Ale jeśli dziecko wie, że w jednym wiadrze jest zabawka, to zakłada, że bawimy się w szukanie, i gest wskazujący od razu zostaje umiejscowiony w odpowiednim kontekście.
+      Prawdopodobnie tego właśnie brakuje szympansom. Nie potrafią stworzyć wspólnego domyślnego kontekstu, który pozwalałby im wymieniać się informacjami. Dlatego szympansy nie są w stanie zrozumieć, że ktoś chce się z nimi podzielić informacją. Potrafią jedynie "wydobywać" informacje od innych osobników, np. obserwując, w którym kierunku spoglądają.
+
+      Różnice między nami a szympansami wynikają również z odmiennych motywacji, którymi się kierujemy w relacjach z innymi osobami. Dzieci są chętne do współpracy, podczas gdy małpy nie odczuwają najmniejszej potrzeby pomagania towarzyszom, jeśli nie czeka ich za to nagroda. W jednym doświadczeniu eksperymentator pakował w towarzystwie 14-miesięcznego malucha książki do szafy,której drzwiczki ciągle się zamykały. Gdy za którymś razem podszedł do szafy, niosąc książki w obu rękach, dziecko podbiegło, otworzyło drzwiczki i przytrzymało je, aż dorosły skończył porządki. Podczas tego samego doświadczenia z młodymi szympansami małpy biegały radośnie po pokoju, nie przejmując się problemami swojego opiekuna.
+      Dzieci wskazują palcem przedmioty, gdy potrzebują pomocy od dorosłego ("chcę to!") lub gdy same mu jej udzielają ("tam!"). A także gdy chcą podzielić się z dorosłymi emocjami ("patrz!"). Motywacją do wskazywania jest więc pomaganie i dzielenie się stanami psychicznymi. Są to dwie rzeczy, które opłacają się tylko przy współpracy. Podczas rywalizacji dwa osobniki mają wspólny cel (np. zjeść ten sam owoc), ale realizacja tego celu nie wymaga wspólnego działania. Konkurent może rozumieć intencje przeciwnika, czyli to, że jego działanie jest celowe, może nawet rozumieć, że rywal jest istotą podobną jemu samemu. Jednak to nie wystarcza, żeby osiągnąć ludzkie zdolności społeczne. Potrzebna jest właśnie owa zdolność dzielenia się doznaniami i doświadczeniami z innymi. Umożliwiło to współpracę, także między osobnikami niespokrewnionymi, na skalę niespotykaną wśród innych człekokształtnych, co z kolei pozwoliło na stworzenie naszej kultury. Do współdziałania konieczna jest jeszcze jedna cecha, której małpom najwyraźniej brakuje. Jest nią rozumienie roli odgrywanej przez drugą osobę przy wspólnym planowaniu działania i w razie potrzeby umiejętność jej naśladowania. Dwa szympansy nigdy nie będą np. pomagały sobie przy budowie jakiegoś narzędzia lub w przenoszeniu czegoś z miejsca na miejsce - chyba że są to tresowane zwierzęta z cyrku. Przy bliższych badaniach okazało się, że nawet tak złożone zachowania jak polowanie w grupie nie są współpracą w wąskim znaczeniu tego słowa. Podczas polowania role wyznaczane są najczęściej na podstawie statusu osobnika, czyli jego wieku, doświadczenia i siły. Nie ma tej niedopowiedzianej nici współodczuwania z innymi uczestnikami polowania, która wiąże np. piłkarzy na boisku.
+      To, czym wyróżniamy się spośród innych gatunków, ma podłoże czysto biologiczne. Dowodem jest choćby fakt, że wszystkie małpy wychowywane przez ludzi, nawet tak wybitne jak szympans Kanzi czy gorylica Koko, nie stają się ludźmi. Choć bawią się zabawkami, posługują się językiem migowym i piszą na klawiaturze specjalnego komputera, to i tak nigdy nie zainteresuje ich, co u nas słychać. W trakcie sześciu milionów lat ewolucji, od kiedy rodowody małp i człowieka rozeszły się, nastąpiły takie zmiany w budowie naszego mózgu, które zrobiły z nas istoty niezwykle społeczne.
+
+      Ciekawym wyjątkiem w świecie zwierząt jest pies. Jest to jedyny poza człowiekiem gatunek,  który znakomicie radzi sobie ze wskazywaniem ukrytych przedmiotów, czyta z mimiki twarzy i potrafi współdziałać z człowiekiem. Jak to się stało, że daleko spokrewnione gatunki wykazują podobieństwo w odniesieniu do tak wyjątkowej cechy?
+      Najbardziej wiarygodna jest hipoteza mówiąca, że zdolności społeczne psów wyewoluowały podczas procesu udomowienia, czyli przez 15 tysięcy lat, które spędziły w bezpośrednim towarzystwie człowieka. Hipotezę tę ciężko byłoby sprawdzić, gdyby z pomocą nie przyszły wyniki pewnego wyjątkowego eksperymentu. W 1959 roku radziecki uczony Dymitr Baliajew rozpoczął hodowlę lisów na Syberii. Z każdego pokolenia do dalszego rozrodu wybierano te osobniki, które były najmniej dzikie. Po kilkudziesięciu latach osiągnięto zamierzony cel - lisy nie bały się człowieka i nie były agresywne w stosunku do niego. Ale okazało się, że pojawiły się również inne zmiany - sierść zwierząt stała się jaśniejsza, ogon krótszy i zakręcony, uszy zwisające. Wydłużył się okres rozrodczy. Zmienił się rozmiar i kształt czaszki oraz zębów. No i przede wszystkim lisy zaczęły rozumieć, do czego przydaje się wskazywanie palcem - w testach radziły sobie równie dobrze jak psy. Można więc przypuszczać, że z psami było identycznie.
+      Co więcej, można nawet założyć, że i z ludźmi było podobnie! Osłabienie aktywności części mózgu odpowiedzialnych za agresję i strach spowodowały, że zwiększyła się tolerancja wobec osobników swego gatunku. Dzięki temu konkurencja mogła ustępować miejsca kooperacji. Im większa chęć do współpracy, tym większa motywacja do dzielenia się informacjami i przeżyciami, a im więcej o sobie wiemy, tym bardziej jesteśmy skłonni do współpracy - i koło się zamyka. Jednocześnie na margines społeczności zaczynają trafiać ci, którzy są zbyt agresywni, nieufni i niezdolni do współdziałania.
+      Nasza ludzka inteligencja społeczna mogła się rozwinąć dzięki łagodniejszemu temperamentowi, a ten z kolei wyewoluował poprzez samoudomowienie się, czyli skuteczne wykluczanie z grupy osobników "dzikich". Możemy się tylko cieszyć, że nie opadły nam od tego uszy i nie skręciły się nam ogony!
+
+      Magdalena Tilszer
+      Focus Październik 2006 (str. 77)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Jak zachowywały się małpy w teście z układaniem książek i zamykającymi się drzwiami szafy?</q>
+        <a1>Pomagały przytrzymać zamykające się drzwi.</a1>
+        <a2>Specjalnie, dla zabawy zamykały drzwi szafy.</a2>
+        <a3>Nie zwracały kompletnie uwagi na zamykające się drzwi.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Wybierz kraj z którego pochodził uczony, który w 1959 roku założył hodowlę lisów.</q>
+        <a1>Kanada.</a1>
+        <a2>Rosja.</a2>
+        <a3>Dania.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Czy szympansy reagują, gdy wskaże im się palcem jakiś przedmiot?</q>
+        <a1>Tak</a1>
+        <a2>Nie</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Kiedy pies stał się domowym zwierzęciem?</q>
+        <a1>5 tys. lat temu.</a1>
+        <a2>15 tys. lat temu.</a2>
+        <a3>25 tys. lat temu.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Czy 2 szympansy wychowane razem wśród zabawek z potrafią wspólnie budować domek z klocków?</q>
+        <a1>Tak</a1>
+        <a2>Nie</a2>
+        <a3>Nie można tego stwierdzić po przeczytaniu artykułu.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Jak zachowuje się 12 miesięczne dziecko w teście z układaniem książek i zamykającymi się drzwiami szafy?</q>
+        <a1>Nie zwraca kompletnie uwagi na zamykające się drzwi.</a1>
+        <a2>Pomaga przytrzymać zamykające się drzwi.</a2>
+        <a3>Autor tekstu o tym nie wspominał.</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>13</nr>
+    <text>DALEJ NIŻ W KOSMOSIE
+
+      Kiedy w 2003 roku rozgrywał się dramat astronautów z promu Columbia, na Stacji Antarktycznej PAN było nas dwanaścioro. Podobnie jak cały świat przeżywaliśmy tragedię Amerykanów. W relacjach dziennikarzy uderzyły nas jednak dwie informacje. Podkreślano, że gdy któryś z elementów promu zepsuje się w trakcie misji, to najbliższy sklep z częściami zamiennymi znajduje się aż 60 km dalej, na powierzchni Ziemi. Do ostatnich chwil członkowie załogi wysyłali bliskim e- maile.
+      Tymczasem polska stacja badawcza, jako jedyna w Antarktyce, nie ma połączenia z Internetem, a najbliższy sklep znajduje się w argentyńskim Ushuaia, prawie 1000 km na północ...
+
+      Najpierw jest długa podróż. 40 dni rosyjskim statkiem, z Gdyni aż na miejsce. Niektórzy lecą samolotem do Ushuaia, a dopiero stamtąd płyną. Ja jednak wolę odczuć, jak to naprawdę strasznie daleko. Poczuć, jak po drodze zmienia się klimat, jak niemiłosiernie pali zenitalne słońce, a cień jest plamką czerni między stopami. Księżyc na przykład wisi do góry nogami, a jedyny znajomy gwiazdozbiór to Orion, choć jego charakterystyczny pas na południu też przebiega odwrotnie.
+      Polska stacja nie znajduje się na kontynencie antarktycznym, tylko w jego pobliżu, na wyspie w archipelagu Szetlandów Południowych. Ocean ma łagodzący wpływ na klimat, dzięki czemu średnia roczna temperatura wynosi ok. 2 oC, przy amplitudzie od 10 oC do -33 oC (rekord) - polskie zimy są więc zazwyczaj zimniejsze.
+      Odległość od cywilizacji różnym ludziom doskwiera w różnym stopniu. Znaczna część polarników właśnie ją postrzega jako jeden z głównych argumentów "za". Większość z nas spędza na stacji jedynie lato, które trwa tu od grudnia do marca. Jednak za "prawdziwych polarników" uważani są tylko ci, którzy choć raz przeżyli na Antarktydzie zimę. To pozwala w pełni "odkleić" się od rzeczywistości. Po powrocie z pierwszej wyprawy zdarzało mi się wychodzić z restauracji czy sklepu bez płacenia rachunku - przez rok nie musiałem bowiem dbać o swój byt. Mieszkałem w przytulnym pokoju, za który nie musiałem płacić, podobnie jak za domowe posiłki, które przygotowywał zawodowy kucharz. Nawet proszek do prania czy słodycze zawsze były pod ręką.
+      I te surrealistyczne widoki... O świcie zatokę i góry spowijało malinowe światło. Spokojne przedpołudnie poprzedzał silny sztorm z wiejącym 200 km/godz. wiatrem. Albo znienacka pojawiała się mgła. Kiedyś chciałem zrobić zdjęcie jeziora, jednak zanim zdążyłem wyciągnąć z plecaka aparat, jeziora nie było już widać. Na takie kaprysy pogody trzeba być przygotowanym. Radio i odbiornik GPS to - nawet na krótkim spacerze - konieczność. Dzięki krótkofalówce zawsze można skontaktować się z dowolną stacją, a nawet wezwać na pomoc argentyński lub chilijski okręt wojenny, o ile akurat jest w pobliżu. Komórki nie mają tu zasięgu - jedyna łączność ze światem to telefon satelitarny (7 zł za min rozmowy z Polską).
+      Zresztą nawet gdy pogoda jest stabilna, widoczność w Antarktyce płata figle. Niezwykła czystość pozbawionego pyłów powietrza i brak naturalnych punktów odniesienia sprawiają, że nie da się ocenić odległości. Nie wiadomo, czy do widocznego w oddali szczytu masz 300 metrów, czy 3 kilometry.
+      W tak specyficznych warunkach zgodne życie ze współtowarzyszami jest najważniejsze, choć wymaga więcej wysiłku. Zwłaszcza w zimie, kiedy dzień trwa kilka godzin, na spacer wyjść trudno, a na gości liczyć nie sposób.
+
+      Inaczej sytuacja wygląda latem, które w Antarktyce trwa od początku grudnia do końca lutego. W pobliskich koloniach pojawiają się wówczas tysiące młodych pingwinów, mew, petreli olbrzymich i kormoranów, pary wydrzyków skua gorączkowo poszukują pokarmu dla piskląt, a na plażach zalegają słonie morskie, foki Weddella i uchatki antarktyczne.
+      Trwają remonty i rozbudowa stacji, uruchamiane są stacje sezonowe, a załogi całorocznych powiększają się nawet kilkakrotnie.
+      Naukowcy rozjeżdżają się po wyspie. Badają i obserwują zwierzęta, tempo przesuwania się lodowca, szukają nielicznych roślin naczyniowych i śladów najstarszych zlodowaceń albo pobierają próby osadów z morskiego dna.
+      Ja badałem życie słoni morskich, a zwłaszcza ich obyczaje godowe. Olbrzymie samce brutalnie walczą o dostęp do samic. Zwycięzca staje się panem haremu, liczącego nawet 50 partnerek! Mniejsze samce, które w walce nie miałyby szans, pod nieuwagę "władcy" próbują podkraść mu samicę. Czy odnoszą sukcesy, można sprawdzić metodami genetycznymi. Pobranie próbki DNA to najbardziej emocjonujące z moich zadań. Trzeba się zbliżyć do słonia na tyle blisko, by szczotką - lub po prostu ręką - wyrwać mu trochę włosów, które na szczęście w czasie linienia odchodzą kępami. Podchodzenie do drzemiących kolosów stanowi problem taktyczny. Człowieka wyprostowanego te zwierzęta mogą wziąć za innego samca, który podnosi się do pojedynku. Sprowokowanie pięciotonowego kolosa może więc skończyć się tragicznie. Do słoni da się podczołgać - wtedy jest szansa, że wezmą nas za inną fokę. Gorzej, jeśli zbierze im się na amory... Ja wybrałem konfrontację na stojąco.
+
+      Co parę dni statki przywożą turystów. Wycieczki lądują na gościnnych stacjach, poznają życie polarników, w zamian pomagają przy transporcie, przywożą świeże owoce i warzywa. Życie towarzyskie polarników nabiera rumieńców, gdy z różnych okazji (rocznice powstania stacji, święta, wymiany załóg) odbywają się kurtuazyjne wizyty, pozwalające na nawiązanie - często bardzo trwałych - przyjaźni. Od lat zresztą polska stacja ma renomę najlepszej jadłodajni w okolicy - niemal codziennie "przypadkiem" pojawiają się w pobliżu pontony brazylijskie, peruwiańskie, a nawet koreańskie.
+      Od marca jednak wszystko - poza klimatem - się wycisza. Większość zwierząt schodzi z lądu do morza lub odlatuje w cieplejsze rejony, choć pojawiają się i takie, które ściągają na Szetlandy Południowe dla łagodniejszej aury. Sezon turystyczny dobiega końca, a surowe warunki stopniowo odcinają wyspę od świata. Nie można się z niej wydostać nawet w poważnych sytuacjach.
+      Teraz na stacji przebywa 13 osób - to zimowy trzon przybyłej w listopadzie 2005 roku 30. Polskiej Wyprawy Antarktycznej. Pod przewodnictwem Leszka Wilczyńskiego zimuje tu 8 osób z grupy technicznej oraz kucharz, lekarz, dwóch glacjologów i meteorolog - jedyna kobieta w grupie. Życie polarników podlega rutynie, wyznaczanej przez pracę, posiłki, dyskusje i oglądanie filmów. Weekendy to okazje do wypraw w góry, organizowania przyjęć czy zawodów. W niedzielę kucharz ma wolne.
+      Słońce wstaje po 10 rano, zachodzi po 14. Świat drzemie w oczekiwaniu na wiosnę, która w październiku przyniesie kolejne ożywienie, a polarnikom zapowiedź powrotu do domu. Czy na długo? Antarktyka ma przedziwną moc uzależniania...
+
+      dr Mikołaj Golachowski
+      Focus Wrzesień 2006 (str. 74)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Ile wynosi średnia roczna temperatura powietrza w polskiej stacji badawczej w Antarktyce?</q>
+        <a1>2 stopnie C.</a1>
+        <a2>-12 stopni C.</a2>
+        <a3>-22 stopnie C.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Jak polarnicy z polskiej stacji kontaktują się z rodzinami z Polsce?</q>
+        <a1>Za pomocą telefonu satelitarnego.</a1>
+        <a2>Za pomocą internetu.</a2>
+        <a3>Za pomocą telefonów komórkowych.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Jakie badania prowadził autor artykułu w Antarktyce?</q>
+        <a1>Badania nad ocieplaniem się klimatu.</a1>
+        <a2>Badał ruchy lodowca.</a2>
+        <a3>Badał życie słoni morskich.</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. Polska stacja badawcza uważana jest za:</q>
+        <a1>Najskromniej wyposażoną stację badawczą w okolicy.</a1>
+        <a2>Najlepszą stołówkę w okolicy.</a2>
+        <a3>Miejsce prowadzenia najciekawszych badań.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Kiedy w Antarktyce trwa lato?</q>
+        <a1>Od grudnia do lutego.</a1>
+        <a2>Od października do lutego.</a2>
+        <a3>Od marca do czerwca.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Ile osób przebywało w polskiej bazie zimą podczas 30. Polskiej Wyprawy Antarktycznej?</q>
+        <a1>3</a1>
+        <a2>8</a2>
+        <a3>13</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+  <test>
+    <nr>14</nr>
+    <text>JADOWITA SAMOOBRONA
+
+      Choć świat wokół nas jest dosłownie wypełniony truciznami, najczęściej nie pamiętamy o tym, dopóki nie wydarzy się jakaś tragedia. Tak jak w przypadku Ewy Sałackiej, która zginęła wskutek ukąszenia zwykłej osy. Aktorka była uczulona na jady owadów, dlatego jej organizm zareagował tzw. wstrząsem anafilaktycznym - gwałtownym spadkiem ciśnienia krwi i zaburzeniami oddychania. Toksyczne substancje wytwarzają tysiące gatunków zwierząt na całym świecie, ale większość z nich używa tych substancji przede wszystkim do obrony. Zarówno osy, jak i jadowite węże czy jaszczurki atakują ludzi wyłącznie wtedy, gdy czują się zagrożone. Jak często się to zdarza? Dokładnych statystyk brak, ale wiadomo, że w samej tylko delcie Mekongu w Wietnamie - w rejonie upraw ryżu - węże zabijają rocznie ponad 2700 ludzi.
+      Jednak to nie gady - najczęściej kojarzone ze słowem "jadowity" - dysponują najsilniejszymi truciznami. Nie są w czołówce także pod względem liczby "toksycznych" gatunków. "Z naszych szacunków wynika, że znacznie liczniejsze są ryby. Co najmniej 1200 gatunków można uznać za jadowite, a liczba pokąsanych przez nie osób przekracza 50 tys. rocznie" - mówi William Leo Smith z American Museum of Natural History w Nowym Jorku. Jeszcze więcej może istnieć jadowitych jaszczurek - na Ziemi żyje 1500 gatunków tych stworzeń. Groźne dla człowieka toksyny produkują praktycznie wszystkie rodzaje zwierząt, łącznie z motylami. Wojciech Cejrowski w książce "Gringo wśród dzikich plemion" pisze o spotkaniu z południowoamerykańskim Mariposa del Muerte, którego skrzydła są pokryte kruchymi, silnie trującymi igiełkami. W chwili zagrożenia motyl strzepuje truciznę. Unosi się ona w powietrzu i zabija w okamgnieniu tych, którzy wciągną ją do płuc.
+
+      Naukowcy do dziś nie są w stanie ustalić, które zwierzę jest najbardziej jadowite na świecie. Na czele rankingów przeważnie pojawia się jednak tzw. osa morska, czyli meduza Chironex fleckeri. Najczęściej można ją spotkać w morzach przy północnych brzegach Australii. Nazwa nie oddaje w pełni siły jej arsenału: do zabicia dorosłego, nieuczulonego na jad owadów człowieka potrzeba 500 użądleń zwykłych os, tymczasem jedna meduza ma tyle trucizny, że mogłaby uśmiercić 10-20 osób. Zgon następuje w ciągu kilku minut - toksyna zawarta w mackach zwierzęcia powoduje martwicę skóry, atakuje układy: nerwowy i krążenia. Dochodzi do zaburzeń rytmu serca, spadku ciśnienia krwi, a zanim ofiara straci przytomność, cierpi z powodu niewiarygodnie silnego bólu. Tak przynajmniej wynika z relacji nielicznych osób, którym udało się przeżyć spotkanie z morską osą. Jedynym ratunkiem jest szybkie podanie antytoksyny, wytwarzanej z krwi owiec szczepionych małymi dawkami jadu, ale nigdy nie ma gwarancji, że zadziała. Jednak gdy spojrzymy na statystyki, okazuje się, że to najbardziej jadowite stworzenie zabija zaledwie jedną-dwie osoby rocznie.
+      To znacznie mniej niż w przypadku ryby fugu, która co roku jest przyczyną śmierci 100-150 osób w samej Japonii. Co ciekawe, większość ofiar ginie nie pod wodą, ale na lądzie - wskutek niedbalstwa kucharzy. Fugu uchodzi za wielki przysmak, mimo że w jej wątrobie i jajnikach znajduje się tetrodoksyna, trucizna wielokrotnie silniejsza od cyjanku. Jej dawka śmiertelna to zaledwie 480 mikrogramów, co oznacza, że jedną rybą można zabić 30 dorosłych osób. A nie jest to lekka śmierć: tetrodoksyna paraliżuje mięśnie ofiary, lecz nie powoduje utraty świadomości. W ciągu kilku-kilkunastu godzin większość zatrutych umiera wskutek uduszenia - odtrutka nie została dotąd wynaleziona. Dlatego w Japonii przygotowywaniem potraw z fugu mogą zajmować się jedynie licencjonowani kucharze, którzy zdali urzędowy egzamin.
+
+      Za najjadowitszego płaza na świecie uważany jest drzewołaz złocisty (Dendrobates auratus) - niepozorna, kolorowa żabka, zamieszkująca lasy Ameryki Środkowej i Południowej. Jad wydzielany przez jej gruczoły grzbietowe zawiera batrachotoksynę, 250 razy silniejszą od strychniny - do zabicia człowieka wystarczy zaledwie 0,00001 grama tej substancji. Śmierć następuje wskutek paraliżu mięśni, zaburzeń pracy układu krążenia i oddechowego. Indianie z Ekwadoru wykorzystywali jad drzewołaza do zatruwania strzał, które dzięki temu mogły powalić zwierzę wielkości bawołu.
+      Naukowcy byli bardzo zaskoczeni, gdy okazało się, że batrachotoksyna występuje także u innych zwierząt, w tym u nowogwinejskich ptaków z rodzajów Pitohui i Ifrita. Trucizna znajduje się w całym ich ciele, ale szczególnie dużo wykryto jej w skórze i piórach. Skutecznie zniechęca ona ptasie pasożyty, ale może też zaszkodzić człowiekowi. Ornitolodzy, którzy wdychali wraz z powietrzem złuszczony naskórek i drobinki puchu toksycznych ptaków, cierpieli na silne podrażnienie dróg oddechowych. Badania wykazały, że batrachotoksyna nie jest jednak produktem zwierzęcym. Wytwarzają ją bakterie, połykane zarówno przez żaby, jak i ptaki czy niektóre ryby.
+      W sumie nie powinno to dziwić - najsilniejsza znana nauce trucizna to botulina, produkowana przez laseczki jadu kiełbasianego (Clostridium botulinum). Śmiertelna dla człowieka dawka to zaledwie 70 mikrogramów podanych doustnie (dożylnie wystarczy ułamek mikrograma).
+
+      Botulina jest też jedną z najmodniejszych trucizn - w dużym rozcieńczeniu jest powszechnie stosowana do zabiegów upiększających, głównie wygładzania zmarszczek. Także inne naturalne toksyny są obiektem intensywnych badań. Większość z toksyn działa bardzo wybiórczo - na konkretne komórki albo procesy komórkowe. Naśladując działanie jadów, można wyprodukować nowe leki, które znajdą zastosowanie m.in. w neurologii czy onkologii.
+      Przykładem może być prialt - silny lek przeciwbólowy, który powstał dzięki jadowitym stożkom (Conus magnus). Ślimaki te zamieszkują Ocean Spokojny i Indyjski, polując na inne zwierzęta przy pomocy jadowitych kolców. Są w stanie przebić nawet kombinezon płetwonurka, którego czeka wówczas śmierć w ciągu pół godziny, bo na ślimaczy jad nie ma antidotum. Już niedługo do aptek może też trafić yondelis, lek na raka uzyskany z innych morskich trucicieli - osłonic Ecteinascidia turbinata. Trwają również badania nad sześcioma farmaceutykami stworzonymi na bazie jadów węży i jednym środkiem, do którego powstania przyczyniły się skorpiony.
+
+      Jadowitym zwierzętom zawdzięczamy jednak nie tylko możliwość produkcji ratujących życie leków. Wiele wskazuje na to, że wywarły duży wpływ na ewolucję naszych zwierzęcych praprzodków. Prof. Lynne Isbell, antropolog z University of California w Davis, twierdzi, że strach przed wężami doprowadził do powstania wyjątkowo sprawnego narządu wzroku i inteligencji u ssaków naczelnych.
+      100 mln lat temu największe zagrożenie stanowiły dla nich gady podobne do dzisiejszych anakond czy boa dusicieli. Aby szybko wykrywać takich drapieżców, naczelne wykształciły zdolność rozpoznawania wzorzystych, kolorowych obiektów znajdujących się w niedużej odległości. Rozpoczął się ewolucyjny wyścig zbrojeń. "Pierwszy skok jakości widzenia naczelnych nastąpił ok. 90 mln lat temu" - ocenia prof. Isbell. Na "odpowiedź" węży nie trzeba było długo czekać. 60 mln lat temu pojawiły się gatunki jadowite, na co ssaki naczelne zareagowały dalszym udoskonalaniem narządu wzroku i zwiększaniem objętości mózgu, wykorzystywanego m.in. do obmyślania strategii unikania niebezpiecznych gadów.
+      Prof. Isbell podkreśla, że naczelne jako jedne z niewielu zwierząt mają oczy zwrócone ku przodowi, co poprawia widzenie przestrzenne i ułatwia dojrzenie węża ukrytego wśród liści czy gałęzi. Wskazuje też na różnice ewolucyjne. Małpy szerokonose pojawiły się w Ameryce Południowej dużo wcześniej niż jadowite węże, dlatego mają mniej wyspecjalizowany wzrok niż małpy zamieszkujące Afrykę, Azję i kraje arabskie. Tam śmiercionośne gady były obecne od dziesiątków milionów lat i zapewne gnębiły także pierwszych hominidów żyjących na afrykańskiej sawannie. Dopiero po dziesiątkach tysięcy lat ewolucji okazało się, że dobry wzrok i duży mózg może przydać się ludziom nie tylko do unikania węży.
+
+      Ewa Rąbek
+      Focus Listopad 2006 (str. 84)</text>
+    <questions>
+      <question>
+        <nr>1</nr>
+        <q>1. Najprawdopodobniej najbardziej trujące zwierzę na świecie jest:</q>
+        <a1>Meduzą.</a1>
+        <a2>Motylem.</a2>
+        <a3>Pająkiem.</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>2</nr>
+        <q>2. Ile użądleń osy potrzeba do zabicia zdrowego, nieuczulonego na jad osy człowieka?</q>
+        <a1>40</a1>
+        <a2>200</a2>
+        <a3>500</a3>
+        <correct>3</correct>
+      </question>
+      <question>
+        <nr>3</nr>
+        <q>3. Ile gatunków jaszczurek żyje na ziemi?</q>
+        <a1>1500</a1>
+        <a2>5000</a2>
+        <a3>15000</a3>
+        <correct>1</correct>
+      </question>
+      <question>
+        <nr>4</nr>
+        <q>4. W jakim kraju toksyczna ryba fugi uchodzi za przysmak?</q>
+        <a1>W Wietnamie.</a1>
+        <a2>W Japonii.</a2>
+        <a3>W Brazylii.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>5</nr>
+        <q>5. Do czego Indianie z Ekwadoru używali jadu drzewołaza?</q>
+        <a1>Do rytualnych obrzędów.</a1>
+        <a2>Do zatruwania strzał.</a2>
+        <a3>Do leczenia.</a3>
+        <correct>2</correct>
+      </question>
+      <question>
+        <nr>6</nr>
+        <q>6. Co spowodowało rozwój wyjątkowo sprawnego narządu wzroku u ludzi?</q>
+        <a1>Potrzeba odróżniania ostrzegawczych kolorów trujących roślin.</a1>
+        <a2>Potrzeba obrony przed drapieżnymi owadami.</a2>
+        <a3>Potrzeba unikania węży i strach przed nimi.</a3>
+        <correct>3</correct>
+      </question>
+    </questions>
+  </test>
+</data>

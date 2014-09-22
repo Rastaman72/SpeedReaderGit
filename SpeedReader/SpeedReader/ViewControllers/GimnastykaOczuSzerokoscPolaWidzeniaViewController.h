@@ -7,29 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SharedData.h"
+#import "AppDelegateDataShared.h"
 @interface GimnastykaOczuSzerokoscPolaWidzeniaViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *startButton;
-- (IBAction)startPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UISlider *speedSlider;
-@property (weak, nonatomic) IBOutlet UIView *speedDescriptionLabel;
-- (IBAction)speedChange:(id)sender;
-@property(nonatomic,assign)bool started;
-@property (weak, nonatomic) IBOutlet UIView *speedView;
-@property (weak, nonatomic) IBOutlet UIView *gameView;
 
-@property(nonatomic,strong)NSMutableDictionary* pointsArray;
-@property(nonatomic,assign)int animFinish;
+- (IBAction)speedChange:(id)sender;
+- (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UISlider *speedSlider;
+@property (weak, nonatomic) IBOutlet UIView *gameView;
+@property (weak, nonatomic) IBOutlet UIView *speedDescriptionLabel;
+@property (weak, nonatomic) IBOutlet UIView *speedView;
+@property(nonatomic,assign)bool changePosition;
 @property(nonatomic,assign)bool forward;
 @property(nonatomic,assign)bool itWasBack;
-@property(nonatomic,assign)int round;
+@property(nonatomic,assign)bool started;
+@property(nonatomic,assign)int animFinish;
 @property(nonatomic,assign)int increaseDistance;
+@property(nonatomic,assign)int round;
+@property(nonatomic,strong)NSMutableDictionary* pointsArray;
 @property(nonatomic,strong)NSTimer* scrollingTimer;
+@property(nonatomic,strong)SharedData* theDataObject;
 typedef enum StateOfRound{
 	Begin,
     Half,
     Finish}
 StateOfRound;
-@property(nonatomic,assign)bool changePosition;
 
 @end

@@ -10,20 +10,20 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface GraUkladankaViewController : UIViewController
+- (IBAction)helpPush:(id)sender;
+- (IBAction)lengthChange:(id)sender;
+- (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *helpButton;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *wordsLengthDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UISlider *wordLengthSlider;
-- (IBAction)lengthChange:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *wordCountLabel;
-@property(nonatomic,strong)SharedData* xmlManager;
-@property(nonatomic,strong)NSString* word;
-@property(nonatomic,strong)NSMutableDictionary* lettersDic;
 @property (weak, nonatomic) IBOutlet UIView *gameView;
-@property(nonatomic,assign)int actualLetter;
-@property (weak, nonatomic) IBOutlet UIButton *helpButton;
-- (IBAction)helpPush:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *wordLengthView;
 @property(nonatomic,assign)bool changePosition;
-- (IBAction)startPush:(id)sender;
+@property(nonatomic,assign)int actualLetter;
+@property(nonatomic,strong)NSMutableDictionary* lettersDic;
+@property(nonatomic,strong)NSString* word;
+@property(nonatomic,strong)SharedData* xmlManager;
 
 @end

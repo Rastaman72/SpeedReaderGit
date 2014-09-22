@@ -107,6 +107,9 @@
 		E9AC08C1198FFD6300ACD0C5 /* UserAccountForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C0198FFD6300ACD0C5 /* UserAccountForDB.m */; };
 		E9AC08C51990010B00ACD0C5 /* SettingsForDB.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */; };
 		E9ADA09C19AE0245001DA774 /* CzytanieBezSpacjiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */; };
+		E9B9118119CEFC0400E79DE5 /* ComprehensionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9118019CEFC0400E79DE5 /* ComprehensionTestViewController.m */; };
+		E9B9118419CEFC1400E79DE5 /* SpeedTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B9118319CEFC1400E79DE5 /* SpeedTestViewController.m */; };
+		E9B9118619CEFCFE00E79DE5 /* testsPL.xml in Resources */ = {isa = PBXBuildFile; fileRef = E9B9118519CEFCFE00E79DE5 /* testsPL.xml */; };
 		E9C74B5A19C9F1980033132C /* LessonPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C74B5919C9F1980033132C /* LessonPartViewController.m */; };
 		E9C74B5D19C9F4D80033132C /* LessonPartDispatcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C74B5C19C9F4D80033132C /* LessonPartDispatcherViewController.m */; };
 		E9C8411419B7A1370000E3EB /* MetronumEXCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C8411319B7A1370000E3EB /* MetronumEXCViewController.m */; };
@@ -351,6 +354,11 @@
 		E9AC08C41990010B00ACD0C5 /* SettingsForDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsForDB.m; path = SpeedReader/Data/SettingsForDB.m; sourceTree = "<group>"; };
 		E9ADA09A19AE0245001DA774 /* CzytanieBezSpacjiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CzytanieBezSpacjiViewController.h; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.h; sourceTree = "<group>"; };
 		E9ADA09B19AE0245001DA774 /* CzytanieBezSpacjiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CzytanieBezSpacjiViewController.m; path = SpeedReader/ViewControllers/CzytanieBezSpacjiViewController.m; sourceTree = "<group>"; };
+		E9B9117F19CEFC0400E79DE5 /* ComprehensionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComprehensionTestViewController.h; path = SpeedReader/ViewControllers/ComprehensionTestViewController.h; sourceTree = "<group>"; };
+		E9B9118019CEFC0400E79DE5 /* ComprehensionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComprehensionTestViewController.m; path = SpeedReader/ViewControllers/ComprehensionTestViewController.m; sourceTree = "<group>"; };
+		E9B9118219CEFC1400E79DE5 /* SpeedTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeedTestViewController.h; path = SpeedReader/ViewControllers/SpeedTestViewController.h; sourceTree = "<group>"; };
+		E9B9118319CEFC1400E79DE5 /* SpeedTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeedTestViewController.m; path = SpeedReader/ViewControllers/SpeedTestViewController.m; sourceTree = "<group>"; };
+		E9B9118519CEFCFE00E79DE5 /* testsPL.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testsPL.xml; sourceTree = "<group>"; };
 		E9C74B5819C9F1980033132C /* LessonPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonPartViewController.h; path = SpeedReader/ViewControllers/LessonPartViewController.h; sourceTree = "<group>"; };
 		E9C74B5919C9F1980033132C /* LessonPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LessonPartViewController.m; path = SpeedReader/ViewControllers/LessonPartViewController.m; sourceTree = "<group>"; };
 		E9C74B5B19C9F4D80033132C /* LessonPartDispatcherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LessonPartDispatcherViewController.h; path = SpeedReader/ViewControllers/LessonPartDispatcherViewController.h; sourceTree = "<group>"; };
@@ -595,6 +603,7 @@
 		E91D317D199CEBAB009ECD76 /* ExercisesLanguageFile */ = {
 			isa = PBXGroup;
 			children = (
+				E9B9118519CEFCFE00E79DE5 /* testsPL.xml */,
 				E9D258EE19CC7A6700EB44AC /* excParserIMP.xml */,
 				E9A494A819C978D4007FA02D /* EXCText */,
 				E9A494A619C9769F007FA02D /* lessonsPL.xml */,
@@ -820,6 +829,10 @@
 				E982C6CF19BF551700107B54 /* ZaznaczCiagiViewController.m */,
 				E9D847D719BF870600D3D2AE /* ZaznaczCoWystapiloViewController.h */,
 				E9D847D819BF870600D3D2AE /* ZaznaczCoWystapiloViewController.m */,
+				E9B9117F19CEFC0400E79DE5 /* ComprehensionTestViewController.h */,
+				E9B9118019CEFC0400E79DE5 /* ComprehensionTestViewController.m */,
+				E9B9118219CEFC1400E79DE5 /* SpeedTestViewController.h */,
+				E9B9118319CEFC1400E79DE5 /* SpeedTestViewController.m */,
 			);
 			name = IndividualExercises;
 			sourceTree = "<group>";
@@ -1082,6 +1095,7 @@
 				E9E514451976A281001FDA03 /* Localizable.strings in Resources */,
 				E9A494A719C9769F007FA02D /* lessonsPL.xml in Resources */,
 				E9C8411819B7AF660000E3EB /* metronom.wav in Resources */,
+				E9B9118619CEFCFE00E79DE5 /* testsPL.xml in Resources */,
 				E9A494B819C978D4007FA02D /* 0.rtf in Resources */,
 				E9A494C019C978D4007FA02D /* 3.rtf in Resources */,
 				E9E5141E1976A231001FDA03 /* Main_iPad.storyboard in Resources */,
@@ -1191,9 +1205,11 @@
 				E9C74B5D19C9F4D80033132C /* LessonPartDispatcherViewController.m in Sources */,
 				E90C5E7D19A601C8008D88F4 /* GimnastykaOczuRamkaViewController.m in Sources */,
 				E93BC5C219815FA700DE3408 /* inflate.c in Sources */,
+				E9B9118119CEFC0400E79DE5 /* ComprehensionTestViewController.m in Sources */,
 				E98D0A6F19BA0817001EA86C /* SuperSzybkoscViewController.m in Sources */,
 				E9DB2A8919B5DBD3004596BA /* GimnastykaOczuWazViewController.m in Sources */,
 				E93BC5BC19815FA700DE3408 /* gzclose.c in Sources */,
+				E9B9118419CEFC1400E79DE5 /* SpeedTestViewController.m in Sources */,
 				E925405919A0E40200ECE98E /* BaseExercisesViewController.m in Sources */,
 				E926944E198FEBF900BE1BEF /* SpeedReader.xcdatamodeld in Sources */,
 				E9E0794819BB7147003676C0 /* TabliceSchultzaTreningPamieci1ViewController.m in Sources */,

@@ -16,6 +16,7 @@
 @property(nonatomic,assign)bool direction;
 @property(nonatomic,assign)int beginPoint;
 @property(nonatomic,assign)int firstControlPoint;
+@property(nonatomic,assign)double animDuration;
 @property(nonatomic,assign)int secondControlPoint;
 @property(nonatomic,assign)bool changePosition;
 @end

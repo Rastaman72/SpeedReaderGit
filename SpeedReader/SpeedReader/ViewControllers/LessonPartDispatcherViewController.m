@@ -57,6 +57,12 @@
             self.theDataObject.useOtherVersion=YES;
 
             break;
+            
+        case 8:
+            excNumber=7;
+            self.theDataObject.useOtherVersion=YES;
+            
+            break;
         
         case 11:
             excNumber=10;

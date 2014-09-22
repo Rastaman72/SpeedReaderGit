@@ -27,7 +27,28 @@
 {
     [super viewDidLoad];
   self.numberDic=[[NSMutableDictionary alloc]init];
-    [self createSlider];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+         [self createSlider];
+    }
+    else
+    {
+        
+
+        self.numbersOfLineView.hidden=YES;
+        self.wordLengthView.hidden=YES;
+         self.wordShowView.hidden=YES;
+        
+        self.lineNumbers=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linecount"]intValue];
+        self.wordLength=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"linewidth"]intValue];
+        self.wordShowTimeSlider.value=[[self.theDataObject.paramsForSpecifyExc valueForKey:@"interval"]intValue];
+
+
+        
+    }
+   
     [self createObjects];
     [self addObjectToLayer];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
@@ -36,7 +57,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 -(void)checkOrientataion
 {
     [self deviceOrientationDidChange:nil];

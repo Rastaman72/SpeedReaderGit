@@ -91,6 +91,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     LessonData *selectedLesson=[self.lessons objectAtIndex:indexPath.row];
+    
     if(self.delegate)
     {
         [self.delegate selectedLesson:selectedLesson];

@@ -1655,6 +1655,8 @@
                         <segue destination="xNc-Kg-dVo" kind="push" identifier="EXC34" id="l4H-PI-1FI"/>
                         <segue destination="hCe-wv-23Z" kind="push" id="DSX-OQ-JO5"/>
                         <segue destination="Lwi-b9-g7A" kind="push" id="UqC-Do-6Sd"/>
+                        <segue destination="eAd-bG-0lE" kind="push" identifier="EXC102" id="9kQ-Wu-ehs"/>
+                        <segue destination="BrF-J4-gmp" kind="push" identifier="EXC101" id="m71-cL-lw4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QnU-tI-AGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1674,7 +1676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bN4-j9-oUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10847" y="-4783"/>
+            <point key="canvasLocation" x="12079" y="-4767"/>
         </scene>
         <!--Gimnastyka Oczu8I View Controller-->
         <scene sceneID="8eb-Rn-2Ky">
@@ -1704,7 +1706,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKM-6u-hiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8649" y="-2997"/>
+            <point key="canvasLocation" x="9193" y="-3015"/>
         </scene>
         <!--Gimnastyka Oczu Obszar Pola Widzenia View Controller-->
         <scene sceneID="6mO-pK-2kD">
@@ -1763,7 +1765,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK8-ct-vHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8095" y="-1993"/>
+            <point key="canvasLocation" x="9159" y="-2064"/>
         </scene>
         <!--Gimnastyka Oczu Pila View Controller-->
         <scene sceneID="erp-Wi-eNp">
@@ -1834,7 +1836,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBg-gL-Aij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7759" y="439"/>
+            <point key="canvasLocation" x="9039" y="263"/>
         </scene>
         <!--Gra Memory View Controller-->
         <scene sceneID="eLB-rl-dft">
@@ -1900,7 +1902,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiD-wt-f1J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7711" y="1463"/>
+            <point key="canvasLocation" x="9135" y="1295"/>
         </scene>
         <!--MetronumEXC View Controller-->
         <scene sceneID="ahn-LI-m8W">
@@ -4191,7 +4193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6E-gY-16Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8655" y="1439"/>
+            <point key="canvasLocation" x="10079" y="1271"/>
         </scene>
         <!--Gra Ukladanka View Controller-->
         <scene sceneID="fjE-0r-pyc">
@@ -4269,7 +4271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59j-l3-zBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9639" y="1479"/>
+            <point key="canvasLocation" x="11063" y="1311"/>
         </scene>
         <!--Gimnastyka Oczu Ramka View Controller-->
         <scene sceneID="6HB-aw-7cm">
@@ -4454,7 +4456,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6dj-Z8-eId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9155" y="-2009"/>
+            <point key="canvasLocation" x="10219" y="-2080"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h4a-gQ-Wq3">
@@ -4469,7 +4471,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEC-bb-yee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9697" y="-3005"/>
+            <point key="canvasLocation" x="10241" y="-3023"/>
         </scene>
         <!--CzytanieZ Obcymi Slowami View Controller-->
         <scene sceneID="UX7-Aq-Jqr">
@@ -4508,7 +4510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohJ-S4-kV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="11815" y="-4783"/>
+            <point key="canvasLocation" x="13047" y="-4767"/>
         </scene>
         <!--CzytanieZ Plamami View Controller-->
         <scene sceneID="VXw-sp-fux">
@@ -4568,7 +4570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1j-ax-Ccp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12757" y="-4783"/>
+            <point key="canvasLocation" x="13989" y="-4767"/>
         </scene>
         <!--CzytanieZ Podzialem Na2 View Controller-->
         <scene sceneID="jbM-zz-MYN">
@@ -4622,7 +4624,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1Y-6V-DZ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8083" y="-3913"/>
+            <point key="canvasLocation" x="9315" y="-3897"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RMS-Xj-gj6">
@@ -4637,7 +4639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8T-42-u21" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9067" y="-3905"/>
+            <point key="canvasLocation" x="10299" y="-3889"/>
         </scene>
         <!--Czytanie Ze Wskaznikiem View Controller-->
         <scene sceneID="8RF-i6-ZY3">
@@ -4688,7 +4690,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8c-fy-mhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10019" y="-3865"/>
+            <point key="canvasLocation" x="11251" y="-3849"/>
+        </scene>
+        <!--Comprehension Test View Controller-->
+        <scene sceneID="B32-Tc-gfK">
+            <objects>
+                <viewController storyboardIdentifier="EXC101" modalPresentationStyle="currentContext" id="BrF-J4-gmp" customClass="ComprehensionTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jiB-x3-oNR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="813-C0-6oy">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kWG-4x-b3j"/>
+                    <connections>
+                        <outlet property="gameView" destination="813-C0-6oy" id="fDy-XD-40n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrr-Uw-5C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7175" y="-5079"/>
+        </scene>
+        <!--Speed Test View Controller-->
+        <scene sceneID="fFt-jm-Fhz">
+            <objects>
+                <viewController restorationIdentifier="EXC102" storyboardIdentifier="EXC102" modalPresentationStyle="currentContext" id="eAd-bG-0lE" customClass="SpeedTestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRB-sF-9ar">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="hZ9-ZS-HRk">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0rz-ht-CRd"/>
+                    <connections>
+                        <outlet property="textView" destination="hZ9-ZS-HRk" id="w8x-EM-IdZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GB7-hG-cds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8031" y="-4793"/>
         </scene>
         <!--Czytanie2 Wiersze Na Raz View Controller - EXC1-->
         <scene sceneID="3Aj-57-NsK">
@@ -4783,7 +4837,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWt-EM-U0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8089" y="-4801"/>
+            <point key="canvasLocation" x="9321" y="-4785"/>
         </scene>
         <!--Czytanie Bez Spacji View Controller-->
         <scene sceneID="KUI-iU-7Yp">
@@ -4811,7 +4865,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKB-PP-p8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9077" y="-4783"/>
+            <point key="canvasLocation" x="10309" y="-4767"/>
         </scene>
         <!--Czytanie Od Tylu View Controller-->
         <scene sceneID="Axa-22-Wcb">
@@ -4928,7 +4982,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-NX-6cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9991" y="-4783"/>
+            <point key="canvasLocation" x="11223" y="-4767"/>
         </scene>
         <!--Exercises Dispatcher Controller View Controller-->
         <scene sceneID="Fzr-uU-rqk">

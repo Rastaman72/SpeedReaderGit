@@ -10,21 +10,21 @@
 #import "SharedData.h"
 #import "AppDelegateDataShared.h"
 @interface UkrytePoczatkiIKonceViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *exerciseTextView;
-@property (weak, nonatomic) IBOutlet UISlider *shadowSizeSlider;
-- (IBAction)shadowChange:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *shadowView;
-@property (weak, nonatomic) IBOutlet UIButton *startButton;
-- (IBAction)startPush:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *shadowSizeView;
 
+- (IBAction)shadowChange:(id)sender;
+- (IBAction)startPush:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UILabel *shadowDescriptionLabel;
-@property(nonatomic,assign)float position;
-@property(nonatomic,strong)SharedData* xmlManager;
-@property(nonatomic,assign)int maxPosition;
-@property(nonatomic,assign)int actuallOffset;
+@property (weak, nonatomic) IBOutlet UISlider *shadowSizeSlider;
+@property (weak, nonatomic) IBOutlet UITextView *exerciseTextView;
+@property (weak, nonatomic) IBOutlet UIView *shadowSizeView;
+@property (weak, nonatomic) IBOutlet UIView *shadowView;
 @property(nonatomic,assign) CGSize exerciseTextViewSize;
-@property(nonatomic,assign)float numberOfLines;
-@property(nonatomic,strong)NSArray* toRetrieve;
 @property(nonatomic,assign)bool changePosition;
+@property(nonatomic,assign)float numberOfLines;
+@property(nonatomic,assign)float position;
+@property(nonatomic,assign)int actuallOffset;
+@property(nonatomic,assign)int maxPosition;
+@property(nonatomic,strong)NSArray* toRetrieve;
+@property(nonatomic,strong)SharedData* xmlManager;
 @end

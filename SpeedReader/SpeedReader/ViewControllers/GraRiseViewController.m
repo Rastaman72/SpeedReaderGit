@@ -26,11 +26,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+         self.lineSize=5;
+    }
+    else
+    {
+        
+    
+        self.lineSize=sqrt([[self.theDataObject.paramsForSpecifyExc valueForKey:@"size"]intValue]);
+        self.sizeView.hidden=YES;
+        
+    }
     self.numberDic=[[NSMutableDictionary alloc]init];
     self.touchCounter=0;
     self.nextNumber=1;
     self.wrongChooseCounter=0;
-    self.lineSize=5;
+   
       self.positionX=100;
     self.squareSize=70;
     [self createSlider];
@@ -43,7 +57,13 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (SharedData*) theAppDataObject;
+{
+	id<AppDelegateDataShared> theDelegate = (id<AppDelegateDataShared>) [UIApplication sharedApplication].delegate;
+	SharedData* theDataObject;
+	theDataObject = (SharedData*) theDelegate.theAppDataObject;
+	return theDataObject;
+}
 
 -(void)checkOrientataion
 {

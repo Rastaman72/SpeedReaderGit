@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
     self.theDataObject=[self theAppDataObject];
     if(self.theDataObject.useOtherVersion)
     {
@@ -38,6 +39,19 @@
         self.beginPoint=300;
         self.firstControlPoint=-100;
         self.secondControlPoint=700;
+    }
+    self.theDataObject = [self theAppDataObject];
+    
+    if (self.theDataObject.excMode) {
+        
+        self.animDuration=5.0;
+    }
+    else
+    {
+        
+        self.animDuration=[[self.theDataObject.paramsForSpecifyExc valueForKeyPath:@"interval"]doubleValue]/1000;
+        
+        
     }
     [self createFrame];
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
@@ -149,7 +163,7 @@
         anim.rotationMode = kCAAnimationRotateAutoReverse;
 
 		anim.repeatCount = HUGE_VALF;
-	anim.duration = 5.0;
+	anim.duration = self.animDuration;
 	[car addAnimation:anim forKey:@"race"];
 }
 

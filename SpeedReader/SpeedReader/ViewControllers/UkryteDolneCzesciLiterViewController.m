@@ -28,6 +28,20 @@
     [super viewDidLoad];
  
     self.xmlManager=[self theAppDataObject];
+  
+    
+    if (self.xmlManager.excMode) {
+        
+        
+    }
+    else
+    {
+        
+        self.shadowSizeView.hidden=YES;
+         self.textSizeView.hidden=YES;
+        self.shadowSizeSlider.value=[[self.xmlManager.paramsForSpecifyExc valueForKey:@"hidesize"]floatValue]/10;
+        
+    }
     [self.xmlManager getExercisesText];
     self.exerciseTextView.text=self.xmlManager.exercisesText;
     

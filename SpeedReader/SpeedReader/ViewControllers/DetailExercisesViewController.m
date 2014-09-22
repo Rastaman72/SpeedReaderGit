@@ -27,8 +27,10 @@
 - (void)viewDidLoad
 {
      [self refreshUI];
+   
     [super viewDidLoad];
     self.theDataObject = [self theAppDataObject];
+     self.theDataObject.excMode=YES;
 self.originRect=self.detailExercisesPartView.frame;
    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter]
