@@ -471,7 +471,7 @@
 - (IBAction)sizeChange:(id)sender {
     NSUInteger index = (NSUInteger)(self.sizeSlider.value + 0.5);
     [self.sizeSlider setValue:index animated:NO];
-    NSNumber *number = self.numberSizerray[index]; // <-- This numeric value you want
+    NSNumber *number = self.numberSizerray[index];
     self.choosedSize=[number intValue];
 
     self.textLabel.text=nil;
@@ -525,7 +525,7 @@
 - (IBAction)numbersOfLineChange:(id)sender {
     NSUInteger index = (NSUInteger)(self.numbersOfLineSlider.value + 0.5);
     [self.numbersOfLineSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersOfLineArray[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersOfLineArray[index];
     self.choosedNumbersOfLine=[number intValue];
     
     self.textLabel.text=nil;

@@ -4700,16 +4700,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="813-C0-6oy">
+                            <view contentMode="scaleToFill" id="Gvo-WR-WYb">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="748"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </scrollView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kWG-4x-b3j"/>
                     <connections>
-                        <outlet property="gameView" destination="813-C0-6oy" id="fDy-XD-40n"/>
+                        <outlet property="gameView" destination="Gvo-WR-WYb" id="C2C-K2-DqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrr-Uw-5C2" userLabel="First Responder" sceneMemberID="firstResponder"/>

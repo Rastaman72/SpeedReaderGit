@@ -36,7 +36,7 @@
 {
     [super viewDidLoad];
     [self createObjects];
-
+    self.unTouch=[[NSMutableArray alloc]init];
     // Do any additional setup after loading the view.
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver: self selector:   @selector(deviceOrientationDidChange:) name: UIDeviceOrientationDidChangeNotification object: nil];
@@ -55,12 +55,14 @@
     // if (doc == nil) { return nil; }
     NSString* createNode=[NSString stringWithFormat:@"//test[nr=\"%d\"]/questions",self.theDataObject.selectLesson];
     NSArray* resultNodes = [doc nodesForXPath:createNode error:&error];
+    self.answerDictionary=[[NSMutableDictionary alloc]init];
     
     NSArray *singleParts = [[resultNodes firstObject]children];
     int j=0;
     int yPos=10;
+    
     for (GDataXMLElement* singleElement in singleParts) {
-        
+        j++;
         NSArray *question = [singleElement elementsForName:@"q"];
         NSArray* answer1 = [singleElement elementsForName:@"a1"];
         NSArray* answer2 = [singleElement elementsForName:@"a2"];
@@ -78,10 +80,10 @@
         int step=25;
         for (int i=0; i<4; i++) {
             
-                CGRect Rect = CGRectMake(0+100*j, yPos+i*step, 700, 50);
+            CGRect Rect = CGRectMake(0, yPos+i*step, 700, 20);
             CATextLayer *label = [[CATextLayer alloc] init];
-            [label setFont:@"Helvetica-Bold"];
-            [label setFontSize:16];
+            [label setFont:@"Courier"];
+            [label setFontSize:14];
             [label setFrame:Rect];
             switch (i) {
                 case 0:
@@ -105,6 +107,7 @@
             [label setForegroundColor:[[UIColor blackColor] CGColor]];
             label.wrapped = YES;
             [self.gameView.layer addSublayer:label];
+            [self.answerDictionary setObject:label forKey:[NSString stringWithFormat:@"ANS%d.%d",j,i]];
             if(i==0)
                 yPos+=10;
         }
@@ -117,6 +120,47 @@
     [self deviceOrientationDidChange:nil];
 }
 
+//TO FINISH
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGPoint P=[(UITouch*)[touches anyObject] locationInView:self.gameView];
+    for (CATextLayer* singleLayer in self.gameView.layer.sublayers)
+    {
+        if ([singleLayer containsPoint:[self.gameView.layer convertPoint:P toLayer:singleLayer]])
+        {
+            for (NSString* singleAnswer in self.answerDictionary) {
+                if([self.unTouch count]==0)
+                {
+                    NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[singleAnswer componentsSeparatedByString:@"."]];
+                    NSString*key=[words firstObject];
+                    [self.unTouch addObject:key];
+                    continue;
+                }
+                else
+                {
+                    for (NSString* unTouch in self.unTouch) {
+                        if ([singleAnswer rangeOfString:unTouch].location !=NSNotFound) {
+                            CATextLayer* toTest=[self.answerDictionary valueForKey:singleAnswer];
+                            if (toTest == singleLayer) {
+                                NSMutableArray* words=[[NSMutableArray alloc]initWithArray:[singleAnswer componentsSeparatedByString:@"."]];
+                                NSString*key=[words firstObject];
+                                [self.unTouch addObject:key];
+                            }
+                            
+                        }
+                    }
+                    
+                    
+                }
+            }
+            [singleLayer setBackgroundColor:[[UIColor yellowColor]CGColor]];
+            
+        }
+    }
+    
+}
 
 - (void)deviceOrientationDidChange:(NSNotification *)notification {
     //Obtain current device orientation
@@ -147,7 +191,7 @@
             toChangeGameView.origin.y+=10;
             [self.gameView setFrame:toChangeGameView];
             self.gameView.layer.sublayers=nil;
-           // [self createObjects];
+            // [self createObjects];
             
             self.changePosition=NO;
         }
@@ -169,14 +213,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+ {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

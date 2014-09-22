@@ -78,13 +78,10 @@
     self.wordLengthSlider.maximumValue = numberOfSteps;
     self.wordLengthSlider.minimumValue = 0;
     [self.wordLengthSlider setValue:0 animated:YES];
-    
-    //self.chooseSize=[[self.numberSize objectAtIndex:0]integerValue];
-    //    self.chooseSize = [[[NSNumber alloc]initWithInt: [self.numberSize[0]intValue]]intValue];
-    //    NSLog(@"%d",[[self.numberSize objectAtIndex:0]intValue]);
+
     self.actuallSize=[[self.wordLengthArray objectAtIndex:0]intValue];
-    // As the slider moves it will continously call the -valueChanged:
-    self.wordLengthSlider.continuous = NO; // NO makes it call only once you let go
+    
+    self.wordLengthSlider.continuous = NO;
     [ self.wordLengthSlider addTarget:self
                          action:@selector(sizeChange:)
                forControlEvents:UIControlEventValueChanged];
@@ -185,7 +182,6 @@
     int lowBound = 0;
     int rndValue;
     NSNumber* numValue;
-    NSString* strValue=[[NSString alloc]init];
     NSString* strBreak;
     NSString* textToDisplay=[[NSString alloc]init];
     NSString* letters=[[NSString alloc]init];
@@ -213,7 +209,6 @@
                     
                     break;
                 case 2:
-                    //if (self.mode) {
                     if(self.mode)
                     {
                         bound=100;
@@ -237,8 +232,6 @@
                         numValue=[[NSNumber alloc]initWithInt:rndValue];
                         letters=[letters stringByAppendingString:[NSString stringWithFormat:@"%c",[numValue intValue]+96]];
                     }
-                   // }
-                    // strValue=[NSString stringWithUTF8String:(char)[numValue intValue]];
                     break;
                 case 3:
                     if(self.mode)
@@ -268,8 +261,6 @@
                             numValue=[[NSNumber alloc]initWithInt:rndValue];
                             letters=[letters stringByAppendingString:[NSString stringWithFormat:@"%c",[numValue intValue]+96]];
                         }
-                    
-                    //strValue=[NSString stringWithUTF8String:(char)[numValue intValue]];
                     break;
                     
                 default:
@@ -297,6 +288,10 @@
     }
     self.textLabel.textAlignment=NSTextAlignmentCenter;
     self.textLabel.text=textToDisplay;
+    
+    
+    
+    [self.textLabel setFont:[UIFont fontWithName:@"Courier" size:18]];
     [self.textLabel sizeToFit];
     self.textLabel.center = CGPointMake(self.view.frame.size.width/2, self.positionY);
     
@@ -306,7 +301,7 @@
     
     NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
     [self.wordLengthSlider setValue:index animated:NO];
-    NSNumber *number = self.wordLengthArray[index]; // <-- This numeric value you want
+    NSNumber *number = self.wordLengthArray[index];
     self.actuallSize=[number intValue];
     self.wordLengthCounterLabel.text=[number description];
 

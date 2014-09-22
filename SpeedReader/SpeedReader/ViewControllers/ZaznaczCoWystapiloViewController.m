@@ -390,7 +390,7 @@
     
     NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
     [self.wordLengthSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersWordLength[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersWordLength[index];
     self.wordLength=[number intValue];
     
     NSLog(@"sliderIndex: %i", (int)index);
@@ -408,7 +408,7 @@
     
     NSUInteger index = (NSUInteger)(self.numbersOfLineSlider.value + 0.5);
     [self.numbersOfLineSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersOfLineArray[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersOfLineArray[index];
     self.lineNumbers=[number intValue];
     
     NSLog(@"sliderIndex: %i", (int)index);

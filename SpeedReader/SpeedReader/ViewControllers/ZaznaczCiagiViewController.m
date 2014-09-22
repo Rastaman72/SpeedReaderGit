@@ -309,7 +309,7 @@
 - (IBAction)wordLengthChange:(id)sender {
     NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
     [self.wordLengthSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersWordLength[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersWordLength[index];
     self.wordSize=[number intValue];
     
     NSLog(@"sliderIndex: %i", (int)index);

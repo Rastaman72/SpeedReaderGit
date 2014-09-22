@@ -435,7 +435,7 @@
 - (IBAction)numbersOfLineChange:(id)sender {
     NSUInteger index = (NSUInteger)(self.numbersOfLineSlider.value + 0.5);
     [self.numbersOfLineSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersOfLinesArray[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersOfLinesArray[index];
     self.numbersOfLine=[number intValue];
     self.numbersOfLineCounterLabel.text=[number description];
     NSLog(@"sliderIndex: %i", (int)index);
@@ -458,7 +458,7 @@
 {
     NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
     [self.wordLengthSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersWordLengthArray[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersWordLengthArray[index];
     self.wordLength=[number intValue];
     self.wordLengthCounterLabel.text=[number description];
     NSLog(@"sliderIndex: %i", (int)index);

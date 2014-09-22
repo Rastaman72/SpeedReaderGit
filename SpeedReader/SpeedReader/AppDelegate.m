@@ -25,6 +25,10 @@
     [self.theAppDataObject createImageUserArray];
     [self.theAppDataObject getExercisesWords];
     
+    
+    
+    
+      
 
     // Override point for customization after application launch.
    

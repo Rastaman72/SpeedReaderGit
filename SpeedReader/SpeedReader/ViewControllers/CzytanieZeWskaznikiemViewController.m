@@ -318,7 +318,7 @@
     
     NSUInteger index = (NSUInteger)(self.pickStyleSlider.value + 0.5);
     [self.pickStyleSlider setValue:index animated:NO];
-    NSNumber *number = self.numberStyle[index]; // <-- This numeric value you want
+    NSNumber *number = self.numberStyle[index]; 
     self.chooseTrack=[number intValue];
     self.pickerValueLabel.text=[number description];
 

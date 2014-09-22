@@ -33,11 +33,11 @@
           [self createSlider];
           NSUInteger index = (NSUInteger)(self.squareSizeSlider.value + 0.5);
           [self.squareSizeSlider setValue:index animated:NO];
-          NSNumber *number = self.numbersSquareSize[index]; // <-- This numeric value you want
+          NSNumber *number = self.numbersSquareSize[index];
           self.squareSize=[number intValue];
           NSUInteger index1 = (NSUInteger)(self.wordLengthSlider.value + 0.5);
           [self.wordLengthSlider setValue:index1 animated:NO];
-          NSNumber *number1 = self.numbersWordLength[index1]; // <-- This numeric value you want
+          NSNumber *number1 = self.numbersWordLength[index1];
           self.wordSize=[number1 intValue];
           
           
@@ -373,7 +373,7 @@
     
     NSUInteger index = (NSUInteger)(self.squareSizeSlider.value + 0.5);
     [self.squareSizeSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersSquareSize[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersSquareSize[index];
     self.squareSize=[number intValue];
     
     NSLog(@"sliderIndex: %i", (int)index);
@@ -396,7 +396,7 @@
 - (IBAction)wordLengthChange:(id)sender {
     NSUInteger index = (NSUInteger)(self.wordLengthSlider.value + 0.5);
     [self.wordLengthSlider setValue:index animated:NO];
-    NSNumber *number = self.numbersWordLength[index]; // <-- This numeric value you want
+    NSNumber *number = self.numbersWordLength[index];
     self.wordSize=[number intValue];
     
     NSLog(@"sliderIndex: %i", (int)index);

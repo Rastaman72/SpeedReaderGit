@@ -248,7 +248,7 @@
     
     NSUInteger index = (NSUInteger)(self.sizeSlider.value + 0.5);
     [self.sizeSlider setValue:index animated:NO];
-    NSNumber *number = self.numberSize[index]; // <-- This numeric value you want
+    NSNumber *number = self.numberSize[index];
     self.chooseSize=[number intValue];
     self.sizeCounterLabel.text=[number description];
     
